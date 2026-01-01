@@ -4,6 +4,7 @@ heading: ''
 id: JPLAW:321CONSTITUTION#main#6
 law_id: 321CONSTITUTION
 part: main
+law_name: 日本国憲法
 ---
 
 # 第六条 
@@ -14,3 +15,5 @@ part: main
 ## 
 天皇は、内閣の指名に基いて、最高裁判所の長たる裁判官を任命する。
 
+## AI要約
+天皇は、国会が選んだ人を内閣のトップである総理大臣に任命します。また、内閣が選んだ人を最高裁判所の長い裁判官として任命します。

@@ -29,6 +29,26 @@ class Tier1Builder:
                 return data["targets"]
             return []
 
+    def _get_law_name(self, law_md_path: Path) -> str:
+        """Extract law name from the parent law's metadata file."""
+        try:
+            with open(law_md_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Parse frontmatter
+            if not content.startswith('---'):
+                return ""
+            
+            parts = content.split('---', 2)
+            if len(parts) < 3:
+                return ""
+            
+            frontmatter = yaml.safe_load(parts[1])
+            return frontmatter.get('title', '')
+        except Exception as e:
+            logger.warning(f"Failed to extract law name from {law_md_path}: {e}")
+            return ""
+
     def build(self, extract_edges: bool = False):
         print(f"Processing {len(self.targets)} target laws...")
         
@@ -75,6 +95,9 @@ class Tier1Builder:
         law_md_path = get_law_node_file(law_dir)
         # If not found, maybe create partial one?
         # Tier 1 generally assumes Tier 0 exists.
+        
+        # Extract law name from parent law metadata
+        law_name = self._get_law_name(law_md_path) if law_md_path else ""
 
         if extract_edges:
             from .tier2 import EdgeExtractor
@@ -94,7 +117,7 @@ class Tier1Builder:
         (articles_dir / "main").mkdir(exist_ok=True)
         (articles_dir / "suppl").mkdir(exist_ok=True)
 
-        self._process_part(soup.find("MainProvision"), law_id, articles_dir / "main", "main", extract_edges, all_edges if extract_edges else None)
+        self._process_part(soup.find("MainProvision"), law_id, articles_dir / "main", "main", extract_edges, all_edges if extract_edges else None, law_name=law_name)
         
         # Handle multiple SupplProvision
         for i, spl in enumerate(soup.find_all("SupplProvision")):
@@ -108,7 +131,7 @@ class Tier1Builder:
                 # Use subdirectory
                 out_dir = articles_dir / "suppl" / safe_amend
                 out_dir.mkdir(exist_ok=True, parents=True)
-                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend)
+                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend, law_name=law_name)
             else:
                 # Use direct file under suppl/
                 # pass custom optional filename to _process_part?
@@ -127,7 +150,7 @@ class Tier1Builder:
         if law_md_path:
             self._update_law_tier(law_md_path, final_tier)
 
-    def _process_part(self, container, law_id: str, out_dir: Path, part_type: str, extract_edges: bool = False, edge_list: List = None, file_key_override: str = None):
+    def _process_part(self, container, law_id: str, out_dir: Path, part_type: str, extract_edges: bool = False, edge_list: List = None, file_key_override: str = None, law_name: str = ""):
         if not container:
             return
 
@@ -174,6 +197,7 @@ class Tier1Builder:
                 fm = {
                     "id": node_id,
                     "law_id": law_id,
+                    "law_name": law_name,
                     "part": part_type,
                     "article_num": "Provision",
                     "heading": "附則"
@@ -271,6 +295,7 @@ class Tier1Builder:
             fm = {
                 "id": node_id,
                 "law_id": law_id,
+                "law_name": law_name,
                 "part": part_type,
                 "article_num": num,
                 "heading": caption_text

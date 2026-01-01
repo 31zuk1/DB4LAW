@@ -41,5 +41,18 @@ def enrich_ndl(
     enricher = Enricher(vault, targets)
     enricher.enrich()
 
+@app.command()
+def summarize(
+    vault: Path = typer.Option(..., help="Path to Vault root"),
+    targets: Path = typer.Option(..., help="Path to targets.yaml"),
+    force: bool = typer.Option(False, help="Regenerate summaries even if they exist")
+):
+    """
+    Generate AI summaries for articles using Gemini API.
+    """
+    from .core.summarizer import Summarizer
+    summarizer = Summarizer(vault, targets, force=force)
+    summarizer.summarize()
+
 if __name__ == "__main__":
     app()

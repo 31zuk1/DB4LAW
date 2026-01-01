@@ -4,6 +4,7 @@ heading: ''
 id: JPLAW:321CONSTITUTION#main#27
 law_id: 321CONSTITUTION
 part: main
+law_name: 日本国憲法
 ---
 
 # 第二十七条 
@@ -17,3 +18,5 @@ part: main
 ## 
 児童は、これを酷使してはならない。
 
+## AI要約
+すべての人には働く権利があり、働くことに関する義務もあります。働く条件については法律で決められており、特に子どもを過度に働かせることは禁止されています。

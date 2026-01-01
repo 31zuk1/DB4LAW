@@ -4,6 +4,7 @@ heading: ''
 id: JPLAW:321CONSTITUTION#main#2
 law_id: 321CONSTITUTION
 part: main
+law_name: 日本国憲法
 ---
 
 # 第二条 
@@ -11,3 +12,5 @@ part: main
 ## 
 皇位は、世襲のものであつて、国会の議決した皇室典範の定めるところにより、これを継承する。
 
+## AI要約
+皇位は家族の中で受け継がれるものであり、その継承のルールは国会が決めた法律に従って行われます。
