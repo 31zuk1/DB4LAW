@@ -64,10 +64,11 @@ class Tier1Builder:
         # Determine law structure
         # e-Gov XML: <LawNum>, <LawBody><MainProvision>...</MainProvision><SupplProvision>...</SupplProvision>
         
-        law_dir = self.laws_dir / law_id
-        if not law_dir.exists():
-            logger.warning(f"Tier 0 metadata not found for {law_id}, skipping article generation.")
-            # For robustness, maybe create dir? But Tier 0 should run first.
+        from ..utils.fs import find_law_dir_by_id
+        law_dir = find_law_dir_by_id(self.laws_dir, law_id)
+        
+        if not law_dir or not law_dir.exists():
+            logger.warning(f"Tier 0 metadata not found for {law_id} (Dir lookup failed), skipping article generation.")
             return
         
         from ..utils.fs import get_law_node_file
@@ -99,9 +100,22 @@ class Tier1Builder:
         for i, spl in enumerate(soup.find_all("SupplProvision")):
             amend_num = spl.get("AmendLawNum", f"init_{i}")
             safe_amend = re.sub(r'[^\w\-]', '_', amend_num)
-            spl_dir = articles_dir / "suppl" / safe_amend
-            spl_dir.mkdir(exist_ok=True)
-            self._process_part(spl, law_id, spl_dir, "suppl", extract_edges, all_edges if extract_edges else None)
+            
+            # Check if this provision has articles
+            has_articles = bool(spl.find("Article"))
+            
+            if has_articles:
+                # Use subdirectory
+                out_dir = articles_dir / "suppl" / safe_amend
+                out_dir.mkdir(exist_ok=True, parents=True)
+                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend)
+            else:
+                # Use direct file under suppl/
+                # pass custom optional filename to _process_part?
+                # or modify _process_part to handle it.
+                # Let's pass 'file_key_override' to process_part
+                out_dir = articles_dir / "suppl"
+                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend)
 
         if extract_edges and all_edges:
             with open(law_dir / "edges.jsonl", "w", encoding="utf-8") as f:
@@ -113,7 +127,7 @@ class Tier1Builder:
         if law_md_path:
             self._update_law_tier(law_md_path, final_tier)
 
-    def _process_part(self, container, law_id: str, out_dir: Path, part_type: str, extract_edges: bool = False, edge_list: List = None):
+    def _process_part(self, container, law_id: str, out_dir: Path, part_type: str, extract_edges: bool = False, edge_list: List = None, file_key_override: str = None):
         if not container:
             return
 
@@ -125,8 +139,12 @@ class Tier1Builder:
             # Check for direct paragraphs
             direct_paragraphs = container.find_all("Paragraph", recursive=False)
             if direct_paragraphs:
-                # Treat as a single unit "Provision"
-                file_key = "Provision"
+                # Treat as a single unit
+                if file_key_override:
+                    file_key = file_key_override
+                else:
+                    file_key = "Provision"
+                
                 file_path = out_dir / f"{file_key}.md"
                 
                 content = f"# 附則\n\n"
@@ -183,7 +201,38 @@ class Tier1Builder:
             # Intuitive file naming: Article_1, Article_1_2
             safe_num = num.replace("_", "_") # already _ in XML usually?
             # XML Num is usually "1", "1_2"
-            file_key = f"Article_{safe_num}"
+            
+            # If we are in a checked-in subdirectory for suppl, we might want to keep Article_1.md
+            # But user complained about collision.
+            # Collision only happens if they search by filename and both are "Article_1.md".
+            # If we prefix with AmendLawNum, it becomes unique.
+            
+            if file_key_override and "suppl" in str(out_dir):
+                 # This branch shouldn't be reached if we are using subdir based on previous logic?
+                 # Wait, logic above:
+                 # if has_articles: out_dir = .../suppl/safe_amend
+                 # if not has_articles: out_dir = .../suppl, file_key_override=safe_amend
+                 
+                 # So if has_articles, out_dir already includes safe_amend directory.
+                 # User says: articles/suppl/平成.../Article_1.md vs articles/main/Article_1.md
+                 # The user wants unique FILENAMES even across folders?
+                 # "Search problem" implies flat file search.
+                 
+                 # So we should prepend the safe_amend to the filename itself?
+                 # Even inside the folder? Or maybe we don't need the folder if we have unique filenames?
+                 # But folder is good for grouping.
+                 
+                 # Let's verify if we can pass safe_amend even when using subdir.
+                 # We need to change the call in build() first.
+                 pass
+
+            base_name = f"Article_{safe_num}"
+            if file_key_override:
+                 # If override provided (which denotes the amend law num), prefix it.
+                 # We need to ensure we pass it in build() when has_articles too.
+                 file_key = f"{file_key_override}_{base_name}"
+            else:
+                 file_key = base_name
             
             file_path = out_dir / f"{file_key}.md"
 

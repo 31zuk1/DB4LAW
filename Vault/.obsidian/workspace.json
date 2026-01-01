@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7db6fa710e9e72eb",
+        "id": "b00d2b3483eb004a",
         "type": "tabs",
         "children": [
           {
-            "id": "7c09bcf1c5973063",
+            "id": "c536edfb1d9c0382",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "グラフビュー"
+              "type": "markdown",
+              "state": {
+                "file": "laws/刑法/articles/main/Article_1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Article_1"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "刑法",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 936.5
   },
   "right": {
     "id": "eb3aba123b7ecc74",
@@ -176,33 +180,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "7c09bcf1c5973063",
+  "active": "c536edfb1d9c0382",
   "lastOpenFiles": [
-    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/Article_41.md",
-    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/Article_39.md",
-    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/Article_8.md",
-    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/Article_1.md",
-    "laws/140AC0000000045/articles/suppl/令和七年四月二三日法律第二六号/Article_1.md",
-    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_21.md",
-    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_20.md",
-    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_3.md",
-    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_2.md",
-    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_1.md",
-    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/Article_40.md",
-    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/Article_10.md",
-    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/Article_9.md",
-    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/Article_1.md",
-    "laws/140AC0000000045/articles/suppl/令和四年六月一七日法律第六七号/Provision.md",
-    "laws/140AC0000000045/articles/suppl/平成三〇年七月一三日法律第七二号/Article_31.md",
-    "laws/140AC0000000045/articles/suppl/平成三〇年七月一三日法律第七二号/Article_1.md",
-    "laws/140AC0000000045/articles/suppl/平成二九年六月二三日法律第七二号/Article_9.md",
-    "laws/140AC0000000045/articles/suppl/平成二九年六月二三日法律第七二号/Article_2.md",
-    "laws/140AC0000000045/articles/suppl/平成二九年六月二三日法律第七二号/Article_1.md",
-    "laws/140AC0000000045/articles/suppl/平成二九年六月二一日法律第六七号/Article_5.md",
-    "laws/140AC0000000045/articles/suppl/平成二九年六月二一日法律第六七号/Article_1.md",
-    "laws/140AC0000000045/articles/suppl/平成二八年六月三日法律第五四号/Article_1.md",
-    "laws/140AC0000000045/articles/suppl/平成二五年一一月二七日法律第八六号/Article_15.md",
-    "laws/140AC0000000045/articles/suppl/平成二五年一一月二七日法律第八六号/Article_14.md",
-    "laws/140AC0000000045/articles/suppl/平成二五年一一月二七日法律第八六号/Article_1.md"
+    "laws/刑法/articles/main/Article_2.md",
+    "laws/刑法/articles/main/Article_1.md",
+    "laws/刑法/刑法.md",
+    "laws/日本国憲法/articles/main/Article_4.md",
+    "laws/刑事訴訟法/刑事訴訟法.md",
+    "laws/刑法/articles/main/Article_7.md",
+    "laws/刑法/articles/main/Article_5.md",
+    "laws/刑事補償法/刑事補償法.md",
+    "laws/刑法/articles/main/Article_3.md",
+    "laws/軽犯罪法/軽犯罪法.md",
+    "laws/たばこ事業法/たばこ事業法.md",
+    "laws/あん摩マツサージ指圧師、はり師及びきゆう師に係る学校養成施設認定規則/あん摩マツサージ指圧師、はり師及びきゆう師に係る学校養成施設認定規則.md",
+    "laws/アフリカ開発銀行への加盟に伴う措置に関する法律/アフリカ開発銀行への加盟に伴う措置に関する法律.md",
+    "laws/あへん法/あへん法.md",
+    "laws/アイヌの人々の誇りが尊重される社会を実現するための施策の推進に関する法律施行令附則第二条に規定する共有財産の返還時の手続に関する省令/アイヌの人々の誇りが尊重される社会を実現するための施策の推進に関する法律施行令附則第二条に規定する共有財産の返還時の手続に関する省令.md",
+    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/令和五年五月一七日法律第二八号_Article_1.md",
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/令和七年五月二三日法律第三九号_Article_41.md",
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/令和七年五月二三日法律第三九号_Article_39.md",
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/令和七年五月二三日法律第三九号_Article_8.md",
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/令和七年五月二三日法律第三九号_Article_1.md",
+    "laws/140AC0000000045/articles/suppl/令和七年四月二三日法律第二六号/令和七年四月二三日法律第二六号_Article_1.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/令和五年六月二三日法律第六六号_Article_21.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/令和五年六月二三日法律第六六号_Article_20.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/令和五年六月二三日法律第六六号_Article_3.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/令和五年六月二三日法律第六六号_Article_2.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/令和五年六月二三日法律第六六号_Article_1.md",
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号",
+    "laws/140AC0000000045/articles/suppl/令和七年四月二三日法律第二六号",
+    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号",
+    "laws/140AC0000000045/articles/suppl/平成三〇年七月一三日法律第七二号",
+    "laws/140AC0000000045/articles/suppl/平成二九年六月二一日法律第六七号",
+    "laws/140AC0000000045/articles/suppl/平成二八年六月三日法律第五四号",
+    "laws/140AC0000000045/articles/suppl/平成二五年一一月二七日法律第八六号",
+    "laws/140AC0000000045/articles/suppl/平成二五年六月一九日法律第四九号",
+    "laws/140AC0000000045/articles/suppl/平成二三年六月二四日法律第七四号",
+    "laws/140AC0000000045/articles/suppl/平成二二年四月二七日法律第二六号"
   ]
 }

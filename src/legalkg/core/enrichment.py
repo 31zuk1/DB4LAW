@@ -43,9 +43,12 @@ class Enricher:
         print(f"Enrichment completed. Updated {success_count}/{len(self.targets)} laws.")
 
     def _enrich_law(self, law_id: str) -> bool:
-        from ..utils.fs import get_law_node_file
+        from ..utils.fs import get_law_node_file, find_law_dir_by_id
         
-        law_dir = self.laws_dir / law_id
+        law_dir = find_law_dir_by_id(self.laws_dir, law_id)
+        if not law_dir:
+             return False
+
         law_md_path = get_law_node_file(law_dir)
         
         if not law_md_path or not law_md_path.exists():
