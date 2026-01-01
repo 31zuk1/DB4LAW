@@ -1,0 +1,16 @@
+---
+article_num: '21'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#21
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第二十一条 
+
+## 
+集会、結社及び言論、出版その他一切の表現の自由は、これを保障する。
+
+## 
+検閲は、これをしてはならない。通信の秘密は、これを侵してはならない。
+

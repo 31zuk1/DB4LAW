@@ -1,0 +1,13 @@
+---
+article_num: '72'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#72
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第七十二条 
+
+## 
+内閣総理大臣は、内閣を代表して議案を国会に提出し、一般国務及び外交関係について国会に報告し、並びに行政各部を指揮監督する。
+

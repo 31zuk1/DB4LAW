@@ -1,0 +1,16 @@
+---
+article_num: '64'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#64
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第六十四条 
+
+## 
+国会は、罷免の訴追を受けた裁判官を裁判するため、両議院の議員で組織する弾劾裁判所を設ける。
+
+## 
+弾劾に関する事項は、法律でこれを定める。
+

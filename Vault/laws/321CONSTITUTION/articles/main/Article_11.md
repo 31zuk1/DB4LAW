@@ -1,0 +1,13 @@
+---
+article_num: '11'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#11
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第十一条 
+
+## 
+国民は、すべての基本的人権の享有を妨げられない。この憲法が国民に保障する基本的人権は、侵すことのできない永久の権利として、現在及び将来の国民に与へられる。
+

@@ -1,0 +1,13 @@
+---
+article_num: '83'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#83
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第八十三条 
+
+## 
+国の財政を処理する権限は、国会の議決に基いて、これを行使しなければならない。
+

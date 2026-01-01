@@ -1,0 +1,13 @@
+---
+article_num: Provision
+heading: 附則
+id: JPLAW:140AC0000000045#suppl#Provision
+law_id: 140AC0000000045
+part: suppl
+---
+
+# 附則
+
+## １
+この法律の施行期日は、昭和二十八年十二月三十一日までの間において政令で定める。
+

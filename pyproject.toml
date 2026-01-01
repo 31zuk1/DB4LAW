@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legalkg"
+version = "0.1.0"
+description = "Legal Knowledge Graph PoC"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "typer>=0.9.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.66.0",
+    "lxml>=5.1.0"
+]
+
+[project.scripts]
+legalkg = "legalkg.cli:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

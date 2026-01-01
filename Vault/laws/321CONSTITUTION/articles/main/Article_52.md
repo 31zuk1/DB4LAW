@@ -1,0 +1,13 @@
+---
+article_num: '52'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#52
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第五十二条 
+
+## 
+国会の常会は、毎年一回これを召集する。
+

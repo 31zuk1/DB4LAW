@@ -1,0 +1,13 @@
+---
+article_num: '17'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#17
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第十七条 
+
+## 
+何人も、公務員の不法行為により、損害を受けたときは、法律の定めるところにより、国又は公共団体に、その賠償を求めることができる。
+

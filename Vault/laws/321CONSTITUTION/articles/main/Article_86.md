@@ -1,0 +1,13 @@
+---
+article_num: '86'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#86
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第八十六条 
+
+## 
+内閣は、毎会計年度の予算を作成し、国会に提出して、その審議を受け議決を経なければならない。
+

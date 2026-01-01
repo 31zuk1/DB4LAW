@@ -1,0 +1,13 @@
+---
+article_num: '39'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#39
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第三十九条 
+
+## 
+何人も、実行の時に適法であつた行為又は既に無罪とされた行為については、刑事上の責任を問はれない。又、同一の犯罪について、重ねて刑事上の責任を問はれない。
+

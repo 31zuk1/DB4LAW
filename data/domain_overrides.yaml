@@ -1,0 +1,3 @@
+# Overrides for specific laws
+# format:
+#   LAW_ID: [Domain1, Domain2]

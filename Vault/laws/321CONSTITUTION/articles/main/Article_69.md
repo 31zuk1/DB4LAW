@@ -1,0 +1,13 @@
+---
+article_num: '69'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#69
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第六十九条 
+
+## 
+内閣は、衆議院で不信任の決議案を可決し、又は信任の決議案を否決したときは、十日以内に衆議院が解散されない限り、総辞職をしなければならない。
+

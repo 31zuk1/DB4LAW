@@ -1,0 +1,16 @@
+---
+article_num: '6'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#6
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第六条 
+
+## 
+天皇は、国会の指名に基いて、内閣総理大臣を任命する。
+
+## 
+天皇は、内閣の指名に基いて、最高裁判所の長たる裁判官を任命する。
+

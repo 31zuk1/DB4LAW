@@ -1,0 +1,16 @@
+---
+article_num: '22'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#22
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第二十二条 
+
+## 
+何人も、公共の福祉に反しない限り、居住、移転及び職業選択の自由を有する。
+
+## 
+何人も、外国に移住し、又は国籍を離脱する自由を侵されない。
+

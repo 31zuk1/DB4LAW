@@ -1,0 +1,13 @@
+---
+article_num: Provision
+heading: 附則
+id: JPLAW:140AC0000000045#suppl#Provision
+law_id: 140AC0000000045
+part: suppl
+---
+
+# 附則
+
+## 
+本法施行ノ期日ハ勅令ヲ以テ之ヲ定ム
+

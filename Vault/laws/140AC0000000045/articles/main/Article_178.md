@@ -1,0 +1,13 @@
+---
+article_num: '178'
+heading: ''
+id: JPLAW:140AC0000000045#main#178
+law_id: 140AC0000000045
+part: main
+---
+
+# 第百七十八条 
+
+## 
+削除
+

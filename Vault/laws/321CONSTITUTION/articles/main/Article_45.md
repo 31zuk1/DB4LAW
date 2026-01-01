@@ -1,0 +1,13 @@
+---
+article_num: '45'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#45
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第四十五条 
+
+## 
+衆議院議員の任期は、四年とする。但し、衆議院解散の場合には、その期間満了前に終了する。
+

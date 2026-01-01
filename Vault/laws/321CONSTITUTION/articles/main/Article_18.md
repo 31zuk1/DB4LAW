@@ -1,0 +1,13 @@
+---
+article_num: '18'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#18
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第十八条 
+
+## 
+何人も、いかなる奴隷的拘束も受けない。又、犯罪に因る処罰の場合を除いては、その意に反する苦役に服させられない。
+

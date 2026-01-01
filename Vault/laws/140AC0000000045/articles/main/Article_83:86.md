@@ -1,0 +1,13 @@
+---
+article_num: 83:86
+heading: ''
+id: JPLAW:140AC0000000045#main#83:86
+law_id: 140AC0000000045
+part: main
+---
+
+# 第八十三条から第八十六条まで 
+
+## 
+削除
+

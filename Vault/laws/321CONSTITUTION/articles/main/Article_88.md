@@ -1,0 +1,13 @@
+---
+article_num: '88'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#88
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第八十八条 
+
+## 
+すべて皇室財産は、国に属する。すべて皇室の費用は、予算に計上して国会の議決を経なければならない。
+

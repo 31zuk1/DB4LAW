@@ -1,0 +1,13 @@
+---
+article_num: '62'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#62
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第六十二条 
+
+## 
+両議院は、各々国政に関する調査を行ひ、これに関して、証人の出頭及び証言並びに記録の提出を要求することができる。
+

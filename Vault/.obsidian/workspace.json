@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "28de212409ae2753",
+    "type": "split",
+    "children": [
+      {
+        "id": "7db6fa710e9e72eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c09bcf1c5973063",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "グラフビュー"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f60e9e8bcf2f417c",
+    "type": "split",
+    "children": [
+      {
+        "id": "f00c463cfb4a10a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2f4e0d6353fdf6a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "69b568e25fbe1ddd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "daaf8e209fcf411d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "eb3aba123b7ecc74",
+    "type": "split",
+    "children": [
+      {
+        "id": "b94fc04735b2859a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7273aa69dddff5c3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "バックリンク"
+            }
+          },
+          {
+            "id": "41b3c27e97a045f5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "アウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "463c24112d5a4e12",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "547bd0205002c717",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "すべてのプロパティ"
+            }
+          },
+          {
+            "id": "359a5335d85e129e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "アウトライン"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7c09bcf1c5973063",
+  "lastOpenFiles": [
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/Article_41.md",
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/Article_39.md",
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/Article_8.md",
+    "laws/140AC0000000045/articles/suppl/令和七年五月二三日法律第三九号/Article_1.md",
+    "laws/140AC0000000045/articles/suppl/令和七年四月二三日法律第二六号/Article_1.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_21.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_20.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_3.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_2.md",
+    "laws/140AC0000000045/articles/suppl/令和五年六月二三日法律第六六号/Article_1.md",
+    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/Article_40.md",
+    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/Article_10.md",
+    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/Article_9.md",
+    "laws/140AC0000000045/articles/suppl/令和五年五月一七日法律第二八号/Article_1.md",
+    "laws/140AC0000000045/articles/suppl/令和四年六月一七日法律第六七号/Provision.md",
+    "laws/140AC0000000045/articles/suppl/平成三〇年七月一三日法律第七二号/Article_31.md",
+    "laws/140AC0000000045/articles/suppl/平成三〇年七月一三日法律第七二号/Article_1.md",
+    "laws/140AC0000000045/articles/suppl/平成二九年六月二三日法律第七二号/Article_9.md",
+    "laws/140AC0000000045/articles/suppl/平成二九年六月二三日法律第七二号/Article_2.md",
+    "laws/140AC0000000045/articles/suppl/平成二九年六月二三日法律第七二号/Article_1.md",
+    "laws/140AC0000000045/articles/suppl/平成二九年六月二一日法律第六七号/Article_5.md",
+    "laws/140AC0000000045/articles/suppl/平成二九年六月二一日法律第六七号/Article_1.md",
+    "laws/140AC0000000045/articles/suppl/平成二八年六月三日法律第五四号/Article_1.md",
+    "laws/140AC0000000045/articles/suppl/平成二五年一一月二七日法律第八六号/Article_15.md",
+    "laws/140AC0000000045/articles/suppl/平成二五年一一月二七日法律第八六号/Article_14.md",
+    "laws/140AC0000000045/articles/suppl/平成二五年一一月二七日法律第八六号/Article_1.md"
+  ]
+}

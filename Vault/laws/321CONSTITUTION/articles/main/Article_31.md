@@ -1,0 +1,13 @@
+---
+article_num: '31'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#31
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第三十一条 
+
+## 
+何人も、法律の定める手続によらなければ、その生命若しくは自由を奪はれ、又はその他の刑罰を科せられない。
+

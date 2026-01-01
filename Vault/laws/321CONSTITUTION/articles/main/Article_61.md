@@ -1,0 +1,13 @@
+---
+article_num: '61'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#61
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第六十一条 
+
+## 
+条約の締結に必要な国会の承認については、前条第二項の規定を準用する。
+

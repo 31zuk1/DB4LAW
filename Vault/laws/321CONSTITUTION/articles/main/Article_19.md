@@ -1,0 +1,13 @@
+---
+article_num: '19'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#19
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第十九条 
+
+## 
+思想及び良心の自由は、これを侵してはならない。
+

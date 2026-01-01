@@ -1,0 +1,13 @@
+---
+article_num: '40'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#40
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第四十条 
+
+## 
+何人も、抑留又は拘禁された後、無罪の裁判を受けたときは、法律の定めるところにより、国にその補償を求めることができる。
+

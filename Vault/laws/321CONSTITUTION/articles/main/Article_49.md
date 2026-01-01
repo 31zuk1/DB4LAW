@@ -1,0 +1,13 @@
+---
+article_num: '49'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#49
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第四十九条 
+
+## 
+両議院の議員は、法律の定めるところにより、国庫から相当額の歳費を受ける。
+

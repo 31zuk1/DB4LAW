@@ -1,0 +1,13 @@
+---
+article_num: '71'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#71
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第七十一条 
+
+## 
+前二条の場合には、内閣は、あらたに内閣総理大臣が任命されるまで引き続きその職務を行ふ。
+

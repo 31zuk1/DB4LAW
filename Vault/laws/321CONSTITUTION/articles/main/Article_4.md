@@ -1,0 +1,16 @@
+---
+article_num: '4'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#4
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第四条 
+
+## 
+天皇は、この憲法の定める国事に関する行為のみを行ひ、国政に関する権能を有しない。
+
+## 
+天皇は、法律の定めるところにより、その国事に関する行為を委任することができる。
+

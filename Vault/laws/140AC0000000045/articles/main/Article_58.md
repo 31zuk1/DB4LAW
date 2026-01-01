@@ -1,0 +1,13 @@
+---
+article_num: '58'
+heading: ''
+id: JPLAW:140AC0000000045#main#58
+law_id: 140AC0000000045
+part: main
+---
+
+# 第五十八条 
+
+## 
+削除
+

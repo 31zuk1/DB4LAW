@@ -1,0 +1,13 @@
+---
+article_num: '5'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#5
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第五条 
+
+## 
+皇室典範の定めるところにより摂政を置くときは、摂政は、天皇の名でその国事に関する行為を行ふ。この場合には、前条第一項の規定を準用する。
+

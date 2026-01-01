@@ -1,0 +1,13 @@
+---
+article_num: '91'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#91
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第九十一条 
+
+## 
+内閣は、国会及び国民に対し、定期に、少くとも毎年一回、国の財政状況について報告しなければならない。
+

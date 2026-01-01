@@ -1,0 +1,13 @@
+---
+article_num: '81'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#81
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第八十一条 
+
+## 
+最高裁判所は、一切の法律、命令、規則又は処分が憲法に適合するかしないかを決定する権限を有する終審裁判所である。
+

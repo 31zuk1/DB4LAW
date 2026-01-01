@@ -1,0 +1,13 @@
+---
+article_num: '50'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#50
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第五十条 
+
+## 
+両議院の議員は、法律の定める場合を除いては、国会の会期中逮捕されず、会期前に逮捕された議員は、その議院の要求があれば、会期中これを釈放しなければならない。
+

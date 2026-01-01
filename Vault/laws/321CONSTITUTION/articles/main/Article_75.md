@@ -1,0 +1,13 @@
+---
+article_num: '75'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#75
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第七十五条 
+
+## 
+国務大臣は、その在任中、内閣総理大臣の同意がなければ、訴追されない。但し、これがため、訴追の権利は、害されない。
+

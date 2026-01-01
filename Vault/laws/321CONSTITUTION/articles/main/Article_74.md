@@ -1,0 +1,13 @@
+---
+article_num: '74'
+heading: ''
+id: JPLAW:321CONSTITUTION#main#74
+law_id: 321CONSTITUTION
+part: main
+---
+
+# 第七十四条 
+
+## 
+法律及び政令には、すべて主任の国務大臣が署名し、内閣総理大臣が連署することを必要とする。
+
