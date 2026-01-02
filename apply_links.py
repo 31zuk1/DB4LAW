@@ -9,13 +9,13 @@ import sys
 
 def apply_to_law(law_dir: Path, dry_run: bool = False):
     """一つの法令の全条文に適用"""
-    articles_dir = law_dir / 'articles' / 'main'
+    articles_dir = law_dir / '本文'
 
     if not articles_dir.exists():
         print(f"Error: {articles_dir} が存在しません")
         return
 
-    article_files = sorted(articles_dir.glob('Article_*.md'))
+    article_files = sorted(articles_dir.glob('第*.md'))
 
     print(f"\n{'='*80}")
     print(f"法令: {law_dir.name}")
