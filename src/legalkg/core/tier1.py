@@ -283,25 +283,36 @@ class Tier1Builder:
             
             full_text_for_edge = ""
             
+            # Setup extractor for linking
+            from .tier2 import EdgeExtractor
+            extractor = EdgeExtractor()
+            
             paragraphs = art.find_all("Paragraph")
             for p in paragraphs:
                 p_num = p.find("ParagraphNum")
                 p_num_text = p_num.text if p_num else ""
                 
                 sentences = p.find_all("Sentence")
-                text = "".join([s.text for s in sentences])
+                raw_text = "".join([s.text for s in sentences])
+                
+                # Link Injection
+                text = extractor.replace_refs(raw_text, law_name) if law_name else raw_text
                 
                 content += f"## {p_num_text}\n{text}\n\n"
-                full_text_for_edge += text + "\n"
+                full_text_for_edge += raw_text + "\n"
                 
                 items = p.find_all("Item")
                 for item in items:
                     i_title = item.find("ItemTitle")
                     i_title_text = i_title.text if i_title else ""
                     i_sentences = item.find_all("Sentence")
-                    i_text = "".join([s.text for s in i_sentences])
+                    i_raw_text = "".join([s.text for s in i_sentences])
+                    
+                    # Link Injection
+                    i_text = extractor.replace_refs(i_raw_text, law_name) if law_name else i_raw_text
+                    
                     content += f"- {i_title_text} {i_text}\n"
-                    full_text_for_edge += i_text + "\n"
+                    full_text_for_edge += i_raw_text + "\n"
             
             # Frontmatter
             node_id = f"JPLAW:{law_id}#{part_type}#{num}"
