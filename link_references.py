@@ -102,14 +102,14 @@ def normalize_article_num(article_str: str) -> Tuple[Optional[int], Optional[int
 
 def article_num_to_id(main: int, sub: Optional[int] = None) -> str:
     """
-    条文番号からファイル名形式のIDを生成
-    (109, None) → "Article_109"
-    (3, 2) → "Article_3_2"
+    条文番号からファイル名形式のIDを生成（日本語形式）
+    (109, None) → "第109条"
+    (3, 2) → "第3条の2"
     """
     if sub is not None:
-        return f"Article_{main}_{sub}"
+        return f"第{main}条の{sub}"
     else:
-        return f"Article_{main}"
+        return f"第{main}条"
 
 
 class ReferenceExtractor:
@@ -130,24 +130,34 @@ class ReferenceExtractor:
                 metadata = yaml.safe_load(yaml_str)
                 article_num_str = str(metadata.get('article_num', '0'))
 
-                # 範囲形式（'73:76'）の場合は最初の番号を使用
-                if ':' in article_num_str:
-                    article_num_str = article_num_str.split(':')[0]
+                # 日本語形式（'第111条', '第3条の2', '第73条から第76条まで', '附則第1条'）から数値を抽出
+                # 範囲形式の場合は最初の番号を使用
+                if 'から' in article_num_str and '条まで' in article_num_str:
+                    # '第73条から第76条まで' → '第73条'
+                    article_num_str = article_num_str.split('から')[0]
 
-                # 枝番形式（'117_2'）の場合は主番号を使用
-                if '_' in article_num_str:
-                    article_num_str = article_num_str.split('_')[0]
+                # '附則'を削除
+                article_num_str = article_num_str.replace('附則', '')
 
+                # '第'と'条'を削除して数値部分を抽出
+                article_num_str = article_num_str.replace('第', '').replace('条', '')
+
+                # 枝番形式（'3の2'）の場合は主番号を使用
+                if 'の' in article_num_str:
+                    article_num_str = article_num_str.split('の')[0]
+
+                # 数値に変換
                 try:
-                    self.current_article_num = int(article_num_str)
+                    self.current_article_num = int(article_num_str.strip())
                 except ValueError:
+                    # 空文字列や'附則'のみの場合
                     self.current_article_num = 0
 
                 self.current_law_name = metadata.get('law_name', '')
 
         # 同じディレクトリ内の全条文ファイルを取得
         articles_dir = article_file.parent
-        for f in articles_dir.glob('Article_*.md'):
+        for f in articles_dir.glob('第*.md'):
             self.available_articles.add(f.stem)  # Article_N の部分
 
     def extract_references(self, text: str) -> List[Reference]:
