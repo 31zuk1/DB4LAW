@@ -58,5 +58,36 @@ class EdgeExtractor:
                 
         return edges
 
+    def replace_refs(self, text: str, law_name: str) -> str:
+        """
+        Replace matched references with Obsidian WikiLinks.
+        e.g. "第九条" -> "[[laws/刑法/本文/第9条.md|第九条]]"
+        Currently assumes references are within the same law and in MainProvision (本文).
+        """
+        def _replacer(m):
+            original_text = m.group(0) # e.g. 第九条
+            ref_num_raw = m.group(1)
+            
+            if "の" in ref_num_raw:
+                parts = ref_num_raw.split("の")
+                article_num = str(kanji_to_int(parts[0]))
+                sub_num = str(kanji_to_int(parts[1]))
+                # Filename format: 第1条の2.md
+                target_filename = f"第{article_num}条の{sub_num}.md"
+            else:
+                article_num = str(kanji_to_int(ref_num_raw))
+                # Filename format: 第1条.md
+                target_filename = f"第{article_num}条.md"
+            
+            # Construct absolute link path relative to Vault root
+            # Format: laws/{law_name}/本文/{target_filename}
+            # Note: We hardcode '本文' for now as most refs are to main articles.
+            # References to SupplProvision are rare in this context.
+            link_path = f"laws/{law_name}/本文/{target_filename}"
+            
+            return f"[[{link_path}|{original_text}]]"
+
+        return self.ref_pattern.sub(_replacer, text)
+
     def _format_article_key(self, num_str: str) -> str:
         return num_str.replace("の", "_") 

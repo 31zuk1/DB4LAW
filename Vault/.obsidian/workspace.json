@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "09987cf10340c5f2",
+        "id": "165be5f3d33fa7f4",
         "type": "tabs",
         "children": [
           {
-            "id": "f41a662e97da6647",
+            "id": "7fc0bce1a92c6af3",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "新規タブ"
+              "icon": "lucide-git-fork",
+              "title": "グラフビュー"
             }
           }
         ]
@@ -177,8 +177,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f41a662e97da6647",
+  "active": "d2f4e0d6353fdf6a",
   "lastOpenFiles": [
+    "articles/main/Article_59.md",
+    "articles/main/Article_56.md",
+    "articles/main",
+    "articles",
+    "articles/main/Article_99.md",
+    "articles/main/Article_7.md",
+    "articles/main/Article_94.md",
     "laws/刑法/附則/令和七年五月二三日法律第三九号/令和七年五月二三日法律第三九号_第41条.md",
     "laws/刑法/附則/令和七年五月二三日法律第三九号/令和七年五月二三日法律第三九号_第39条.md",
     "laws/刑法/附則/令和七年五月二三日法律第三九号/令和七年五月二三日法律第三九号_第8条.md",
@@ -200,15 +207,8 @@
     "laws/刑法/附則/平成二九年六月二三日法律第七二号/平成二九年六月二三日法律第七二号_第1条.md",
     "laws/刑法/附則/平成二九年六月二一日法律第六七号/平成二九年六月二一日法律第六七号_第5条.md",
     "laws/刑法/附則/平成二九年六月二一日法律第六七号/平成二九年六月二一日法律第六七号_第1条.md",
-    "laws/刑法/附則/平成二八年六月三日法律第五四号/平成二八年六月三日法律第五四号_第1条.md",
-    "laws/刑法/附則/平成二五年一一月二七日法律第八六号/平成二五年一一月二七日法律第八六号_第15条.md",
-    "laws/刑法/附則/平成二五年一一月二七日法律第八六号/平成二五年一一月二七日法律第八六号_第14条.md",
-    "laws/刑法/附則/平成二五年一一月二七日法律第八六号/平成二五年一一月二七日法律第八六号_第1条.md",
-    "laws/刑法/附則/平成二五年六月一九日法律第四九号/平成二五年六月一九日法律第四九号_第2条.md",
     "laws/日本国憲法/附則",
     "laws/日本国憲法/本文",
-    "articles/main",
-    "articles",
     "laws/刑法/附則/平成二八年六月三日法律第五四号",
     "laws/刑法/附則/平成二五年六月一九日法律第四九号",
     "laws/刑法/附則/平成二五年一一月二七日法律第八六号",
