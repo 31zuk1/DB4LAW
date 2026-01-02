@@ -62,18 +62,26 @@ class Summarizer:
             logger.warning(f"Law directory not found for {law_id}")
             return 0, 0
         
-        articles_dir = law_dir / "articles"
-        if not articles_dir.exists():
-            logger.warning(f"Articles directory not found for {law_id}")
-            return 0, 0
-        
         # Find all article markdown files
         article_files = []
-        for subdir in ["main", "suppl"]:
-            subdir_path = articles_dir / subdir
-            if subdir_path.exists():
-                # Get all .md files recursively
-                article_files.extend(subdir_path.rglob("*.md"))
+        
+        # Check for English structure: articles/main, articles/suppl
+        articles_dir = law_dir / "articles"
+        if articles_dir.exists():
+            for subdir in ["main", "suppl"]:
+                subdir_path = articles_dir / subdir
+                if subdir_path.exists():
+                    article_files.extend(subdir_path.rglob("*.md"))
+
+        # Check for Japanese structure: 本文, 附則 (directly under law_dir)
+        for jp_dir_name in ["本文", "附則"]:
+            jp_path = law_dir / jp_dir_name
+            if jp_path.exists():
+                article_files.extend(jp_path.rglob("*.md"))
+        
+        if not article_files:
+            logger.warning(f"No article files found for {law_id}")
+            return 0, 0
         
         articles_processed = 0
         articles_summarized = 0

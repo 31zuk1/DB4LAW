@@ -112,12 +112,17 @@ class Tier1Builder:
             # Since we iterate parts, we can accumulate edges.
             pass # See below for actual integration in _process_part
             
-        articles_dir = law_dir / "articles"
-        articles_dir.mkdir(exist_ok=True)
-        (articles_dir / "main").mkdir(exist_ok=True)
-        (articles_dir / "suppl").mkdir(exist_ok=True)
+        # Updated to use Japanese folder names directly under law root
+        # articles_dir = law_dir / "articles"  <-- Removed
+        # (articles_dir / "main").mkdir(exist_ok=True)
+        # (articles_dir / "suppl").mkdir(exist_ok=True)
 
-        self._process_part(soup.find("MainProvision"), law_id, articles_dir / "main", "main", extract_edges, all_edges if extract_edges else None, law_name=law_name)
+        honbun_dir = law_dir / "本文"
+        fusoku_dir = law_dir / "附則"
+        honbun_dir.mkdir(exist_ok=True)
+        fusoku_dir.mkdir(exist_ok=True)
+
+        self._process_part(soup.find("MainProvision"), law_id, honbun_dir, "main", extract_edges, all_edges if extract_edges else None, law_name=law_name)
         
         # Handle multiple SupplProvision
         for i, spl in enumerate(soup.find_all("SupplProvision")):
@@ -129,15 +134,12 @@ class Tier1Builder:
             
             if has_articles:
                 # Use subdirectory
-                out_dir = articles_dir / "suppl" / safe_amend
+                out_dir = fusoku_dir / safe_amend
                 out_dir.mkdir(exist_ok=True, parents=True)
                 self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend, law_name=law_name)
             else:
                 # Use direct file under suppl/
-                # pass custom optional filename to _process_part?
-                # or modify _process_part to handle it.
-                # Let's pass 'file_key_override' to process_part
-                out_dir = articles_dir / "suppl"
+                out_dir = fusoku_dir
                 self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend)
 
         if extract_edges and all_edges:
