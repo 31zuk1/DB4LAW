@@ -5,12 +5,34 @@ id: JPLAW:140AC0000000045#main#158
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_154
+  type: absolute
+  original: 第百五十四条
+  snippet: ' ##  第百五十四条から前条までの文書等若しくは電磁的記録文'
+  resolved: true
+- target_id: Article_157
+  type: relative
+  original: 前条
+  snippet: ' ##  第百五十四条から前条までの文書等若しくは電磁的記録文書等を行'
+  resolved: true
+- target_id: Article_157#第1項
+  type: relative
+  original: 同条第一項
+  snippet: 文書等若しくは電磁的記録文書等を行使し、同条第一項の電磁的記録を公正証書の原本としての用に
+  resolved: true
+- target_id: Article_157#第2項
+  type: relative
+  original: 同条第二項
+  snippet: 録を公正証書の原本としての用に供し、又は同条第二項の電磁的記録を人の事務処理の用に供した者
+  resolved: true
+references_explicit_count: 4
 ---
 
 # 第百五十八条 （偽造公文書行使等）
 
 ## 
-第百五十四条から前条までの文書等若しくは電磁的記録文書等を行使し、同条第一項の電磁的記録を公正証書の原本としての用に供し、又は同条第二項の電磁的記録を人の事務処理の用に供した者は、その文書等若しくは電磁的記録文書等を偽造し、若しくは変造し、虚偽の文書等若しくは電磁的記録文書等を作成し、又は不実の記載若しくは記録をさせた者と同一の刑に処する。
+[[Article_154]]から[[Article_157]]までの文書等若しくは電磁的記録文書等を行使し、[[Article_157#第1項]]の電磁的記録を公正証書の原本としての用に供し、又は[[Article_157#第2項]]の電磁的記録を人の事務処理の用に供した者は、その文書等若しくは電磁的記録文書等を偽造し、若しくは変造し、虚偽の文書等若しくは電磁的記録文書等を作成し、又は不実の記載若しくは記録をさせた者と同一の刑に処する。
 
 ## ２
 前項の罪の未遂は、罰する。

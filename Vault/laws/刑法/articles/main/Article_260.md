@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#260
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第二百六十条 （建造物等損壊及び同致死傷）

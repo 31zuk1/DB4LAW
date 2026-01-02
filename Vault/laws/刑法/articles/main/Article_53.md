@@ -5,12 +5,19 @@ id: JPLAW:140AC0000000045#main#53
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_46
+  type: absolute
+  original: 第四十六条
+  snippet: '又は科料と他の刑とは、併科する。ただし、第四十六条の場合は、この限りでない。  ## ２ '
+  resolved: true
+references_explicit_count: 1
 ---
 
 # 第五十三条 （拘留及び科料の併科）
 
 ## 
-拘留又は科料と他の刑とは、併科する。ただし、第四十六条の場合は、この限りでない。
+拘留又は科料と他の刑とは、併科する。ただし、[[Article_46]]の場合は、この限りでない。
 
 ## ２
 二個以上の拘留又は科料は、併科する。

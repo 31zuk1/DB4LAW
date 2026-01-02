@@ -5,12 +5,29 @@ id: JPLAW:140AC0000000045#main#262
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_261
+  type: relative
+  original: 前三条
+  snippet: 'されたものを損壊し、又は傷害したときは、前三条の例による。  ## AI要約 自分の持'
+  resolved: true
+- target_id: Article_260
+  type: relative
+  original: 前三条
+  snippet: 'されたものを損壊し、又は傷害したときは、前三条の例による。  ## AI要約 自分の持'
+  resolved: true
+- target_id: Article_259
+  type: relative
+  original: 前三条
+  snippet: 'されたものを損壊し、又は傷害したときは、前三条の例による。  ## AI要約 自分の持'
+  resolved: true
+references_explicit_count: 3
 ---
 
 # 第二百六十二条 （自己の物の損壊等）
 
 ## 
-自己の物であっても、差押えを受け、物権を負担し、賃貸し、又は配偶者居住権が設定されたものを損壊し、又は傷害したときは、前三条の例による。
+自己の物であっても、差押えを受け、物権を負担し、賃貸し、又は配偶者居住権が設定されたものを損壊し、又は傷害したときは、[[Article_261]]の例による。
 
 ## AI要約
 自分の持ち物でも、他の人に差し押さえられたり、借りていたり、配偶者が住む権利がある場合には、その物を壊したり傷つけたりすると、特別なルールが適用されるということです。つまり、自分の物だからといって自由に扱えるわけではないということです。

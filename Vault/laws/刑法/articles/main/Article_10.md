@@ -5,12 +5,19 @@ id: JPLAW:140AC0000000045#main#10
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_9
+  type: relative
+  original: 前条
+  snippet: ' ##  主刑の軽重は、前条に規定する順序による。  ## ２ 同種'
+  resolved: true
+references_explicit_count: 1
 ---
 
 # 第十条 （刑の軽重）
 
 ## 
-主刑の軽重は、前条に規定する順序による。
+主刑の軽重は、[[Article_9]]に規定する順序による。
 
 ## ２
 同種の刑は、長期の長いもの又は多額の多いものを重い刑とし、長期又は多額が同じであるときは、短期の長いもの又は寡額の多いものを重い刑とする。

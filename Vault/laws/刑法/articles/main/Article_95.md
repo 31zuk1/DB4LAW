@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#95
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第九十五条 （公務執行妨害及び職務強要）

@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#161_2
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第百六十一条の二 （電磁的記録不正作出及び供用）

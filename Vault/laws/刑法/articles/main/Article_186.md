@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#186
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第百八十六条 （常習賭博及び賭博場開張等図利）

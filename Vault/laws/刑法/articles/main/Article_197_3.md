@@ -5,12 +5,24 @@ id: JPLAW:140AC0000000045#main#197_3
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_196
+  type: relative
+  original: 前二条
+  snippet: ' ##  公務員が前二条の罪を犯し、よって不正な行為をし、又は相'
+  resolved: true
+- target_id: Article_195
+  type: relative
+  original: 前二条
+  snippet: ' ##  公務員が前二条の罪を犯し、よって不正な行為をし、又は相'
+  resolved: true
+references_explicit_count: 2
 ---
 
 # 第百九十七条の三 （加重収賄及び事後収賄）
 
 ## 
-公務員が前二条の罪を犯し、よって不正な行為をし、又は相当の行為をしなかったときは、一年以上の有期拘禁刑に処する。
+公務員が[[Article_196]]の罪を犯し、よって不正な行為をし、又は相当の行為をしなかったときは、一年以上の有期拘禁刑に処する。
 
 ## ２
 公務員が、その職務上不正な行為をしたこと又は相当の行為をしなかったことに関し、賄賂を収受し、若しくはその要求若しくは約束をし、又は第三者にこれを供与させ、若しくはその供与の要求若しくは約束をしたときも、前項と同様とする。

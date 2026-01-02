@@ -5,12 +5,19 @@ id: JPLAW:140AC0000000045#main#132
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_130
+  type: absolute
+  original: 第百三十条
+  snippet: ' ##  第百三十条の罪の未遂は、罰する。  ## AI要約'
+  resolved: true
+references_explicit_count: 1
 ---
 
 # 第百三十二条 （未遂罪）
 
 ## 
-第百三十条の罪の未遂は、罰する。
+[[Article_130]]の罪の未遂は、罰する。
 
 ## AI要約
 犯罪をしようとしたけれど、実際には成功しなかった場合でも、その行為に対して罰を受けることがあります。つまり、未遂の段階でも法律によって罰せられるということです。

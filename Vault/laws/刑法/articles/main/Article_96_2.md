@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#96_2
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第九十六条の二 （強制執行妨害目的財産損壊等）

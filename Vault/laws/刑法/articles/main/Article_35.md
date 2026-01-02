@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#35
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第三十五条 （正当行為）

@@ -13,6 +13,13 @@
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "憲法",
+      "color": {
+        "a": 1,
+        "rgb": 61640
+      }
     }
   ],
   "collapse-display": false,
@@ -25,6 +32,6 @@
   "repelStrength": 18.828125,
   "linkStrength": 0.364054361979167,
   "linkDistance": 281,
-  "scale": 0.03981754600430772,
+  "scale": 0.03981754600430777,
   "close": false
 }

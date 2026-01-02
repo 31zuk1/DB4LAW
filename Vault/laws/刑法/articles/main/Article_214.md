@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#214
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第二百十四条 （業務上堕胎及び同致死傷）

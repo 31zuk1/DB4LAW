@@ -5,6 +5,8 @@ id: JPLAW:321CONSTITUTION#main#23
 law_id: 321CONSTITUTION
 part: main
 law_name: 日本国憲法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第二十三条 

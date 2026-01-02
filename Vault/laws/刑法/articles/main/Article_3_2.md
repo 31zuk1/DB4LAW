@@ -5,12 +5,94 @@ id: JPLAW:140AC0000000045#main#3_2
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_176
+  type: absolute
+  original: 第百七十六条
+  snippet: る罪を犯した日本国民以外の者に適用する。第百七十六条、第百七十七条及び第百七十九条から第百八
+  resolved: true
+- target_id: Article_177
+  type: absolute
+  original: 第百七十七条
+  snippet: 本国民以外の者に適用する。第百七十六条、第百七十七条及び第百七十九条から第百八十一条まで（不
+  resolved: true
+- target_id: Article_179
+  type: absolute
+  original: 第百七十九条
+  snippet: 適用する。第百七十六条、第百七十七条及び第百七十九条から第百八十一条まで（不同意わいせつ、不
+  resolved: true
+- target_id: Article_181
+  type: absolute
+  original: 第百八十一条
+  snippet: 十六条、第百七十七条及び第百七十九条から第百八十一条まで（不同意わいせつ、不同意性交等、監護
+  resolved: true
+- target_id: Article_199
+  type: absolute
+  original: 第百九十九条
+  snippet: 等、未遂罪、不同意わいせつ等致死傷）の罪第百九十九条（殺人）の罪及びその未遂罪第二百四条（傷
+  resolved: true
+- target_id: Article_204
+  type: absolute
+  original: 第二百四条
+  snippet: 罪第百九十九条（殺人）の罪及びその未遂罪第二百四条（傷害）及び第二百五条（傷害致死）の罪第
+  resolved: true
+- target_id: Article_205
+  type: absolute
+  original: 第二百五条
+  snippet: の罪及びその未遂罪第二百四条（傷害）及び第二百五条（傷害致死）の罪第二百二十条（逮捕及び監
+  resolved: true
+- target_id: Article_220
+  type: absolute
+  original: 第二百二十条
+  snippet: 条（傷害）及び第二百五条（傷害致死）の罪第二百二十条（逮捕及び監禁）及び第二百二十一条（逮捕
+  resolved: true
+- target_id: Article_221
+  type: absolute
+  original: 第二百二十一条
+  snippet: 死）の罪第二百二十条（逮捕及び監禁）及び第二百二十一条（逮捕等致死傷）の罪第二百二十四条から第
+  resolved: true
+- target_id: Article_224
+  type: absolute
+  original: 第二百二十四条
+  snippet: ）及び第二百二十一条（逮捕等致死傷）の罪第二百二十四条から第二百二十八条まで（未成年者略取及び
+  resolved: true
+- target_id: Article_228
+  type: absolute
+  original: 第二百二十八条
+  snippet: 条（逮捕等致死傷）の罪第二百二十四条から第二百二十八条まで（未成年者略取及び誘拐、営利目的等略
+  resolved: true
+- target_id: Article_236
+  type: absolute
+  original: 第二百三十六条
+  snippet: 国外移送、被略取者引渡し等、未遂罪）の罪第二百三十六条（強盗）、第二百三十八条から第二百四十条
+  resolved: true
+- target_id: Article_238
+  type: absolute
+  original: 第二百三十八条
+  snippet: 等、未遂罪）の罪第二百三十六条（強盗）、第二百三十八条から第二百四十条まで（事後強盗、昏酔強盗
+  resolved: true
+- target_id: Article_240
+  type: absolute
+  original: 第二百四十条
+  snippet: 二百三十六条（強盗）、第二百三十八条から第二百四十条まで（事後強盗、昏酔強盗、強盗致死傷）並
+  resolved: true
+- target_id: Article_241#第1項
+  type: absolute
+  original: 第二百四十一条第一項
+  snippet: （事後強盗、昏酔強盗、強盗致死傷）並びに第二百四十一条第一項及び第三項（強盗・不同意性交等及び同致死
+  resolved: true
+- target_id: Article_241#第1項
+  type: relative
+  original: 同条第一項
+  snippet: 性交等及び同致死）の罪並びにこれらの罪（同条第一項の罪を除く。）の未遂罪  - 一 第百七
+  resolved: true
+references_explicit_count: 16
 ---
 
 # 第三条の二 （国民以外の者の国外犯）
 
 ## 
-この法律は、日本国外において日本国民に対して次に掲げる罪を犯した日本国民以外の者に適用する。第百七十六条、第百七十七条及び第百七十九条から第百八十一条まで（不同意わいせつ、不同意性交等、監護者わいせつ及び監護者性交等、未遂罪、不同意わいせつ等致死傷）の罪第百九十九条（殺人）の罪及びその未遂罪第二百四条（傷害）及び第二百五条（傷害致死）の罪第二百二十条（逮捕及び監禁）及び第二百二十一条（逮捕等致死傷）の罪第二百二十四条から第二百二十八条まで（未成年者略取及び誘拐、営利目的等略取及び誘拐、身の代金目的略取等、所在国外移送目的略取及び誘拐、人身売買、被略取者等所在国外移送、被略取者引渡し等、未遂罪）の罪第二百三十六条（強盗）、第二百三十八条から第二百四十条まで（事後強盗、昏酔強盗、強盗致死傷）並びに第二百四十一条第一項及び第三項（強盗・不同意性交等及び同致死）の罪並びにこれらの罪（同条第一項の罪を除く。）の未遂罪
+この法律は、日本国外において日本国民に対して次に掲げる罪を犯した日本国民以外の者に適用する。[[Article_176]]、[[Article_177]]及び[[Article_179]]から[[Article_181]]まで（不同意わいせつ、不同意性交等、監護者わいせつ及び監護者性交等、未遂罪、不同意わいせつ等致死傷）の罪[[Article_199]]（殺人）の罪及びその未遂罪[[Article_204]]（傷害）及び[[Article_205]]（傷害致死）の罪[[Article_220]]（逮捕及び監禁）及び[[Article_221]]（逮捕等致死傷）の罪[[Article_224]]から[[Article_228]]まで（未成年者略取及び誘拐、営利目的等略取及び誘拐、身の代金目的略取等、所在国外移送目的略取及び誘拐、人身売買、被略取者等所在国外移送、被略取者引渡し等、未遂罪）の罪[[Article_236]]（強盗）、[[Article_238]]から[[Article_240]]まで（事後強盗、昏酔強盗、強盗致死傷）並びに[[Article_241#第1項]]及び第三項（強盗・不同意性交等及び同致死）の罪並びにこれらの罪（[[Article_241#第1項]]の罪を除く。）の未遂罪
 
 - 一 第百七十六条、第百七十七条及び第百七十九条から第百八十一条まで（不同意わいせつ、不同意性交等、監護者わいせつ及び監護者性交等、未遂罪、不同意わいせつ等致死傷）の罪
 - 二 第百九十九条（殺人）の罪及びその未遂罪

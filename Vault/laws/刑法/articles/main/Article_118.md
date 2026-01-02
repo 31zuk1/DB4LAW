@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#118
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第百十八条 （ガス漏出等及び同致死傷）

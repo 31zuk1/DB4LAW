@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#163_2
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第百六十三条の二 （支払用カード電磁的記録不正作出等）

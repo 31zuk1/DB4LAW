@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#138
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第百三十八条 （税関職員によるあへん煙輸入等）

@@ -5,12 +5,39 @@ id: JPLAW:140AC0000000045#main#227
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_224
+  type: absolute
+  original: 第二百二十四条
+  snippet: ' ##  第二百二十四条、第二百二十五条又は前三条の罪を犯した者'
+  resolved: true
+- target_id: Article_225
+  type: absolute
+  original: 第二百二十五条
+  snippet: ' ##  第二百二十四条、第二百二十五条又は前三条の罪を犯した者を幇助する目的で'
+  resolved: true
+- target_id: Article_226
+  type: relative
+  original: 前三条
+  snippet: '#  第二百二十四条、第二百二十五条又は前三条の罪を犯した者を幇助する目的で、略取され'
+  resolved: true
+- target_id: Article_225
+  type: relative
+  original: 前三条
+  snippet: '#  第二百二十四条、第二百二十五条又は前三条の罪を犯した者を幇助する目的で、略取され'
+  resolved: true
+- target_id: Article_224
+  type: relative
+  original: 前三条
+  snippet: '#  第二百二十四条、第二百二十五条又は前三条の罪を犯した者を幇助する目的で、略取され'
+  resolved: true
+references_explicit_count: 5
 ---
 
 # 第二百二十七条 （被略取者引渡し等）
 
 ## 
-第二百二十四条、第二百二十五条又は前三条の罪を犯した者を幇助する目的で、略取され、誘拐され、又は売買された者を引き渡し、収受し、輸送し、蔵匿し、又は隠避させた者は、三月以上五年以下の拘禁刑に処する。
+[[Article_224]]、[[Article_225]]又は[[Article_226]]の罪を犯した者を幇助する目的で、略取され、誘拐され、又は売買された者を引き渡し、収受し、輸送し、蔵匿し、又は隠避させた者は、三月以上五年以下の拘禁刑に処する。
 
 ## ２
 第二百二十五条の二第一項の罪を犯した者を幇助する目的で、略取され又は誘拐された者を引き渡し、収受し、輸送し、蔵匿し、又は隠避させた者は、一年以上十年以下の拘禁刑に処する。

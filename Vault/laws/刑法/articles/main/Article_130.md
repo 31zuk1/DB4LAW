@@ -5,6 +5,8 @@ id: JPLAW:140AC0000000045#main#130
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第百三十条 （住居侵入等）

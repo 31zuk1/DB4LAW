@@ -5,6 +5,8 @@ id: JPLAW:321CONSTITUTION#main#91
 law_id: 321CONSTITUTION
 part: main
 law_name: 日本国憲法
+references_explicit: []
+references_explicit_count: 0
 ---
 
 # 第九十一条 

@@ -5,12 +5,24 @@ id: JPLAW:140AC0000000045#main#117_2
 law_id: 140AC0000000045
 part: main
 law_name: 刑法
+references_explicit:
+- target_id: Article_116
+  type: absolute
+  original: 第百十六条
+  snippet: ' ##  第百十六条又は前条第一項の行為が業務上必要な注意を'
+  resolved: true
+- target_id: Article_116#第1項
+  type: relative
+  original: 前条第一項
+  snippet: ' ##  第百十六条又は前条第一項の行為が業務上必要な注意を怠ったことによ'
+  resolved: true
+references_explicit_count: 2
 ---
 
 # 第百十七条の二 （業務上失火等）
 
 ## 
-第百十六条又は前条第一項の行為が業務上必要な注意を怠ったことによるとき、又は重大な過失によるときは、三年以下の拘禁刑又は百五十万円以下の罰金に処する。
+[[Article_116]]又は[[Article_116#第1項]]の行為が業務上必要な注意を怠ったことによるとき、又は重大な過失によるときは、三年以下の拘禁刑又は百五十万円以下の罰金に処する。
 
 ## AI要約
 業務上の注意を怠ったり、大きな過失があった場合には、最大で3年の懲役や150万円以下の罰金が科されることがあります。これは、仕事に関連する失火などの事故が起きたときのルールです。
