@@ -391,11 +391,16 @@ def process_law(law_name: str, vault_dir: Path, dry_run: bool = True, limit: int
             # ファイル書き込み
             new_path.write_text(fixed_content, encoding='utf-8')
 
-            # 旧ファイルがある場合はスタブを残す（オプション）
+            # 旧ファイルを削除（新しいパスと異なる場合）
             if file_path != new_path and file_path.exists():
-                stub_content = f"---\nredirect_to: '{new_path}'\n---\n\n→ [[{new_path.stem}]]"
-                # スタブを残すかどうかは設計判断
-                # file_path.write_text(stub_content, encoding='utf-8')
+                file_path.unlink()
+                # 空になったディレクトリを削除
+                try:
+                    parent = file_path.parent
+                    if parent.is_dir() and not any(parent.iterdir()):
+                        parent.rmdir()
+                except Exception:
+                    pass  # ディレクトリ削除は失敗しても続行
 
     return results
 
