@@ -142,9 +142,12 @@ class ReferenceExtractor:
                 # '第'と'条'を削除して数値部分を抽出
                 article_num_str = article_num_str.replace('第', '').replace('条', '')
 
-                # 枝番形式（'3の2'）の場合は主番号を使用
+                # 枝番形式（'3の2' または '19_2'）の場合は主番号を使用
                 if 'の' in article_num_str:
                     article_num_str = article_num_str.split('の')[0]
+                elif '_' in article_num_str:
+                    # 古いフォーマット対応: '19_2' → '19'
+                    article_num_str = article_num_str.split('_')[0]
 
                 # 数値に変換
                 try:
@@ -235,23 +238,27 @@ class ReferenceExtractor:
         """相対参照を抽出（前条、次条、前二条、前条第N項など）"""
         refs = []
 
-        # パターン: 前条（第K項）、次条（第K項）、前項
+        # パターン: 前条（第K項）（第L号）、次条（第K項）（第L号）、前項（第L号）
         patterns = [
-            (r'前([二三四五六七八九十])?条(?:第([〇一二三四五六七八九十百千0-9０-９]+)項)?', -1),  # 前条、前二条、前条第2項など
-            (r'次([二三四五六七八九十])?条(?:第([〇一二三四五六七八九十百千0-9０-９]+)項)?', 1),   # 次条、次二条、次条第2項など
+            (r'前([二三四五六七八九十])?条(?:第([〇一二三四五六七八九十百千0-9０-９]+)項)?(?:第([〇一二三四五六七八九十百千0-9０-９]+)号)?', -1),  # 前条、前二条、前条第2項第3号など
+            (r'次([二三四五六七八九十])?条(?:第([〇一二三四五六七八九十百千0-9０-９]+)項)?(?:第([〇一二三四五六七八九十百千0-9０-９]+)号)?', 1),   # 次条、次二条、次条第2項第3号など
         ]
 
         for pattern, direction in patterns:
             for match in re.finditer(pattern, text):
                 num_str = match.group(1)  # 二、三など
                 item_str = match.group(2)  # 項番号
+                clause_str = match.group(3)  # 号番号
                 count = RELATIVE_NUMS.get(num_str, 1) if num_str else 1
 
-                # 項がある場合はアンカーを追加
+                # 項・号がある場合はアンカーを追加
                 anchor = ""
                 if item_str:
                     item_num = kanji_to_int(item_str)
                     anchor = f"#第{item_num}項"
+                    if clause_str:
+                        clause_num = kanji_to_int(clause_str)
+                        anchor += f"第{clause_num}号"
 
                 if direction == -1:  # 前条
                     for i in range(1, count + 1):
