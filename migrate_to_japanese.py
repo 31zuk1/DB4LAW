@@ -210,6 +210,10 @@ class JapaneseMigrator:
             elif metadata['part'] == 'suppl':
                 metadata['part'] = '附則'
 
+        # law_name の設定（空の場合）
+        if 'law_name' in metadata and metadata['law_name'] == '':
+            metadata['law_name'] = '刑法'
+
         # id の変換
         if 'id' in metadata:
             old_id = metadata['id']
