@@ -6,7 +6,22 @@
   "hideUnresolved": false,
   "showOrphans": false,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "憲法",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "刑法",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0.1,
@@ -17,6 +32,6 @@
   "repelStrength": 18.828125,
   "linkStrength": 0.364054361979167,
   "linkDistance": 281,
-  "scale": 0.09848280266864434,
+  "scale": 0.12731655053963345,
   "close": false
 }
