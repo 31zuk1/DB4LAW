@@ -252,7 +252,18 @@ class Tier1Builder:
                  # We need to change the call in build() first.
                  pass
 
-            base_name = f"Article_{safe_num}"
+            # Japanese Filename Generation
+            parts = num.split('_')
+            if len(parts) == 1:
+                jp_article_name = f"第{parts[0]}条"
+            elif len(parts) == 2:
+                jp_article_name = f"第{parts[0]}条の{parts[1]}"
+            else:
+                 # Fallback for complex numbers
+                 safe_num_jp = num.replace('_', 'の')
+                 jp_article_name = f"第{safe_num_jp}条"
+            
+            base_name = jp_article_name
             if file_key_override:
                  # If override provided (which denotes the amend law num), prefix it.
                  # We need to ensure we pass it in build() when has_articles too.
