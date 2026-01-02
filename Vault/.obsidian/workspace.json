@@ -11,13 +11,46 @@
             "id": "d66b00823c257f63",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "グラフビュー"
+              "type": "markdown",
+              "state": {
+                "file": "laws/刑法/刑法.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "刑法"
+            }
+          },
+          {
+            "id": "4d0fd785dae491ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "laws/刑法/附則/令和五年六月二三日法律第六六号/附則第20条.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "附則第20条"
+            }
+          },
+          {
+            "id": "04955cc1e5bb2f0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "laws/刑法/本文/第19条の2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第19条の2"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -177,12 +210,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d2f4e0d6353fdf6a",
+  "active": "04955cc1e5bb2f0b",
   "lastOpenFiles": [
+    "laws/刑法/附則/平成一三年七月四日法律第九七号.md",
+    "laws/刑法/附則/令和五年六月二三日法律第六六号/附則第20条.md",
+    "laws/刑法/附則/昭和一六年三月一二日法律第六一号.md",
+    "laws/刑法/刑法.md",
+    "laws/刑法/附則/昭和二八年八月一〇日法律第一九五号.md",
     "附則/平成一九年五月二三日法律第五四号/平成一九年五月二三日法律第五四号_Article_1.md",
     "附則/平成一九年五月二三日法律第五四号",
     "附則",
-    "laws/刑法/附則/昭和二八年八月一〇日法律第一九五号.md",
     "laws/刑法/本文/第290条.md",
     "laws/刑法/本文/第77条.md",
     "laws/刑法/附則/令和七年五月二三日法律第三九号/令和七年五月二三日法律第三九号_第1条.md",
@@ -205,10 +242,6 @@
     "laws/刑法/附則/令和五年六月二三日法律第六六号/令和五年六月二三日法律第六六号_第1条.md",
     "laws/刑法/附則/令和五年五月一七日法律第二八号/令和五年五月一七日法律第二八号_第40条.md",
     "laws/刑法/附則/令和五年五月一七日法律第二八号/令和五年五月一七日法律第二八号_第10条.md",
-    "laws/刑法/附則/令和五年五月一七日法律第二八号/令和五年五月一七日法律第二八号_第9条.md",
-    "laws/刑法/附則/令和五年五月一七日法律第二八号/令和五年五月一七日法律第二八号_第1条.md",
-    "laws/刑法/附則/平成三〇年七月一三日法律第七二号/平成三〇年七月一三日法律第七二号_第31条.md",
-    "laws/刑法/附則/平成三〇年七月一三日法律第七二号/平成三〇年七月一三日法律第七二号_第1条.md",
     "laws/日本国憲法/附則",
     "laws/日本国憲法/本文",
     "laws/刑法/附則/平成二八年六月三日法律第五四号",
