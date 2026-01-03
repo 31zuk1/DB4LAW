@@ -111,15 +111,13 @@ if __name__ == '__main__':
             print("キャンセルしました")
             sys.exit(0)
 
-    # 刑法
-    keihan_dir = vault_path / '刑法'
-    if keihan_dir.exists():
-        stats_keihan = apply_to_law(keihan_dir, dry_run=dry_run)
+    # 処理対象の法令
+    target_laws = ['刑法', '日本国憲法', '民法']
 
-    # 日本国憲法
-    kenpo_dir = vault_path / '日本国憲法'
-    if kenpo_dir.exists():
-        stats_kenpo = apply_to_law(kenpo_dir, dry_run=dry_run)
+    for law_name in target_laws:
+        law_dir = vault_path / law_name
+        if law_dir.exists():
+            apply_to_law(law_dir, dry_run=dry_run)
 
     if not dry_run:
         print("\n✅ 全ての処理が完了しました")
