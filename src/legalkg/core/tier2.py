@@ -62,29 +62,58 @@ class EdgeExtractor:
         """
         Replace matched references with Obsidian WikiLinks.
         e.g. "第九条" -> "[[laws/刑法/本文/第9条.md|第九条]]"
-        Currently assumes references are within the same law and in MainProvision (本文).
+
+        重要: 外部法令への参照はリンク化しない
+        - 「民事執行法第N条」のように外部法名が前置されている場合
+        - 「同法第N条」のように他法律を参照している場合
         """
+        # 外部法令名パターン（リンク化を除外する）
+        external_law_patterns = [
+            r'民事執行法', r'民事訴訟法', r'民事保全法', r'商法', r'会社法',
+            r'破産法', r'不動産登記法', r'戸籍法', r'家事事件手続法',
+            r'地方自治法', r'自然公園法', r'競売法', r'借地借家法',
+            r'建物の区分所有等に関する法律', r'農地法', r'信託法',
+            r'電子記録債権法', r'住民基本台帳法', r'行政手続における特定の個人を識別するための番号の利用等に関する法律',
+            r'商業登記法', r'金融商品取引法', r'保険業法', r'信用金庫法',
+            r'労働金庫法', r'消費生活協同組合法', r'医療法', r'農業協同組合法',
+            r'水産業協同組合法', r'森林組合法', r'中小企業等協同組合法',
+            r'がん登録等の推進に関する法律', r'社債、株式等の振替に関する法律',
+            r'一般社団法人及び一般財団法人に関する法律', r'外国法人の登記及び夫婦財産契約の登記に関する法律',
+            r'会社更生法', r'金融機関等の更生手続の特例等に関する法律',
+            r'資産の流動化に関する法律', r'投資信託及び投資法人に関する法律',
+            r'損害保険料率算出団体に関する法律', r'同法'
+        ]
+
         def _replacer(m):
-            original_text = m.group(0) # e.g. 第九条
+            original_text = m.group(0)  # e.g. 第九条
+            match_start = m.start()
+
+            # マッチ位置の前100文字を取得して外部法参照かチェック
+            context_start = max(0, match_start - 100)
+            context = text[context_start:match_start]
+
+            # 外部法令名が直近にある場合はリンク化しない
+            for pattern in external_law_patterns:
+                if re.search(pattern + r'[^第]{0,20}$', context):
+                    return original_text  # リンク化せずにそのまま返す
+
+            # 「同法」が直前にある場合もリンク化しない
+            if re.search(r'同法[^第]{0,10}$', context):
+                return original_text
+
             ref_num_raw = m.group(1)
-            
+
             if "の" in ref_num_raw:
                 parts = ref_num_raw.split("の")
                 article_num = str(kanji_to_int(parts[0]))
                 sub_num = str(kanji_to_int(parts[1]))
-                # Filename format: 第1条の2.md
                 target_filename = f"第{article_num}条の{sub_num}.md"
             else:
                 article_num = str(kanji_to_int(ref_num_raw))
-                # Filename format: 第1条.md
                 target_filename = f"第{article_num}条.md"
-            
-            # Construct absolute link path relative to Vault root
-            # Format: laws/{law_name}/本文/{target_filename}
-            # Note: We hardcode '本文' for now as most refs are to main articles.
-            # References to SupplProvision are rare in this context.
+
             link_path = f"laws/{law_name}/本文/{target_filename}"
-            
+
             return f"[[{link_path}|{original_text}]]"
 
         return self.ref_pattern.sub(_replacer, text)
