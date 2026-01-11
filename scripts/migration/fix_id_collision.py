@@ -1,0 +1,492 @@
+#!/usr/bin/env python3
+"""
+DB4LAW: ID衝突問題の修正スクリプト
+
+問題A: 附則条文のID重複を解消
+- canonical_id を改正法IDを含む形式に統一
+- id フィールドは e-Gov 互換のまま維持（source.id に移動）
+
+問題B/C: 外部法参照・削除条文の検出とスタブ生成
+"""
+
+import re
+import yaml
+import argparse
+from pathlib import Path
+from typing import Dict, List, Tuple, Optional
+from dataclasses import dataclass
+
+
+@dataclass
+class UnresolvedLink:
+    """未解決リンク情報"""
+    source_file: Path
+    target_path: str
+    original_text: str
+    reason: str  # 'external_law' | 'missing_article' | 'deleted_article'
+    external_law_name: Optional[str] = None
+
+
+def normalize_amendment_id(raw_name: str) -> str:
+    """
+    改正法タイトルを正規化
+    '平成一一年七月一六日法律第八七号' → 'H11_L87'
+    'H11_L87' → 'H11_L87' (そのまま)
+    """
+    # すでに正規化されている場合
+    if re.match(r'^[MTSHR]\d+_L\d+$', raw_name):
+        return raw_name
+
+    era_map = {
+        '明治': 'M', '大正': 'T', '昭和': 'S', '平成': 'H', '令和': 'R'
+    }
+
+    # 漢数字→算用数字変換
+    kanji_nums = {
+        '〇': '0', '一': '1', '二': '2', '三': '3', '四': '4',
+        '五': '5', '六': '6', '七': '7', '八': '8', '九': '9'
+    }
+
+    def kanji_to_arabic(text: str) -> str:
+        """漢数字を算用数字に変換"""
+        result = ''
+        for char in text:
+            result += kanji_nums.get(char, char)
+        return result
+
+    # パターン: 元号N年...法律第M号
+    pattern = r'(明治|大正|昭和|平成|令和)([〇一二三四五六七八九]+)年.*法律第([〇一二三四五六七八九]+)号'
+    match = re.search(pattern, raw_name)
+
+    if match:
+        era = era_map.get(match.group(1), 'X')
+        year = kanji_to_arabic(match.group(2))
+        law_num = kanji_to_arabic(match.group(3))
+        return f"{era}{year}_L{law_num}"
+
+    # 算用数字パターン
+    pattern2 = r'(明治|大正|昭和|平成|令和)(\d+)年.*法律第(\d+)号'
+    match2 = re.search(pattern2, raw_name)
+    if match2:
+        era = era_map.get(match2.group(1), 'X')
+        return f"{era}{match2.group(2)}_L{match2.group(3)}"
+
+    # 変換できない場合はアンダースコアで安全化
+    return re.sub(r'[^\w]', '_', raw_name)
+
+
+def extract_amendment_id_from_path(file_path: Path) -> Optional[str]:
+    """
+    ファイルパスから改正法IDを抽出
+    .../附則/改正法/H11_L87/附則第1条.md → 'H11_L87'
+    """
+    parts = file_path.parts
+    for i, part in enumerate(parts):
+        if part == '改正法' and i + 1 < len(parts):
+            return normalize_amendment_id(parts[i + 1])
+    return None
+
+
+def fix_supplementary_ids(law_dir: Path, dry_run: bool = False) -> Dict:
+    """附則ファイルのID修正"""
+    law_name = law_dir.name
+    suppl_dir = law_dir / "附則"
+
+    if not suppl_dir.exists():
+        return {'updated': 0, 'skipped': 0, 'errors': []}
+
+    stats = {'updated': 0, 'skipped': 0, 'errors': []}
+
+    # 改正法ディレクトリ内のファイルを処理
+    for md_file in suppl_dir.rglob('*.md'):
+        try:
+            content = md_file.read_text(encoding='utf-8')
+
+            if not content.startswith('---'):
+                stats['skipped'] += 1
+                continue
+
+            parts = content.split('---', 2)
+            if len(parts) < 3:
+                stats['skipped'] += 1
+                continue
+
+            yaml_str = parts[1]
+            body = parts[2]
+
+            try:
+                metadata = yaml.safe_load(yaml_str)
+            except yaml.YAMLError as e:
+                stats['errors'].append(f"{md_file.name}: YAML parse error - {e}")
+                continue
+
+            if not metadata:
+                stats['skipped'] += 1
+                continue
+
+            modified = False
+
+            # 改正法IDを取得
+            amendment_id = extract_amendment_id_from_path(md_file)
+
+            if amendment_id:
+                # canonical_id の修正
+                article_num = metadata.get('article_num', '附則')
+                # 「附則」が重複しないように処理
+                if article_num.startswith('附則'):
+                    article_part = article_num
+                else:
+                    article_part = f"附則{article_num}"
+
+                new_canonical_id = f"{law_name}_{article_part}_{amendment_id}"
+
+                if metadata.get('canonical_id') != new_canonical_id:
+                    metadata['canonical_id'] = new_canonical_id
+                    modified = True
+
+                # amendment_law_id フィールドを追加
+                if metadata.get('amendment_law_id') != amendment_id:
+                    metadata['amendment_law_id'] = amendment_id
+                    modified = True
+
+                # source.id に元の e-Gov ID を保存
+                if 'source' not in metadata:
+                    metadata['source'] = {}
+
+                if 'id' in metadata and metadata.get('source', {}).get('id') != metadata['id']:
+                    metadata['source']['id'] = metadata['id']
+                    metadata['source']['provider'] = 'e-gov'
+                    modified = True
+
+            if not modified:
+                stats['skipped'] += 1
+                continue
+
+            # YAML を再シリアライズ
+            new_yaml = yaml.dump(
+                metadata,
+                allow_unicode=True,
+                sort_keys=False,
+                default_flow_style=False
+            )
+
+            new_content = f"---\n{new_yaml}---{body}"
+
+            if not dry_run:
+                md_file.write_text(new_content, encoding='utf-8')
+
+            stats['updated'] += 1
+
+        except Exception as e:
+            stats['errors'].append(f"{md_file.name}: {e}")
+
+    return stats
+
+
+def find_unresolved_links(law_dir: Path) -> List[UnresolvedLink]:
+    """未解決リンクの検出"""
+    unresolved = []
+    law_name = law_dir.name
+
+    # 外部法名パターン（民法以外の法律名）
+    external_law_patterns = [
+        r'民事執行法', r'民事訴訟法', r'民事保全法', r'商法', r'会社法',
+        r'破産法', r'不動産登記法', r'戸籍法', r'家事事件手続法',
+        r'地方自治法', r'自然公園法', r'競売法', r'借地借家法',
+        r'建物の区分所有等に関する法律', r'農地法', r'信託法',
+        r'電子記録債権法', r'住民基本台帳法',
+        r'行政手続における特定の個人を識別するための番号の利用等に関する法律',
+        r'商業登記法', r'金融商品取引法', r'保険業法', r'信用金庫法',
+        r'労働金庫法', r'消費生活協同組合法', r'医療法', r'農業協同組合法',
+        r'水産業協同組合法', r'森林組合法', r'中小企業等協同組合法',
+        r'社債、株式等の振替に関する法律', r'一般社団法人及び一般財団法人に関する法律',
+        r'会社更生法', r'金融機関等の更生手続の特例等に関する法律',
+        r'資産の流動化に関する法律', r'投資信託及び投資法人に関する法律',
+        r'同法', r'附則'  # 「同法」「附則」も外部参照の可能性
+    ]
+    external_law_regex = '|'.join(external_law_patterns)
+
+    # wikilink パターン
+    wikilink_pattern = re.compile(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]')
+
+    # 本文ディレクトリの全ファイルを検索
+    for md_file in law_dir.rglob('*.md'):
+        if md_file.name == f'{law_name}.md':  # 親ファイルはスキップ
+            continue
+
+        try:
+            content = md_file.read_text(encoding='utf-8')
+
+            # YAML frontmatter をスキップ
+            if content.startswith('---'):
+                yaml_end = content.find('---', 3)
+                if yaml_end > 0:
+                    body = content[yaml_end + 3:]
+                else:
+                    body = content
+            else:
+                body = content
+
+            for match in wikilink_pattern.finditer(body):
+                link_target = match.group(1)
+                display_text = match.group(2) or link_target
+
+                # アンカーリンクの処理 (第109条#第1項 → 第109条)
+                base_target = link_target.split('#')[0] if '#' in link_target else link_target
+
+                # 空のベースターゲット（同一ファイル内アンカー）はスキップ
+                if not base_target:
+                    continue
+
+                # リンク先ファイルの存在確認
+                if base_target.endswith('.md'):
+                    # 絶対パス形式: laws/民法/本文/第63条.md
+                    if base_target.startswith('laws/'):
+                        target_path = law_dir.parent.parent / base_target
+                    else:
+                        target_path = md_file.parent / base_target
+                else:
+                    # 相対パス形式: 第63条
+                    target_path = md_file.parent / f"{base_target}.md"
+
+                if not target_path.exists():
+                    # 外部法参照かどうかチェック
+                    # リンクの前の文脈を取得
+                    start_pos = max(0, match.start() - 50)
+                    context = body[start_pos:match.start()]
+
+                    external_match = re.search(external_law_regex, context)
+
+                    if external_match:
+                        unresolved.append(UnresolvedLink(
+                            source_file=md_file,
+                            target_path=link_target,
+                            original_text=match.group(0),
+                            reason='external_law',
+                            external_law_name=external_match.group(0)
+                        ))
+                    else:
+                        unresolved.append(UnresolvedLink(
+                            source_file=md_file,
+                            target_path=link_target,
+                            original_text=match.group(0),
+                            reason='missing_article'
+                        ))
+
+        except Exception as e:
+            print(f"Warning: Failed to process {md_file}: {e}")
+
+    return unresolved
+
+
+def fix_external_law_links(law_dir: Path, unresolved: List[UnresolvedLink], dry_run: bool = False) -> int:
+    """
+    外部法参照のリンクを解除（プレーンテキストに戻す）
+    """
+    fixed_count = 0
+
+    # ファイルごとにグループ化
+    files_to_fix: Dict[Path, List[UnresolvedLink]] = {}
+    for link in unresolved:
+        if link.reason == 'external_law':
+            if link.source_file not in files_to_fix:
+                files_to_fix[link.source_file] = []
+            files_to_fix[link.source_file].append(link)
+
+    for file_path, links in files_to_fix.items():
+        try:
+            content = file_path.read_text(encoding='utf-8')
+            new_content = content
+
+            for link in links:
+                # [[path|display]] → display のみに戻す
+                # または [[path]] → そのまま表示
+                if '|' in link.original_text:
+                    # [[laws/民法/本文/第63条.md|第六十三条]] → 第六十三条
+                    display = link.original_text.split('|')[1].rstrip(']]')
+                    new_content = new_content.replace(link.original_text, display)
+                else:
+                    # [[第63条]] → 第63条
+                    display = link.original_text.strip('[]')
+                    new_content = new_content.replace(link.original_text, display)
+
+                fixed_count += 1
+
+            if not dry_run and new_content != content:
+                file_path.write_text(new_content, encoding='utf-8')
+
+        except Exception as e:
+            print(f"Warning: Failed to fix {file_path}: {e}")
+
+    return fixed_count
+
+
+def generate_stub_nodes(law_dir: Path, unresolved: List[UnresolvedLink], dry_run: bool = False) -> int:
+    """
+    削除・欠番条文のスタブノードを生成
+    """
+    law_name = law_dir.name
+    honbun_dir = law_dir / "本文"
+    stub_count = 0
+
+    # 同一法内の missing_article のみ処理
+    missing_articles = [link for link in unresolved if link.reason == 'missing_article']
+
+    # 同じターゲットは1つだけ生成
+    seen_targets = set()
+
+    for link in missing_articles:
+        target_path = link.target_path
+
+        # ファイル名を抽出
+        if target_path.endswith('.md'):
+            filename = Path(target_path).name
+        else:
+            filename = f"{target_path}.md"
+
+        # 本文ディレクトリ内のファイルのみ
+        if '本文' not in str(link.source_file):
+            continue
+
+        if filename in seen_targets:
+            continue
+        seen_targets.add(filename)
+
+        # スタブファイルのパス
+        stub_path = honbun_dir / filename
+
+        if stub_path.exists():
+            continue
+
+        # 条文番号を抽出
+        article_match = re.match(r'第(\d+)条(?:の(\d+))?', filename.replace('.md', ''))
+        if not article_match:
+            continue
+
+        article_num = filename.replace('.md', '')
+
+        # 参照元を収集
+        referenced_by = []
+        for l in missing_articles:
+            if l.target_path == target_path or Path(l.target_path).name == filename:
+                ref_name = l.source_file.stem
+                if ref_name not in referenced_by:
+                    referenced_by.append(ref_name)
+
+        # スタブ内容を生成
+        stub_metadata = {
+            'article_num': article_num,
+            'heading': '（削除）',
+            'id': f"JPLAW:{law_dir.name}#本文#{article_num}",
+            'law_name': law_name,
+            'part': '本文',
+            'status': 'deleted',
+            'referenced_by': referenced_by,
+            'source': {
+                'provider': 'e-gov',
+                'note': 'この条文は削除または欠番です'
+            }
+        }
+
+        stub_yaml = yaml.dump(
+            stub_metadata,
+            allow_unicode=True,
+            sort_keys=False,
+            default_flow_style=False
+        )
+
+        stub_content = f"""---
+{stub_yaml}---
+
+# {article_num} （削除）
+
+この条文は削除されています。
+"""
+
+        if not dry_run:
+            stub_path.write_text(stub_content, encoding='utf-8')
+
+        stub_count += 1
+        print(f"  スタブ生成: {filename} (参照元: {', '.join(referenced_by[:3])}{'...' if len(referenced_by) > 3 else ''})")
+
+    return stub_count
+
+
+def main():
+    parser = argparse.ArgumentParser(description="DB4LAW ID衝突・未解決リンク修正")
+    parser.add_argument('--law', required=True, help='対象の法律名（例: 民法）')
+    parser.add_argument('--dry-run', action='store_true', help='Dry-runモード（変更なし）')
+    parser.add_argument('--fix-ids', action='store_true', help='附則IDの修正')
+    parser.add_argument('--fix-links', action='store_true', help='外部法リンクの解除')
+    parser.add_argument('--generate-stubs', action='store_true', help='スタブノード生成')
+    parser.add_argument('--all', action='store_true', help='全ての修正を実行')
+    parser.add_argument('--report', action='store_true', help='レポート出力のみ')
+    args = parser.parse_args()
+
+    vault_path = Path("/Users/haramizuki/Project/DB4LAW/Vault/laws")
+    law_dir = vault_path / args.law
+
+    if not law_dir.exists():
+        print(f"エラー: ディレクトリが見つかりません: {law_dir}")
+        return
+
+    print(f"\n{'='*60}")
+    print(f"DB4LAW ID修正ツール - {args.law}")
+    print(f"モード: {'DRY-RUN' if args.dry_run else '実行'}")
+    print(f"{'='*60}\n")
+
+    if args.all:
+        args.fix_ids = True
+        args.fix_links = True
+        args.generate_stubs = True
+
+    # 1. 附則ID修正
+    if args.fix_ids or args.report:
+        print("[1] 附則ID修正...")
+        stats = fix_supplementary_ids(law_dir, dry_run=args.dry_run or args.report)
+        print(f"   更新: {stats['updated']}, スキップ: {stats['skipped']}")
+        if stats['errors']:
+            print(f"   エラー: {len(stats['errors'])}件")
+            for err in stats['errors'][:5]:
+                print(f"     - {err}")
+
+    # 2. 未解決リンク検出
+    print("\n[2] 未解決リンク検出...")
+    unresolved = find_unresolved_links(law_dir)
+
+    external_links = [l for l in unresolved if l.reason == 'external_law']
+    missing_links = [l for l in unresolved if l.reason == 'missing_article']
+
+    print(f"   外部法参照: {len(external_links)}件")
+    print(f"   欠落条文参照: {len(missing_links)}件")
+
+    if external_links:
+        print("\n   [外部法参照の例]")
+        for link in external_links[:5]:
+            print(f"     {link.source_file.name}: {link.original_text}")
+            print(f"       → {link.external_law_name}への参照")
+
+    if missing_links:
+        print("\n   [欠落条文参照の例]")
+        for link in missing_links[:5]:
+            print(f"     {link.source_file.name}: {link.original_text}")
+
+    # 3. 外部法リンク解除
+    if args.fix_links:
+        print("\n[3] 外部法リンク解除...")
+        fixed = fix_external_law_links(law_dir, unresolved, dry_run=args.dry_run)
+        print(f"   修正: {fixed}件")
+
+    # 4. スタブ生成
+    if args.generate_stubs:
+        print("\n[4] スタブノード生成...")
+        stubs = generate_stub_nodes(law_dir, unresolved, dry_run=args.dry_run)
+        print(f"   生成: {stubs}件")
+
+    print(f"\n{'='*60}")
+    print("完了")
+    print(f"{'='*60}\n")
+
+
+if __name__ == '__main__':
+    main()
