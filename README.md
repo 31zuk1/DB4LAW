@@ -5,7 +5,7 @@
 ## 特徴
 
 - **日本語パス対応**: `本文/第1条.md`、`附則/改正法/R3_L37/附則第1条.md` などの日本語ディレクトリ構造
-- **Wikilink自動生成**: 条文間参照（「第十九条」など）を自動的にObsidian wikiliksに変換
+- **Wikilink自動生成**: 条文間参照（「第十九条」など）を自動的にObsidian wikilinksに変換
 - **漢数字対応**: 「第十九条」「第二十三条の三」などの漢数字表記を自動変換
 - **キャッシング**: API応答をMD5ハッシュベースでキャッシュし、再実行時の高速化
 - **Obsidian Graph View**: 生成されたVaultをObsidianで開くことで法令のナレッジグラフを可視化
@@ -103,7 +103,7 @@ part: 本文
 
 ### Wikilink形式
 
-条文内の参照は自動的にwikiliksに変換されます：
+条文内の参照は自動的にwikilinksに変換されます：
 
 ```markdown
 <!-- 変換前 -->
@@ -120,21 +120,66 @@ DB4LAW/
 ├── src/legalkg/              # メインパッケージ
 │   ├── client/               # APIクライアント（e-Gov, NDL）
 │   ├── core/                 # Tier0/1/2 コアロジック
-│   └── utils/                # 漢数字変換など
+│   └── utils/                # 共通ユーティリティ
+│       ├── numerals.py       # 漢数字変換（従来）
+│       ├── article_formatter.py  # 条文番号変換
+│       └── markdown.py       # YAML frontmatter処理
 ├── scripts/
 │   ├── migration/            # 移行・修正スクリプト
-│   │   ├── migrate_to_japanese.py   # 日本語パス移行
-│   │   ├── fix_id_collision.py      # 外部法参照修正
-│   │   ├── add_parent_links.py      # 親ノードリンク追加
-│   │   ├── pending_links.py         # 保留リンク管理
-│   │   ├── relink_pending.py        # 保留リンク再リンク
-│   │   └── _artifacts/              # 生成物（CSV, JSONL）
+│   │   ├── config.py         # パス設定
+│   │   ├── migrate_to_japanese.py
+│   │   ├── fix_id_collision.py
+│   │   ├── add_parent_links.py
+│   │   ├── pending_links.py
+│   │   ├── relink_pending.py
+│   │   └── _artifacts/       # 生成物（CSV, JSONL）
 │   ├── analysis/             # リンク処理・分析
 │   ├── debug/                # デバッグスクリプト
-│   └── utils/                # ユーティリティ
+│   └── utils/                # シェルユーティリティ
 ├── data/                     # ドメイン分類YAML
 ├── Vault/laws/               # Obsidian Vault出力先
 └── targets.yaml              # 処理対象法令リスト
+```
+
+## 共通ユーティリティ
+
+### article_formatter.py
+
+条文番号の各種変換を提供：
+
+```python
+from legalkg.utils import (
+    kanji_to_int,           # 二十三 → 23
+    article_id_to_japanese, # Article_1 → 第1条
+    normalize_amendment_id, # 令和3年法律第37号 → R3_L37
+    extract_article_number, # 第199条 → 199
+)
+```
+
+### markdown.py
+
+YAML frontmatter付きMarkdownの読み書き：
+
+```python
+from legalkg.utils import (
+    parse_frontmatter,      # content → (metadata, body)
+    serialize_frontmatter,  # (metadata, body) → content
+    read_markdown_file,     # Path → MarkdownDocument
+    update_metadata,        # ファイルのメタデータを更新
+)
+```
+
+### config.py (scripts/migration/)
+
+パス設定の一元管理：
+
+```python
+from config import (
+    PROJECT_ROOT,           # プロジェクトルート
+    VAULT_PATH,             # Vaultディレクトリ
+    get_law_dir,            # 法律ディレクトリ取得
+    list_processed_laws,    # 処理済み法律一覧
+)
 ```
 
 ## 移行スクリプト

@@ -13,13 +13,23 @@ DB4LAW: ID衝突問題の修正スクリプト
 """
 
 import re
+import sys
 import yaml
 import argparse
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Any
 from dataclasses import dataclass, field
 
-# pending links 機能
+# 共通モジュールのインポート
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'src'))
+from legalkg.utils.article_formatter import (
+    normalize_amendment_id,
+    extract_amendment_key_from_path,
+)
+from legalkg.utils.markdown import parse_frontmatter, serialize_frontmatter
+
+# 設定と pending links 機能
+from config import get_law_dir, LAWS_PATH
 from pending_links import (
     PendingLink,
     create_pending_link,
@@ -71,64 +81,15 @@ class UnresolvedLink:
     match_span: Optional[Dict[str, int]] = None  # {"start": int, "end": int}
 
 
-def normalize_amendment_id(raw_name: str) -> str:
-    """
-    改正法タイトルを正規化
-    '平成一一年七月一六日法律第八七号' → 'H11_L87'
-    'H11_L87' → 'H11_L87' (そのまま)
-    """
-    # すでに正規化されている場合
-    if re.match(r'^[MTSHR]\d+_L\d+$', raw_name):
-        return raw_name
-
-    era_map = {
-        '明治': 'M', '大正': 'T', '昭和': 'S', '平成': 'H', '令和': 'R'
-    }
-
-    # 漢数字→算用数字変換
-    kanji_nums = {
-        '〇': '0', '一': '1', '二': '2', '三': '3', '四': '4',
-        '五': '5', '六': '6', '七': '7', '八': '8', '九': '9'
-    }
-
-    def kanji_to_arabic(text: str) -> str:
-        """漢数字を算用数字に変換"""
-        result = ''
-        for char in text:
-            result += kanji_nums.get(char, char)
-        return result
-
-    # パターン: 元号N年...法律第M号
-    pattern = r'(明治|大正|昭和|平成|令和)([〇一二三四五六七八九]+)年.*法律第([〇一二三四五六七八九]+)号'
-    match = re.search(pattern, raw_name)
-
-    if match:
-        era = era_map.get(match.group(1), 'X')
-        year = kanji_to_arabic(match.group(2))
-        law_num = kanji_to_arabic(match.group(3))
-        return f"{era}{year}_L{law_num}"
-
-    # 算用数字パターン
-    pattern2 = r'(明治|大正|昭和|平成|令和)(\d+)年.*法律第(\d+)号'
-    match2 = re.search(pattern2, raw_name)
-    if match2:
-        era = era_map.get(match2.group(1), 'X')
-        return f"{era}{match2.group(2)}_L{match2.group(3)}"
-
-    # 変換できない場合はアンダースコアで安全化
-    return re.sub(r'[^\w]', '_', raw_name)
-
-
 def extract_amendment_id_from_path(file_path: Path) -> Optional[str]:
     """
     ファイルパスから改正法IDを抽出
     .../附則/改正法/H11_L87/附則第1条.md → 'H11_L87'
+
+    Note: normalize_amendment_id は article_formatter からインポート済み
     """
-    parts = file_path.parts
-    for i, part in enumerate(parts):
-        if part == '改正法' and i + 1 < len(parts):
-            return normalize_amendment_id(parts[i + 1])
-    return None
+    # 共通モジュールを使用
+    return extract_amendment_key_from_path(file_path)
 
 
 def build_range_index(law_dir: Path) -> List[ArticleRange]:
