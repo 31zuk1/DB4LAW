@@ -7,6 +7,9 @@ DB4LAW: ID衝突問題の修正スクリプト
 - id フィールドは e-Gov 互換のまま維持（source.id に移動）
 
 問題B/C: 外部法参照・削除条文の検出とスタブ生成
+
+問題D: 削除条文の範囲ノードへのリダイレクト
+- 第156条 への参照を 第155:157条.md へ自動リダイレクト
 """
 
 import re
@@ -14,7 +17,33 @@ import yaml
 import argparse
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+
+
+@dataclass
+class ArticleRange:
+    """削除条文の範囲情報"""
+    start: int
+    end: int
+    filename: str
+
+    def contains(self, article_num: int) -> bool:
+        """指定された条文番号がこの範囲に含まれるか"""
+        return self.start <= article_num <= self.end
+
+    def span(self) -> int:
+        """範囲の長さ"""
+        return self.end - self.start
+
+
+@dataclass
+class RangeRedirect:
+    """範囲ノードへのリダイレクト情報"""
+    source_file: Path
+    original_text: str
+    original_target: str
+    new_target: str
+    article_num: int
 
 
 @dataclass
@@ -85,6 +114,186 @@ def extract_amendment_id_from_path(file_path: Path) -> Optional[str]:
         if part == '改正法' and i + 1 < len(parts):
             return normalize_amendment_id(parts[i + 1])
     return None
+
+
+def build_range_index(law_dir: Path) -> List[ArticleRange]:
+    """
+    本文ディレクトリ内の範囲ノード（第N:M条.md）をインデックス化
+    例: 第155:157条.md → ArticleRange(155, 157, "第155:157条.md")
+    """
+    ranges = []
+    honbun_dir = law_dir / "本文"
+
+    if not honbun_dir.exists():
+        return ranges
+
+    # 範囲形式のファイルを検索: 第{start}:{end}条.md
+    range_pattern = re.compile(r'^第(\d+):(\d+)条\.md$')
+
+    for file_path in honbun_dir.glob('第*:*条.md'):
+        match = range_pattern.match(file_path.name)
+        if match:
+            start = int(match.group(1))
+            end = int(match.group(2))
+            ranges.append(ArticleRange(start, end, file_path.name))
+
+    # ソート: start順
+    ranges.sort(key=lambda r: r.start)
+
+    return ranges
+
+
+def find_range_for_article(article_num: int, ranges: List[ArticleRange]) -> Optional[ArticleRange]:
+    """
+    指定された条文番号を含む範囲ノードを検索
+
+    競合時の優先順位:
+    1. 範囲が短い (end - start が最小)
+    2. start が大きい (より具体的)
+    """
+    matching_ranges = [r for r in ranges if r.contains(article_num)]
+
+    if not matching_ranges:
+        return None
+
+    if len(matching_ranges) == 1:
+        return matching_ranges[0]
+
+    # 競合時は優先順位で選択
+    matching_ranges.sort(key=lambda r: (r.span(), -r.start))
+    return matching_ranges[0]
+
+
+def extract_article_number(link_target: str) -> Optional[int]:
+    """
+    リンクターゲットから条文番号を抽出
+    例:
+    - "第156条" → 156
+    - "laws/民法/本文/第156条.md" → 156
+    - "第156条#第1項" → 156
+    - "第3条の2" → None (枝番は対象外)
+    """
+    # パスからファイル名を抽出
+    if '/' in link_target:
+        link_target = link_target.split('/')[-1]
+
+    # .md を除去
+    link_target = link_target.replace('.md', '')
+
+    # アンカーを除去
+    if '#' in link_target:
+        link_target = link_target.split('#')[0]
+
+    # 単条形式のマッチング: 第N条 (枝番なし)
+    match = re.match(r'^第(\d+)条$', link_target)
+    if match:
+        return int(match.group(1))
+
+    return None
+
+
+def redirect_to_range_nodes(law_dir: Path, dry_run: bool = False) -> List[RangeRedirect]:
+    """
+    単条参照を範囲ノードにリダイレクト
+
+    例: [[第156条|第百五十六条]] → [[laws/民法/本文/第155:157条.md|第百五十六条]]
+
+    対応形式:
+    - [[第N条]]
+    - [[第N条|漢数字表記]]
+    - [[第N条#項号]]
+    - [[laws/法律名/本文/第N条.md]]
+    - [[laws/法律名/本文/第N条.md|表記]]
+    """
+    law_name = law_dir.name
+    redirects: List[RangeRedirect] = []
+
+    # 範囲インデックス構築
+    ranges = build_range_index(law_dir)
+    if not ranges:
+        return redirects
+
+    print(f"   範囲ノード検出: {len(ranges)}件")
+    for r in ranges:
+        print(f"     - {r.filename} (第{r.start}条〜第{r.end}条)")
+
+    # wikilink パターン
+    wikilink_pattern = re.compile(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]')
+
+    # 全ファイルをスキャン
+    for md_file in law_dir.rglob('*.md'):
+        if md_file.name == f'{law_name}.md':  # 親ファイルはスキップ
+            continue
+
+        # 範囲ノード自身はスキップ
+        if ':' in md_file.stem:
+            continue
+
+        try:
+            content = md_file.read_text(encoding='utf-8')
+            new_content = content
+            file_redirects = []
+
+            for match in wikilink_pattern.finditer(content):
+                link_target = match.group(1)
+                display_text = match.group(2)
+
+                # 条文番号を抽出
+                article_num = extract_article_number(link_target)
+                if article_num is None:
+                    continue
+
+                # 範囲ノードを検索
+                range_node = find_range_for_article(article_num, ranges)
+                if range_node is None:
+                    continue
+
+                # 新しいリンクターゲットを構築
+                # パス形式を維持: laws/民法/本文/第155:157条.md
+                if link_target.startswith('laws/'):
+                    # 絶対パス形式
+                    new_target = f"laws/{law_name}/本文/{range_node.filename}"
+                elif link_target.endswith('.md'):
+                    # 相対パス形式（.md付き）
+                    new_target = range_node.filename
+                else:
+                    # シンプルな形式: 第N条 → 第N:M条
+                    new_target = range_node.filename.replace('.md', '')
+
+                # アンカーがある場合は警告のみ（範囲ノードにアンカーは無効）
+                if '#' in link_target:
+                    anchor = link_target.split('#')[1]
+                    print(f"   警告: アンカー付きリンクのリダイレクト: {match.group(0)} (アンカー #{anchor} は無視されます)")
+
+                # 新しいwikilink構築
+                if display_text:
+                    new_link = f"[[{new_target}|{display_text}]]"
+                else:
+                    # 元の表示を維持
+                    original_display = link_target.split('/')[-1].replace('.md', '')
+                    new_link = f"[[{new_target}|{original_display}]]"
+
+                # 置換
+                new_content = new_content.replace(match.group(0), new_link, 1)
+
+                file_redirects.append(RangeRedirect(
+                    source_file=md_file,
+                    original_text=match.group(0),
+                    original_target=link_target,
+                    new_target=new_target,
+                    article_num=article_num
+                ))
+
+            # ファイル更新
+            if file_redirects and not dry_run:
+                md_file.write_text(new_content, encoding='utf-8')
+
+            redirects.extend(file_redirects)
+
+        except Exception as e:
+            print(f"   警告: {md_file.name} の処理に失敗: {e}")
+
+    return redirects
 
 
 def fix_supplementary_ids(law_dir: Path, dry_run: bool = False) -> Dict:
@@ -321,13 +530,21 @@ def fix_external_law_links(law_dir: Path, unresolved: List[UnresolvedLink], dry_
     return fixed_count
 
 
-def generate_stub_nodes(law_dir: Path, unresolved: List[UnresolvedLink], dry_run: bool = False) -> int:
+def generate_stub_nodes(law_dir: Path, unresolved: List[UnresolvedLink], dry_run: bool = False, ranges: Optional[List[ArticleRange]] = None) -> Tuple[int, int]:
     """
     削除・欠番条文のスタブノードを生成
+
+    Returns:
+        Tuple[int, int]: (生成数, 範囲ノードによりスキップされた数)
     """
     law_name = law_dir.name
     honbun_dir = law_dir / "本文"
     stub_count = 0
+    skipped_by_range = 0
+
+    # 範囲インデックスがない場合は構築
+    if ranges is None:
+        ranges = build_range_index(law_dir)
 
     # 同一法内の missing_article のみ処理
     missing_articles = [link for link in unresolved if link.reason == 'missing_article']
@@ -361,6 +578,14 @@ def generate_stub_nodes(law_dir: Path, unresolved: List[UnresolvedLink], dry_run
         # 条文番号を抽出
         article_match = re.match(r'第(\d+)条(?:の(\d+))?', filename.replace('.md', ''))
         if not article_match:
+            continue
+
+        # 範囲ノードに含まれるかチェック
+        article_num_int = int(article_match.group(1))
+        range_node = find_range_for_article(article_num_int, ranges)
+        if range_node is not None:
+            print(f"  スキップ: {filename} → 範囲ノード {range_node.filename} に含まれます")
+            skipped_by_range += 1
             continue
 
         article_num = filename.replace('.md', '')
@@ -409,7 +634,7 @@ def generate_stub_nodes(law_dir: Path, unresolved: List[UnresolvedLink], dry_run
         stub_count += 1
         print(f"  スタブ生成: {filename} (参照元: {', '.join(referenced_by[:3])}{'...' if len(referenced_by) > 3 else ''})")
 
-    return stub_count
+    return stub_count, skipped_by_range
 
 
 def main():
@@ -418,6 +643,7 @@ def main():
     parser.add_argument('--dry-run', action='store_true', help='Dry-runモード（変更なし）')
     parser.add_argument('--fix-ids', action='store_true', help='附則IDの修正')
     parser.add_argument('--fix-links', action='store_true', help='外部法リンクの解除')
+    parser.add_argument('--redirect-ranges', action='store_true', help='削除条文リンクを範囲ノードにリダイレクト')
     parser.add_argument('--generate-stubs', action='store_true', help='スタブノード生成')
     parser.add_argument('--all', action='store_true', help='全ての修正を実行')
     parser.add_argument('--report', action='store_true', help='レポート出力のみ')
@@ -438,7 +664,11 @@ def main():
     if args.all:
         args.fix_ids = True
         args.fix_links = True
+        args.redirect_ranges = True
         args.generate_stubs = True
+
+    # 範囲インデックスを事前構築（複数箇所で使用）
+    ranges = build_range_index(law_dir)
 
     # 1. 附則ID修正
     if args.fix_ids or args.report:
@@ -477,11 +707,23 @@ def main():
         fixed = fix_external_law_links(law_dir, unresolved, dry_run=args.dry_run)
         print(f"   修正: {fixed}件")
 
-    # 4. スタブ生成
+    # 4. 範囲ノードリダイレクト
+    if args.redirect_ranges:
+        print("\n[4] 範囲ノードリダイレクト...")
+        redirects = redirect_to_range_nodes(law_dir, dry_run=args.dry_run)
+        print(f"   リダイレクト: {len(redirects)}件")
+        if redirects:
+            print("\n   [リダイレクト例]")
+            for r in redirects[:10]:
+                print(f"     {r.source_file.name}: {r.original_text} → [[{r.new_target}|...]]")
+
+    # 5. スタブ生成
     if args.generate_stubs:
-        print("\n[4] スタブノード生成...")
-        stubs = generate_stub_nodes(law_dir, unresolved, dry_run=args.dry_run)
+        print("\n[5] スタブノード生成...")
+        stubs, skipped = generate_stub_nodes(law_dir, unresolved, dry_run=args.dry_run, ranges=ranges)
         print(f"   生成: {stubs}件")
+        if skipped > 0:
+            print(f"   範囲ノードによりスキップ: {skipped}件")
 
     print(f"\n{'='*60}")
     print("完了")
