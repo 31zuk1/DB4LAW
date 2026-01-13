@@ -4,6 +4,16 @@
 
 DB4LAWでは、条文ファイルを日本語パス構造で管理します。Tier1ビルド後に移行スクリプトを実行することで、英語パスから日本語パスへ変換されます。
 
+## 共通モジュール
+
+移行スクリプトは以下の共通モジュールを使用しています：
+
+| モジュール | 場所 | 用途 |
+|------------|------|------|
+| `article_formatter.py` | `src/legalkg/utils/` | 条文番号変換 |
+| `markdown.py` | `src/legalkg/utils/` | YAML frontmatter処理 |
+| `config.py` | `scripts/migration/` | パス設定 |
+
 ## 移行済み法令
 
 | 法令 | 本則 | 附則 | 移行日 |

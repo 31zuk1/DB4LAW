@@ -90,12 +90,68 @@ Vault/laws/刑法/
 - **Supplementary:** `JPLAW:{LAW_ID}#附則#附則第N条`
 - **Sub-article:** Uses `の` notation (e.g., `第19条の2`)
 
+## Common Utility Modules
+
+### article_formatter.py (`src/legalkg/utils/`)
+
+Centralized article number conversion functions:
+
+```python
+from legalkg.utils.article_formatter import (
+    kanji_to_int,              # 二十三 → 23 (positional & concatenative)
+    kanji_to_arabic_simple,    # 一一 → "11" (simple replacement)
+    article_id_to_japanese,    # Article_1 → 第1条
+    article_filename_to_japanese,  # Article_1.md → 第1条.md
+    parse_japanese_article,    # 第3条の2 → (3, 2)
+    extract_article_number,    # 第199条 → 199
+    article_sort_key,          # For sorting articles
+    normalize_amendment_id,    # 令和3年法律第37号 → R3_L37
+    amendment_key_to_title,    # R3_L37 → 令和3年法律第37号
+    extract_amendment_key_from_path,  # Path → amendment key
+)
+```
+
+### markdown.py (`src/legalkg/utils/`)
+
+YAML frontmatter handling:
+
+```python
+from legalkg.utils.markdown import (
+    MarkdownDocument,          # Dataclass for frontmatter + body
+    parse_frontmatter,         # str → MarkdownDocument
+    serialize_frontmatter,     # (dict, str) → str
+    read_markdown_file,        # Path → MarkdownDocument
+    write_markdown_file,       # MarkdownDocument → Path
+    update_metadata,           # Update file's YAML fields
+    validate_required_fields,  # Check required fields exist
+    MarkdownBatchProcessor,    # Batch processing utility
+)
+```
+
+### config.py (`scripts/migration/`)
+
+Path configuration for migration scripts:
+
+```python
+from config import (
+    PROJECT_ROOT,              # Project root directory
+    VAULT_PATH,                # Vault directory
+    LAWS_PATH,                 # laws directory
+    get_law_dir,               # Get law directory by name
+    get_artifacts_path,        # _artifacts directory
+    list_processed_laws,       # List laws with Japanese structure
+    DEFAULT_PENDING_LOG,       # pending_links.jsonl path
+    DEFAULT_RESOLVED_LOG,      # resolved_links.jsonl path
+)
+```
+
 ### Migration Scripts
 
 Located in `scripts/migration/`:
 
 | Script | Purpose |
 |--------|---------|
+| `config.py` | Path configuration |
 | `migrate_to_japanese.py` | Convert English paths to Japanese |
 | `fix_id_collision.py` | Unlink external law references |
 | `add_parent_links.py` | Add wikilinks to parent file |
@@ -119,9 +175,10 @@ python scripts/migration/relink_pending.py --filter-law 民法 --apply
 
 - `src/legalkg/cli.py`: Typer-based CLI commands
 - `src/legalkg/core/tier2.py`: Reference extraction regex patterns
-- `src/legalkg/utils/numerals.py`: Kanji numeral conversion logic
-- `scripts/migration/migrate_to_japanese.py`: Japanese path migration
-- `scripts/migration/fix_id_collision.py`: External reference handling
+- `src/legalkg/utils/article_formatter.py`: Article number conversion
+- `src/legalkg/utils/markdown.py`: YAML frontmatter handling
+- `src/legalkg/utils/numerals.py`: Legacy kanji numeral conversion
+- `scripts/migration/config.py`: Path configuration
 - `scripts/migration/_artifacts/`: Generated CSV/JSONL files
 - `targets.yaml`: List of law IDs to process
 
@@ -146,9 +203,13 @@ DB4LAW/
 ├── src/legalkg/              # Main package
 │   ├── client/               # API clients (e-Gov, NDL)
 │   ├── core/                 # Tier0/1/2 core logic
-│   └── utils/                # Kanji conversion, etc.
+│   └── utils/                # Common utilities
+│       ├── numerals.py       # Kanji conversion (legacy)
+│       ├── article_formatter.py  # Article number conversion
+│       └── markdown.py       # YAML frontmatter handling
 ├── scripts/
 │   ├── migration/            # Migration & fix scripts
+│   │   ├── config.py         # Path configuration
 │   │   └── _artifacts/       # Generated files (CSV, JSONL)
 │   ├── analysis/             # Link processing
 │   ├── debug/                # Debug scripts

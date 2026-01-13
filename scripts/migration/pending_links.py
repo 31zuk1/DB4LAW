@@ -8,11 +8,22 @@ DB4LAW: Pending Links 共通スキーマ・ユーティリティ
 
 import json
 import hashlib
-import re
+import sys
 from datetime import datetime, timezone
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import List, Optional, Dict, Any
+
+# 共通モジュールのインポート
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'src'))
+from legalkg.utils.article_formatter import (
+    normalize_amendment_id,
+    amendment_key_to_title,
+    extract_article_number,
+)
+
+# 設定のインポート
+from config import DEFAULT_PENDING_LOG, DEFAULT_RESOLVED_LOG
 
 
 @dataclass
@@ -215,7 +226,7 @@ def extract_amendment_info_from_path(file_path: Path) -> Optional[Dict[str, str]
         file_path: ファイルパス
 
     Returns:
-        {'key': 'R3_L37', 'law_no': '令和三年法律第三七号'} 形式、または None
+        {'key': 'R3_L37', 'law_no': '令和3年法律第37号'} 形式、または None
     """
     parts = file_path.parts
 
@@ -224,8 +235,8 @@ def extract_amendment_info_from_path(file_path: Path) -> Optional[Dict[str, str]
         if part == '改正法' and i + 1 < len(parts):
             amendment_key = parts[i + 1]
 
-            # キーから法律番号を復元
-            law_no = _key_to_law_no(amendment_key)
+            # キーから法律番号を復元（共通モジュール使用）
+            law_no = amendment_key_to_title(amendment_key)
 
             return {
                 'key': amendment_key,
@@ -234,62 +245,14 @@ def extract_amendment_info_from_path(file_path: Path) -> Optional[Dict[str, str]
 
         # 旧形式（日本語ディレクトリ名）
         if '年' in part and '法律第' in part:
-            amendment_key = _law_no_to_key(part)
+            # 共通モジュール使用
+            amendment_key = normalize_amendment_id(part)
             return {
                 'key': amendment_key,
                 'law_no': part
             }
 
     return None
-
-
-def _key_to_law_no(key: str) -> str:
-    """
-    改正法キーを法律番号に変換
-    例: R3_L37 → 令和3年法律第37号
-    """
-    era_map = {'M': '明治', 'T': '大正', 'S': '昭和', 'H': '平成', 'R': '令和'}
-
-    match = re.match(r'^([MTSHR])(\d+)_L(\d+)$', key)
-    if match:
-        era = era_map.get(match.group(1), match.group(1))
-        year = match.group(2)
-        law_num = match.group(3)
-        return f"{era}{year}年法律第{law_num}号"
-
-    return key
-
-
-def _law_no_to_key(law_no: str) -> str:
-    """
-    法律番号を改正法キーに変換
-    例: 令和三年法律第三七号 → R3_L37
-    """
-    era_map = {'明治': 'M', '大正': 'T', '昭和': 'S', '平成': 'H', '令和': 'R'}
-
-    # 漢数字→算用数字変換
-    kanji_nums = {
-        '〇': '0', '一': '1', '二': '2', '三': '3', '四': '4',
-        '五': '5', '六': '6', '七': '7', '八': '8', '九': '9'
-    }
-
-    def kanji_to_arabic(text: str) -> str:
-        result = ''
-        for char in text:
-            result += kanji_nums.get(char, char)
-        return result
-
-    # パターン: 元号N年...法律第M号
-    pattern = r'(明治|大正|昭和|平成|令和)([〇一二三四五六七八九]+|\d+)年.*法律第([〇一二三四五六七八九]+|\d+)号'
-    match = re.search(pattern, law_no)
-
-    if match:
-        era = era_map.get(match.group(1), 'X')
-        year = kanji_to_arabic(match.group(2))
-        law_num = kanji_to_arabic(match.group(3))
-        return f"{era}{year}_L{law_num}"
-
-    return law_no.replace(' ', '_')
 
 
 def extract_article_number_from_link(link_target: str) -> Optional[int]:
@@ -302,30 +265,5 @@ def extract_article_number_from_link(link_target: str) -> Optional[int]:
     Returns:
         条文番号（整数）、または None
     """
-    # パスからファイル名を抽出
-    if '/' in link_target:
-        link_target = link_target.split('/')[-1]
-
-    # .md を除去
-    link_target = link_target.replace('.md', '')
-
-    # アンカーを除去
-    if '#' in link_target:
-        link_target = link_target.split('#')[0]
-
-    # 単条形式のマッチング: 第N条 (枝番なし)
-    match = re.match(r'^第(\d+)条$', link_target)
-    if match:
-        return int(match.group(1))
-
-    # 附則第N条 形式
-    match = re.match(r'^附則第(\d+)条$', link_target)
-    if match:
-        return int(match.group(1))
-
-    return None
-
-
-# デフォルトパス
-DEFAULT_PENDING_LOG = Path(__file__).parent / '_artifacts' / 'pending_links.jsonl'
-DEFAULT_RESOLVED_LOG = Path(__file__).parent / '_artifacts' / 'resolved_links.jsonl'
+    # 共通モジュールを使用
+    return extract_article_number(link_target)
