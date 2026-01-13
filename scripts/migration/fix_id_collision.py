@@ -397,7 +397,7 @@ def find_unresolved_links(law_dir: Path) -> List[UnresolvedLink]:
     unresolved = []
     law_name = law_dir.name
 
-    # 外部法名パターン（民法以外の法律名）
+    # 外部法名パターン（他法律への参照を検出）
     external_law_patterns = [
         r'民事執行法', r'民事訴訟法', r'民事保全法', r'商法', r'会社法',
         r'破産法', r'不動産登記法', r'戸籍法', r'家事事件手続法',
@@ -411,7 +411,8 @@ def find_unresolved_links(law_dir: Path) -> List[UnresolvedLink]:
         r'社債、株式等の振替に関する法律', r'一般社団法人及び一般財団法人に関する法律',
         r'会社更生法', r'金融機関等の更生手続の特例等に関する法律',
         r'資産の流動化に関する法律', r'投資信託及び投資法人に関する法律',
-        r'同法', r'附則'  # 「同法」「附則」も外部参照の可能性
+        r'土地収用法', r'行政不服審査法', r'行政事件訴訟法', r'民法',  # 土地関連法
+        r'同法', r'附則', r'旧法', r'新法'  # 「同法」「附則」「旧法」「新法」も外部参照の可能性
     ]
     external_law_regex = '|'.join(external_law_patterns)
 
@@ -461,7 +462,7 @@ def find_unresolved_links(law_dir: Path) -> List[UnresolvedLink]:
                 if not target_path.exists():
                     # 外部法参照かどうかチェック
                     # リンクの前の文脈を取得
-                    start_pos = max(0, match.start() - 50)
+                    start_pos = max(0, match.start() - 200)
                     context = body[start_pos:match.start()]
 
                     external_match = re.search(external_law_regex, context)
