@@ -16,8 +16,18 @@ import re
 import yaml
 import argparse
 from pathlib import Path
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple, Optional, Any
 from dataclasses import dataclass, field
+
+# pending links 機能
+from pending_links import (
+    PendingLink,
+    create_pending_link,
+    append_pending,
+    extract_amendment_info_from_path,
+    extract_article_number_from_link,
+    DEFAULT_PENDING_LOG,
+)
 
 
 @dataclass
@@ -54,6 +64,11 @@ class UnresolvedLink:
     original_text: str
     reason: str  # 'external_law' | 'missing_article' | 'deleted_article'
     external_law_name: Optional[str] = None
+    # pending links 用の追加フィールド
+    display_text: Optional[str] = None  # 表示テキスト
+    context_before: str = ""  # リンク前の文脈（最大200文字）
+    context_after: str = ""   # リンク後の文脈（最大200文字）
+    match_span: Optional[Dict[str, int]] = None  # {"start": int, "end": int}
 
 
 def normalize_amendment_id(raw_name: str) -> str:
@@ -461,25 +476,34 @@ def find_unresolved_links(law_dir: Path) -> List[UnresolvedLink]:
 
                 if not target_path.exists():
                     # 外部法参照かどうかチェック
-                    # リンクの前の文脈を取得
+                    # リンクの前後の文脈を取得
                     start_pos = max(0, match.start() - 200)
-                    context = body[start_pos:match.start()]
+                    end_pos = min(len(body), match.end() + 200)
+                    context_before = body[start_pos:match.start()]
+                    context_after = body[match.end():end_pos]
 
-                    external_match = re.search(external_law_regex, context)
+                    external_match = re.search(external_law_regex, context_before)
+
+                    # 共通フィールド
+                    common_fields = {
+                        'source_file': md_file,
+                        'target_path': link_target,
+                        'original_text': match.group(0),
+                        'display_text': display_text,
+                        'context_before': context_before,
+                        'context_after': context_after,
+                        'match_span': {'start': match.start(), 'end': match.end()},
+                    }
 
                     if external_match:
                         unresolved.append(UnresolvedLink(
-                            source_file=md_file,
-                            target_path=link_target,
-                            original_text=match.group(0),
+                            **common_fields,
                             reason='external_law',
                             external_law_name=external_match.group(0)
                         ))
                     else:
                         unresolved.append(UnresolvedLink(
-                            source_file=md_file,
-                            target_path=link_target,
-                            original_text=match.group(0),
+                            **common_fields,
                             reason='missing_article'
                         ))
 
@@ -489,11 +513,68 @@ def find_unresolved_links(law_dir: Path) -> List[UnresolvedLink]:
     return unresolved
 
 
-def fix_external_law_links(law_dir: Path, unresolved: List[UnresolvedLink], dry_run: bool = False) -> int:
+def determine_pending_kind(
+    link: UnresolvedLink,
+    law_dir: Path
+) -> Tuple[str, str, Dict]:
+    """
+    保留リンクの種別を判定
+
+    Returns:
+        (kind, reason, hints)
+    """
+    hints: Dict[str, Any] = {}
+
+    # 1. 外部法名がコンテキストにある場合
+    if link.external_law_name and link.external_law_name not in ['同法', '附則', '旧法', '新法']:
+        hints['external_law_name'] = link.external_law_name
+        return ("external_law", "detected_external_law_name_in_context", hints)
+
+    # 2. 改正法附則配下のファイルの場合、amendment_info を追加
+    amendment_info = extract_amendment_info_from_path(link.source_file)
+    if amendment_info:
+        hints['amendment_key'] = amendment_info['key']
+        hints['amendment_law_no'] = amendment_info['law_no']
+
+    # 3. "同法/附則/旧法/新法" だけの場合
+    if link.external_law_name in ['同法', '附則', '旧法', '新法']:
+        return ("unknown", "same_law_token", hints)
+
+    return ("unknown", "unclassified", hints)
+
+
+def fix_external_law_links(
+    law_dir: Path,
+    unresolved: List[UnresolvedLink],
+    dry_run: bool = False,
+    law_name: Optional[str] = None,
+    pending_log: Optional[Path] = None,
+    pending_marker: bool = False
+) -> Tuple[int, int]:
     """
     外部法参照のリンクを解除（プレーンテキストに戻す）
+
+    Args:
+        law_dir: 法律ディレクトリ
+        unresolved: 未解決リンクリスト
+        dry_run: Dry-runモード
+        law_name: 法律名（pending log用）
+        pending_log: pending log ファイルパス
+        pending_marker: Markdownマーカーを挿入するか
+
+    Returns:
+        Tuple[int, int]: (修正件数, pending log 追記件数)
     """
     fixed_count = 0
+    pending_count = 0
+
+    # 法律名の取得
+    if law_name is None:
+        law_name = law_dir.name
+
+    # pending log のデフォルト設定
+    if pending_log is None:
+        pending_log = DEFAULT_PENDING_LOG
 
     # ファイルごとにグループ化
     files_to_fix: Dict[Path, List[UnresolvedLink]] = {}
@@ -509,17 +590,47 @@ def fix_external_law_links(law_dir: Path, unresolved: List[UnresolvedLink], dry_
             new_content = content
 
             for link in links:
-                # [[path|display]] → display のみに戻す
-                # または [[path]] → そのまま表示
+                # 表示テキストを取得
                 if '|' in link.original_text:
                     # [[laws/民法/本文/第63条.md|第六十三条]] → 第六十三条
                     display = link.original_text.split('|')[1].rstrip(']]')
-                    new_content = new_content.replace(link.original_text, display)
                 else:
                     # [[第63条]] → 第63条
                     display = link.original_text.strip('[]')
-                    new_content = new_content.replace(link.original_text, display)
 
+                # pending link の種別を判定
+                kind, reason, hints = determine_pending_kind(link, law_dir)
+
+                # PendingLink レコードを作成
+                pending_record = create_pending_link(
+                    src_path=file_path,
+                    src_law_name=law_name,
+                    original_wikilink=link.original_text,
+                    anchor_text=display,
+                    replaced_with=display,
+                    kind=kind,
+                    reason=reason,
+                    match_span=link.match_span,
+                    context_before=link.context_before,
+                    context_after=link.context_after,
+                    hints=hints
+                )
+
+                # pending log に追記（dry-run でも追記する）
+                if append_pending(pending_log, pending_record):
+                    pending_count += 1
+
+                # 置換文字列を構築
+                if pending_marker:
+                    # Obsidian形式のマーカーを追加
+                    import json
+                    marker_json = json.dumps({"id": pending_record.id}, ensure_ascii=False)
+                    replacement = f"{display}%%DB4LAW:{marker_json}%%"
+                else:
+                    replacement = display
+
+                # 置換実行
+                new_content = new_content.replace(link.original_text, replacement)
                 fixed_count += 1
 
             if not dry_run and new_content != content:
@@ -528,7 +639,7 @@ def fix_external_law_links(law_dir: Path, unresolved: List[UnresolvedLink], dry_
         except Exception as e:
             print(f"Warning: Failed to fix {file_path}: {e}")
 
-    return fixed_count
+    return fixed_count, pending_count
 
 
 def generate_stub_nodes(law_dir: Path, unresolved: List[UnresolvedLink], dry_run: bool = False, ranges: Optional[List[ArticleRange]] = None) -> Tuple[int, int]:
@@ -648,6 +759,11 @@ def main():
     parser.add_argument('--generate-stubs', action='store_true', help='スタブノード生成')
     parser.add_argument('--all', action='store_true', help='全ての修正を実行')
     parser.add_argument('--report', action='store_true', help='レポート出力のみ')
+    # pending links オプション
+    parser.add_argument('--pending-log', type=Path, default=DEFAULT_PENDING_LOG,
+                        help=f'Pending log ファイルパス（デフォルト: {DEFAULT_PENDING_LOG}）')
+    parser.add_argument('--pending-marker', action='store_true',
+                        help='Markdownに再リンク用マーカーを埋め込む（デフォルトOFF）')
     args = parser.parse_args()
 
     vault_path = Path("/Users/haramizuki/Project/DB4LAW/Vault/laws")
@@ -705,8 +821,18 @@ def main():
     # 3. 外部法リンク解除
     if args.fix_links:
         print("\n[3] 外部法リンク解除...")
-        fixed = fix_external_law_links(law_dir, unresolved, dry_run=args.dry_run)
+        fixed, pending = fix_external_law_links(
+            law_dir,
+            unresolved,
+            dry_run=args.dry_run,
+            law_name=args.law,
+            pending_log=args.pending_log,
+            pending_marker=args.pending_marker
+        )
         print(f"   修正: {fixed}件")
+        print(f"   Pending log: {pending}件 → {args.pending_log}")
+        if args.pending_marker:
+            print(f"   マーカー埋め込み: ON")
 
     # 4. 範囲ノードリダイレクト
     if args.redirect_ranges:
