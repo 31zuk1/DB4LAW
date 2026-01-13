@@ -20,6 +20,13 @@
         "a": 1,
         "rgb": 14725458
       }
+    },
+    {
+      "query": "民法",
+      "color": {
+        "a": 1,
+        "rgb": 65531
+      }
     }
   ],
   "collapse-display": false,
@@ -28,10 +35,10 @@
   "nodeSizeMultiplier": 3.82843424479167,
   "lineSizeMultiplier": 2.73582356770833,
   "collapse-forces": false,
-  "centerStrength": 0.6639404296875,
-  "repelStrength": 18.828125,
-  "linkStrength": 0.364054361979167,
+  "centerStrength": 0.4927978515625,
+  "repelStrength": 20,
+  "linkStrength": 0.808146158854167,
   "linkDistance": 281,
-  "scale": 0.06977226622888082,
+  "scale": 0.07986930688742276,
   "close": false
 }
