@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-LegalKG generates a knowledge graph of Japanese laws in Obsidian Vault format. It fetches law data from e-Gov API, parses legal text into structured nodes, extracts cross-references, and enriches with National Diet Library metadata.
+DB4LAW generates a knowledge graph of Japanese laws in Obsidian Vault format. It fetches law data from e-Gov API, parses legal text into structured nodes with Japanese directory paths, and extracts cross-references as Obsidian wikilinks.
 
 ## Common Commands
 
@@ -17,134 +17,143 @@ pip install -e .
 
 ### Build Commands
 
-**Tier 0 - Generate metadata for all laws (~2000+):**
+**Tier 1+2 - Generate articles with reference extraction:**
 ```bash
-python -m legalkg build-tier0 --vault ./Vault --as-of 2025-12-30
-```
-Runtime: ~1 hour due to rate limiting (0.5s between requests)
-
-**Tier 1 - Generate article nodes for specific laws:**
-```bash
-# First edit targets.yaml to specify law IDs
-python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml
-```
-
-**Tier 1+2 - Articles + reference extraction:**
-```bash
+# Edit targets.yaml to specify law IDs first
 python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges
 ```
 
-**Enrichment - Add NDL legislative metadata:**
+**Migration to Japanese paths:**
 ```bash
-python -m legalkg enrich-ndl --vault ./Vault --targets targets.yaml
+python scripts/migration/migrate_to_japanese.py --law 刑法 --dry-run
+python scripts/migration/migrate_to_japanese.py --law 刑法 --apply
 ```
 
-### Testing Commands
-
-**Run unit tests:**
+**Fix external law references:**
 ```bash
-pytest
+python scripts/migration/fix_id_collision.py --law 民法 \
+  --pending-log scripts/migration/_artifacts/pending_links.jsonl \
+  --apply
 ```
 
-**Debug NDL API queries:**
+**Add parent file links:**
 ```bash
-python debug_ndl.py
+python scripts/migration/add_parent_links.py --law 刑法
 ```
 
-**Test reference extraction regex:**
+### Debug Commands
+
 ```bash
-python debug_regex.py
+# NDL API queries
+python scripts/debug/debug_ndl.py
+
+# Reference extraction regex
+python scripts/debug/debug_regex.py
 ```
 
 ## Architecture
 
 ### Three-Tier Data Model
 
-The project uses a progressive enrichment architecture:
-
-1. **Tier 0** (`src/legalkg/core/tier0.py`): Fetches law list from e-Gov API and generates metadata files for ~2000+ laws
+1. **Tier 0** (`src/legalkg/core/tier0.py`): Fetches law list from e-Gov API
    - Output: `Vault/laws/{LAW_ID}/{title}.md` with YAML frontmatter
 
-2. **Tier 1** (`src/legalkg/core/tier1.py`): Parses XML for targeted laws and extracts individual articles
-   - Output: `articles/main/Article_{N}.md` and `articles/suppl/Article_{N}.md`
+2. **Tier 1** (`src/legalkg/core/tier1.py`): Parses XML and extracts individual articles
+   - Raw output: `articles/main/Article_{N}.md` and `articles/suppl/...`
+   - After migration: `本文/第N条.md` and `附則/改正法/{KEY}/附則第N条.md`
 
-3. **Tier 2** (`src/legalkg/core/tier2.py`): Extracts cross-references between articles using regex
-   - Pattern: `第{kanji_numerals}条` (e.g., 第十九条 → Article 19)
+3. **Tier 2** (`src/legalkg/core/tier2.py`): Extracts cross-references using regex
+   - Pattern: `第{kanji_numerals}条` → wikilink
    - Output: `edges.jsonl` containing reference graph edges
 
-### Client-Cache Pattern
+### Japanese Path Convention
 
-All API clients extend `BaseClient` (`src/legalkg/client/base.py`):
-- MD5-based file caching in `cache/` directory (no TTL)
-- Automatic rate limiting (0.5s for e-Gov, 1.0s for NDL)
-- Session reuse for connection pooling
+After running `migrate_to_japanese.py`, articles use Japanese paths:
 
-**Key clients:**
-- `EgovClient` (`src/legalkg/client/egov.py`): Fetches law list and full XML
-- `NdlClient` (`src/legalkg/client/ndl.py`): Queries legislative process metadata
+```
+Vault/laws/刑法/
+├── 刑法.md                    # Parent node with links to all articles
+├── 本文/                      # Main text (本則)
+│   ├── 第1条.md
+│   └── 第199条.md
+├── 附則/                      # Supplementary provisions
+│   └── 改正法/                # Amendment laws
+│       ├── R3_L37/           # 令和3年法律第37号
+│       └── H19_L54/          # 平成19年法律第54号
+└── edges.jsonl
+```
 
 ### Node ID Schema
 
 - **Law:** `JPLAW:{LAW_ID}` (e.g., `JPLAW:140AC0000000045`)
-- **Article:** `JPLAW:{LAW_ID}#{part}#{article_num}` (e.g., `JPLAW:140AC0000000045#main#1`)
-- **Sub-article:** Uses underscore notation (e.g., `#main#19_3` for Article 19-3)
+- **Main Article:** `JPLAW:{LAW_ID}#本文#第N条` (e.g., `#本文#第199条`)
+- **Supplementary:** `JPLAW:{LAW_ID}#附則#附則第N条`
+- **Sub-article:** Uses `の` notation (e.g., `第19条の2`)
 
-### Domain Classification
+### Migration Scripts
 
-Laws are categorized using two YAML files in `data/`:
-- `class_to_domain.yaml`: Maps e-Gov classifications to legal domains (36 mappings)
-- `domain_overrides.yaml`: Manual overrides for specific laws
+Located in `scripts/migration/`:
 
-**Domains:** 民事法, 刑事法, 公法, 税法, 経済法, 社会法, 環境法, 行政法, 憲法・公法
+| Script | Purpose |
+|--------|---------|
+| `migrate_to_japanese.py` | Convert English paths to Japanese |
+| `fix_id_collision.py` | Unlink external law references |
+| `add_parent_links.py` | Add wikilinks to parent file |
+| `pending_links.py` | Schema for deferred link resolution |
+| `relink_pending.py` | Restore links when target nodes exist |
 
-### Kanji Numeral Processing
+### Pending Links System
 
-The `kanji_to_int()` function (`src/legalkg/utils/numerals.py`) converts Japanese numerals to integers:
-- Simple: 一 → 1, 十 → 10
-- Complex: 二十三 → 23, 百二十 → 120
-- Sub-articles: 十九の三 → "19_3"
+When external law references are unlinked, they are recorded in JSONL for later restoration:
 
-Used extensively in reference extraction to normalize article numbers.
+```bash
+# Record pending links when unlinking
+python scripts/migration/fix_id_collision.py --law 民法 \
+  --pending-log scripts/migration/_artifacts/pending_links.jsonl --apply
 
-### Output Format
-
-**Law metadata file:**
-```yaml
----
-id: JPLAW:140AC0000000045
-egov_law_id: 140AC0000000045
-law_no: 明治四十年法律第四十五号
-title: 刑法
-tier: 2
-domain: []
----
-
-# 刑法
-...
-```
-
-**Edge file (edges.jsonl):**
-```json
-{"from": "JPLAW:140AC0000000045#main#1", "to": "JPLAW:140AC0000000045#main#19", "type": "refers_to", "evidence": "第十九条", "confidence": 0.9, "source": "regex_v1"}
+# Restore links after external law nodes are created
+python scripts/migration/relink_pending.py --filter-law 民法 --apply
 ```
 
 ## Key Files
 
 - `src/legalkg/cli.py`: Typer-based CLI commands
-- `src/legalkg/config.py`: API URLs and project paths
 - `src/legalkg/core/tier2.py`: Reference extraction regex patterns
-- `src/legalkg/client/base.py`: HTTP client with caching/rate limiting
 - `src/legalkg/utils/numerals.py`: Kanji numeral conversion logic
-- `targets.yaml`: List of law IDs to process (user-maintained)
+- `scripts/migration/migrate_to_japanese.py`: Japanese path migration
+- `scripts/migration/fix_id_collision.py`: External reference handling
+- `scripts/migration/_artifacts/`: Generated CSV/JSONL files
+- `targets.yaml`: List of law IDs to process
+
+## Processed Laws
+
+| Law | Articles | Supplements | Edges |
+|-----|----------|-------------|-------|
+| 刑法 | 264 | 68 | 713 |
+| 民法 | 1,167 | 221 | 1,294 |
+| 日本国憲法 | 103 | 1 | 64 |
+| 所有者不明土地法 | 63 | 36 | 415 |
 
 ## Data Sources
 
-- **e-Gov Law API** (`https://laws.e-gov.go.jp/api/1`): Official source of law text and metadata
-- **NDL OpenSearch** (`https://ndlsearch.ndl.go.jp/api/opensearch`): Legislative process data (bill submission, proposers, etc.)
+- **e-Gov Law API** (`https://laws.e-gov.go.jp/api/1`): Official law text and metadata
+- **NDL OpenSearch** (`https://ndlsearch.ndl.go.jp/api/opensearch`): Legislative process data
 
-## Testing Notes
+## Project Structure
 
-- Test directory exists but contains no tests yet
-- pytest configured to use `tests/` directory
-- Debug scripts (`debug_ndl.py`, `debug_regex.py`) serve as manual integration tests
-- Consider mocking API responses for unit tests to avoid rate limits
+```
+DB4LAW/
+├── src/legalkg/              # Main package
+│   ├── client/               # API clients (e-Gov, NDL)
+│   ├── core/                 # Tier0/1/2 core logic
+│   └── utils/                # Kanji conversion, etc.
+├── scripts/
+│   ├── migration/            # Migration & fix scripts
+│   │   └── _artifacts/       # Generated files (CSV, JSONL)
+│   ├── analysis/             # Link processing
+│   ├── debug/                # Debug scripts
+│   └── utils/                # Shell utilities
+├── data/                     # Domain classification YAML
+├── Vault/laws/               # Obsidian Vault output
+└── targets.yaml              # Target law IDs
+```
