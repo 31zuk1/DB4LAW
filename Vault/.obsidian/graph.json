@@ -27,6 +27,13 @@
         "a": 1,
         "rgb": 65531
       }
+    },
+    {
+      "query": "所有者不明土地",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
     }
   ],
   "collapse-display": false,
@@ -39,6 +46,6 @@
   "repelStrength": 20,
   "linkStrength": 0.808146158854167,
   "linkDistance": 281,
-  "scale": 0.07986930688742276,
+  "scale": 0.03196738824294075,
   "close": false
 }
