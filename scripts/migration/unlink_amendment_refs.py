@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-DB4LAW: 改正法断片内の誤リンクを解除
+DB4LAW: 改正法断片内の親法本文リンクを解除
 
-改正法断片（suppl_kind: amendment）内の「裸の第N条」参照が
-親法本文へ誤ってリンクされている場合、プレーンテキストに戻す。
+改正法断片（suppl_kind: amendment）内の親法本文へのリンクを
+原則すべてプレーンテキストに戻す。
 
 判定基準:
-- 対象: suppl_kind: amendment のファイルのみ
-- 解除: [[laws/<法>/本文/第N条.md|表示]] で、表示の直前に法律名がないもの
-- 維持: 「民法第N条」のように法律名が直前にあるリンク
+- 対象: suppl_kind: amendment のファイルのみ（旧形式ディレクトリも含む）
+- 解除: [[laws/<法>/本文/<任意>.md|表示]] を原則すべて
+        （第N条.md、第38:84条.md のような範囲ノードも含む）
+- 維持: リンク直前50文字以内に親法名（例: 民法、新民法、改正前の民法）がある場合のみ
 
 Usage:
     python scripts/migration/unlink_amendment_refs.py --law 民法 --dry-run
@@ -94,9 +95,10 @@ def unlink_amendment_refs(
         print(f"  附則ディレクトリが見つかりません: {suppl_dir}")
         return stats, unlinked_refs
 
-    # WikiLink パターン: [[laws/<法>/本文/第N条.md|表示]] または [[第N条]]
+    # WikiLink パターン: [[laws/<法>/本文/<任意>.md|表示]]
+    # 範囲ノード（第38:84条.md）も含めてすべてマッチ
     wikilink_pattern = re.compile(
-        r'\[\[(?:laws/[^/]+/本文/)?第[\d一二三四五六七八九十百千]+条(?:の[\d一二三四五六七八九十百千]+)?(?:\.md)?(?:\|([^\]]+))?\]\]'
+        r'\[\[laws/' + re.escape(law_name) + r'/本文/([^\]|]+\.md)(?:\|([^\]]+))?\]\]'
     )
 
     # 附則配下の全 .md ファイルを処理
@@ -152,7 +154,8 @@ def unlink_amendment_refs(
 
             for match in wikilink_pattern.finditer(body):
                 link_full = match.group(0)
-                display_text = match.group(1)
+                filename = match.group(1)  # 第27条.md, 第38:84条.md など
+                display_text = match.group(2)  # 表示テキスト（あれば）
 
                 # マッチ位置の前50文字を取得
                 match_start = match.start()
@@ -165,12 +168,8 @@ def unlink_amendment_refs(
                     if display_text:
                         replacement = display_text
                     else:
-                        # [[第N条]] の場合は第N条を抽出
-                        inner = link_full.strip('[]')
-                        if '|' in inner:
-                            replacement = inner.split('|')[1]
-                        else:
-                            replacement = inner.replace('.md', '').split('/')[-1]
+                        # 表示テキストがない場合はファイル名から生成
+                        replacement = filename.replace('.md', '')
 
                     new_body = new_body.replace(link_full, replacement, 1)
                     file_modified = True
