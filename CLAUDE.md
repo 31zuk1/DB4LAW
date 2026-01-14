@@ -90,6 +90,36 @@ Vault/laws/刑法/
 - **Supplementary:** `JPLAW:{LAW_ID}#附則#附則第N条`
 - **Sub-article:** Uses `の` notation (e.g., `第19条の2`)
 
+### Amendment Law Fragment Model
+
+e-Gov の統合条文 XML では、整備法・一括改正法は独立法令として取得できず、
+各親法の `SupplProvision(AmendLawNum=...)` に断片として分散格納される。
+
+**改正法断片の識別:**
+```yaml
+suppl_kind: amendment              # 改正法断片であることを示す
+amendment_law_id: R3_L37           # 正規化ID
+amendment_law_title: 令和三年五月一九日法律第三七号
+amend_law:                         # 将来の統合用ネスト構造
+  num: 令和三年五月一九日法律第三七号
+  normalized_id: R3_L37
+  scope: partial
+  parent_law_id: 129AC0000000089
+  parent_law_name: 民法
+```
+
+**リンク化方針（方式B: 断片維持）:**
+
+| 条件 | 本文 | 初期附則 | 改正法断片 |
+|------|------|----------|------------|
+| 裸の第N条 | リンク化 | リンク化 | **リンク化しない** |
+| 民法第N条 | リンク化 | リンク化 | リンク化 |
+| 外部法第N条 | リンク化しない | リンク化しない | リンク化しない |
+
+改正法断片内の「第N条」は改正法自身の条文を指すが、e-Gov には改正法全文が存在しないため
+リンク先がない。将来的に改正法Vaultを統合生成した際にリンク化する予定。
+詳細: `docs/AMENDMENT_VAULT_DESIGN.md`
+
 ## Common Utility Modules
 
 ### article_formatter.py (`src/legalkg/utils/`)
@@ -157,6 +187,9 @@ Located in `scripts/migration/`:
 | `add_parent_links.py` | Add wikilinks to parent file |
 | `pending_links.py` | Schema for deferred link resolution |
 | `relink_pending.py` | Restore links when target nodes exist |
+| `add_amend_law_meta.py` | Add `amend_law:` nested metadata to supplements |
+| `unlink_amendment_refs.py` | Unlink bare references in amendment fragments |
+| `generate_amendment_vault.py` | (Stub) Generate integrated amendment law vault |
 
 ### Pending Links System
 

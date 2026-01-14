@@ -94,7 +94,12 @@ class EdgeExtractor:
                 
         return edges
 
-    def replace_refs(self, text: str, law_name: str) -> str:
+    def replace_refs(
+        self,
+        text: str,
+        law_name: str,
+        is_amendment_fragment: bool = False
+    ) -> str:
         """
         Replace matched references with Obsidian WikiLinks.
         e.g. "第九条" -> "[[laws/刑法/本文/第9条.md|第九条]]"
@@ -102,19 +107,55 @@ class EdgeExtractor:
         重要: 外部法令への参照はリンク化しない
         - 「民事執行法第N条」のように外部法名が前置されている場合
         - 「同法第N条」のように他法律を参照している場合
+
+        改正法断片モード (is_amendment_fragment=True):
+        - 「裸の第N条」（法律名なし）はリンク化しない
+        - 「民法第N条」のように親法名が明示されている場合はリンク化する
+        - 外部法参照は従来通りリンク化しない
+
+        Args:
+            text: 変換対象テキスト
+            law_name: 親法名（例: '民法'）
+            is_amendment_fragment: 改正法断片内の場合 True
+
+        Returns:
+            WikiLinks に変換されたテキスト
         """
         def _replacer(m):
             original_text = m.group(0)  # e.g. 第九条
             match_start = m.start()
 
-            # マッチ位置の前100文字を取得して外部法参照かチェック
+            # マッチ位置の前100文字を取得して文脈チェック
             context_start = max(0, match_start - 100)
             context = text[context_start:match_start]
 
-            # 外部法令名が直近にある場合はリンク化しない
+            # 1. 外部法令名が直近にある場合はリンク化しない（従来通り）
             for pattern in EXTERNAL_LAW_PATTERNS:
                 if re.search(re.escape(pattern) + r'[^第]{0,20}$', context):
                     return original_text  # リンク化せずにそのまま返す
+
+            # 2. 改正法断片モード: 裸の第N条（法律名なし）はリンク化しない
+            #
+            # TODO: 将来的には frontmatter の suppl_kind / amendment_law_id を
+            #       真実として使用する。現在は呼び出し側 (tier1) が AmendLawNum
+            #       属性から判定して is_amendment_fragment を渡している。
+            #       frontmatter ベースの判定に移行する際は、ここでファイルパスから
+            #       メタデータを読み取るか、呼び出し側で suppl_kind を渡す形にする。
+            #
+            if is_amendment_fragment:
+                # 親法名が直前にある場合はリンク化する（例: 「民法第N条」「民法の第N条」）
+                # 許容距離: 50文字
+                # 許容文字: 「の」「各種括弧」「句読点」「空白/改行/全角スペース」
+                # 括弧内テキスト: 「民法（改正前）第N条」のように括弧内の注釈も許容
+                near_context = context[-50:] if len(context) >= 50 else context
+                # 許容パターン: 法名 + (許容文字 | 括弧内テキスト)* + 末尾
+                # 括弧内テキスト: （...）または (...)
+                bracket_content = r'(?:[（\(][^）\)]*[）\)])?'
+                simple_chars = r'[\s\u3000の「」『』【】、。,.\[\]]*'
+                parent_law_pattern = re.escape(law_name) + r'(?:' + simple_chars + bracket_content + r')*' + r'$'
+                if not re.search(parent_law_pattern, near_context):
+                    # 親法名がない = 裸の参照 → リンク化しない
+                    return original_text
 
             ref_num_raw = m.group(1)
 
