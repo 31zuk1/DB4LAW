@@ -234,6 +234,19 @@ def redirect_to_range_nodes(law_dir: Path, dry_run: bool = False) -> List[RangeR
 
         try:
             content = md_file.read_text(encoding='utf-8')
+
+            # 改正法断片（suppl_kind: amendment）はスキップ
+            # これにより将来の --redirect-ranges が改正法断片に適用されるのを防ぐ
+            if content.startswith('---'):
+                yaml_end = content.find('---', 3)
+                if yaml_end > 0:
+                    yaml_str = content[3:yaml_end]
+                    try:
+                        metadata = yaml.safe_load(yaml_str)
+                        if metadata and metadata.get('suppl_kind') == 'amendment':
+                            continue  # 改正法断片はスキップ
+                    except yaml.YAMLError:
+                        pass  # YAML解析エラーは無視して続行
             new_content = content
             file_redirects = []
 

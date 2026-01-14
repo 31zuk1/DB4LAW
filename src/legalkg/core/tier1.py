@@ -122,25 +122,27 @@ class Tier1Builder:
         honbun_dir.mkdir(exist_ok=True)
         fusoku_dir.mkdir(exist_ok=True)
 
-        self._process_part(soup.find("MainProvision"), law_id, honbun_dir, "main", extract_edges, all_edges if extract_edges else None, law_name=law_name)
-        
+        self._process_part(soup.find("MainProvision"), law_id, honbun_dir, "main", extract_edges, all_edges if extract_edges else None, law_name=law_name, amend_law_num=None)
+
         # Handle multiple SupplProvision
         for i, spl in enumerate(soup.find_all("SupplProvision")):
-            amend_num = spl.get("AmendLawNum", f"init_{i}")
+            # AmendLawNum が存在すれば改正法断片、なければ初期附則
+            raw_amend_num = spl.get("AmendLawNum")  # None if not present
+            amend_num = raw_amend_num if raw_amend_num else f"init_{i}"
             safe_amend = re.sub(r'[^\w\-]', '_', amend_num)
-            
+
             # Check if this provision has articles
             has_articles = bool(spl.find("Article"))
-            
+
             if has_articles:
                 # Use subdirectory
                 out_dir = fusoku_dir / safe_amend
                 out_dir.mkdir(exist_ok=True, parents=True)
-                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend, law_name=law_name)
+                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend, law_name=law_name, amend_law_num=raw_amend_num)
             else:
                 # Use direct file under suppl/
                 out_dir = fusoku_dir
-                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend)
+                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend, amend_law_num=raw_amend_num)
 
         if extract_edges and all_edges:
             with open(law_dir / "edges.jsonl", "w", encoding="utf-8") as f:
@@ -152,9 +154,28 @@ class Tier1Builder:
         if law_md_path:
             self._update_law_tier(law_md_path, final_tier)
 
-    def _process_part(self, container, law_id: str, out_dir: Path, part_type: str, extract_edges: bool = False, edge_list: List = None, file_key_override: str = None, law_name: str = ""):
+    def _process_part(self, container, law_id: str, out_dir: Path, part_type: str, extract_edges: bool = False, edge_list: List = None, file_key_override: str = None, law_name: str = "", amend_law_num: Optional[str] = None):
+        """
+        条文パートを処理してMarkdownファイルを生成
+
+        Args:
+            container: BeautifulSoup要素（MainProvision または SupplProvision）
+            law_id: 法令ID
+            out_dir: 出力ディレクトリ
+            part_type: 'main' または 'suppl'
+            extract_edges: エッジ抽出を行うか
+            edge_list: エッジ蓄積リスト
+            file_key_override: ファイル名プレフィックス
+            law_name: 親法名
+            amend_law_num: AmendLawNum属性値（改正法断片の場合に設定）
+                           None = 本文 or 初期附則（リンク化する）
+                           値あり = 改正法断片（裸の第N条はリンク化しない）
+        """
         if not container:
             return
+
+        # 改正法断片判定: AmendLawNum が存在すれば改正法断片
+        is_amendment_fragment = amend_law_num is not None
 
         # Find Articles
         articles = container.find_all("Article")
@@ -291,26 +312,28 @@ class Tier1Builder:
             for p in paragraphs:
                 p_num = p.find("ParagraphNum")
                 p_num_text = p_num.text if p_num else ""
-                
+
                 sentences = p.find_all("Sentence")
                 raw_text = "".join([s.text for s in sentences])
-                
+
                 # Link Injection
-                text = extractor.replace_refs(raw_text, law_name) if law_name else raw_text
-                
+                # 改正法断片の場合は裸の第N条をリンク化しない
+                text = extractor.replace_refs(raw_text, law_name, is_amendment_fragment=is_amendment_fragment) if law_name else raw_text
+
                 content += f"## {p_num_text}\n{text}\n\n"
                 full_text_for_edge += raw_text + "\n"
-                
+
                 items = p.find_all("Item")
                 for item in items:
                     i_title = item.find("ItemTitle")
                     i_title_text = i_title.text if i_title else ""
                     i_sentences = item.find_all("Sentence")
                     i_raw_text = "".join([s.text for s in i_sentences])
-                    
+
                     # Link Injection
-                    i_text = extractor.replace_refs(i_raw_text, law_name) if law_name else i_raw_text
-                    
+                    # 改正法断片の場合は裸の第N条をリンク化しない
+                    i_text = extractor.replace_refs(i_raw_text, law_name, is_amendment_fragment=is_amendment_fragment) if law_name else i_raw_text
+
                     content += f"- {i_title_text} {i_text}\n"
                     full_text_for_edge += i_raw_text + "\n"
             
@@ -324,7 +347,26 @@ class Tier1Builder:
                 "article_num": num,
                 "heading": caption_text
             }
-            
+
+            # 改正法断片の場合は追加メタデータを付与
+            if is_amendment_fragment and amend_law_num:
+                from ..utils.article_formatter import normalize_amendment_id
+                normalized_id = normalize_amendment_id(amend_law_num)
+
+                # 既存フィールド（フラット）
+                fm["suppl_kind"] = "amendment"
+                fm["amendment_law_id"] = normalized_id
+                fm["amendment_law_title"] = amend_law_num
+
+                # amend_law ネスト構造（将来の統合用）
+                fm["amend_law"] = {
+                    "num": amend_law_num,              # AmendLawNum 原文
+                    "normalized_id": normalized_id,    # R3_L37 形式
+                    "scope": "partial",                # 断片であることを明示
+                    "parent_law_id": law_id,
+                    "parent_law_name": law_name,
+                }
+
             # Extract Edges
             if extract_edges and edge_list is not None:
                 from .tier2 import EdgeExtractor
