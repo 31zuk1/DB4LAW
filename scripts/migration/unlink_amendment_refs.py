@@ -52,13 +52,28 @@ def is_bare_reference(context_before: str, law_name: str) -> bool:
         True: 裸の参照（リンク解除すべき）
         False: 法律名付き参照（維持すべき）
     """
-    # 許容パターン: 法名 + (許容文字 | 括弧内テキスト)* + 末尾
-    bracket_content = r'(?:[（\(][^）\)]*[）\)])?'
-    simple_chars = r'[\s\u3000の「」『』【】、。,.\[\]]*'
-    parent_law_pattern = re.escape(law_name) + r'(?:' + simple_chars + bracket_content + r')*' + r'$'
+    # WikiLinkを表示テキストに置換してからチェック
+    # [[laws/民法/本文/第749条.md|第七百四十九条]] → 第七百四十九条
+    # [[laws/民法/本文/第749条.md]] → 第749条
+    context_cleaned = re.sub(
+        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
+        r'\1',
+        context_before
+    )
 
-    if re.search(parent_law_pattern, context_before):
-        return False  # 法律名付き → 裸ではない
+    # 法律名のバリエーション（新民法、旧民法等）
+    law_variants = [
+        law_name,                    # 民法
+        f'新{law_name}',             # 新民法
+        f'旧{law_name}',             # 旧民法
+        f'改正前の{law_name}',       # 改正前の民法
+        f'改正後の{law_name}',       # 改正後の民法
+    ]
+
+    # コンテキスト内に法律名バリエーションがあるかチェック
+    for variant in law_variants:
+        if variant in context_cleaned:
+            return False  # 法律名付き → 裸ではない
 
     return True  # 法律名なし → 裸の参照
 
