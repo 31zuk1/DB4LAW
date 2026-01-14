@@ -1,29 +1,34 @@
 #!/usr/bin/env python3
 """
-刑法ディレクトリ日本語統一移行スクリプト
+法令ディレクトリ日本語統一移行スクリプト
 
 目的: articles/main, articles/suppl を 本文/, 附則/ に移行し、
      ファイル名・YAML・wikilinkを日本語化する。
 
 使用方法:
-    python migrate_to_japanese.py --dry-run --sample 10   # Dry-run（サンプル10件）
-    python migrate_to_japanese.py --dry-run              # Dry-run（全件）
-    python migrate_to_japanese.py                        # 本番実行
+    python migrate_to_japanese.py --law 刑法 --dry-run --sample 10   # Dry-run（サンプル10件）
+    python migrate_to_japanese.py --law 刑法 --dry-run               # Dry-run（全件）
+    python migrate_to_japanese.py --law 刑法 --apply                 # 本番実行
 """
 
 import re
 import csv
 import shutil
+import sys
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 import yaml
 
+# 共通設定モジュールのインポート
+from config import get_law_dir, get_artifacts_path, LAWS_PATH
+
 
 class JapaneseMigrator:
-    """刑法ディレクトリを日本語化する移行ツール"""
+    """法令ディレクトリを日本語化する移行ツール"""
 
-    def __init__(self, law_dir: Path):
+    def __init__(self, law_dir: Path, law_name: str):
         self.law_dir = law_dir
+        self.law_name = law_name
         self.articles_dir = law_dir / "articles"
         self.main_dir = self.articles_dir / "main"
         self.suppl_dir = self.articles_dir / "suppl"
@@ -212,7 +217,7 @@ class JapaneseMigrator:
 
         # law_name の設定（空の場合）
         if 'law_name' in metadata and metadata['law_name'] == '':
-            metadata['law_name'] = '刑法'
+            metadata['law_name'] = self.law_name
 
         # id の変換
         if 'id' in metadata:
@@ -332,14 +337,14 @@ class JapaneseMigrator:
             return False
 
     def update_parent_file(self, dry_run: bool = False):
-        """親ファイル（刑法.md）のリンクを更新"""
-        parent_file = self.law_dir / "刑法.md"
+        """親ファイル（{law_name}.md）のリンクを更新"""
+        parent_file = self.law_dir / f"{self.law_name}.md"
 
         if not parent_file.exists():
             print(f"⚠️  親ファイルが見つかりません: {parent_file}")
             return
 
-        print("📝 親ファイル（刑法.md）のリンクを更新中...")
+        print(f"📝 親ファイル（{self.law_name}.md）のリンクを更新中...")
 
         with open(parent_file, 'r', encoding='utf-8') as f:
             content = f.read()
@@ -436,7 +441,7 @@ class JapaneseMigrator:
     def run(self, dry_run: bool = False, sample: Optional[int] = None):
         """移行を実行"""
         print("=" * 60)
-        print("🚀 刑法ディレクトリ日本語統一移行")
+        print(f"🚀 {self.law_name}ディレクトリ日本語統一移行")
         print("=" * 60)
 
         if dry_run:
@@ -450,7 +455,7 @@ class JapaneseMigrator:
         self.generate_file_mapping()
 
         # マッピングCSV保存
-        csv_path = self.law_dir.parent.parent / "migration_mapping.csv"
+        csv_path = get_artifacts_path() / f"migration_mapping_{self.law_name}.csv"
         self.save_mapping_csv(csv_path)
 
         print()
@@ -499,18 +504,32 @@ class JapaneseMigrator:
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="刑法ディレクトリ日本語統一移行")
+    parser = argparse.ArgumentParser(description="法令ディレクトリ日本語統一移行")
+    parser.add_argument('--law', required=True, help='法律名（例: 刑法, 民法）')
     parser.add_argument('--dry-run', action='store_true', help='Dry-runモード（ファイル変更なし）')
+    parser.add_argument('--apply', action='store_true', help='本番実行（--dry-runと排他）')
     parser.add_argument('--sample', type=int, help='サンプル件数（テスト用）')
     args = parser.parse_args()
 
-    # 刑法ディレクトリのパス
-    law_dir = Path("/Users/haramizuki/Project/DB4LAW/Vault/laws/刑法")
+    # dry-run がデフォルト、--apply で本番実行
+    dry_run = not args.apply
+    if args.dry_run:
+        dry_run = True
+
+    # 法律ディレクトリのパスを取得
+    law_dir = get_law_dir(args.law)
 
     if not law_dir.exists():
-        print(f"❌ エラー: 刑法ディレクトリが見つかりません: {law_dir}")
-        exit(1)
+        print(f"❌ エラー: {args.law}ディレクトリが見つかりません: {law_dir}")
+        sys.exit(1)
+
+    # articles/ ディレクトリが存在するか確認
+    articles_dir = law_dir / "articles"
+    if not articles_dir.exists():
+        print(f"❌ エラー: articles/ディレクトリが見つかりません: {articles_dir}")
+        print("   すでに移行済みか、Tier1ビルドが未実行の可能性があります。")
+        sys.exit(1)
 
     # 移行実行
-    migrator = JapaneseMigrator(law_dir)
-    migrator.run(dry_run=args.dry_run, sample=args.sample)
+    migrator = JapaneseMigrator(law_dir, args.law)
+    migrator.run(dry_run=dry_run, sample=args.sample)

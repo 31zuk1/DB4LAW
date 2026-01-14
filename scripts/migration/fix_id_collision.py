@@ -94,8 +94,13 @@ def extract_amendment_id_from_path(file_path: Path) -> Optional[str]:
 
 def build_range_index(law_dir: Path) -> List[ArticleRange]:
     """
-    本文ディレクトリ内の範囲ノード（第N:M条.md）をインデックス化
-    例: 第155:157条.md → ArticleRange(155, 157, "第155:157条.md")
+    本文ディレクトリ内の範囲ノードをインデックス化
+
+    対応形式:
+    - 旧形式: 第155:157条.md
+    - 新形式: 第155条から第157条まで.md
+
+    例: ArticleRange(155, 157, "第155条から第157条まで.md")
     """
     ranges = []
     honbun_dir = law_dir / "本文"
@@ -103,14 +108,36 @@ def build_range_index(law_dir: Path) -> List[ArticleRange]:
     if not honbun_dir.exists():
         return ranges
 
-    # 範囲形式のファイルを検索: 第{start}:{end}条.md
-    range_pattern = re.compile(r'^第(\d+):(\d+)条\.md$')
+    # 範囲形式のパターン
+    # 旧形式: 第{start}:{end}条.md
+    colon_pattern = re.compile(r'^第(\d+):(\d+)条\.md$')
+    # 新形式: 第{start}条から第{end}条まで.md
+    japanese_pattern = re.compile(r'^第(\d+)条から第(\d+)条まで\.md$')
 
+    seen_ranges = set()  # 重複排除用
+
+    # 旧形式を検索
     for file_path in honbun_dir.glob('第*:*条.md'):
-        match = range_pattern.match(file_path.name)
+        match = colon_pattern.match(file_path.name)
         if match:
             start = int(match.group(1))
             end = int(match.group(2))
+            key = (start, end)
+            if key not in seen_ranges:
+                seen_ranges.add(key)
+                ranges.append(ArticleRange(start, end, file_path.name))
+
+    # 新形式を検索（旧形式と重複する場合は新形式を優先）
+    for file_path in honbun_dir.glob('第*条から第*条まで.md'):
+        match = japanese_pattern.match(file_path.name)
+        if match:
+            start = int(match.group(1))
+            end = int(match.group(2))
+            key = (start, end)
+            if key in seen_ranges:
+                # 重複: 新形式で上書き
+                ranges = [r for r in ranges if (r.start, r.end) != key]
+            seen_ranges.add(key)
             ranges.append(ArticleRange(start, end, file_path.name))
 
     # ソート: start順
@@ -727,8 +754,7 @@ def main():
                         help='Markdownに再リンク用マーカーを埋め込む（デフォルトOFF）')
     args = parser.parse_args()
 
-    vault_path = Path("/Users/haramizuki/Project/DB4LAW/Vault/laws")
-    law_dir = vault_path / args.law
+    law_dir = get_law_dir(args.law)
 
     if not law_dir.exists():
         print(f"エラー: ディレクトリが見つかりません: {law_dir}")

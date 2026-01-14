@@ -2,7 +2,6 @@
 DB4LAW ユーティリティモジュール
 """
 
-from .numerals import kanji_to_int
 from .article_formatter import (
     kanji_to_int,
     kanji_to_arabic_simple,
