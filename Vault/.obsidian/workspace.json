@@ -32,6 +32,34 @@
             }
           },
           {
+            "id": "c65314088bdd8377",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "laws/民法/附則/令和三年五月一九日法律第三七号/令和三年五月一九日法律第三七号_第1条.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "令和三年五月一九日法律第三七号_第1条"
+            }
+          },
+          {
+            "id": "6126f97b8302e0c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "laws/民法/本文/第732条.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第732条"
+            }
+          },
+          {
             "id": "62c13ade9065657a",
             "type": "leaf",
             "state": {
@@ -46,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "削除",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -207,8 +235,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a514d5f605aee1b1",
+  "active": "69b568e25fbe1ddd",
   "lastOpenFiles": [
+    "laws/民法/本文/第47条.md",
+    "laws/民法/附則/令和三年五月一九日法律第三七号/令和三年五月一九日法律第三七号_第1条.md",
+    "laws/民法/本文/第732条.md",
+    "laws/民法/本文/第740条.md",
     "laws/所有者不明土地の利用の円滑化等に関する特別措置法/附則/令和七年五月三〇日法律第四七号/令和七年五月三〇日法律第四七号_第18条.md",
     "laws/民法/本文/第979条.md",
     "laws/民法/附則/改正法/S22_L222/附則第33条.md",
@@ -239,10 +271,6 @@
     "laws/所有者不明土地の利用の円滑化等に関する特別措置法/附則/init_0.md",
     "laws/所有者不明土地の利用の円滑化等に関する特別措置法/附則",
     "laws/所有者不明土地の利用の円滑化等に関する特別措置法/本文/第9条.md",
-    "laws/所有者不明土地の利用の円滑化等に関する特別措置法/本文/第8条.md",
-    "laws/所有者不明土地の利用の円滑化等に関する特別措置法/本文/第7条.md",
-    "laws/所有者不明土地の利用の円滑化等に関する特別措置法/本文/第6条.md",
-    "laws/所有者不明土地の利用の円滑化等に関する特別措置法/本文/第63条.md",
     "laws/所有者不明土地の利用の円滑化等に関する特別措置法/本文",
     "laws/民法/附則/令和六年五月二四日法律第三三号"
   ]
