@@ -4,9 +4,22 @@ DB4LAW: 改正法断片内の誤解除リンクを復元
 
 unlink_amendment_refs.py のバグにより誤って解除されたリンクを復元する。
 
-対象:
-- 改正法断片（suppl_kind: amendment）内のプレーンテキスト参照
-- コンテキスト50文字以内に親法名（民法、新民法等）がある場合にリンク化
+対象条件（すべて満たす場合のみリンク化）:
+1. suppl_kind: amendment のファイルのみ（パス推定も含む）
+2. laws/<親法>/本文/ へのリンクのみ（他法は対象外）
+3. 同一文（句点から句点まで）限定
+4. 最後に出現した親法名バリエーション以降（tail）で判定
+5. 照応語（同法、同条等）があればスコープOFF
+6. 段落区切り（改行2連続）でスコープリセット
+
+親法名バリエーション:
+- 民法, 新民法, 旧民法, 改正前の民法, 改正後の民法
+
+スコープリセット照応語:
+- 同法, 同条, 同項, 同号, 同表, 同附則
+- 前条, 次条, 前項, 次項, 前号, 次号
+- 本条, 本項, 本号
+- その, 当該（間接参照）
 
 Usage:
     python scripts/migration/relink_amendment_refs.py --law 民法 --dry-run
@@ -37,40 +50,102 @@ class RelinkedRef:
     context: str
 
 
-def should_link_reference(context_before: str, law_name: str) -> bool:
-    """
-    参照をリンク化すべきかを判定
-
-    Args:
-        context_before: 参照の直前のテキスト（50文字程度）
-        law_name: 親法名
-
-    Returns:
-        True: リンク化すべき（法律名付き参照）
-        False: リンク化しない（裸の参照）
-    """
-    # WikiLinkを表示テキストに置換してからチェック
-    context_cleaned = re.sub(
-        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
-        r'\1',
-        context_before
-    )
-
-    # 法律名のバリエーション
-    law_variants = [
+def get_law_name_variants(law_name: str) -> tuple:
+    """法律名のバリエーションを返す"""
+    return (
         law_name,                    # 民法
         f'新{law_name}',             # 新民法
         f'旧{law_name}',             # 旧民法
         f'改正前の{law_name}',       # 改正前の民法
         f'改正後の{law_name}',       # 改正後の民法
-    ]
+    )
 
-    # コンテキスト内に法律名バリエーションがあるかチェック
-    for variant in law_variants:
-        if variant in context_cleaned:
-            return True  # 法律名付き → リンク化すべき
 
-    return False  # 裸の参照 → リンク化しない
+# スコープをリセットする照応語パターン
+# これらが法名出現後（tail）に含まれていればスコープをOFFにする
+SCOPE_RESET_PATTERNS: tuple = (
+    # 同〜参照
+    '同法', '同条', '同項', '同号', '同表', '同附則',
+    # 前後参照
+    '前条', '次条', '前項', '次項', '前号', '次号',
+    # 本〜参照
+    '本条', '本項', '本号',
+    # 間接参照（指示語）
+    'その', '当該',
+)
+
+
+def has_parent_law_scope(body: str, match_position: int, law_name: str) -> bool:
+    """
+    親法スコープ内かどうかを判定（同一文限定・tail判定）
+
+    「親法スコープ」= 法律名（民法/新民法等）が出現してから、
+    スコープリセット条件に当たるまでの範囲。
+    この範囲内では、裸の第N条も親法への参照としてリンク化する。
+
+    スコープ判定ルール:
+    1. 同一文内（句点から現在位置まで）を対象
+    2. 段落区切り（改行2連続）があればその後ろのみ対象
+    3. 最後に出現した親法名バリエーションの位置を特定
+    4. その位置より後（tail）に照応語（同法、同条等）があればスコープOFF
+
+    安全策:
+    - laws/<親法>/本文/ のみ（外部法は対象外）
+    - WikiLinkは表示テキストに置換してからチェック
+
+    Args:
+        body: ファイル本文（frontmatter除く）
+        match_position: マッチ位置
+        law_name: 親法名
+
+    Returns:
+        True: 親法スコープ内（リンク化すべき）
+        False: スコープ外（リンク化しない）
+    """
+    # 現在位置より前のテキストを取得
+    before_text = body[:match_position]
+
+    # 最後の句点（。）を探す（文の開始位置）
+    last_period = before_text.rfind('。')
+    sentence_start = last_period + 1 if last_period >= 0 else 0
+
+    # 現在の文（句点から現在位置まで）を取得
+    current_sentence = before_text[sentence_start:]
+
+    # 段落区切り（改行2連続）があればその後ろのみ対象
+    paragraph_break = current_sentence.rfind('\n\n')
+    if paragraph_break >= 0:
+        current_sentence = current_sentence[paragraph_break + 2:]
+
+    # WikiLinkを表示テキストに置換してからチェック
+    # [[laws/民法/本文/第749条.md|第七百四十九条]] → 第七百四十九条
+    sentence_cleaned = re.sub(
+        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
+        r'\1',
+        current_sentence
+    )
+
+    # 法律名バリエーションの最後の出現位置を探す
+    variants = get_law_name_variants(law_name)
+    last_law_pos = -1
+    for variant in variants:
+        pos = sentence_cleaned.rfind(variant)
+        if pos > last_law_pos:
+            last_law_pos = pos
+
+    # 法律名が見つからなければスコープ外
+    if last_law_pos < 0:
+        return False
+
+    # tail = 最後の法律名出現位置以降のテキスト
+    tail = sentence_cleaned[last_law_pos:]
+
+    # tail内に照応語（同法、同条等）があればスコープをリセット
+    for reset_pattern in SCOPE_RESET_PATTERNS:
+        if reset_pattern in tail:
+            return False
+
+    return True
 
 
 def kanji_to_arabic(kanji: str) -> str:
@@ -229,12 +304,8 @@ def relink_amendment_refs(
 
                 ref_text = match.group(1)  # 第七百七十一条
 
-                # コンテキスト取得
-                context_start = max(0, match_start - 50)
-                context_before = body[context_start:match_start]
-
-                # リンク化すべきか判定
-                if should_link_reference(context_before, law_name):
+                # 親法スコープ判定（同一文限定）
+                if has_parent_law_scope(body, match_start, law_name):
                     # 漢数字をアラビア数字に変換してファイルパスを生成
                     # 第七百七十一条 → 第771条
                     article_match = re.match(r'第([一二三四五六七八九十百千〇]+)条(の([一二三四五六七八九十百千〇]+))?', ref_text)
@@ -261,11 +332,19 @@ def relink_amendment_refs(
                         file_modified = True
                         stats['links_restored'] += 1
 
+                        # 文脈取得（句点から現在位置まで）
+                        before_text = body[:match_start]
+                        last_period = before_text.rfind('。')
+                        sentence_start = last_period + 1 if last_period >= 0 else 0
+                        sentence_context = before_text[sentence_start:]
+                        # 表示用に最後の40文字に制限
+                        display_context = sentence_context[-40:] if len(sentence_context) > 40 else sentence_context
+
                         relinked_refs.append(RelinkedRef(
                             file=md_file,
                             original=ref_text,
                             replacement=wikilink,
-                            context=context_before[-30:] if len(context_before) > 30 else context_before
+                            context=display_context
                         ))
                 else:
                     stats['links_skipped'] += 1

@@ -40,6 +40,114 @@ EXTERNAL_LAW_PATTERNS: Tuple[str, ...] = (
 )
 
 
+def get_law_name_variants(law_name: str) -> Tuple[str, ...]:
+    """
+    法律名のバリエーションを返す
+
+    Args:
+        law_name: 親法名（例: '民法'）
+
+    Returns:
+        法律名バリエーションのタプル
+    """
+    return (
+        law_name,                    # 民法
+        f'新{law_name}',             # 新民法
+        f'旧{law_name}',             # 旧民法
+        f'改正前の{law_name}',       # 改正前の民法
+        f'改正後の{law_name}',       # 改正後の民法
+    )
+
+
+# スコープをリセットする照応語パターン
+# これらが法名出現後（tail）に含まれていればスコープをOFFにする
+SCOPE_RESET_PATTERNS: Tuple[str, ...] = (
+    # 同〜参照
+    '同法', '同条', '同項', '同号', '同表', '同附則',
+    # 前後参照
+    '前条', '次条', '前項', '次項', '前号', '次号',
+    # 本〜参照
+    '本条', '本項', '本号',
+    # 間接参照（指示語）
+    'その', '当該',
+)
+
+
+def has_parent_law_scope(text: str, match_position: int, law_name: str) -> bool:
+    """
+    親法スコープが有効かどうかを判定
+
+    「親法スコープ」= 法律名（民法/新民法等）が出現してから、
+    スコープリセット条件に当たるまでの範囲。
+    この範囲内では、裸の第N条も親法への参照としてリンク化する。
+
+    スコープ判定ルール:
+    1. 同一文内（句点から現在位置まで）を対象
+    2. 段落区切り（改行2連続）があればその後ろのみ対象
+    3. 最後に出現した親法名バリエーションの位置を特定
+    4. その位置より後（tail）に照応語（同法、同条等）があればスコープOFF
+
+    例: 「新民法第749条、第771条及び第788条」
+        → 「新民法」が出現、tail内に照応語なし → すべてリンク化
+
+    例: 「民法第1条及び同法第2条」
+        → 「民法」後に「同法」→ 第2条のスコープはOFF
+
+    Args:
+        text: 全体テキスト
+        match_position: マッチ位置
+        law_name: 親法名
+
+    Returns:
+        True: 親法スコープ内（リンク化すべき）
+        False: スコープ外（リンク化しない）
+    """
+    # 現在位置より前のテキストを取得
+    before_text = text[:match_position]
+
+    # 最後の句点（。）を探す（文の開始位置）
+    last_period = before_text.rfind('。')
+    sentence_start = last_period + 1 if last_period >= 0 else 0
+
+    # 現在の文（句点から現在位置まで）を取得
+    current_sentence = before_text[sentence_start:]
+
+    # 段落区切り（改行2連続）があればその後ろのみ対象
+    paragraph_break = current_sentence.rfind('\n\n')
+    if paragraph_break >= 0:
+        current_sentence = current_sentence[paragraph_break + 2:]
+
+    # WikiLinkを表示テキストに置換してからチェック
+    # [[laws/民法/本文/第749条.md|第七百四十九条]] → 第七百四十九条
+    sentence_cleaned = re.sub(
+        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
+        r'\1',
+        current_sentence
+    )
+
+    # 法律名バリエーションの最後の出現位置を探す
+    variants = get_law_name_variants(law_name)
+    last_law_pos = -1
+    for variant in variants:
+        pos = sentence_cleaned.rfind(variant)
+        if pos > last_law_pos:
+            last_law_pos = pos
+
+    # 法律名が見つからなければスコープ外
+    if last_law_pos < 0:
+        return False
+
+    # tail = 最後の法律名出現位置以降のテキスト
+    tail = sentence_cleaned[last_law_pos:]
+
+    # tail内に照応語（同法、同条等）があればスコープをリセット
+    for reset_pattern in SCOPE_RESET_PATTERNS:
+        if reset_pattern in tail:
+            return False
+
+    return True
+
+
 class EdgeExtractor:
     def __init__(self):
         # Ref pattern supporting Kanji numerals
@@ -136,25 +244,20 @@ class EdgeExtractor:
 
             # 2. 改正法断片モード: 裸の第N条（法律名なし）はリンク化しない
             #
+            # 「親法スコープ」ルール:
+            # - 同一文内（句点から句点まで）に親法名（民法/新民法等）があればリンク化
+            # - WikiLinkは表示テキストに置換してからチェック（リンクを跨ぐスコープに対応）
+            #
+            # 例: 「新民法第七百四十九条、第七百七十一条及び第七百八十八条」
+            #     → 「新民法」スコープ有効 → すべてリンク化
+            #
             # TODO: 将来的には frontmatter の suppl_kind / amendment_law_id を
             #       真実として使用する。現在は呼び出し側 (tier1) が AmendLawNum
             #       属性から判定して is_amendment_fragment を渡している。
-            #       frontmatter ベースの判定に移行する際は、ここでファイルパスから
-            #       メタデータを読み取るか、呼び出し側で suppl_kind を渡す形にする。
             #
             if is_amendment_fragment:
-                # 親法名が直前にある場合はリンク化する（例: 「民法第N条」「民法の第N条」）
-                # 許容距離: 50文字
-                # 許容文字: 「の」「各種括弧」「句読点」「空白/改行/全角スペース」
-                # 括弧内テキスト: 「民法（改正前）第N条」のように括弧内の注釈も許容
-                near_context = context[-50:] if len(context) >= 50 else context
-                # 許容パターン: 法名 + (許容文字 | 括弧内テキスト)* + 末尾
-                # 括弧内テキスト: （...）または (...)
-                bracket_content = r'(?:[（\(][^）\)]*[）\)])?'
-                simple_chars = r'[\s\u3000の「」『』【】、。,.\[\]]*'
-                parent_law_pattern = re.escape(law_name) + r'(?:' + simple_chars + bracket_content + r')*' + r'$'
-                if not re.search(parent_law_pattern, near_context):
-                    # 親法名がない = 裸の参照 → リンク化しない
+                if not has_parent_law_scope(text, match_start, law_name):
+                    # 親法スコープ外 = 裸の参照 → リンク化しない
                     return original_text
 
             ref_num_raw = m.group(1)
