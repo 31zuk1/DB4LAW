@@ -1,10 +1,10 @@
 ---
-article_num: 附則
+article_num: Provision
 heading: 附則
-id: JPLAW:430AC0000000049#附則#附則
+id: JPLAW:430AC0000000049#suppl#Provision
 law_id: 430AC0000000049
-law_name: 所有者不明土地の利用の円滑化等に関する特別措置法
-part: 附則
+law_name: ''
+part: suppl
 ---
 
 # 附則

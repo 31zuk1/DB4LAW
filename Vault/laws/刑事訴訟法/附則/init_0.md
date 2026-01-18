@@ -1,0 +1,14 @@
+---
+article_num: Provision
+heading: 附則
+id: JPLAW:323AC0000000131#suppl#Provision
+law_id: 323AC0000000131
+law_name: ''
+part: suppl
+---
+
+# 附則
+
+## 
+この法律は、昭和二十四年一月一日から、これを施行する。
+
