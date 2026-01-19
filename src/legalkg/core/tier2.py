@@ -3,6 +3,23 @@ import json
 from pathlib import Path
 from typing import List, Dict, Tuple
 from ..utils.numerals import kanji_to_int
+from ..utils.patterns import strip_wikilinks
+
+# ==============================================================================
+# 定数定義
+# ==============================================================================
+# コンテキスト窓サイズ: 外部法令名の出現を検出する際の後方探索範囲
+# 300文字は日本語で約10〜15文程度をカバー（句点で区切る前のフォールバック用）
+CONTEXT_WINDOW_EXTERNAL_LAW = 300
+
+# コンテキスト窓サイズ: 直近の法令名検出用（法令名＋第N条パターン）
+# 100文字は「○○法第1条」のような短い参照パターンをカバー
+CONTEXT_WINDOW_IMMEDIATE = 100
+
+# 法令名から「第」までの許容最大距離
+# 例: 「刑法[0〜20文字]第N条」のような参照パターンで、間に入りうる文字数
+# 括弧付き番号「（平成○年法律第○号）」等を考慮して20文字
+MAX_LAW_NAME_TO_DAI_DISTANCE = 20
 
 # ==============================================================================
 # クロスリンク対象法令（Vault内に本文が存在する法令）
@@ -98,6 +115,24 @@ EXTERNAL_LAW_PATTERNS: Tuple[str, ...] = (
     '民法施行法', '刑事訴訟法施行法',
     # 同法参照
     '同法',
+)
+
+# ==============================================================================
+# 事前ソート済みリスト（パフォーマンス最適化）
+# ==============================================================================
+# 注意: これらのリストはモジュールロード時に1回だけ生成される。
+# CROSS_LINKABLE_LAWS / EXTERNAL_LAW_PATTERNS を動的に変更する場合は
+# これらのリストも再生成する必要がある（現時点では想定していない）。
+
+# 長い法令名から順にマッチするためのソート済みリスト
+# 例: 「刑事訴訟法」が「刑法」より先にマッチするように
+CROSS_LINKABLE_LAWS_SORTED: Tuple[str, ...] = tuple(
+    sorted(CROSS_LINKABLE_LAWS.keys(), key=len, reverse=True)
+)
+
+# 外部法令名も同様に長い順でソート
+EXTERNAL_LAW_PATTERNS_SORTED: Tuple[str, ...] = tuple(
+    sorted(EXTERNAL_LAW_PATTERNS, key=len, reverse=True)
 )
 
 
@@ -199,19 +234,15 @@ def has_external_law_in_context(text: str, match_position: int) -> bool:
         True: 外部法令名が文脈内に存在（リンク化を抑制すべき）
         False: 外部法令名なし
     """
-    # 現在位置より前の300文字を取得
-    context_start = max(0, match_position - 300)
+    # 現在位置より前のコンテキスト窓を取得
+    context_start = max(0, match_position - CONTEXT_WINDOW_EXTERNAL_LAW)
     before_text = text[context_start:match_position]
 
     # WikiLinkを表示テキストに置換
-    context_cleaned = re.sub(
-        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
-        r'\1',
-        before_text
-    )
+    context_cleaned = strip_wikilinks(before_text)
 
-    # 外部法令名を長い順に検索
-    for ext_law in sorted(EXTERNAL_LAW_PATTERNS, key=len, reverse=True):
+    # 外部法令名を長い順に検索（事前ソート済みリストを使用）
+    for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
         pos = context_cleaned.rfind(ext_law)
         if pos >= 0:
             # 法令名出現位置から現在位置までのテキストを取得
@@ -264,22 +295,40 @@ def find_cross_link_scope(text: str, match_position: int, current_law: str) -> s
         current_sentence = current_sentence[paragraph_break + 2:]
 
     # WikiLinkを表示テキストに置換してからチェック
-    sentence_cleaned = re.sub(
-        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
-        r'\1',
-        current_sentence
-    )
+    sentence_cleaned = strip_wikilinks(current_sentence)
 
     # 括弧内（法令番号など）を除去
     sentence_cleaned = re.sub(r'（[^）]*）', '', sentence_cleaned)
 
-    # クロスリンク対象法令 + 第N条 パターンの最後の出現を探す
-    # 長い法令名から順にチェック（「刑事訴訟法」が「刑法」より先にマッチするように）
+    # =========================================================================
+    # Phase 1: 文末法令名チェック（直近優先ルール）
+    # =========================================================================
+    # 文脈が法令名で終わっている場合、その法令名の直後の「第」は処理中の参照の一部。
+    # 例: 「...新刑事訴訟法」+ 処理中の「第290条」→ 新刑事訴訟法への参照
+    #
+    # これにより、同一文内に複数の法令参照があっても、直近のものが優先される:
+    # 「旧刑法第176条...新刑事訴訟法第290条」
+    #   → 第290条は「新刑事訴訟法」にリンク（「旧刑法」スコープは無効化）
+    for immediate_law_name in CROSS_LINKABLE_LAWS_SORTED:
+        if sentence_cleaned.endswith(immediate_law_name):
+            target_folder = CROSS_LINKABLE_LAWS[immediate_law_name]
+            if target_folder == current_law:
+                # 自法令への参照 → クロスリンクではない（親法リンクを使用）
+                return None
+            else:
+                # 他法令への参照 → その法令へクロスリンク
+                return target_folder
+
+    # =========================================================================
+    # Phase 2: 文中「法令名＋第」パターン検索
+    # =========================================================================
+    # 文末に法令名がない場合、文中の「法令名＋第N条」パターンを検索。
+    # 長い法令名から順にチェックし、最後に出現した他法令のスコープを返す。
     last_match_pos = -1
     last_match_law = None
     last_match_end = -1
 
-    for cross_law_name in sorted(CROSS_LINKABLE_LAWS.keys(), key=len, reverse=True):
+    for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
         # 法令名 + 第 のパターンを検索（法令名の直後に「第」がある場合のみ）
         pattern = re.escape(cross_law_name) + r'第'
         for match in re.finditer(pattern, sentence_cleaned):
@@ -341,21 +390,17 @@ def has_external_law_scope(text: str, match_position: int) -> bool:
         current_sentence = current_sentence[paragraph_break + 2:]
 
     # WikiLinkを表示テキストに置換してからチェック
-    sentence_cleaned = re.sub(
-        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
-        r'\1',
-        current_sentence
-    )
+    sentence_cleaned = strip_wikilinks(current_sentence)
 
     # 括弧内（法令番号など）を除去
     sentence_cleaned = re.sub(r'（[^）]*）', '', sentence_cleaned)
 
     # 外部法令名 + 第N条 パターンの最後の出現を探す
-    # 長い法令名から順にチェック
+    # 長い法令名から順にチェック（事前ソート済みリストを使用）
     last_match_pos = -1
     last_match_end = -1
 
-    for ext_law in sorted(EXTERNAL_LAW_PATTERNS, key=len, reverse=True):
+    for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
         # 法令名 + 第 のパターンを検索（法令名の直後に「第」がある場合のみ）
         pattern = re.escape(ext_law) + r'第'
         for match in re.finditer(pattern, sentence_cleaned):
@@ -430,11 +475,7 @@ def has_parent_law_scope(text: str, match_position: int, law_name: str) -> bool:
 
     # WikiLinkを表示テキストに置換してからチェック
     # [[laws/民法/本文/第749条.md|第七百四十九条]] → 第七百四十九条
-    sentence_cleaned = re.sub(
-        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
-        r'\1',
-        current_sentence
-    )
+    sentence_cleaned = strip_wikilinks(current_sentence)
 
     # 括弧内（法令番号など）を除去
     sentence_cleaned = re.sub(r'（[^）]*）', '', sentence_cleaned)
@@ -452,6 +493,17 @@ def has_parent_law_scope(text: str, match_position: int, law_name: str) -> bool:
             if pos > last_law_pos:
                 last_law_pos = pos
                 last_law_end = match.end()
+
+        # 追加: 法律名が文末にある場合（「新民法第749条」のように、
+        # 法令名の直後に現在処理中の「第N条」がある場合）もスコープ有効とする
+        # この場合、sentence_cleanedは「...新民法」で終わり、
+        # 「第」は現在処理中の参照の一部
+        if sentence_cleaned.endswith(variant):
+            end_pos = len(sentence_cleaned)
+            start_pos = end_pos - len(variant)
+            if start_pos > last_law_pos:
+                last_law_pos = start_pos
+                last_law_end = end_pos  # 「第」は含まないがスコープは有効
 
     # 法律名＋第パターンが見つからなければスコープ外
     if last_law_pos < 0:
@@ -560,8 +612,8 @@ class EdgeExtractor:
             if after_text.startswith('の規定による') or after_text.startswith('の規定に'):
                 return original_text
 
-            # マッチ位置の前100文字を取得して文脈チェック
-            context_start = max(0, match_start - 100)
+            # マッチ位置の前の文脈を取得してチェック
+            context_start = max(0, match_start - CONTEXT_WINDOW_IMMEDIATE)
             context = text[context_start:match_start]
 
             # 括弧内（法令番号など）を除去してチェック
@@ -569,12 +621,12 @@ class EdgeExtractor:
             context_cleaned = re.sub(r'（[^）]*）', '', context)
 
             # 1. クロスリンク対象法令が直近にある場合はその法令へリンク
-            # 長い法令名から順にチェック（「刑事訴訟法」が「刑法」より先にマッチするように）
+            # 長い法令名から順にチェック（事前ソート済みリストを使用）
             # 境界チェックも行い、より長い法令名の部分マッチを防ぐ
             cross_link_target = None
-            for cross_law_name in sorted(CROSS_LINKABLE_LAWS.keys(), key=len, reverse=True):
-                # 法令名 + 0〜20文字 + 第（現在位置）のパターンを検索
-                pattern = re.escape(cross_law_name) + r'[^第]{0,20}$'
+            for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
+                # 法令名 + 0〜N文字 + 第（現在位置）のパターンを検索
+                pattern = re.escape(cross_law_name) + rf'[^第]{{0,{MAX_LAW_NAME_TO_DAI_DISTANCE}}}$'
                 match = re.search(pattern, context_cleaned)
                 if match:
                     # 境界チェック: より長い法令名の一部でないことを確認
@@ -593,8 +645,9 @@ class EdgeExtractor:
 
             # 2. 外部法令名が直近にある場合はリンク化しない
             if cross_link_target is None:
-                for pattern in EXTERNAL_LAW_PATTERNS:
-                    if re.search(re.escape(pattern) + r'[^第]{0,20}$', context_cleaned):
+                for ext_law in EXTERNAL_LAW_PATTERNS:
+                    ext_pattern = re.escape(ext_law) + rf'[^第]{{0,{MAX_LAW_NAME_TO_DAI_DISTANCE}}}$'
+                    if re.search(ext_pattern, context_cleaned):
                         return original_text  # リンク化せずにそのまま返す
 
             # 2b. 直近に見つからない場合、文スコープ内の外部法令をチェック

@@ -265,13 +265,24 @@ grep -r "刑事訴訟法\[\[laws/刑事訴訟法/本文/第344条\.md" Vault/law
 ## Key Files
 
 - `src/legalkg/cli.py`: Typer-based CLI commands
-- `src/legalkg/core/tier2.py`: Reference extraction regex patterns
+- `src/legalkg/core/tier2.py`: Reference extraction, cross-linking, constants
 - `src/legalkg/utils/article_formatter.py`: Article number conversion
 - `src/legalkg/utils/markdown.py`: YAML frontmatter handling
 - `src/legalkg/utils/numerals.py`: Legacy kanji numeral conversion
+- `src/legalkg/utils/patterns.py`: WikiLink regex patterns and helpers
 - `scripts/migration/config.py`: Path configuration
 - `scripts/migration/_artifacts/`: Generated CSV/JSONL files
 - `targets.yaml`: List of law IDs to process
+
+### tier2.py Constants
+
+| Constant | Value | Purpose |
+|----------|-------|---------|
+| `CONTEXT_WINDOW_EXTERNAL_LAW` | 300 | 外部法令名の出現検出用コンテキスト窓 |
+| `CONTEXT_WINDOW_IMMEDIATE` | 100 | 直近の法令名検出用コンテキスト窓 |
+| `MAX_LAW_NAME_TO_DAI_DISTANCE` | 20 | 「法令名...第」間の許容最大距離 |
+| `CROSS_LINKABLE_LAWS_SORTED` | - | クロスリンク対象法令名（長い順ソート済み） |
+| `EXTERNAL_LAW_PATTERNS_SORTED` | - | 外部法令名（長い順ソート済み） |
 
 ## Processed Laws
 
