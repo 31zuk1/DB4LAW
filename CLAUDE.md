@@ -281,6 +281,7 @@ grep -r "刑事訴訟法\[\[laws/刑事訴訟法/本文/第344条\.md" Vault/law
 | `CONTEXT_WINDOW_EXTERNAL_LAW` | 300 | 外部法令名の出現検出用コンテキスト窓 |
 | `CONTEXT_WINDOW_IMMEDIATE` | 100 | 直近の法令名検出用コンテキスト窓 |
 | `MAX_LAW_NAME_TO_DAI_DISTANCE` | 20 | 「法令名...第」間の許容最大距離 |
+| `LAW_NAME_SUFFIX_PATTERN` | `[^第]{0,20}$` | 法令名検出用の正規表現サフィックス |
 | `CROSS_LINKABLE_LAWS_SORTED` | - | クロスリンク対象法令名（長い順ソート済み） |
 | `EXTERNAL_LAW_PATTERNS_SORTED` | - | 外部法令名（長い順ソート済み） |
 
