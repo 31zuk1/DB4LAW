@@ -135,6 +135,101 @@ SCOPE_RESET_PATTERNS: Tuple[str, ...] = (
 )
 
 
+# 法令名の直前に来ることが許される文字パターン
+# これら以外の文字が直前にある場合、より長い法令名の一部である可能性がある
+LAW_NAME_VALID_PREFIXES: Tuple[str, ...] = (
+    # 接頭辞
+    '新', '旧',
+    # 句読点・記号
+    '、', '。', '「', '」', '（', '）', '・', '，', '．',
+    # 改行・空白
+    '\n', '\r', ' ', '　',
+    # 助詞・接続
+    'の', 'は', 'が', 'を', 'に', 'と', 'で', 'も', 'や', 'び',
+    # 指示語など
+    'る', 'き', 'て', 'し',
+)
+
+
+def is_valid_law_name_boundary(text: str, match_start: int) -> bool:
+    """
+    法令名マッチが有効な境界にあるかチェック
+
+    より長い法令名の部分文字列としてマッチしている場合はFalseを返す。
+    例: "刑事訴訟法" 内の "刑法" は無効なマッチ
+
+    Args:
+        text: マッチ対象のテキスト
+        match_start: マッチ開始位置
+
+    Returns:
+        True: 有効な境界（リンク化してよい）
+        False: 無効な境界（より長い法令名の一部）
+    """
+    # 文字列の先頭ならOK
+    if match_start == 0:
+        return True
+
+    # 直前の文字を取得
+    prev_char = text[match_start - 1]
+
+    # 許可された前置文字ならOK
+    if prev_char in LAW_NAME_VALID_PREFIXES:
+        return True
+
+    # それ以外はNG（より長い法令名の一部である可能性）
+    return False
+
+
+def has_external_law_in_context(text: str, match_position: int) -> bool:
+    """
+    同一文脈内に外部法令名が出現しているかチェック
+
+    同一文内に外部法令名（土地収用法など）が出現している場合、
+    裸の「第N条」参照がその外部法令を指している可能性があるため、
+    親法へのリンク化を抑制する。
+
+    句点（。）の扱いに注意:
+    - 括弧内（）や引用符内「」の句点は文の区切りとしてカウントしない
+
+    Args:
+        text: 全体テキスト
+        match_position: マッチ位置
+
+    Returns:
+        True: 外部法令名が文脈内に存在（リンク化を抑制すべき）
+        False: 外部法令名なし
+    """
+    # 現在位置より前の300文字を取得
+    context_start = max(0, match_position - 300)
+    before_text = text[context_start:match_position]
+
+    # WikiLinkを表示テキストに置換
+    context_cleaned = re.sub(
+        r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
+        r'\1',
+        before_text
+    )
+
+    # 外部法令名を長い順に検索
+    for ext_law in sorted(EXTERNAL_LAW_PATTERNS, key=len, reverse=True):
+        pos = context_cleaned.rfind(ext_law)
+        if pos >= 0:
+            # 法令名出現位置から現在位置までのテキストを取得
+            between = context_cleaned[pos:]
+
+            # 括弧内・引用符内の句点は除外して文の区切りをチェック
+            # 簡易的に、ネストしない括弧・引用符を除去
+            between_no_paren = re.sub(r'（[^）]*）', '', between)
+            between_no_quote = re.sub(r'「[^」]*」', '', between_no_paren)
+
+            # 文の区切り（。）がなければ同一文内
+            if '。' not in between_no_quote:
+                return True
+
+    return False
+
+
 def find_cross_link_scope(text: str, match_position: int, current_law: str) -> str | None:
     """
     クロスリンクスコープ内の法令を検索
@@ -143,13 +238,25 @@ def find_cross_link_scope(text: str, match_position: int, current_law: str) -> s
     その法令へのクロスリンクスコープが有効と判定する。
     これにより「刑法第176条、第177条」のような連続参照を正しく処理できる。
 
-    重要: 単なる法令名の列挙（「刑法、暴力行為等処罰に関する法律...」）では
-    スコープを有効にしない。法令名の直後に「第」が続く場合のみ有効。
+    設計思想:
+    1. 「法令名＋第」必須: 単なる法令名の列挙（「刑法、暴力行為等...」）ではスコープを有効にしない
+    2. 長い法令名優先: 「刑事訴訟法」を「刑法」より先にチェックし、部分一致を防ぐ
+    3. 直近優先: 文末に法令名がある場合、それが最も近い参照先として優先される
+
+    文末法令名の特別処理:
+    「旧刑法第176条...新刑事訴訟法第290条」のようなケースでは、
+    処理対象の「第290条」の直前にある「新刑事訴訟法」が最優先される。
+    この場合、文中の「旧刑法第176条」によるスコープは無効化される。
+
+    これが必要な理由:
+    - 「法令名＋第」パターン検索では「新刑事訴訟法第」を見つけられない
+      （「第」は処理中の参照の一部であり、文脈テキストには含まれない）
+    - 文末チェックを先に行い、直近の法令名を確実に検出する
 
     Args:
         text: 全体テキスト
-        match_position: マッチ位置
-        current_law: 現在処理中の法律名
+        match_position: マッチ位置（「第N条」の開始位置）
+        current_law: 現在処理中の親法名
 
     Returns:
         クロスリンク先の法律フォルダ名、見つからない場合は None
@@ -179,8 +286,30 @@ def find_cross_link_scope(text: str, match_position: int, current_law: str) -> s
     # 括弧内（法令番号など）を除去
     sentence_cleaned = re.sub(r'（[^）]*）', '', sentence_cleaned)
 
-    # クロスリンク対象法令 + 第N条 パターンの最後の出現を探す
-    # 長い法令名から順にチェック（「刑事訴訟法」が「刑法」より先にマッチするように）
+    # =========================================================================
+    # Phase 1: 文末法令名チェック（直近優先ルール）
+    # =========================================================================
+    # 文脈が法令名で終わっている場合、その法令名の直後の「第」は処理中の参照の一部。
+    # 例: 「...新刑事訴訟法」+ 処理中の「第290条」→ 新刑事訴訟法への参照
+    #
+    # これにより、同一文内に複数の法令参照があっても、直近のものが優先される:
+    # 「旧刑法第176条...新刑事訴訟法第290条」
+    #   → 第290条は「新刑事訴訟法」にリンク（「旧刑法」スコープは無効化）
+    for immediate_law_name in sorted(CROSS_LINKABLE_LAWS.keys(), key=len, reverse=True):
+        if sentence_cleaned.endswith(immediate_law_name):
+            target_folder = CROSS_LINKABLE_LAWS[immediate_law_name]
+            if target_folder == current_law:
+                # 自法令への参照 → クロスリンクではない（親法リンクを使用）
+                return None
+            else:
+                # 他法令への参照 → その法令へクロスリンク
+                return target_folder
+
+    # =========================================================================
+    # Phase 2: 文中「法令名＋第」パターン検索
+    # =========================================================================
+    # 文末に法令名がない場合、文中の「法令名＋第N条」パターンを検索。
+    # 長い法令名から順にチェックし、最後に出現した他法令のスコープを返す。
     last_match_pos = -1
     last_match_law = None
     last_match_end = -1
@@ -192,7 +321,7 @@ def find_cross_link_scope(text: str, match_position: int, current_law: str) -> s
             pos = match.start()
             if pos > last_match_pos:
                 target_folder = CROSS_LINKABLE_LAWS[cross_law_name]
-                # 自法令への参照は除外
+                # 自法令への参照は除外（親法リンクで処理）
                 if target_folder != current_law:
                     last_match_pos = pos
                     last_match_law = target_folder
@@ -201,7 +330,7 @@ def find_cross_link_scope(text: str, match_position: int, current_law: str) -> s
     if last_match_law is None:
         return None
 
-    # tail = 法令名＋第 の後のテキスト（法令名自体を含めない）
+    # tail = 法令名＋第 の後のテキスト
     tail = sentence_cleaned[last_match_end:]
 
     # tail内に照応語（同法、同条等）があればスコープをリセット
@@ -359,6 +488,17 @@ def has_parent_law_scope(text: str, match_position: int, law_name: str) -> bool:
                 last_law_pos = pos
                 last_law_end = match.end()
 
+        # 追加: 法律名が文末にある場合（「新刑事訴訟法第290条」のように、
+        # 法令名の直後に現在処理中の「第N条」がある場合）もスコープ有効とする
+        # この場合、sentence_cleanedは「...新刑事訴訟法」で終わり、
+        # 「第」は現在処理中の参照の一部
+        if sentence_cleaned.endswith(variant):
+            end_pos = len(sentence_cleaned)
+            start_pos = end_pos - len(variant)
+            if start_pos > last_law_pos:
+                last_law_pos = start_pos
+                last_law_end = end_pos  # 「第」は含まないがスコープは有効
+
     # 法律名＋第パターンが見つからなければスコープ外
     if last_law_pos < 0:
         return False
@@ -470,17 +610,31 @@ class EdgeExtractor:
             context_start = max(0, match_start - 100)
             context = text[context_start:match_start]
 
+            # WikiLinkを表示テキストに置換してからチェック
+            # [[laws/刑法/本文/第176条.md|第百七十六条]] → 第百七十六条
+            # これにより、WikiLinkパス内の「刑法」が誤マッチするのを防ぐ
+            context_cleaned = re.sub(
+                r'\[\[(?:[^\]|]+\|)?([^\]]+)\]\]',
+                r'\1',
+                context
+            )
+
             # 括弧内（法令番号など）を除去してチェック
             # 例: 「○○法律（平成二十五年法律第八十六号）」→「○○法律」
-            context_cleaned = re.sub(r'（[^）]*）', '', context)
+            context_cleaned = re.sub(r'（[^）]*）', '', context_cleaned)
 
             # 1. クロスリンク対象法令が直近にある場合はその法令へリンク
             # 長い法令名から順にチェック（「刑事訴訟法」が「刑法」より先にマッチするように）
+            # 境界チェックも行い、より長い法令名の部分マッチを防ぐ
             cross_link_target = None
             for cross_law_name in sorted(CROSS_LINKABLE_LAWS.keys(), key=len, reverse=True):
                 # 法令名 + 0〜20文字 + 第（現在位置）のパターンを検索
-                match = re.search(re.escape(cross_law_name) + r'[^第]{0,20}$', context_cleaned)
+                pattern = re.escape(cross_law_name) + r'[^第]{0,20}$'
+                match = re.search(pattern, context_cleaned)
                 if match:
+                    # 境界チェック: より長い法令名の一部でないことを確認
+                    if not is_valid_law_name_boundary(context_cleaned, match.start()):
+                        continue  # 無効な境界なので次の（より短い）法令名を試す
                     target_folder = CROSS_LINKABLE_LAWS[cross_law_name]
                     # 自法令への参照は通常処理（クロスリンクではない）
                     if target_folder != law_name:
@@ -502,6 +656,13 @@ class EdgeExtractor:
             # 「外部法第1条、第2条」のような連続参照に対応
             if cross_link_target is None:
                 if has_external_law_scope(text, match_start):
+                    return original_text  # リンク化せずにそのまま返す
+
+            # 2c. 同一文脈内に外部法令名が出現している場合は裸の参照をリンク化しない
+            # 「土地収用法...準用する第八十四条」のようなケースに対応
+            # クロスリンク先が明示されている場合はスキップ（そちらを優先）
+            if cross_link_target is None:
+                if has_external_law_in_context(text, match_start):
                     return original_text  # リンク化せずにそのまま返す
 
             # 3. 改正法断片モード: 裸の第N条（法律名なし）はリンク化しない
