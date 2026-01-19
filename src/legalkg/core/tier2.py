@@ -288,21 +288,27 @@ def has_parent_law_scope(text: str, match_position: int, law_name: str) -> bool:
     """
     親法スコープが有効かどうかを判定
 
-    「親法スコープ」= 法律名（民法/新民法等）が出現してから、
+    「親法スコープ」= 法律名＋第N条 パターンが出現してから、
     スコープリセット条件に当たるまでの範囲。
     この範囲内では、裸の第N条も親法への参照としてリンク化する。
+
+    重要: 単なる法律名の出現（「刑法等の一部を改正する法律...」）では
+    スコープを有効にしない。法律名の直後に「第」が続く場合のみ有効。
 
     スコープ判定ルール:
     1. 同一文内（句点から現在位置まで）を対象
     2. 段落区切り（改行2連続）があればその後ろのみ対象
-    3. 最後に出現した親法名バリエーションの位置を特定
+    3. 最後に出現した「親法名＋第」パターンの位置を特定
     4. その位置より後（tail）に照応語（同法、同条等）があればスコープOFF
 
     例: 「新民法第749条、第771条及び第788条」
-        → 「新民法」が出現、tail内に照応語なし → すべてリンク化
+        → 「新民法第」が出現、tail内に照応語なし → すべてリンク化
 
     例: 「民法第1条及び同法第2条」
-        → 「民法」後に「同法」→ 第2条のスコープはOFF
+        → 「民法第」後に「同法」→ 第2条のスコープはOFF
+
+    例: 「刑法等の一部を改正する法律...第491条」
+        → 「刑法第」パターンなし → スコープ無効
 
     Args:
         text: 全体テキスト
@@ -336,20 +342,29 @@ def has_parent_law_scope(text: str, match_position: int, law_name: str) -> bool:
         current_sentence
     )
 
-    # 法律名バリエーションの最後の出現位置を探す
+    # 括弧内（法令番号など）を除去
+    sentence_cleaned = re.sub(r'（[^）]*）', '', sentence_cleaned)
+
+    # 法律名バリエーション + 第 パターンの最後の出現位置を探す
     variants = get_law_name_variants(law_name)
     last_law_pos = -1
-    for variant in variants:
-        pos = sentence_cleaned.rfind(variant)
-        if pos > last_law_pos:
-            last_law_pos = pos
+    last_law_end = -1
 
-    # 法律名が見つからなければスコープ外
+    for variant in variants:
+        # 法律名 + 第 のパターンを検索（法律名の直後に「第」がある場合のみ）
+        pattern = re.escape(variant) + r'第'
+        for match in re.finditer(pattern, sentence_cleaned):
+            pos = match.start()
+            if pos > last_law_pos:
+                last_law_pos = pos
+                last_law_end = match.end()
+
+    # 法律名＋第パターンが見つからなければスコープ外
     if last_law_pos < 0:
         return False
 
-    # tail = 最後の法律名出現位置以降のテキスト
-    tail = sentence_cleaned[last_law_pos:]
+    # tail = 法律名＋第 の後のテキスト（法律名自体を含めない）
+    tail = sentence_cleaned[last_law_end:]
 
     # tail内に照応語（同法、同条等）があればスコープをリセット
     for reset_pattern in SCOPE_RESET_PATTERNS:
@@ -443,6 +458,13 @@ class EdgeExtractor:
         def _replacer(m):
             original_text = m.group(0)  # e.g. 第九条
             match_start = m.start()
+            match_end = m.end()
+
+            # 0. 「第N条の規定による」パターンはリンク化しない
+            # これは改正法自身の条文番号への参照であり、親法の条文ではない
+            after_text = text[match_end:match_end + 10]
+            if after_text.startswith('の規定による') or after_text.startswith('の規定に'):
+                return original_text
 
             # マッチ位置の前100文字を取得して文脈チェック
             context_start = max(0, match_start - 100)
