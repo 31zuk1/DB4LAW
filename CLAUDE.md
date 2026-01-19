@@ -15,6 +15,15 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+### CLI Entry Point
+```bash
+# After pip install -e ., the CLI is available directly:
+legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges
+
+# Or via module:
+python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges
+```
+
 ### Build Commands
 
 **Tier 1+2 - Generate articles with reference extraction:**
@@ -39,6 +48,19 @@ python scripts/migration/fix_id_collision.py --law 民法 \
 **Add parent file links:**
 ```bash
 python scripts/migration/add_parent_links.py --law 刑法
+```
+
+### Test Commands
+
+```bash
+# Run all tests
+pytest
+
+# Run specific test file
+pytest tests/test_tier2_amendment.py -v
+
+# Run single test
+pytest tests/test_tier2_amendment.py::TestReplaceRefsAmendmentFragment::test_main_text_normal_linking -v
 ```
 
 ### Debug Commands
@@ -301,27 +323,11 @@ grep -r "刑事訴訟法\[\[laws/刑事訴訟法/本文/第344条\.md" Vault/law
 - **e-Gov Law API** (`https://laws.e-gov.go.jp/api/1`): Official law text and metadata
 - **NDL OpenSearch** (`https://ndlsearch.ndl.go.jp/api/opensearch`): Legislative process data
 
-## Project Structure
+## Directory Overview
 
-```
-DB4LAW/
-├── src/legalkg/              # Main package
-│   ├── client/               # API clients (e-Gov, NDL)
-│   ├── core/                 # Tier0/1/2 core logic
-│   └── utils/                # Common utilities
-│       ├── numerals.py       # Kanji conversion (legacy)
-│       ├── article_formatter.py  # Article number conversion
-│       └── markdown.py       # YAML frontmatter handling
-├── scripts/
-│   ├── migration/            # Migration & fix scripts
-│   │   ├── config.py         # Path configuration
-│   │   └── _artifacts/       # Generated files (CSV, JSONL)
-│   ├── qa/                   # Quality assurance scripts
-│   │   └── check_wikilinks.py  # WikiLink integrity checker
-│   ├── analysis/             # Link processing
-│   ├── debug/                # Debug scripts
-│   └── utils/                # Shell utilities
-├── data/                     # Domain classification YAML
-├── Vault/laws/               # Obsidian Vault output
-└── targets.yaml              # Target law IDs
-```
+- `src/legalkg/` - Main package (core/, client/, utils/)
+- `scripts/migration/` - Migration & fix scripts with `_artifacts/` for generated files
+- `scripts/qa/` - Quality assurance scripts
+- `scripts/debug/` - Debug scripts for API and regex testing
+- `Vault/laws/` - Generated Obsidian Vault output
+- `tests/` - pytest test files
