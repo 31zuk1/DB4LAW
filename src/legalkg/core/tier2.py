@@ -21,6 +21,11 @@ CONTEXT_WINDOW_IMMEDIATE = 100
 # 括弧付き番号「（平成○年法律第○号）」等を考慮して20文字
 MAX_LAW_NAME_TO_DAI_DISTANCE = 20
 
+# 法令名直後の「第」を文末で検出するための正規表現サフィックス
+# 「法令名 + 0〜N文字（第を除く）+ 文末」にマッチする
+# 使用例: re.escape(law_name) + LAW_NAME_SUFFIX_PATTERN
+LAW_NAME_SUFFIX_PATTERN = rf'[^第]{{0,{MAX_LAW_NAME_TO_DAI_DISTANCE}}}$'
+
 # ==============================================================================
 # クロスリンク対象法令（Vault内に本文が存在する法令）
 # ==============================================================================
@@ -626,7 +631,7 @@ class EdgeExtractor:
             cross_link_target = None
             for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
                 # 法令名 + 0〜N文字 + 第（現在位置）のパターンを検索
-                pattern = re.escape(cross_law_name) + rf'[^第]{{0,{MAX_LAW_NAME_TO_DAI_DISTANCE}}}$'
+                pattern = re.escape(cross_law_name) + LAW_NAME_SUFFIX_PATTERN
                 match = re.search(pattern, context_cleaned)
                 if match:
                     # 境界チェック: より長い法令名の一部でないことを確認
@@ -644,9 +649,10 @@ class EdgeExtractor:
                 cross_link_target = find_cross_link_scope(text, match_start, law_name)
 
             # 2. 外部法令名が直近にある場合はリンク化しない
+            # 長い法令名から順にチェック（事前ソート済みリストを使用）
             if cross_link_target is None:
-                for ext_law in EXTERNAL_LAW_PATTERNS:
-                    ext_pattern = re.escape(ext_law) + rf'[^第]{{0,{MAX_LAW_NAME_TO_DAI_DISTANCE}}}$'
+                for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+                    ext_pattern = re.escape(ext_law) + LAW_NAME_SUFFIX_PATTERN
                     if re.search(ext_pattern, context_cleaned):
                         return original_text  # リンク化せずにそのまま返す
 
