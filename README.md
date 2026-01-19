@@ -26,9 +26,11 @@ Vault/laws/刑法/
 
 | 法令名 | 本則 | 附則 | 参照エッジ |
 |--------|------|------|-----------|
-| 刑法 | 301 | 136 | 713 |
-| 民法 | 1,167 | 442 | 1,982 |
+| 刑法 | 301 | 68 | 713 |
+| 民法 | 1,167 | 221 | 1,982 |
 | 日本国憲法 | 103 | - | 1 |
+| 刑事訴訟法 | 715 | 121 | 2,766 |
+| 民事訴訟法 | 453 | 92 | 1,019 |
 | 所有者不明土地法 | 63 | 14 | 415 |
 
 ## 主な機能
@@ -51,14 +53,28 @@ Vault/laws/刑法/
 - 照応語（同法、同条、その、当該等）でスコープをリセット
 - 段落区切りでスコープをリセット
 
+### クロスリンク（法令間参照）
+
+処理済み法令間の参照を自動でクロスリンク化：
+
+```markdown
+# 刑法附則内の参照
+刑事訴訟法[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]に一項を加える...
+```
+
+- 長い法令名を優先マッチ（「刑事訴訟法」を「刑法」より先に検出）
+- 文末の法令名を直近参照として優先（同一文内に複数法令がある場合）
+
 ### 外部法参照の除外
 
 60以上の外部法パターンを認識し、誤リンクを防止：
 
 ```python
 # tier2.py EXTERNAL_LAW_PATTERNS
-'刑事訴訟法', '民事執行法', '土地収用法', '公証人法', ...
+'民事執行法', '土地収用法', '公証人法', '少年法', ...
 ```
+
+クロスリンク対象法令（刑法、民法、刑事訴訟法等）は `CROSS_LINKABLE_LAWS` で管理。
 
 ### 改正法断片モデル
 
@@ -128,6 +144,14 @@ python scripts/migration/migrate_to_japanese.py --law 刑法 --apply
 python scripts/migration/add_parent_links.py --law 刑法
 ```
 
+### 5. WikiLink整合性チェック
+
+```bash
+python scripts/qa/check_wikilinks.py --vault ./Vault --only-prefix laws/
+```
+
+空リンク（参照先が存在しないWikiLink）を検出。削除条文など仕様上許容するパターンは `link_check_ignore.txt` で除外。
+
 ## アーキテクチャ
 
 ### 3層データモデル
@@ -178,12 +202,16 @@ DB4LAW/
 │       ├── article_formatter.py  # 条文番号変換
 │       ├── markdown.py           # YAML frontmatter処理
 │       └── numerals.py           # 漢数字変換
-├── scripts/migration/
-│   ├── migrate_to_japanese.py    # 日本語パス移行
-│   ├── fix_id_collision.py       # 外部法参照修正
-│   ├── add_parent_links.py       # 親ファイルリンク追加
-│   ├── unlink_amendment_refs.py  # 改正法断片のリンク解除
-│   └── _artifacts/               # 生成CSV/JSONL
+├── scripts/
+│   ├── migration/
+│   │   ├── migrate_to_japanese.py    # 日本語パス移行
+│   │   ├── fix_id_collision.py       # 外部法参照修正
+│   │   ├── add_parent_links.py       # 親ファイルリンク追加
+│   │   ├── unlink_amendment_refs.py  # 改正法断片のリンク解除
+│   │   └── _artifacts/               # 生成CSV/JSONL
+│   └── qa/
+│       ├── check_wikilinks.py        # WikiLink整合性チェック
+│       └── link_check_ignore.txt     # 除外パターン
 ├── Vault/laws/               # 出力Vault
 └── targets.yaml              # 対象法令リスト
 ```
