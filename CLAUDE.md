@@ -204,6 +204,64 @@ python scripts/migration/fix_id_collision.py --law 民法 \
 python scripts/migration/relink_pending.py --filter-law 民法 --apply
 ```
 
+### QA Scripts
+
+Located in `scripts/qa/`:
+
+| Script | Purpose |
+|--------|---------|
+| `check_wikilinks.py` | WikiLink整合性チェック（空リンク検出） |
+| `link_check_ignore.txt` | 空リンクチェックの除外パターン |
+
+**WikiLink整合性チェック:**
+
+```bash
+# 全Vaultをチェック
+python3 scripts/qa/check_wikilinks.py --vault ./Vault
+
+# laws/ 配下のみチェック
+python3 scripts/qa/check_wikilinks.py --vault ./Vault --only-prefix laws/
+
+# MDレポートの件数制限を変更
+python3 scripts/qa/check_wikilinks.py --vault ./Vault --limit-md 50
+```
+
+出力:
+- `Vault/reports/link_check_broken.json` - 機械可読レポート
+- `Vault/reports/link_check_broken.md` - 人間可読レポート
+
+空リンクが見つかった場合は exit code 1 を返す。
+除外パターンは `scripts/qa/link_check_ignore.txt` に追加。
+
+**リンク生成ロジックのリグレッションチェック:**
+
+tier2.py のクロスリンク生成ロジックに関するリグレッションチェック。
+過去に発生したバグが再発していないことを確認する。
+
+```bash
+# Bug 1: 「刑事訴訟法」内の「刑法」部分一致問題
+# 刑事訴訟法附則の「新刑事訴訟法第N条」が誤って laws/刑法/ にリンクされていないこと
+grep -r "新刑事訴訟法\[\[laws/刑法" Vault/laws/刑事訴訟法/
+# 期待: 出力なし（刑事訴訟法への参照が刑法にリンクされていない）
+
+# 正しくリンクされていることの確認
+grep -r "新刑事訴訟法\[\[laws/刑事訴訟法" Vault/laws/刑事訴訟法/ | head -3
+# 期待: 「新刑事訴訟法[[laws/刑事訴訟法/本文/第N条.md|...」形式の出力
+
+# Bug 2: 外部法令スコープでの親法リンク抑制問題
+# 所有者不明土地法第35条で、土地収用法を参照した後の裸の「第N条」が
+# 誤って所有者不明土地法にリンクされていないこと
+grep "土地収用法" Vault/laws/所有者不明土地の利用の円滑化等に関する特別措置法/本文/第35条.md
+# 期待: 「土地収用法第八十四条」等の参照がリンク化されていない（プレーンテキスト）
+
+# Bug 1 派生: 刑法附則第1条の「刑事訴訟法第344条」が刑法にリンクされていないこと
+# 原因: 「刑事訴訟法第三百四十四条」が find_cross_link_scope で検出されず、
+#       同一文中の他法令スコープ（旧刑法等）が誤って適用されていた
+# 修正: Phase 1（文末法令名チェック）で直近の法令名を優先検出
+grep -r "刑事訴訟法\[\[laws/刑事訴訟法/本文/第344条\.md" Vault/laws/刑法/附則/ | head -1
+# 期待: 「刑事訴訟法[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]」形式の出力
+```
+
 ## Key Files
 
 - `src/legalkg/cli.py`: Typer-based CLI commands
@@ -244,6 +302,8 @@ DB4LAW/
 │   ├── migration/            # Migration & fix scripts
 │   │   ├── config.py         # Path configuration
 │   │   └── _artifacts/       # Generated files (CSV, JSONL)
+│   ├── qa/                   # Quality assurance scripts
+│   │   └── check_wikilinks.py  # WikiLink integrity checker
 │   ├── analysis/             # Link processing
 │   ├── debug/                # Debug scripts
 │   └── utils/                # Shell utilities
