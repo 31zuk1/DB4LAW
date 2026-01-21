@@ -1,9 +1,11 @@
 import re
 import json
 from pathlib import Path
-from typing import List, Dict, Tuple
+from functools import lru_cache
+from typing import List, Dict, Tuple, Optional
 from ..utils.numerals import kanji_to_int
 from ..utils.patterns import strip_wikilinks
+from ..utils.markdown import read_markdown_file
 
 # ==============================================================================
 # 定数定義
@@ -141,6 +143,82 @@ EXTERNAL_LAW_PATTERNS_SORTED: Tuple[str, ...] = tuple(
 )
 
 
+# ==============================================================================
+# 法令名 → law_id 解決（クロスリンク edges 生成用）
+# ==============================================================================
+
+# グローバルキャッシュ: 法令名 → egov_law_id
+_LAW_ID_CACHE: Dict[str, Optional[str]] = {}
+
+# グローバル設定: Vault ルートパス（初回呼び出し時に設定）
+_VAULT_ROOT: Optional[Path] = None
+
+
+def set_vault_root(vault_root: Path) -> None:
+    """
+    Vault ルートパスを設定
+
+    Args:
+        vault_root: Vault ディレクトリへのパス
+    """
+    global _VAULT_ROOT
+    _VAULT_ROOT = vault_root
+
+
+def resolve_law_id_from_vault(law_name: str, vault_root: Optional[Path] = None) -> Optional[str]:
+    """
+    法令名から egov_law_id を解決
+
+    Vault/laws/<法令名>/<法令名>.md の frontmatter から egov_law_id を取得。
+    結果はキャッシュされる。
+
+    Args:
+        law_name: 法令名（例: '刑法'）
+        vault_root: Vault ルートパス（省略時はグローバル設定を使用）
+
+    Returns:
+        egov_law_id（例: '140AC0000000045'）、見つからなければ None
+    """
+    global _LAW_ID_CACHE, _VAULT_ROOT
+
+    # キャッシュ確認
+    if law_name in _LAW_ID_CACHE:
+        return _LAW_ID_CACHE[law_name]
+
+    # Vault ルート解決
+    root = vault_root or _VAULT_ROOT
+    if root is None:
+        _LAW_ID_CACHE[law_name] = None
+        return None
+
+    # 法令ディレクトリから CROSS_LINKABLE_LAWS のマッピングを使用してフォルダ名を取得
+    folder_name = CROSS_LINKABLE_LAWS.get(law_name, law_name)
+
+    # 法令 md ファイルを探す
+    law_dir = root / "laws" / folder_name
+    law_md = law_dir / f"{folder_name}.md"
+
+    if not law_md.exists():
+        _LAW_ID_CACHE[law_name] = None
+        return None
+
+    # frontmatter から egov_law_id を取得
+    doc = read_markdown_file(law_md)
+    if doc is None:
+        _LAW_ID_CACHE[law_name] = None
+        return None
+
+    law_id = doc.metadata.get('egov_law_id')
+    _LAW_ID_CACHE[law_name] = law_id
+    return law_id
+
+
+def clear_law_id_cache() -> None:
+    """法令ID キャッシュをクリア（テスト用）"""
+    global _LAW_ID_CACHE
+    _LAW_ID_CACHE = {}
+
+
 def get_law_name_variants(law_name: str) -> Tuple[str, ...]:
     """
     法律名のバリエーションを返す
@@ -162,6 +240,18 @@ def get_law_name_variants(law_name: str) -> Tuple[str, ...]:
 
 # スコープをリセットする照応語パターン
 # これらが法名出現後（tail）に含まれていればスコープをOFFにする
+#
+# TODO: 「の規定により」等のパターンは、通常条文（本則）で使用されると
+#       意図しないスコープリセットが発生する可能性がある。
+#       例: 「民法第2条の規定により、第3条を...」では、通常モードでも
+#       「第3条」がスコープ外扱いになりうる。
+#       現時点では has_parent_law_scope() が「法令名＋第」の最後の出現位置を
+#       基準にしており、「の規定により」後でも同一文内に「民法第」があれば
+#       スコープが維持されるため、実用上の問題は少ない。
+#       将来的に問題が発生した場合は、以下の分離を検討:
+#       - SCOPE_RESET_PATTERNS_COMMON: 照応語（同法、前条等）- 常に有効
+#       - SCOPE_RESET_PATTERNS_AMENDMENT_ONLY: の規定により等 - 改正法断片のみ有効
+#
 SCOPE_RESET_PATTERNS: Tuple[str, ...] = (
     # 同〜参照
     '同法', '同条', '同項', '同号', '同表', '同附則',
@@ -171,6 +261,10 @@ SCOPE_RESET_PATTERNS: Tuple[str, ...] = (
     '本条', '本項', '本号',
     # 間接参照（指示語）
     'その', '当該',
+    # 規定参照終了パターン（改正法文脈で、親法の規定を参照した後に
+    # 改正法自身の条文を参照する場合）
+    # 注: 通常モードでの副作用については上記 TODO 参照
+    'の規定により', 'の規定に基づき', 'の規定を適用',
 )
 
 
@@ -491,24 +585,28 @@ def has_parent_law_scope(text: str, match_position: int, law_name: str) -> bool:
     last_law_end = -1
 
     for variant in variants:
-        # 法律名 + 第 のパターンを検索（法律名の直後に「第」がある場合のみ）
-        pattern = re.escape(variant) + r'第'
+        # 法律名 + (の|、|\n)? + 第 のパターンを検索
+        # 「民法第N条」「民法の第N条」「民法、第N条」「民法\n第N条」に対応
+        pattern = re.escape(variant) + r'(?:[の、\n])?第'
         for match in re.finditer(pattern, sentence_cleaned):
             pos = match.start()
             if pos > last_law_pos:
                 last_law_pos = pos
                 last_law_end = match.end()
 
-        # 追加: 法律名が文末にある場合（「新民法第749条」のように、
-        # 法令名の直後に現在処理中の「第N条」がある場合）もスコープ有効とする
-        # この場合、sentence_cleanedは「...新民法」で終わり、
+        # 追加: 法律名（または法律名+区切り文字）が文末にある場合
+        # 「新民法第749条」「民法の第749条」「民法、第749条」のように、
+        # 法令名の直後に現在処理中の「第N条」がある場合もスコープ有効とする
+        # この場合、sentence_cleanedは「...新民法」「...民法の」「...民法、」で終わり、
         # 「第」は現在処理中の参照の一部
-        if sentence_cleaned.endswith(variant):
-            end_pos = len(sentence_cleaned)
-            start_pos = end_pos - len(variant)
-            if start_pos > last_law_pos:
-                last_law_pos = start_pos
-                last_law_end = end_pos  # 「第」は含まないがスコープは有効
+        for suffix in [variant + 'の', variant + '、', variant + '\n', variant]:
+            if sentence_cleaned.endswith(suffix):
+                end_pos = len(sentence_cleaned)
+                start_pos = end_pos - len(suffix)
+                if start_pos > last_law_pos:
+                    last_law_pos = start_pos
+                    last_law_end = end_pos  # 「第」は含まないがスコープは有効
+                break  # 長い方を優先
 
     # 法律名＋第パターンが見つからなければスコープ外
     if last_law_pos < 0:
@@ -525,97 +623,112 @@ def has_parent_law_scope(text: str, match_position: int, law_name: str) -> bool:
     return True
 
 
+def has_any_law_prefix(context_cleaned: str, law_name: str) -> bool:
+    """
+    context_cleaned 内に法令名プレフィックスが存在するかを判定
+
+    この関数は、条文参照（第N条）の直前に法令名が出現しているかを
+    統一的に判定するためのヘルパー。以下のケースを検出:
+
+    1. クロスリンク対象法令名 + サフィックスパターン
+       例: 「刑法第」「民法の第」「刑事訴訟法...第」
+
+    2. 親法名（law_name のバリエーション）+ 区切り文字
+       例: 「民法」「新民法」「民法の」「民法、」
+
+    用途:
+    - 改正法断片内の「第N条の規定により」判定
+    - 裸の参照 vs 法令名付き参照の区別
+
+    Args:
+        context_cleaned: 括弧書き除去済みの直前テキスト
+        law_name: 親法名（例: '民法'）
+
+    Returns:
+        True: 法令名プレフィックスが存在（リンク化対象）
+        False: 裸の参照（改正法断片ではリンク化しない）
+
+    Note:
+        この関数は境界チェック（is_valid_law_name_boundary）を行わない。
+        クロスリンク先の決定時には別途境界チェックが必要。
+    """
+    # 1. クロスリンク対象法令名をチェック
+    # LAW_NAME_SUFFIX_PATTERN: [^第]{0,20}$ で法令名から「第」までの距離を制限
+    for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
+        pattern = re.escape(cross_law_name) + LAW_NAME_SUFFIX_PATTERN
+        if re.search(pattern, context_cleaned):
+            return True
+
+    # 2. 親法名バリエーションをチェック
+    # 末尾パターン: 法令名 + オプションの区切り文字（の、、、\n）+ 文字列終端
+    for variant in get_law_name_variants(law_name):
+        pattern = re.escape(variant) + r'(?:[の、\n])?$'
+        if re.search(pattern, context_cleaned):
+            return True
+
+    return False
+
+
 class EdgeExtractor:
-    def __init__(self):
+    """
+    条文参照の抽出とWikiLink生成を行うクラス
+
+    SSOT (Single Source of Truth) 設計:
+    - 参照解釈ロジックは replace_refs_with_edges() に集約
+    - replace_refs() と extract_refs() は replace_refs_with_edges() を呼び出すラッパ
+    - これによりWikiLinkとedges.jsonlの不整合を防止
+    """
+
+    def __init__(self, vault_root: Optional[Path] = None):
+        """
+        Args:
+            vault_root: Vault ルートパス（クロスリンク edges の target law_id 解決に使用）
+        """
         # Ref pattern supporting Kanji numerals
         # 第X条 where X can be Kanji or digits
-        # Also supports "のY"
+        # Also supports sub-article numbers like 第N条の二
         # Kanji chars: 一二三四五六七八九十百千
+        #
+        # 重要: 日本語法令では「第十九条の二」のように、
+        # 条番号の後に「のM」が続く形式（条が先、枝番が後）
+        # パターン: 第(N)条(?:の(M))? で最大一致を保証
         kanji_class = r"[0-9一二三四五六七八九十百千]+"
-        self.ref_pattern = re.compile(rf"第({kanji_class}(?:の{kanji_class})*)条")
-        
-    def extract_refs(self, text: str, source_id: str) -> List[Dict]:
-        edges = []
-        matches = self.ref_pattern.finditer(text)
-        for m in matches:
-            ref_num_raw = m.group(1)
-            
-            # Convert raw (possibly Kanji) to normalized ID suffix
-            # e.g. "十九" -> "19", "二十の三" -> "20_3"
-            
-            article_num = ref_num_raw
-            sub_num = None
-            
-            if "の" in ref_num_raw:
-                parts = ref_num_raw.split("の")
-                article_num = str(kanji_to_int(parts[0]))
-                sub_num = str(kanji_to_int(parts[1]))
-                target_key = f"{article_num}_{sub_num}"
-            else:
-                article_num = str(kanji_to_int(ref_num_raw))
-                target_key = article_num
-                
-            # Construct target ID
-            if "JPLAW:" in source_id:
-                parts = source_id.split("#")
-                law_id_raw = parts[0] # JPLAW:LAWID
-                
-                # Assume main provision
-                target_id = f"{law_id_raw}#main#{target_key}"
-                
-                # Filter self-references? (Optional)
-                if target_id == source_id:
-                    continue
-                
-                edge = {
-                    "from": source_id,
-                    "to": target_id,
-                    "type": "refers_to",
-                    "evidence": m.group(0),
-                    "confidence": 0.9,
-                    "source": "regex_v1"
-                }
-                edges.append(edge)
-                
-        return edges
+        self.ref_pattern = re.compile(rf"第({kanji_class})条(?:の({kanji_class}))?")
+        self.vault_root = vault_root
 
-    def replace_refs(
+    def replace_refs_with_edges(
         self,
         text: str,
         law_name: str,
+        source_law_id: str,
+        source_node_id: str,
         is_amendment_fragment: bool = False
-    ) -> str:
+    ) -> Tuple[str, List[Dict]]:
         """
-        Replace matched references with Obsidian WikiLinks.
-        e.g. "第九条" -> "[[laws/刑法/本文/第9条.md|第九条]]"
+        条文参照をWikiLinkに置換し、同時にエッジを収集する（SSOT）
 
-        重要: 外部法令への参照はリンク化しない
-        - 「民事執行法第N条」のように外部法名が前置されている場合
-        - 「同法第N条」のように他法律を参照している場合
-
-        改正法断片モード (is_amendment_fragment=True):
-        - 「裸の第N条」（法律名なし）はリンク化しない
-        - 「民法第N条」のように親法名が明示されている場合はリンク化する
-        - 外部法参照は従来通りリンク化しない
+        この関数が参照解釈の唯一の実装であり、replace_refs() と extract_refs() は
+        この関数を呼び出すラッパとなっている。
 
         Args:
             text: 変換対象テキスト
             law_name: 親法名（例: '民法'）
+            source_law_id: ソース法令の egov_law_id（例: '129AC0000000089'）
+            source_node_id: ソースノードID（例: 'JPLAW:129AC0000000089#main#10'）
             is_amendment_fragment: 改正法断片内の場合 True
 
         Returns:
-            WikiLinks に変換されたテキスト
+            (replaced_text, edges) のタプル
+            - replaced_text: WikiLinkに変換されたテキスト
+            - edges: 抽出されたエッジのリスト（replace_refsで「リンク化しない」と
+                     判断された参照はedgesにも含まれない）
         """
+        edges: List[Dict] = []
+
         def _replacer(m):
             original_text = m.group(0)  # e.g. 第九条
             match_start = m.start()
             match_end = m.end()
-
-            # 0. 「第N条の規定による」パターンはリンク化しない
-            # これは改正法自身の条文番号への参照であり、親法の条文ではない
-            after_text = text[match_end:match_end + 10]
-            if after_text.startswith('の規定による') or after_text.startswith('の規定に'):
-                return original_text
 
             # マッチ位置の前の文脈を取得してチェック
             context_start = max(0, match_start - CONTEXT_WINDOW_IMMEDIATE)
@@ -625,10 +738,22 @@ class EdgeExtractor:
             # 例: 「○○法律（平成二十五年法律第八十六号）」→「○○法律」
             context_cleaned = re.sub(r'（[^）]*）', '', context)
 
+            # 0. 改正法断片モード: 「第N条の規定による」パターンはリンク化しない（裸の参照の場合のみ）
+            # これは改正法自身の条文番号への参照であり、親法の条文ではない
+            # ただし「民法第N条の規定による」のように法令名が付いている場合はリンク化する
+            # 注: 通常モード（本文）では親法の条文への参照としてリンク化する
+            if is_amendment_fragment:
+                after_text = text[match_end:match_end + 10]
+                if after_text.startswith('の規定による') or after_text.startswith('の規定に'):
+                    # 直前に法令名があるかチェック（SSOT: has_any_law_prefix に集約）
+                    if not has_any_law_prefix(context_cleaned, law_name):
+                        return original_text  # 裸の参照 + の規定に → リンク化しない
+
             # 1. クロスリンク対象法令が直近にある場合はその法令へリンク
             # 長い法令名から順にチェック（事前ソート済みリストを使用）
             # 境界チェックも行い、より長い法令名の部分マッチを防ぐ
             cross_link_target = None
+            cross_link_law_name = None  # マッチした法令名（law_id解決用）
             for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
                 # 法令名 + 0〜N文字 + 第（現在位置）のパターンを検索
                 pattern = re.escape(cross_law_name) + LAW_NAME_SUFFIX_PATTERN
@@ -641,12 +766,15 @@ class EdgeExtractor:
                     # 自法令への参照は通常処理（クロスリンクではない）
                     if target_folder != law_name:
                         cross_link_target = target_folder
+                        cross_link_law_name = cross_law_name
                     break
 
             # 1b. 直近に見つからない場合、文スコープ内のクロスリンク対象を検索
             # 「刑法第176条、第177条」のような連続参照に対応
             if cross_link_target is None:
                 cross_link_target = find_cross_link_scope(text, match_start, law_name)
+                if cross_link_target:
+                    cross_link_law_name = cross_link_target  # フォルダ名=法令名
 
             # 2. 外部法令名が直近にある場合はリンク化しない
             # 長い法令名から順にチェック（事前ソート済みリストを使用）
@@ -654,20 +782,20 @@ class EdgeExtractor:
                 for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
                     ext_pattern = re.escape(ext_law) + LAW_NAME_SUFFIX_PATTERN
                     if re.search(ext_pattern, context_cleaned):
-                        return original_text  # リンク化せずにそのまま返す
+                        return original_text  # リンク化せず、エッジも生成しない
 
             # 2b. 直近に見つからない場合、文スコープ内の外部法令をチェック
             # 「外部法第1条、第2条」のような連続参照に対応
             if cross_link_target is None:
                 if has_external_law_scope(text, match_start):
-                    return original_text  # リンク化せずにそのまま返す
+                    return original_text  # リンク化せず、エッジも生成しない
 
             # 2c. 同一文脈内に外部法令名が出現している場合は裸の参照をリンク化しない
             # 「土地収用法...準用する第八十四条」のようなケースに対応
             # クロスリンク先が明示されている場合はスキップ（そちらを優先）
             if cross_link_target is None:
                 if has_external_law_in_context(text, match_start):
-                    return original_text  # リンク化せずにそのまま返す
+                    return original_text  # リンク化せず、エッジも生成しない
 
             # 3. 改正法断片モード: 裸の第N条（法律名なし）はリンク化しない
             #
@@ -685,27 +813,138 @@ class EdgeExtractor:
             # 注: クロスリンク対象が見つかった場合はスコープチェックをスキップ
             if cross_link_target is None and is_amendment_fragment:
                 if not has_parent_law_scope(text, match_start, law_name):
-                    # 親法スコープ外 = 裸の参照 → リンク化しない
+                    # 親法スコープ外 = 裸の参照 → リンク化しない、エッジも生成しない
                     return original_text
 
-            ref_num_raw = m.group(1)
+            # =====================================================================
+            # ここに到達 = リンク化する参照 → エッジも生成する
+            # =====================================================================
 
-            if "の" in ref_num_raw:
-                parts = ref_num_raw.split("の")
-                article_num = str(kanji_to_int(parts[0]))
-                sub_num = str(kanji_to_int(parts[1]))
+            # 正規表現グループ:
+            # group(1): 条番号（例: 十九）
+            # group(2): 枝番号（例: 二）、ない場合は None
+            article_num_raw = m.group(1)  # e.g., 十九
+            sub_num_raw = m.group(2)      # e.g., 二 or None
+
+            article_num = str(kanji_to_int(article_num_raw))
+            if sub_num_raw:
+                sub_num = str(kanji_to_int(sub_num_raw))
                 target_filename = f"第{article_num}条の{sub_num}.md"
+                target_key = f"{article_num}_{sub_num}"
             else:
-                article_num = str(kanji_to_int(ref_num_raw))
                 target_filename = f"第{article_num}条.md"
+                target_key = article_num
 
             # クロスリンク先が見つかった場合はそちらを使用
-            target_law = cross_link_target if cross_link_target else law_name
-            link_path = f"laws/{target_law}/本文/{target_filename}"
+            target_law_folder = cross_link_target if cross_link_target else law_name
+            link_path = f"laws/{target_law_folder}/本文/{target_filename}"
+
+            # =====================================================================
+            # エッジ生成
+            # =====================================================================
+            # target の law_id を解決
+            if cross_link_target:
+                # クロスリンク: target law の law_id を Vault から解決
+                target_law_id = resolve_law_id_from_vault(
+                    cross_link_law_name or cross_link_target,
+                    self.vault_root
+                )
+                if target_law_id:
+                    target_node_id = f"JPLAW:{target_law_id}#main#{target_key}"
+                else:
+                    # law_id が解決できない場合はエッジを生成しない（安全側）
+                    # ただしWikiLinkは生成する（Vaultには存在するので）
+                    target_node_id = None
+            else:
+                # 自法令への参照
+                target_node_id = f"JPLAW:{source_law_id}#main#{target_key}"
+
+            # エッジ追加（自己参照は除外）
+            if target_node_id and target_node_id != source_node_id:
+                edge = {
+                    "from": source_node_id,
+                    "to": target_node_id,
+                    "type": "refers_to",
+                    "evidence": original_text,
+                    "confidence": 0.9,
+                    "source": "regex_v2"  # SSOT版を示す新バージョン
+                }
+                edges.append(edge)
 
             return f"[[{link_path}|{original_text}]]"
 
-        return self.ref_pattern.sub(_replacer, text)
+        replaced_text = self.ref_pattern.sub(_replacer, text)
+        return replaced_text, edges
+
+    def replace_refs(
+        self,
+        text: str,
+        law_name: str,
+        is_amendment_fragment: bool = False
+    ) -> str:
+        """
+        条文参照をWikiLinkに置換する（互換性維持用ラッパ）
+
+        内部では replace_refs_with_edges() を呼び出し、置換結果のみを返す。
+        エッジ抽出が不要な場合（tier1 配線変更前の互換性維持）に使用。
+
+        Args:
+            text: 変換対象テキスト
+            law_name: 親法名（例: '民法'）
+            is_amendment_fragment: 改正法断片内の場合 True
+
+        Returns:
+            WikiLinks に変換されたテキスト
+        """
+        # 互換性維持: law_id と source_node_id がない場合は空文字列を渡す
+        # この場合エッジは生成されないが、置換結果は同一
+        replaced_text, _ = self.replace_refs_with_edges(
+            text=text,
+            law_name=law_name,
+            source_law_id="",
+            source_node_id="",
+            is_amendment_fragment=is_amendment_fragment
+        )
+        return replaced_text
+
+    def extract_refs(
+        self,
+        text: str,
+        source_id: str,
+        law_name: str = "",
+        is_amendment_fragment: bool = False
+    ) -> List[Dict]:
+        """
+        テキストから条文参照を抽出してエッジを返す（SSOT版）
+
+        内部では replace_refs_with_edges() を呼び出し、エッジのみを返す。
+        replace_refs() と同じ参照解釈を使用するため、WikiLink生成と
+        エッジ抽出の不整合が発生しない。
+
+        Args:
+            text: 抽出対象テキスト
+            source_id: ソースノードID（例: 'JPLAW:129AC0000000089#main#10'）
+            law_name: 親法名（例: '民法'）。省略時は source_id から推測
+            is_amendment_fragment: 改正法断片内の場合 True
+
+        Returns:
+            エッジのリスト
+        """
+        # source_id から law_id を抽出
+        source_law_id = ""
+        if "JPLAW:" in source_id:
+            parts = source_id.split("#")
+            # JPLAW:129AC0000000089 → 129AC0000000089
+            source_law_id = parts[0].replace("JPLAW:", "")
+
+        _, edges = self.replace_refs_with_edges(
+            text=text,
+            law_name=law_name,
+            source_law_id=source_law_id,
+            source_node_id=source_id,
+            is_amendment_fragment=is_amendment_fragment
+        )
+        return edges
 
     def _format_article_key(self, num_str: str) -> str:
         return num_str.replace("の", "_") 

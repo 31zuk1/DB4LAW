@@ -100,17 +100,10 @@ class Tier1Builder:
         law_name = self._get_law_name(law_md_path) if law_md_path else ""
 
         if extract_edges:
-            from .tier2 import EdgeExtractor
-            extractor = EdgeExtractor()
+            from .tier2 import EdgeExtractor, set_vault_root
+            # Vault ルートを設定（クロスリンク edges の law_id 解決に使用）
+            set_vault_root(self.vault_root)
             all_edges = []
-            
-            # Iterate over generated files to extract edges?
-            # Or extract during XML processing?
-            # XML processing has the structure.
-            
-            # Let's do it during XML processing or iterate text.
-            # Since we iterate parts, we can accumulate edges.
-            pass # See below for actual integration in _process_part
             
         # Updated to use Japanese folder names directly under law root
         # articles_dir = law_dir / "articles"  <-- Removed
@@ -202,33 +195,74 @@ class Tier1Builder:
                     file_key = file_key_override
                 else:
                     file_key = "Provision"
-                
+
                 file_path = out_dir / f"{file_key}.md"
-                
+
+                # Frontmatter（先に node_id を生成）
+                node_id = f"JPLAW:{law_id}#{part_type}#Provision"
+
                 content = f"# 附則\n\n"
-                full_text_for_edge = ""
-                
+
+                # Setup extractor for linking
+                # SSOT: extract_edges=True の場合は replace_refs_with_edges を使用
+                from .tier2 import EdgeExtractor
+                extractor = EdgeExtractor(vault_root=self.vault_root if extract_edges else None)
+                provision_edges = []  # この Provision から抽出されたエッジ
+
                 for p in direct_paragraphs:
                     p_num = p.find("ParagraphNum")
                     p_num_text = p_num.text if p_num else ""
-                    
+
                     sentences = p.find_all("Sentence")
-                    text = "".join([s.text for s in sentences])
-                    
+                    raw_text = "".join([s.text for s in sentences])
+
+                    # Link Injection & Edge Extraction (SSOT)
+                    if law_name:
+                        if extract_edges and edge_list is not None:
+                            text, edges = extractor.replace_refs_with_edges(
+                                text=raw_text,
+                                law_name=law_name,
+                                source_law_id=law_id,
+                                source_node_id=node_id,
+                                is_amendment_fragment=is_amendment_fragment
+                            )
+                            provision_edges.extend(edges)
+                        else:
+                            text = extractor.replace_refs(raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
+                    else:
+                        text = raw_text
+
                     content += f"## {p_num_text}\n{text}\n\n"
-                    full_text_for_edge += text + "\n"
-                    
+
                     items = p.find_all("Item")
                     for item in items:
                         i_title = item.find("ItemTitle")
                         i_title_text = i_title.text if i_title else ""
                         i_sentences = item.find_all("Sentence")
-                        i_text = "".join([s.text for s in i_sentences])
-                        content += f"- {i_title_text} {i_text}\n"
-                        full_text_for_edge += i_text + "\n"
+                        i_raw_text = "".join([s.text for s in i_sentences])
 
-                # Frontmatter
-                node_id = f"JPLAW:{law_id}#{part_type}#Provision"
+                        # Link Injection & Edge Extraction (SSOT)
+                        if law_name:
+                            if extract_edges and edge_list is not None:
+                                i_text, i_edges = extractor.replace_refs_with_edges(
+                                    text=i_raw_text,
+                                    law_name=law_name,
+                                    source_law_id=law_id,
+                                    source_node_id=node_id,
+                                    is_amendment_fragment=is_amendment_fragment
+                                )
+                                provision_edges.extend(i_edges)
+                            else:
+                                i_text = extractor.replace_refs(i_raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
+                        else:
+                            i_text = i_raw_text
+
+                        content += f"- {i_title_text} {i_text}\n"
+
+                # エッジを蓄積
+                if extract_edges and edge_list is not None:
+                    edge_list.extend(provision_edges)
+
                 fm = {
                     "id": node_id,
                     "law_id": law_id,
@@ -238,13 +272,6 @@ class Tier1Builder:
                     "heading": "附則",
                     "tags": [law_name] if law_name else []
                 }
-
-                # Extract Edges
-                if extract_edges and edge_list is not None:
-                    from .tier2 import EdgeExtractor
-                    extractor = EdgeExtractor()
-                    edges = extractor.extract_refs(full_text_for_edge, node_id)
-                    edge_list.extend(edges)
 
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write("---\n")
@@ -257,34 +284,6 @@ class Tier1Builder:
             # ... (existing code extracting num, file_key)
             num = art.get("Num")
             if not num: continue
-            
-            # Intuitive file naming: Article_1, Article_1_2
-            safe_num = num.replace("_", "_") # already _ in XML usually?
-            # XML Num is usually "1", "1_2"
-            
-            # If we are in a checked-in subdirectory for suppl, we might want to keep Article_1.md
-            # But user complained about collision.
-            # Collision only happens if they search by filename and both are "Article_1.md".
-            # If we prefix with AmendLawNum, it becomes unique.
-            
-            if file_key_override and "suppl" in str(out_dir):
-                 # This branch shouldn't be reached if we are using subdir based on previous logic?
-                 # Wait, logic above:
-                 # if has_articles: out_dir = .../suppl/safe_amend
-                 # if not has_articles: out_dir = .../suppl, file_key_override=safe_amend
-                 
-                 # So if has_articles, out_dir already includes safe_amend directory.
-                 # User says: articles/suppl/平成.../Article_1.md vs articles/main/Article_1.md
-                 # The user wants unique FILENAMES even across folders?
-                 # "Search problem" implies flat file search.
-                 
-                 # So we should prepend the safe_amend to the filename itself?
-                 # Even inside the folder? Or maybe we don't need the folder if we have unique filenames?
-                 # But folder is good for grouping.
-                 
-                 # Let's verify if we can pass safe_amend even when using subdir.
-                 # We need to change the call in build() first.
-                 pass
 
             # Japanese Filename Generation
             parts = num.split('_')
@@ -296,7 +295,7 @@ class Tier1Builder:
                  # Fallback for complex numbers
                  safe_num_jp = num.replace('_', 'の')
                  jp_article_name = f"第{safe_num_jp}条"
-            
+
             base_name = jp_article_name
             if file_key_override:
                  # If override provided (which denotes the amend law num), prefix it.
@@ -304,7 +303,7 @@ class Tier1Builder:
                  file_key = f"{file_key_override}_{base_name}"
             else:
                  file_key = base_name
-            
+
             file_path = out_dir / f"{file_key}.md"
 
             # ... (content extraction)
@@ -312,15 +311,18 @@ class Tier1Builder:
             caption_text = caption.text if caption else ""
             title = art.find("ArticleTitle")
             title_text = title.text if title else ""
-            
+
             content = f"# {title_text} {caption_text}\n\n"
-            
-            full_text_for_edge = ""
-            
+
+            # Frontmatter（先に node_id を生成）
+            node_id = f"JPLAW:{law_id}#{part_type}#{num}"
+
             # Setup extractor for linking
+            # SSOT: extract_edges=True の場合は replace_refs_with_edges を使用
             from .tier2 import EdgeExtractor
-            extractor = EdgeExtractor()
-            
+            extractor = EdgeExtractor(vault_root=self.vault_root if extract_edges else None)
+            article_edges = []  # この条文から抽出されたエッジ
+
             paragraphs = art.find_all("Paragraph")
             for p in paragraphs:
                 p_num = p.find("ParagraphNum")
@@ -329,12 +331,25 @@ class Tier1Builder:
                 sentences = p.find_all("Sentence")
                 raw_text = "".join([s.text for s in sentences])
 
-                # Link Injection
-                # 改正法断片の場合は裸の第N条をリンク化しない
-                text = extractor.replace_refs(raw_text, law_name, is_amendment_fragment=is_amendment_fragment) if law_name else raw_text
+                # Link Injection & Edge Extraction (SSOT)
+                if law_name:
+                    if extract_edges and edge_list is not None:
+                        # SSOT: 置換とエッジ抽出を同時に行う
+                        text, edges = extractor.replace_refs_with_edges(
+                            text=raw_text,
+                            law_name=law_name,
+                            source_law_id=law_id,
+                            source_node_id=node_id,
+                            is_amendment_fragment=is_amendment_fragment
+                        )
+                        article_edges.extend(edges)
+                    else:
+                        # エッジ抽出不要時は replace_refs のみ
+                        text = extractor.replace_refs(raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
+                else:
+                    text = raw_text
 
                 content += f"## {p_num_text}\n{text}\n\n"
-                full_text_for_edge += raw_text + "\n"
 
                 items = p.find_all("Item")
                 for item in items:
@@ -343,15 +358,29 @@ class Tier1Builder:
                     i_sentences = item.find_all("Sentence")
                     i_raw_text = "".join([s.text for s in i_sentences])
 
-                    # Link Injection
-                    # 改正法断片の場合は裸の第N条をリンク化しない
-                    i_text = extractor.replace_refs(i_raw_text, law_name, is_amendment_fragment=is_amendment_fragment) if law_name else i_raw_text
+                    # Link Injection & Edge Extraction (SSOT)
+                    if law_name:
+                        if extract_edges and edge_list is not None:
+                            # SSOT: 置換とエッジ抽出を同時に行う
+                            i_text, i_edges = extractor.replace_refs_with_edges(
+                                text=i_raw_text,
+                                law_name=law_name,
+                                source_law_id=law_id,
+                                source_node_id=node_id,
+                                is_amendment_fragment=is_amendment_fragment
+                            )
+                            article_edges.extend(i_edges)
+                        else:
+                            i_text = extractor.replace_refs(i_raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
+                    else:
+                        i_text = i_raw_text
 
                     content += f"- {i_title_text} {i_text}\n"
-                    full_text_for_edge += i_raw_text + "\n"
-            
-            # Frontmatter
-            node_id = f"JPLAW:{law_id}#{part_type}#{num}"
+
+            # エッジを蓄積
+            if extract_edges and edge_list is not None:
+                edge_list.extend(article_edges)
+
             fm = {
                 "id": node_id,
                 "law_id": law_id,
@@ -380,14 +409,6 @@ class Tier1Builder:
                     "parent_law_id": law_id,
                     "parent_law_name": law_name,
                 }
-
-            # Extract Edges
-            if extract_edges and edge_list is not None:
-                from .tier2 import EdgeExtractor
-                # Re-instantiate or pass? Ideally pass singleton but cheap enough
-                extractor = EdgeExtractor()
-                edges = extractor.extract_refs(full_text_for_edge, node_id)
-                edge_list.extend(edges)
 
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write("---\n")
