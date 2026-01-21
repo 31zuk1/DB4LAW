@@ -439,6 +439,7 @@ class Tier1Builder:
                 if fm.get("tier", 0) < tier:
                     fm["tier"] = tier
                     new_fm = yaml.dump(fm, allow_unicode=True, default_flow_style=False)
-                    new_content = f"---{new_fm}---{parts[2]}"
+                    # Ensure frontmatter starts with ---\n (not ---{yaml})
+                    new_content = f"---\n{new_fm}---{parts[2]}"
                     with open(md_path, "w", encoding="utf-8") as f:
                         f.write(new_content)
