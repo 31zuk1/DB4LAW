@@ -8,6 +8,8 @@ import logging
 import yaml
 import json
 
+from ..utils.parent_links import update_law_file_with_links
+
 logger = logging.getLogger(__name__)
 
 class Tier1Builder:
@@ -158,6 +160,9 @@ class Tier1Builder:
         final_tier = 2 if extract_edges else 1
         if law_md_path:
             self._update_law_tier(law_md_path, final_tier)
+
+        # Add parent links to law file (e.g., 刑法.md -> links to all 本文/第N条.md)
+        update_law_file_with_links(law_dir)
 
     def _process_part(self, container, law_id: str, out_dir: Path, part_type: str, extract_edges: bool = False, edge_list: List = None, file_key_override: str = None, law_name: str = "", amend_law_num: Optional[str] = None):
         """

@@ -9,14 +9,11 @@ add_parent_links.py のテスト
 - レガシー形式（init_0/）との互換性
 """
 
-import sys
 from pathlib import Path
 
-# プロジェクトルートをパスに追加
-sys.path.insert(0, str(Path(__file__).parent.parent / 'scripts' / 'migration'))
-
 import pytest
-from add_parent_links import (
+
+from legalkg.utils.parent_links import (
     extract_article_sort_key,
     extract_display_name_from_init_file,
     generate_links_for_law,
