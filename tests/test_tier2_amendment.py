@@ -142,6 +142,29 @@ class TestReplaceRefsBackwardCompatibility:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=False)
         assert "[[laws/刑法/本文/第199条.md|第百九十九条]]" in result
 
+    def test_normal_mode_no_kitei_scope_reset(self):
+        """
+        通常モード（本則）: 「の規定により」後の参照もリンク化される
+
+        仕様の固定:
+        - 通常モード（is_amendment_fragment=False）では、「の規定により」は
+          スコープリセットとして機能しない
+        - 「民法第二条の規定により、第三条...」の「第三条」は民法へリンクされる
+        - 改正法断片モードとは異なる動作（そちらでは「第三条」はリンク化されない）
+
+        Note:
+        - この動作は、has_parent_law_scope() が「法令名＋第」の最後の出現位置を
+          基準にしており、同一文内に「民法第」があればスコープが維持されるため
+        - 将来 SCOPE_RESET_PATTERNS を分離する場合、この挙動を維持すること
+        """
+        text = "民法第二条の規定により、第三条を適用する"
+        result = self.extractor.replace_refs(text, "民法", is_amendment_fragment=False)
+
+        # 民法第二条: リンク化される
+        assert "[[laws/民法/本文/第2条.md|第二条]]" in result
+        # 第三条: 通常モードではリンク化される（改正法断片モードとは異なる）
+        assert "[[laws/民法/本文/第3条.md|第三条]]" in result
+
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
