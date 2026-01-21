@@ -1,12 +1,7 @@
 {
-  "total_targets": 6,
+  "total_targets": 1,
   "success": [
-    "321CONSTITUTION",
-    "140AC0000000045",
-    "129AC0000000089",
-    "430AC0000000049",
-    "323AC0000000131",
-    "408AC0000000109"
+    "140AC0000000045"
   ],
   "failed": [],
   "timestamp": "2025-12-30"
