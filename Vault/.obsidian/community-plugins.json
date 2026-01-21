@@ -2,5 +2,6 @@
   "dataview",
   "templater-obsidian",
   "obsidian-linter",
-  "tag-wrangler"
+  "tag-wrangler",
+  "breadcrumbs"
 ]
