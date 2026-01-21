@@ -125,11 +125,23 @@ class Tier1Builder:
         self._process_part(soup.find("MainProvision"), law_id, honbun_dir, "main", extract_edges, all_edges if extract_edges else None, law_name=law_name, amend_law_num=None)
 
         # Handle multiple SupplProvision
+        init_suppl_count = 0  # 初期附則のカウンター
         for i, spl in enumerate(soup.find_all("SupplProvision")):
             # AmendLawNum が存在すれば改正法断片、なければ初期附則
             raw_amend_num = spl.get("AmendLawNum")  # None if not present
-            amend_num = raw_amend_num if raw_amend_num else f"init_{i}"
-            safe_amend = re.sub(r'[^\w\-]', '_', amend_num)
+
+            if raw_amend_num:
+                # 改正法断片: 法律番号をサニタイズしてディレクトリ名に
+                safe_amend = re.sub(r'[^\w\-]', '_', raw_amend_num)
+                file_key_prefix = safe_amend
+            else:
+                # 初期附則: 日本語名を使用（制定時附則, 制定時附則2, ...）
+                if init_suppl_count == 0:
+                    safe_amend = "制定時附則"
+                else:
+                    safe_amend = f"制定時附則{init_suppl_count + 1}"
+                init_suppl_count += 1
+                file_key_prefix = None  # 初期附則はファイル名にプレフィックスを付けない
 
             # Check if this provision has articles
             has_articles = bool(spl.find("Article"))
@@ -138,7 +150,7 @@ class Tier1Builder:
                 # Use subdirectory
                 out_dir = fusoku_dir / safe_amend
                 out_dir.mkdir(exist_ok=True, parents=True)
-                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend, law_name=law_name, amend_law_num=raw_amend_num)
+                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=file_key_prefix, law_name=law_name, amend_law_num=raw_amend_num)
             else:
                 # Use direct file under suppl/
                 out_dir = fusoku_dir

@@ -16,8 +16,17 @@ def extract_article_sort_key(filename: str) -> tuple:
     第100条.md -> (100, 0, 0)
     第100条の2.md -> (100, 2, 0)
     第638:640条.md -> (638, 0, 640)  # 範囲形式
+    init_0_第1条.md -> (1, 0, 0)  # プレフィックス付き
     """
     name = filename.replace('.md', '')
+
+    # プレフィックス付き形式: {prefix}_第N条 or {prefix}_第N条のM
+    # 例: init_0_第1条, H19_L54_附則第1条
+    match = re.match(r'.+_第(\d+)条(?:の(\d+))?$', name)
+    if match:
+        main_num = int(match.group(1))
+        sub_num = int(match.group(2)) if match.group(2) else 0
+        return (main_num, sub_num, 0)
 
     # 範囲形式: 第N:M条
     match = re.match(r'第(\d+):(\d+)条', name)
@@ -42,6 +51,26 @@ def extract_article_sort_key(filename: str) -> tuple:
 
     # その他（附則.md など）
     return (0, 0, 0)
+
+
+def extract_display_name_from_init_file(filename: str) -> str:
+    """
+    初期附則ファイル名から表示名を抽出
+    init_0_第1条.md -> 第1条
+    init_0_第10条の2.md -> 第10条の2
+    """
+    name = filename.replace('.md', '')
+
+    # init_0_第N条 or init_0_第N条のM のパターンを抽出
+    match = re.search(r'(第\d+条(?:の\d+)?)', name)
+    if match:
+        return match.group(1)
+
+    # フォールバック: プレフィックス部分を除去
+    if '_' in name:
+        return name.split('_', 1)[1]
+
+    return name
 
 
 def normalize_suppl_dirname(dirname: str) -> str:
@@ -124,6 +153,60 @@ def generate_links_for_law(law_dir: Path, dry_run: bool = False) -> str:
             for f in direct_suppl_files:
                 display_name = f.stem
                 lines.append(f"- [[附則/{f.name}|{display_name}]]")
+
+        # 初期附則ディレクトリ（制定時附則/ or init_0/ など、改正法/ 以外のディレクトリ）
+        init_suppl_dirs = [
+            d for d in suppl_dir.iterdir()
+            if d.is_dir() and d.name != "改正法" and (
+                d.name.startswith("init_") or d.name.startswith("制定時附則")
+            )
+        ]
+        if init_suppl_dirs:
+            # ソート: 制定時附則 < 制定時附則2 < init_0 < init_1
+            def init_sort_key(d):
+                if d.name == "制定時附則":
+                    return (0, 0)
+                if d.name.startswith("制定時附則"):
+                    try:
+                        return (0, int(d.name.replace("制定時附則", "") or "1"))
+                    except ValueError:
+                        return (0, 999)
+                if d.name.startswith("init_"):
+                    try:
+                        return (1, int(d.name.split('_')[1]))
+                    except (IndexError, ValueError):
+                        return (1, 999)
+                return (2, 0)
+            init_suppl_dirs.sort(key=init_sort_key)
+
+            for init_dir in init_suppl_dirs:
+                init_files = list(init_dir.glob('*.md'))
+                if not init_files:
+                    continue
+
+                init_files.sort(key=lambda f: extract_article_sort_key(f.name))
+
+                # セクション名を決定
+                if init_dir.name.startswith("制定時附則"):
+                    # 新形式: 制定時附則, 制定時附則2, ...
+                    section_name = init_dir.name
+                elif init_dir.name.startswith("init_"):
+                    # 旧形式: init_0 → "制定時附則"、init_1 → "制定時附則2"
+                    dir_index = int(init_dir.name.split('_')[1]) if '_' in init_dir.name else 0
+                    if dir_index == 0:
+                        section_name = "制定時附則"
+                    else:
+                        section_name = f"制定時附則{dir_index + 1}"
+                else:
+                    section_name = init_dir.name
+
+                lines.append(f"\n### {section_name}（全{len(init_files)}条）\n")
+
+                for f in init_files:
+                    # init_0_第1条.md → 第1条, 第5条.md → 第5条
+                    display_name = extract_display_name_from_init_file(f.name)
+                    rel_path = f"附則/{init_dir.name}/{f.name}"
+                    lines.append(f"- [[{rel_path}|{display_name}]]")
 
     return '\n'.join(lines)
 
