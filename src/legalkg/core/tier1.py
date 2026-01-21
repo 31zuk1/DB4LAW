@@ -235,7 +235,8 @@ class Tier1Builder:
                     "law_name": law_name,
                     "part": part_type,
                     "article_num": "Provision",
-                    "heading": "附則"
+                    "heading": "附則",
+                    "tags": [law_name] if law_name else []
                 }
 
                 # Extract Edges
@@ -357,7 +358,8 @@ class Tier1Builder:
                 "law_name": law_name,
                 "part": part_type,
                 "article_num": num,
-                "heading": caption_text
+                "heading": caption_text,
+                "tags": [law_name] if law_name else []
             }
 
             # 改正法断片の場合は追加メタデータを付与
