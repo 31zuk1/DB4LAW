@@ -1,8 +1,11 @@
+{"from": "JPLAW:408AC0000000109#main#3_3", "to": "JPLAW:417AC0000000086#main#2", "type": "refers_to", "evidence": "第二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#main#3_5", "to": "external:知的財産基本法#main#2", "type": "refers_to", "evidence": "第二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#main#3_6", "to": "JPLAW:408AC0000000109#main#38", "type": "refers_to", "evidence": "第三十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#3_10", "to": "JPLAW:408AC0000000109#main#3_2", "type": "refers_to", "evidence": "第三条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#3_10", "to": "JPLAW:408AC0000000109#main#3_4", "type": "refers_to", "evidence": "第三条の四", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#3_10", "to": "JPLAW:408AC0000000109#main#3_6", "type": "refers_to", "evidence": "第三条の六", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#6", "to": "JPLAW:408AC0000000109#main#20_2", "type": "refers_to", "evidence": "第二十条の二", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#main#6_2", "to": "external:不正競争防止法#main#2", "type": "refers_to", "evidence": "第二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#main#6_2", "to": "JPLAW:408AC0000000109#main#4", "type": "refers_to", "evidence": "第四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#6_2", "to": "JPLAW:408AC0000000109#main#5", "type": "refers_to", "evidence": "第五条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#7", "to": "JPLAW:408AC0000000109#main#4", "type": "refers_to", "evidence": "第四条", "confidence": 0.9, "source": "regex_v2"}
@@ -230,8 +233,6 @@
 {"from": "JPLAW:408AC0000000109#main#216", "to": "JPLAW:408AC0000000109#main#193", "type": "refers_to", "evidence": "第百九十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#220", "to": "JPLAW:408AC0000000109#main#196", "type": "refers_to", "evidence": "第百九十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#220", "to": "JPLAW:408AC0000000109#main#197", "type": "refers_to", "evidence": "第百九十七条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:408AC0000000109#main#220", "to": "JPLAW:408AC0000000109#main#196", "type": "refers_to", "evidence": "第百九十六条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:408AC0000000109#main#220", "to": "JPLAW:408AC0000000109#main#197", "type": "refers_to", "evidence": "第百九十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#223", "to": "JPLAW:408AC0000000109#main#220", "type": "refers_to", "evidence": "第二百二十条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#223", "to": "JPLAW:408AC0000000109#main#220", "type": "refers_to", "evidence": "第二百二十条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#main#223", "to": "JPLAW:408AC0000000109#main#220", "type": "refers_to", "evidence": "第二百二十条", "confidence": 0.9, "source": "regex_v2"}
@@ -430,6 +431,7 @@
 {"from": "JPLAW:408AC0000000109#suppl#24", "to": "JPLAW:408AC0000000109#main#399", "type": "refers_to", "evidence": "第三百九十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#26", "to": "JPLAW:408AC0000000109#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#27", "to": "JPLAW:408AC0000000109#main#220", "type": "refers_to", "evidence": "第二百二十条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#suppl#3", "to": "external:不正競争防止法#main#2", "type": "refers_to", "evidence": "第二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#suppl#3", "to": "JPLAW:408AC0000000109#main#269_2", "type": "refers_to", "evidence": "第二百六十九条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#3", "to": "JPLAW:408AC0000000109#main#310_2", "type": "refers_to", "evidence": "第三百十条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#4", "to": "JPLAW:408AC0000000109#main#368", "type": "refers_to", "evidence": "第三百六十八条", "confidence": 0.9, "source": "regex_v2"}
@@ -437,8 +439,11 @@
 {"from": "JPLAW:408AC0000000109#suppl#4", "to": "JPLAW:408AC0000000109#main#281", "type": "refers_to", "evidence": "第二百八十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#7", "to": "JPLAW:408AC0000000109#main#189", "type": "refers_to", "evidence": "第百八十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#2", "to": "JPLAW:408AC0000000109#main#3_7", "type": "refers_to", "evidence": "第三条の七", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第四十五条中総務省設置法#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#suppl#35", "to": "JPLAW:408AC0000000109#main#104", "type": "refers_to", "evidence": "第百四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#35", "to": "JPLAW:408AC0000000109#main#104", "type": "refers_to", "evidence": "第百四条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第六十条中商業登記法#main#52", "type": "refers_to", "evidence": "第五十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第七十一条中民事保全法#main#50", "type": "refers_to", "evidence": "第五十条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#87", "type": "refers_to", "evidence": "第八十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#8", "type": "refers_to", "evidence": "第八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#4", "type": "refers_to", "evidence": "第四条", "confidence": 0.9, "source": "regex_v2"}
@@ -448,6 +453,8 @@
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#78", "type": "refers_to", "evidence": "第七十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#83", "type": "refers_to", "evidence": "第八十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#87", "type": "refers_to", "evidence": "第八十七条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第六十条中商業登記法#main#52", "type": "refers_to", "evidence": "第五十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第七十一条中民事保全法#main#50", "type": "refers_to", "evidence": "第五十条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#89", "type": "refers_to", "evidence": "第八十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#87", "type": "refers_to", "evidence": "第八十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:408AC0000000109#main#8", "type": "refers_to", "evidence": "第八条", "confidence": 0.9, "source": "regex_v2"}
@@ -465,6 +472,8 @@
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:140AC0000000045#main#98", "type": "refers_to", "evidence": "第九十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:140AC0000000045#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:140AC0000000045#main#72", "type": "refers_to", "evidence": "第七十二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第二十四条中国際受刑者移送法#main#42", "type": "refers_to", "evidence": "第四十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第三十二条中少年鑑別所法#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#344", "type": "refers_to", "evidence": "第三百四十四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#11", "type": "refers_to", "evidence": "第十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2"}
@@ -473,14 +482,20 @@
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#1", "type": "refers_to", "evidence": "第一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#93", "type": "refers_to", "evidence": "第九十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#95", "type": "refers_to", "evidence": "第九十五条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第十三条中刑事補償法#main#1", "type": "refers_to", "evidence": "第一条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#344", "type": "refers_to", "evidence": "第三百四十四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#2", "type": "refers_to", "evidence": "第二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:140AC0000000045#main#97", "type": "refers_to", "evidence": "第九十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:140AC0000000045#main#98", "type": "refers_to", "evidence": "第九十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:140AC0000000045#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:140AC0000000045#main#72", "type": "refers_to", "evidence": "第七十二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第二十四条中国際受刑者移送法#main#42", "type": "refers_to", "evidence": "第四十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第三十二条中少年鑑別所法#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#344", "type": "refers_to", "evidence": "第三百四十四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#11", "type": "refers_to", "evidence": "第十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#36", "type": "refers_to", "evidence": "第三十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:408AC0000000109#suppl#1", "to": "JPLAW:323AC0000000131#main#40", "type": "refers_to", "evidence": "第四十条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第十三条中刑事補償法#main#1", "type": "refers_to", "evidence": "第一条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第三十八条中財務省設置法#main#27", "type": "refers_to", "evidence": "第二十七条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:408AC0000000109#suppl#1", "to": "external:附則第三十八条中財務省設置法#main#27", "type": "refers_to", "evidence": "第二十七条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}

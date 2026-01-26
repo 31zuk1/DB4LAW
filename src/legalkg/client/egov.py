@@ -1,192 +1,120 @@
+"""
+e-Gov API Client - v2 Native Implementation
+
+v2 API の JSON を SSOT として直接返却する設計。
+XML 変換は廃止。
+"""
 from .base import BaseClient
-from ..config import EGOV_API_BASE_URL, EGOV_API_V2_BASE_URL
+from ..config import EGOV_API_V2_BASE_URL
 from typing import List, Dict, Any, Optional
 import logging
 import requests
+import json
 
 logger = logging.getLogger(__name__)
 
 
-def json_to_xml(node: Any) -> str:
-    """
-    Convert v2 API JSON tree structure to XML string.
-
-    v2 format:
-    {
-        "tag": "Law",
-        "attr": {"Era": "Showa", ...},
-        "children": [
-            {"tag": "LawNum", "attr": {}, "children": ["昭和三十七年..."]},
-            ...
-        ]
-    }
-
-    Returns:
-        XML string compatible with v1 API response
-    """
-    if isinstance(node, str):
-        # Text node - escape XML special characters
-        return (node
-                .replace("&", "&amp;")
-                .replace("<", "&lt;")
-                .replace(">", "&gt;"))
-
-    if not isinstance(node, dict):
-        return str(node)
-
-    tag = node.get("tag", "")
-    attr = node.get("attr", {})
-    children = node.get("children", [])
-
-    # Build attribute string
-    attr_str = ""
-    if attr:
-        attr_parts = []
-        for k, v in attr.items():
-            # Escape attribute values
-            escaped_v = str(v).replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
-            attr_parts.append(f'{k}="{escaped_v}"')
-        attr_str = " " + " ".join(attr_parts)
-
-    # Build children content
-    if not children:
-        return f"<{tag}{attr_str}/>"
-
-    children_str = "".join(json_to_xml(child) for child in children)
-    return f"<{tag}{attr_str}>{children_str}</{tag}>"
-
-
 class EGovClient(BaseClient):
+    """e-Gov API v2 クライアント（JSON ネイティブ）"""
+
     def __init__(self):
         super().__init__(rate_limit_sec=0.5)
-        self.base_url = EGOV_API_BASE_URL
         self.base_url_v2 = EGOV_API_V2_BASE_URL
-        # Timeout settings (seconds)
-        self.timeout_v2 = 60  # v2 API timeout
-        self.timeout_v1 = 180  # v1 API timeout (longer as fallback)
+        self.timeout = 60
 
     def fetch_law_list(self) -> List[Dict[str, Any]]:
         """
-        Fetches the list of all laws (lawlists/1) and parses XML.
-        Returns a list of dicts with LawId, LawName, etc.
-        """
-        url = f"{self.base_url}/lawlists/1"
-        xml_content = self.request("GET", url, cache_key="egov_law_list_v1_xml", response_type="text")
-
-        from bs4 import BeautifulSoup
-        soup = BeautifulSoup(xml_content, "xml")
-
-        laws = []
-        for info in soup.find_all("LawNameListInfo"):
-            law = {}
-            for child in info.children:
-                if child.name:
-                    law[child.name] = child.text
-            laws.append(law)
-
-        return laws
-
-    def fetch_law_xml(self, law_id: str) -> str:
-        """
-        Fetches the XML content of a specific law.
-
-        Strategy:
-        1. Try v2 API first (faster, more reliable)
-        2. Fall back to v1 API if v2 fails
-        3. Raise error if both fail
-        """
-        # Check cache first (uses v1 cache key for compatibility)
-        cache_key = f"egov_law_{law_id}"
-        cache_path = self._get_cache_path(cache_key)
-        cached_data = self._load_cache(cache_path)
-        if cached_data is not None:
-            logger.debug(f"Cache hit: {cache_key}")
-            return cached_data
-
-        # Try v2 API first
-        xml_content = self._fetch_law_xml_v2(law_id)
-
-        if xml_content is None:
-            # Fall back to v1 API
-            logger.info(f"Falling back to v1 API for {law_id}")
-            xml_content = self._fetch_law_xml_v1(law_id)
-
-        if xml_content is None:
-            raise RuntimeError(f"Failed to fetch law {law_id} from both v1 and v2 APIs")
-
-        # Cache the result
-        self._save_cache(cache_path, xml_content)
-        return xml_content
-
-    def _fetch_law_xml_v2(self, law_id: str) -> Optional[str]:
-        """
-        Fetch law data from v2 API and convert to XML.
+        法令一覧を v2 API から取得。
 
         Returns:
-            XML string if successful, None if failed
+            法令情報のリスト（LawId, LawName 等を含む dict）
         """
+        # v2 API の法令一覧エンドポイント
+        url = f"{self.base_url_v2}/laws"
+        cache_key = "egov_law_list_v2_json"
+        cache_path = self._get_cache_path(cache_key)
+        cached_data = self._load_cache(cache_path)
+
+        if cached_data is not None:
+            logger.debug(f"Cache hit: {cache_key}")
+            return json.loads(cached_data)
+
+        try:
+            logger.info(f"Fetching law list from v2 API: {url}")
+            resp = self.session.get(url, timeout=self.timeout)
+            resp.raise_for_status()
+            data = resp.json()
+
+            # v2 API の応答形式に応じて変換
+            laws = []
+            for item in data.get("laws", []):
+                laws.append({
+                    "LawId": item.get("law_id", ""),
+                    "LawName": item.get("law_name", ""),
+                    "LawNo": item.get("law_num", ""),
+                    "PromulgationDate": item.get("promulgation_date", ""),
+                })
+
+            self._save_cache(cache_path, json.dumps(laws, ensure_ascii=False))
+            return laws
+
+        except Exception as e:
+            logger.error(f"Failed to fetch law list: {e}")
+            raise
+
+    def fetch_law_data(self, law_id: str) -> Dict[str, Any]:
+        """
+        法令データを v2 API から JSON として取得。
+
+        Args:
+            law_id: 法令ID（例: 337AC0000000139）
+
+        Returns:
+            law_full_text を含む JSON dict
+
+        Raises:
+            RuntimeError: 取得に失敗した場合
+        """
+        cache_key = f"egov_law_v2_{law_id}"
+        cache_path = self._get_cache_path(cache_key)
+        cached_data = self._load_cache(cache_path)
+
+        if cached_data is not None:
+            logger.debug(f"Cache hit: {cache_key}")
+            return json.loads(cached_data)
+
         url = f"{self.base_url_v2}/law_data/{law_id}"
 
         try:
-            logger.info(f"Fetching (v2): {url}")
-            resp = self.session.get(url, timeout=self.timeout_v2)
+            logger.info(f"Fetching law data (v2): {url}")
+            resp = self.session.get(url, timeout=self.timeout)
             resp.raise_for_status()
 
             data = resp.json()
-            law_full_text = data.get("law_full_text")
 
-            if not law_full_text:
-                logger.warning(f"v2 API returned no law_full_text for {law_id}")
-                return None
-
-            # Convert JSON tree to XML
-            xml_content = json_to_xml(law_full_text)
-
-            # Add XML declaration
-            xml_content = f'<?xml version="1.0" encoding="UTF-8"?>\n{xml_content}'
+            if "law_full_text" not in data:
+                raise RuntimeError(f"v2 API returned no law_full_text for {law_id}")
 
             logger.info(f"Successfully fetched {law_id} via v2 API")
-            return xml_content
+            self._save_cache(cache_path, json.dumps(data, ensure_ascii=False))
+            return data
 
         except requests.exceptions.Timeout:
-            logger.warning(f"v2 API timeout for {law_id} (timeout={self.timeout_v2}s)")
-            return None
-        except requests.exceptions.ConnectionError as e:
-            logger.warning(f"v2 API connection error for {law_id}: {e}")
-            return None
+            raise RuntimeError(f"v2 API timeout for {law_id} (timeout={self.timeout}s)")
         except requests.exceptions.HTTPError as e:
-            logger.warning(f"v2 API HTTP error for {law_id}: {e}")
-            return None
-        except Exception as e:
-            logger.warning(f"v2 API unexpected error for {law_id}: {type(e).__name__}: {e}")
-            return None
+            raise RuntimeError(f"v2 API HTTP error for {law_id}: {e}")
+        except requests.exceptions.ConnectionError as e:
+            raise RuntimeError(f"v2 API connection error for {law_id}: {e}")
 
-    def _fetch_law_xml_v1(self, law_id: str) -> Optional[str]:
+    def get_law_full_text(self, law_id: str) -> Dict[str, Any]:
         """
-        Fetch law data from v1 API (legacy fallback).
+        law_full_text（JSON ツリー）を直接取得。
+
+        Args:
+            law_id: 法令ID
 
         Returns:
-            XML string if successful, None if failed
+            law_full_text の JSON ツリー（tag/attr/children 構造）
         """
-        url = f"{self.base_url}/lawdata/{law_id}"
-
-        try:
-            logger.info(f"Fetching (v1): {url}")
-            resp = self.session.get(url, timeout=self.timeout_v1)
-            resp.raise_for_status()
-
-            logger.info(f"Successfully fetched {law_id} via v1 API")
-            return resp.text
-
-        except requests.exceptions.Timeout:
-            logger.error(f"v1 API timeout for {law_id} (timeout={self.timeout_v1}s)")
-            return None
-        except requests.exceptions.ConnectionError as e:
-            logger.error(f"v1 API connection error for {law_id}: {e}")
-            return None
-        except requests.exceptions.HTTPError as e:
-            logger.error(f"v1 API HTTP error for {law_id}: {e}")
-            return None
-        except Exception as e:
-            logger.error(f"v1 API unexpected error for {law_id}: {type(e).__name__}: {e}")
-            return None
+        data = self.fetch_law_data(law_id)
+        return data["law_full_text"]

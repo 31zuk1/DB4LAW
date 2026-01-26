@@ -11,6 +11,7 @@
 {"from": "JPLAW:323AC0000000131#main#24", "to": "JPLAW:323AC0000000131#main#22", "type": "refers_to", "evidence": "第二十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#26", "to": "JPLAW:323AC0000000131#main#20", "type": "refers_to", "evidence": "第二十条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#26", "to": "JPLAW:323AC0000000131#main#24", "type": "refers_to", "evidence": "第二十四条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#main#28", "to": "JPLAW:140AC0000000045#main#39", "type": "refers_to", "evidence": "第三十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#28", "to": "JPLAW:140AC0000000045#main#41", "type": "refers_to", "evidence": "第四十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#36_3", "to": "JPLAW:323AC0000000131#main#36", "type": "refers_to", "evidence": "第三十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#36_3", "to": "JPLAW:323AC0000000131#main#31_2", "type": "refers_to", "evidence": "第三十一条の二", "confidence": 0.9, "source": "regex_v2"}
@@ -118,11 +119,13 @@
 {"from": "JPLAW:323AC0000000131#main#157_6", "to": "JPLAW:140AC0000000045#main#179", "type": "refers_to", "evidence": "第百七十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#157_6", "to": "JPLAW:140AC0000000045#main#181", "type": "refers_to", "evidence": "第百八十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#157_6", "to": "JPLAW:140AC0000000045#main#182", "type": "refers_to", "evidence": "第百八十二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#main#157_6", "to": "external:これらの罪の未遂罪の被害者児童福祉法#main#60", "type": "refers_to", "evidence": "第六十条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#main#157_6", "to": "JPLAW:140AC0000000045#main#176", "type": "refers_to", "evidence": "第百七十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#157_6", "to": "JPLAW:140AC0000000045#main#177", "type": "refers_to", "evidence": "第百七十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#157_6", "to": "JPLAW:140AC0000000045#main#179", "type": "refers_to", "evidence": "第百七十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#157_6", "to": "JPLAW:140AC0000000045#main#181", "type": "refers_to", "evidence": "第百八十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#157_6", "to": "JPLAW:140AC0000000045#main#182", "type": "refers_to", "evidence": "第百八十二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#main#157_6", "to": "external:児童福祉法#main#60", "type": "refers_to", "evidence": "第六十条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#main#163", "to": "JPLAW:323AC0000000131#main#150", "type": "refers_to", "evidence": "第百五十条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#163", "to": "JPLAW:323AC0000000131#main#160", "type": "refers_to", "evidence": "第百六十条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#163", "to": "JPLAW:323AC0000000131#main#158", "type": "refers_to", "evidence": "第百五十八条", "confidence": 0.9, "source": "regex_v2"}
@@ -141,15 +144,11 @@
 {"from": "JPLAW:323AC0000000131#main#188_5", "to": "JPLAW:323AC0000000131#main#428", "type": "refers_to", "evidence": "第四百二十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#188_6", "to": "JPLAW:323AC0000000131#main#188_2", "type": "refers_to", "evidence": "第百八十八条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#188_6", "to": "JPLAW:323AC0000000131#main#188_4", "type": "refers_to", "evidence": "第百八十八条の四", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#main#188_7", "to": "external:刑事補償法#main#1", "type": "refers_to", "evidence": "第一条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#main#199", "to": "JPLAW:323AC0000000131#main#201_2", "type": "refers_to", "evidence": "第二百一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#200", "to": "JPLAW:323AC0000000131#main#64", "type": "refers_to", "evidence": "第六十四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#201", "to": "JPLAW:323AC0000000131#main#73", "type": "refers_to", "evidence": "第七十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:323AC0000000131#main#199", "type": "refers_to", "evidence": "第百九十九条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:140AC0000000045#main#176", "type": "refers_to", "evidence": "第百七十六条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:140AC0000000045#main#177", "type": "refers_to", "evidence": "第百七十七条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:140AC0000000045#main#179", "type": "refers_to", "evidence": "第百七十九条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:140AC0000000045#main#181", "type": "refers_to", "evidence": "第百八十一条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:140AC0000000045#main#182", "type": "refers_to", "evidence": "第百八十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:140AC0000000045#main#176", "type": "refers_to", "evidence": "第百七十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:140AC0000000045#main#177", "type": "refers_to", "evidence": "第百七十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#201_2", "to": "JPLAW:140AC0000000045#main#179", "type": "refers_to", "evidence": "第百七十九条", "confidence": 0.9, "source": "regex_v2"}
@@ -166,8 +165,6 @@
 {"from": "JPLAW:323AC0000000131#main#207", "to": "JPLAW:323AC0000000131#main#31_2", "type": "refers_to", "evidence": "第三十一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#207_2", "to": "JPLAW:323AC0000000131#main#201_2", "type": "refers_to", "evidence": "第二百一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#207_2", "to": "JPLAW:323AC0000000131#main#201_2", "type": "refers_to", "evidence": "第二百一条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#207_3", "to": "JPLAW:323AC0000000131#main#201_2", "type": "refers_to", "evidence": "第二百一条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#207_3", "to": "JPLAW:323AC0000000131#main#201_2", "type": "refers_to", "evidence": "第二百一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#207_3", "to": "JPLAW:323AC0000000131#main#201_2", "type": "refers_to", "evidence": "第二百一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#207_3", "to": "JPLAW:323AC0000000131#main#201_2", "type": "refers_to", "evidence": "第二百一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#207_3", "to": "JPLAW:323AC0000000131#main#70", "type": "refers_to", "evidence": "第七十条", "confidence": 0.9, "source": "regex_v2"}
@@ -258,6 +255,7 @@
 {"from": "JPLAW:323AC0000000131#main#252", "to": "JPLAW:323AC0000000131#main#250", "type": "refers_to", "evidence": "第二百五十条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#262", "to": "JPLAW:140AC0000000045#main#193", "type": "refers_to", "evidence": "第百九十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#262", "to": "JPLAW:140AC0000000045#main#196", "type": "refers_to", "evidence": "第百九十六条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#main#262", "to": "external:破壊活動防止法#main#45", "type": "refers_to", "evidence": "第四十五条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#main#262", "to": "JPLAW:140AC0000000045#main#42", "type": "refers_to", "evidence": "第四十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#262", "to": "JPLAW:140AC0000000045#main#43", "type": "refers_to", "evidence": "第四十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#262", "to": "JPLAW:323AC0000000131#main#260", "type": "refers_to", "evidence": "第二百六十条", "confidence": 0.9, "source": "regex_v2"}
@@ -266,14 +264,10 @@
 {"from": "JPLAW:323AC0000000131#main#265", "to": "JPLAW:323AC0000000131#main#262", "type": "refers_to", "evidence": "第二百六十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#266", "to": "JPLAW:323AC0000000131#main#262", "type": "refers_to", "evidence": "第二百六十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#267_2", "to": "JPLAW:323AC0000000131#main#266", "type": "refers_to", "evidence": "第二百六十六条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#main#267_2", "to": "external:検察審査会法#main#2", "type": "refers_to", "evidence": "第二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#main#268", "to": "JPLAW:323AC0000000131#main#266", "type": "refers_to", "evidence": "第二百六十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#269", "to": "JPLAW:323AC0000000131#main#262", "type": "refers_to", "evidence": "第二百六十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#270", "to": "JPLAW:323AC0000000131#main#157_6", "type": "refers_to", "evidence": "第百五十七条の六", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:140AC0000000045#main#176", "type": "refers_to", "evidence": "第百七十六条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:140AC0000000045#main#177", "type": "refers_to", "evidence": "第百七十七条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:140AC0000000045#main#179", "type": "refers_to", "evidence": "第百七十九条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:140AC0000000045#main#181", "type": "refers_to", "evidence": "第百八十一条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:140AC0000000045#main#182", "type": "refers_to", "evidence": "第百八十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:140AC0000000045#main#176", "type": "refers_to", "evidence": "第百七十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:140AC0000000045#main#177", "type": "refers_to", "evidence": "第百七十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:140AC0000000045#main#179", "type": "refers_to", "evidence": "第百七十九条", "confidence": 0.9, "source": "regex_v2"}
@@ -283,8 +277,6 @@
 {"from": "JPLAW:323AC0000000131#main#271_2", "to": "JPLAW:323AC0000000131#main#255", "type": "refers_to", "evidence": "第二百五十五条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#271_4", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#271_4", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#271_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#271_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#271_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#271_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#271_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
@@ -345,10 +337,6 @@
 {"from": "JPLAW:323AC0000000131#main#281_2", "to": "JPLAW:323AC0000000131#main#157_5", "type": "refers_to", "evidence": "第百五十七条の五", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#281_2", "to": "JPLAW:323AC0000000131#main#157_6", "type": "refers_to", "evidence": "第百五十七条の六", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#281_4", "to": "JPLAW:323AC0000000131#main#440", "type": "refers_to", "evidence": "第四百四十条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#281_4", "to": "JPLAW:323AC0000000131#main#349", "type": "refers_to", "evidence": "第三百四十九条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#281_4", "to": "JPLAW:323AC0000000131#main#350", "type": "refers_to", "evidence": "第三百五十条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#281_4", "to": "JPLAW:323AC0000000131#main#500", "type": "refers_to", "evidence": "第五百条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#281_4", "to": "JPLAW:323AC0000000131#main#502", "type": "refers_to", "evidence": "第五百二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#281_4", "to": "JPLAW:323AC0000000131#main#349", "type": "refers_to", "evidence": "第三百四十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#281_4", "to": "JPLAW:323AC0000000131#main#350", "type": "refers_to", "evidence": "第三百五十条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#281_4", "to": "JPLAW:323AC0000000131#main#500", "type": "refers_to", "evidence": "第五百条", "confidence": 0.9, "source": "regex_v2"}
@@ -416,8 +404,6 @@
 {"from": "JPLAW:323AC0000000131#main#299_5", "to": "JPLAW:323AC0000000131#main#312_2", "type": "refers_to", "evidence": "第三百十二条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#299_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#299_5", "to": "JPLAW:323AC0000000131#main#312", "type": "refers_to", "evidence": "第三百十二条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#299_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#299_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#299_5", "to": "JPLAW:323AC0000000131#main#271_5", "type": "refers_to", "evidence": "第二百七十一条の五", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#299_5", "to": "JPLAW:323AC0000000131#main#312_2", "type": "refers_to", "evidence": "第三百十二条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#299_5", "to": "JPLAW:323AC0000000131#main#271_2", "type": "refers_to", "evidence": "第二百七十一条の二", "confidence": 0.9, "source": "regex_v2"}
@@ -511,7 +497,6 @@
 {"from": "JPLAW:323AC0000000131#main#316_15", "to": "JPLAW:323AC0000000131#main#321", "type": "refers_to", "evidence": "第三百二十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#316_15", "to": "JPLAW:323AC0000000131#main#321", "type": "refers_to", "evidence": "第三百二十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#316_15", "to": "JPLAW:323AC0000000131#main#321", "type": "refers_to", "evidence": "第三百二十一条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#316_15", "to": "JPLAW:323AC0000000131#main#326", "type": "refers_to", "evidence": "第三百二十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#316_16", "to": "JPLAW:323AC0000000131#main#316_13", "type": "refers_to", "evidence": "第三百十六条の十三", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#316_16", "to": "JPLAW:323AC0000000131#main#316_14", "type": "refers_to", "evidence": "第三百十六条の十四", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#316_16", "to": "JPLAW:323AC0000000131#main#326", "type": "refers_to", "evidence": "第三百二十六条", "confidence": 0.9, "source": "regex_v2"}
@@ -608,11 +593,6 @@
 {"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:140AC0000000045#main#179", "type": "refers_to", "evidence": "第百七十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:140AC0000000045#main#181", "type": "refers_to", "evidence": "第百八十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:140AC0000000045#main#182", "type": "refers_to", "evidence": "第百八十二条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:140AC0000000045#main#176", "type": "refers_to", "evidence": "第百七十六条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:140AC0000000045#main#177", "type": "refers_to", "evidence": "第百七十七条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:140AC0000000045#main#179", "type": "refers_to", "evidence": "第百七十九条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:140AC0000000045#main#181", "type": "refers_to", "evidence": "第百八十一条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:140AC0000000045#main#182", "type": "refers_to", "evidence": "第百八十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#321_3", "to": "JPLAW:323AC0000000131#main#295", "type": "refers_to", "evidence": "第二百九十五条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#322", "to": "JPLAW:323AC0000000131#main#319", "type": "refers_to", "evidence": "第三百十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#323", "to": "JPLAW:323AC0000000131#main#321", "type": "refers_to", "evidence": "第三百二十一条", "confidence": 0.9, "source": "regex_v2"}
@@ -688,9 +668,6 @@
 {"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:323AC0000000131#main#198", "type": "refers_to", "evidence": "第百九十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:323AC0000000131#main#223", "type": "refers_to", "evidence": "第二百二十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:323AC0000000131#main#293", "type": "refers_to", "evidence": "第二百九十三条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:323AC0000000131#main#198", "type": "refers_to", "evidence": "第百九十八条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:323AC0000000131#main#223", "type": "refers_to", "evidence": "第二百二十三条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:323AC0000000131#main#293", "type": "refers_to", "evidence": "第二百九十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:140AC0000000045#main#96", "type": "refers_to", "evidence": "第九十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:140AC0000000045#main#96_6", "type": "refers_to", "evidence": "第九十六条の六", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_2", "to": "JPLAW:140AC0000000045#main#155", "type": "refers_to", "evidence": "第百五十五条", "confidence": 0.9, "source": "regex_v2"}
@@ -738,18 +715,6 @@
 {"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#465", "type": "refers_to", "evidence": "第四百六十五条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_4", "type": "refers_to", "evidence": "第三百五十条の四", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#293", "type": "refers_to", "evidence": "第二百九十三条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_22", "type": "refers_to", "evidence": "第三百五十条の二十二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_25", "type": "refers_to", "evidence": "第三百五十条の二十五", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_22", "type": "refers_to", "evidence": "第三百五十条の二十二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#463", "type": "refers_to", "evidence": "第四百六十三条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#465", "type": "refers_to", "evidence": "第四百六十五条", "confidence": 0.9, "source": "regex_v2"}
-{"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_4", "type": "refers_to", "evidence": "第三百五十条の四", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_10", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_11", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#350_12", "to": "JPLAW:323AC0000000131#main#350_4", "type": "refers_to", "evidence": "第三百五十条の四", "confidence": 0.9, "source": "regex_v2"}
@@ -827,6 +792,8 @@
 {"from": "JPLAW:323AC0000000131#main#397", "to": "JPLAW:323AC0000000131#main#383", "type": "refers_to", "evidence": "第三百八十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#397", "to": "JPLAW:323AC0000000131#main#393", "type": "refers_to", "evidence": "第三百九十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#402_2", "to": "JPLAW:323AC0000000131#main#390_2", "type": "refers_to", "evidence": "第三百九十条の二", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#main#402_2", "to": "external:公職選挙法#main#253_2", "type": "refers_to", "evidence": "第二百五十三条の二", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:323AC0000000131#main#402_2", "to": "external:公職選挙法#main#253_2", "type": "refers_to", "evidence": "第二百五十三条の二", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#main#403", "to": "JPLAW:323AC0000000131#main#385", "type": "refers_to", "evidence": "第三百八十五条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#403_2", "to": "JPLAW:323AC0000000131#main#384", "type": "refers_to", "evidence": "第三百八十四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#main#403_2", "to": "JPLAW:323AC0000000131#main#382", "type": "refers_to", "evidence": "第三百八十二条", "confidence": 0.9, "source": "regex_v2"}
@@ -1347,12 +1314,17 @@
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#301", "type": "refers_to", "evidence": "第三百一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#5", "to": "JPLAW:323AC0000000131#main#157_6", "type": "refers_to", "evidence": "第百五十七条の六", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#5", "to": "JPLAW:323AC0000000131#main#290_2", "type": "refers_to", "evidence": "第二百九十条の二", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第六十条中商業登記法#main#52", "type": "refers_to", "evidence": "第五十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第六十条中商業登記法#main#52", "type": "refers_to", "evidence": "第五十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#344", "type": "refers_to", "evidence": "第三百四十四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#2", "type": "refers_to", "evidence": "第二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:140AC0000000045#main#97", "type": "refers_to", "evidence": "第九十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:140AC0000000045#main#98", "type": "refers_to", "evidence": "第九十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:140AC0000000045#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:140AC0000000045#main#72", "type": "refers_to", "evidence": "第七十二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第二十四条中国際受刑者移送法#main#42", "type": "refers_to", "evidence": "第四十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第三十二条中少年鑑別所法#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第十三条中刑事補償法#main#1", "type": "refers_to", "evidence": "第一条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#98_4", "type": "refers_to", "evidence": "第九十八条の四", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#98_11", "type": "refers_to", "evidence": "第九十八条の十一", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#342", "type": "refers_to", "evidence": "第三百四十二条", "confidence": 0.9, "source": "regex_v2"}
@@ -1362,6 +1334,9 @@
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:140AC0000000045#main#98", "type": "refers_to", "evidence": "第九十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:140AC0000000045#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:140AC0000000045#main#72", "type": "refers_to", "evidence": "第七十二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第二十四条中国際受刑者移送法#main#42", "type": "refers_to", "evidence": "第四十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第三十二条中少年鑑別所法#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第十三条中刑事補償法#main#1", "type": "refers_to", "evidence": "第一条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#199", "type": "refers_to", "evidence": "第百九十九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#98_4", "type": "refers_to", "evidence": "第九十八条の四", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#98_11", "type": "refers_to", "evidence": "第九十八条の十一", "confidence": 0.9, "source": "regex_v2"}
@@ -1501,5 +1476,7 @@
 {"from": "JPLAW:323AC0000000131#suppl#19", "to": "JPLAW:140AC0000000045#main#46", "type": "refers_to", "evidence": "第四十六条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#12", "to": "JPLAW:323AC0000000131#main#350_2", "type": "refers_to", "evidence": "第三百五十条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#307_2", "type": "refers_to", "evidence": "第三百七条の二", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第三十八条中財務省設置法#main#27", "type": "refers_to", "evidence": "第二十七条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#suppl#1", "to": "JPLAW:323AC0000000131#main#307_2", "type": "refers_to", "evidence": "第三百七条の二", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:323AC0000000131#suppl#1", "to": "external:附則第三十八条中財務省設置法#main#27", "type": "refers_to", "evidence": "第二十七条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:323AC0000000131#suppl#41", "to": "JPLAW:323AC0000000131#main#31", "type": "refers_to", "evidence": "第三十一条", "confidence": 0.9, "source": "regex_v2"}
