@@ -1,7 +1,6 @@
 import yaml
 from pathlib import Path
-from datetime import datetime
-from typing import List, Dict, Set
+from typing import List, Dict
 from ..client.egov import EGovClient
 from ..config import DATA_DIR
 
@@ -123,6 +122,7 @@ class Tier0Builder:
         # Generate YAML frontmatter
         fm = {
             "id": f"JPLAW:{law_id}",
+            "type": "law",
             "egov_law_id": law_id,
             "law_no": law_no,
             "title": law_name,
@@ -131,6 +131,7 @@ class Tier0Builder:
             "tier": 0,
             "egov_class": egov_classes,
             "domain": domains,
+            "tags": [law_name, "kind/law"],
             "links": {
                 "egov": f"https://laws.e-gov.go.jp/law/{law_id}"
             }

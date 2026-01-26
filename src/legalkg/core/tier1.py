@@ -1,6 +1,5 @@
 from pathlib import Path
 from typing import List, Dict, Optional
-import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import re
 from ..client.egov import EGovClient
@@ -184,6 +183,9 @@ class Tier1Builder:
         if not container:
             return
 
+        # Import EdgeExtractor here (single import for this method)
+        from .tier2 import EdgeExtractor
+
         # 改正法断片判定: AmendLawNum が存在すれば改正法断片
         is_amendment_fragment = amend_law_num is not None
 
@@ -210,7 +212,6 @@ class Tier1Builder:
 
                 # Setup extractor for linking
                 # SSOT: extract_edges=True の場合は replace_refs_with_edges を使用
-                from .tier2 import EdgeExtractor
                 extractor = EdgeExtractor(vault_root=self.vault_root if extract_edges else None)
                 provision_edges = []  # この Provision から抽出されたエッジ
 
@@ -268,14 +269,24 @@ class Tier1Builder:
                 if extract_edges and edge_list is not None:
                     edge_list.extend(provision_edges)
 
+                # Determine node type and kind tag
+                if is_amendment_fragment:
+                    node_type = "amendment_fragment"
+                    kind_tag = "kind/amendment_fragment"
+                else:
+                    node_type = "supplement"
+                    kind_tag = "kind/supplement"
+
                 fm = {
                     "id": node_id,
+                    "type": node_type,
+                    "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
                     "law_id": law_id,
                     "law_name": law_name,
                     "part": part_type,
                     "article_num": "Provision",
                     "heading": "附則",
-                    "tags": [law_name] if law_name else []
+                    "tags": [law_name, kind_tag] if law_name else [kind_tag]
                 }
 
                 with open(file_path, "w", encoding="utf-8") as f:
@@ -324,7 +335,6 @@ class Tier1Builder:
 
             # Setup extractor for linking
             # SSOT: extract_edges=True の場合は replace_refs_with_edges を使用
-            from .tier2 import EdgeExtractor
             extractor = EdgeExtractor(vault_root=self.vault_root if extract_edges else None)
             article_edges = []  # この条文から抽出されたエッジ
 
@@ -386,14 +396,27 @@ class Tier1Builder:
             if extract_edges and edge_list is not None:
                 edge_list.extend(article_edges)
 
+            # Determine node type and kind tag
+            if is_amendment_fragment:
+                node_type = "amendment_fragment"
+                kind_tag = "kind/amendment_fragment"
+            elif part_type == "suppl":
+                node_type = "supplement"
+                kind_tag = "kind/supplement"
+            else:
+                node_type = "article"
+                kind_tag = "kind/article"
+
             fm = {
                 "id": node_id,
+                "type": node_type,
+                "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
                 "law_id": law_id,
                 "law_name": law_name,
                 "part": part_type,
                 "article_num": num,
                 "heading": caption_text,
-                "tags": [law_name] if law_name else []
+                "tags": [law_name, kind_tag] if law_name else [kind_tag]
             }
 
             # 改正法断片の場合は追加メタデータを付与

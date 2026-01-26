@@ -112,6 +112,34 @@ Vault/laws/刑法/
 - **Supplementary:** `JPLAW:{LAW_ID}#附則#附則第N条`
 - **Sub-article:** Uses `の` notation (e.g., `第19条の2`)
 
+### Breadcrumbs / Dataview Frontmatter
+
+Obsidian の Breadcrumbs / Dataview 用メタデータ:
+
+| フィールド | 説明 | 例 |
+|-----------|------|-----|
+| `type` | ノード種別 | `law`, `article`, `supplement`, `amendment_fragment` |
+| `parent` | 親法ノードへのリンク | `[[laws/刑法/刑法]]` |
+| `tags` | 法令名タグ + kind/* | `[刑法, kind/article]` |
+
+**種別タグ (kind/*):**
+- `kind/law` - 親法ノード
+- `kind/article` - 本文条文
+- `kind/supplement` - 通常の附則
+- `kind/amendment_fragment` - 改正法断片
+
+**正規化スクリプト:**
+```bash
+# dry-run（変更確認）
+python scripts/migration/normalize_frontmatter.py --dry-run --law 刑法
+
+# 適用
+python scripts/migration/normalize_frontmatter.py --apply --law 刑法
+
+# 全Vault対象（--law を省略）
+python scripts/migration/normalize_frontmatter.py --apply
+```
+
 ### Amendment Law Fragment Model
 
 e-Gov の統合条文 XML では、整備法・一括改正法は独立法令として取得できず、
@@ -212,6 +240,8 @@ Located in `scripts/migration/`:
 | `add_amend_law_meta.py` | Add `amend_law:` nested metadata to supplements |
 | `unlink_amendment_refs.py` | Unlink bare references in amendment fragments |
 | `generate_amendment_vault.py` | (Stub) Generate integrated amendment law vault |
+| `normalize_frontmatter.py` | Add Breadcrumbs/Dataview metadata (type, parent, kind/*) |
+| `fix_frontmatter.py` | Fix broken YAML frontmatter (---as_of: → ---\nas_of:) |
 
 ### Pending Links System
 

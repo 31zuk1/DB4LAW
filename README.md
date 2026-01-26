@@ -94,6 +94,36 @@ amend_law:
 
 改正法断片内の裸の「第N条」は改正法自身を指すためリンク化しない（方式B）。
 
+### Obsidian Breadcrumbs / Dataview 対応
+
+階層ナビゲーションとデータ検索用のメタデータを自動付与：
+
+```yaml
+type: article                      # ノード種別
+parent: '[[laws/刑法/刑法]]'       # 親法ノードへのリンク
+tags:
+  - 刑法
+  - kind/article                   # 種別タグ
+```
+
+**ノード種別 (`type`):**
+
+| 値 | 対象 | kind/* タグ |
+|----|------|-------------|
+| `law` | 親法ノード | `kind/law` |
+| `article` | 本文条文 | `kind/article` |
+| `supplement` | 附則 | `kind/supplement` |
+| `amendment_fragment` | 改正法断片 | `kind/amendment_fragment` |
+
+**Dataview クエリ例:**
+
+```dataview
+TABLE article_num, heading
+FROM "laws/刑法"
+WHERE type = "article"
+SORT article_num ASC
+```
+
 ### 削除条文の範囲ノード
 
 削除された条文範囲は範囲ノードとして管理：
@@ -144,7 +174,17 @@ python scripts/migration/migrate_to_japanese.py --law 刑法 --apply
 python scripts/migration/add_parent_links.py --law 刑法
 ```
 
-### 5. WikiLink整合性チェック
+### 5. Breadcrumbs/Dataview用メタデータ追加
+
+```bash
+# dry-run（変更確認）
+python scripts/migration/normalize_frontmatter.py --dry-run --law 刑法
+
+# 適用
+python scripts/migration/normalize_frontmatter.py --apply --law 刑法
+```
+
+### 6. WikiLink整合性チェック
 
 ```bash
 python scripts/qa/check_wikilinks.py --vault ./Vault --only-prefix laws/
@@ -174,12 +214,17 @@ JPLAW:{LAW_ID}#附則#附則第1条      # 附則条文
 
 ```yaml
 ---
-article_num: 第199条
-heading: （殺人）
-id: JPLAW:140AC0000000045#本文#第199条
+id: JPLAW:140AC0000000045#main#199
+type: article
+parent: '[[laws/刑法/刑法]]'
 law_id: 140AC0000000045
 law_name: 刑法
-part: 本文
+part: main
+article_num: '199'
+heading: （殺人）
+tags:
+  - 刑法
+  - kind/article
 ---
 
 # 第百九十九条 （殺人）
@@ -201,13 +246,16 @@ DB4LAW/
 │   └── utils/
 │       ├── article_formatter.py  # 条文番号変換
 │       ├── markdown.py           # YAML frontmatter処理
-│       └── numerals.py           # 漢数字変換
+│       ├── numerals.py           # 漢数字変換
+│       └── parent_links.py       # 親ファイルリンク生成
 ├── scripts/
 │   ├── migration/
 │   │   ├── migrate_to_japanese.py    # 日本語パス移行
 │   │   ├── fix_id_collision.py       # 外部法参照修正
 │   │   ├── add_parent_links.py       # 親ファイルリンク追加
 │   │   ├── unlink_amendment_refs.py  # 改正法断片のリンク解除
+│   │   ├── normalize_frontmatter.py  # Breadcrumbs/Dataview用メタデータ追加
+│   │   ├── fix_frontmatter.py        # YAML frontmatter修復
 │   │   └── _artifacts/               # 生成CSV/JSONL
 │   └── qa/
 │       ├── check_wikilinks.py        # WikiLink整合性チェック
