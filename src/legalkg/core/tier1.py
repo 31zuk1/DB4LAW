@@ -1,6 +1,11 @@
+"""
+Tier1 Builder - v2 Native Implementation
+
+e-Gov API v2 の JSON を直接 traverse して条文ノードを生成。
+BeautifulSoup / XML 依存を完全廃止。
+"""
 from pathlib import Path
-from typing import List, Dict, Optional
-from bs4 import BeautifulSoup
+from typing import List, Dict, Any, Optional
 import re
 from ..client.egov import EGovClient
 import logging
@@ -10,6 +15,67 @@ import json
 from ..utils.parent_links import update_law_file_with_links
 
 logger = logging.getLogger(__name__)
+
+
+# =============================================================================
+# JSON Tree Traversal Helpers
+# =============================================================================
+
+def find_child(node: Dict[str, Any], tag: str) -> Optional[Dict[str, Any]]:
+    """指定タグの最初の子要素を取得"""
+    if not isinstance(node, dict):
+        return None
+    for child in node.get("children", []):
+        if isinstance(child, dict) and child.get("tag") == tag:
+            return child
+    return None
+
+
+def find_children(node: Dict[str, Any], tag: str) -> List[Dict[str, Any]]:
+    """指定タグの全子要素を取得"""
+    if not isinstance(node, dict):
+        return []
+    return [
+        child for child in node.get("children", [])
+        if isinstance(child, dict) and child.get("tag") == tag
+    ]
+
+
+def find_all_recursive(node: Dict[str, Any], tag: str) -> List[Dict[str, Any]]:
+    """指定タグの要素を再帰的に全て取得"""
+    results = []
+    if not isinstance(node, dict):
+        return results
+    if node.get("tag") == tag:
+        results.append(node)
+    for child in node.get("children", []):
+        if isinstance(child, dict):
+            results.extend(find_all_recursive(child, tag))
+    return results
+
+
+def get_text(node: Dict[str, Any]) -> str:
+    """ノード内の全テキストを再帰的に取得"""
+    if isinstance(node, str):
+        return node
+    if not isinstance(node, dict):
+        return ""
+    texts = []
+    for child in node.get("children", []):
+        texts.append(get_text(child))
+    return "".join(texts)
+
+
+def get_attr(node: Dict[str, Any], key: str, default: str = "") -> str:
+    """ノードの属性値を取得"""
+    if not isinstance(node, dict):
+        return default
+    return node.get("attr", {}).get(key, default)
+
+
+# =============================================================================
+# Tier1Builder
+# =============================================================================
 
 class Tier1Builder:
     def __init__(self, vault_root: Path, targets_path: Path):
@@ -25,25 +91,23 @@ class Tier1Builder:
             data = yaml.safe_load(f)
             if isinstance(data, list):
                 return data
-            # Handle if targets.yaml has structure like {targets: [...]}
             if isinstance(data, dict) and "targets" in data:
                 return data["targets"]
             return []
 
     def _get_law_name(self, law_md_path: Path) -> str:
-        """Extract law name from the parent law's metadata file."""
+        """親法ファイルから法令名を取得"""
         try:
             with open(law_md_path, 'r', encoding='utf-8') as f:
                 content = f.read()
-            
-            # Parse frontmatter
+
             if not content.startswith('---'):
                 return ""
-            
+
             parts = content.split('---', 2)
             if len(parts) < 3:
                 return ""
-            
+
             frontmatter = yaml.safe_load(parts[1])
             return frontmatter.get('title', '')
         except Exception as e:
@@ -52,14 +116,14 @@ class Tier1Builder:
 
     def build(self, extract_edges: bool = False):
         print(f"Processing {len(self.targets)} target laws...")
-        
+
         report = {
             "total_targets": len(self.targets),
             "success": [],
             "failed": [],
-            "timestamp": "2025-12-30" # Should be dynamic in real app
+            "timestamp": "2025-12-30"
         }
-        
+
         from tqdm import tqdm
         for law_id in tqdm(self.targets, desc="Processing Laws"):
             try:
@@ -74,386 +138,439 @@ class Tier1Builder:
             json.dump(report, f, indent=2, ensure_ascii=False)
 
     def _process_law(self, law_id: str, extract_edges: bool):
-        xml_text = self.client.fetch_law_xml(law_id)
-        if not xml_text:
-            logger.warning(f"No XML for {law_id}")
+        """法令を処理して条文ノードを生成"""
+        # v2 JSON を直接取得
+        law_tree = self.client.get_law_full_text(law_id)
+        if not law_tree:
+            logger.warning(f"No law data for {law_id}")
             return
 
-        # Parse XML
-        soup = BeautifulSoup(xml_text, "xml")
-        
-        # Determine law structure
-        # e-Gov XML: <LawNum>, <LawBody><MainProvision>...</MainProvision><SupplProvision>...</SupplProvision>
-        
         from ..utils.fs import find_law_dir_by_id
         law_dir = find_law_dir_by_id(self.laws_dir, law_id)
-        
+
         if not law_dir or not law_dir.exists():
-            logger.warning(f"Tier 0 metadata not found for {law_id} (Dir lookup failed), skipping article generation.")
+            logger.warning(f"Tier 0 metadata not found for {law_id}, skipping.")
             return
-        
+
         from ..utils.fs import get_law_node_file
         law_md_path = get_law_node_file(law_dir)
-        # If not found, maybe create partial one?
-        # Tier 1 generally assumes Tier 0 exists.
-        
-        # Extract law name from parent law metadata
         law_name = self._get_law_name(law_md_path) if law_md_path else ""
 
         if extract_edges:
             from .tier2 import EdgeExtractor, set_vault_root
-            # Vault ルートを設定（クロスリンク edges の law_id 解決に使用）
             set_vault_root(self.vault_root)
             all_edges = []
-            
-        # Updated to use Japanese folder names directly under law root
-        # articles_dir = law_dir / "articles"  <-- Removed
-        # (articles_dir / "main").mkdir(exist_ok=True)
-        # (articles_dir / "suppl").mkdir(exist_ok=True)
+        else:
+            all_edges = None
 
+        # ディレクトリ作成
         honbun_dir = law_dir / "本文"
         fusoku_dir = law_dir / "附則"
         honbun_dir.mkdir(exist_ok=True)
         fusoku_dir.mkdir(exist_ok=True)
 
-        self._process_part(soup.find("MainProvision"), law_id, honbun_dir, "main", extract_edges, all_edges if extract_edges else None, law_name=law_name, amend_law_num=None)
+        # LawBody を取得
+        law_body = find_child(law_tree, "LawBody")
+        if not law_body:
+            logger.warning(f"No LawBody found for {law_id}")
+            return
 
-        # Handle multiple SupplProvision
-        init_suppl_count = 0  # 初期附則のカウンター
-        for i, spl in enumerate(soup.find_all("SupplProvision")):
-            # AmendLawNum が存在すれば改正法断片、なければ初期附則
-            raw_amend_num = spl.get("AmendLawNum")  # None if not present
+        # MainProvision（本文）を処理
+        main_provision = find_child(law_body, "MainProvision")
+        if main_provision:
+            self._process_part(
+                main_provision, law_id, honbun_dir, "main",
+                extract_edges, all_edges, law_name=law_name, amend_law_num=None
+            )
+
+        # SupplProvision（附則）を処理
+        init_suppl_count = 0
+        for suppl in find_children(law_body, "SupplProvision"):
+            raw_amend_num = get_attr(suppl, "AmendLawNum")
 
             if raw_amend_num:
-                # 改正法断片: 法律番号をサニタイズしてディレクトリ名に
+                # 改正法断片
                 safe_amend = re.sub(r'[^\w\-]', '_', raw_amend_num)
                 file_key_prefix = safe_amend
             else:
-                # 初期附則: 日本語名を使用（制定時附則, 制定時附則2, ...）
+                # 初期附則
                 if init_suppl_count == 0:
                     safe_amend = "制定時附則"
                 else:
                     safe_amend = f"制定時附則{init_suppl_count + 1}"
                 init_suppl_count += 1
-                file_key_prefix = None  # 初期附則はファイル名にプレフィックスを付けない
+                file_key_prefix = None
 
-            # Check if this provision has articles
-            has_articles = bool(spl.find("Article"))
+            # Article の有無を確認
+            has_articles = bool(find_all_recursive(suppl, "Article"))
 
             if has_articles:
-                # Use subdirectory
                 out_dir = fusoku_dir / safe_amend
                 out_dir.mkdir(exist_ok=True, parents=True)
-                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=file_key_prefix, law_name=law_name, amend_law_num=raw_amend_num)
+                self._process_part(
+                    suppl, law_id, out_dir, "suppl",
+                    extract_edges, all_edges,
+                    file_key_override=file_key_prefix,
+                    law_name=law_name, amend_law_num=raw_amend_num
+                )
             else:
-                # Use direct file under suppl/
-                out_dir = fusoku_dir
-                self._process_part(spl, law_id, out_dir, "suppl", extract_edges, all_edges if extract_edges else None, file_key_override=safe_amend, amend_law_num=raw_amend_num)
+                self._process_part(
+                    suppl, law_id, fusoku_dir, "suppl",
+                    extract_edges, all_edges,
+                    file_key_override=safe_amend,
+                    amend_law_num=raw_amend_num
+                )
 
+        # edges.jsonl 出力
         if extract_edges and all_edges:
             with open(law_dir / "edges.jsonl", "w", encoding="utf-8") as f:
                 for edge in all_edges:
                     f.write(json.dumps(edge, ensure_ascii=False) + "\n")
 
-        # Update law.md content tier -> 2 if edges extracted
+        # tier 更新
         final_tier = 2 if extract_edges else 1
         if law_md_path:
             self._update_law_tier(law_md_path, final_tier)
 
-        # Add parent links to law file (e.g., 刑法.md -> links to all 本文/第N条.md)
+        # 親リンク更新
         update_law_file_with_links(law_dir)
 
-    def _process_part(self, container, law_id: str, out_dir: Path, part_type: str, extract_edges: bool = False, edge_list: List = None, file_key_override: str = None, law_name: str = "", amend_law_num: Optional[str] = None):
-        """
-        条文パートを処理してMarkdownファイルを生成
-
-        Args:
-            container: BeautifulSoup要素（MainProvision または SupplProvision）
-            law_id: 法令ID
-            out_dir: 出力ディレクトリ
-            part_type: 'main' または 'suppl'
-            extract_edges: エッジ抽出を行うか
-            edge_list: エッジ蓄積リスト
-            file_key_override: ファイル名プレフィックス
-            law_name: 親法名
-            amend_law_num: AmendLawNum属性値（改正法断片の場合に設定）
-                           None = 本文 or 初期附則（リンク化する）
-                           値あり = 改正法断片（裸の第N条はリンク化しない）
-        """
+    def _process_part(
+        self,
+        container: Dict[str, Any],
+        law_id: str,
+        out_dir: Path,
+        part_type: str,
+        extract_edges: bool = False,
+        edge_list: Optional[List] = None,
+        file_key_override: Optional[str] = None,
+        law_name: str = "",
+        amend_law_num: Optional[str] = None
+    ):
+        """条文パートを処理してMarkdownファイルを生成"""
         if not container:
             return
 
-        # Import EdgeExtractor here (single import for this method)
         from .tier2 import EdgeExtractor
 
-        # 改正法断片判定: AmendLawNum が存在すれば改正法断片
-        is_amendment_fragment = amend_law_num is not None
+        # 改正法断片判定: AmendLawNum が存在し、かつ空でない場合
+        is_amendment_fragment = bool(amend_law_num)
 
-        # Find Articles
-        articles = container.find_all("Article")
-        
-        # Fallback: Some SupplProvision have no Article, just Paragraphs directly.
+        # Article を取得
+        articles = find_all_recursive(container, "Article")
+
+        # Article がない場合は直接 Paragraph を処理
         if not articles:
-            # Check for direct paragraphs
-            direct_paragraphs = container.find_all("Paragraph", recursive=False)
+            direct_paragraphs = find_children(container, "Paragraph")
             if direct_paragraphs:
-                # Treat as a single unit
-                if file_key_override:
-                    file_key = file_key_override
-                else:
-                    file_key = "Provision"
+                self._process_direct_paragraphs(
+                    direct_paragraphs, container, law_id, out_dir, part_type,
+                    extract_edges, edge_list, file_key_override,
+                    law_name, amend_law_num, is_amendment_fragment
+                )
+            return
 
-                file_path = out_dir / f"{file_key}.md"
+        # 各 Article を処理
+        for article in articles:
+            self._process_article(
+                article, law_id, out_dir, part_type,
+                extract_edges, edge_list, file_key_override,
+                law_name, amend_law_num, is_amendment_fragment
+            )
 
-                # Frontmatter（先に node_id を生成）
-                node_id = f"JPLAW:{law_id}#{part_type}#Provision"
+    def _process_article(
+        self,
+        article: Dict[str, Any],
+        law_id: str,
+        out_dir: Path,
+        part_type: str,
+        extract_edges: bool,
+        edge_list: Optional[List],
+        file_key_override: Optional[str],
+        law_name: str,
+        amend_law_num: Optional[str],
+        is_amendment_fragment: bool
+    ):
+        """単一の Article を処理"""
+        from .tier2 import EdgeExtractor
 
-                content = f"# 附則\n\n"
+        num = get_attr(article, "Num")
+        if not num:
+            return
 
-                # Setup extractor for linking
-                # SSOT: extract_edges=True の場合は replace_refs_with_edges を使用
-                extractor = EdgeExtractor(vault_root=self.vault_root if extract_edges else None)
-                provision_edges = []  # この Provision から抽出されたエッジ
+        # ファイル名生成
+        parts = num.split('_')
+        if len(parts) == 1:
+            jp_article_name = f"第{parts[0]}条"
+        elif len(parts) == 2:
+            jp_article_name = f"第{parts[0]}条の{parts[1]}"
+        else:
+            safe_num_jp = num.replace('_', 'の')
+            jp_article_name = f"第{safe_num_jp}条"
 
-                for p in direct_paragraphs:
-                    p_num = p.find("ParagraphNum")
-                    p_num_text = p_num.text if p_num else ""
+        if file_key_override:
+            file_key = f"{file_key_override}_{jp_article_name}"
+        else:
+            file_key = jp_article_name
 
-                    sentences = p.find_all("Sentence")
-                    raw_text = "".join([s.text for s in sentences])
+        file_path = out_dir / f"{file_key}.md"
 
-                    # Link Injection & Edge Extraction (SSOT)
-                    if law_name:
-                        if extract_edges and edge_list is not None:
-                            text, edges = extractor.replace_refs_with_edges(
-                                text=raw_text,
-                                law_name=law_name,
-                                source_law_id=law_id,
-                                source_node_id=node_id,
-                                is_amendment_fragment=is_amendment_fragment
-                            )
-                            provision_edges.extend(edges)
-                        else:
-                            text = extractor.replace_refs(raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
-                    else:
-                        text = raw_text
+        # 見出しとタイトル
+        caption_node = find_child(article, "ArticleCaption")
+        caption_text = get_text(caption_node) if caption_node else ""
+        title_node = find_child(article, "ArticleTitle")
+        title_text = get_text(title_node) if title_node else ""
 
-                    content += f"## {p_num_text}\n{text}\n\n"
+        content = f"# {title_text} {caption_text}\n\n"
+        node_id = f"JPLAW:{law_id}#{part_type}#{num}"
 
-                    items = p.find_all("Item")
-                    for item in items:
-                        i_title = item.find("ItemTitle")
-                        i_title_text = i_title.text if i_title else ""
-                        i_sentences = item.find_all("Sentence")
-                        i_raw_text = "".join([s.text for s in i_sentences])
+        extractor = EdgeExtractor(vault_root=self.vault_root if extract_edges else None)
+        article_edges = []
 
-                        # Link Injection & Edge Extraction (SSOT)
-                        if law_name:
-                            if extract_edges and edge_list is not None:
-                                i_text, i_edges = extractor.replace_refs_with_edges(
-                                    text=i_raw_text,
-                                    law_name=law_name,
-                                    source_law_id=law_id,
-                                    source_node_id=node_id,
-                                    is_amendment_fragment=is_amendment_fragment
-                                )
-                                provision_edges.extend(i_edges)
-                            else:
-                                i_text = extractor.replace_refs(i_raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
-                        else:
-                            i_text = i_raw_text
+        # Paragraph 処理
+        for para in find_children(article, "Paragraph"):
+            para_content, para_edges = self._process_paragraph(
+                para, extractor, law_name, law_id, node_id,
+                extract_edges, edge_list is not None, is_amendment_fragment
+            )
+            content += para_content
+            article_edges.extend(para_edges)
 
-                        content += f"- {i_title_text} {i_text}\n"
+        if extract_edges and edge_list is not None:
+            edge_list.extend(article_edges)
 
-                # エッジを蓄積
-                if extract_edges and edge_list is not None:
-                    edge_list.extend(provision_edges)
+        # Frontmatter 生成
+        fm = self._build_frontmatter(
+            node_id, part_type, law_id, law_name, num, caption_text,
+            is_amendment_fragment, amend_law_num
+        )
 
-                # Determine node type and kind tag
-                if is_amendment_fragment:
-                    node_type = "amendment_fragment"
-                    kind_tag = "kind/amendment_fragment"
-                else:
-                    node_type = "supplement"
-                    kind_tag = "kind/supplement"
+        self._write_markdown(file_path, fm, content)
 
-                fm = {
-                    "id": node_id,
-                    "type": node_type,
-                    "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
-                    "law_id": law_id,
-                    "law_name": law_name,
-                    "part": part_type,
-                    "article_num": "Provision",
-                    "heading": "附則",
-                    "tags": [law_name, kind_tag] if law_name else [kind_tag]
-                }
+    def _process_direct_paragraphs(
+        self,
+        paragraphs: List[Dict[str, Any]],
+        container: Dict[str, Any],
+        law_id: str,
+        out_dir: Path,
+        part_type: str,
+        extract_edges: bool,
+        edge_list: Optional[List],
+        file_key_override: Optional[str],
+        law_name: str,
+        amend_law_num: Optional[str],
+        is_amendment_fragment: bool
+    ):
+        """Article なしの直接 Paragraph を処理"""
+        from .tier2 import EdgeExtractor
 
-                with open(file_path, "w", encoding="utf-8") as f:
-                    f.write("---\n")
-                    yaml.dump(fm, f, allow_unicode=True, default_flow_style=False)
-                    f.write("---\n\n")
-                    f.write(content)
-                return
+        file_key = file_key_override if file_key_override else "Provision"
+        file_path = out_dir / f"{file_key}.md"
 
-        for art in articles:
-            # ... (existing code extracting num, file_key)
-            num = art.get("Num")
-            if not num: continue
+        node_id = f"JPLAW:{law_id}#{part_type}#Provision"
+        content = f"# 附則\n\n"
 
-            # Japanese Filename Generation
-            parts = num.split('_')
-            if len(parts) == 1:
-                jp_article_name = f"第{parts[0]}条"
-            elif len(parts) == 2:
-                jp_article_name = f"第{parts[0]}条の{parts[1]}"
+        extractor = EdgeExtractor(vault_root=self.vault_root if extract_edges else None)
+        provision_edges = []
+
+        for para in paragraphs:
+            para_content, para_edges = self._process_paragraph(
+                para, extractor, law_name, law_id, node_id,
+                extract_edges, edge_list is not None, is_amendment_fragment
+            )
+            content += para_content
+            provision_edges.extend(para_edges)
+
+        if extract_edges and edge_list is not None:
+            edge_list.extend(provision_edges)
+
+        # Frontmatter
+        if is_amendment_fragment:
+            node_type = "amendment_fragment"
+            kind_tag = "kind/amendment_fragment"
+        else:
+            node_type = "supplement"
+            kind_tag = "kind/supplement"
+
+        fm = {
+            "id": node_id,
+            "type": node_type,
+            "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
+            "law_id": law_id,
+            "law_name": law_name,
+            "part": part_type,
+            "article_num": "Provision",
+            "heading": "附則",
+            "tags": [law_name, kind_tag] if law_name else [kind_tag]
+        }
+
+        self._write_markdown(file_path, fm, content)
+
+    def _process_paragraph(
+        self,
+        para: Dict[str, Any],
+        extractor,
+        law_name: str,
+        law_id: str,
+        node_id: str,
+        extract_edges: bool,
+        has_edge_list: bool,
+        is_amendment_fragment: bool
+    ) -> tuple:
+        """Paragraph を処理してコンテンツとエッジを返す"""
+        edges = []
+
+        # ParagraphNum
+        para_num_node = find_child(para, "ParagraphNum")
+        para_num_text = get_text(para_num_node) if para_num_node else ""
+
+        # 旧版互換: Paragraph 内の全 Sentence を再帰取得（Item 内含む）
+        # BeautifulSoup の find_all("Sentence") と同等の動作
+        sentences = find_all_recursive(para, "Sentence")
+        raw_text = "".join([get_text(s) for s in sentences])
+
+        # リンク処理
+        if law_name:
+            if extract_edges and has_edge_list:
+                text, para_edges = extractor.replace_refs_with_edges(
+                    text=raw_text,
+                    law_name=law_name,
+                    source_law_id=law_id,
+                    source_node_id=node_id,
+                    is_amendment_fragment=is_amendment_fragment
+                )
+                edges.extend(para_edges)
             else:
-                 # Fallback for complex numbers
-                 safe_num_jp = num.replace('_', 'の')
-                 jp_article_name = f"第{safe_num_jp}条"
+                text = extractor.replace_refs(raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
+        else:
+            text = raw_text
 
-            base_name = jp_article_name
-            if file_key_override:
-                 # If override provided (which denotes the amend law num), prefix it.
-                 # We need to ensure we pass it in build() when has_articles too.
-                 file_key = f"{file_key_override}_{base_name}"
+        content = f"## {para_num_text}\n{text}\n\n"
+
+        # Item 処理
+        for item in find_children(para, "Item"):
+            item_content, item_edges = self._process_item(
+                item, extractor, law_name, law_id, node_id,
+                extract_edges, has_edge_list, is_amendment_fragment
+            )
+            content += item_content
+            edges.extend(item_edges)
+
+        return content, edges
+
+    def _process_item(
+        self,
+        item: Dict[str, Any],
+        extractor,
+        law_name: str,
+        law_id: str,
+        node_id: str,
+        extract_edges: bool,
+        has_edge_list: bool,
+        is_amendment_fragment: bool
+    ) -> tuple:
+        """Item を処理してコンテンツとエッジを返す"""
+        edges = []
+
+        # ItemTitle
+        title_node = find_child(item, "ItemTitle")
+        title_text = get_text(title_node) if title_node else ""
+
+        # ItemSentence 内の全 Sentence を再帰取得（Column でラップされる場合あり）
+        item_sentence = find_child(item, "ItemSentence")
+        if item_sentence:
+            sentences = find_all_recursive(item_sentence, "Sentence")
+            raw_text = "".join([get_text(s) for s in sentences])
+        else:
+            sentences = find_all_recursive(item, "Sentence")
+            raw_text = "".join([get_text(s) for s in sentences])
+
+        # リンク処理
+        if law_name:
+            if extract_edges and has_edge_list:
+                text, item_edges = extractor.replace_refs_with_edges(
+                    text=raw_text,
+                    law_name=law_name,
+                    source_law_id=law_id,
+                    source_node_id=node_id,
+                    is_amendment_fragment=is_amendment_fragment
+                )
+                edges.extend(item_edges)
             else:
-                 file_key = base_name
+                text = extractor.replace_refs(raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
+        else:
+            text = raw_text
 
-            file_path = out_dir / f"{file_key}.md"
+        content = f"- {title_text} {text}\n"
+        return content, edges
 
-            # ... (content extraction)
-            caption = art.find("ArticleCaption")
-            caption_text = caption.text if caption else ""
-            title = art.find("ArticleTitle")
-            title_text = title.text if title else ""
+    def _build_frontmatter(
+        self,
+        node_id: str,
+        part_type: str,
+        law_id: str,
+        law_name: str,
+        article_num: str,
+        heading: str,
+        is_amendment_fragment: bool,
+        amend_law_num: Optional[str]
+    ) -> Dict[str, Any]:
+        """Frontmatter を構築"""
+        if is_amendment_fragment:
+            node_type = "amendment_fragment"
+            kind_tag = "kind/amendment_fragment"
+        elif part_type == "suppl":
+            node_type = "supplement"
+            kind_tag = "kind/supplement"
+        else:
+            node_type = "article"
+            kind_tag = "kind/article"
 
-            content = f"# {title_text} {caption_text}\n\n"
+        fm = {
+            "id": node_id,
+            "type": node_type,
+            "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
+            "law_id": law_id,
+            "law_name": law_name,
+            "part": part_type,
+            "article_num": article_num,
+            "heading": heading,
+            "tags": [law_name, kind_tag] if law_name else [kind_tag]
+        }
 
-            # Frontmatter（先に node_id を生成）
-            node_id = f"JPLAW:{law_id}#{part_type}#{num}"
+        if is_amendment_fragment and amend_law_num:
+            from ..utils.article_formatter import normalize_amendment_id
+            normalized_id = normalize_amendment_id(amend_law_num)
 
-            # Setup extractor for linking
-            # SSOT: extract_edges=True の場合は replace_refs_with_edges を使用
-            extractor = EdgeExtractor(vault_root=self.vault_root if extract_edges else None)
-            article_edges = []  # この条文から抽出されたエッジ
+            fm["suppl_kind"] = "amendment"
+            fm["amendment_law_id"] = normalized_id
+            fm["amendment_law_title"] = amend_law_num
 
-            paragraphs = art.find_all("Paragraph")
-            for p in paragraphs:
-                p_num = p.find("ParagraphNum")
-                p_num_text = p_num.text if p_num else ""
-
-                sentences = p.find_all("Sentence")
-                raw_text = "".join([s.text for s in sentences])
-
-                # Link Injection & Edge Extraction (SSOT)
-                if law_name:
-                    if extract_edges and edge_list is not None:
-                        # SSOT: 置換とエッジ抽出を同時に行う
-                        text, edges = extractor.replace_refs_with_edges(
-                            text=raw_text,
-                            law_name=law_name,
-                            source_law_id=law_id,
-                            source_node_id=node_id,
-                            is_amendment_fragment=is_amendment_fragment
-                        )
-                        article_edges.extend(edges)
-                    else:
-                        # エッジ抽出不要時は replace_refs のみ
-                        text = extractor.replace_refs(raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
-                else:
-                    text = raw_text
-
-                content += f"## {p_num_text}\n{text}\n\n"
-
-                items = p.find_all("Item")
-                for item in items:
-                    i_title = item.find("ItemTitle")
-                    i_title_text = i_title.text if i_title else ""
-                    i_sentences = item.find_all("Sentence")
-                    i_raw_text = "".join([s.text for s in i_sentences])
-
-                    # Link Injection & Edge Extraction (SSOT)
-                    if law_name:
-                        if extract_edges and edge_list is not None:
-                            # SSOT: 置換とエッジ抽出を同時に行う
-                            i_text, i_edges = extractor.replace_refs_with_edges(
-                                text=i_raw_text,
-                                law_name=law_name,
-                                source_law_id=law_id,
-                                source_node_id=node_id,
-                                is_amendment_fragment=is_amendment_fragment
-                            )
-                            article_edges.extend(i_edges)
-                        else:
-                            i_text = extractor.replace_refs(i_raw_text, law_name, is_amendment_fragment=is_amendment_fragment)
-                    else:
-                        i_text = i_raw_text
-
-                    content += f"- {i_title_text} {i_text}\n"
-
-            # エッジを蓄積
-            if extract_edges and edge_list is not None:
-                edge_list.extend(article_edges)
-
-            # Determine node type and kind tag
-            if is_amendment_fragment:
-                node_type = "amendment_fragment"
-                kind_tag = "kind/amendment_fragment"
-            elif part_type == "suppl":
-                node_type = "supplement"
-                kind_tag = "kind/supplement"
-            else:
-                node_type = "article"
-                kind_tag = "kind/article"
-
-            fm = {
-                "id": node_id,
-                "type": node_type,
-                "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
-                "law_id": law_id,
-                "law_name": law_name,
-                "part": part_type,
-                "article_num": num,
-                "heading": caption_text,
-                "tags": [law_name, kind_tag] if law_name else [kind_tag]
+            fm["amend_law"] = {
+                "num": amend_law_num,
+                "normalized_id": normalized_id,
+                "scope": "partial",
+                "parent_law_id": law_id,
+                "parent_law_name": law_name,
             }
 
-            # 改正法断片の場合は追加メタデータを付与
-            if is_amendment_fragment and amend_law_num:
-                from ..utils.article_formatter import normalize_amendment_id
-                normalized_id = normalize_amendment_id(amend_law_num)
+        return fm
 
-                # 既存フィールド（フラット）
-                fm["suppl_kind"] = "amendment"
-                fm["amendment_law_id"] = normalized_id
-                fm["amendment_law_title"] = amend_law_num
-
-                # amend_law ネスト構造（将来の統合用）
-                fm["amend_law"] = {
-                    "num": amend_law_num,              # AmendLawNum 原文
-                    "normalized_id": normalized_id,    # R3_L37 形式
-                    "scope": "partial",                # 断片であることを明示
-                    "parent_law_id": law_id,
-                    "parent_law_name": law_name,
-                }
-
-            with open(file_path, "w", encoding="utf-8") as f:
-                f.write("---\n")
-                yaml.dump(fm, f, allow_unicode=True, default_flow_style=False)
-                f.write("---\n\n")
-                f.write(content)
+    def _write_markdown(self, file_path: Path, fm: Dict[str, Any], content: str):
+        """Markdown ファイルを書き出し"""
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write("---\n")
+            yaml.dump(fm, f, allow_unicode=True, default_flow_style=False)
+            f.write("---\n\n")
+            f.write(content)
 
     def _update_law_tier(self, md_path: Path, tier: int):
-        if not md_path.exists(): 
+        if not md_path.exists():
             return
-        
-        # Simple read/regex replace to avoid parsing/dumping full yaml which might lose comments?
-        # But yaml dump is safer for structure.
-        # User said "metadata ... generated", I generated it with yaml.dump.
+
         with open(md_path, "r", encoding="utf-8") as f:
-            content = f.read() # Read all, separate FM
-        
+            content = f.read()
+
         if content.startswith("---"):
             parts = content.split("---", 2)
             if len(parts) >= 3:
@@ -462,7 +579,6 @@ class Tier1Builder:
                 if fm.get("tier", 0) < tier:
                     fm["tier"] = tier
                     new_fm = yaml.dump(fm, allow_unicode=True, default_flow_style=False)
-                    # Ensure frontmatter starts with ---\n (not ---{yaml})
                     new_content = f"---\n{new_fm}---{parts[2]}"
                     with open(md_path, "w", encoding="utf-8") as f:
                         f.write(new_content)

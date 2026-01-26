@@ -315,6 +315,7 @@
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#151", "type": "refers_to", "evidence": "第百五十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#161", "type": "refers_to", "evidence": "第百六十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#5", "to": "JPLAW:140AC0000000045#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:140AC0000000045#suppl#2", "to": "external:この法律の施行の際既に附則第四条の規定による改正前の刑事訴訟法#main#235", "type": "refers_to", "evidence": "第二百三十五条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:140AC0000000045#main#33", "type": "refers_to", "evidence": "第三十三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:140AC0000000045#main#9", "type": "refers_to", "evidence": "第九条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:140AC0000000045#main#10", "type": "refers_to", "evidence": "第十条", "confidence": 0.9, "source": "regex_v2"}
@@ -325,6 +326,8 @@
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#98", "type": "refers_to", "evidence": "第九十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#72", "type": "refers_to", "evidence": "第七十二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:140AC0000000045#suppl#1", "to": "external:附則第二十四条中国際受刑者移送法#main#42", "type": "refers_to", "evidence": "第四十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:140AC0000000045#suppl#1", "to": "external:附則第三十二条中少年鑑別所法#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#344", "type": "refers_to", "evidence": "第三百四十四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#11", "type": "refers_to", "evidence": "第十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2"}
@@ -344,6 +347,8 @@
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#98", "type": "refers_to", "evidence": "第九十八条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#3", "type": "refers_to", "evidence": "第三条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#72", "type": "refers_to", "evidence": "第七十二条", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:140AC0000000045#suppl#1", "to": "external:附則第二十四条中国際受刑者移送法#main#42", "type": "refers_to", "evidence": "第四十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
+{"from": "JPLAW:140AC0000000045#suppl#1", "to": "external:附則第三十二条中少年鑑別所法#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#344", "type": "refers_to", "evidence": "第三百四十四条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#11", "type": "refers_to", "evidence": "第十一条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#132", "type": "refers_to", "evidence": "第百三十二条", "confidence": 0.9, "source": "regex_v2"}
@@ -362,7 +367,9 @@
 {"from": "JPLAW:140AC0000000045#suppl#3", "to": "JPLAW:140AC0000000045#main#177", "type": "refers_to", "evidence": "第百七十七条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#3", "to": "JPLAW:140AC0000000045#main#182", "type": "refers_to", "evidence": "第百八十二条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#307_2", "type": "refers_to", "evidence": "第三百七条の二", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:140AC0000000045#suppl#1", "to": "external:附則第三十八条中財務省設置法#main#27", "type": "refers_to", "evidence": "第二十七条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:140AC0000000045#suppl#1", "to": "JPLAW:323AC0000000131#main#307_2", "type": "refers_to", "evidence": "第三百七条の二", "confidence": 0.9, "source": "regex_v2"}
+{"from": "JPLAW:140AC0000000045#suppl#1", "to": "external:附則第三十八条中財務省設置法#main#27", "type": "refers_to", "evidence": "第二十七条", "confidence": 0.9, "source": "regex_v2", "kind": "external_ref"}
 {"from": "JPLAW:140AC0000000045#suppl#8", "to": "JPLAW:140AC0000000045#main#95_2", "type": "refers_to", "evidence": "第九十五条の二", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#8", "to": "JPLAW:140AC0000000045#main#155", "type": "refers_to", "evidence": "第百五十五条", "confidence": 0.9, "source": "regex_v2"}
 {"from": "JPLAW:140AC0000000045#suppl#8", "to": "JPLAW:140AC0000000045#main#159", "type": "refers_to", "evidence": "第百五十九条", "confidence": 0.9, "source": "regex_v2"}
