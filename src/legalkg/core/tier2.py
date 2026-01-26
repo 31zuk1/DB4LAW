@@ -446,7 +446,7 @@ def has_external_law_in_context(text: str, match_position: int) -> bool:
     return False
 
 
-def find_cross_link_scope(text: str, match_position: int, current_law: str) -> str | None:
+def find_cross_link_scope(text: str, match_position: int, current_law: str) -> Optional[str]:
     """
     クロスリンクスコープ内の法令を検索
 

@@ -18,8 +18,57 @@ logger = logging.getLogger(__name__)
 
 
 # =============================================================================
-# JSON Tree Traversal Helpers
+# JSON Tree Traversal Helpers (Abstract Layer)
 # =============================================================================
+
+def node_tag(node: Any) -> Optional[str]:
+    """ノードのタグ名を取得（非 dict なら None）"""
+    if isinstance(node, dict):
+        return node.get("tag")
+    return None
+
+
+def iter_children(node: Any):
+    """ノードの children をイテレート（非 dict なら空）"""
+    if isinstance(node, dict):
+        yield from node.get("children", [])
+
+
+def iter_child_elements(node: Any):
+    """ノードの子要素（dict のみ）をイテレート"""
+    for child in iter_children(node):
+        if isinstance(child, dict):
+            yield child
+
+
+def node_attr(node: Any, key: str, default: Any = None) -> Any:
+    """ノードの属性値を取得（default は None）"""
+    if isinstance(node, dict):
+        return node.get("attr", {}).get(key, default)
+    return default
+
+
+def parse_int(value: Any) -> Optional[int]:
+    """文字列を int にパース（失敗時は None）"""
+    if value is None:
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, str):
+        try:
+            return int(value)
+        except ValueError:
+            return None
+    return None
+
+
+# Legacy compatibility wrappers (will be removed in future)
+def get_attr(node: Dict[str, Any], key: str, default: str = "") -> str:
+    """ノードの属性値を取得（旧 API: default は空文字）"""
+    if not isinstance(node, dict):
+        return default
+    return node.get("attr", {}).get(key, default)
+
 
 def find_child(node: Dict[str, Any], tag: str) -> Optional[Dict[str, Any]]:
     """指定タグの最初の子要素を取得"""
@@ -66,11 +115,41 @@ def get_text(node: Dict[str, Any]) -> str:
     return "".join(texts)
 
 
-def get_attr(node: Dict[str, Any], key: str, default: str = "") -> str:
-    """ノードの属性値を取得"""
-    if not isinstance(node, dict):
-        return default
-    return node.get("attr", {}).get(key, default)
+# =============================================================================
+# Structure Helpers (Chapter/Section)
+# =============================================================================
+
+def get_chapter_title(node: Dict[str, Any]) -> Optional[str]:
+    """Chapter ノードから ChapterTitle のテキストを取得（なければ None）"""
+    title_node = find_child(node, "ChapterTitle")
+    if title_node:
+        text = get_text(title_node).strip()
+        return text if text else None
+    return None
+
+
+def get_section_title(node: Dict[str, Any]) -> Optional[str]:
+    """Section ノードから SectionTitle のテキストを取得（なければ None）"""
+    title_node = find_child(node, "SectionTitle")
+    if title_node:
+        text = get_text(title_node).strip()
+        return text if text else None
+    return None
+
+
+def has_proviso_walk(node: Any) -> bool:
+    """
+    ノード内に proviso（ただし書き）があるかを早期 return で判定。
+    Sentence タグの Function 属性が "proviso" なら True。
+    """
+    tag = node_tag(node)
+    if tag == "Sentence":
+        if node_attr(node, "Function") == "proviso":
+            return True
+    for child in iter_child_elements(node):
+        if has_proviso_walk(child):
+            return True
+    return False
 
 
 # =============================================================================
@@ -247,7 +326,7 @@ class Tier1Builder:
         law_name: str = "",
         amend_law_num: Optional[str] = None
     ):
-        """条文パートを処理してMarkdownファイルを生成"""
+        """条文パートを処理してMarkdownファイルを生成（walk ベース）"""
         if not container:
             return
 
@@ -256,7 +335,7 @@ class Tier1Builder:
         # 改正法断片判定: AmendLawNum が存在し、かつ空でない場合
         is_amendment_fragment = bool(amend_law_num)
 
-        # Article を取得
+        # Article の有無を確認
         articles = find_all_recursive(container, "Article")
 
         # Article がない場合は直接 Paragraph を処理
@@ -270,12 +349,82 @@ class Tier1Builder:
                 )
             return
 
-        # 各 Article を処理
-        for article in articles:
+        # Walk ベースで Chapter/Section コンテキストを追跡
+        initial_context = {
+            "chapter_num": None,
+            "chapter_title": None,
+            "section_num": None,
+            "section_title": None,
+        }
+
+        self._walk_and_process(
+            container, law_id, out_dir, part_type,
+            extract_edges, edge_list, file_key_override,
+            law_name, amend_law_num, is_amendment_fragment,
+            initial_context
+        )
+
+    def _walk_and_process(
+        self,
+        node: Dict[str, Any],
+        law_id: str,
+        out_dir: Path,
+        part_type: str,
+        extract_edges: bool,
+        edge_list: Optional[List],
+        file_key_override: Optional[str],
+        law_name: str,
+        amend_law_num: Optional[str],
+        is_amendment_fragment: bool,
+        context: Dict[str, Any]
+    ):
+        """
+        ツリーを walk して Article を処理（O(N) の走査）。
+        Chapter/Section を通過するたびにコンテキストを更新。
+        """
+        tag = node_tag(node)
+
+        if tag == "Chapter":
+            # Chapter コンテキストを更新（Section はリセット）
+            new_context = context.copy()
+            new_context["chapter_num"] = parse_int(node_attr(node, "Num"))
+            new_context["chapter_title"] = get_chapter_title(node)
+            new_context["section_num"] = None
+            new_context["section_title"] = None
+            context = new_context
+
+        elif tag == "Section":
+            # Section コンテキストを更新
+            new_context = context.copy()
+            new_context["section_num"] = parse_int(node_attr(node, "Num"))
+            new_context["section_title"] = get_section_title(node)
+            context = new_context
+
+        elif tag == "Subsection":
+            # Subsection も Section として扱う（上書き）
+            new_context = context.copy()
+            new_context["section_num"] = parse_int(node_attr(node, "Num"))
+            title_node = find_child(node, "SubsectionTitle")
+            new_context["section_title"] = get_text(title_node).strip() if title_node else None
+            context = new_context
+
+        elif tag == "Article":
+            # Article を処理
             self._process_article(
-                article, law_id, out_dir, part_type,
+                node, law_id, out_dir, part_type,
                 extract_edges, edge_list, file_key_override,
-                law_name, amend_law_num, is_amendment_fragment
+                law_name, amend_law_num, is_amendment_fragment,
+                context
+            )
+            return  # Article 内部は再帰しない
+
+        # 子要素を再帰処理
+        for child in iter_child_elements(node):
+            self._walk_and_process(
+                child, law_id, out_dir, part_type,
+                extract_edges, edge_list, file_key_override,
+                law_name, amend_law_num, is_amendment_fragment,
+                context
             )
 
     def _process_article(
@@ -289,7 +438,8 @@ class Tier1Builder:
         file_key_override: Optional[str],
         law_name: str,
         amend_law_num: Optional[str],
-        is_amendment_fragment: bool
+        is_amendment_fragment: bool,
+        context: Optional[Dict[str, Any]] = None
     ):
         """単一の Article を処理"""
         from .tier2 import EdgeExtractor
@@ -339,10 +489,14 @@ class Tier1Builder:
         if extract_edges and edge_list is not None:
             edge_list.extend(article_edges)
 
+        # has_proviso を判定（early return walk）
+        proviso = has_proviso_walk(article)
+
         # Frontmatter 生成
         fm = self._build_frontmatter(
             node_id, part_type, law_id, law_name, num, caption_text,
-            is_amendment_fragment, amend_law_num
+            is_amendment_fragment, amend_law_num,
+            context=context, has_proviso=proviso
         )
 
         self._write_markdown(file_path, fm, content)
@@ -513,9 +667,14 @@ class Tier1Builder:
         article_num: str,
         heading: str,
         is_amendment_fragment: bool,
-        amend_law_num: Optional[str]
+        amend_law_num: Optional[str],
+        context: Optional[Dict[str, Any]] = None,
+        has_proviso: bool = False
     ) -> Dict[str, Any]:
-        """Frontmatter を構築"""
+        """
+        Frontmatter を構築。
+        省略主義: 値が存在する場合のみキーを出力。
+        """
         if is_amendment_fragment:
             node_type = "amendment_fragment"
             kind_tag = "kind/amendment_fragment"
@@ -537,6 +696,21 @@ class Tier1Builder:
             "heading": heading,
             "tags": [law_name, kind_tag] if law_name else [kind_tag]
         }
+
+        # Phase A: 構造コンテキスト（省略主義: None でなければ出力）
+        if context:
+            if context.get("chapter_num") is not None:
+                fm["chapter_num"] = context["chapter_num"]
+            if context.get("chapter_title") is not None:
+                fm["chapter_title"] = context["chapter_title"]
+            if context.get("section_num") is not None:
+                fm["section_num"] = context["section_num"]
+            if context.get("section_title") is not None:
+                fm["section_title"] = context["section_title"]
+
+        # Phase A: has_proviso（省略主義: True の場合のみ出力）
+        if has_proviso:
+            fm["has_proviso"] = True
 
         if is_amendment_fragment and amend_law_num:
             from ..utils.article_formatter import normalize_amendment_id
