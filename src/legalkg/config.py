@@ -7,6 +7,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 
 # e-Gov API
 EGOV_API_BASE_URL = "https://laws.e-gov.go.jp/api/1"
+EGOV_API_V2_BASE_URL = "https://laws.e-gov.go.jp/api/2"
 
 # NDL
 NDL_SEARCH_URL = "https://hourei.ndl.go.jp/api/hourei" # Placeholder if API exists, else scraping URL
