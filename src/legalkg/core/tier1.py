@@ -913,7 +913,8 @@ class Tier1Builder:
     ):
         """章ノードファイルを生成"""
         chapter_num = chapter_agg.chapter_num
-        file_name = f"第{chapter_num}章.md"
+        chapter_name = self._format_chapter_name(chapter_num)
+        file_name = f"{chapter_name}.md"
         file_path = chapter_dir / file_name
 
         node_id = f"JPLAW:{law_id}#chapter#{chapter_num}"
@@ -939,7 +940,7 @@ class Tier1Builder:
 
         # 本文生成
         title_part = f" {chapter_agg.chapter_title}" if chapter_agg.chapter_title else ""
-        content = f"# 第{chapter_num}章{title_part}\n\n"
+        content = f"# {chapter_name}{title_part}\n\n"
 
         # 節リスト（存在する場合のみ）
         if chapter_agg.section_count > 0:
@@ -951,7 +952,7 @@ class Tier1Builder:
                     section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
                     link_text = f"第{section_num}節{section_title_part}"
                     # Vault root からのフルパス
-                    link_path = f"laws/{law_name}/節/第{chapter_num}章第{section_num}節.md"
+                    link_path = f"laws/{law_name}/節/{chapter_name}第{section_num}節.md"
                     content += f"- [[{link_path}|{link_text}]]\n"
             content += "\n"
 
@@ -977,7 +978,8 @@ class Tier1Builder:
         """節ノードファイルを生成"""
         chapter_num = section_agg.chapter_num
         section_num = section_agg.section_num
-        file_name = f"第{chapter_num}章第{section_num}節.md"
+        chapter_name = self._format_chapter_name(chapter_num)
+        file_name = f"{chapter_name}第{section_num}節.md"
         file_path = section_dir / file_name
 
         node_id = f"JPLAW:{law_id}#chapter#{chapter_num}#section#{section_num}"
@@ -986,7 +988,7 @@ class Tier1Builder:
         fm: Dict[str, Any] = {
             "id": node_id,
             "type": "section",
-            "parent": f"[[laws/{law_name}/章/第{chapter_num}章]]" if law_name else None,
+            "parent": f"[[laws/{law_name}/章/{chapter_name}]]" if law_name else None,
             "law_id": law_id,
             "law_name": law_name,
             "chapter_num": chapter_num,
@@ -1008,7 +1010,7 @@ class Tier1Builder:
         # 本文生成
         chapter_title_part = f" {section_agg.chapter_title}" if section_agg.chapter_title else ""
         section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
-        content = f"# 第{chapter_num}章{chapter_title_part} 第{section_num}節{section_title_part}\n\n"
+        content = f"# {chapter_name}{chapter_title_part} 第{section_num}節{section_title_part}\n\n"
 
         # 条文リスト
         content += "## この節の条文\n\n"
@@ -1019,6 +1021,23 @@ class Tier1Builder:
             content += f"- [[{link_path}|{jp_name}]]\n"
 
         self._write_markdown(file_path, fm, content)
+
+    def _format_chapter_name(self, chapter_num: int) -> str:
+        """
+        章番号を可読ファイル名形式に変換。
+
+        e-Gov の章番号エンコーディング:
+        - 182 = 第十八章の二 → "第18章の2"
+        - 192 = 第十九章の二 → "第19章の2"
+        - 18 = 第十八章 → "第18章"
+
+        パターン: num >= 100 かつ num % 10 != 0 の場合は「の」付き
+        """
+        if chapter_num >= 100 and chapter_num % 10 != 0:
+            main_num = chapter_num // 10
+            sub_num = chapter_num % 10
+            return f"第{main_num}章の{sub_num}"
+        return f"第{chapter_num}章"
 
     def _format_article_name(self, article_num: str) -> str:
         """条番号を日本語ファイル名形式に変換（例: '1_2' -> '第1条の2'）"""
