@@ -787,6 +787,57 @@ class Tier1Builder:
         content = f"- {title_text} {text}\n"
         return content, edges
 
+    def _resolve_parent(
+        self,
+        law_name: str,
+        context: Optional[Dict[str, Any]],
+        part_type: str
+    ) -> Optional[str]:
+        """
+        条文の直上階層を解決して parent wikilink を返す。
+
+        木構造の正本として、条文は以下の優先順位で直上階層を指す:
+        1. 節が存在 → [[laws/{法令}/節/{章名}{節名}]]
+        2. 章のみ存在 → [[laws/{法令}/章/{章名}]]
+        3. 章/節なし → [[laws/{法令}/{法令}]]（孤立条文）
+
+        附則の場合は常に法令直下を指す（階層構造がないため）。
+
+        Args:
+            law_name: 法令名
+            context: 構造コンテキスト（chapter_num, section_num 等）
+            part_type: "main" または "suppl"
+
+        Returns:
+            parent wikilink 文字列、law_name が空なら None
+        """
+        if not law_name:
+            return None
+
+        # 附則は常に法令直下
+        if part_type == "suppl":
+            return f"[[laws/{law_name}/{law_name}]]"
+
+        # 節が存在する場合
+        if context and context.get("section_num") is not None:
+            chapter_num = context.get("chapter_num")
+            section_num = context.get("section_num")
+            chapter_title = context.get("chapter_title")
+            section_title = context.get("section_title")
+            chapter_name = self._format_chapter_name(chapter_num, chapter_title)
+            section_name = self._format_section_name(section_num, section_title)
+            return f"[[laws/{law_name}/節/{chapter_name}{section_name}]]"
+
+        # 章のみ存在する場合
+        if context and context.get("chapter_num") is not None:
+            chapter_num = context.get("chapter_num")
+            chapter_title = context.get("chapter_title")
+            chapter_name = self._format_chapter_name(chapter_num, chapter_title)
+            return f"[[laws/{law_name}/章/{chapter_name}]]"
+
+        # 孤立条文（章/節なし）
+        return f"[[laws/{law_name}/{law_name}]]"
+
     def _build_frontmatter(
         self,
         node_id: str,
@@ -814,10 +865,13 @@ class Tier1Builder:
             node_type = "article"
             kind_tag = "kind/article"
 
+        # parent を直上階層に解決
+        parent = self._resolve_parent(law_name, context, part_type)
+
         fm = {
             "id": node_id,
             "type": node_type,
-            "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
+            "parent": parent,
             "law_id": law_id,
             "law_name": law_name,
             "part": part_type,
