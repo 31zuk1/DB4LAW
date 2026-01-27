@@ -53,14 +53,18 @@ python scripts/migration/add_parent_links.py --law 刑法
 ### Test Commands
 
 ```bash
-# Run all tests
-pytest
+# Run all tests (139 tests)
+PYTHONPATH=./src pytest
 
 # Run specific test file
-pytest tests/test_tier2_amendment.py -v
+PYTHONPATH=./src pytest tests/test_tier2_amendment.py -v
 
 # Run single test
-pytest tests/test_tier2_amendment.py::TestReplaceRefsAmendmentFragment::test_main_text_normal_linking -v
+PYTHONPATH=./src pytest tests/test_tier2_amendment.py::TestReplaceRefsAmendmentFragment::test_main_text_normal_linking -v
+
+# Key test files for reference extraction:
+PYTHONPATH=./src pytest tests/test_tier2_self_law_reference.py -v  # 本法参照テスト（22件）
+PYTHONPATH=./src pytest tests/test_tier2_vault_based.py -v          # Vault実在ベーステスト（13件）
 ```
 
 ### Debug Commands
@@ -83,6 +87,7 @@ python scripts/debug/debug_regex.py
 2. **Tier 1** (`src/legalkg/core/tier1.py`): Parses XML and extracts individual articles
    - Raw output: `articles/main/Article_{N}.md` and `articles/suppl/...`
    - After migration: `本文/第N条.md` and `附則/改正法/{KEY}/附則第N条.md`
+   - Structure nodes: `章/第N章.md`, `節/第N節.md`
 
 3. **Tier 2** (`src/legalkg/core/tier2.py`): Extracts cross-references using regex
    - Pattern: `第{kanji_numerals}条` → wikilink
@@ -98,6 +103,11 @@ Vault/laws/刑法/
 ├── 本文/                      # Main text (本則)
 │   ├── 第1条.md
 │   └── 第199条.md
+├── 章/                        # Chapters
+│   ├── 第1章.md
+│   └── 第2章.md
+├── 節/                        # Sections (if present)
+│   └── 第1節.md
 ├── 附則/                      # Supplementary provisions
 │   └── 改正法/                # Amendment laws
 │       ├── R3_L37/           # 令和3年法律第37号
@@ -108,9 +118,20 @@ Vault/laws/刑法/
 ### Node ID Schema
 
 - **Law:** `JPLAW:{LAW_ID}` (e.g., `JPLAW:140AC0000000045`)
-- **Main Article:** `JPLAW:{LAW_ID}#本文#第N条` (e.g., `#本文#第199条`)
-- **Supplementary:** `JPLAW:{LAW_ID}#附則#附則第N条`
-- **Sub-article:** Uses `の` notation (e.g., `第19条の2`)
+- **Main Article:** `JPLAW:{LAW_ID}#main#199` (e.g., `#main#199`)
+- **Supplementary:** `JPLAW:{LAW_ID}#suppl#1`
+- **Chapter:** `JPLAW:{LAW_ID}#chapter#1`
+- **Section:** `JPLAW:{LAW_ID}#section#1`
+- **Sub-article:** Uses `_` notation (e.g., `#main#19_2` for 第19条の2)
+
+### Reference Resolution Priority
+
+参照解決の優先順位:
+
+1. **法令番号付き参照** - `弁護士法（昭和二十四年法律第二百五号）第三十条` → 弁護士法へ
+2. **本法系参照** - `本法第十条`, `この法律第五条`, `当該法第三条` → 自法令へ
+3. **明示法令名** - `刑法第百九十九条`, `会社法第一条` → 指定法令へ
+4. **同法スコープ** - `民法第749条、第771条` → 列挙はスコープ継続
 
 ### Breadcrumbs / Dataview Frontmatter
 
@@ -118,13 +139,15 @@ Obsidian の Breadcrumbs / Dataview 用メタデータ:
 
 | フィールド | 説明 | 例 |
 |-----------|------|-----|
-| `type` | ノード種別 | `law`, `article`, `supplement`, `amendment_fragment` |
+| `type` | ノード種別 | `law`, `article`, `chapter`, `section`, `supplement`, `amendment_fragment` |
 | `parent` | 親法ノードへのリンク | `[[laws/刑法/刑法]]` |
 | `tags` | 法令名タグ + kind/* | `[刑法, kind/article]` |
 
 **種別タグ (kind/*):**
 - `kind/law` - 親法ノード
 - `kind/article` - 本文条文
+- `kind/chapter` - 章ノード
+- `kind/section` - 節ノード
 - `kind/supplement` - 通常の附則
 - `kind/amendment_fragment` - 改正法断片
 
@@ -163,6 +186,7 @@ amend_law:                         # 将来の統合用ネスト構造
 | 条件 | 本文 | 初期附則 | 改正法断片 |
 |------|------|----------|------------|
 | 裸の第N条 | リンク化 | リンク化 | **リンク化しない** |
+| 本法第N条 | リンク化 | リンク化 | リンク化 |
 | 民法第N条 | リンク化 | リンク化 | リンク化 |
 | 外部法第N条 | リンク化しない | リンク化しない | リンク化しない |
 
@@ -329,14 +353,58 @@ grep -r "刑事訴訟法\[\[laws/刑事訴訟法/本文/第344条\.md" Vault/law
 
 ### tier2.py Constants
 
-| Constant | Value | Purpose |
-|----------|-------|---------|
-| `CONTEXT_WINDOW_EXTERNAL_LAW` | 300 | 外部法令名の出現検出用コンテキスト窓 |
-| `CONTEXT_WINDOW_IMMEDIATE` | 100 | 直近の法令名検出用コンテキスト窓 |
-| `MAX_LAW_NAME_TO_DAI_DISTANCE` | 20 | 「法令名...第」間の許容最大距離 |
-| `LAW_NAME_SUFFIX_PATTERN` | `[^第]{0,20}$` | 法令名検出用の正規表現サフィックス |
-| `CROSS_LINKABLE_LAWS_SORTED` | - | クロスリンク対象法令名（長い順ソート済み） |
-| `EXTERNAL_LAW_PATTERNS_SORTED` | - | 外部法令名（長い順ソート済み） |
+| Constant | Purpose |
+|----------|---------|
+| `CONTEXT_WINDOW_EXTERNAL_LAW` (300) | 外部法令名の出現検出用コンテキスト窓 |
+| `CONTEXT_WINDOW_IMMEDIATE` (100) | 直近の法令名検出用コンテキスト窓 |
+| `LAW_NAME_SUFFIX_PATTERN` | 法令名検出用の正規表現サフィックス `(?:[の、\n])?$` |
+| `CROSS_LINKABLE_LAWS` | クロスリンク対象法令（エイリアス辞書） |
+| `CROSS_LINKABLE_LAWS_SORTED` | クロスリンク対象法令名（長い順ソート済み） |
+| `EXTERNAL_LAW_PATTERNS` | 外部法令名パターン（60+） |
+| `EXTERNAL_LAW_PATTERNS_SORTED` | 外部法令名（長い順ソート済み） |
+| `SELF_LAW_PREFIXES` | 本法系プレフィックス（本法, この法律, 当該法律, 当該法） |
+| `SELF_LAW_PREFIXES_SORTED` | 本法系プレフィックス（長い順ソート済み） |
+| `SCOPE_RESET_PATTERNS` | スコープリセットパターン（同法, 前条, その, 当該, の規定により等） |
+
+### tier2.py Key Functions
+
+| Function | Purpose |
+|----------|---------|
+| `has_self_law_prefix(context)` | 本法系プレフィックスで終わるかチェック |
+| `find_cross_link_scope(text, pos, law, vault_root)` | 文スコープ内のクロスリンク対象を検索 |
+| `has_external_law_scope(text, pos)` | 外部法令スコープが有効か判定 |
+| `has_parent_law_scope(text, pos, law)` | 親法スコープが有効か判定 |
+| `law_exists_in_vault(law_name, vault_root)` | 法令がVaultに存在するか判定（キャッシュ付き） |
+| `get_vault_law_dirs(vault_root)` | Vault内の法令ディレクトリ名セット取得（O(1)キャッシュ） |
+| `clear_vault_caches()` | Vaultキャッシュをクリア（テスト用） |
+
+### Vault Cache System
+
+Vault内の法令存在チェックを高速化するためのキャッシュシステム:
+
+```python
+# 初回呼び出しでVault/laws/配下のディレクトリをキャッシュ
+_VAULT_LAW_DIRS_CACHE: Optional[set] = None
+
+# O(1)で法令存在チェック
+law_exists_in_vault('会社法', vault_root)  # → True/False
+
+# テスト時はキャッシュをクリア
+clear_vault_caches()
+```
+
+### Test Files
+
+| File | Tests | Purpose |
+|------|-------|---------|
+| `test_tier2_self_law_reference.py` | 22 | 本法/この法律/当該法 参照テスト |
+| `test_tier2_vault_based.py` | 13 | Vault実在ベースリンクテスト |
+| `test_tier2_amendment.py` | 17 | 改正法断片テスト |
+| `test_tier2_consistency.py` | 16 | 参照抽出の一貫性テスト |
+| `test_tier2_external_law_scope.py` | 19 | 外部法令スコープテスト |
+| `test_tier1_structure_nodes.py` | 21 | 構造ノード（章・節）テスト |
+| `test_edge_schema.py` | 18 | Edge schema v1/v2 テスト |
+| `test_add_parent_links.py` | 12 | 親リンク追加テスト |
 
 ### Edge Schema
 
@@ -376,6 +444,8 @@ python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-e
 | 日本国憲法 | 103 | - | 1 |
 | 刑事訴訟法 | 715 | 121 | 2,766 |
 | 民事訴訟法 | 453 | 92 | 1,019 |
+| 会社法 | 1,078 | 31 | 10,000+ |
+| 行政事件訴訟法 | 51 | 36 | 500+ |
 | 所有者不明土地法 | 63 | 14 | 415 |
 
 ## Data Sources
@@ -390,4 +460,4 @@ python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-e
 - `scripts/qa/` - Quality assurance scripts
 - `scripts/debug/` - Debug scripts for API and regex testing
 - `Vault/laws/` - Generated Obsidian Vault output
-- `tests/` - pytest test files
+- `tests/` - pytest test files (139 tests)
