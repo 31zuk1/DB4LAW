@@ -113,6 +113,37 @@ class TestChapterAgg:
         assert chapter.section_count == 3
 
 
+class TestTier1BuilderFormatChapterName:
+    """_format_chapter_name のテスト"""
+
+    @pytest.fixture
+    def builder(self, tmp_path):
+        targets_file = tmp_path / "targets.yaml"
+        targets_file.write_text("targets: []")
+        return Tier1Builder(tmp_path, targets_file)
+
+    def test_simple_chapter(self, builder):
+        """通常の章番号"""
+        assert builder._format_chapter_name(1) == "第1章"
+        assert builder._format_chapter_name(18) == "第18章"
+        assert builder._format_chapter_name(40) == "第40章"
+
+    def test_branch_chapter(self, builder):
+        """枝番号付き章（第N章の2）- e-Gov エンコーディング"""
+        # 182 = 第十八章の二
+        assert builder._format_chapter_name(182) == "第18章の2"
+        # 192 = 第十九章の二
+        assert builder._format_chapter_name(192) == "第19章の2"
+        # 183 = 第十八章の三
+        assert builder._format_chapter_name(183) == "第18章の3"
+
+    def test_edge_cases(self, builder):
+        """エッジケース: num % 10 == 0 なら通常扱い"""
+        assert builder._format_chapter_name(100) == "第100章"
+        assert builder._format_chapter_name(110) == "第110章"
+        assert builder._format_chapter_name(99) == "第99章"
+
+
 class TestTier1BuilderFormatArticleName:
     """_format_article_name のテスト"""
 
