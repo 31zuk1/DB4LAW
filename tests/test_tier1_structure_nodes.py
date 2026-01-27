@@ -143,6 +143,18 @@ class TestTier1BuilderFormatChapterName:
         assert builder._format_chapter_name(110) == "第110章"
         assert builder._format_chapter_name(99) == "第99章"
 
+    def test_branch_chapter_by_title(self, builder):
+        """枝番号付き章（第N章の2）- chapter_title で判定"""
+        # 22 = 第二章の二 (chapter_title に「章の」があれば枝番号)
+        assert builder._format_chapter_name(22, "第二章の二　社債管理補助者") == "第2章の2"
+        # 42 = 第四章の二
+        assert builder._format_chapter_name(42, "第四章の二　株式交付") == "第4章の2"
+
+    def test_no_title_defaults_to_simple(self, builder):
+        """chapter_title がない場合は通常扱い"""
+        assert builder._format_chapter_name(22) == "第22章"
+        assert builder._format_chapter_name(42) == "第42章"
+
 
 class TestTier1BuilderFormatSectionName:
     """_format_section_name のテスト"""

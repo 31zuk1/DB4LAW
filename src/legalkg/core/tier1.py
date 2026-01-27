@@ -913,7 +913,8 @@ class Tier1Builder:
     ):
         """章ノードファイルを生成"""
         chapter_num = chapter_agg.chapter_num
-        chapter_name = self._format_chapter_name(chapter_num)
+        chapter_title = chapter_agg.chapter_title
+        chapter_name = self._format_chapter_name(chapter_num, chapter_title)
         file_name = f"{chapter_name}.md"
         file_path = chapter_dir / file_name
 
@@ -979,7 +980,8 @@ class Tier1Builder:
         """節ノードファイルを生成"""
         chapter_num = section_agg.chapter_num
         section_num = section_agg.section_num
-        chapter_name = self._format_chapter_name(chapter_num)
+        chapter_title = section_agg.chapter_title
+        chapter_name = self._format_chapter_name(chapter_num, chapter_title)
         section_name = self._format_section_name(section_num, section_agg.section_title)
         file_name = f"{chapter_name}{section_name}.md"
         file_path = section_dir / file_name
@@ -1024,17 +1026,25 @@ class Tier1Builder:
 
         self._write_markdown(file_path, fm, content)
 
-    def _format_chapter_name(self, chapter_num: int) -> str:
+    def _format_chapter_name(self, chapter_num: int, chapter_title: Optional[str] = None) -> str:
         """
         章番号を可読ファイル名形式に変換。
 
         e-Gov の章番号エンコーディング:
-        - 182 = 第十八章の二 → "第18章の2"
-        - 192 = 第十九章の二 → "第19章の2"
+        - 182 = 第十八章の二 → "第18章の2" (num >= 100)
+        - 22 = 第二章の二 → "第2章の2" (chapter_title に「章の」が含まれる場合)
         - 18 = 第十八章 → "第18章"
+        - 22 = 第二十二章 → "第22章" (通常の連番)
 
-        パターン: num >= 100 かつ num % 10 != 0 の場合は「の」付き
+        判定: chapter_title に「章の」パターンがあれば枝番号として処理
         """
+        # chapter_title から枝番号かどうかを判定
+        if chapter_title and "章の" in chapter_title:
+            # 枝番号: 22 → 第2章の2, 42 → 第4章の2
+            main_num = chapter_num // 10
+            sub_num = chapter_num % 10
+            return f"第{main_num}章の{sub_num}"
+        # 従来のロジック（num >= 100 で枝番号判定）も維持
         if chapter_num >= 100 and chapter_num % 10 != 0:
             main_num = chapter_num // 10
             sub_num = chapter_num % 10
