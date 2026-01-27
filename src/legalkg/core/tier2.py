@@ -155,14 +155,86 @@ EXTERNAL_LAW_PATTERNS_SORTED: Tuple[str, ...] = tuple(
 
 
 # ==============================================================================
+# 本法/この法律/当該法 パターン（内部参照）
+# ==============================================================================
+# これらのパターンは自己参照（当該法令内の条文への参照）を示す。
+# 「本法第N条」「この法律第N条」「当該法第N条」「当該法律第N条」
+#
+# 列挙対応: 「本法第X条、第Y条、第Z条の二」のような列挙を分割処理する。
+
+# 本法系のプレフィックスパターン
+SELF_LAW_PREFIXES: Tuple[str, ...] = (
+    '本法',
+    'この法律',
+    '当該法律',
+    '当該法',
+)
+
+# 本法系プレフィックス（長い順にソート済み）
+SELF_LAW_PREFIXES_SORTED: Tuple[str, ...] = tuple(
+    sorted(SELF_LAW_PREFIXES, key=len, reverse=True)
+)
+
+
+# ==============================================================================
 # 法令名 → law_id 解決（クロスリンク edges 生成用）
 # ==============================================================================
 
 # グローバルキャッシュ: 法令名 → egov_law_id
 _LAW_ID_CACHE: Dict[str, Optional[str]] = {}
 
+# グローバルキャッシュ: Vault 内の法令ディレクトリ名セット
+# run 中に一度だけロードし、法令存在チェックを高速化
+_VAULT_LAW_DIRS_CACHE: Optional[set] = None
+
 # グローバル設定: Vault ルートパス（初回呼び出し時に設定）
 _VAULT_ROOT: Optional[Path] = None
+
+
+def get_vault_law_dirs(vault_root: Optional[Path] = None) -> set:
+    """
+    Vault 内の法令ディレクトリ名セットを取得（キャッシュ付き）
+
+    初回呼び出し時に Vault/laws/ 配下のディレクトリ一覧をロードし、
+    以降はキャッシュを返す。これにより法令存在チェックが O(1) になる。
+
+    Args:
+        vault_root: Vault ルートパス（省略時はグローバル設定を使用）
+
+    Returns:
+        法令ディレクトリ名のセット（例: {'刑法', '民法', '会社法', ...}）
+    """
+    global _VAULT_LAW_DIRS_CACHE, _VAULT_ROOT
+
+    if _VAULT_LAW_DIRS_CACHE is not None:
+        return _VAULT_LAW_DIRS_CACHE
+
+    root = vault_root or _VAULT_ROOT
+    if root is None:
+        return set()
+
+    laws_dir = root / "laws"
+    if not laws_dir.exists():
+        _VAULT_LAW_DIRS_CACHE = set()
+        return _VAULT_LAW_DIRS_CACHE
+
+    # ディレクトリのみを取得
+    _VAULT_LAW_DIRS_CACHE = {
+        d.name for d in laws_dir.iterdir()
+        if d.is_dir() and not d.name.startswith('.')
+    }
+    return _VAULT_LAW_DIRS_CACHE
+
+
+def clear_vault_caches() -> None:
+    """
+    Vault 関連のキャッシュをクリア
+
+    テスト用、または Vault 構造が変更された場合に使用。
+    """
+    global _LAW_ID_CACHE, _VAULT_LAW_DIRS_CACHE
+    _LAW_ID_CACHE = {}
+    _VAULT_LAW_DIRS_CACHE = None
 
 
 def set_vault_root(vault_root: Path) -> None:
@@ -234,14 +306,16 @@ def law_exists_in_vault(law_name: str, vault_root: Optional[Path] = None) -> boo
     """
     法令が Vault に存在するかどうかを判定
 
-    Vault/laws/<法令名>/本文/ ディレクトリが存在するかチェック。
+    キャッシュを活用した2段階チェック:
+    1. キャッシュで法令ディレクトリの存在を確認（O(1)）
+    2. 本文ディレクトリの存在を確認（条文が存在することを保証）
 
     Args:
         law_name: 法令名（例: '弁護士法'）
         vault_root: Vault ルートパス（省略時はグローバル設定を使用）
 
     Returns:
-        True: 法令が Vault に存在する
+        True: 法令が Vault に存在し、本文ディレクトリがある
         False: 法令が Vault に存在しない
     """
     global _VAULT_ROOT
@@ -250,7 +324,16 @@ def law_exists_in_vault(law_name: str, vault_root: Optional[Path] = None) -> boo
     if root is None:
         return False
 
-    # 本文ディレクトリが存在するかチェック
+    # 1. キャッシュでクイックチェック（存在しない場合は即座に False）
+    vault_laws = get_vault_law_dirs(root)
+    if law_name not in vault_laws:
+        # CROSS_LINKABLE_LAWS のエイリアスもチェック
+        resolved_name = CROSS_LINKABLE_LAWS.get(law_name)
+        if resolved_name is None or resolved_name not in vault_laws:
+            return False
+        law_name = resolved_name
+
+    # 2. 本文ディレクトリが存在するかチェック（条文の存在を保証）
     honbun_dir = root / "laws" / law_name / "本文"
     return honbun_dir.exists()
 
@@ -446,13 +529,47 @@ def has_external_law_in_context(text: str, match_position: int) -> bool:
     return False
 
 
-def find_cross_link_scope(text: str, match_position: int, current_law: str) -> Optional[str]:
+def has_self_law_prefix(context: str) -> bool:
+    """
+    コンテキストが本法系プレフィックスで終わるかチェック
+
+    「本法」「この法律」「当該法」「当該法律」の直後に第N条が来る場合、
+    これは自己参照（当該法令内の条文への参照）である。
+
+    Args:
+        context: マッチ位置の直前のテキスト（括弧除去済み）
+
+    Returns:
+        True: 本法系プレフィックスが直前にある（内部参照として処理すべき）
+        False: 本法系プレフィックスなし
+    """
+    # 末尾の空白を除去
+    context_stripped = context.rstrip()
+
+    # 長い順にチェック（「当該法律」を「当該法」より先に）
+    for prefix in SELF_LAW_PREFIXES_SORTED:
+        if context_stripped.endswith(prefix):
+            return True
+
+    return False
+
+
+def find_cross_link_scope(
+    text: str,
+    match_position: int,
+    current_law: str,
+    vault_root: Optional[Path] = None
+) -> Optional[str]:
     """
     クロスリンクスコープ内の法令を検索
 
     同一文内に「法令名＋第N条」パターンが出現しており、その後に照応語がない場合、
     その法令へのクロスリンクスコープが有効と判定する。
     これにより「刑法第176条、第177条」のような連続参照を正しく処理できる。
+
+    Phase 3: Vault 実在ベース一般化
+    - CROSS_LINKABLE_LAWS に加え、EXTERNAL_LAW_PATTERNS もチェック
+    - EXTERNAL_LAW_PATTERNS の法令は Vault 存在確認後にスコープ設定
 
     重要: 単なる法令名の列挙（「刑法、暴力行為等処罰に関する法律...」）では
     スコープを有効にしない。法令名の直後に「第」が続く場合のみ有効。
@@ -506,6 +623,25 @@ def find_cross_link_scope(text: str, match_position: int, current_law: str) -> O
                 return target_folder
 
     # =========================================================================
+    # Phase 1b: 文末 EXTERNAL_LAW_PATTERNS チェック（Vault 存在確認付き）
+    # =========================================================================
+    # CROSS_LINKABLE_LAWS に含まれない法令でも、文末にあり Vault に存在すれば
+    # その法令へのクロスリンクとして処理する。
+    # 例: 「刑法第百九十九条及び会社法」+ 処理中の「第一条」→ 会社法への参照
+    for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+        # CROSS_LINKABLE_LAWS と重複する場合はスキップ（Phase 1 で処理済み）
+        if ext_law in CROSS_LINKABLE_LAWS:
+            continue
+        if sentence_cleaned.endswith(ext_law):
+            if ext_law == current_law:
+                # 自法令への参照 → クロスリンクではない
+                return None
+            # Vault 存在チェック
+            if law_exists_in_vault(ext_law, vault_root):
+                return ext_law
+            # Vault に存在しない場合は次の法令名を試す
+
+    # =========================================================================
     # Phase 2: 文中「法令名＋第」パターン検索
     # =========================================================================
     # 文末に法令名がない場合、文中の「法令名＋第N条」パターンを検索。
@@ -526,6 +662,27 @@ def find_cross_link_scope(text: str, match_position: int, current_law: str) -> O
                     last_match_pos = pos
                     last_match_law = target_folder
                     last_match_end = match.end()
+
+    # =========================================================================
+    # Phase 2b: EXTERNAL_LAW_PATTERNS の Vault 存在チェック付き検索
+    # =========================================================================
+    # CROSS_LINKABLE_LAWS に含まれない法令でも、Vault に存在すればスコープ設定
+    for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+        # CROSS_LINKABLE_LAWS と重複する場合はスキップ（すでに処理済み）
+        if ext_law in CROSS_LINKABLE_LAWS:
+            continue
+
+        pattern = re.escape(ext_law) + r'第'
+        for match in re.finditer(pattern, sentence_cleaned):
+            pos = match.start()
+            if pos > last_match_pos:
+                # 自法令への参照は除外
+                if ext_law != current_law:
+                    # Vault 存在チェック
+                    if law_exists_in_vault(ext_law, vault_root):
+                        last_match_pos = pos
+                        last_match_law = ext_law  # Vault のフォルダ名として使用
+                        last_match_end = match.end()
 
     if last_match_law is None:
         return None
@@ -753,6 +910,11 @@ def has_any_law_prefix(context_cleaned: str, law_name: str) -> bool:
         if re.search(pattern, context_cleaned):
             return True
 
+    # 3. 本法系プレフィックスをチェック
+    # 「本法」「この法律」「当該法律」「当該法」
+    if has_self_law_prefix(context_cleaned):
+        return True
+
     return False
 
 
@@ -886,6 +1048,36 @@ class EdgeExtractor:
             # 例: 「○○法律（平成二十五年法律第八十六号）」→「○○法律」
             context_cleaned = re.sub(r'（[^）]*）', '', context)
 
+            # =====================================================================
+            # 0b. 本法/この法律/当該法 パターンの検出（内部参照として確定）
+            # =====================================================================
+            # 優先順位: 法令番号付き参照 > 本法系 > 明示法令名 > 同法
+            #
+            # 「本法第N条」「この法律第N条」などは当該法令内の条文への参照。
+            # 列挙対応: 「本法第X条、第Y条」のような連続参照も内部参照として処理。
+            #
+            # 検出パターン:
+            #   1. context が本法系プレフィックスで終わる（直接参照）
+            #   2. context が「本法系 + 第N条 + 列挙セパレータ」で終わる（列挙の継続）
+            #      例: "本法第十条、" の後の "第二十条"
+            #   3. context が「本法系 + [[wikilink]] + 列挙セパレータ」で終わる（置換後の列挙継続）
+            #      例: "本法[[...]]、" の後の "第二十条"
+            is_self_law_reference = False
+            if has_self_law_prefix(context_cleaned):
+                # パターン1: 直接参照
+                is_self_law_reference = True
+            elif not is_self_law_reference:
+                # パターン2, 3: 列挙の継続をチェック
+                # WikiLinkを除去してからチェック（[[...]] → 表示テキスト）
+                context_no_wikilink = strip_wikilinks(context_cleaned)
+                # 本法系 + 第N条 + 列挙セパレータ（、，, ）で終わるかチェック
+                for prefix in SELF_LAW_PREFIXES_SORTED:
+                    # パターン: 本法第X条[、，,]\s*$ または 本法第X条の二[、，,]\s*$
+                    enum_pattern = re.escape(prefix) + r'第[一-龯〇-九0-9]+条(?:の[一-龯〇-九0-9]+)?[、，,]\s*$'
+                    if re.search(enum_pattern, context_no_wikilink):
+                        is_self_law_reference = True
+                        break
+
             # 0. 改正法断片モード: 「第N条の規定による」パターンはリンク化しない（裸の参照の場合のみ）
             # これは改正法自身の条文番号への参照であり、親法の条文ではない
             # ただし「民法第N条の規定による」のように法令名が付いている場合はリンク化する
@@ -917,34 +1109,51 @@ class EdgeExtractor:
                             cross_link_law_name = cross_law_name
                         break
 
+            # 2. 外部法令名が直近にある場合の処理
+            # Phase 3: Vault 実在ベース一般化
+            # - Vault に存在する法令 → クロスリンク生成
+            # - Vault に存在しない法令 → リンク化しない
+            # 注: 自法令への法令番号付き参照（is_self_law_with_num）または本法参照（is_self_law_reference）はスキップ
+            # 重要: 文スコープ検索（1b）より先に直近チェックを実行
+            #       「会社法第一条及び少年法第二条」→ 少年法は Vault 非存在なのでリンク化しない
+            if cross_link_target is None and not is_self_law_with_num and not is_self_law_reference:
+                for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+                    ext_pattern = re.escape(ext_law) + LAW_NAME_SUFFIX_PATTERN
+                    match = re.search(ext_pattern, context_cleaned)
+                    if match:
+                        # 境界チェック: より長い法令名の一部でないことを確認
+                        if not is_valid_law_name_boundary(context_cleaned, match.start()):
+                            continue
+                        # Vault 存在チェック: 存在すればクロスリンク、存在しなければブロック
+                        if law_exists_in_vault(ext_law, self.vault_root):
+                            # Vault に存在 → クロスリンク生成
+                            cross_link_target = ext_law
+                            cross_link_law_name = ext_law
+                        else:
+                            # Vault に存在しない → リンク化せず、エッジも生成しない
+                            return original_text
+                        break
+
             # 1b. 直近に見つからない場合、文スコープ内のクロスリンク対象を検索
             # 「刑法第176条、第177条」のような連続参照に対応
+            # Phase 3: EXTERNAL_LAW_PATTERNS も Vault 存在チェック付きで検索
             if cross_link_target is None:
-                cross_link_target = find_cross_link_scope(text, match_start, law_name)
+                cross_link_target = find_cross_link_scope(text, match_start, law_name, self.vault_root)
                 if cross_link_target:
                     cross_link_law_name = cross_link_target  # フォルダ名=法令名
 
-            # 2. 外部法令名が直近にある場合はリンク化しない
-            # 長い法令名から順にチェック（事前ソート済みリストを使用）
-            # 注: 自法令への法令番号付き参照（is_self_law_with_num）はスキップ
-            if cross_link_target is None and not is_self_law_with_num:
-                for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
-                    ext_pattern = re.escape(ext_law) + LAW_NAME_SUFFIX_PATTERN
-                    if re.search(ext_pattern, context_cleaned):
-                        return original_text  # リンク化せず、エッジも生成しない
-
             # 2b. 直近に見つからない場合、文スコープ内の外部法令をチェック
             # 「外部法第1条、第2条」のような連続参照に対応
-            # 注: 自法令への法令番号付き参照（is_self_law_with_num）はスキップ
-            if cross_link_target is None and not is_self_law_with_num:
+            # 注: 自法令への法令番号付き参照（is_self_law_with_num）または本法参照（is_self_law_reference）はスキップ
+            if cross_link_target is None and not is_self_law_with_num and not is_self_law_reference:
                 if has_external_law_scope(text, match_start):
                     return original_text  # リンク化せず、エッジも生成しない
 
             # 2c. 同一文脈内に外部法令名が出現している場合は裸の参照をリンク化しない
             # 「土地収用法...準用する第八十四条」のようなケースに対応
             # クロスリンク先が明示されている場合はスキップ（そちらを優先）
-            # 注: 自法令への法令番号付き参照（is_self_law_with_num）はスキップ
-            if cross_link_target is None and not is_self_law_with_num:
+            # 注: 自法令への法令番号付き参照（is_self_law_with_num）または本法参照（is_self_law_reference）はスキップ
+            if cross_link_target is None and not is_self_law_with_num and not is_self_law_reference:
                 if has_external_law_in_context(text, match_start):
                     return original_text  # リンク化せず、エッジも生成しない
 
@@ -961,8 +1170,8 @@ class EdgeExtractor:
             #       真実として使用する。現在は呼び出し側 (tier1) が AmendLawNum
             #       属性から判定して is_amendment_fragment を渡している。
             #
-            # 注: クロスリンク対象が見つかった場合はスコープチェックをスキップ
-            if cross_link_target is None and is_amendment_fragment:
+            # 注: クロスリンク対象が見つかった場合、または本法参照の場合はスコープチェックをスキップ
+            if cross_link_target is None and is_amendment_fragment and not is_self_law_reference:
                 if not has_parent_law_scope(text, match_start, law_name):
                     # 親法スコープ外 = 裸の参照 → リンク化しない、エッジも生成しない
                     return original_text
