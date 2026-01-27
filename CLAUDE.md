@@ -318,6 +318,7 @@ grep -r "刑事訴訟法\[\[laws/刑事訴訟法/本文/第344条\.md" Vault/law
 
 - `src/legalkg/cli.py`: Typer-based CLI commands
 - `src/legalkg/core/tier2.py`: Reference extraction, cross-linking, constants
+- `src/legalkg/core/edge_schema.py`: Edge schema v1/v2 definitions and EdgeWriter
 - `src/legalkg/utils/article_formatter.py`: Article number conversion
 - `src/legalkg/utils/markdown.py`: YAML frontmatter handling
 - `src/legalkg/utils/numerals.py`: Legacy kanji numeral conversion
@@ -336,6 +337,35 @@ grep -r "刑事訴訟法\[\[laws/刑事訴訟法/本文/第344条\.md" Vault/law
 | `LAW_NAME_SUFFIX_PATTERN` | `[^第]{0,20}$` | 法令名検出用の正規表現サフィックス |
 | `CROSS_LINKABLE_LAWS_SORTED` | - | クロスリンク対象法令名（長い順ソート済み） |
 | `EXTERNAL_LAW_PATTERNS_SORTED` | - | 外部法令名（長い順ソート済み） |
+
+### Edge Schema
+
+`--edge-schema` オプションで edges.jsonl の出力形式を選択可能。
+
+| Schema | Default | 説明 |
+|--------|---------|------|
+| v2 | ✓ | 標準スキーマ（refs + containment edges） |
+| v1 | | Phase A 互換（既存形式を完全維持） |
+
+**v2 形式（標準）:**
+```json
+{"source": "JPLAW:...", "target": "JPLAW:...", "type": "refs", "relation": "internal", "evidence": "第N条"}
+{"source": "JPLAW:...#chapter#1", "target": "JPLAW:...#main#1", "type": "contains", "relation": "chapter_contains_article"}
+```
+
+**v1 形式（互換用）:**
+```json
+{"from": "JPLAW:...", "to": "JPLAW:...", "type": "refers_to", "evidence": "第N条"}
+```
+
+**使用例:**
+```bash
+# 標準（v2、containment edges 含む）
+python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges
+
+# Phase A 互換（v1）
+python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges --edge-schema v1
+```
 
 ## Processed Laws
 
