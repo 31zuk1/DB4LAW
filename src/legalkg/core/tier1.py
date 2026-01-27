@@ -949,10 +949,11 @@ class Tier1Builder:
                 key = (chapter_num, section_num)
                 section_agg = aggregator.sections.get(key)
                 if section_agg:
+                    section_name = self._format_section_name(section_num, section_agg.section_title)
                     section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
-                    link_text = f"第{section_num}節{section_title_part}"
+                    link_text = f"{section_name}{section_title_part}"
                     # Vault root からのフルパス
-                    link_path = f"laws/{law_name}/節/{chapter_name}第{section_num}節.md"
+                    link_path = f"laws/{law_name}/節/{chapter_name}{section_name}.md"
                     content += f"- [[{link_path}|{link_text}]]\n"
             content += "\n"
 
@@ -979,7 +980,8 @@ class Tier1Builder:
         chapter_num = section_agg.chapter_num
         section_num = section_agg.section_num
         chapter_name = self._format_chapter_name(chapter_num)
-        file_name = f"{chapter_name}第{section_num}節.md"
+        section_name = self._format_section_name(section_num, section_agg.section_title)
+        file_name = f"{chapter_name}{section_name}.md"
         file_path = section_dir / file_name
 
         node_id = f"JPLAW:{law_id}#chapter#{chapter_num}#section#{section_num}"
@@ -1010,7 +1012,7 @@ class Tier1Builder:
         # 本文生成
         chapter_title_part = f" {section_agg.chapter_title}" if section_agg.chapter_title else ""
         section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
-        content = f"# {chapter_name}{chapter_title_part} 第{section_num}節{section_title_part}\n\n"
+        content = f"# {chapter_name}{chapter_title_part} {section_name}{section_title_part}\n\n"
 
         # 条文リスト
         content += "## この節の条文\n\n"
@@ -1038,6 +1040,25 @@ class Tier1Builder:
             sub_num = chapter_num % 10
             return f"第{main_num}章の{sub_num}"
         return f"第{chapter_num}章"
+
+    def _format_section_name(self, section_num: int, section_title: Optional[str] = None) -> str:
+        """
+        節番号を可読ファイル名形式に変換。
+
+        e-Gov の節番号エンコーディング:
+        - 12 = 第一節の二 → "第1節の2" (section_title に「節の」が含まれる場合)
+        - 42 = 第四節の二 → "第4節の2"
+        - 12 = 第十二節 → "第12節" (通常の連番)
+
+        判定: section_title に「節の」パターンがあれば枝番号として処理
+        """
+        # section_title から枝番号かどうかを判定
+        if section_title and "節の" in section_title:
+            # 枝番号: 12 → 第1節の2, 42 → 第4節の2
+            main_num = section_num // 10
+            sub_num = section_num % 10
+            return f"第{main_num}節の{sub_num}"
+        return f"第{section_num}節"
 
     def _format_article_name(self, article_num: str) -> str:
         """条番号を日本語ファイル名形式に変換（例: '1_2' -> '第1条の2'）"""
