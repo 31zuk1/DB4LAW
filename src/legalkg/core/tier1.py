@@ -670,10 +670,8 @@ class Tier1Builder:
         # Frontmatter
         if is_amendment_fragment:
             node_type = "amendment_fragment"
-            kind_tag = "kind/amendment_fragment"
         else:
             node_type = "supplement"
-            kind_tag = "kind/supplement"
 
         fm = {
             "id": node_id,
@@ -684,7 +682,7 @@ class Tier1Builder:
             "part": part_type,
             "article_num": "Provision",
             "heading": "附則",
-            "tags": [law_name, kind_tag] if law_name else [kind_tag]
+            "tags": [law_name] if law_name else []
         }
 
         self._write_markdown(file_path, fm, content)
@@ -857,13 +855,10 @@ class Tier1Builder:
         """
         if is_amendment_fragment:
             node_type = "amendment_fragment"
-            kind_tag = "kind/amendment_fragment"
         elif part_type == "suppl":
             node_type = "supplement"
-            kind_tag = "kind/supplement"
         else:
             node_type = "article"
-            kind_tag = "kind/article"
 
         # parent を直上階層に解決
         parent = self._resolve_parent(law_name, context, part_type)
@@ -877,7 +872,7 @@ class Tier1Builder:
             "part": part_type,
             "article_num": article_num,
             "heading": heading,
-            "tags": [law_name, kind_tag] if law_name else [kind_tag]
+            "tags": [law_name] if law_name else []
         }
 
         # Phase A: 構造コンテキスト（省略主義: None でなければ出力）
@@ -991,7 +986,7 @@ class Tier1Builder:
         fm["article_ids"] = chapter_agg.article_ids
         fm["article_nums"] = chapter_agg.article_nums
         fm["section_count"] = chapter_agg.section_count
-        fm["tags"] = [law_name, "kind/chapter"] if law_name else ["kind/chapter"]
+        fm["tags"] = [law_name] if law_name else []
 
         # 本文生成
         title_part = f" {chapter_agg.chapter_title}" if chapter_agg.chapter_title else ""
@@ -1063,7 +1058,7 @@ class Tier1Builder:
 
         fm["article_ids"] = section_agg.article_ids
         fm["article_nums"] = section_agg.article_nums
-        fm["tags"] = [law_name, "kind/section"] if law_name else ["kind/section"]
+        fm["tags"] = [law_name] if law_name else []
 
         # 本文生成
         chapter_title_part = f" {section_agg.chapter_title}" if section_agg.chapter_title else ""

@@ -139,17 +139,17 @@ Obsidian の Breadcrumbs / Dataview 用メタデータ:
 
 | フィールド | 説明 | 例 |
 |-----------|------|-----|
-| `type` | ノード種別 | `law`, `article`, `chapter`, `section`, `supplement`, `amendment_fragment` |
-| `parent` | 親法ノードへのリンク | `[[laws/刑法/刑法]]` |
-| `tags` | 法令名タグ + kind/* | `[刑法, kind/article]` |
+| `type` | ノード種別（フィルタリング用） | `law`, `article`, `chapter`, `section`, `supplement`, `amendment_fragment` |
+| `parent` | 直上階層へのリンク | `[[laws/刑法/章/第26章]]` |
+| `tags` | 法令名タグ | `[刑法]` |
 
-**種別タグ (kind/*):**
-- `kind/law` - 親法ノード
-- `kind/article` - 本文条文
-- `kind/chapter` - 章ノード
-- `kind/section` - 節ノード
-- `kind/supplement` - 通常の附則
-- `kind/amendment_fragment` - 改正法断片
+**ノード種別 (`type`):**
+- `law` - 親法ノード
+- `article` - 本文条文
+- `chapter` - 章ノード
+- `section` - 節ノード
+- `supplement` - 通常の附則
+- `amendment_fragment` - 改正法断片
 
 **正規化スクリプト:**
 ```bash
@@ -264,7 +264,10 @@ Located in `scripts/migration/`:
 | `add_amend_law_meta.py` | Add `amend_law:` nested metadata to supplements |
 | `unlink_amendment_refs.py` | Unlink bare references in amendment fragments |
 | `generate_amendment_vault.py` | (Stub) Generate integrated amendment law vault |
-| `normalize_frontmatter.py` | Add Breadcrumbs/Dataview metadata (type, parent, kind/*) |
+| `normalize_frontmatter.py` | Add Breadcrumbs/Dataview metadata (type, parent) |
+| `remove_kind_tags.py` | Remove kind/* tags (use `type` field instead) |
+| `update_article_parent.py` | Update article parent to hierarchical structure |
+| `restructure_tree_links.py` | Restructure law/chapter links to prevent Graph hairball |
 | `fix_frontmatter.py` | Fix broken YAML frontmatter (---as_of: → ---\nas_of:) |
 
 ### Pending Links System

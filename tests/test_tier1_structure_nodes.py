@@ -275,7 +275,9 @@ tier: 0
         assert fm["article_ids"] == ["JPLAW:999#main#1", "JPLAW:999#main#2"]
         assert fm["article_nums"] == ["1", "2"]
         assert fm["section_count"] == 0
-        assert "kind/chapter" in fm["tags"]
+        assert "テスト法" in fm["tags"]
+        # kind/ tags are no longer used (type field serves this purpose)
+        assert not any(t.startswith("kind/") for t in fm["tags"])
 
     def test_section_node_content(self, tmp_path):
         """節ノードの内容確認"""
@@ -313,7 +315,9 @@ tier: 0
         assert fm["section_title"] == "通則"
         assert fm["article_ids"] == ["JPLAW:999#main#10", "JPLAW:999#main#11"]
         assert fm["article_nums"] == ["10", "11"]
-        assert "kind/section" in fm["tags"]
+        assert "テスト法" in fm["tags"]
+        # kind/ tags are no longer used (type field serves this purpose)
+        assert not any(t.startswith("kind/") for t in fm["tags"])
 
         # parent は章への wikilink
         assert "章/第2章" in fm["parent"]

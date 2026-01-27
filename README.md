@@ -160,23 +160,22 @@ article_ids: [...]
 階層ナビゲーションとデータ検索用のメタデータを自動付与：
 
 ```yaml
-type: article                      # ノード種別
-parent: '[[laws/刑法/刑法]]'       # 親法ノードへのリンク
+type: article                      # ノード種別（フィルタリング用）
+parent: '[[laws/刑法/章/第26章]]'  # 直上階層へのリンク
 tags:
-  - 刑法
-  - kind/article                   # 種別タグ
+  - 刑法                           # 法令名タグ
 ```
 
 **ノード種別 (`type`):**
 
-| 値 | 対象 | kind/* タグ |
-|----|------|-------------|
-| `law` | 親法ノード | `kind/law` |
-| `article` | 本文条文 | `kind/article` |
-| `chapter` | 章ノード | `kind/chapter` |
-| `section` | 節ノード | `kind/section` |
-| `supplement` | 附則 | `kind/supplement` |
-| `amendment_fragment` | 改正法断片 | `kind/amendment_fragment` |
+| 値 | 対象 |
+|----|------|
+| `law` | 親法ノード |
+| `article` | 本文条文 |
+| `chapter` | 章ノード |
+| `section` | 節ノード |
+| `supplement` | 附則 |
+| `amendment_fragment` | 改正法断片 |
 
 **Dataview クエリ例:**
 
@@ -290,20 +289,21 @@ JPLAW:{LAW_ID}#section#1          # 節
 ---
 id: JPLAW:140AC0000000045#main#199
 type: article
-parent: '[[laws/刑法/刑法]]'
+parent: '[[laws/刑法/章/第26章]]'
 law_id: 140AC0000000045
 law_name: 刑法
 part: main
 article_num: '199'
 heading: （殺人）
+chapter_num: 26
+chapter_title: 第二十六章　殺人の罪
 tags:
   - 刑法
-  - kind/article
 ---
 
 # 第百九十九条 （殺人）
 
-人を殺した者は、死刑又は無期若しくは五年以上の懲役に処する。
+人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。
 ```
 
 ## プロジェクト構成
