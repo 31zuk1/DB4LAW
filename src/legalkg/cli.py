@@ -22,14 +22,14 @@ def build_tier1(
     targets: Path = typer.Option(..., help="Path to targets.yaml"),
     extract_edges: bool = typer.Option(False, help="Extract edges (Tier 2)"),
     generate_structure: bool = typer.Option(False, help="Generate Chapter/Section structure nodes"),
-    edge_schema: str = typer.Option("v1", help="Edge schema version: v1 (Phase A compatible) or v2 (experimental unified)")
+    edge_schema: str = typer.Option("v2", help="Edge schema version: v2 (standard, refs + containment) or v1 (Phase A compatible)")
 ):
     """
     Generate Tier 1 & 2 (Articles & Edges).
 
     --edge-schema:
-      v1: Phase A 互換（既存形式を完全維持）- デフォルト
-      v2: 実験用統一スキーマ（refs + containment edges）
+      v2: 標準スキーマ（refs + containment edges）- デフォルト
+      v1: Phase A 互換（既存形式を完全維持）
     """
     from .core.tier1 import Tier1Builder
     from .core.edge_schema import EdgeSchema
