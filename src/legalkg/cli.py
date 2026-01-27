@@ -21,14 +21,26 @@ def build_tier1(
     vault: Path = typer.Option(..., help="Path to Vault root"),
     targets: Path = typer.Option(..., help="Path to targets.yaml"),
     extract_edges: bool = typer.Option(False, help="Extract edges (Tier 2)"),
-    generate_structure: bool = typer.Option(False, help="Generate Chapter/Section structure nodes")
+    generate_structure: bool = typer.Option(False, help="Generate Chapter/Section structure nodes"),
+    edge_schema: str = typer.Option("v1", help="Edge schema version: v1 (Phase A compatible) or v2 (experimental unified)")
 ):
     """
     Generate Tier 1 & 2 (Articles & Edges).
+
+    --edge-schema:
+      v1: Phase A 互換（既存形式を完全維持）- デフォルト
+      v2: 実験用統一スキーマ（refs + containment edges）
     """
     from .core.tier1 import Tier1Builder
+    from .core.edge_schema import EdgeSchema
+
+    # スキーマバリデーション
+    if edge_schema not in ("v1", "v2"):
+        raise typer.BadParameter(f"Invalid edge-schema: {edge_schema}. Must be 'v1' or 'v2'.")
+
+    schema = EdgeSchema.V1 if edge_schema == "v1" else EdgeSchema.V2
     builder = Tier1Builder(vault, targets)
-    builder.build(extract_edges, generate_structure=generate_structure)
+    builder.build(extract_edges, generate_structure=generate_structure, edge_schema=schema)
 
 @app.command()
 def enrich_ndl(

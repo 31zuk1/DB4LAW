@@ -275,10 +275,25 @@ class Tier1Builder:
             logger.warning(f"Failed to extract law name from {law_md_path}: {e}")
             return ""
 
-    def build(self, extract_edges: bool = False, generate_structure: bool = False):
+    def build(
+        self,
+        extract_edges: bool = False,
+        generate_structure: bool = False,
+        edge_schema = None
+    ):
+        from .edge_schema import EdgeSchema
+
+        # デフォルトは v1
+        if edge_schema is None:
+            edge_schema = EdgeSchema.V1
+
         print(f"Processing {len(self.targets)} target laws...")
         if generate_structure:
             print("  (with Chapter/Section structure generation)")
+        if extract_edges:
+            print(f"  (edge schema: {edge_schema.value})")
+            if edge_schema == EdgeSchema.V2:
+                print("    -> v2: refs + containment edges (experimental)")
 
         report = {
             "total_targets": len(self.targets),
@@ -290,7 +305,7 @@ class Tier1Builder:
         from tqdm import tqdm
         for law_id in tqdm(self.targets, desc="Processing Laws"):
             try:
-                self._process_law(law_id, extract_edges, generate_structure)
+                self._process_law(law_id, extract_edges, generate_structure, edge_schema)
                 report["success"].append(law_id)
             except Exception as e:
                 logger.error(f"Failed to process {law_id}: {e}")
@@ -300,8 +315,13 @@ class Tier1Builder:
         with open("report.json", "w", encoding="utf-8") as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
 
-    def _process_law(self, law_id: str, extract_edges: bool, generate_structure: bool = False):
+    def _process_law(self, law_id: str, extract_edges: bool, generate_structure: bool = False, edge_schema = None):
         """法令を処理して条文ノードを生成"""
+        from .edge_schema import EdgeSchema
+
+        if edge_schema is None:
+            edge_schema = EdgeSchema.V1
+
         # v2 JSON を直接取得
         law_tree = self.client.get_law_full_text(law_id)
         if not law_tree:
@@ -326,8 +346,10 @@ class Tier1Builder:
         else:
             all_edges = None
 
-        # 構造集計器（generate_structure が ON の場合のみ）
-        aggregator = StructureAggregator() if generate_structure else None
+        # 構造集計器（generate_structure が ON、または v2 スキーマで包含エッジ生成が必要な場合）
+        # v2 では --generate-structure なしでも包含エッジ生成のために集計が必要
+        need_aggregator = generate_structure or (extract_edges and edge_schema == EdgeSchema.V2)
+        aggregator = StructureAggregator() if need_aggregator else None
 
         # ディレクトリ作成
         honbun_dir = law_dir / "本文"
@@ -389,10 +411,17 @@ class Tier1Builder:
                 )
 
         # edges.jsonl 出力
-        if extract_edges and all_edges:
-            with open(law_dir / "edges.jsonl", "w", encoding="utf-8") as f:
-                for edge in all_edges:
-                    f.write(json.dumps(edge, ensure_ascii=False) + "\n")
+        if extract_edges and all_edges is not None:
+            from .edge_schema import EdgeWriter, generate_containment_edges_from_aggregator
+
+            # v2 スキーマの場合、包含エッジを追加
+            if edge_schema == EdgeSchema.V2 and aggregator:
+                containment_edges = generate_containment_edges_from_aggregator(aggregator, law_id)
+                all_edges.extend(containment_edges)
+
+            # EdgeWriter で出力
+            writer = EdgeWriter(edge_schema)
+            writer.write_jsonl(all_edges, law_dir / "edges.jsonl")
 
         # 構造ノード生成（generate_structure が ON の場合）
         if generate_structure and aggregator:
