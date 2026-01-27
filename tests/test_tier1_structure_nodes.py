@@ -144,6 +144,34 @@ class TestTier1BuilderFormatChapterName:
         assert builder._format_chapter_name(99) == "第99章"
 
 
+class TestTier1BuilderFormatSectionName:
+    """_format_section_name のテスト"""
+
+    @pytest.fixture
+    def builder(self, tmp_path):
+        targets_file = tmp_path / "targets.yaml"
+        targets_file.write_text("targets: []")
+        return Tier1Builder(tmp_path, targets_file)
+
+    def test_simple_section(self, builder):
+        """通常の節番号"""
+        assert builder._format_section_name(1) == "第1節"
+        assert builder._format_section_name(10, "第十節　雑則") == "第10節"
+        assert builder._format_section_name(12, "第十二節　補償契約") == "第12節"
+
+    def test_branch_section(self, builder):
+        """枝番号付き節（第N節の2）- section_title で判定"""
+        # 12 = 第一節の二 (section_title に「節の」があれば枝番号)
+        assert builder._format_section_name(12, "第一節の二　売渡株式等") == "第1節の2"
+        # 42 = 第四節の二
+        assert builder._format_section_name(42, "第四節の二　特別支配株主") == "第4節の2"
+
+    def test_no_title_defaults_to_simple(self, builder):
+        """section_title がない場合は通常扱い"""
+        assert builder._format_section_name(12) == "第12節"
+        assert builder._format_section_name(42) == "第42節"
+
+
 class TestTier1BuilderFormatArticleName:
     """_format_article_name のテスト"""
 
