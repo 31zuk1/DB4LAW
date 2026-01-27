@@ -153,6 +153,88 @@ def has_proviso_walk(node: Any) -> bool:
 
 
 # =============================================================================
+# Structure Aggregators (Phase A-2)
+# =============================================================================
+
+class ChapterAgg:
+    """章の集計データ"""
+    def __init__(self, chapter_num: int, chapter_title: Optional[str] = None):
+        self.chapter_num = chapter_num
+        self.chapter_title = chapter_title
+        self.article_ids: List[str] = []
+        self.article_nums: List[str] = []
+        self.section_nums: set = set()  # この章に属する節番号
+
+    @property
+    def section_count(self) -> int:
+        return len(self.section_nums)
+
+
+class SectionAgg:
+    """節の集計データ"""
+    def __init__(
+        self,
+        chapter_num: int,
+        section_num: int,
+        chapter_title: Optional[str] = None,
+        section_title: Optional[str] = None
+    ):
+        self.chapter_num = chapter_num
+        self.section_num = section_num
+        self.chapter_title = chapter_title
+        self.section_title = section_title
+        self.article_ids: List[str] = []
+        self.article_nums: List[str] = []
+
+
+class StructureAggregator:
+    """章/節 → 条文の集計器"""
+    def __init__(self):
+        self.chapters: Dict[int, ChapterAgg] = {}
+        self.sections: Dict[tuple, SectionAgg] = {}  # (chapter_num, section_num) -> SectionAgg
+        # 条文の見出し情報を保持（wikilink 生成用）
+        self.article_headings: Dict[str, str] = {}  # article_num -> heading
+
+    def add_article(
+        self,
+        context: Dict[str, Any],
+        node_id: str,
+        article_num: str,
+        heading: str
+    ):
+        """条文を集計に追加"""
+        chapter_num = context.get("chapter_num")
+        section_num = context.get("section_num")
+        chapter_title = context.get("chapter_title")
+        section_title = context.get("section_title")
+
+        # 見出し情報を保持
+        self.article_headings[article_num] = heading
+
+        if chapter_num is not None:
+            # 章に追加
+            if chapter_num not in self.chapters:
+                self.chapters[chapter_num] = ChapterAgg(chapter_num, chapter_title)
+            chapter_agg = self.chapters[chapter_num]
+            chapter_agg.article_ids.append(node_id)
+            chapter_agg.article_nums.append(article_num)
+
+            if section_num is not None:
+                # 節を章に登録
+                chapter_agg.section_nums.add(section_num)
+
+                # 節に追加
+                key = (chapter_num, section_num)
+                if key not in self.sections:
+                    self.sections[key] = SectionAgg(
+                        chapter_num, section_num, chapter_title, section_title
+                    )
+                section_agg = self.sections[key]
+                section_agg.article_ids.append(node_id)
+                section_agg.article_nums.append(article_num)
+
+
+# =============================================================================
 # Tier1Builder
 # =============================================================================
 
@@ -193,8 +275,10 @@ class Tier1Builder:
             logger.warning(f"Failed to extract law name from {law_md_path}: {e}")
             return ""
 
-    def build(self, extract_edges: bool = False):
+    def build(self, extract_edges: bool = False, generate_structure: bool = False):
         print(f"Processing {len(self.targets)} target laws...")
+        if generate_structure:
+            print("  (with Chapter/Section structure generation)")
 
         report = {
             "total_targets": len(self.targets),
@@ -206,7 +290,7 @@ class Tier1Builder:
         from tqdm import tqdm
         for law_id in tqdm(self.targets, desc="Processing Laws"):
             try:
-                self._process_law(law_id, extract_edges)
+                self._process_law(law_id, extract_edges, generate_structure)
                 report["success"].append(law_id)
             except Exception as e:
                 logger.error(f"Failed to process {law_id}: {e}")
@@ -216,7 +300,7 @@ class Tier1Builder:
         with open("report.json", "w", encoding="utf-8") as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
 
-    def _process_law(self, law_id: str, extract_edges: bool):
+    def _process_law(self, law_id: str, extract_edges: bool, generate_structure: bool = False):
         """法令を処理して条文ノードを生成"""
         # v2 JSON を直接取得
         law_tree = self.client.get_law_full_text(law_id)
@@ -242,6 +326,9 @@ class Tier1Builder:
         else:
             all_edges = None
 
+        # 構造集計器（generate_structure が ON の場合のみ）
+        aggregator = StructureAggregator() if generate_structure else None
+
         # ディレクトリ作成
         honbun_dir = law_dir / "本文"
         fusoku_dir = law_dir / "附則"
@@ -259,10 +346,11 @@ class Tier1Builder:
         if main_provision:
             self._process_part(
                 main_provision, law_id, honbun_dir, "main",
-                extract_edges, all_edges, law_name=law_name, amend_law_num=None
+                extract_edges, all_edges, law_name=law_name, amend_law_num=None,
+                aggregator=aggregator
             )
 
-        # SupplProvision（附則）を処理
+        # SupplProvision（附則）を処理（集計対象外）
         init_suppl_count = 0
         for suppl in find_children(law_body, "SupplProvision"):
             raw_amend_num = get_attr(suppl, "AmendLawNum")
@@ -306,6 +394,10 @@ class Tier1Builder:
                 for edge in all_edges:
                     f.write(json.dumps(edge, ensure_ascii=False) + "\n")
 
+        # 構造ノード生成（generate_structure が ON の場合）
+        if generate_structure and aggregator:
+            self._generate_structure_nodes(law_dir, law_id, law_name, aggregator)
+
         # tier 更新
         final_tier = 2 if extract_edges else 1
         if law_md_path:
@@ -324,7 +416,8 @@ class Tier1Builder:
         edge_list: Optional[List] = None,
         file_key_override: Optional[str] = None,
         law_name: str = "",
-        amend_law_num: Optional[str] = None
+        amend_law_num: Optional[str] = None,
+        aggregator: Optional[StructureAggregator] = None
     ):
         """条文パートを処理してMarkdownファイルを生成（walk ベース）"""
         if not container:
@@ -361,7 +454,7 @@ class Tier1Builder:
             container, law_id, out_dir, part_type,
             extract_edges, edge_list, file_key_override,
             law_name, amend_law_num, is_amendment_fragment,
-            initial_context
+            initial_context, aggregator
         )
 
     def _walk_and_process(
@@ -376,11 +469,13 @@ class Tier1Builder:
         law_name: str,
         amend_law_num: Optional[str],
         is_amendment_fragment: bool,
-        context: Dict[str, Any]
+        context: Dict[str, Any],
+        aggregator: Optional[StructureAggregator] = None
     ):
         """
         ツリーを walk して Article を処理（O(N) の走査）。
         Chapter/Section を通過するたびにコンテキストを更新。
+        aggregator があれば条文情報を集計。
         """
         tag = node_tag(node)
 
@@ -414,7 +509,7 @@ class Tier1Builder:
                 node, law_id, out_dir, part_type,
                 extract_edges, edge_list, file_key_override,
                 law_name, amend_law_num, is_amendment_fragment,
-                context
+                context, aggregator
             )
             return  # Article 内部は再帰しない
 
@@ -424,7 +519,7 @@ class Tier1Builder:
                 child, law_id, out_dir, part_type,
                 extract_edges, edge_list, file_key_override,
                 law_name, amend_law_num, is_amendment_fragment,
-                context
+                context, aggregator
             )
 
     def _process_article(
@@ -439,7 +534,8 @@ class Tier1Builder:
         law_name: str,
         amend_law_num: Optional[str],
         is_amendment_fragment: bool,
-        context: Optional[Dict[str, Any]] = None
+        context: Optional[Dict[str, Any]] = None,
+        aggregator: Optional[StructureAggregator] = None
     ):
         """単一の Article を処理"""
         from .tier2 import EdgeExtractor
@@ -500,6 +596,10 @@ class Tier1Builder:
         )
 
         self._write_markdown(file_path, fm, content)
+
+        # 構造集計（本文のみ: part_type == "main"）
+        if aggregator and context and part_type == "main":
+            aggregator.add_article(context, node_id, num, caption_text)
 
     def _process_direct_paragraphs(
         self,
@@ -737,6 +837,169 @@ class Tier1Builder:
             yaml.dump(fm, f, allow_unicode=True, default_flow_style=False)
             f.write("---\n\n")
             f.write(content)
+
+    # =========================================================================
+    # Structure Node Generation (Phase A-2)
+    # =========================================================================
+
+    def _generate_structure_nodes(
+        self,
+        law_dir: Path,
+        law_id: str,
+        law_name: str,
+        aggregator: StructureAggregator
+    ):
+        """章/節の構造ノードファイルを生成"""
+        if not aggregator.chapters:
+            return
+
+        # ディレクトリ作成
+        chapter_dir = law_dir / "章"
+        section_dir = law_dir / "節"
+        chapter_dir.mkdir(exist_ok=True)
+
+        # 節がある場合のみ節ディレクトリを作成
+        if aggregator.sections:
+            section_dir.mkdir(exist_ok=True)
+
+        # 章ノード生成
+        for chapter_num, chapter_agg in sorted(aggregator.chapters.items()):
+            self._write_chapter_node(
+                chapter_dir, law_id, law_name, chapter_agg, aggregator
+            )
+
+        # 節ノード生成
+        for (chapter_num, section_num), section_agg in sorted(aggregator.sections.items()):
+            self._write_section_node(
+                section_dir, law_id, law_name, section_agg
+            )
+
+    def _write_chapter_node(
+        self,
+        chapter_dir: Path,
+        law_id: str,
+        law_name: str,
+        chapter_agg: ChapterAgg,
+        aggregator: StructureAggregator
+    ):
+        """章ノードファイルを生成"""
+        chapter_num = chapter_agg.chapter_num
+        file_name = f"第{chapter_num}章.md"
+        file_path = chapter_dir / file_name
+
+        node_id = f"JPLAW:{law_id}#chapter#{chapter_num}"
+
+        # Frontmatter 構築
+        fm: Dict[str, Any] = {
+            "id": node_id,
+            "type": "chapter",
+            "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
+            "law_id": law_id,
+            "law_name": law_name,
+            "chapter_num": chapter_num,
+        }
+
+        # 省略主義: chapter_title があれば出力
+        if chapter_agg.chapter_title:
+            fm["chapter_title"] = chapter_agg.chapter_title
+
+        fm["article_ids"] = chapter_agg.article_ids
+        fm["article_nums"] = chapter_agg.article_nums
+        fm["section_count"] = chapter_agg.section_count
+        fm["tags"] = [law_name, "kind/chapter"] if law_name else ["kind/chapter"]
+
+        # 本文生成
+        title_part = f" {chapter_agg.chapter_title}" if chapter_agg.chapter_title else ""
+        content = f"# 第{chapter_num}章{title_part}\n\n"
+
+        # 節リスト（存在する場合のみ）
+        if chapter_agg.section_count > 0:
+            content += "## この章の節\n\n"
+            for section_num in sorted(chapter_agg.section_nums):
+                key = (chapter_num, section_num)
+                section_agg = aggregator.sections.get(key)
+                if section_agg:
+                    section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
+                    link_text = f"第{section_num}節{section_title_part}"
+                    # Vault root からのフルパス
+                    link_path = f"laws/{law_name}/節/第{chapter_num}章第{section_num}節.md"
+                    content += f"- [[{link_path}|{link_text}]]\n"
+            content += "\n"
+
+        # 条文リスト
+        content += "## この章の条文\n\n"
+        for article_num in chapter_agg.article_nums:
+            heading = aggregator.article_headings.get(article_num, "")
+            jp_name = self._format_article_name(article_num)
+            heading_part = f" {heading}" if heading else ""
+            # Vault root からのフルパス
+            link_path = f"laws/{law_name}/本文/{jp_name}.md"
+            content += f"- [[{link_path}|{jp_name}{heading_part}]]\n"
+
+        self._write_markdown(file_path, fm, content)
+
+    def _write_section_node(
+        self,
+        section_dir: Path,
+        law_id: str,
+        law_name: str,
+        section_agg: SectionAgg
+    ):
+        """節ノードファイルを生成"""
+        chapter_num = section_agg.chapter_num
+        section_num = section_agg.section_num
+        file_name = f"第{chapter_num}章第{section_num}節.md"
+        file_path = section_dir / file_name
+
+        node_id = f"JPLAW:{law_id}#chapter#{chapter_num}#section#{section_num}"
+
+        # Frontmatter 構築
+        fm: Dict[str, Any] = {
+            "id": node_id,
+            "type": "section",
+            "parent": f"[[laws/{law_name}/章/第{chapter_num}章]]" if law_name else None,
+            "law_id": law_id,
+            "law_name": law_name,
+            "chapter_num": chapter_num,
+        }
+
+        # 省略主義: title があれば出力
+        if section_agg.chapter_title:
+            fm["chapter_title"] = section_agg.chapter_title
+
+        fm["section_num"] = section_num
+
+        if section_agg.section_title:
+            fm["section_title"] = section_agg.section_title
+
+        fm["article_ids"] = section_agg.article_ids
+        fm["article_nums"] = section_agg.article_nums
+        fm["tags"] = [law_name, "kind/section"] if law_name else ["kind/section"]
+
+        # 本文生成
+        chapter_title_part = f" {section_agg.chapter_title}" if section_agg.chapter_title else ""
+        section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
+        content = f"# 第{chapter_num}章{chapter_title_part} 第{section_num}節{section_title_part}\n\n"
+
+        # 条文リスト
+        content += "## この節の条文\n\n"
+        for article_num in section_agg.article_nums:
+            jp_name = self._format_article_name(article_num)
+            # Vault root からのフルパス
+            link_path = f"laws/{law_name}/本文/{jp_name}.md"
+            content += f"- [[{link_path}|{jp_name}]]\n"
+
+        self._write_markdown(file_path, fm, content)
+
+    def _format_article_name(self, article_num: str) -> str:
+        """条番号を日本語ファイル名形式に変換（例: '1_2' -> '第1条の2'）"""
+        parts = article_num.split('_')
+        if len(parts) == 1:
+            return f"第{parts[0]}条"
+        elif len(parts) == 2:
+            return f"第{parts[0]}条の{parts[1]}"
+        else:
+            return f"第{article_num.replace('_', 'の')}条"
 
     def _update_law_tier(self, md_path: Path, tier: int):
         if not md_path.exists():

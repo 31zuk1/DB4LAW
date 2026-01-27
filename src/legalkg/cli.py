@@ -20,14 +20,15 @@ def build_tier0(
 def build_tier1(
     vault: Path = typer.Option(..., help="Path to Vault root"),
     targets: Path = typer.Option(..., help="Path to targets.yaml"),
-    extract_edges: bool = typer.Option(False, help="Extract edges (Tier 2)")
+    extract_edges: bool = typer.Option(False, help="Extract edges (Tier 2)"),
+    generate_structure: bool = typer.Option(False, help="Generate Chapter/Section structure nodes")
 ):
     """
     Generate Tier 1 & 2 (Articles & Edges).
     """
     from .core.tier1 import Tier1Builder
     builder = Tier1Builder(vault, targets)
-    builder.build(extract_edges)
+    builder.build(extract_edges, generate_structure=generate_structure)
 
 @app.command()
 def enrich_ndl(
