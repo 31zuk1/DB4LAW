@@ -102,6 +102,7 @@ class ComparisonResult:
     def __init__(self):
         self.missing_files: List[str] = []      # snapshot にあるが新規にない
         self.new_files: List[str] = []          # 新規にあるが snapshot にない
+        self.allowed_new_files: List[str] = []  # 許容された新規ファイル（構造ノード等）
         self.frontmatter_diffs: List[Dict] = [] # frontmatter の差異
         self.body_diffs: List[Dict] = []        # body の差異
         self.edge_diffs: List[Dict] = []        # edges.jsonl の差異
@@ -121,6 +122,8 @@ class ComparisonResult:
         lines = []
         lines.append(f"Missing files: {len(self.missing_files)}")
         lines.append(f"New files: {len(self.new_files)}")
+        if self.allowed_new_files:
+            lines.append(f"Allowed new files (structure): {len(self.allowed_new_files)}")
         lines.append(f"Frontmatter diffs: {len(self.frontmatter_diffs)}")
         lines.append(f"Body diffs: {len(self.body_diffs)}")
         lines.append(f"Edge diffs: {len(self.edge_diffs)}")
@@ -131,12 +134,20 @@ class ComparisonResult:
 def compare_directories(
     snapshot_dir: Path,
     current_dir: Path,
-    ignore_keys: Set[str]
+    ignore_keys: Set[str],
+    allowed_new_dirs: Set[str] = None
 ) -> ComparisonResult:
     """
     2つのディレクトリを比較
+
+    Args:
+        snapshot_dir: スナップショットディレクトリ
+        current_dir: 現在のディレクトリ
+        ignore_keys: frontmatter で無視するキー
+        allowed_new_dirs: 新規ファイルを許容するディレクトリ（例: {"章", "節"}）
     """
     result = ComparisonResult()
+    allowed_new_dirs = allowed_new_dirs or set()
 
     # ファイル一覧を取得
     snapshot_files = set()
@@ -152,9 +163,18 @@ def compare_directories(
             rel = f.relative_to(current_dir)
             current_files.add(str(rel))
 
-    # 欠落・追加ファイル
+    # 欠落ファイル
     result.missing_files = sorted(snapshot_files - current_files)
-    result.new_files = sorted(current_files - snapshot_files)
+
+    # 追加ファイル（allowed_new_dirs に含まれるものは許容）
+    all_new_files = current_files - snapshot_files
+    for f in sorted(all_new_files):
+        # ファイルパスの最初のディレクトリを取得
+        parts = f.split('/')
+        if len(parts) >= 1 and parts[0] in allowed_new_dirs:
+            result.allowed_new_files.append(f)
+        else:
+            result.new_files.append(f)
 
     # 共通ファイルを比較
     common_files = snapshot_files & current_files
@@ -271,6 +291,10 @@ def main():
         '--verbose', '-v', action='store_true',
         help='Show detailed diff information'
     )
+    parser.add_argument(
+        '--allow-new-dirs', nargs='*', default=[],
+        help='Directories where new files are allowed (e.g., 章 節)'
+    )
 
     args = parser.parse_args()
 
@@ -298,13 +322,17 @@ def main():
         'has_proviso',
     }
 
+    # Phase A-2 の構造ディレクトリをデフォルトで許容
+    allowed_new_dirs = set(args.allow_new_dirs) | {'章', '節'}
+
     print(f"Comparing:")
     print(f"  Snapshot: {snapshot_dir}")
     print(f"  Current:  {current_dir}")
     print(f"  Ignoring keys: {sorted(ignore_keys)}")
+    print(f"  Allowing new dirs: {sorted(allowed_new_dirs)}")
     print()
 
-    result = compare_directories(snapshot_dir, current_dir, ignore_keys)
+    result = compare_directories(snapshot_dir, current_dir, ignore_keys, allowed_new_dirs)
 
     print(result.summary())
     print()
@@ -319,11 +347,19 @@ def main():
             print()
 
         if result.new_files:
-            print("New files:")
+            print("Unexpected new files:")
             for f in result.new_files[:20]:
                 print(f"  + {f}")
             if len(result.new_files) > 20:
                 print(f"  ... and {len(result.new_files) - 20} more")
+            print()
+
+        if result.allowed_new_files:
+            print("Allowed new files (structure nodes):")
+            for f in result.allowed_new_files[:20]:
+                print(f"  + {f}")
+            if len(result.allowed_new_files) > 20:
+                print(f"  ... and {len(result.allowed_new_files) - 20} more")
             print()
 
         if result.frontmatter_diffs:
@@ -357,6 +393,7 @@ def main():
             'compatible': result.is_compatible,
             'missing_files': result.missing_files,
             'new_files': result.new_files,
+            'allowed_new_files': result.allowed_new_files,
             'frontmatter_diffs': result.frontmatter_diffs,
             'body_diffs': [{'file': d['file']} for d in result.body_diffs],
             'edge_diffs': result.edge_diffs,
