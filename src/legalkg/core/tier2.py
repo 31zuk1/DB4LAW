@@ -451,6 +451,8 @@ LAW_NAME_VALID_PREFIXES: Tuple[str, ...] = (
     'の', 'は', 'が', 'を', 'に', 'と', 'で', 'も', 'や', 'び',
     # 指示語など
     'る', 'き', 'て', 'し',
+    # 法文構造（「第N条中X法」など）
+    '中',
 )
 
 
@@ -983,6 +985,15 @@ class EdgeExtractor:
             context_start = max(0, match_start - CONTEXT_WINDOW_IMMEDIATE)
             context = text[context_start:match_start]
 
+            # =====================================================================
+            # 0-pre. 附則プレフィックスの検出
+            # =====================================================================
+            # 「附則第N条」は附則条文への参照であり、本文（本則）へリンクしてはならない。
+            # 改正法断片内では附則も改正法自身の附則を指すのでリンク化しない。
+            # 通常モードでも、現在は附則ノードへのリンクは未実装のためリンク化しない。
+            if context.rstrip().endswith('附則'):
+                return original_text  # リンク化しない
+
             # クロスリンク先の法令（後続処理で設定される可能性あり）
             cross_link_target = None
             cross_link_law_name = None  # マッチした法令名（law_id解決用）
@@ -1134,10 +1145,41 @@ class EdgeExtractor:
                             return original_text
                         break
 
+            # 1c. 列挙パターン検出（改正法断片でも有効）
+            # 「刑法第97条及び第98条」のような連続参照に対応
+            # 直近コンテキスト内で「法令名第N条[列挙セパレータ]」パターンを検出
+            #
+            # 列挙セパレータ: 及び, 並びに, 又は, 若しくは, 、
+            # WikiLink済みの参照も考慮: [[...]]及び
+            #
+            # 注: 文スコープ（find_cross_link_scope）とは異なり、直近コンテキスト内のみ検索
+            # これにより「刑事訴訟法第344条...第二条中刑法」のような離れた参照は検出しない
+            if cross_link_target is None:
+                # WikiLinkを表示テキストに置換
+                context_for_enum = strip_wikilinks(context_cleaned)
+                # 列挙パターン: 法令名 + 第N条 + 列挙セパレータ + 末尾
+                # 注: 条番号には漢数字（一二三四五六七八九十百千〇）とアラビア数字のみ
+                # [一-龯] は全CJK文字を含むため使用禁止（バグの原因）
+                enum_separators = r'(?:及び|並びに|又は|若しくは|、)\s*$'
+                kanji_nums = r'[一二三四五六七八九十百千〇0-9]+'
+                for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
+                    enum_pattern = re.escape(cross_law_name) + r'第' + kanji_nums + r'条(?:の' + kanji_nums + r')?' + enum_separators
+                    if re.search(enum_pattern, context_for_enum):
+                        target_folder = CROSS_LINKABLE_LAWS[cross_law_name]
+                        if target_folder != law_name:
+                            cross_link_target = target_folder
+                            cross_link_law_name = cross_law_name
+                        break
+
             # 1b. 直近に見つからない場合、文スコープ内のクロスリンク対象を検索
             # 「刑法第176条、第177条」のような連続参照に対応
             # Phase 3: EXTERNAL_LAW_PATTERNS も Vault 存在チェック付きで検索
-            if cross_link_target is None:
+            #
+            # 重要: 改正法断片では文スコープを使用しない
+            # 改正法断片内の「刑事訴訟法第344条...第二条中刑法」のような場合、
+            # 「第二条」は改正法自身の条文番号なのでリンク化しない。
+            # 文スコープを使うと「刑事訴訟法」スコープが誤って適用されてしまう。
+            if cross_link_target is None and not is_amendment_fragment:
                 cross_link_target = find_cross_link_scope(text, match_start, law_name, self.vault_root)
                 if cross_link_target:
                     cross_link_law_name = cross_link_target  # フォルダ名=法令名

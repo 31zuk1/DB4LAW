@@ -44,6 +44,40 @@ class ChangeRecord:
     error_message: Optional[str] = None
 
 
+def chapter_sort_key(filename: str) -> tuple:
+    """
+    章ファイル名のソートキーを生成
+
+    例:
+    - 第1章.md → (1, 0)
+    - 第2章の2.md → (2, 2)
+    - 第10章.md → (10, 0)
+    """
+    match = re.match(r"第(\d+)章(?:の(\d+))?\.md$", filename)
+    if match:
+        main = int(match.group(1))
+        branch = int(match.group(2)) if match.group(2) else 0
+        return (main, branch)
+    return (9999, 0)  # マッチしない場合は末尾
+
+
+def section_sort_key(filename: str) -> tuple:
+    """
+    節ファイル名のソートキーを生成
+
+    例:
+    - 第1章第1節.md → (1, 1, 0)
+    - 第1章第2節の2.md → (1, 2, 2)
+    """
+    match = re.match(r"第(\d+)章第(\d+)節(?:の(\d+))?\.md$", filename)
+    if match:
+        ch = int(match.group(1))
+        sec = int(match.group(2))
+        branch = int(match.group(3)) if match.group(3) else 0
+        return (ch, sec, branch)
+    return (9999, 9999, 0)
+
+
 def get_sections_for_chapter(law_dir: Path, chapter_num: int) -> list[str]:
     """指定した章に属する節ファイル名のリストを取得"""
     section_dir = law_dir / "節"
@@ -55,11 +89,11 @@ def get_sections_for_chapter(law_dir: Path, chapter_num: int) -> list[str]:
     for f in section_dir.iterdir():
         if f.is_file() and pattern.match(f.name):
             sections.append(f.name)
-    return sorted(sections)
+    return sorted(sections, key=section_sort_key)
 
 
 def get_chapters(law_dir: Path) -> list[str]:
-    """章ファイル名のリストを取得"""
+    """章ファイル名のリストを取得（数値順ソート）"""
     chapter_dir = law_dir / "章"
     if not chapter_dir.exists():
         return []
@@ -68,7 +102,7 @@ def get_chapters(law_dir: Path) -> list[str]:
     for f in chapter_dir.iterdir():
         if f.is_file() and f.suffix == ".md":
             chapters.append(f.name)
-    return sorted(chapters)
+    return sorted(chapters, key=chapter_sort_key)
 
 
 def extract_wikilinks(content: str) -> list[str]:
@@ -192,7 +226,8 @@ def process_law_node(
         new_links = extract_wikilinks(new_body)
         new_count = len(new_links)
 
-        if old_count == new_count:
+        # リンクが同じ（順序含む）なら変更なし
+        if old_links == new_links:
             return ChangeRecord(
                 file_path=rel_path,
                 node_type="law",
@@ -277,7 +312,8 @@ def process_chapter_node(
         new_links = extract_wikilinks(new_body)
         new_count = len(new_links)
 
-        if old_count == new_count:
+        # リンクが同じ（順序含む）なら変更なし
+        if old_links == new_links:
             return ChangeRecord(
                 file_path=rel_path,
                 node_type="chapter",

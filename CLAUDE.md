@@ -269,6 +269,7 @@ Located in `scripts/migration/`:
 | `update_article_parent.py` | Update article parent to hierarchical structure |
 | `restructure_tree_links.py` | Restructure law/chapter links to prevent Graph hairball |
 | `fix_frontmatter.py` | Fix broken YAML frontmatter (---as_of: → ---\nas_of:) |
+| `fix_amendment_fragment_links.py` | Re-generate links in amendment fragments with corrected logic |
 
 ### Pending Links System
 
