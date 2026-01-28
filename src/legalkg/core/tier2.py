@@ -1217,13 +1217,17 @@ class EdgeExtractor:
                 # 「から」は範囲パターン「第N条から第M条まで」に対応
                 enum_separators = r'(?:及び|並びに|又は|若しくは|、|から)\s*$'
                 kanji_nums = r'[一二三四五六七八九十百千〇0-9]+'
+                # 項参照部: 第N項 + (及び第M項)* の形式
+                # 「第一項及び第二項」「第一項、第二項及び第三項」などに対応
+                paragraph_ref = r'(?:第' + kanji_nums + r'項(?:(?:及び|並びに|又は|若しくは|、)第' + kanji_nums + r'項)*)?'
 
                 # パターン1: 直近に「法令名第N条...、」がある場合
                 for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
-                    # 列挙パターン: 法令名 + 第N条 + (の + N)? + (第M項)? + (まで)? + 列挙セパレータ
+                    # 列挙パターン: 法令名 + 第N条 + (の + N)? + 項参照部? + (まで)? + 列挙セパレータ
                     # 「新会社法第244条第三項、第244条の二」のようなパターンに対応
                     # 「刑法第10条から第12条まで及び第20条」のような範囲パターンにも対応
-                    enum_pattern = re.escape(cross_law_name) + r'第' + kanji_nums + r'条(?:の' + kanji_nums + r')?(?:第' + kanji_nums + r'項)?(?:まで)?' + enum_separators
+                    # 「新刑事訴訟法第201条の2第一項及び第二項、」のような複数項参照にも対応
+                    enum_pattern = re.escape(cross_law_name) + r'第' + kanji_nums + r'条(?:の' + kanji_nums + r')?' + paragraph_ref + r'(?:まで)?' + enum_separators
                     if re.search(enum_pattern, context_for_enum):
                         target_folder = CROSS_LINKABLE_LAWS[cross_law_name]
                         # 法令名自体が異なれば許可（「新会社法」≠「会社法」）
@@ -1243,7 +1247,8 @@ class EdgeExtractor:
                 if cross_link_target is None:
                     # 条または項で終わる列挙パターン
                     # 「第N条まで及び」のような範囲パターンにも対応（「まで」をオプションで追加）
-                    bare_enum_pattern_article = r'第' + kanji_nums + r'条(?:の' + kanji_nums + r')?(?:第' + kanji_nums + r'項)?(?:まで)?' + enum_separators
+                    # 「第N条第一項及び第二項、」のような複数項参照にも対応
+                    bare_enum_pattern_article = r'第' + kanji_nums + r'条(?:の' + kanji_nums + r')?' + paragraph_ref + r'(?:まで)?' + enum_separators
                     bare_enum_pattern_paragraph = r'第' + kanji_nums + r'項(?:まで)?' + enum_separators
                     if re.search(bare_enum_pattern_article, context_for_enum) or re.search(bare_enum_pattern_paragraph, context_for_enum):
                         # 拡張コンテキストで「法令名第N条」パターンを検索
@@ -1252,14 +1257,21 @@ class EdgeExtractor:
                         extended_context = text[extended_context_start:match_start]
                         extended_context_cleaned = re.sub(r'（[^）]*）', '', extended_context)
                         extended_context_for_enum = strip_wikilinks(extended_context_cleaned)
+                        # 最も近い（位置が最後の）法令名を見つける
+                        # 「刑法第1条、刑事訴訟法第2条、第3条」の「第3条」は刑事訴訟法にリンク
+                        closest_match = None
+                        closest_pos = -1
                         for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
                             law_with_article = re.escape(cross_law_name) + r'第' + kanji_nums + r'条'
-                            if re.search(law_with_article, extended_context_for_enum):
-                                target_folder = CROSS_LINKABLE_LAWS[cross_law_name]
-                                if cross_law_name != law_name:
-                                    cross_link_target = target_folder
-                                    cross_link_law_name = cross_law_name
-                                break
+                            for law_match in re.finditer(law_with_article, extended_context_for_enum):
+                                if law_match.end() > closest_pos:
+                                    closest_pos = law_match.end()
+                                    closest_match = cross_law_name
+                        if closest_match is not None:
+                            target_folder = CROSS_LINKABLE_LAWS[closest_match]
+                            if closest_match != law_name:
+                                cross_link_target = target_folder
+                                cross_link_law_name = closest_match
 
             # 1b. 直近に見つからない場合、文スコープ内のクロスリンク対象を検索
             # 「刑法第176条、第177条」のような連続参照に対応
