@@ -73,6 +73,18 @@ CROSS_LINKABLE_LAWS: Dict[str, str] = {
     '旧民事訴訟法': '民事訴訟法',
     '改正前の民事訴訟法': '民事訴訟法',
     '改正後の民事訴訟法': '民事訴訟法',
+    # 会社法
+    '会社法': '会社法',
+    '新会社法': '会社法',
+    '旧会社法': '会社法',
+    '改正前の会社法': '会社法',
+    '改正後の会社法': '会社法',
+    # 行政事件訴訟法
+    '行政事件訴訟法': '行政事件訴訟法',
+    '新行政事件訴訟法': '行政事件訴訟法',
+    '旧行政事件訴訟法': '行政事件訴訟法',
+    '改正前の行政事件訴訟法': '行政事件訴訟法',
+    '改正後の行政事件訴訟法': '行政事件訴訟法',
     # 所有者不明土地の利用の円滑化等に関する特別措置法
     '所有者不明土地の利用の円滑化等に関する特別措置法': '所有者不明土地の利用の円滑化等に関する特別措置法',
     '所有者不明土地法': '所有者不明土地の利用の円滑化等に関する特別措置法',
@@ -453,6 +465,8 @@ LAW_NAME_VALID_PREFIXES: Tuple[str, ...] = (
     'る', 'き', 'て', 'し',
     # 法文構造（「第N条中X法」など）
     '中',
+    # 改正前後パターン（「令和四年改正前刑法」など）
+    '前', '後',
 )
 
 
@@ -991,7 +1005,20 @@ class EdgeExtractor:
             # 「附則第N条」は附則条文への参照であり、本文（本則）へリンクしてはならない。
             # 改正法断片内では附則も改正法自身の附則を指すのでリンク化しない。
             # 通常モードでも、現在は附則ノードへのリンクは未実装のためリンク化しない。
-            if context.rstrip().endswith('附則'):
+            #
+            # パターン1: 「附則第N条」直接参照
+            # パターン2: 「附則第N条及び第M条」列挙パターン
+            #
+            # WikiLinkを除去してからチェック（既にリンク化された参照も検出）
+            context_for_fuzoku = strip_wikilinks(context)
+            if context_for_fuzoku.rstrip().endswith('附則'):
+                return original_text  # リンク化しない
+
+            # 附則列挙パターン: 「附則第N条[列挙セパレータ]第M条」
+            # 漢数字のみ使用（[一-龯] は使用禁止）
+            kanji_nums_fuzoku = r'[一二三四五六七八九十百千〇0-9]+'
+            fuzoku_enum_pattern = r'附則第' + kanji_nums_fuzoku + r'条(?:の' + kanji_nums_fuzoku + r')?(?:第[一二三四五六七八九十百千〇0-9]+項)?(?:及び|並びに|又は|若しくは|、)\s*$'
+            if re.search(fuzoku_enum_pattern, context_for_fuzoku):
                 return original_text  # リンク化しない
 
             # クロスリンク先の法令（後続処理で設定される可能性あり）
@@ -1100,6 +1127,31 @@ class EdgeExtractor:
                     if not has_any_law_prefix(context_cleaned, law_name):
                         return original_text  # 裸の参照 + の規定に → リンク化しない
 
+            # 0a. 改正法断片モード: 「第N条中{法令名}」パターンはリンク化しない（裸の参照の場合のみ）
+            # これは改正法自身の条文番号への参照であり、親法の条文ではない
+            # 例: "第一条中刑事訴訟法第三百四十四条" = 改正法の第一条が刑事訴訟法第344条を改正
+            # ただし「民法第N条中」のように法令名が付いている場合はリンク化する
+            if is_amendment_fragment:
+                after_text = text[match_end:match_end + 30]
+                if after_text.startswith('中'):
+                    # 「中」の後に法令名があるかチェック
+                    after_naka = after_text[1:]  # "中" の後
+                    has_law_name_after_naka = False
+                    # クロスリンク対象法令と外部法令をチェック
+                    for law in CROSS_LINKABLE_LAWS_SORTED:
+                        if after_naka.startswith(law):
+                            has_law_name_after_naka = True
+                            break
+                    if not has_law_name_after_naka:
+                        for law in EXTERNAL_LAW_PATTERNS_SORTED:
+                            if after_naka.startswith(law):
+                                has_law_name_after_naka = True
+                                break
+                    if has_law_name_after_naka:
+                        # 直前に法令名があるかチェック
+                        if not has_any_law_prefix(context_cleaned, law_name):
+                            return original_text  # 裸の参照 + 中{法令名} → リンク化しない
+
             # 1. クロスリンク対象法令が直近にある場合はその法令へリンク
             # 長い法令名から順にチェック（事前ソート済みリストを使用）
             # 境界チェックも行い、より長い法令名の部分マッチを防ぐ
@@ -1114,8 +1166,10 @@ class EdgeExtractor:
                         if not is_valid_law_name_boundary(context_cleaned, match.start()):
                             continue  # 無効な境界なので次の（より短い）法令名を試す
                         target_folder = CROSS_LINKABLE_LAWS[cross_law_name]
-                        # 自法令への参照は通常処理（クロスリンクではない）
-                        if target_folder != law_name:
+                        # 法令名自体が異なれば許可（「改正後の刑事訴訟法」≠「刑事訴訟法」）
+                        # これにより改正法断片内の「新〇〇法第N条」「改正後の〇〇法第N条」も
+                        # 親法へリンク化される
+                        if cross_law_name != law_name:
                             cross_link_target = target_folder
                             cross_link_law_name = cross_law_name
                         break
@@ -1160,16 +1214,52 @@ class EdgeExtractor:
                 # 列挙パターン: 法令名 + 第N条 + 列挙セパレータ + 末尾
                 # 注: 条番号には漢数字（一二三四五六七八九十百千〇）とアラビア数字のみ
                 # [一-龯] は全CJK文字を含むため使用禁止（バグの原因）
-                enum_separators = r'(?:及び|並びに|又は|若しくは|、)\s*$'
+                # 「から」は範囲パターン「第N条から第M条まで」に対応
+                enum_separators = r'(?:及び|並びに|又は|若しくは|、|から)\s*$'
                 kanji_nums = r'[一二三四五六七八九十百千〇0-9]+'
+
+                # パターン1: 直近に「法令名第N条...、」がある場合
                 for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
-                    enum_pattern = re.escape(cross_law_name) + r'第' + kanji_nums + r'条(?:の' + kanji_nums + r')?' + enum_separators
+                    # 列挙パターン: 法令名 + 第N条 + (の + N)? + (第M項)? + (まで)? + 列挙セパレータ
+                    # 「新会社法第244条第三項、第244条の二」のようなパターンに対応
+                    # 「刑法第10条から第12条まで及び第20条」のような範囲パターンにも対応
+                    enum_pattern = re.escape(cross_law_name) + r'第' + kanji_nums + r'条(?:の' + kanji_nums + r')?(?:第' + kanji_nums + r'項)?(?:まで)?' + enum_separators
                     if re.search(enum_pattern, context_for_enum):
                         target_folder = CROSS_LINKABLE_LAWS[cross_law_name]
-                        if target_folder != law_name:
+                        # 法令名自体が異なれば許可（「新会社法」≠「会社法」）
+                        # これにより改正法断片内の「新会社法第N条、第M条」もリンク化される
+                        if cross_law_name != law_name:
                             cross_link_target = target_folder
                             cross_link_law_name = cross_law_name
                         break
+
+                # パターン2: 列挙の継続 - 「第N条、」または「第N項、」で終わり、
+                # より前に「法令名第M条」がある
+                # 「新会社法第244条、第244条の2、第282条」のような長い列挙に対応
+                # 「新会社法第282条第二項及び第三項、第286条の2」のような項列挙も対応
+                #
+                # 注: 長い列挙では法令名が100文字以上前にある場合があるため、
+                # 拡張コンテキスト（300文字）を使用して法令名を検索する
+                if cross_link_target is None:
+                    # 条または項で終わる列挙パターン
+                    # 「第N条まで及び」のような範囲パターンにも対応（「まで」をオプションで追加）
+                    bare_enum_pattern_article = r'第' + kanji_nums + r'条(?:の' + kanji_nums + r')?(?:第' + kanji_nums + r'項)?(?:まで)?' + enum_separators
+                    bare_enum_pattern_paragraph = r'第' + kanji_nums + r'項(?:まで)?' + enum_separators
+                    if re.search(bare_enum_pattern_article, context_for_enum) or re.search(bare_enum_pattern_paragraph, context_for_enum):
+                        # 拡張コンテキストで「法令名第N条」パターンを検索
+                        # 長い列挙では法令名が遠くにあるため、CONTEXT_WINDOW_EXTERNAL_LAW を使用
+                        extended_context_start = max(0, match_start - CONTEXT_WINDOW_EXTERNAL_LAW)
+                        extended_context = text[extended_context_start:match_start]
+                        extended_context_cleaned = re.sub(r'（[^）]*）', '', extended_context)
+                        extended_context_for_enum = strip_wikilinks(extended_context_cleaned)
+                        for cross_law_name in CROSS_LINKABLE_LAWS_SORTED:
+                            law_with_article = re.escape(cross_law_name) + r'第' + kanji_nums + r'条'
+                            if re.search(law_with_article, extended_context_for_enum):
+                                target_folder = CROSS_LINKABLE_LAWS[cross_law_name]
+                                if cross_law_name != law_name:
+                                    cross_link_target = target_folder
+                                    cross_link_law_name = cross_law_name
+                                break
 
             # 1b. 直近に見つからない場合、文スコープ内のクロスリンク対象を検索
             # 「刑法第176条、第177条」のような連続参照に対応

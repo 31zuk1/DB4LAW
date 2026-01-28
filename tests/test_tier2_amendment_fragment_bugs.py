@@ -213,6 +213,37 @@ class TestSupplementPrefixBug:
         # 本文へのリンクは生成されない
         assert "[[" not in result
 
+    def test_fuzoku_enumeration_pattern(self):
+        """
+        「附則第9条及び第10条」の列挙パターン
+
+        Context: 附則第九条及び第十条の規定
+        - 「第九条」も「第十条」も附則条文への参照
+        - どちらも本文へリンクされてはならない
+        """
+        text = "附則第九条及び第十条第一項の規定"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 本文へのリンクは生成されない
+        assert "[[laws/刑法/本文/第9条.md" not in result
+        assert "[[laws/刑法/本文/第10条.md" not in result
+        assert "[[" not in result
+
+    def test_fuzoku_enumeration_with_wikilink(self):
+        """
+        既にWikiLink化された附則参照の後の列挙
+
+        Context: 附則[[...]]及び第十条
+        - WikiLinkを除去してチェック
+        """
+        # シミュレート: 第九条が先に処理されてWikiLinkになっている場合
+        # （実際には附則第九条はリンク化されないが、テスト用）
+        text = "附則第九条及び第十条"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 本文へのリンクは生成されない
+        assert "[[" not in result
+
 
 class TestCombinedScenario:
     """
@@ -262,6 +293,127 @@ class TestCombinedScenario:
 
         # 「附則第36条」は附則参照なのでリンク化しない
         assert "[[laws/民事訴訟法/本文/第36条.md" not in result
+
+    def test_kaisei_mae_ato_pattern(self):
+        """
+        「令和四年改正前刑法第十三条」のパターン
+
+        リグレッション防止テスト:
+        - 「改正前刑法」「改正後刑法」のように改正前後の法令への参照は
+          明示的な法令名参照としてリンク化される
+        """
+        text = "令和四年改正前刑法第十三条の規定"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 「刑法第13条」は刑法へリンクされる（改正前刑法は刑法への参照）
+        assert "[[laws/刑法/本文/第13条.md|第十三条]]" in result
+
+    def test_kaisei_ato_pattern(self):
+        """
+        「改正後民法」のパターン
+        """
+        text = "改正後民法第百条の規定"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 「民法第100条」は民法へリンクされる
+        assert "[[laws/民法/本文/第100条.md|第百条]]" in result
+
+    def test_shin_kaishaho_enumeration(self):
+        """
+        「新会社法第244条第三項、第244条の二」の列挙パターン
+
+        改正法断片内で「新会社法」に続く列挙された条文参照は
+        すべて会社法へリンクされる。
+        """
+        text = "新会社法第二百四十四条第三項、第二百四十四条の二の規定"
+        result = self.extractor.replace_refs(text, "会社法", is_amendment_fragment=True)
+
+        # 「第244条」は会社法へリンク
+        assert "[[laws/会社法/本文/第244条.md|第二百四十四条]]" in result
+        # 列挙された「第244条の2」も会社法へリンク
+        assert "[[laws/会社法/本文/第244条の2.md|第二百四十四条の二]]" in result
+
+    def test_shin_kaishaho_multiple_enumeration(self):
+        """
+        「新会社法第244条第三項、第244条の二、第282条第二項及び第三項、第286条の二」
+
+        複数の条文が列挙されている場合もすべてリンク化される。
+        """
+        text = "新会社法第二百四十四条第三項、第二百四十四条の二、第二百八十二条第二項及び第二百八十六条の二の規定"
+        result = self.extractor.replace_refs(text, "会社法", is_amendment_fragment=True)
+
+        # すべて会社法へリンク
+        assert "[[laws/会社法/本文/第244条.md|第二百四十四条]]" in result
+        assert "[[laws/会社法/本文/第244条の2.md|第二百四十四条の二]]" in result
+        assert "[[laws/会社法/本文/第282条.md|第二百八十二条]]" in result
+        assert "[[laws/会社法/本文/第286条の2.md|第二百八十六条の二]]" in result
+
+
+class TestAmendmentLawSelfReference:
+    """
+    バグ5: 「第N条中{法令名}」パターンで改正法自身の条文がリンク化される
+
+    問題: 施行期日条項などで「第一条中刑事訴訟法第三百四十四条」のようなテキストがある場合、
+    「第一条」が親法（例: 刑法）へリンクされてしまう。
+
+    正しい動作: 「第N条中{法令名}」パターンでは、第N条は改正法自身の条文番号を指すため、
+    リンク化しない（ただし「刑事訴訟法第三百四十四条」は正しくリンク化する）。
+    """
+
+    def setup_method(self):
+        vault_root = Path(__file__).parent.parent / "Vault"
+        set_vault_root(vault_root)
+        self.extractor = EdgeExtractor(vault_root=vault_root)
+
+    def test_article_naka_pattern_not_linked(self):
+        """
+        「第一条中刑事訴訟法」の「第一条」はリンク化しない
+
+        Context: 公布の日第一条中刑事訴訟法第三百四十四条に一項を加える改正規定
+        - 「第一条」= 改正法の第一条（刑事訴訟法を改正する条文）
+        - 「第三百四十四条」= 刑事訴訟法の第344条（正しくリンク化）
+        """
+        text = "公布の日第一条中刑事訴訟法第三百四十四条に一項を加える改正規定"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 「第一条」は改正法自身の条文なのでリンク化されない
+        assert "[[laws/刑法/本文/第1条.md|第一条]]" not in result
+        assert "[[laws/刑事訴訟法/本文/第1条.md|第一条]]" not in result
+
+        # 「刑事訴訟法第三百四十四条」は正しくリンク化される
+        assert "[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]" in result
+
+    def test_multiple_naka_pattern_not_linked(self):
+        """
+        「第一条中...第二条中...第三条中」の複数パターン
+
+        Context: 第一条中刑事訴訟法...第二条中刑法...第三条中出入国管理及び難民認定法
+        - すべての「第N条」は改正法自身の条文
+        """
+        text = "第一条中刑事訴訟法第三百四十四条の改正規定、第二条中刑法第九十七条の改正規定並びに第三条中出入国管理及び難民認定法第七十二条の改正規定"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # すべての「第N条中」パターンはリンク化されない
+        assert "[[laws/刑法/本文/第1条.md|第一条]]" not in result
+        assert "[[laws/刑法/本文/第2条.md|第二条]]" not in result
+        assert "[[laws/刑法/本文/第3条.md|第三条]]" not in result
+
+        # クロスリンク可能な「刑事訴訟法第344条」「刑法第97条」はリンク化される
+        assert "[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]" in result
+        assert "[[laws/刑法/本文/第97条.md|第九十七条]]" in result
+
+        # Vaultに存在しない法令（出入国管理及び難民認定法）はリンク化されない
+        assert "[[laws/出入国管理及び難民認定法" not in result
+
+    def test_naka_pattern_with_law_prefix_linked(self):
+        """
+        「刑事訴訟法第一条中...」のように法令名が付いている場合はリンク化する
+        """
+        text = "刑事訴訟法第一条中の規定"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 「刑事訴訟法第一条」は刑事訴訟法へリンク化される
+        assert "[[laws/刑事訴訟法/本文/第1条.md|第一条]]" in result
 
 
 if __name__ == "__main__":
