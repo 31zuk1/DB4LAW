@@ -22,7 +22,8 @@ def build_tier1(
     targets: Path = typer.Option(..., help="Path to targets.yaml"),
     extract_edges: bool = typer.Option(False, help="Extract edges (Tier 2)"),
     generate_structure: bool = typer.Option(False, help="Generate Chapter/Section structure nodes"),
-    edge_schema: str = typer.Option("v2", help="Edge schema version: v2 (standard, refs + containment) or v1 (Phase A compatible)")
+    edge_schema: str = typer.Option("v2", help="Edge schema version: v2 (standard, refs + containment) or v1 (Phase A compatible)"),
+    write_manifest: bool = typer.Option(True, help="Write build manifest to Vault/.db4law/manifest.json")
 ):
     """
     Generate Tier 1 & 2 (Articles & Edges).
@@ -33,6 +34,7 @@ def build_tier1(
     """
     from .core.tier1 import Tier1Builder
     from .core.edge_schema import EdgeSchema
+    from .core.provenance import create_manifest, write_manifest as write_manifest_file
 
     # スキーマバリデーション
     if edge_schema not in ("v1", "v2"):
@@ -41,6 +43,17 @@ def build_tier1(
     schema = EdgeSchema.V1 if edge_schema == "v1" else EdgeSchema.V2
     builder = Tier1Builder(vault, targets)
     builder.build(extract_edges, generate_structure=generate_structure, edge_schema=schema)
+
+    # Write provenance manifest
+    if write_manifest:
+        manifest = create_manifest(
+            targets_path=targets,
+            edge_schema=edge_schema,
+            extract_edges=extract_edges,
+            generate_structure=generate_structure
+        )
+        manifest_path = write_manifest_file(manifest, vault)
+        typer.echo(f"Manifest written to: {manifest_path}")
 
 @app.command()
 def enrich_ndl(

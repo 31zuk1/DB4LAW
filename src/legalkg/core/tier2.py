@@ -417,6 +417,27 @@ def get_law_name_variants(law_name: str) -> Tuple[str, ...]:
     )
 
 
+# ==============================================================================
+# 附則列挙スコープ検出パターン
+# ==============================================================================
+# 「附則第N条、第M条、第O条」のような附則条文の列挙を検出する。
+# 日本語の省略慣行により、後続の「第M条」「第O条」にも「附則」が省略される。
+# この列挙内の参照は附則への参照であり、外部法令へのリンクではない。
+#
+# 例:
+#   「附則第五条第三項、第六条第三項、第八条第五項...」
+#   → 「第八条」は附則第八条であり、刑事訴訟法第八条ではない
+#
+# 検出条件:
+#   1. 拡張コンテキスト内に「附則第N条」が存在する
+#   2. その後に「外部法令名第N条」パターンが出現していない（外部法がスコープを奪っていない）
+#   3. 列挙セパレータで継続している
+#
+# 注: 「{外部法令名}附則第N条」のような外部法の附則への参照は別途処理が必要。
+#     現時点では自法令の附則のみを対象とする。
+# ==============================================================================
+
+
 # スコープをリセットする照応語パターン
 # これらが法名出現後（tail）に含まれていればスコープをOFFにする
 #
@@ -543,6 +564,65 @@ def has_external_law_in_context(text: str, match_position: int) -> bool:
                 return True
 
     return False
+
+
+def is_in_supplement_enumeration(context: str) -> bool:
+    """
+    コンテキストが附則列挙スコープ内かどうかをチェック
+
+    「附則第五条、第六条、第八条」のような附則条文の列挙において、
+    後続の「第六条」「第八条」は「附則」が省略されているが、
+    附則への参照であり外部法令への参照ではない。
+
+    検出条件:
+    1. コンテキスト内に「附則第N条」パターンが存在する
+    2. その後に「{外部法令名}第N条」パターンが出現していない
+    3. 列挙セパレータ（、及び並びに等）で継続している
+
+    注意:
+    - 「{外部法令名}附則第N条」は外部法の附則であり、この関数では検出しない
+    - 句点（。）がある場合は文が終わっているのでスコープ外
+
+    Args:
+        context: マッチ位置の直前のテキスト（WikiLink除去済み、括弧除去済み）
+
+    Returns:
+        True: 附則列挙スコープ内（リンク化しない）
+        False: スコープ外
+    """
+    # 漢数字パターン
+    kanji_nums = r'[一二三四五六七八九十百千〇0-9]+'
+
+    # 附則第N条のパターンを検索
+    fuzoku_pattern = r'附則第' + kanji_nums + r'条'
+    fuzoku_match = None
+    for m in re.finditer(fuzoku_pattern, context):
+        fuzoku_match = m
+
+    if fuzoku_match is None:
+        return False
+
+    # 附則第N条より後の部分を取得
+    after_fuzoku = context[fuzoku_match.end():]
+
+    # 外部法令名＋第N条のパターンがあるかチェック
+    # もし「刑事訴訟法第344条」のようなパターンがあれば、
+    # 外部法スコープに切り替わっている
+    for ext_law in CROSS_LINKABLE_LAWS_SORTED:
+        ext_pattern = re.escape(ext_law) + r'第' + kanji_nums + r'条'
+        if re.search(ext_pattern, after_fuzoku):
+            # 外部法令がスコープを奪っている
+            return False
+
+    for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+        ext_pattern = re.escape(ext_law) + r'第' + kanji_nums + r'条'
+        if re.search(ext_pattern, after_fuzoku):
+            # 外部法令がスコープを奪っている
+            return False
+
+    # 附則第N条の後、外部法令スコープへの切り替えなし
+    # → 附則列挙スコープ内
+    return True
 
 
 def has_self_law_prefix(context: str) -> bool:
@@ -1244,6 +1324,10 @@ class EdgeExtractor:
                 #
                 # 注: 長い列挙では法令名が100文字以上前にある場合があるため、
                 # 拡張コンテキスト（300文字）を使用して法令名を検索する
+                #
+                # 重要: 附則列挙スコープのチェック（フェーズ1 止血）
+                # 「附則第五条、第六条、第八条」のような附則列挙では、外部法スコープを適用しない。
+                # 附則列挙スコープが有効な場合、この参照はリンク化せずスキップする。
                 if cross_link_target is None:
                     # 条または項で終わる列挙パターン
                     # 「第N条まで及び」のような範囲パターンにも対応（「まで」をオプションで追加）
@@ -1257,6 +1341,19 @@ class EdgeExtractor:
                         extended_context = text[extended_context_start:match_start]
                         extended_context_cleaned = re.sub(r'（[^）]*）', '', extended_context)
                         extended_context_for_enum = strip_wikilinks(extended_context_cleaned)
+
+                        # ======================================================
+                        # 附則列挙スコープのチェック（フェーズ1 止血）
+                        # ======================================================
+                        # 「附則第N条、第M条、第O条」のような列挙内にいる場合、
+                        # 外部法スコープ検索をスキップしてリンク化しない。
+                        # これにより「附則第五条、第六条、第八条」の「第八条」が
+                        # 誤って刑事訴訟法第8条にリンクされる問題を防ぐ。
+                        if is_in_supplement_enumeration(extended_context_for_enum):
+                            # 附則列挙スコープ内 → リンク化しない
+                            # 将来的には範囲ノードへのリダイレクトなどの対応も検討
+                            return original_text
+
                         # 最も近い（位置が最後の）法令名を見つける
                         # 「刑法第1条、刑事訴訟法第2条、第3条」の「第3条」は刑事訴訟法にリンク
                         closest_match = None

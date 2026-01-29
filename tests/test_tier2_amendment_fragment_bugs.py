@@ -416,5 +416,127 @@ class TestAmendmentLawSelfReference:
         assert "[[laws/刑事訴訟法/本文/第1条.md|第一条]]" in result
 
 
+class TestSupplementEnumerationScopeLeak:
+    """
+    バグ6: 附則列挙スコープ漏れ（2026-01-29 修正）
+
+    問題: 「附則第五条第三項、第六条第三項、第八条第五項から第七項まで」のような
+    附則条文の列挙において、後続の「第八条」が刑事訴訟法第8条へリンクされてしまう。
+
+    根本原因: 附則列挙の後、外部法令スコープが誤って適用されていた。
+    「第八条」は「附則第八条」の略記であり、外部法令への参照ではない。
+
+    正しい動作: 附則列挙スコープ内の裸参照はリンク化しない。
+    """
+
+    def setup_method(self):
+        vault_root = Path(__file__).parent.parent / "Vault"
+        set_vault_root(vault_root)
+        self.extractor = EdgeExtractor(vault_root=vault_root)
+
+    def test_fuzoku_enumeration_scope_preserved(self):
+        """
+        「附則第五条第三項、第六条第三項、第八条第五項」の列挙
+
+        Context: 刑法附則第1条（令和五年法律第28号）の施行期日規定
+        - 「附則第五条」で附則列挙スコープ開始
+        - 「第六条」「第八条」は附則列挙の継続
+        - どちらも外部法令へリンクされてはならない
+        """
+        text = "附則第五条第三項、第六条第三項、第八条第五項から第七項まで"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 附則列挙内の参照はすべてリンク化されない
+        assert "[[" not in result
+
+    def test_fuzoku_enumeration_scope_blocks_external(self):
+        """
+        附則列挙スコープが外部法令スコープをブロックする
+
+        問題のパターン: 「附則第五条...刑事訴訟法第344条...第八条」
+        - 刑事訴訟法第344条は正しくリンク化
+        - しかし「第八条」は附則列挙の継続であり、刑事訴訟法へリンクされない
+        """
+        text = "附則第五条第三項及び第六条第三項並びに第八条の規定"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 附則列挙内なので外部法令へリンクされない
+        assert "[[laws/刑事訴訟法/本文/第8条.md" not in result
+        assert "[[laws/刑法/本文/第8条.md" not in result
+        assert "[[" not in result
+
+    def test_fuzoku_enumeration_complex_pattern(self):
+        """
+        実際のパターン: 「附則第五条第三項、第六条第三項、第八条第五項から第七項まで、
+        第十条第二項並びに第十一条第三項及び第四項の規定」
+
+        すべて附則条文への参照。
+        """
+        text = (
+            "附則第五条第三項、第六条第三項、第八条第五項から第七項まで、"
+            "第十条第二項並びに第十一条第三項及び第四項の規定"
+        )
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 附則列挙内の参照はすべてリンク化されない
+        assert "[[" not in result
+
+    def test_fuzoku_enumeration_after_external_law(self):
+        """
+        外部法令参照後に附則列挙がある場合
+
+        Context: 「刑事訴訟法第344条...附則第五条、第六条」
+        - 刑事訴訟法第344条はリンク化
+        - 附則第五条以降は附則列挙なのでリンク化しない
+        """
+        text = "刑事訴訟法第三百四十四条の改正規定及び附則第五条、第六条の規定"
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 「刑事訴訟法第344条」はリンク化される
+        assert "[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]" in result
+
+        # 附則列挙内はリンク化されない
+        assert "[[laws/刑法/本文/第5条.md" not in result
+        assert "[[laws/刑法/本文/第6条.md" not in result
+
+    def test_fuzoku_enumeration_scope_reset_by_new_external(self):
+        """
+        附則列挙後に新しい外部法令参照が来た場合、外部法令はリンク化される
+
+        Context: 「附則第五条...刑法第三十三条」
+        - 附則列挙スコープ後
+        - 「刑法第三十三条」は明示的な法令名参照なのでリンク化される
+        """
+        text = "附則第五条の規定及び刑法第三十三条に一項を加える改正規定"
+        result = self.extractor.replace_refs(text, "刑事訴訟法", is_amendment_fragment=True)
+
+        # 附則参照はリンク化されない
+        assert "[[laws/刑事訴訟法/本文/第5条.md" not in result
+
+        # 明示的な「刑法第33条」はリンク化される
+        assert "[[laws/刑法/本文/第33条.md|第三十三条]]" in result
+
+    def test_real_r5_l28_pattern(self):
+        """
+        実際の令和5年法律第28号のパターン再現
+
+        刑法/附則/令和五年五月一七日法律第二八号/令和五年五月一七日法律第二八号_第1条.md
+        で発見されたバグを再現。
+        """
+        text = (
+            "附則第五条第三項、第六条第三項、第八条第五項から第七項まで、"
+            "第十条第二項並びに第十一条第三項及び第四項の規定"
+            "刑法等一部改正法の施行の日（以下「刑法等一部改正法施行日」という。）"
+        )
+        result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
+
+        # 附則列挙内の「第八条」が刑事訴訟法へリンクされていないこと
+        assert "[[laws/刑事訴訟法/本文/第8条.md" not in result
+        assert "[[laws/刑法/本文/第8条.md" not in result
+
+        # 附則列挙内のすべての参照がリンク化されていないこと
+        assert "[[" not in result
+
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
