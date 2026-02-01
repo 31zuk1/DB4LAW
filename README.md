@@ -263,6 +263,62 @@ python scripts/qa/check_wikilinks.py --vault ./Vault --only-prefix laws/
 
 空リンク（参照先が存在しないWikiLink）を検出。削除条文など仕様上許容するパターンは `link_check_ignore.txt` で除外。
 
+### 7. Vault監査
+
+```bash
+# レポート生成のみ
+python scripts/qa/audit_vault.py --vault ./Vault --targets targets.yaml --report-only
+
+# 安全な自動修正を適用
+python scripts/qa/audit_vault.py --vault ./Vault --targets targets.yaml --fix-safe
+```
+
+監査項目：
+- Provenance検証（manifest.jsonとの整合性）
+- メタデータスキーマ検証
+- 範囲ノード（削除条文）の整合性
+- WikiLink整合性
+- 既知の回帰パターン検出（スコープ漏れ等）
+
+## CI/CD
+
+GitHub Actions による自動テスト・監査：
+
+```yaml
+# .github/workflows/ci.yml
+jobs:
+  test:    # pytest 実行
+  audit:   # Vault監査・WikiLinkチェック
+```
+
+### CI が検出するもの
+
+| チェック | 失敗条件 |
+|----------|----------|
+| pytest | テスト失敗 |
+| Critical issues | メタデータ欠損等の重大問題 |
+| Scope leak | 附則列挙スコープ漏れ |
+| Broken links | 3件を超える空リンク |
+
+## Provenance（来歴追跡）
+
+Vaultのビルド情報を `Vault/.db4law/manifest.json` に記録：
+
+```json
+{
+  "generator_repo_commit": "abc123...",
+  "build_timestamp": "2026-01-29T03:14:58Z",
+  "targets_hash": "sha256:...",
+  "edge_schema": "v2",
+  "extract_edges": true
+}
+```
+
+これにより：
+- Vaultが特定のコードバージョンで生成されたことを検証
+- 再生成が必要かどうかを判定
+- 監査証跡を維持
+
 ## アーキテクチャ
 
 ### 3層データモデル
@@ -317,7 +373,8 @@ DB4LAW/
 │   │   ├── tier0.py          # 法令一覧取得
 │   │   ├── tier1.py          # 条文・構造ノード抽出
 │   │   ├── tier2.py          # 参照抽出・リンク化
-│   │   └── edge_schema.py    # Edge schema v1/v2
+│   │   ├── edge_schema.py    # Edge schema v1/v2
+│   │   └── provenance.py     # ビルド来歴追跡
 │   └── utils/
 │       ├── article_formatter.py  # 条文番号変換
 │       ├── markdown.py           # YAML frontmatter処理
@@ -333,22 +390,31 @@ DB4LAW/
 │   │   ├── fix_frontmatter.py        # YAML frontmatter修復
 │   │   └── _artifacts/               # 生成CSV/JSONL
 │   └── qa/
+│       ├── audit_vault.py            # Vault監査スクリプト
 │       ├── check_wikilinks.py        # WikiLink整合性チェック
 │       └── link_check_ignore.txt     # 除外パターン
-├── tests/                    # pytest テスト（139件）
-├── Vault/laws/               # 出力Vault
-└── targets.yaml              # 対象法令リスト
+├── .github/workflows/
+│   └── ci.yml                # CI/CD設定
+├── tests/                    # pytest テスト（178件）
+├── Vault/
+│   ├── laws/                 # 出力Vault
+│   ├── .db4law/manifest.json # ビルド来歴
+│   └── reports/              # 監査レポート
+├── targets.yaml              # 対象法令リスト
+├── requirements.txt          # 依存関係（開発用）
+└── requirements-ci.txt       # 依存関係（CI用）
 ```
 
 ## テスト
 
 ```bash
-# 全テスト実行
+# 全テスト実行（178件）
 pytest
 
 # 特定テストファイル
 pytest tests/test_tier2_vault_based.py -v
 pytest tests/test_tier2_self_law_reference.py -v
+pytest tests/test_tier2_amendment_fragment_bugs.py -v
 ```
 
 ## データソース

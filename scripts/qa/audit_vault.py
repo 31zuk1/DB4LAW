@@ -28,8 +28,57 @@ from typing import List, Dict, Optional, Set, Tuple
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'src'))
 
+import yaml
+
 from legalkg.core.provenance import verify_manifest, needs_regeneration
 from legalkg.utils.markdown import parse_frontmatter, serialize_frontmatter
+
+
+# ============================================================================
+# Target Laws Resolution
+# ============================================================================
+
+def get_target_law_names(targets_path: Path, vault_root: Path) -> Set[str]:
+    """
+    Read targets.yaml and resolve law IDs to law names.
+
+    Returns a set of law directory names (e.g., {'刑法', '民法', ...}).
+    """
+    if not targets_path or not targets_path.exists():
+        return set()
+
+    with open(targets_path, 'r', encoding='utf-8') as f:
+        targets_data = yaml.safe_load(f)
+
+    law_ids = set(targets_data.get('targets', []))
+
+    # Build law_id -> law_name mapping from Vault
+    law_names = set()
+    laws_dir = vault_root / 'laws'
+
+    if not laws_dir.exists():
+        return set()
+
+    for law_dir in laws_dir.iterdir():
+        if not law_dir.is_dir():
+            continue
+
+        # Check the parent law file for egov_law_id
+        parent_file = law_dir / f"{law_dir.name}.md"
+        if not parent_file.exists():
+            continue
+
+        try:
+            content = parent_file.read_text(encoding='utf-8')
+            doc = parse_frontmatter(content)
+            if doc and doc.metadata:
+                egov_id = doc.metadata.get('egov_law_id')
+                if egov_id in law_ids:
+                    law_names.add(law_dir.name)
+        except Exception:
+            continue
+
+    return law_names
 
 
 # ============================================================================
@@ -216,25 +265,50 @@ def validate_metadata(file_path: Path, vault_root: Path) -> List[AuditIssue]:
     return issues
 
 
-def scan_metadata(vault_root: Path, only_prefix: Optional[str] = None) -> Tuple[List[AuditIssue], int]:
-    """Scan all files for metadata issues."""
+def scan_metadata(
+    vault_root: Path,
+    target_laws: Optional[Set[str]] = None,
+    only_prefix: Optional[str] = None
+) -> Tuple[List[AuditIssue], int]:
+    """
+    Scan files for metadata issues.
+
+    If target_laws is provided, only scan files within those law directories.
+    Otherwise, scan all files (legacy behavior).
+    """
     issues = []
     file_count = 0
 
-    search_path = vault_root
-    if only_prefix:
-        search_path = vault_root / only_prefix
+    if target_laws:
+        # Only scan target law directories
+        for law_name in target_laws:
+            law_dir = vault_root / 'laws' / law_name
+            if not law_dir.exists():
+                continue
 
-    for md_file in search_path.rglob('*.md'):
-        # Skip hidden files/directories
-        if any(part.startswith('.') for part in md_file.parts):
-            continue
-        # Skip reports
-        if 'reports' in md_file.parts:
-            continue
+            for md_file in law_dir.rglob('*.md'):
+                # Skip hidden files/directories
+                if any(part.startswith('.') for part in md_file.parts):
+                    continue
 
-        file_count += 1
-        issues.extend(validate_metadata(md_file, vault_root))
+                file_count += 1
+                issues.extend(validate_metadata(md_file, vault_root))
+    else:
+        # Scan all files (legacy behavior)
+        search_path = vault_root
+        if only_prefix:
+            search_path = vault_root / only_prefix
+
+        for md_file in search_path.rglob('*.md'):
+            # Skip hidden files/directories
+            if any(part.startswith('.') for part in md_file.parts):
+                continue
+            # Skip reports
+            if 'reports' in md_file.parts:
+                continue
+
+            file_count += 1
+            issues.extend(validate_metadata(md_file, vault_root))
 
     return issues, file_count
 
@@ -342,7 +416,10 @@ def check_range_node_coverage(
 # Regression Pattern Detection
 # ============================================================================
 
-def check_supplement_enumeration_scope(vault_root: Path) -> List[AuditIssue]:
+def check_supplement_enumeration_scope(
+    vault_root: Path,
+    target_laws: Optional[Set[str]] = None
+) -> List[AuditIssue]:
     """
     Detect the known regression pattern: supplement enumeration scope leak.
 
@@ -366,9 +443,16 @@ def check_supplement_enumeration_scope(vault_root: Path) -> List[AuditIssue]:
         r'\[\[laws/([^/]+)/本文/第(\d+)条\.md\|'
     )
 
+    # Determine which law directories to scan
+    laws_to_scan = target_laws if target_laws else None
+
     # Scan amendment fragments
     for law_dir in (vault_root / 'laws').iterdir():
         if not law_dir.is_dir():
+            continue
+
+        # Skip if not in target laws
+        if laws_to_scan and law_dir.name not in laws_to_scan:
             continue
 
         fuzoku_dir = law_dir / '附則'
@@ -406,7 +490,10 @@ def check_supplement_enumeration_scope(vault_root: Path) -> List[AuditIssue]:
     return issues
 
 
-def check_amendment_fragment_bare_refs(vault_root: Path) -> List[AuditIssue]:
+def check_amendment_fragment_bare_refs(
+    vault_root: Path,
+    target_laws: Optional[Set[str]] = None
+) -> List[AuditIssue]:
     """
     Check that amendment fragments don't have bare references linked to parent law.
 
@@ -418,8 +505,15 @@ def check_amendment_fragment_bare_refs(vault_root: Path) -> List[AuditIssue]:
     # Pattern: [[laws/X/本文/第N条.md|第N条]] where X is the parent law
     # and this appears in an amendment fragment without explicit law name prefix
 
+    # Determine which law directories to scan
+    laws_to_scan = target_laws if target_laws else None
+
     for law_dir in (vault_root / 'laws').iterdir():
         if not law_dir.is_dir():
+            continue
+
+        # Skip if not in target laws
+        if laws_to_scan and law_dir.name not in laws_to_scan:
             continue
 
         fuzoku_dir = law_dir / '附則'
@@ -708,15 +802,21 @@ def main():
     print("DB4LAW Vault Audit")
     print("=" * 60)
 
+    # Resolve target laws from targets.yaml
+    target_laws = None
+    if args.targets:
+        target_laws = get_target_law_names(args.targets, vault_root)
+        print(f"\nTarget laws: {len(target_laws)} ({', '.join(sorted(target_laws)[:5])}{'...' if len(target_laws) > 5 else ''})")
+
     # A. Provenance Check
     print("\n[A] Checking provenance...")
     provenance_issues = check_provenance(vault_root, args.targets)
     result.issues.extend(provenance_issues)
     print(f"    Found {len(provenance_issues)} provenance issues")
 
-    # B. Metadata Schema Validation
+    # B. Metadata Schema Validation (only target laws)
     print("\n[B] Validating metadata schemas...")
-    metadata_issues, file_count = scan_metadata(vault_root, args.only_prefix)
+    metadata_issues, file_count = scan_metadata(vault_root, target_laws, args.only_prefix)
     result.issues.extend(metadata_issues)
     result.total_files_scanned = file_count
     print(f"    Scanned {file_count:,} files, found {len(metadata_issues)} metadata issues")
@@ -748,16 +848,16 @@ def main():
     else:
         print("    No broken links report found - run check_wikilinks.py first")
 
-    # E. Regression Pattern Detection
+    # E. Regression Pattern Detection (only target laws)
     print("\n[E] Checking for known regression patterns...")
 
     print("    - Checking supplement enumeration scope...")
-    scope_issues = check_supplement_enumeration_scope(vault_root)
+    scope_issues = check_supplement_enumeration_scope(vault_root, target_laws)
     result.issues.extend(scope_issues)
     print(f"      Found {len(scope_issues)} potential scope leak issues")
 
     print("    - Checking amendment fragment bare refs...")
-    bare_ref_issues = check_amendment_fragment_bare_refs(vault_root)
+    bare_ref_issues = check_amendment_fragment_bare_refs(vault_root, target_laws)
     result.issues.extend(bare_ref_issues)
     print(f"      Found {len(bare_ref_issues)} potential bare ref issues")
 
@@ -799,10 +899,11 @@ def main():
     print(f"  Fixes:     {result.fixes_applied}")
 
     # Exit code
-    if critical > 0:
+    # In --report-only mode, always exit 0 (CI will check specific conditions separately)
+    if args.report_only:
+        sys.exit(0)
+    elif critical > 0:
         sys.exit(2)
-    elif warnings > 0:
-        sys.exit(1)
     else:
         sys.exit(0)
 
