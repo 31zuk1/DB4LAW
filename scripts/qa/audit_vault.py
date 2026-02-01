@@ -325,12 +325,19 @@ def parse_range_node_filename(filename: str) -> Optional[Tuple[int, int]]:
     return None
 
 
-def build_range_node_index(vault_root: Path) -> Dict[str, List[RangeNode]]:
+def build_range_node_index(
+    vault_root: Path,
+    target_laws: Optional[Set[str]] = None
+) -> Dict[str, List[RangeNode]]:
     """Build an index of all range nodes by law name."""
     index = defaultdict(list)
 
     for law_dir in (vault_root / 'laws').iterdir():
         if not law_dir.is_dir():
+            continue
+
+        # Skip if not in target laws
+        if target_laws and law_dir.name not in target_laws:
             continue
 
         honbun_dir = law_dir / '本文'
@@ -821,9 +828,9 @@ def main():
     result.total_files_scanned = file_count
     print(f"    Scanned {file_count:,} files, found {len(metadata_issues)} metadata issues")
 
-    # C. Range Node Analysis
+    # C. Range Node Analysis (only target laws)
     print("\n[C] Analyzing range nodes...")
-    range_index = build_range_node_index(vault_root)
+    range_index = build_range_node_index(vault_root, target_laws)
     total_ranges = sum(len(v) for v in range_index.values())
     print(f"    Found {total_ranges} range nodes across {len(range_index)} laws")
 

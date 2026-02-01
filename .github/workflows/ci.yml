@@ -100,23 +100,36 @@ jobs:
             --vault ./Vault \
             --only-prefix laws/ || true
 
-          # Check for new broken links beyond expected ones
-          BROKEN_COUNT=$(python -c "
+      - name: Check WikiLink results
+        run: |
+          python << 'EOF'
           import json
-          with open('Vault/reports/link_check_broken.json') as f:
+          import sys
+          from pathlib import Path
+
+          report_path = Path('Vault/reports/link_check_broken.json')
+          if not report_path.exists():
+              print("⚠️ WikiLink report not found - skipping check")
+              sys.exit(0)
+
+          with open(report_path) as f:
               data = json.load(f)
-          print(data.get('broken_count', 0))
-          " 2>/dev/null || echo "0")
 
-          # Expected broken links (future articles in 会社法)
-          EXPECTED_BROKEN=3
+          broken_count = data.get('broken_count', 0)
+          expected_broken = 3  # Future articles in 会社法
 
-          if [ "$BROKEN_COUNT" -gt "$EXPECTED_BROKEN" ]; then
-            echo "❌ Found $BROKEN_COUNT broken links (expected: $EXPECTED_BROKEN)"
-            exit 1
-          fi
+          print(f"Broken links: {broken_count}")
+          print(f"Expected: {expected_broken}")
 
-          echo "✅ Broken link count within expected range ($BROKEN_COUNT <= $EXPECTED_BROKEN)"
+          if broken_count > expected_broken:
+              print(f"\n❌ Found {broken_count} broken links (expected: {expected_broken})")
+              # Show the extra broken links
+              for link in data.get('broken_links', [])[:10]:
+                  print(f"  - {link.get('source_file')}: {link.get('target_path')}")
+              sys.exit(1)
+
+          print(f"\n✅ Broken link count within expected range")
+          EOF
 
       - name: Upload audit reports
         uses: actions/upload-artifact@v4

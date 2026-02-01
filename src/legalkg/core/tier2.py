@@ -608,13 +608,9 @@ def is_in_supplement_enumeration(context: str) -> bool:
     # 外部法令名＋第N条のパターンがあるかチェック
     # もし「刑事訴訟法第344条」のようなパターンがあれば、
     # 外部法スコープに切り替わっている
-    for ext_law in CROSS_LINKABLE_LAWS_SORTED:
-        ext_pattern = re.escape(ext_law) + r'第' + kanji_nums + r'条'
-        if re.search(ext_pattern, after_fuzoku):
-            # 外部法令がスコープを奪っている
-            return False
-
-    for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+    # 両方のリストを結合して1回のループで処理
+    all_external_laws = CROSS_LINKABLE_LAWS_SORTED + EXTERNAL_LAW_PATTERNS_SORTED
+    for ext_law in all_external_laws:
         ext_pattern = re.escape(ext_law) + r'第' + kanji_nums + r'条'
         if re.search(ext_pattern, after_fuzoku):
             # 外部法令がスコープを奪っている

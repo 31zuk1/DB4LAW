@@ -1,7 +1,7 @@
 # DB4LAW Vault Audit Report
 
-**Generated:** 2026-02-01T21:32:33.592520+00:00
-**Git Commit:** ffa6704118da3d7aa639a04d179eaf362df4cb3a
+**Generated:** 2026-02-01T22:35:53.941596+00:00
+**Git Commit:** c06321e318aaaa595f5af99e8ee5d8599d965297
 **Vault Path:** /Users/haramizuki/Project/DB4LAW/Vault
 **Targets Path:** targets.yaml
 
@@ -16,7 +16,7 @@
 
 ### provenance: /Users/haramizuki/Project/DB4LAW/Vault/.db4law/manifest.json
 
-**Commit mismatch: Vault built with b6824d9c, current is ffa67041**
+**Commit mismatch: Vault built with b6824d9c, current is c06321e3**
 
 ## Issues Requiring Review
 
@@ -28,9 +28,9 @@ These issues need manual review and decision:
 
 Found 37 informational items (low priority).
 
+- `laws/刑事訴訟法/附則/制定時附則.md`: Parent field is null
 - `laws/会社法/附則/制定時附則.md`: Parent field is null
 - `laws/所有者不明土地の利用の円滑化等に関する特別措置法/附則/制定時附則.md`: Parent field is null
-- `laws/刑事訴訟法/附則/制定時附則.md`: Parent field is null
 - `laws/民事訴訟法/附則/令和四年五月二五日法律第四八号/令和四年五月二五日法律第四八号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民事訴訟法/附則/令和四年五月二五日法律第四八号/令和四年五月二五日法律第四八号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/所有者不明土地の利用の円滑化等に関する特別措置法/附則/令和四年五月九日法律第三八号/令和四年五月九日法律第三八号_第2条.md`: Possible bare reference in amendment fragment linked to parent law

@@ -9,7 +9,7 @@ import json
 import hashlib
 import subprocess
 from dataclasses import dataclass, asdict
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -122,7 +122,7 @@ def create_manifest(
     return BuildManifest(
         generator_repo_commit=commit,
         generator_repo_dirty=is_dirty,
-        build_timestamp=datetime.utcnow().isoformat() + "Z",
+        build_timestamp=datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
         targets_hash=targets_hash,
         targets_path=str(targets_path),
         edge_schema=edge_schema,
