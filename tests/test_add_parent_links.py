@@ -67,7 +67,7 @@ class TestGenerateLinksForLaw:
 
     @pytest.fixture
     def vault_laws_path(self):
-        return Path("/Users/haramizuki/Project/DB4LAW/Vault/laws")
+        return Path(__file__).parent.parent / "Vault" / "laws"
 
     def test_minjisosoho_has_seitei_dir_links(self, vault_laws_path):
         """民事訴訟法: ディレクトリ型初期附則（制定時附則/）へのリンクが生成される"""
