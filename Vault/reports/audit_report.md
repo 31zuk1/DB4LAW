@@ -1,27 +1,22 @@
 # DB4LAW Vault Audit Report
 
-**Generated:** 2026-01-29T01:07:47.469148+00:00
-**Git Commit:** 3f7d9e10b52202cc9781bc67657e64c0c8635171
+**Generated:** 2026-01-29T03:15:41.137471+00:00
+**Git Commit:** b6824d9c378f2cc9a1cf7b5be7a1138c17cd18db
 **Vault Path:** /Users/haramizuki/Project/DB4LAW/Vault
-**Targets Path:** /Users/haramizuki/Project/DB4LAW/targets.yaml
+**Targets Path:** targets.yaml
 
 ## Summary
 
 - **Files Scanned:** 13,788
-- **Total Issues:** 9,034
+- **Total Issues:** 9,028
 - **Safe Fixes Applied:** 0
 - **Range Nodes Found:** 12
-
-## Critical Issues (Requires Immediate Attention)
-
-### provenance: /Users/haramizuki/Project/DB4LAW/Vault/.db4law/manifest.json
-
-**Manifest not found - Vault provenance unknown. Run build-tier1 to generate.**
 
 ## Issues Requiring Review
 
 These issues need manual review and decision:
 
+- **[provenance]** `/Users/haramizuki/Project/DB4LAW/Vault/.db4law/manifest.json`: Vault was built from dirty working directory
 - **[metadata]** `laws/薬物犯罪等に係る没収保全等を請求することができる司法警察員の指定に関する規則/薬物犯罪等に係る没収保全等を請求することができる司法警察員の指定に関する規則.md`: Missing "type" field in frontmatter
 - **[metadata]** `laws/産業安全専門官及び労働衛生専門官規程/産業安全専門官及び労働衛生専門官規程.md`: Missing "type" field in frontmatter
 - **[metadata]** `laws/犯罪被害者等給付金の支給等による犯罪被害者等の支援に関する法律施行令/犯罪被害者等給付金の支給等による犯罪被害者等の支援に関する法律施行令.md`: Missing "type" field in frontmatter
@@ -8932,28 +8927,20 @@ These issues need manual review and decision:
 - **[metadata]** `laws/労働保険の保険料の徴収等に関する法律施行令/労働保険の保険料の徴収等に関する法律施行令.md`: Missing "type" field in frontmatter
 - **[metadata]** `laws/賃貸住宅の管理業務等の適正化に関する法律施行規則/賃貸住宅の管理業務等の適正化に関する法律施行規則.md`: Missing "type" field in frontmatter
 - **[metadata]** `laws/電気通信事業法施行規則/電気通信事業法施行規則.md`: Missing "type" field in frontmatter
-- **[regression]** `laws/刑法/附則/令和五年五月一七日法律第二八号/令和五年五月一七日法律第二八号_第1条.md` (L32): Possible supplement enumeration scope leak: article in supplement enumeration linked to 刑事訴訟法
-  - Context: `この法律は、公布の日から起算して五年を超えない範囲内において政令で定める日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。第二条中...`
-- **[regression]** `laws/刑法/附則/令和五年五月一七日法律第二八号/令和五年五月一七日法律第二八号_第1条.md` (L37): Possible supplement enumeration scope leak: article in supplement enumeration linked to 刑事訴訟法
-  - Context: `- 七 附則第五条第三項、第六条第三項、[[laws/刑事訴訟法/本文/第8条.md|第八条]]第五項から第七項まで、[[laws/刑事訴訟法/本文/第10条....`
 
 ## Informational Findings
 
-Found 41 informational items (low priority).
+Found 37 informational items (low priority).
 
 - `laws/所有者不明土地の利用の円滑化等に関する特別措置法/附則/制定時附則.md`: Parent field is null
 - `laws/会社法/附則/制定時附則.md`: Parent field is null
 - `laws/刑事訴訟法/附則/制定時附則.md`: Parent field is null
 - `laws/民事訴訟法/附則/令和四年五月二五日法律第四八号/令和四年五月二五日法律第四八号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民事訴訟法/附則/令和四年五月二五日法律第四八号/令和四年五月二五日法律第四八号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
-- `laws/民事訴訟法/附則/令和四年五月二五日法律第四八号/令和四年五月二五日法律第四八号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
-- `laws/民事訴訟法/附則/令和四年五月二五日法律第四八号/令和四年五月二五日法律第四八号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/所有者不明土地の利用の円滑化等に関する特別措置法/附則/令和四年五月九日法律第三八号/令和四年五月九日法律第三八号_第2条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/所有者不明土地の利用の円滑化等に関する特別措置法/附則/令和四年五月九日法律第三八号/令和四年五月九日法律第三八号_第2条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民法/附則/平成三〇年七月一三日法律第七二号/平成三〇年七月一三日法律第七二号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民法/附則/平成三〇年七月一三日法律第七二号/平成三〇年七月一三日法律第七二号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
-- `laws/民法/附則/平成三〇年七月一三日法律第七二号/平成三〇年七月一三日法律第七二号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
-- `laws/民法/附則/平成三〇年七月一三日法律第七二号/平成三〇年七月一三日法律第七二号_第1条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民法/附則/令和四年一二月一六日法律第一〇二号/令和四年一二月一六日法律第一〇二号_第4条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民法/附則/令和四年一二月一六日法律第一〇二号/令和四年一二月一六日法律第一〇二号_第4条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民法/附則/令和四年一二月一六日法律第一〇二号/令和四年一二月一六日法律第一〇二号_第4条.md`: Possible bare reference in amendment fragment linked to parent law
@@ -8961,8 +8948,12 @@ Found 41 informational items (low priority).
 - `laws/民法/附則/令和四年一二月一六日法律第一〇二号/令和四年一二月一六日法律第一〇二号_第4条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民法/附則/令和四年一二月一六日法律第一〇二号/令和四年一二月一六日法律第一〇二号_第4条.md`: Possible bare reference in amendment fragment linked to parent law
 - `laws/民法/附則/令和四年一二月一六日法律第一〇二号/令和四年一二月一六日法律第一〇二号_第4条.md`: Possible bare reference in amendment fragment linked to parent law
+- `laws/民法/附則/令和四年一二月一六日法律第一〇二号/令和四年一二月一六日法律第一〇二号_第4条.md`: Possible bare reference in amendment fragment linked to parent law
+- `laws/民法/附則/令和三年四月二八日法律第二四号/令和三年四月二八日法律第二四号_第2条.md`: Possible bare reference in amendment fragment linked to parent law
+- `laws/民法/附則/平成一八年六月一五日法律第七三号/平成一八年六月一五日法律第七三号_第2条.md`: Possible bare reference in amendment fragment linked to parent law
+- `laws/刑法/附則/平成一七年六月二二日法律第六六号/平成一七年六月二二日法律第六六号_第2条.md`: Possible bare reference in amendment fragment linked to parent law
 
-... and 21 more
+... and 17 more
 
 ## Range Nodes (Deleted Articles)
 

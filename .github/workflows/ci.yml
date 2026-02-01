@@ -1,0 +1,128 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          pip install pytest
+
+      - name: Run tests
+        run: |
+          PYTHONPATH=./src pytest tests/ -v --tb=short
+
+  audit:
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Run Vault audit
+        run: |
+          python scripts/qa/audit_vault.py \
+            --vault ./Vault \
+            --targets targets.yaml \
+            --report-only
+
+          # Check for critical issues in audit output
+          CRITICAL_COUNT=$(python -c "
+          import json
+          with open('Vault/reports/audit_report.json') as f:
+              data = json.load(f)
+          critical = [i for i in data.get('issues', [])
+                      if i.get('severity') == 'critical']
+          print(len(critical))
+          " 2>/dev/null || echo "0")
+
+          if [ "$CRITICAL_COUNT" -gt 0 ]; then
+            echo "❌ Found $CRITICAL_COUNT critical audit issues!"
+            exit 1
+          fi
+
+          echo "✅ No critical audit issues"
+
+      - name: Check for scope leaks
+        run: |
+          # Extract scope leak count from audit report
+          SCOPE_LEAKS=$(python -c "
+          import json
+          with open('Vault/reports/audit_report.json') as f:
+              data = json.load(f)
+          # Count scope leak issues (category=regression, message contains 'scope')
+          scope_issues = [i for i in data.get('issues', [])
+                         if i.get('category') == 'regression'
+                         and 'scope' in i.get('message', '').lower()]
+          print(len(scope_issues))
+          " 2>/dev/null || echo "0")
+
+          if [ "$SCOPE_LEAKS" -gt 0 ]; then
+            echo "❌ Found $SCOPE_LEAKS scope leak issues!"
+            exit 1
+          fi
+
+          echo "✅ No scope leak issues detected"
+
+      - name: Run WikiLink check
+        run: |
+          python scripts/qa/check_wikilinks.py \
+            --vault ./Vault \
+            --only-prefix laws/ || true
+
+          # Check for new broken links beyond expected ones
+          BROKEN_COUNT=$(python -c "
+          import json
+          with open('Vault/reports/link_check_broken.json') as f:
+              data = json.load(f)
+          print(data.get('broken_count', 0))
+          " 2>/dev/null || echo "0")
+
+          # Expected broken links (future articles in 会社法)
+          EXPECTED_BROKEN=3
+
+          if [ "$BROKEN_COUNT" -gt "$EXPECTED_BROKEN" ]; then
+            echo "❌ Found $BROKEN_COUNT broken links (expected: $EXPECTED_BROKEN)"
+            exit 1
+          fi
+
+          echo "✅ Broken link count within expected range ($BROKEN_COUNT <= $EXPECTED_BROKEN)"
+
+      - name: Upload audit reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: audit-reports
+          path: |
+            Vault/reports/audit_report.md
+            Vault/reports/audit_report.json
+            Vault/reports/link_check_broken.md
+            Vault/reports/link_check_broken.json

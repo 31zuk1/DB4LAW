@@ -62,7 +62,6 @@
 {"source": "JPLAW:337AC0000000139#suppl#7", "target": "JPLAW:337AC0000000139#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
 {"source": "JPLAW:337AC0000000139#suppl#7", "target": "JPLAW:337AC0000000139#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
 {"source": "JPLAW:337AC0000000139#suppl#7", "target": "JPLAW:337AC0000000139#main#14", "type": "refs", "relation": "internal", "evidence": "第十四条", "confidence": 0.9}
-{"source": "JPLAW:337AC0000000139#suppl#8", "target": "JPLAW:337AC0000000139#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
 {"source": "JPLAW:337AC0000000139#suppl#9", "target": "JPLAW:337AC0000000139#main#39", "type": "refs", "relation": "internal", "evidence": "第三十九条", "confidence": 0.9}
 {"source": "JPLAW:337AC0000000139#suppl#11", "target": "JPLAW:337AC0000000139#main#39", "type": "refs", "relation": "internal", "evidence": "第三十九条", "confidence": 0.9}
 {"source": "JPLAW:337AC0000000139#suppl#3", "target": "external:附則第十八条の規定による改正後の地方税法#main#19_14", "type": "refs", "relation": "external", "evidence": "第十九条の十四", "confidence": 0.9}

@@ -1,0 +1,11 @@
+{
+  "generator_repo_commit": "b6824d9c378f2cc9a1cf7b5be7a1138c17cd18db",
+  "generator_repo_dirty": true,
+  "build_timestamp": "2026-01-29T03:14:58.297846Z",
+  "targets_hash": "09be1b3ca8cb8a04af4aa158b1ccde974f7908f7afc45921cb5c8d0b1843b690",
+  "targets_path": "targets.yaml",
+  "edge_schema": "v2",
+  "extract_edges": true,
+  "generate_structure": false,
+  "manifest_schema_version": "1.0"
+}
