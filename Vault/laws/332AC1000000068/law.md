@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332AC1000000068
+id: JPLAW:332AC1000000068
+law_no: 昭和三十二年法律第六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/332AC1000000068
+promulgation_date: '19570416'
+tags:
+- 国土開発幹線自動車道建設法
+tier: 0
+title: 国土開発幹線自動車道建設法
+law_id: 332AC1000000068
+official_title: 国土開発幹線自動車道建設法
+aliases:
+- 国土開発幹線自動車道建設法
+---
+
+# 国土開発幹線自動車道建設法
+
+## Metadata
+- Law ID: `332AC1000000068`
+- Law No: 昭和三十二年法律第六十八号
+- Promulgation Date: 19570416

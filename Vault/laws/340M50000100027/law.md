@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50000100027
+id: JPLAW:340M50000100027
+law_no: 昭和四十年厚生省令第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50000100027
+promulgation_date: '19650601'
+tags:
+- 戦没者等の遺族に対する特別弔慰金支給法施行規則
+tier: 0
+title: 戦没者等の遺族に対する特別弔慰金支給法施行規則
+law_id: 340M50000100027
+official_title: 戦没者等の遺族に対する特別弔慰金支給法施行規則
+aliases:
+- 戦没者等の遺族に対する特別弔慰金支給法施行規則
+---
+
+# 戦没者等の遺族に対する特別弔慰金支給法施行規則
+
+## Metadata
+- Law ID: `340M50000100027`
+- Law No: 昭和四十年厚生省令第二十七号
+- Promulgation Date: 19650601

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337CO0000000302
+id: JPLAW:337CO0000000302
+law_no: 昭和三十七年政令第三百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/337CO0000000302
+promulgation_date: '19620718'
+tags:
+- 踏切道改良促進法施行令
+tier: 0
+title: 踏切道改良促進法施行令
+law_id: 337CO0000000302
+official_title: 踏切道改良促進法施行令
+aliases:
+- 踏切道改良促進法施行令
+---
+
+# 踏切道改良促進法施行令
+
+## Metadata
+- Law ID: `337CO0000000302`
+- Law No: 昭和三十七年政令第三百二号
+- Promulgation Date: 19620718

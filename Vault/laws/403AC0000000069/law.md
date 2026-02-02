@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403AC0000000069
+id: JPLAW:403AC0000000069
+law_no: 平成三年法律第六十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/403AC0000000069
+promulgation_date: '19910502'
+tags:
+- 地価税法
+tier: 0
+title: 地価税法
+law_id: 403AC0000000069
+official_title: 地価税法
+aliases:
+- 地価税法
+---
+
+# 地価税法
+
+## Metadata
+- Law ID: `403AC0000000069`
+- Law No: 平成三年法律第六十九号
+- Promulgation Date: 19910502

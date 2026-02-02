@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426CO0000000193
+id: JPLAW:426CO0000000193
+law_no: 平成二十六年政令第百九十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/426CO0000000193
+promulgation_date: '20140529'
+tags:
+- 国と民間企業との間の人事交流に関する法律施行令
+tier: 0
+title: 国と民間企業との間の人事交流に関する法律施行令
+law_id: 426CO0000000193
+official_title: 国と民間企業との間の人事交流に関する法律施行令
+aliases:
+- 国と民間企業との間の人事交流に関する法律施行令
+---
+
+# 国と民間企業との間の人事交流に関する法律施行令
+
+## Metadata
+- Law ID: `426CO0000000193`
+- Law No: 平成二十六年政令第百九十三号
+- Promulgation Date: 20140529

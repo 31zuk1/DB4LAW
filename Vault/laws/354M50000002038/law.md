@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354M50000002038
+id: JPLAW:354M50000002038
+law_no: 昭和五十四年総理府令第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/354M50000002038
+promulgation_date: '19790806'
+tags:
+- 大規模地震対策特別措置法施行規則
+tier: 0
+title: 大規模地震対策特別措置法施行規則
+law_id: 354M50000002038
+official_title: 大規模地震対策特別措置法施行規則
+aliases:
+- 大規模地震対策特別措置法施行規則
+---
+
+# 大規模地震対策特別措置法施行規則
+
+## Metadata
+- Law ID: `354M50000002038`
+- Law No: 昭和五十四年総理府令第三十八号
+- Promulgation Date: 19790806

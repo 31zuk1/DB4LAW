@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000168
+id: JPLAW:416CO0000000168
+law_no: 平成十六年政令第百六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000168
+promulgation_date: '20040421'
+tags:
+- 特定都市河川浸水被害対策法施行令
+tier: 0
+title: 特定都市河川浸水被害対策法施行令
+law_id: 416CO0000000168
+official_title: 特定都市河川浸水被害対策法施行令
+aliases:
+- 特定都市河川浸水被害対策法施行令
+---
+
+# 特定都市河川浸水被害対策法施行令
+
+## Metadata
+- Law ID: `416CO0000000168`
+- Law No: 平成十六年政令第百六十八号
+- Promulgation Date: 20040421

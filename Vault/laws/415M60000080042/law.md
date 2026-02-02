@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000080042
+id: JPLAW:415M60000080042
+law_no: 平成十五年文部科学省令第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000080042
+promulgation_date: '20030929'
+tags:
+- 文化財の不法な輸出入等の規制等に関する法律施行規則
+tier: 0
+title: 文化財の不法な輸出入等の規制等に関する法律施行規則
+law_id: 415M60000080042
+official_title: 文化財の不法な輸出入等の規制等に関する法律施行規則
+aliases:
+- 文化財の不法な輸出入等の規制等に関する法律施行規則
+---
+
+# 文化財の不法な輸出入等の規制等に関する法律施行規則
+
+## Metadata
+- Law ID: `415M60000080042`
+- Law No: 平成十五年文部科学省令第四十二号
+- Promulgation Date: 20030929

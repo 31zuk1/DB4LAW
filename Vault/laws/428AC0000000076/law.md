@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428AC0000000076
+id: JPLAW:428AC0000000076
+law_no: 平成二十八年法律第七十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/428AC0000000076
+promulgation_date: '20161116'
+tags:
+- 人工衛星等の打上げ及び人工衛星の管理に関する法律
+tier: 0
+title: 人工衛星等の打上げ及び人工衛星の管理に関する法律
+law_id: 428AC0000000076
+official_title: 人工衛星等の打上げ及び人工衛星の管理に関する法律
+aliases:
+- 人工衛星等の打上げ及び人工衛星の管理に関する法律
+---
+
+# 人工衛星等の打上げ及び人工衛星の管理に関する法律
+
+## Metadata
+- Law ID: `428AC0000000076`
+- Law No: 平成二十八年法律第七十六号
+- Promulgation Date: 20161116

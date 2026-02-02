@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409M50000100014
+id: JPLAW:409M50000100014
+law_no: 平成九年厚生省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/409M50000100014
+promulgation_date: '19970319'
+tags:
+- 給水装置の構造及び材質の基準に関する省令
+tier: 0
+title: 給水装置の構造及び材質の基準に関する省令
+law_id: 409M50000100014
+official_title: 給水装置の構造及び材質の基準に関する省令
+aliases:
+- 給水装置の構造及び材質の基準に関する省令
+---
+
+# 給水装置の構造及び材質の基準に関する省令
+
+## Metadata
+- Law ID: `409M50000100014`
+- Law No: 平成九年厚生省令第十四号
+- Promulgation Date: 19970319

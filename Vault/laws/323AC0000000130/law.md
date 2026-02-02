@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000130
+id: JPLAW:323AC0000000130
+law_no: 昭和二十三年法律第百三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000130
+promulgation_date: '19480710'
+tags:
+- 船員職業安定法
+tier: 0
+title: 船員職業安定法
+law_id: 323AC0000000130
+official_title: 船員職業安定法
+aliases:
+- 船員職業安定法
+---
+
+# 船員職業安定法
+
+## Metadata
+- Law ID: `323AC0000000130`
+- Law No: 昭和二十三年法律第百三十号
+- Promulgation Date: 19480710

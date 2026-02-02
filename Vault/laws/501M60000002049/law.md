@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501M60000002049
+id: JPLAW:501M60000002049
+law_no: 令和元年内閣府令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/501M60000002049
+promulgation_date: '20191225'
+tags:
+- カジノ管理委員会事務局組織規則
+tier: 0
+title: カジノ管理委員会事務局組織規則
+law_id: 501M60000002049
+official_title: カジノ管理委員会事務局組織規則
+aliases:
+- カジノ管理委員会事務局組織規則
+---
+
+# カジノ管理委員会事務局組織規則
+
+## Metadata
+- Law ID: `501M60000002049`
+- Law No: 令和元年内閣府令第四十九号
+- Promulgation Date: 20191225

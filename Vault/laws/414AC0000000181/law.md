@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000181
+id: JPLAW:414AC0000000181
+law_no: 平成十四年法律第百八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000181
+promulgation_date: '20021218'
+tags:
+- 独立行政法人国際観光振興機構法
+tier: 0
+title: 独立行政法人国際観光振興機構法
+law_id: 414AC0000000181
+official_title: 独立行政法人国際観光振興機構法
+aliases:
+- 独立行政法人国際観光振興機構法
+---
+
+# 独立行政法人国際観光振興機構法
+
+## Metadata
+- Law ID: `414AC0000000181`
+- Law No: 平成十四年法律第百八十一号
+- Promulgation Date: 20021218

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334CO0000000242
+id: JPLAW:334CO0000000242
+law_no: 昭和三十四年政令第二百四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/334CO0000000242
+promulgation_date: '19590701'
+tags:
+- 小売商業調整特別措置法施行令
+tier: 0
+title: 小売商業調整特別措置法施行令
+law_id: 334CO0000000242
+official_title: 小売商業調整特別措置法施行令
+aliases:
+- 小売商業調整特別措置法施行令
+---
+
+# 小売商業調整特別措置法施行令
+
+## Metadata
+- Law ID: `334CO0000000242`
+- Law No: 昭和三十四年政令第二百四十二号
+- Promulgation Date: 19590701

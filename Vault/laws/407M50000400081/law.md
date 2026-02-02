@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407M50000400081
+id: JPLAW:407M50000400081
+law_no: 平成七年通商産業省令第八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/407M50000400081
+promulgation_date: '19951018'
+tags:
+- 電気事業法関係手数料規則
+tier: 0
+title: 電気事業法関係手数料規則
+law_id: 407M50000400081
+official_title: 電気事業法関係手数料規則
+aliases:
+- 電気事業法関係手数料規則
+---
+
+# 電気事業法関係手数料規則
+
+## Metadata
+- Law ID: `407M50000400081`
+- Law No: 平成七年通商産業省令第八十一号
+- Promulgation Date: 19951018

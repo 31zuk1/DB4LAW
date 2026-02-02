@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000002054
+id: JPLAW:419M60000002054
+law_no: 平成十九年内閣府令第五十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000002054
+promulgation_date: '20070807'
+tags:
+- 金融商品取引所等に関する内閣府令
+tier: 0
+title: 金融商品取引所等に関する内閣府令
+law_id: 419M60000002054
+official_title: 金融商品取引所等に関する内閣府令
+aliases:
+- 金融商品取引所等に関する内閣府令
+---
+
+# 金融商品取引所等に関する内閣府令
+
+## Metadata
+- Law ID: `419M60000002054`
+- Law No: 平成十九年内閣府令第五十四号
+- Promulgation Date: 20070807

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000121
+id: JPLAW:324AC0000000121
+law_no: 昭和二十四年法律第百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000121
+promulgation_date: '19490530'
+tags:
+- 水先法
+tier: 0
+title: 水先法
+law_id: 324AC0000000121
+official_title: 水先法
+aliases:
+- 水先法
+---
+
+# 水先法
+
+## Metadata
+- Law ID: `324AC0000000121`
+- Law No: 昭和二十四年法律第百二十一号
+- Promulgation Date: 19490530

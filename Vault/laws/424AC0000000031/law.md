@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424AC0000000031
+id: JPLAW:424AC0000000031
+law_no: 平成二十四年法律第三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/424AC0000000031
+promulgation_date: '20120511'
+tags:
+- 新型インフルエンザ等対策特別措置法
+tier: 0
+title: 新型インフルエンザ等対策特別措置法
+law_id: 424AC0000000031
+official_title: 新型インフルエンザ等対策特別措置法
+aliases:
+- 新型インフルエンザ等対策特別措置法
+---
+
+# 新型インフルエンザ等対策特別措置法
+
+## Metadata
+- Law ID: `424AC0000000031`
+- Law No: 平成二十四年法律第三十一号
+- Promulgation Date: 20120511

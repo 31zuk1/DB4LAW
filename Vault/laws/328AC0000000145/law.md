@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000145
+id: JPLAW:328AC0000000145
+law_no: 昭和二十八年法律第百四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000145
+promulgation_date: '19530801'
+tags:
+- 武器等製造法
+tier: 0
+title: 武器等製造法
+law_id: 328AC0000000145
+official_title: 武器等製造法
+aliases:
+- 武器等製造法
+---
+
+# 武器等製造法
+
+## Metadata
+- Law ID: `328AC0000000145`
+- Law No: 昭和二十八年法律第百四十五号
+- Promulgation Date: 19530801

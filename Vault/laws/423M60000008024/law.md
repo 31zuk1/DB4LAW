@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423M60000008024
+id: JPLAW:423M60000008024
+law_no: 平成二十三年総務省令第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/423M60000008024
+promulgation_date: '20110331'
+tags:
+- 第二種指定電気通信設備接続会計規則
+tier: 0
+title: 第二種指定電気通信設備接続会計規則
+law_id: 423M60000008024
+official_title: 第二種指定電気通信設備接続会計規則
+aliases:
+- 第二種指定電気通信設備接続会計規則
+---
+
+# 第二種指定電気通信設備接続会計規則
+
+## Metadata
+- Law ID: `423M60000008024`
+- Law No: 平成二十三年総務省令第二十四号
+- Promulgation Date: 20110331

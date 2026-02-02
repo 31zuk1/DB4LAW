@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360CO0000000037
+id: JPLAW:360CO0000000037
+law_no: 昭和六十年政令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/360CO0000000037
+promulgation_date: '19850320'
+tags:
+- 湖沼水質保全特別措置法施行令
+tier: 0
+title: 湖沼水質保全特別措置法施行令
+law_id: 360CO0000000037
+official_title: 湖沼水質保全特別措置法施行令
+aliases:
+- 湖沼水質保全特別措置法施行令
+---
+
+# 湖沼水質保全特別措置法施行令
+
+## Metadata
+- Law ID: `360CO0000000037`
+- Law No: 昭和六十年政令第三十七号
+- Promulgation Date: 19850320

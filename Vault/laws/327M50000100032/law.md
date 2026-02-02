@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000100032
+id: JPLAW:327M50000100032
+law_no: 昭和二十七年厚生省令第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000100032
+promulgation_date: '19520804'
+tags:
+- 母体保護法施行規則
+tier: 0
+title: 母体保護法施行規則
+law_id: 327M50000100032
+official_title: 母体保護法施行規則
+aliases:
+- 母体保護法施行規則
+---
+
+# 母体保護法施行規則
+
+## Metadata
+- Law ID: `327M50000100032`
+- Law No: 昭和二十七年厚生省令第三十二号
+- Promulgation Date: 19520804

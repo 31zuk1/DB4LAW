@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50000040037
+id: JPLAW:342M50000040037
+law_no: 昭和四十二年大蔵省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50000040037
+promulgation_date: '19670630'
+tags:
+- 登録免許税法施行規則
+tier: 0
+title: 登録免許税法施行規則
+law_id: 342M50000040037
+official_title: 登録免許税法施行規則
+aliases:
+- 登録免許税法施行規則
+---
+
+# 登録免許税法施行規則
+
+## Metadata
+- Law ID: `342M50000040037`
+- Law No: 昭和四十二年大蔵省令第三十七号
+- Promulgation Date: 19670630

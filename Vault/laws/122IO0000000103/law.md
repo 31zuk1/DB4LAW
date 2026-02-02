@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 122IO0000000103
+id: JPLAW:122IO0000000103
+law_no: 明治二十二年勅令第百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/122IO0000000103
+promulgation_date: '18890803'
+tags:
+- 明治二十二年勅令第百三号（帝国憲法発布記念章制定ノ件）
+tier: 0
+title: 明治二十二年勅令第百三号（帝国憲法発布記念章制定ノ件）
+law_id: 122IO0000000103
+official_title: 明治二十二年勅令第百三号（帝国憲法発布記念章制定ノ件）
+aliases:
+- 明治二十二年勅令第百三号（帝国憲法発布記念章制定ノ件）
+---
+
+# 明治二十二年勅令第百三号（帝国憲法発布記念章制定ノ件）
+
+## Metadata
+- Law ID: `122IO0000000103`
+- Law No: 明治二十二年勅令第百三号
+- Promulgation Date: 18890803

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M50000804001
+id: JPLAW:324M50000804001
+law_no: 昭和二十四年運輸省・経済安定本部令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M50000804001
+promulgation_date: '19490829'
+tags:
+- 水先法施行規則
+tier: 0
+title: 水先法施行規則
+law_id: 324M50000804001
+official_title: 水先法施行規則
+aliases:
+- 水先法施行規則
+---
+
+# 水先法施行規則
+
+## Metadata
+- Law ID: `324M50000804001`
+- Law No: 昭和二十四年運輸省・経済安定本部令第一号
+- Promulgation Date: 19490829

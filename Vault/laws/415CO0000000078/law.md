@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000078
+id: JPLAW:415CO0000000078
+law_no: 平成十五年政令第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000078
+promulgation_date: '20030326'
+tags:
+- 構造改革特別区域法施行令
+tier: 0
+title: 構造改革特別区域法施行令
+law_id: 415CO0000000078
+official_title: 構造改革特別区域法施行令
+aliases:
+- 構造改革特別区域法施行令
+---
+
+# 構造改革特別区域法施行令
+
+## Metadata
+- Law ID: `415CO0000000078`
+- Law No: 平成十五年政令第七十八号
+- Promulgation Date: 20030326

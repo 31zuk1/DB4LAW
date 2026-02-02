@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348RJNJ10007000
+id: JPLAW:348RJNJ10007000
+law_no: 昭和四十八年人事院規則一〇―七
+links:
+  egov: https://laws.e-gov.go.jp/law/348RJNJ10007000
+promulgation_date: '19730301'
+tags:
+- 人事院規則一〇―七（女子職員及び年少職員の健康、安全及び福祉）
+tier: 0
+title: 人事院規則一〇―七（女子職員及び年少職員の健康、安全及び福祉）
+law_id: 348RJNJ10007000
+official_title: 人事院規則一〇―七（女子職員及び年少職員の健康、安全及び福祉）
+aliases:
+- 人事院規則一〇―七（女子職員及び年少職員の健康、安全及び福祉）
+---
+
+# 人事院規則一〇―七（女子職員及び年少職員の健康、安全及び福祉）
+
+## Metadata
+- Law ID: `348RJNJ10007000`
+- Law No: 昭和四十八年人事院規則一〇―七
+- Promulgation Date: 19730301

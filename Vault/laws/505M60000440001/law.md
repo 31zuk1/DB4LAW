@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505M60000440001
+id: JPLAW:505M60000440001
+law_no: 令和五年財務省・経済産業省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/505M60000440001
+promulgation_date: '20230526'
+tags:
+- 外国為替取引等取扱業者遵守基準を定める省令
+tier: 0
+title: 外国為替取引等取扱業者遵守基準を定める省令
+law_id: 505M60000440001
+official_title: 外国為替取引等取扱業者遵守基準を定める省令
+aliases:
+- 外国為替取引等取扱業者遵守基準を定める省令
+---
+
+# 外国為替取引等取扱業者遵守基準を定める省令
+
+## Metadata
+- Law ID: `505M60000440001`
+- Law No: 令和五年財務省・経済産業省令第一号
+- Promulgation Date: 20230526

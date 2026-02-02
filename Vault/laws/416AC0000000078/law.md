@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416AC0000000078
+id: JPLAW:416AC0000000078
+law_no: 平成十六年法律第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/416AC0000000078
+promulgation_date: '20040602'
+tags:
+- 特定外来生物による生態系等に係る被害の防止に関する法律
+tier: 0
+title: 特定外来生物による生態系等に係る被害の防止に関する法律
+law_id: 416AC0000000078
+official_title: 特定外来生物による生態系等に係る被害の防止に関する法律
+aliases:
+- 特定外来生物による生態系等に係る被害の防止に関する法律
+---
+
+# 特定外来生物による生態系等に係る被害の防止に関する法律
+
+## Metadata
+- Law ID: `416AC0000000078`
+- Law No: 平成十六年法律第七十八号
+- Promulgation Date: 20040602

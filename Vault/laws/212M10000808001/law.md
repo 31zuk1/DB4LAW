@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 212M10000808001
+id: JPLAW:212M10000808001
+law_no: 大正十二年内務省・鉄道省令
+links:
+  egov: https://laws.e-gov.go.jp/law/212M10000808001
+promulgation_date: '19231229'
+tags:
+- 軌道建設規程
+tier: 0
+title: 軌道建設規程
+law_id: 212M10000808001
+official_title: 軌道建設規程
+aliases:
+- 軌道建設規程
+---
+
+# 軌道建設規程
+
+## Metadata
+- Law ID: `212M10000808001`
+- Law No: 大正十二年内務省・鉄道省令
+- Promulgation Date: 19231229

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359AC0000000072
+id: JPLAW:359AC0000000072
+law_no: 昭和五十九年法律第七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/359AC0000000072
+promulgation_date: '19840810'
+tags:
+- たばこ税法
+tier: 0
+title: たばこ税法
+law_id: 359AC0000000072
+official_title: たばこ税法
+aliases:
+- たばこ税法
+---
+
+# たばこ税法
+
+## Metadata
+- Law ID: `359AC0000000072`
+- Law No: 昭和五十九年法律第七十二号
+- Promulgation Date: 19840810

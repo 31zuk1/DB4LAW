@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000040015
+id: JPLAW:332M50000040015
+law_no: 昭和三十二年大蔵省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000040015
+promulgation_date: '19570331'
+tags:
+- 租税特別措置法施行規則
+tier: 0
+title: 租税特別措置法施行規則
+law_id: 332M50000040015
+official_title: 租税特別措置法施行規則
+aliases:
+- 租税特別措置法施行規則
+---
+
+# 租税特別措置法施行規則
+
+## Metadata
+- Law ID: `332M50000040015`
+- Law No: 昭和三十二年大蔵省令第十五号
+- Promulgation Date: 19570331

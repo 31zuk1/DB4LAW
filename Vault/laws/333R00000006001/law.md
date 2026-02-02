@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333R00000006001
+id: JPLAW:333R00000006001
+law_no: 昭和三十三年首都圏整備委員会規則第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/333R00000006001
+promulgation_date: '19580306'
+tags:
+- 首都圏整備法施行規則
+tier: 0
+title: 首都圏整備法施行規則
+law_id: 333R00000006001
+official_title: 首都圏整備法施行規則
+aliases:
+- 首都圏整備法施行規則
+---
+
+# 首都圏整備法施行規則
+
+## Metadata
+- Law ID: `333R00000006001`
+- Law No: 昭和三十三年首都圏整備委員会規則第一号
+- Promulgation Date: 19580306

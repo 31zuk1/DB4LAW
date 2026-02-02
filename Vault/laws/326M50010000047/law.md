@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50010000047
+id: JPLAW:326M50010000047
+law_no: 昭和二十六年農林省令第四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50010000047
+promulgation_date: '19510717'
+tags:
+- 漁港及び漁場の整備等に関する法律施行規則
+tier: 0
+title: 漁港及び漁場の整備等に関する法律施行規則
+law_id: 326M50010000047
+official_title: 漁港及び漁場の整備等に関する法律施行規則
+aliases:
+- 漁港及び漁場の整備等に関する法律施行規則
+---
+
+# 漁港及び漁場の整備等に関する法律施行規則
+
+## Metadata
+- Law ID: `326M50010000047`
+- Law No: 昭和二十六年農林省令第四十七号
+- Promulgation Date: 19510717

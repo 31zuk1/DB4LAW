@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362CO0000000050
+id: JPLAW:362CO0000000050
+law_no: 昭和六十二年政令第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/362CO0000000050
+promulgation_date: '19870320'
+tags:
+- 旅客鉄道株式会社及び日本貨物鉄道株式会社に関する法律施行令
+tier: 0
+title: 旅客鉄道株式会社及び日本貨物鉄道株式会社に関する法律施行令
+law_id: 362CO0000000050
+official_title: 旅客鉄道株式会社及び日本貨物鉄道株式会社に関する法律施行令
+aliases:
+- 旅客鉄道株式会社及び日本貨物鉄道株式会社に関する法律施行令
+---
+
+# 旅客鉄道株式会社及び日本貨物鉄道株式会社に関する法律施行令
+
+## Metadata
+- Law ID: `362CO0000000050`
+- Law No: 昭和六十二年政令第五十号
+- Promulgation Date: 19870320

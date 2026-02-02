@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000053
+id: JPLAW:414AC0000000053
+law_no: 平成十四年法律第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000053
+promulgation_date: '20020529'
+tags:
+- 土壌汚染対策法
+tier: 0
+title: 土壌汚染対策法
+law_id: 414AC0000000053
+official_title: 土壌汚染対策法
+aliases:
+- 土壌汚染対策法
+---
+
+# 土壌汚染対策法
+
+## Metadata
+- Law ID: `414AC0000000053`
+- Law No: 平成十四年法律第五十三号
+- Promulgation Date: 20020529

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424AC0100000090
+id: JPLAW:424AC0100000090
+law_no: 平成二十四年法律第九十号
+links:
+  egov: https://laws.e-gov.go.jp/law/424AC0100000090
+promulgation_date: '20120912'
+tags:
+- 移植に用いる造血幹細胞の適切な提供の推進に関する法律
+tier: 0
+title: 移植に用いる造血幹細胞の適切な提供の推進に関する法律
+law_id: 424AC0100000090
+official_title: 移植に用いる造血幹細胞の適切な提供の推進に関する法律
+aliases:
+- 移植に用いる造血幹細胞の適切な提供の推進に関する法律
+---
+
+# 移植に用いる造血幹細胞の適切な提供の推進に関する法律
+
+## Metadata
+- Law ID: `424AC0100000090`
+- Law No: 平成二十四年法律第九十号
+- Promulgation Date: 20120912

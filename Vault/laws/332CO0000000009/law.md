@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332CO0000000009
+id: JPLAW:332CO0000000009
+law_no: 昭和三十二年政令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/332CO0000000009
+promulgation_date: '19570123'
+tags:
+- 家畜取引法施行令
+tier: 0
+title: 家畜取引法施行令
+law_id: 332CO0000000009
+official_title: 家畜取引法施行令
+aliases:
+- 家畜取引法施行令
+---
+
+# 家畜取引法施行令
+
+## Metadata
+- Law ID: `332CO0000000009`
+- Law No: 昭和三十二年政令第九号
+- Promulgation Date: 19570123

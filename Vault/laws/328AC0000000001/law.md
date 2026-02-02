@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000001
+id: JPLAW:328AC0000000001
+law_no: 昭和二十八年法律第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000001
+promulgation_date: '19530105'
+tags:
+- 外航船舶建造融資利子補給臨時措置法
+tier: 0
+title: 外航船舶建造融資利子補給臨時措置法
+law_id: 328AC0000000001
+official_title: 外航船舶建造融資利子補給臨時措置法
+aliases:
+- 外航船舶建造融資利子補給臨時措置法
+---
+
+# 外航船舶建造融資利子補給臨時措置法
+
+## Metadata
+- Law ID: `328AC0000000001`
+- Law No: 昭和二十八年法律第一号
+- Promulgation Date: 19530105

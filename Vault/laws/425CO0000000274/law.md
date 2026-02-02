@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425CO0000000274
+id: JPLAW:425CO0000000274
+law_no: 平成二十五年政令第二百七十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/425CO0000000274
+promulgation_date: '20130913'
+tags:
+- 株式会社海外需要開拓支援機構法第四条第三項の倍数を定める政令
+tier: 0
+title: 株式会社海外需要開拓支援機構法第四条第三項の倍数を定める政令
+law_id: 425CO0000000274
+official_title: 株式会社海外需要開拓支援機構法第四条第三項の倍数を定める政令
+aliases:
+- 株式会社海外需要開拓支援機構法第四条第三項の倍数を定める政令
+---
+
+# 株式会社海外需要開拓支援機構法第四条第三項の倍数を定める政令
+
+## Metadata
+- Law ID: `425CO0000000274`
+- Law No: 平成二十五年政令第二百七十四号
+- Promulgation Date: 20130913

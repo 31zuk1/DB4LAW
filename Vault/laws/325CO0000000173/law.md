@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000173
+id: JPLAW:325CO0000000173
+law_no: 昭和二十五年政令第百七十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000173
+promulgation_date: '19500531'
+tags:
+- 電波法による旅費等の額を定める政令
+tier: 0
+title: 電波法による旅費等の額を定める政令
+law_id: 325CO0000000173
+official_title: 電波法による旅費等の額を定める政令
+aliases:
+- 電波法による旅費等の額を定める政令
+---
+
+# 電波法による旅費等の額を定める政令
+
+## Metadata
+- Law ID: `325CO0000000173`
+- Law No: 昭和二十五年政令第百七十三号
+- Promulgation Date: 19500531

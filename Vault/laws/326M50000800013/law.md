@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000800013
+id: JPLAW:326M50000800013
+law_no: 昭和二十六年運輸省令第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000800013
+promulgation_date: '19510310'
+tags:
+- 港湾調査規則
+tier: 0
+title: 港湾調査規則
+law_id: 326M50000800013
+official_title: 港湾調査規則
+aliases:
+- 港湾調査規則
+---
+
+# 港湾調査規則
+
+## Metadata
+- Law ID: `326M50000800013`
+- Law No: 昭和二十六年運輸省令第十三号
+- Promulgation Date: 19510310

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423M60000008085
+id: JPLAW:423M60000008085
+law_no: 平成二十三年総務省令第八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/423M60000008085
+promulgation_date: '20110629'
+tags:
+- 中波放送に関する送信の標準方式
+tier: 0
+title: 中波放送に関する送信の標準方式
+law_id: 423M60000008085
+official_title: 中波放送に関する送信の標準方式
+aliases:
+- 中波放送に関する送信の標準方式
+---
+
+# 中波放送に関する送信の標準方式
+
+## Metadata
+- Law ID: `423M60000008085`
+- Law No: 平成二十三年総務省令第八十五号
+- Promulgation Date: 20110629

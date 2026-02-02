@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408M50000008027
+id: JPLAW:408M50000008027
+law_no: 平成八年自治省令第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/408M50000008027
+promulgation_date: '19960726'
+tags:
+- 地方財政法第三十三条の三第二項の額の算定に関する省令
+tier: 0
+title: 地方財政法第三十三条の三第二項の額の算定に関する省令
+law_id: 408M50000008027
+official_title: 地方財政法第三十三条の三第二項の額の算定に関する省令
+aliases:
+- 地方財政法第三十三条の三第二項の額の算定に関する省令
+---
+
+# 地方財政法第三十三条の三第二項の額の算定に関する省令
+
+## Metadata
+- Law ID: `408M50000008027`
+- Law No: 平成八年自治省令第二十七号
+- Promulgation Date: 19960726

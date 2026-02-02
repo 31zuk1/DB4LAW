@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000151
+id: JPLAW:414AC0000000151
+law_no: 平成十四年法律第百五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000151
+promulgation_date: '20021213'
+tags:
+- 情報通信技術を活用した行政の推進等に関する法律
+tier: 0
+title: 情報通信技術を活用した行政の推進等に関する法律
+law_id: 414AC0000000151
+official_title: 情報通信技術を活用した行政の推進等に関する法律
+aliases:
+- 情報通信技術を活用した行政の推進等に関する法律
+---
+
+# 情報通信技術を活用した行政の推進等に関する法律
+
+## Metadata
+- Law ID: `414AC0000000151`
+- Law No: 平成十四年法律第百五十一号
+- Promulgation Date: 20021213

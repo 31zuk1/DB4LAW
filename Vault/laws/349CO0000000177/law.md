@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349CO0000000177
+id: JPLAW:349CO0000000177
+law_no: 昭和四十九年政令第百七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/349CO0000000177
+promulgation_date: '19740525'
+tags:
+- 伝統的工芸品産業の振興に関する法律施行令
+tier: 0
+title: 伝統的工芸品産業の振興に関する法律施行令
+law_id: 349CO0000000177
+official_title: 伝統的工芸品産業の振興に関する法律施行令
+aliases:
+- 伝統的工芸品産業の振興に関する法律施行令
+---
+
+# 伝統的工芸品産業の振興に関する法律施行令
+
+## Metadata
+- Law ID: `349CO0000000177`
+- Law No: 昭和四十九年政令第百七十七号
+- Promulgation Date: 19740525

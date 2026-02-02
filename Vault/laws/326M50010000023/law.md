@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50010000023
+id: JPLAW:326M50010000023
+law_no: 昭和二十六年農林省令第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50010000023
+promulgation_date: '19510426'
+tags:
+- 農業委員会等に関する法律施行規則
+tier: 0
+title: 農業委員会等に関する法律施行規則
+law_id: 326M50010000023
+official_title: 農業委員会等に関する法律施行規則
+aliases:
+- 農業委員会等に関する法律施行規則
+---
+
+# 農業委員会等に関する法律施行規則
+
+## Metadata
+- Law ID: `326M50010000023`
+- Law No: 昭和二十六年農林省令第二十三号
+- Promulgation Date: 19510426

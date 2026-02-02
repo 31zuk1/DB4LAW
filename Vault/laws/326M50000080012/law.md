@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000080012
+id: JPLAW:326M50000080012
+law_no: 昭和二十六年文部省令第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000080012
+promulgation_date: '19510621'
+tags:
+- 社会教育主事講習等規程
+tier: 0
+title: 社会教育主事講習等規程
+law_id: 326M50000080012
+official_title: 社会教育主事講習等規程
+aliases:
+- 社会教育主事講習等規程
+---
+
+# 社会教育主事講習等規程
+
+## Metadata
+- Law ID: `326M50000080012`
+- Law No: 昭和二十六年文部省令第十二号
+- Promulgation Date: 19510621

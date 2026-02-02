@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419AC0100000103
+id: JPLAW:419AC0100000103
+law_no: 平成十九年法律第百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/419AC0100000103
+promulgation_date: '20070627'
+tags:
+- 救急医療用ヘリコプターを用いた救急医療の確保に関する特別措置法
+tier: 0
+title: 救急医療用ヘリコプターを用いた救急医療の確保に関する特別措置法
+law_id: 419AC0100000103
+official_title: 救急医療用ヘリコプターを用いた救急医療の確保に関する特別措置法
+aliases:
+- 救急医療用ヘリコプターを用いた救急医療の確保に関する特別措置法
+---
+
+# 救急医療用ヘリコプターを用いた救急医療の確保に関する特別措置法
+
+## Metadata
+- Law ID: `419AC0100000103`
+- Law No: 平成十九年法律第百三号
+- Promulgation Date: 20070627

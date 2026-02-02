@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323M40000100034
+id: JPLAW:323M40000100034
+law_no: 昭和二十三年厚生省令第三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/323M40000100034
+promulgation_date: '19480731'
+tags:
+- 社会保険診療報酬支払基金法施行規則
+tier: 0
+title: 社会保険診療報酬支払基金法施行規則
+law_id: 323M40000100034
+official_title: 社会保険診療報酬支払基金法施行規則
+aliases:
+- 社会保険診療報酬支払基金法施行規則
+---
+
+# 社会保険診療報酬支払基金法施行規則
+
+## Metadata
+- Law ID: `323M40000100034`
+- Law No: 昭和二十三年厚生省令第三十四号
+- Promulgation Date: 19480731

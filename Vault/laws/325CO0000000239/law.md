@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000239
+id: JPLAW:325CO0000000239
+law_no: 昭和二十五年政令第二百三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000239
+promulgation_date: '19500728'
+tags:
+- 漁港及び漁場の整備等に関する法律施行令
+tier: 0
+title: 漁港及び漁場の整備等に関する法律施行令
+law_id: 325CO0000000239
+official_title: 漁港及び漁場の整備等に関する法律施行令
+aliases:
+- 漁港及び漁場の整備等に関する法律施行令
+---
+
+# 漁港及び漁場の整備等に関する法律施行令
+
+## Metadata
+- Law ID: `325CO0000000239`
+- Law No: 昭和二十五年政令第二百三十九号
+- Promulgation Date: 19500728

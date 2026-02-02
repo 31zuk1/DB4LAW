@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000A00001
+id: JPLAW:416M60000A00001
+law_no: 平成十六年農林水産省・国土交通省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000A00001
+promulgation_date: '20040323'
+tags:
+- 海岸保全施設の技術上の基準を定める省令
+tier: 0
+title: 海岸保全施設の技術上の基準を定める省令
+law_id: 416M60000A00001
+official_title: 海岸保全施設の技術上の基準を定める省令
+aliases:
+- 海岸保全施設の技術上の基準を定める省令
+---
+
+# 海岸保全施設の技術上の基準を定める省令
+
+## Metadata
+- Law ID: `416M60000A00001`
+- Law No: 平成十六年農林水産省・国土交通省令第一号
+- Promulgation Date: 20040323

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC0000000101
+id: JPLAW:412AC0000000101
+law_no: 平成十二年法律第百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC0000000101
+promulgation_date: '20000531'
+tags:
+- 金融サービスの提供及び利用環境の整備等に関する法律
+tier: 0
+title: 金融サービスの提供及び利用環境の整備等に関する法律
+law_id: 412AC0000000101
+official_title: 金融サービスの提供及び利用環境の整備等に関する法律
+aliases:
+- 金融サービスの提供及び利用環境の整備等に関する法律
+---
+
+# 金融サービスの提供及び利用環境の整備等に関する法律
+
+## Metadata
+- Law ID: `412AC0000000101`
+- Law No: 平成十二年法律第百一号
+- Promulgation Date: 20000531

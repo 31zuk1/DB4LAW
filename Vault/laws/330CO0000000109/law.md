@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330CO0000000109
+id: JPLAW:330CO0000000109
+law_no: 昭和三十年政令第百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/330CO0000000109
+promulgation_date: '19550707'
+tags:
+- あへん法施行令
+tier: 0
+title: あへん法施行令
+law_id: 330CO0000000109
+official_title: あへん法施行令
+aliases:
+- あへん法施行令
+---
+
+# あへん法施行令
+
+## Metadata
+- Law ID: `330CO0000000109`
+- Law No: 昭和三十年政令第百九号
+- Promulgation Date: 19550707

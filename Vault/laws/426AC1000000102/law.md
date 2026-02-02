@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426AC1000000102
+id: JPLAW:426AC1000000102
+law_no: 平成二十六年法律第百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/426AC1000000102
+promulgation_date: '20140627'
+tags:
+- 花きの振興に関する法律
+tier: 0
+title: 花きの振興に関する法律
+law_id: 426AC1000000102
+official_title: 花きの振興に関する法律
+aliases:
+- 花きの振興に関する法律
+---
+
+# 花きの振興に関する法律
+
+## Metadata
+- Law ID: `426AC1000000102`
+- Law No: 平成二十六年法律第百二号
+- Promulgation Date: 20140627

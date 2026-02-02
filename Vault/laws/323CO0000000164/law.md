@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323CO0000000164
+id: JPLAW:323CO0000000164
+law_no: 昭和二十三年政令第百六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/323CO0000000164
+promulgation_date: '19480715'
+tags:
+- 船員法第一条第二項第二号の港の区域の特例に関する政令
+tier: 0
+title: 船員法第一条第二項第二号の港の区域の特例に関する政令
+law_id: 323CO0000000164
+official_title: 船員法第一条第二項第二号の港の区域の特例に関する政令
+aliases:
+- 船員法第一条第二項第二号の港の区域の特例に関する政令
+---
+
+# 船員法第一条第二項第二号の港の区域の特例に関する政令
+
+## Metadata
+- Law ID: `323CO0000000164`
+- Law No: 昭和二十三年政令第百六十四号
+- Promulgation Date: 19480715

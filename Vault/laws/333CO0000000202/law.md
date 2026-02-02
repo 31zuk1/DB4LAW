@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333CO0000000202
+id: JPLAW:333CO0000000202
+law_no: 昭和三十三年政令第二百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/333CO0000000202
+promulgation_date: '19580630'
+tags:
+- 公立義務教育諸学校の学級編制及び教職員定数の標準に関する法律施行令
+tier: 0
+title: 公立義務教育諸学校の学級編制及び教職員定数の標準に関する法律施行令
+law_id: 333CO0000000202
+official_title: 公立義務教育諸学校の学級編制及び教職員定数の標準に関する法律施行令
+aliases:
+- 公立義務教育諸学校の学級編制及び教職員定数の標準に関する法律施行令
+---
+
+# 公立義務教育諸学校の学級編制及び教職員定数の標準に関する法律施行令
+
+## Metadata
+- Law ID: `333CO0000000202`
+- Law No: 昭和三十三年政令第二百二号
+- Promulgation Date: 19580630

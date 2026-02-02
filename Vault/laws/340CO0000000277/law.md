@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000277
+id: JPLAW:340CO0000000277
+law_no: 昭和四十年政令第二百七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000277
+promulgation_date: '19650812'
+tags:
+- 地方公営企業等の労働関係に関する法律施行令
+tier: 0
+title: 地方公営企業等の労働関係に関する法律施行令
+law_id: 340CO0000000277
+official_title: 地方公営企業等の労働関係に関する法律施行令
+aliases:
+- 地方公営企業等の労働関係に関する法律施行令
+---
+
+# 地方公営企業等の労働関係に関する法律施行令
+
+## Metadata
+- Law ID: `340CO0000000277`
+- Law No: 昭和四十年政令第二百七十七号
+- Promulgation Date: 19650812

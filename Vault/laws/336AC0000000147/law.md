@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0000000147
+id: JPLAW:336AC0000000147
+law_no: 昭和三十六年法律第百四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0000000147
+promulgation_date: '19610617'
+tags:
+- 原子力損害の賠償に関する法律
+tier: 0
+title: 原子力損害の賠償に関する法律
+law_id: 336AC0000000147
+official_title: 原子力損害の賠償に関する法律
+aliases:
+- 原子力損害の賠償に関する法律
+---
+
+# 原子力損害の賠償に関する法律
+
+## Metadata
+- Law ID: `336AC0000000147`
+- Law No: 昭和三十六年法律第百四十七号
+- Promulgation Date: 19610617

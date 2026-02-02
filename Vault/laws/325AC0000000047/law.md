@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000047
+id: JPLAW:325AC0000000047
+law_no: 昭和二十五年法律第四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000047
+promulgation_date: '19500331'
+tags:
+- 社会保険医療協議会法
+tier: 0
+title: 社会保険医療協議会法
+law_id: 325AC0000000047
+official_title: 社会保険医療協議会法
+aliases:
+- 社会保険医療協議会法
+---
+
+# 社会保険医療協議会法
+
+## Metadata
+- Law ID: `325AC0000000047`
+- Law No: 昭和二十五年法律第四十七号
+- Promulgation Date: 19500331

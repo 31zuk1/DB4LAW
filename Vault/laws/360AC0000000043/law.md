@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360AC0000000043
+id: JPLAW:360AC0000000043
+law_no: 昭和六十年法律第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/360AC0000000043
+promulgation_date: '19850531'
+tags:
+- 半導体集積回路の回路配置に関する法律
+tier: 0
+title: 半導体集積回路の回路配置に関する法律
+law_id: 360AC0000000043
+official_title: 半導体集積回路の回路配置に関する法律
+aliases:
+- 半導体集積回路の回路配置に関する法律
+---
+
+# 半導体集積回路の回路配置に関する法律
+
+## Metadata
+- Law ID: `360AC0000000043`
+- Law No: 昭和六十年法律第四十三号
+- Promulgation Date: 19850531

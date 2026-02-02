@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405M50000040014
+id: JPLAW:405M50000040014
+law_no: 平成五年大蔵省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/405M50000040014
+promulgation_date: '19930303'
+tags:
+- 金融商品取引法第二条に規定する定義に関する内閣府令
+tier: 0
+title: 金融商品取引法第二条に規定する定義に関する内閣府令
+law_id: 405M50000040014
+official_title: 金融商品取引法第二条に規定する定義に関する内閣府令
+aliases:
+- 金融商品取引法第二条に規定する定義に関する内閣府令
+---
+
+# 金融商品取引法第二条に規定する定義に関する内閣府令
+
+## Metadata
+- Law ID: `405M50000040014`
+- Law No: 平成五年大蔵省令第十四号
+- Promulgation Date: 19930303

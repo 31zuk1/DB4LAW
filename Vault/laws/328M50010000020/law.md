@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M50010000020
+id: JPLAW:328M50010000020
+law_no: 昭和二十八年農林省令第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M50010000020
+promulgation_date: '19530516'
+tags:
+- 農山漁村電気導入促進法施行規則
+tier: 0
+title: 農山漁村電気導入促進法施行規則
+law_id: 328M50010000020
+official_title: 農山漁村電気導入促進法施行規則
+aliases:
+- 農山漁村電気導入促進法施行規則
+---
+
+# 農山漁村電気導入促進法施行規則
+
+## Metadata
+- Law ID: `328M50010000020`
+- Law No: 昭和二十八年農林省令第二十号
+- Promulgation Date: 19530516

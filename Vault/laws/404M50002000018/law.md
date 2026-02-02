@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404M50002000018
+id: JPLAW:404M50002000018
+law_no: 平成四年労働省令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/404M50002000018
+promulgation_date: '19920629'
+tags:
+- 介護労働者の雇用管理の改善等に関する法律施行規則
+tier: 0
+title: 介護労働者の雇用管理の改善等に関する法律施行規則
+law_id: 404M50002000018
+official_title: 介護労働者の雇用管理の改善等に関する法律施行規則
+aliases:
+- 介護労働者の雇用管理の改善等に関する法律施行規則
+---
+
+# 介護労働者の雇用管理の改善等に関する法律施行規則
+
+## Metadata
+- Law ID: `404M50002000018`
+- Law No: 平成四年労働省令第十八号
+- Promulgation Date: 19920629

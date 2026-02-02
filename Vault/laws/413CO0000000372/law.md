@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000372
+id: JPLAW:413CO0000000372
+law_no: 平成十三年政令第三百七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000372
+promulgation_date: '20011128'
+tags:
+- 司法制度改革推進本部令
+tier: 0
+title: 司法制度改革推進本部令
+law_id: 413CO0000000372
+official_title: 司法制度改革推進本部令
+aliases:
+- 司法制度改革推進本部令
+---
+
+# 司法制度改革推進本部令
+
+## Metadata
+- Law ID: `413CO0000000372`
+- Law No: 平成十三年政令第三百七十二号
+- Promulgation Date: 20011128

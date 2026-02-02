@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427CO0000000068
+id: JPLAW:427CO0000000068
+law_no: 平成二十七年政令第六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/427CO0000000068
+promulgation_date: '20150306'
+tags:
+- 食品表示法第十五条の規定による権限の委任等に関する政令
+tier: 0
+title: 食品表示法第十五条の規定による権限の委任等に関する政令
+law_id: 427CO0000000068
+official_title: 食品表示法第十五条の規定による権限の委任等に関する政令
+aliases:
+- 食品表示法第十五条の規定による権限の委任等に関する政令
+---
+
+# 食品表示法第十五条の規定による権限の委任等に関する政令
+
+## Metadata
+- Law ID: `427CO0000000068`
+- Law No: 平成二十七年政令第六十八号
+- Promulgation Date: 20150306

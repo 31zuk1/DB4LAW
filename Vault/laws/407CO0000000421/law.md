@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000421
+id: JPLAW:407CO0000000421
+law_no: 平成七年政令第四百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000421
+promulgation_date: '19951220'
+tags:
+- ゴラン高原国際平和協力隊の設置等に関する政令
+tier: 0
+title: ゴラン高原国際平和協力隊の設置等に関する政令
+law_id: 407CO0000000421
+official_title: ゴラン高原国際平和協力隊の設置等に関する政令
+aliases:
+- ゴラン高原国際平和協力隊の設置等に関する政令
+---
+
+# ゴラン高原国際平和協力隊の設置等に関する政令
+
+## Metadata
+- Law ID: `407CO0000000421`
+- Law No: 平成七年政令第四百二十一号
+- Promulgation Date: 19951220

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000121
+id: JPLAW:331AC0000000121
+law_no: 昭和三十一年法律第百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000121
+promulgation_date: '19560601'
+tags:
+- 倉庫業法
+tier: 0
+title: 倉庫業法
+law_id: 331AC0000000121
+official_title: 倉庫業法
+aliases:
+- 倉庫業法
+---
+
+# 倉庫業法
+
+## Metadata
+- Law ID: `331AC0000000121`
+- Law No: 昭和三十一年法律第百二十一号
+- Promulgation Date: 19560601

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000126
+id: JPLAW:331AC0000000126
+law_no: 昭和三十一年法律第百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000126
+promulgation_date: '19560604'
+tags:
+- 労働保険審査官及び労働保険審査会法
+tier: 0
+title: 労働保険審査官及び労働保険審査会法
+law_id: 331AC0000000126
+official_title: 労働保険審査官及び労働保険審査会法
+aliases:
+- 労働保険審査官及び労働保険審査会法
+---
+
+# 労働保険審査官及び労働保険審査会法
+
+## Metadata
+- Law ID: `331AC0000000126`
+- Law No: 昭和三十一年法律第百二十六号
+- Promulgation Date: 19560604

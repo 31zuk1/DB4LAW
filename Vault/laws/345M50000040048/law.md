@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345M50000040048
+id: JPLAW:345M50000040048
+law_no: 昭和四十五年大蔵省令第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/345M50000040048
+promulgation_date: '19700610'
+tags:
+- 法人企業統計調査規則
+tier: 0
+title: 法人企業統計調査規則
+law_id: 345M50000040048
+official_title: 法人企業統計調査規則
+aliases:
+- 法人企業統計調査規則
+---
+
+# 法人企業統計調査規則
+
+## Metadata
+- Law ID: `345M50000040048`
+- Law No: 昭和四十五年大蔵省令第四十八号
+- Promulgation Date: 19700610

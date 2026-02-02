@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361AC0000000065
+id: JPLAW:361AC0000000065
+law_no: 昭和六十一年法律第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/361AC0000000065
+promulgation_date: '19860523'
+tags:
+- プログラムの著作物に係る登録の特例に関する法律
+tier: 0
+title: プログラムの著作物に係る登録の特例に関する法律
+law_id: 361AC0000000065
+official_title: プログラムの著作物に係る登録の特例に関する法律
+aliases:
+- プログラムの著作物に係る登録の特例に関する法律
+---
+
+# プログラムの著作物に係る登録の特例に関する法律
+
+## Metadata
+- Law ID: `361AC0000000065`
+- Law No: 昭和六十一年法律第六十五号
+- Promulgation Date: 19860523

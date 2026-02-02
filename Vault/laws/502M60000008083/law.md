@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 502M60000008083
+id: JPLAW:502M60000008083
+law_no: 令和二年総務省令第八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/502M60000008083
+promulgation_date: '20200901'
+tags:
+- 総務省関係国家戦略特別区域法施行規則
+tier: 0
+title: 総務省関係国家戦略特別区域法施行規則
+law_id: 502M60000008083
+official_title: 総務省関係国家戦略特別区域法施行規則
+aliases:
+- 総務省関係国家戦略特別区域法施行規則
+---
+
+# 総務省関係国家戦略特別区域法施行規則
+
+## Metadata
+- Law ID: `502M60000008083`
+- Law No: 令和二年総務省令第八十三号
+- Promulgation Date: 20200901

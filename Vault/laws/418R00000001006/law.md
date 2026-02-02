@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418R00000001006
+id: JPLAW:418R00000001006
+law_no: 平成十八年会計検査院規則第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/418R00000001006
+promulgation_date: '20060331'
+tags:
+- 会計検査院審査規則
+tier: 0
+title: 会計検査院審査規則
+law_id: 418R00000001006
+official_title: 会計検査院審査規則
+aliases:
+- 会計検査院審査規則
+---
+
+# 会計検査院審査規則
+
+## Metadata
+- Law ID: `418R00000001006`
+- Law No: 平成十八年会計検査院規則第六号
+- Promulgation Date: 20060331

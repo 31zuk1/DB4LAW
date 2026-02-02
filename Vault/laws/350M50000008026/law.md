@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 350M50000008026
+id: JPLAW:350M50000008026
+law_no: 昭和五十年自治省令第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/350M50000008026
+promulgation_date: '19751209'
+tags:
+- 泡消火薬剤の技術上の規格を定める省令
+tier: 0
+title: 泡消火薬剤の技術上の規格を定める省令
+law_id: 350M50000008026
+official_title: 泡消火薬剤の技術上の規格を定める省令
+aliases:
+- 泡消火薬剤の技術上の規格を定める省令
+---
+
+# 泡消火薬剤の技術上の規格を定める省令
+
+## Metadata
+- Law ID: `350M50000008026`
+- Law No: 昭和五十年自治省令第二十六号
+- Promulgation Date: 19751209

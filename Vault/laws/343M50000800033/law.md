@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343M50000800033
+id: JPLAW:343M50000800033
+law_no: 昭和四十三年運輸省令第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/343M50000800033
+promulgation_date: '19680810'
+tags:
+- 満載喫水線規則
+tier: 0
+title: 満載喫水線規則
+law_id: 343M50000800033
+official_title: 満載喫水線規則
+aliases:
+- 満載喫水線規則
+---
+
+# 満載喫水線規則
+
+## Metadata
+- Law ID: `343M50000800033`
+- Law No: 昭和四十三年運輸省令第三十三号
+- Promulgation Date: 19680810

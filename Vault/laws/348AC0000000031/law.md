@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348AC0000000031
+id: JPLAW:348AC0000000031
+law_no: 昭和四十八年法律第三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/348AC0000000031
+promulgation_date: '19730606'
+tags:
+- 消費生活用製品安全法
+tier: 0
+title: 消費生活用製品安全法
+law_id: 348AC0000000031
+official_title: 消費生活用製品安全法
+aliases:
+- 消費生活用製品安全法
+---
+
+# 消費生活用製品安全法
+
+## Metadata
+- Law ID: `348AC0000000031`
+- Law No: 昭和四十八年法律第三十一号
+- Promulgation Date: 19730606

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413AC0000000093
+id: JPLAW:413AC0000000093
+law_no: 平成十三年法律第九十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/413AC0000000093
+promulgation_date: '20010629'
+tags:
+- 農林中央金庫法
+tier: 0
+title: 農林中央金庫法
+law_id: 413AC0000000093
+official_title: 農林中央金庫法
+aliases:
+- 農林中央金庫法
+---
+
+# 農林中央金庫法
+
+## Metadata
+- Law ID: `413AC0000000093`
+- Law No: 平成十三年法律第九十三号
+- Promulgation Date: 20010629

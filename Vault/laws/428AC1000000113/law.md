@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428AC1000000113
+id: JPLAW:428AC1000000113
+law_no: 平成二十八年法律第百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/428AC1000000113
+promulgation_date: '20161216'
+tags:
+- 自転車活用推進法
+tier: 0
+title: 自転車活用推進法
+law_id: 428AC1000000113
+official_title: 自転車活用推進法
+aliases:
+- 自転車活用推進法
+---
+
+# 自転車活用推進法
+
+## Metadata
+- Law ID: `428AC1000000113`
+- Law No: 平成二十八年法律第百十三号
+- Promulgation Date: 20161216

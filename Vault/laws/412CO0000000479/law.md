@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000479
+id: JPLAW:412CO0000000479
+law_no: 平成十二年政令第四百七十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000479
+promulgation_date: '20001117'
+tags:
+- 資産の流動化に関する法律施行令
+tier: 0
+title: 資産の流動化に関する法律施行令
+law_id: 412CO0000000479
+official_title: 資産の流動化に関する法律施行令
+aliases:
+- 資産の流動化に関する法律施行令
+---
+
+# 資産の流動化に関する法律施行令
+
+## Metadata
+- Law ID: `412CO0000000479`
+- Law No: 平成十二年政令第四百七十九号
+- Promulgation Date: 20001117

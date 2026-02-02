@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503AC0000000035
+id: JPLAW:503AC0000000035
+law_no: 令和三年法律第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/503AC0000000035
+promulgation_date: '20210519'
+tags:
+- デジタル社会形成基本法
+tier: 0
+title: デジタル社会形成基本法
+law_id: 503AC0000000035
+official_title: デジタル社会形成基本法
+aliases:
+- デジタル社会形成基本法
+---
+
+# デジタル社会形成基本法
+
+## Metadata
+- Law ID: `503AC0000000035`
+- Law No: 令和三年法律第三十五号
+- Promulgation Date: 20210519

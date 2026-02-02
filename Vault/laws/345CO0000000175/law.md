@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345CO0000000175
+id: JPLAW:345CO0000000175
+law_no: 昭和四十五年政令第百七十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/345CO0000000175
+promulgation_date: '19700608'
+tags:
+- 交通安全対策基本法施行令
+tier: 0
+title: 交通安全対策基本法施行令
+law_id: 345CO0000000175
+official_title: 交通安全対策基本法施行令
+aliases:
+- 交通安全対策基本法施行令
+---
+
+# 交通安全対策基本法施行令
+
+## Metadata
+- Law ID: `345CO0000000175`
+- Law No: 昭和四十五年政令第百七十五号
+- Promulgation Date: 19700608

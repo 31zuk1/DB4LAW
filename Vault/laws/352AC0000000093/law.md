@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352AC0000000093
+id: JPLAW:352AC0000000093
+law_no: 昭和五十二年法律第九十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/352AC0000000093
+promulgation_date: '19771223'
+tags:
+- 水産加工業施設改良資金融通臨時措置法
+tier: 0
+title: 水産加工業施設改良資金融通臨時措置法
+law_id: 352AC0000000093
+official_title: 水産加工業施設改良資金融通臨時措置法
+aliases:
+- 水産加工業施設改良資金融通臨時措置法
+---
+
+# 水産加工業施設改良資金融通臨時措置法
+
+## Metadata
+- Law ID: `352AC0000000093`
+- Law No: 昭和五十二年法律第九十三号
+- Promulgation Date: 19771223

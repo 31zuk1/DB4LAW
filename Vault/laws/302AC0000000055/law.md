@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 302AC0000000055
+id: JPLAW:302AC0000000055
+law_no: 昭和二年法律第五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/302AC0000000055
+promulgation_date: '19270509'
+tags:
+- 日本銀行特別融通及損失補償法
+tier: 0
+title: 日本銀行特別融通及損失補償法
+law_id: 302AC0000000055
+official_title: 日本銀行特別融通及損失補償法
+aliases:
+- 日本銀行特別融通及損失補償法
+---
+
+# 日本銀行特別融通及損失補償法
+
+## Metadata
+- Law ID: `302AC0000000055`
+- Law No: 昭和二年法律第五十五号
+- Promulgation Date: 19270509

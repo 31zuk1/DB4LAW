@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC0000000049
+id: JPLAW:412AC0000000049
+law_no: 平成十二年法律第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC0000000049
+promulgation_date: '20000426'
+tags:
+- 弁理士法
+tier: 0
+title: 弁理士法
+law_id: 412AC0000000049
+official_title: 弁理士法
+aliases:
+- 弁理士法
+---
+
+# 弁理士法
+
+## Metadata
+- Law ID: `412AC0000000049`
+- Law No: 平成十二年法律第四十九号
+- Promulgation Date: 20000426

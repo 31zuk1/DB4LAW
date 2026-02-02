@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000107
+id: JPLAW:331AC0000000107
+law_no: 昭和三十一年法律第百七号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000107
+promulgation_date: '19560521'
+tags:
+- 消防団員等公務災害補償等責任共済等に関する法律
+tier: 0
+title: 消防団員等公務災害補償等責任共済等に関する法律
+law_id: 331AC0000000107
+official_title: 消防団員等公務災害補償等責任共済等に関する法律
+aliases:
+- 消防団員等公務災害補償等責任共済等に関する法律
+---
+
+# 消防団員等公務災害補償等責任共済等に関する法律
+
+## Metadata
+- Law ID: `331AC0000000107`
+- Law No: 昭和三十一年法律第百七号
+- Promulgation Date: 19560521

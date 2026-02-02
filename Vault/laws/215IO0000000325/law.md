@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 215IO0000000325
+id: JPLAW:215IO0000000325
+law_no: 大正十五年勅令第三百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/215IO0000000325
+promulgation_date: '19261021'
+tags:
+- 位階令
+tier: 0
+title: 位階令
+law_id: 215IO0000000325
+official_title: 位階令
+aliases:
+- 位階令
+---
+
+# 位階令
+
+## Metadata
+- Law ID: `215IO0000000325`
+- Law No: 大正十五年勅令第三百二十五号
+- Promulgation Date: 19261021

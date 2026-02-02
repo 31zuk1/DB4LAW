@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351CO0000000322
+id: JPLAW:351CO0000000322
+law_no: 昭和五十一年政令第三百二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/351CO0000000322
+promulgation_date: '19761221'
+tags:
+- 財形住宅債券令
+tier: 0
+title: 財形住宅債券令
+law_id: 351CO0000000322
+official_title: 財形住宅債券令
+aliases:
+- 財形住宅債券令
+---
+
+# 財形住宅債券令
+
+## Metadata
+- Law ID: `351CO0000000322`
+- Law No: 昭和五十一年政令第三百二十二号
+- Promulgation Date: 19761221

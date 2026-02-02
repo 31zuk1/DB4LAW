@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426M60000400036
+id: JPLAW:426M60000400036
+law_no: 平成二十六年経済産業省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/426M60000400036
+promulgation_date: '20140729'
+tags:
+- 広域的運営推進機関に関する省令
+tier: 0
+title: 広域的運営推進機関に関する省令
+law_id: 426M60000400036
+official_title: 広域的運営推進機関に関する省令
+aliases:
+- 広域的運営推進機関に関する省令
+---
+
+# 広域的運営推進機関に関する省令
+
+## Metadata
+- Law ID: `426M60000400036`
+- Law No: 平成二十六年経済産業省令第三十六号
+- Promulgation Date: 20140729

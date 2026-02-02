@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358M50000040040
+id: JPLAW:358M50000040040
+law_no: 昭和五十八年大蔵省令第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/358M50000040040
+promulgation_date: '19830810'
+tags:
+- 貸金業法施行規則
+tier: 0
+title: 貸金業法施行規則
+law_id: 358M50000040040
+official_title: 貸金業法施行規則
+aliases:
+- 貸金業法施行規則
+---
+
+# 貸金業法施行規則
+
+## Metadata
+- Law ID: `358M50000040040`
+- Law No: 昭和五十八年大蔵省令第四十号
+- Promulgation Date: 19830810

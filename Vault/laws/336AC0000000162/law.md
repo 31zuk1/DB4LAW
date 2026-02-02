@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0000000162
+id: JPLAW:336AC0000000162
+law_no: 昭和三十六年法律第百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0000000162
+promulgation_date: '19611030'
+tags:
+- 北方地域旧漁業権者等に対する特別措置に関する法律
+tier: 0
+title: 北方地域旧漁業権者等に対する特別措置に関する法律
+law_id: 336AC0000000162
+official_title: 北方地域旧漁業権者等に対する特別措置に関する法律
+aliases:
+- 北方地域旧漁業権者等に対する特別措置に関する法律
+---
+
+# 北方地域旧漁業権者等に対する特別措置に関する法律
+
+## Metadata
+- Law ID: `336AC0000000162`
+- Law No: 昭和三十六年法律第百六十二号
+- Promulgation Date: 19611030

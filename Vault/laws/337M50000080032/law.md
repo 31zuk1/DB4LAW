@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337M50000080032
+id: JPLAW:337M50000080032
+law_no: 昭和三十七年文部省令第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/337M50000080032
+promulgation_date: '19620901'
+tags:
+- 高等学校通信教育規程
+tier: 0
+title: 高等学校通信教育規程
+law_id: 337M50000080032
+official_title: 高等学校通信教育規程
+aliases:
+- 高等学校通信教育規程
+---
+
+# 高等学校通信教育規程
+
+## Metadata
+- Law ID: `337M50000080032`
+- Law No: 昭和三十七年文部省令第三十二号
+- Promulgation Date: 19620901

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 401M50000200036
+id: JPLAW:401M50000200036
+law_no: 平成元年農林水産省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/401M50000200036
+promulgation_date: '19890908'
+tags:
+- 特定農地貸付けに関する農地法等の特例に関する法律施行規則
+tier: 0
+title: 特定農地貸付けに関する農地法等の特例に関する法律施行規則
+law_id: 401M50000200036
+official_title: 特定農地貸付けに関する農地法等の特例に関する法律施行規則
+aliases:
+- 特定農地貸付けに関する農地法等の特例に関する法律施行規則
+---
+
+# 特定農地貸付けに関する農地法等の特例に関する法律施行規則
+
+## Metadata
+- Law ID: `401M50000200036`
+- Law No: 平成元年農林水産省令第三十六号
+- Promulgation Date: 19890908

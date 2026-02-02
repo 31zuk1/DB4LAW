@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 305AC0000000009
+id: JPLAW:305AC0000000009
+law_no: 昭和五年法律第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/305AC0000000009
+promulgation_date: '19300522'
+tags:
+- 昭和五年法律第九号（盗犯等ノ防止及処分ニ関スル法律）
+tier: 0
+title: 昭和五年法律第九号（盗犯等ノ防止及処分ニ関スル法律）
+law_id: 305AC0000000009
+official_title: 昭和五年法律第九号（盗犯等ノ防止及処分ニ関スル法律）
+aliases:
+- 昭和五年法律第九号（盗犯等ノ防止及処分ニ関スル法律）
+---
+
+# 昭和五年法律第九号（盗犯等ノ防止及処分ニ関スル法律）
+
+## Metadata
+- Law ID: `305AC0000000009`
+- Law No: 昭和五年法律第九号
+- Promulgation Date: 19300522

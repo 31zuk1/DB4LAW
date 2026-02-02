@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000012005
+id: JPLAW:416M60000012005
+law_no: 平成十六年内閣府・法務省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000012005
+promulgation_date: '20041228'
+tags:
+- 保険会社等営業保証金規則
+tier: 0
+title: 保険会社等営業保証金規則
+law_id: 416M60000012005
+official_title: 保険会社等営業保証金規則
+aliases:
+- 保険会社等営業保証金規則
+---
+
+# 保険会社等営業保証金規則
+
+## Metadata
+- Law ID: `416M60000012005`
+- Law No: 平成十六年内閣府・法務省令第五号
+- Promulgation Date: 20041228

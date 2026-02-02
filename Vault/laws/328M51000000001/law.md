@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M51000000001
+id: JPLAW:328M51000000001
+law_no: 昭和二十八年公安審査委員会規則第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M51000000001
+promulgation_date: '19530725'
+tags:
+- 公安審査委員会審査規則
+tier: 0
+title: 公安審査委員会審査規則
+law_id: 328M51000000001
+official_title: 公安審査委員会審査規則
+aliases:
+- 公安審査委員会審査規則
+---
+
+# 公安審査委員会審査規則
+
+## Metadata
+- Law ID: `328M51000000001`
+- Law No: 昭和二十八年公安審査委員会規則第一号
+- Promulgation Date: 19530725

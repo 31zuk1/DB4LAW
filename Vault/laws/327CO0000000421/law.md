@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000421
+id: JPLAW:327CO0000000421
+law_no: 昭和二十七年政令第四百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000421
+promulgation_date: '19520916'
+tags:
+- 航空法施行令
+tier: 0
+title: 航空法施行令
+law_id: 327CO0000000421
+official_title: 航空法施行令
+aliases:
+- 航空法施行令
+---
+
+# 航空法施行令
+
+## Metadata
+- Law ID: `327CO0000000421`
+- Law No: 昭和二十七年政令第四百二十一号
+- Promulgation Date: 19520916

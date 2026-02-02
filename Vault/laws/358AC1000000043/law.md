@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358AC1000000043
+id: JPLAW:358AC1000000043
+law_no: 昭和五十八年法律第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/358AC1000000043
+promulgation_date: '19830518'
+tags:
+- 浄化槽法
+tier: 0
+title: 浄化槽法
+law_id: 358AC1000000043
+official_title: 浄化槽法
+aliases:
+- 浄化槽法
+---
+
+# 浄化槽法
+
+## Metadata
+- Law ID: `358AC1000000043`
+- Law No: 昭和五十八年法律第四十三号
+- Promulgation Date: 19830518

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50000402004
+id: JPLAW:349M50000402004
+law_no: 昭和四十九年総理府・通商産業省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50000402004
+promulgation_date: '19740831'
+tags:
+- 公害健康被害の補償等に関する法律施行規程
+tier: 0
+title: 公害健康被害の補償等に関する法律施行規程
+law_id: 349M50000402004
+official_title: 公害健康被害の補償等に関する法律施行規程
+aliases:
+- 公害健康被害の補償等に関する法律施行規程
+---
+
+# 公害健康被害の補償等に関する法律施行規程
+
+## Metadata
+- Law ID: `349M50000402004`
+- Law No: 昭和四十九年総理府・通商産業省令第四号
+- Promulgation Date: 19740831

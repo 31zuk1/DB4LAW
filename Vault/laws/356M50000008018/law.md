@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 356M50000008018
+id: JPLAW:356M50000008018
+law_no: 昭和五十六年自治省令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/356M50000008018
+promulgation_date: '19810620'
+tags:
+- 中継器に係る技術上の規格を定める省令
+tier: 0
+title: 中継器に係る技術上の規格を定める省令
+law_id: 356M50000008018
+official_title: 中継器に係る技術上の規格を定める省令
+aliases:
+- 中継器に係る技術上の規格を定める省令
+---
+
+# 中継器に係る技術上の規格を定める省令
+
+## Metadata
+- Law ID: `356M50000008018`
+- Law No: 昭和五十六年自治省令第十八号
+- Promulgation Date: 19810620

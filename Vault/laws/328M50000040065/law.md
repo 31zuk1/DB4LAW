@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M50000040065
+id: JPLAW:328M50000040065
+law_no: 昭和二十八年大蔵省令第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M50000040065
+promulgation_date: '19530813'
+tags:
+- 閉鎖機関の調整勘定受益権の信託等に関する省令
+tier: 0
+title: 閉鎖機関の調整勘定受益権の信託等に関する省令
+law_id: 328M50000040065
+official_title: 閉鎖機関の調整勘定受益権の信託等に関する省令
+aliases:
+- 閉鎖機関の調整勘定受益権の信託等に関する省令
+---
+
+# 閉鎖機関の調整勘定受益権の信託等に関する省令
+
+## Metadata
+- Law ID: `328M50000040065`
+- Law No: 昭和二十八年大蔵省令第六十五号
+- Promulgation Date: 19530813

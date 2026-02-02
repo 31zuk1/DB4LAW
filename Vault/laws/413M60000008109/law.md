@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000008109
+id: JPLAW:413M60000008109
+law_no: 平成十三年総務省令第百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000008109
+promulgation_date: '20010731'
+tags:
+- 地方財政法第三十三条の五の二第一項の額の算定方法を定める省令
+tier: 0
+title: 地方財政法第三十三条の五の二第一項の額の算定方法を定める省令
+law_id: 413M60000008109
+official_title: 地方財政法第三十三条の五の二第一項の額の算定方法を定める省令
+aliases:
+- 地方財政法第三十三条の五の二第一項の額の算定方法を定める省令
+---
+
+# 地方財政法第三十三条の五の二第一項の額の算定方法を定める省令
+
+## Metadata
+- Law ID: `413M60000008109`
+- Law No: 平成十三年総務省令第百九号
+- Promulgation Date: 20010731

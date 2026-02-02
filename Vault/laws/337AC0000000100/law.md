@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337AC0000000100
+id: JPLAW:337AC0000000100
+law_no: 昭和三十七年法律第百号
+links:
+  egov: https://laws.e-gov.go.jp/law/337AC0000000100
+promulgation_date: '19620501'
+tags:
+- 建築物用地下水の採取の規制に関する法律
+tier: 0
+title: 建築物用地下水の採取の規制に関する法律
+law_id: 337AC0000000100
+official_title: 建築物用地下水の採取の規制に関する法律
+aliases:
+- 建築物用地下水の採取の規制に関する法律
+---
+
+# 建築物用地下水の採取の規制に関する法律
+
+## Metadata
+- Law ID: `337AC0000000100`
+- Law No: 昭和三十七年法律第百号
+- Promulgation Date: 19620501

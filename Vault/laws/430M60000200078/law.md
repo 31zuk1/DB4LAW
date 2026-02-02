@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430M60000200078
+id: JPLAW:430M60000200078
+law_no: 平成三十年農林水産省令第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/430M60000200078
+promulgation_date: '20181219'
+tags:
+- 森林経営管理法施行規則
+tier: 0
+title: 森林経営管理法施行規則
+law_id: 430M60000200078
+official_title: 森林経営管理法施行規則
+aliases:
+- 森林経営管理法施行規則
+---
+
+# 森林経営管理法施行規則
+
+## Metadata
+- Law ID: `430M60000200078`
+- Law No: 平成三十年農林水産省令第七十八号
+- Promulgation Date: 20181219

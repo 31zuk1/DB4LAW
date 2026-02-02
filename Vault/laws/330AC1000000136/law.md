@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330AC1000000136
+id: JPLAW:330AC1000000136
+law_no: 昭和三十年法律第百三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/330AC1000000136
+promulgation_date: '19550805'
+tags:
+- 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法
+tier: 0
+title: 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法
+law_id: 330AC1000000136
+official_title: 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法
+aliases:
+- 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法
+---
+
+# 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法
+
+## Metadata
+- Law ID: `330AC1000000136`
+- Law No: 昭和三十年法律第百三十六号
+- Promulgation Date: 19550805

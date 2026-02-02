@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000080059
+id: JPLAW:415M60000080059
+law_no: 平成十五年文部科学省令第五十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000080059
+promulgation_date: '20031219'
+tags:
+- 独立行政法人大学改革支援・学位授与機構に関する省令
+tier: 0
+title: 独立行政法人大学改革支援・学位授与機構に関する省令
+law_id: 415M60000080059
+official_title: 独立行政法人大学改革支援・学位授与機構に関する省令
+aliases:
+- 独立行政法人大学改革支援・学位授与機構に関する省令
+---
+
+# 独立行政法人大学改革支援・学位授与機構に関する省令
+
+## Metadata
+- Law ID: `415M60000080059`
+- Law No: 平成十五年文部科学省令第五十九号
+- Promulgation Date: 20031219

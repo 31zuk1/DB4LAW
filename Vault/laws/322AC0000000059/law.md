@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000059
+id: JPLAW:322AC0000000059
+law_no: 昭和二十二年法律第五十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000059
+promulgation_date: '19470416'
+tags:
+- 裁判所法
+tier: 0
+title: 裁判所法
+law_id: 322AC0000000059
+official_title: 裁判所法
+aliases:
+- 裁判所法
+---
+
+# 裁判所法
+
+## Metadata
+- Law ID: `322AC0000000059`
+- Law No: 昭和二十二年法律第五十九号
+- Promulgation Date: 19470416

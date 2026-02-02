@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506M60000008056
+id: JPLAW:506M60000008056
+law_no: 令和六年総務省令第五十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/506M60000008056
+promulgation_date: '20240531'
+tags:
+- サービス産業動態統計調査規則
+tier: 0
+title: サービス産業動態統計調査規則
+law_id: 506M60000008056
+official_title: サービス産業動態統計調査規則
+aliases:
+- サービス産業動態統計調査規則
+---
+
+# サービス産業動態統計調査規則
+
+## Metadata
+- Law ID: `506M60000008056`
+- Law No: 令和六年総務省令第五十六号
+- Promulgation Date: 20240531

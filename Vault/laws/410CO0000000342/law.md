@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410CO0000000342
+id: JPLAW:410CO0000000342
+law_no: 平成十年政令第三百四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/410CO0000000342
+promulgation_date: '19981022'
+tags:
+- 金融機能の早期健全化のための緊急措置に関する法律施行令
+tier: 0
+title: 金融機能の早期健全化のための緊急措置に関する法律施行令
+law_id: 410CO0000000342
+official_title: 金融機能の早期健全化のための緊急措置に関する法律施行令
+aliases:
+- 金融機能の早期健全化のための緊急措置に関する法律施行令
+---
+
+# 金融機能の早期健全化のための緊急措置に関する法律施行令
+
+## Metadata
+- Law ID: `410CO0000000342`
+- Law No: 平成十年政令第三百四十二号
+- Promulgation Date: 19981022

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419AC0000000094
+id: JPLAW:419AC0000000094
+law_no: 平成十九年法律第九十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/419AC0000000094
+promulgation_date: '20070622'
+tags:
+- 地方公共団体の財政の健全化に関する法律
+tier: 0
+title: 地方公共団体の財政の健全化に関する法律
+law_id: 419AC0000000094
+official_title: 地方公共団体の財政の健全化に関する法律
+aliases:
+- 地方公共団体の財政の健全化に関する法律
+---
+
+# 地方公共団体の財政の健全化に関する法律
+
+## Metadata
+- Law ID: `419AC0000000094`
+- Law No: 平成十九年法律第九十四号
+- Promulgation Date: 20070622

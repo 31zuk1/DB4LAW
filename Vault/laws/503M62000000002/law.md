@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503M62000000002
+id: JPLAW:503M62000000002
+law_no: 令和三年カジノ管理委員会規則第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/503M62000000002
+promulgation_date: '20210716'
+tags:
+- 特定複合観光施設区域整備法関係手数料規則
+tier: 0
+title: 特定複合観光施設区域整備法関係手数料規則
+law_id: 503M62000000002
+official_title: 特定複合観光施設区域整備法関係手数料規則
+aliases:
+- 特定複合観光施設区域整備法関係手数料規則
+---
+
+# 特定複合観光施設区域整備法関係手数料規則
+
+## Metadata
+- Law ID: `503M62000000002`
+- Law No: 令和三年カジノ管理委員会規則第二号
+- Promulgation Date: 20210716

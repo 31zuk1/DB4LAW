@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331M50000800043
+id: JPLAW:331M50000800043
+law_no: 昭和三十一年運輸省令第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/331M50000800043
+promulgation_date: '19560720'
+tags:
+- 動力車操縦者運転免許に関する省令
+tier: 0
+title: 動力車操縦者運転免許に関する省令
+law_id: 331M50000800043
+official_title: 動力車操縦者運転免許に関する省令
+aliases:
+- 動力車操縦者運転免許に関する省令
+---
+
+# 動力車操縦者運転免許に関する省令
+
+## Metadata
+- Law ID: `331M50000800043`
+- Law No: 昭和三十一年運輸省令第四十三号
+- Promulgation Date: 19560720

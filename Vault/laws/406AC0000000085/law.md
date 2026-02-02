@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406AC0000000085
+id: JPLAW:406AC0000000085
+law_no: 平成六年法律第八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/406AC0000000085
+promulgation_date: '19940701'
+tags:
+- 製造物責任法
+tier: 0
+title: 製造物責任法
+law_id: 406AC0000000085
+official_title: 製造物責任法
+aliases:
+- 製造物責任法
+---
+
+# 製造物責任法
+
+## Metadata
+- Law ID: `406AC0000000085`
+- Law No: 平成六年法律第八十五号
+- Promulgation Date: 19940701

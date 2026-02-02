@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408M50000010025
+id: JPLAW:408M50000010025
+law_no: 平成八年法務省令第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/408M50000010025
+promulgation_date: '19960326'
+tags:
+- 更生保護事業法施行規則
+tier: 0
+title: 更生保護事業法施行規則
+law_id: 408M50000010025
+official_title: 更生保護事業法施行規則
+aliases:
+- 更生保護事業法施行規則
+---
+
+# 更生保護事業法施行規則
+
+## Metadata
+- Law ID: `408M50000010025`
+- Law No: 平成八年法務省令第二十五号
+- Promulgation Date: 19960326

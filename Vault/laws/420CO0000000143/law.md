@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000143
+id: JPLAW:420CO0000000143
+law_no: 平成二十年政令第百四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000143
+promulgation_date: '20080418'
+tags:
+- 株式会社日本政策金融公庫法施行令
+tier: 0
+title: 株式会社日本政策金融公庫法施行令
+law_id: 420CO0000000143
+official_title: 株式会社日本政策金融公庫法施行令
+aliases:
+- 株式会社日本政策金融公庫法施行令
+---
+
+# 株式会社日本政策金融公庫法施行令
+
+## Metadata
+- Law ID: `420CO0000000143`
+- Law No: 平成二十年政令第百四十三号
+- Promulgation Date: 20080418

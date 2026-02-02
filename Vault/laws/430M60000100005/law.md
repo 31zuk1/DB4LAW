@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430M60000100005
+id: JPLAW:430M60000100005
+law_no: 平成三十年厚生労働省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/430M60000100005
+promulgation_date: '20180118'
+tags:
+- 介護医療院の人員、施設及び設備並びに運営に関する基準
+tier: 0
+title: 介護医療院の人員、施設及び設備並びに運営に関する基準
+law_id: 430M60000100005
+official_title: 介護医療院の人員、施設及び設備並びに運営に関する基準
+aliases:
+- 介護医療院の人員、施設及び設備並びに運営に関する基準
+---
+
+# 介護医療院の人員、施設及び設備並びに運営に関する基準
+
+## Metadata
+- Law ID: `430M60000100005`
+- Law No: 平成三十年厚生労働省令第五号
+- Promulgation Date: 20180118

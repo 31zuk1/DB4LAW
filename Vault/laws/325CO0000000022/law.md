@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000022
+id: JPLAW:325CO0000000022
+law_no: 昭和二十五年政令第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000022
+promulgation_date: '19500228'
+tags:
+- 国外居住外国人等に対する債務の弁済のためにする供託の特例に関する政令
+tier: 0
+title: 国外居住外国人等に対する債務の弁済のためにする供託の特例に関する政令
+law_id: 325CO0000000022
+official_title: 国外居住外国人等に対する債務の弁済のためにする供託の特例に関する政令
+aliases:
+- 国外居住外国人等に対する債務の弁済のためにする供託の特例に関する政令
+---
+
+# 国外居住外国人等に対する債務の弁済のためにする供託の特例に関する政令
+
+## Metadata
+- Law ID: `325CO0000000022`
+- Law No: 昭和二十五年政令第二十二号
+- Promulgation Date: 19500228

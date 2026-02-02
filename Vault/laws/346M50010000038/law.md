@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346M50010000038
+id: JPLAW:346M50010000038
+law_no: 昭和四十六年農林省令第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/346M50010000038
+promulgation_date: '19710605'
+tags:
+- 牛乳乳製品統計調査規則
+tier: 0
+title: 牛乳乳製品統計調査規則
+law_id: 346M50010000038
+official_title: 牛乳乳製品統計調査規則
+aliases:
+- 牛乳乳製品統計調査規則
+---
+
+# 牛乳乳製品統計調査規則
+
+## Metadata
+- Law ID: `346M50010000038`
+- Law No: 昭和四十六年農林省令第三十八号
+- Promulgation Date: 19710605

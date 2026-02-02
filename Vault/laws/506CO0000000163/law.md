@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506CO0000000163
+id: JPLAW:506CO0000000163
+law_no: 令和六年政令第百六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/506CO0000000163
+promulgation_date: '20240330'
+tags:
+- 火山調査研究推進本部令
+tier: 0
+title: 火山調査研究推進本部令
+law_id: 506CO0000000163
+official_title: 火山調査研究推進本部令
+aliases:
+- 火山調査研究推進本部令
+---
+
+# 火山調査研究推進本部令
+
+## Metadata
+- Law ID: `506CO0000000163`
+- Law No: 令和六年政令第百六十三号
+- Promulgation Date: 20240330

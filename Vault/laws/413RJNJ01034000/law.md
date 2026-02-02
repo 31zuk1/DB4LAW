@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413RJNJ01034000
+id: JPLAW:413RJNJ01034000
+law_no: 平成十三年人事院規則一―三四
+links:
+  egov: https://laws.e-gov.go.jp/law/413RJNJ01034000
+promulgation_date: '20010119'
+tags:
+- 人事院規則一―三四（人事管理文書の保存期間及び保存期間が満了したときの措置）
+tier: 0
+title: 人事院規則一―三四（人事管理文書の保存期間及び保存期間が満了したときの措置）
+law_id: 413RJNJ01034000
+official_title: 人事院規則一―三四（人事管理文書の保存期間及び保存期間が満了したときの措置）
+aliases:
+- 人事院規則一―三四（人事管理文書の保存期間及び保存期間が満了したときの措置）
+---
+
+# 人事院規則一―三四（人事管理文書の保存期間及び保存期間が満了したときの措置）
+
+## Metadata
+- Law ID: `413RJNJ01034000`
+- Law No: 平成十三年人事院規則一―三四
+- Promulgation Date: 20010119

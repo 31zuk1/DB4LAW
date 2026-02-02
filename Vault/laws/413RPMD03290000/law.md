@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413RPMD03290000
+id: JPLAW:413RPMD03290000
+law_no: 平成十三年三月二十九日内閣総理大臣決定
+links:
+  egov: https://laws.e-gov.go.jp/law/413RPMD03290000
+promulgation_date: '20010329'
+tags:
+- 内閣衛星情報センター組織規則
+tier: 0
+title: 内閣衛星情報センター組織規則
+law_id: 413RPMD03290000
+official_title: 内閣衛星情報センター組織規則
+aliases:
+- 内閣衛星情報センター組織規則
+---
+
+# 内閣衛星情報センター組織規則
+
+## Metadata
+- Law ID: `413RPMD03290000`
+- Law No: 平成十三年三月二十九日内閣総理大臣決定
+- Promulgation Date: 20010329

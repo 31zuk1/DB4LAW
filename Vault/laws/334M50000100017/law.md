@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334M50000100017
+id: JPLAW:334M50000100017
+law_no: 昭和三十四年厚生省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/334M50000100017
+promulgation_date: '19590615'
+tags:
+- 老齢福祉年金支給規則
+tier: 0
+title: 老齢福祉年金支給規則
+law_id: 334M50000100017
+official_title: 老齢福祉年金支給規則
+aliases:
+- 老齢福祉年金支給規則
+---
+
+# 老齢福祉年金支給規則
+
+## Metadata
+- Law ID: `334M50000100017`
+- Law No: 昭和三十四年厚生省令第十七号
+- Promulgation Date: 19590615

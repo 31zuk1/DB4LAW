@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000368
+id: JPLAW:327CO0000000368
+law_no: 昭和二十七年政令第三百六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000368
+promulgation_date: '19520827'
+tags:
+- 防衛省の職員の給与等に関する法律施行令
+tier: 0
+title: 防衛省の職員の給与等に関する法律施行令
+law_id: 327CO0000000368
+official_title: 防衛省の職員の給与等に関する法律施行令
+aliases:
+- 防衛省の職員の給与等に関する法律施行令
+---
+
+# 防衛省の職員の給与等に関する法律施行令
+
+## Metadata
+- Law ID: `327CO0000000368`
+- Law No: 昭和二十七年政令第三百六十八号
+- Promulgation Date: 19520827

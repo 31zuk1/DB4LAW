@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000100155
+id: JPLAW:427M60000100155
+law_no: 平成二十七年厚生労働省令第百五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000100155
+promulgation_date: '20150930'
+tags:
+- 青少年の雇用の促進等に関する法律施行規則
+tier: 0
+title: 青少年の雇用の促進等に関する法律施行規則
+law_id: 427M60000100155
+official_title: 青少年の雇用の促進等に関する法律施行規則
+aliases:
+- 青少年の雇用の促進等に関する法律施行規則
+---
+
+# 青少年の雇用の促進等に関する法律施行規則
+
+## Metadata
+- Law ID: `427M60000100155`
+- Law No: 平成二十七年厚生労働省令第百五十五号
+- Promulgation Date: 20150930

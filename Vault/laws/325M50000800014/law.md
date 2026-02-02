@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50000800014
+id: JPLAW:325M50000800014
+law_no: 昭和二十五年運輸省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50000800014
+promulgation_date: '19500303'
+tags:
+- 造船造機統計調査規則
+tier: 0
+title: 造船造機統計調査規則
+law_id: 325M50000800014
+official_title: 造船造機統計調査規則
+aliases:
+- 造船造機統計調査規則
+---
+
+# 造船造機統計調査規則
+
+## Metadata
+- Law ID: `325M50000800014`
+- Law No: 昭和二十五年運輸省令第十四号
+- Promulgation Date: 19500303

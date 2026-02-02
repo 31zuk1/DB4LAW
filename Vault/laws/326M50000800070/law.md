@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000800070
+id: JPLAW:326M50000800070
+law_no: 昭和二十六年運輸省令第七十号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000800070
+promulgation_date: '19510810'
+tags:
+- 自動車点検基準
+tier: 0
+title: 自動車点検基準
+law_id: 326M50000800070
+official_title: 自動車点検基準
+aliases:
+- 自動車点検基準
+---
+
+# 自動車点検基準
+
+## Metadata
+- Law ID: `326M50000800070`
+- Law No: 昭和二十六年運輸省令第七十号
+- Promulgation Date: 19510810

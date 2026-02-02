@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424M60000200058
+id: JPLAW:424M60000200058
+law_no: 平成二十四年農林水産省令第五十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/424M60000200058
+promulgation_date: '20121128'
+tags:
+- 株式会社農林漁業成長産業化支援機構法施行規則
+tier: 0
+title: 株式会社農林漁業成長産業化支援機構法施行規則
+law_id: 424M60000200058
+official_title: 株式会社農林漁業成長産業化支援機構法施行規則
+aliases:
+- 株式会社農林漁業成長産業化支援機構法施行規則
+---
+
+# 株式会社農林漁業成長産業化支援機構法施行規則
+
+## Metadata
+- Law ID: `424M60000200058`
+- Law No: 平成二十四年農林水産省令第五十八号
+- Promulgation Date: 20121128

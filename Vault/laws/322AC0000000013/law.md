@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000013
+id: JPLAW:322AC0000000013
+law_no: 昭和二十二年法律第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000013
+promulgation_date: '19470313'
+tags:
+- 請願法
+tier: 0
+title: 請願法
+law_id: 322AC0000000013
+official_title: 請願法
+aliases:
+- 請願法
+---
+
+# 請願法
+
+## Metadata
+- Law ID: `322AC0000000013`
+- Law No: 昭和二十二年法律第十三号
+- Promulgation Date: 19470313

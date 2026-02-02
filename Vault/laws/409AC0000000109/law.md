@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409AC0000000109
+id: JPLAW:409AC0000000109
+law_no: 平成九年法律第百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/409AC0000000109
+promulgation_date: '19971205'
+tags:
+- 財政構造改革の推進に関する特別措置法
+tier: 0
+title: 財政構造改革の推進に関する特別措置法
+law_id: 409AC0000000109
+official_title: 財政構造改革の推進に関する特別措置法
+aliases:
+- 財政構造改革の推進に関する特別措置法
+---
+
+# 財政構造改革の推進に関する特別措置法
+
+## Metadata
+- Law ID: `409AC0000000109`
+- Law No: 平成九年法律第百九号
+- Promulgation Date: 19971205

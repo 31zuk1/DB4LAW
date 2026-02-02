@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404AC1000000110
+id: JPLAW:404AC1000000110
+law_no: 平成四年法律第百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/404AC1000000110
+promulgation_date: '19921224'
+tags:
+- 大阪湾臨海地域開発整備法
+tier: 0
+title: 大阪湾臨海地域開発整備法
+law_id: 404AC1000000110
+official_title: 大阪湾臨海地域開発整備法
+aliases:
+- 大阪湾臨海地域開発整備法
+---
+
+# 大阪湾臨海地域開発整備法
+
+## Metadata
+- Law ID: `404AC1000000110`
+- Law No: 平成四年法律第百十号
+- Promulgation Date: 19921224

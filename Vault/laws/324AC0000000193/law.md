@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000193
+id: JPLAW:324AC0000000193
+law_no: 昭和二十四年法律第百九十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000193
+promulgation_date: '19490604'
+tags:
+- 水防法
+tier: 0
+title: 水防法
+law_id: 324AC0000000193
+official_title: 水防法
+aliases:
+- 水防法
+---
+
+# 水防法
+
+## Metadata
+- Law ID: `324AC0000000193`
+- Law No: 昭和二十四年法律第百九十三号
+- Promulgation Date: 19490604

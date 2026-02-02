@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358AC1000000032
+id: JPLAW:358AC1000000032
+law_no: 昭和五十八年法律第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/358AC1000000032
+promulgation_date: '19830513'
+tags:
+- 貸金業法
+tier: 0
+title: 貸金業法
+law_id: 358AC1000000032
+official_title: 貸金業法
+aliases:
+- 貸金業法
+---
+
+# 貸金業法
+
+## Metadata
+- Law ID: `358AC1000000032`
+- Law No: 昭和五十八年法律第三十二号
+- Promulgation Date: 19830513

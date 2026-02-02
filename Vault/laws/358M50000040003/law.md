@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358M50000040003
+id: JPLAW:358M50000040003
+law_no: 昭和五十八年大蔵省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/358M50000040003
+promulgation_date: '19830216'
+tags:
+- アフリカ開発銀行への加盟に伴う国債の発行等に関する省令
+tier: 0
+title: アフリカ開発銀行への加盟に伴う国債の発行等に関する省令
+law_id: 358M50000040003
+official_title: アフリカ開発銀行への加盟に伴う国債の発行等に関する省令
+aliases:
+- アフリカ開発銀行への加盟に伴う国債の発行等に関する省令
+---
+
+# アフリカ開発銀行への加盟に伴う国債の発行等に関する省令
+
+## Metadata
+- Law ID: `358M50000040003`
+- Law No: 昭和五十八年大蔵省令第三号
+- Promulgation Date: 19830216

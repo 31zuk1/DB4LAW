@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346CO0000000367
+id: JPLAW:346CO0000000367
+law_no: 昭和四十六年政令第三百六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/346CO0000000367
+promulgation_date: '19711210'
+tags:
+- 豪雪地帯対策特別措置法施行令
+tier: 0
+title: 豪雪地帯対策特別措置法施行令
+law_id: 346CO0000000367
+official_title: 豪雪地帯対策特別措置法施行令
+aliases:
+- 豪雪地帯対策特別措置法施行令
+---
+
+# 豪雪地帯対策特別措置法施行令
+
+## Metadata
+- Law ID: `346CO0000000367`
+- Law No: 昭和四十六年政令第三百六十七号
+- Promulgation Date: 19711210

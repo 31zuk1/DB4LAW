@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417M60000100049
+id: JPLAW:417M60000100049
+law_no: 平成十七年厚生労働省令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/417M60000100049
+promulgation_date: '20050328'
+tags:
+- 特定障害者に対する特別障害給付金の支給に関する法律施行規則
+tier: 0
+title: 特定障害者に対する特別障害給付金の支給に関する法律施行規則
+law_id: 417M60000100049
+official_title: 特定障害者に対する特別障害給付金の支給に関する法律施行規則
+aliases:
+- 特定障害者に対する特別障害給付金の支給に関する法律施行規則
+---
+
+# 特定障害者に対する特別障害給付金の支給に関する法律施行規則
+
+## Metadata
+- Law ID: `417M60000100049`
+- Law No: 平成十七年厚生労働省令第四十九号
+- Promulgation Date: 20050328

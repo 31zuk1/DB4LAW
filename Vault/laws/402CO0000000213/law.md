@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402CO0000000213
+id: JPLAW:402CO0000000213
+law_no: 平成二年政令第二百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/402CO0000000213
+promulgation_date: '19900710'
+tags:
+- 貨物自動車運送事業法の施行に伴う経過措置に関する政令
+tier: 0
+title: 貨物自動車運送事業法の施行に伴う経過措置に関する政令
+law_id: 402CO0000000213
+official_title: 貨物自動車運送事業法の施行に伴う経過措置に関する政令
+aliases:
+- 貨物自動車運送事業法の施行に伴う経過措置に関する政令
+---
+
+# 貨物自動車運送事業法の施行に伴う経過措置に関する政令
+
+## Metadata
+- Law ID: `402CO0000000213`
+- Law No: 平成二年政令第二百十三号
+- Promulgation Date: 19900710

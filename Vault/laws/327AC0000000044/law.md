@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000044
+id: JPLAW:327AC0000000044
+law_no: 昭和二十七年法律第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000044
+promulgation_date: '19520331'
+tags:
+- 在外公館等借入金の返済の実施に関する法律
+tier: 0
+title: 在外公館等借入金の返済の実施に関する法律
+law_id: 327AC0000000044
+official_title: 在外公館等借入金の返済の実施に関する法律
+aliases:
+- 在外公館等借入金の返済の実施に関する法律
+---
+
+# 在外公館等借入金の返済の実施に関する法律
+
+## Metadata
+- Law ID: `327AC0000000044`
+- Law No: 昭和二十七年法律第四十四号
+- Promulgation Date: 19520331

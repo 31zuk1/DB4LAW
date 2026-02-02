@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351M50000040028
+id: JPLAW:351M50000040028
+law_no: 昭和五十一年大蔵省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/351M50000040028
+promulgation_date: '19761030'
+tags:
+- 連結財務諸表の用語、様式及び作成方法に関する規則
+tier: 0
+title: 連結財務諸表の用語、様式及び作成方法に関する規則
+law_id: 351M50000040028
+official_title: 連結財務諸表の用語、様式及び作成方法に関する規則
+aliases:
+- 連結財務諸表の用語、様式及び作成方法に関する規則
+---
+
+# 連結財務諸表の用語、様式及び作成方法に関する規則
+
+## Metadata
+- Law ID: `351M50000040028`
+- Law No: 昭和五十一年大蔵省令第二十八号
+- Promulgation Date: 19761030

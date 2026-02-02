@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000226
+id: JPLAW:322AC0000000226
+law_no: 昭和二十二年法律第二百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000226
+promulgation_date: '19471223'
+tags:
+- 消防組織法
+tier: 0
+title: 消防組織法
+law_id: 322AC0000000226
+official_title: 消防組織法
+aliases:
+- 消防組織法
+---
+
+# 消防組織法
+
+## Metadata
+- Law ID: `322AC0000000226`
+- Law No: 昭和二十二年法律第二百二十六号
+- Promulgation Date: 19471223

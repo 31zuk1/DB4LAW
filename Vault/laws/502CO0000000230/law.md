@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 502CO0000000230
+id: JPLAW:502CO0000000230
+law_no: 令和二年政令第二百三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/502CO0000000230
+promulgation_date: '20200728'
+tags:
+- 令和三年度予算に係る歳入歳出等の見積書類の送付期限の特例を定める政令
+tier: 0
+title: 令和三年度予算に係る歳入歳出等の見積書類の送付期限の特例を定める政令
+law_id: 502CO0000000230
+official_title: 令和三年度予算に係る歳入歳出等の見積書類の送付期限の特例を定める政令
+aliases:
+- 令和三年度予算に係る歳入歳出等の見積書類の送付期限の特例を定める政令
+---
+
+# 令和三年度予算に係る歳入歳出等の見積書類の送付期限の特例を定める政令
+
+## Metadata
+- Law ID: `502CO0000000230`
+- Law No: 令和二年政令第二百三十号
+- Promulgation Date: 20200728

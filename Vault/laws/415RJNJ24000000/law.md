@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415RJNJ24000000
+id: JPLAW:415RJNJ24000000
+law_no: 平成十五年人事院規則二四―〇
+links:
+  egov: https://laws.e-gov.go.jp/law/415RJNJ24000000
+promulgation_date: '20031001'
+tags:
+- 人事院規則二四―〇（検察官その他の職員の法科大学院への派遣）
+tier: 0
+title: 人事院規則二四―〇（検察官その他の職員の法科大学院への派遣）
+law_id: 415RJNJ24000000
+official_title: 人事院規則二四―〇（検察官その他の職員の法科大学院への派遣）
+aliases:
+- 人事院規則二四―〇（検察官その他の職員の法科大学院への派遣）
+---
+
+# 人事院規則二四―〇（検察官その他の職員の法科大学院への派遣）
+
+## Metadata
+- Law ID: `415RJNJ24000000`
+- Law No: 平成十五年人事院規則二四―〇
+- Promulgation Date: 20031001

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360RJNJ09080000
+id: JPLAW:360RJNJ09080000
+law_no: 昭和六十年人事院規則九―八〇
+links:
+  egov: https://laws.e-gov.go.jp/law/360RJNJ09080000
+promulgation_date: '19851221'
+tags:
+- 人事院規則九―八〇（扶養手当）
+tier: 0
+title: 人事院規則九―八〇（扶養手当）
+law_id: 360RJNJ09080000
+official_title: 人事院規則九―八〇（扶養手当）
+aliases:
+- 人事院規則九―八〇（扶養手当）
+---
+
+# 人事院規則九―八〇（扶養手当）
+
+## Metadata
+- Law ID: `360RJNJ09080000`
+- Law No: 昭和六十年人事院規則九―八〇
+- Promulgation Date: 19851221

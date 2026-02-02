@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000144
+id: JPLAW:325AC0000000144
+law_no: 昭和二十五年法律第百四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000144
+promulgation_date: '19500504'
+tags:
+- 生活保護法
+tier: 0
+title: 生活保護法
+law_id: 325AC0000000144
+official_title: 生活保護法
+aliases:
+- 生活保護法
+---
+
+# 生活保護法
+
+## Metadata
+- Law ID: `325AC0000000144`
+- Law No: 昭和二十五年法律第百四十四号
+- Promulgation Date: 19500504

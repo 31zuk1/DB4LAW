@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC1000000098
+id: JPLAW:418AC1000000098
+law_no: 平成十八年法律第九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC1000000098
+promulgation_date: '20060623'
+tags:
+- がん対策基本法
+tier: 0
+title: がん対策基本法
+law_id: 418AC1000000098
+official_title: がん対策基本法
+aliases:
+- がん対策基本法
+---
+
+# がん対策基本法
+
+## Metadata
+- Law ID: `418AC1000000098`
+- Law No: 平成十八年法律第九十八号
+- Promulgation Date: 20060623

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332AC0000000026
+id: JPLAW:332AC0000000026
+law_no: 昭和三十二年法律第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/332AC0000000026
+promulgation_date: '19570331'
+tags:
+- 租税特別措置法
+tier: 0
+title: 租税特別措置法
+law_id: 332AC0000000026
+official_title: 租税特別措置法
+aliases:
+- 租税特別措置法
+---
+
+# 租税特別措置法
+
+## Metadata
+- Law ID: `332AC0000000026`
+- Law No: 昭和三十二年法律第二十六号
+- Promulgation Date: 19570331

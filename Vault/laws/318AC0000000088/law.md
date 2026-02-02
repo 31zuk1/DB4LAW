@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 318AC0000000088
+id: JPLAW:318AC0000000088
+law_no: 昭和十八年法律第八十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/318AC0000000088
+promulgation_date: '19430401'
+tags:
+- 昭和十八年法律第八十八号（陪審法ノ停止ニ関スル法律）
+tier: 0
+title: 昭和十八年法律第八十八号（陪審法ノ停止ニ関スル法律）
+law_id: 318AC0000000088
+official_title: 昭和十八年法律第八十八号（陪審法ノ停止ニ関スル法律）
+aliases:
+- 昭和十八年法律第八十八号（陪審法ノ停止ニ関スル法律）
+---
+
+# 昭和十八年法律第八十八号（陪審法ノ停止ニ関スル法律）
+
+## Metadata
+- Law ID: `318AC0000000088`
+- Law No: 昭和十八年法律第八十八号
+- Promulgation Date: 19430401

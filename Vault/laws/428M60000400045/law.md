@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428M60000400045
+id: JPLAW:428M60000400045
+law_no: 平成二十八年経済産業省令第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/428M60000400045
+promulgation_date: '20160329'
+tags:
+- みなし小売電気事業者部門別収支計算規則
+tier: 0
+title: みなし小売電気事業者部門別収支計算規則
+law_id: 428M60000400045
+official_title: みなし小売電気事業者部門別収支計算規則
+aliases:
+- みなし小売電気事業者部門別収支計算規則
+---
+
+# みなし小売電気事業者部門別収支計算規則
+
+## Metadata
+- Law ID: `428M60000400045`
+- Law No: 平成二十八年経済産業省令第四十五号
+- Promulgation Date: 20160329

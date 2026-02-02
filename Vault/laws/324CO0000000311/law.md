@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324CO0000000311
+id: JPLAW:324CO0000000311
+law_no: 昭和二十四年政令第三百十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/324CO0000000311
+promulgation_date: '19490818'
+tags:
+- 外国政府の不動産に関する権利の取得に関する政令
+tier: 0
+title: 外国政府の不動産に関する権利の取得に関する政令
+law_id: 324CO0000000311
+official_title: 外国政府の不動産に関する権利の取得に関する政令
+aliases:
+- 外国政府の不動産に関する権利の取得に関する政令
+---
+
+# 外国政府の不動産に関する権利の取得に関する政令
+
+## Metadata
+- Law ID: `324CO0000000311`
+- Law No: 昭和二十四年政令第三百十一号
+- Promulgation Date: 19490818

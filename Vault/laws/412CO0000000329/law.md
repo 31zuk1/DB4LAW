@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000329
+id: JPLAW:412CO0000000329
+law_no: 平成十二年政令第三百二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000329
+promulgation_date: '20000607'
+tags:
+- 国立研究開発法人建築研究所法第十二条第五号の公共的団体を定める政令
+tier: 0
+title: 国立研究開発法人建築研究所法第十二条第五号の公共的団体を定める政令
+law_id: 412CO0000000329
+official_title: 国立研究開発法人建築研究所法第十二条第五号の公共的団体を定める政令
+aliases:
+- 国立研究開発法人建築研究所法第十二条第五号の公共的団体を定める政令
+---
+
+# 国立研究開発法人建築研究所法第十二条第五号の公共的団体を定める政令
+
+## Metadata
+- Law ID: `412CO0000000329`
+- Law No: 平成十二年政令第三百二十九号
+- Promulgation Date: 20000607

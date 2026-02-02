@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336M50000100005
+id: JPLAW:336M50000100005
+law_no: 昭和三十六年厚生省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/336M50000100005
+promulgation_date: '19610201'
+tags:
+- 薬剤師法施行規則
+tier: 0
+title: 薬剤師法施行規則
+law_id: 336M50000100005
+official_title: 薬剤師法施行規則
+aliases:
+- 薬剤師法施行規則
+---
+
+# 薬剤師法施行規則
+
+## Metadata
+- Law ID: `336M50000100005`
+- Law No: 昭和三十六年厚生省令第五号
+- Promulgation Date: 19610201

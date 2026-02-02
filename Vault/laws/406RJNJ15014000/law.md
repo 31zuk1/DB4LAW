@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406RJNJ15014000
+id: JPLAW:406RJNJ15014000
+law_no: 平成六年人事院規則一五―一四
+links:
+  egov: https://laws.e-gov.go.jp/law/406RJNJ15014000
+promulgation_date: '19940727'
+tags:
+- 人事院規則一五―一四（職員の勤務時間、休日及び休暇）
+tier: 0
+title: 人事院規則一五―一四（職員の勤務時間、休日及び休暇）
+law_id: 406RJNJ15014000
+official_title: 人事院規則一五―一四（職員の勤務時間、休日及び休暇）
+aliases:
+- 人事院規則一五―一四（職員の勤務時間、休日及び休暇）
+---
+
+# 人事院規則一五―一四（職員の勤務時間、休日及び休暇）
+
+## Metadata
+- Law ID: `406RJNJ15014000`
+- Law No: 平成六年人事院規則一五―一四
+- Promulgation Date: 19940727

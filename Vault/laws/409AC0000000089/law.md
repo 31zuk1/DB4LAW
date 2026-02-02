@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409AC0000000089
+id: JPLAW:409AC0000000089
+law_no: 平成九年法律第八十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/409AC0000000089
+promulgation_date: '19970618'
+tags:
+- 日本銀行法
+tier: 0
+title: 日本銀行法
+law_id: 409AC0000000089
+official_title: 日本銀行法
+aliases:
+- 日本銀行法
+---
+
+# 日本銀行法
+
+## Metadata
+- Law ID: `409AC0000000089`
+- Law No: 平成九年法律第八十九号
+- Promulgation Date: 19970618

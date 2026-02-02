@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506M60000080029
+id: JPLAW:506M60000080029
+law_no: 令和六年文部科学省令第二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/506M60000080029
+promulgation_date: '20240930'
+tags:
+- 私立学校振興助成法施行規則
+tier: 0
+title: 私立学校振興助成法施行規則
+law_id: 506M60000080029
+official_title: 私立学校振興助成法施行規則
+aliases:
+- 私立学校振興助成法施行規則
+---
+
+# 私立学校振興助成法施行規則
+
+## Metadata
+- Law ID: `506M60000080029`
+- Law No: 令和六年文部科学省令第二十九号
+- Promulgation Date: 20240930

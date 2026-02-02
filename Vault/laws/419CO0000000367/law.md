@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419CO0000000367
+id: JPLAW:419CO0000000367
+law_no: 平成十九年政令第三百六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/419CO0000000367
+promulgation_date: '20071212'
+tags:
+- 株式会社商工組合中央金庫法施行令
+tier: 0
+title: 株式会社商工組合中央金庫法施行令
+law_id: 419CO0000000367
+official_title: 株式会社商工組合中央金庫法施行令
+aliases:
+- 株式会社商工組合中央金庫法施行令
+---
+
+# 株式会社商工組合中央金庫法施行令
+
+## Metadata
+- Law ID: `419CO0000000367`
+- Law No: 平成十九年政令第三百六十七号
+- Promulgation Date: 20071212

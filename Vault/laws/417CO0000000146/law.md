@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417CO0000000146
+id: JPLAW:417CO0000000146
+law_no: 平成十七年政令第百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/417CO0000000146
+promulgation_date: '20050401'
+tags:
+- 公益通報者保護法別表第八号の法律を定める政令
+tier: 0
+title: 公益通報者保護法別表第八号の法律を定める政令
+law_id: 417CO0000000146
+official_title: 公益通報者保護法別表第八号の法律を定める政令
+aliases:
+- 公益通報者保護法別表第八号の法律を定める政令
+---
+
+# 公益通報者保護法別表第八号の法律を定める政令
+
+## Metadata
+- Law ID: `417CO0000000146`
+- Law No: 平成十七年政令第百四十六号
+- Promulgation Date: 20050401

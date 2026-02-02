@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343M50000010050
+id: JPLAW:343M50000010050
+law_no: 昭和四十三年法務省令第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/343M50000010050
+promulgation_date: '19681130'
+tags:
+- 観光施設財団抵当登記規則
+tier: 0
+title: 観光施設財団抵当登記規則
+law_id: 343M50000010050
+official_title: 観光施設財団抵当登記規則
+aliases:
+- 観光施設財団抵当登記規則
+---
+
+# 観光施設財団抵当登記規則
+
+## Metadata
+- Law ID: `343M50000010050`
+- Law No: 昭和四十三年法務省令第五十号
+- Promulgation Date: 19681130

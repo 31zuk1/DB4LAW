@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411M50000100036
+id: JPLAW:411M50000100036
+law_no: 平成十一年厚生省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/411M50000100036
+promulgation_date: '19990331'
+tags:
+- 介護保険法施行規則
+tier: 0
+title: 介護保険法施行規則
+law_id: 411M50000100036
+official_title: 介護保険法施行規則
+aliases:
+- 介護保険法施行規則
+---
+
+# 介護保険法施行規則
+
+## Metadata
+- Law ID: `411M50000100036`
+- Law No: 平成十一年厚生省令第三十六号
+- Promulgation Date: 19990331

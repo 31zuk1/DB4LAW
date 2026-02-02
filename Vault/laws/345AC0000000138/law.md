@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345AC0000000138
+id: JPLAW:345AC0000000138
+law_no: 昭和四十五年法律第百三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/345AC0000000138
+promulgation_date: '19701225'
+tags:
+- 水質汚濁防止法
+tier: 0
+title: 水質汚濁防止法
+law_id: 345AC0000000138
+official_title: 水質汚濁防止法
+aliases:
+- 水質汚濁防止法
+---
+
+# 水質汚濁防止法
+
+## Metadata
+- Law ID: `345AC0000000138`
+- Law No: 昭和四十五年法律第百三十八号
+- Promulgation Date: 19701225

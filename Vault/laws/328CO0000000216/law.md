@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000216
+id: JPLAW:328CO0000000216
+law_no: 昭和二十八年政令第二百十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000216
+promulgation_date: '19530825'
+tags:
+- と畜場法施行令
+tier: 0
+title: と畜場法施行令
+law_id: 328CO0000000216
+official_title: と畜場法施行令
+aliases:
+- と畜場法施行令
+---
+
+# と畜場法施行令
+
+## Metadata
+- Law ID: `328CO0000000216`
+- Law No: 昭和二十八年政令第二百十六号
+- Promulgation Date: 19530825

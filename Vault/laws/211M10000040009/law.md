@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 211M10000040009
+id: JPLAW:211M10000040009
+law_no: 大正十一年大蔵省令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/211M10000040009
+promulgation_date: '19220201'
+tags:
+- 供託有価証券取扱規程
+tier: 0
+title: 供託有価証券取扱規程
+law_id: 211M10000040009
+official_title: 供託有価証券取扱規程
+aliases:
+- 供託有価証券取扱規程
+---
+
+# 供託有価証券取扱規程
+
+## Metadata
+- Law ID: `211M10000040009`
+- Law No: 大正十一年大蔵省令第九号
+- Promulgation Date: 19220201

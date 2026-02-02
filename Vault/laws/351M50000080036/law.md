@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351M50000080036
+id: JPLAW:351M50000080036
+law_no: 昭和五十一年文部省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/351M50000080036
+promulgation_date: '19761221'
+tags:
+- 産業教育振興法施行規則
+tier: 0
+title: 産業教育振興法施行規則
+law_id: 351M50000080036
+official_title: 産業教育振興法施行規則
+aliases:
+- 産業教育振興法施行規則
+---
+
+# 産業教育振興法施行規則
+
+## Metadata
+- Law ID: `351M50000080036`
+- Law No: 昭和五十一年文部省令第三十六号
+- Promulgation Date: 19761221

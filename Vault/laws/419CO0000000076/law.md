@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419CO0000000076
+id: JPLAW:419CO0000000076
+law_no: 平成十九年政令第七十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/419CO0000000076
+promulgation_date: '20070328'
+tags:
+- がん対策推進協議会令
+tier: 0
+title: がん対策推進協議会令
+law_id: 419CO0000000076
+official_title: がん対策推進協議会令
+aliases:
+- がん対策推進協議会令
+---
+
+# がん対策推進協議会令
+
+## Metadata
+- Law ID: `419CO0000000076`
+- Law No: 平成十九年政令第七十六号
+- Promulgation Date: 20070328

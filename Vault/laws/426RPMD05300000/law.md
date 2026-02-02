@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426RPMD05300000
+id: JPLAW:426RPMD05300000
+law_no: 平成二十六年五月三十日内閣総理大臣決定
+links:
+  egov: https://laws.e-gov.go.jp/law/426RPMD05300000
+promulgation_date: '20140530'
+tags:
+- 内閣人事局組織規則
+tier: 0
+title: 内閣人事局組織規則
+law_id: 426RPMD05300000
+official_title: 内閣人事局組織規則
+aliases:
+- 内閣人事局組織規則
+---
+
+# 内閣人事局組織規則
+
+## Metadata
+- Law ID: `426RPMD05300000`
+- Law No: 平成二十六年五月三十日内閣総理大臣決定
+- Promulgation Date: 20140530

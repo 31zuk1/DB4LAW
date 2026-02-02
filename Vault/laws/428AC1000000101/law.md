@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428AC1000000101
+id: JPLAW:428AC1000000101
+law_no: 平成二十八年法律第百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/428AC1000000101
+promulgation_date: '20161209'
+tags:
+- 民間公益活動を促進するための休眠預金等に係る資金の活用に関する法律
+tier: 0
+title: 民間公益活動を促進するための休眠預金等に係る資金の活用に関する法律
+law_id: 428AC1000000101
+official_title: 民間公益活動を促進するための休眠預金等に係る資金の活用に関する法律
+aliases:
+- 民間公益活動を促進するための休眠預金等に係る資金の活用に関する法律
+---
+
+# 民間公益活動を促進するための休眠預金等に係る資金の活用に関する法律
+
+## Metadata
+- Law ID: `428AC1000000101`
+- Law No: 平成二十八年法律第百一号
+- Promulgation Date: 20161209

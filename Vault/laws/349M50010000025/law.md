@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50010000025
+id: JPLAW:349M50010000025
+law_no: 昭和四十九年農林省令第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50010000025
+promulgation_date: '19740520'
+tags:
+- 沿岸漁場整備開発法施行規則
+tier: 0
+title: 沿岸漁場整備開発法施行規則
+law_id: 349M50010000025
+official_title: 沿岸漁場整備開発法施行規則
+aliases:
+- 沿岸漁場整備開発法施行規則
+---
+
+# 沿岸漁場整備開発法施行規則
+
+## Metadata
+- Law ID: `349M50010000025`
+- Law No: 昭和四十九年農林省令第二十五号
+- Promulgation Date: 19740520

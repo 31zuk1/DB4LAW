@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329AC1000000189
+id: JPLAW:329AC1000000189
+law_no: 昭和二十九年法律第百八十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/329AC1000000189
+promulgation_date: '19540621'
+tags:
+- 奄美群島振興開発特別措置法
+tier: 0
+title: 奄美群島振興開発特別措置法
+law_id: 329AC1000000189
+official_title: 奄美群島振興開発特別措置法
+aliases:
+- 奄美群島振興開発特別措置法
+---
+
+# 奄美群島振興開発特別措置法
+
+## Metadata
+- Law ID: `329AC1000000189`
+- Law No: 昭和二十九年法律第百八十九号
+- Promulgation Date: 19540621

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324RJNJ03000000
+id: JPLAW:324RJNJ03000000
+law_no: 昭和二十四年人事院規則三―〇
+links:
+  egov: https://laws.e-gov.go.jp/law/324RJNJ03000000
+promulgation_date: '19490115'
+tags:
+- 人事院規則三―〇（事務総長の権限）
+tier: 0
+title: 人事院規則三―〇（事務総長の権限）
+law_id: 324RJNJ03000000
+official_title: 人事院規則三―〇（事務総長の権限）
+aliases:
+- 人事院規則三―〇（事務総長の権限）
+---
+
+# 人事院規則三―〇（事務総長の権限）
+
+## Metadata
+- Law ID: `324RJNJ03000000`
+- Law No: 昭和二十四年人事院規則三―〇
+- Promulgation Date: 19490115

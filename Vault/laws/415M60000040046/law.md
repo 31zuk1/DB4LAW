@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000040046
+id: JPLAW:415M60000040046
+law_no: 平成十五年財務省令第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000040046
+promulgation_date: '20030331'
+tags:
+- 貨幣回収準備資金事務取扱規則
+tier: 0
+title: 貨幣回収準備資金事務取扱規則
+law_id: 415M60000040046
+official_title: 貨幣回収準備資金事務取扱規則
+aliases:
+- 貨幣回収準備資金事務取扱規則
+---
+
+# 貨幣回収準備資金事務取扱規則
+
+## Metadata
+- Law ID: `415M60000040046`
+- Law No: 平成十五年財務省令第四十六号
+- Promulgation Date: 20030331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000267
+id: JPLAW:328AC0000000267
+law_no: 昭和二十八年法律第二百六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000267
+promulgation_date: '19531116'
+tags:
+- 奄美群島の復帰に伴う法令の適用の暫定措置等に関する法律
+tier: 0
+title: 奄美群島の復帰に伴う法令の適用の暫定措置等に関する法律
+law_id: 328AC0000000267
+official_title: 奄美群島の復帰に伴う法令の適用の暫定措置等に関する法律
+aliases:
+- 奄美群島の復帰に伴う法令の適用の暫定措置等に関する法律
+---
+
+# 奄美群島の復帰に伴う法令の適用の暫定措置等に関する法律
+
+## Metadata
+- Law ID: `328AC0000000267`
+- Law No: 昭和二十八年法律第二百六十七号
+- Promulgation Date: 19531116

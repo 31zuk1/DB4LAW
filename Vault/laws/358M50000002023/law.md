@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358M50000002023
+id: JPLAW:358M50000002023
+law_no: 昭和五十八年総理府令第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/358M50000002023
+promulgation_date: '19830829'
+tags:
+- 労働力調査規則
+tier: 0
+title: 労働力調査規則
+law_id: 358M50000002023
+official_title: 労働力調査規則
+aliases:
+- 労働力調査規則
+---
+
+# 労働力調査規則
+
+## Metadata
+- Law ID: `358M50000002023`
+- Law No: 昭和五十八年総理府令第二十三号
+- Promulgation Date: 19830829

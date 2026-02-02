@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC0000000126
+id: JPLAW:326AC0000000126
+law_no: 昭和二十六年法律第百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC0000000126
+promulgation_date: '19510403'
+tags:
+- 宗教法人法
+tier: 0
+title: 宗教法人法
+law_id: 326AC0000000126
+official_title: 宗教法人法
+aliases:
+- 宗教法人法
+---
+
+# 宗教法人法
+
+## Metadata
+- Law ID: `326AC0000000126`
+- Law No: 昭和二十六年法律第百二十六号
+- Promulgation Date: 19510403

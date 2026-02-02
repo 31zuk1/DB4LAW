@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323M40000100048
+id: JPLAW:323M40000100048
+law_no: 昭和二十三年厚生省令第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/323M40000100048
+promulgation_date: '19481027'
+tags:
+- 歯科医師法施行規則
+tier: 0
+title: 歯科医師法施行規則
+law_id: 323M40000100048
+official_title: 歯科医師法施行規則
+aliases:
+- 歯科医師法施行規則
+---
+
+# 歯科医師法施行規則
+
+## Metadata
+- Law ID: `323M40000100048`
+- Law No: 昭和二十三年厚生省令第四十八号
+- Promulgation Date: 19481027

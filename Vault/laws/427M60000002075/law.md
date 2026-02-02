@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000002075
+id: JPLAW:427M60000002075
+law_no: 平成二十七年内閣府令第七十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000002075
+promulgation_date: '20151222'
+tags:
+- 個人情報保護委員会事務局組織規則
+tier: 0
+title: 個人情報保護委員会事務局組織規則
+law_id: 427M60000002075
+official_title: 個人情報保護委員会事務局組織規則
+aliases:
+- 個人情報保護委員会事務局組織規則
+---
+
+# 個人情報保護委員会事務局組織規則
+
+## Metadata
+- Law ID: `427M60000002075`
+- Law No: 平成二十七年内閣府令第七十五号
+- Promulgation Date: 20151222

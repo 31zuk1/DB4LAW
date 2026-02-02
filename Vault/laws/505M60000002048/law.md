@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505M60000002048
+id: JPLAW:505M60000002048
+law_no: 令和五年内閣府令第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/505M60000002048
+promulgation_date: '20230526'
+tags:
+- 電子決済手段等取引業者に関する内閣府令
+tier: 0
+title: 電子決済手段等取引業者に関する内閣府令
+law_id: 505M60000002048
+official_title: 電子決済手段等取引業者に関する内閣府令
+aliases:
+- 電子決済手段等取引業者に関する内閣府令
+---
+
+# 電子決済手段等取引業者に関する内閣府令
+
+## Metadata
+- Law ID: `505M60000002048`
+- Law No: 令和五年内閣府令第四十八号
+- Promulgation Date: 20230526

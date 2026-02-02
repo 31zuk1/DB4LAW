@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC1000000076
+id: JPLAW:333AC1000000076
+law_no: 昭和三十三年法律第七十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC1000000076
+promulgation_date: '19580423'
+tags:
+- 臨床検査技師等に関する法律
+tier: 0
+title: 臨床検査技師等に関する法律
+law_id: 333AC1000000076
+official_title: 臨床検査技師等に関する法律
+aliases:
+- 臨床検査技師等に関する法律
+---
+
+# 臨床検査技師等に関する法律
+
+## Metadata
+- Law ID: `333AC1000000076`
+- Law No: 昭和三十三年法律第七十六号
+- Promulgation Date: 19580423

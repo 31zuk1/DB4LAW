@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0000000081
+id: JPLAW:336AC0000000081
+law_no: 昭和三十六年法律第八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0000000081
+promulgation_date: '19610506'
+tags:
+- 技術研究組合法
+tier: 0
+title: 技術研究組合法
+law_id: 336AC0000000081
+official_title: 技術研究組合法
+aliases:
+- 技術研究組合法
+---
+
+# 技術研究組合法
+
+## Metadata
+- Law ID: `336AC0000000081`
+- Law No: 昭和三十六年法律第八十一号
+- Promulgation Date: 19610506

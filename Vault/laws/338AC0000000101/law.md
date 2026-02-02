@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338AC0000000101
+id: JPLAW:338AC0000000101
+law_no: 昭和三十八年法律第百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/338AC0000000101
+promulgation_date: '19630610'
+tags:
+- 中小企業投資育成株式会社法
+tier: 0
+title: 中小企業投資育成株式会社法
+law_id: 338AC0000000101
+official_title: 中小企業投資育成株式会社法
+aliases:
+- 中小企業投資育成株式会社法
+---
+
+# 中小企業投資育成株式会社法
+
+## Metadata
+- Law ID: `338AC0000000101`
+- Law No: 昭和三十八年法律第百一号
+- Promulgation Date: 19630610

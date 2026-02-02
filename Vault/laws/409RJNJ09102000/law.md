@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409RJNJ09102000
+id: JPLAW:409RJNJ09102000
+law_no: 平成九年人事院規則九―一〇二
+links:
+  egov: https://laws.e-gov.go.jp/law/409RJNJ09102000
+promulgation_date: '19970131'
+tags:
+- 人事院規則九―一〇二（研究員調整手当）
+tier: 0
+title: 人事院規則九―一〇二（研究員調整手当）
+law_id: 409RJNJ09102000
+official_title: 人事院規則九―一〇二（研究員調整手当）
+aliases:
+- 人事院規則九―一〇二（研究員調整手当）
+---
+
+# 人事院規則九―一〇二（研究員調整手当）
+
+## Metadata
+- Law ID: `409RJNJ09102000`
+- Law No: 平成九年人事院規則九―一〇二
+- Promulgation Date: 19970131

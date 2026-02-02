@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000100044
+id: JPLAW:327M50000100044
+law_no: 昭和二十七年厚生省令第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000100044
+promulgation_date: '19521101'
+tags:
+- 検疫所長等服制
+tier: 0
+title: 検疫所長等服制
+law_id: 327M50000100044
+official_title: 検疫所長等服制
+aliases:
+- 検疫所長等服制
+---
+
+# 検疫所長等服制
+
+## Metadata
+- Law ID: `327M50000100044`
+- Law No: 昭和二十七年厚生省令第四十四号
+- Promulgation Date: 19521101

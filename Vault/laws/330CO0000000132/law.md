@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330CO0000000132
+id: JPLAW:330CO0000000132
+law_no: 昭和三十年政令第百三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/330CO0000000132
+promulgation_date: '19550719'
+tags:
+- 住宅融資保険法施行令
+tier: 0
+title: 住宅融資保険法施行令
+law_id: 330CO0000000132
+official_title: 住宅融資保険法施行令
+aliases:
+- 住宅融資保険法施行令
+---
+
+# 住宅融資保険法施行令
+
+## Metadata
+- Law ID: `330CO0000000132`
+- Law No: 昭和三十年政令第百三十二号
+- Promulgation Date: 19550719

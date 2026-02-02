@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346AC0000000034
+id: JPLAW:346AC0000000034
+law_no: 昭和四十六年法律第三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/346AC0000000034
+promulgation_date: '19710401'
+tags:
+- 預金保険法
+tier: 0
+title: 預金保険法
+law_id: 346AC0000000034
+official_title: 預金保険法
+aliases:
+- 預金保険法
+---
+
+# 預金保険法
+
+## Metadata
+- Law ID: `346AC0000000034`
+- Law No: 昭和四十六年法律第三十四号
+- Promulgation Date: 19710401

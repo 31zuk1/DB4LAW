@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000159
+id: JPLAW:340CO0000000159
+law_no: 昭和四十年政令第百五十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000159
+promulgation_date: '19650515'
+tags:
+- 近畿圏整備法施行令
+tier: 0
+title: 近畿圏整備法施行令
+law_id: 340CO0000000159
+official_title: 近畿圏整備法施行令
+aliases:
+- 近畿圏整備法施行令
+---
+
+# 近畿圏整備法施行令
+
+## Metadata
+- Law ID: `340CO0000000159`
+- Law No: 昭和四十年政令第百五十九号
+- Promulgation Date: 19650515

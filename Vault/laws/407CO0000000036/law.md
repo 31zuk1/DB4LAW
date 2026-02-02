@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000036
+id: JPLAW:407CO0000000036
+law_no: 平成七年政令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000036
+promulgation_date: '19950226'
+tags:
+- 被災市街地復興特別措置法施行令
+tier: 0
+title: 被災市街地復興特別措置法施行令
+law_id: 407CO0000000036
+official_title: 被災市街地復興特別措置法施行令
+aliases:
+- 被災市街地復興特別措置法施行令
+---
+
+# 被災市街地復興特別措置法施行令
+
+## Metadata
+- Law ID: `407CO0000000036`
+- Law No: 平成七年政令第三十六号
+- Promulgation Date: 19950226

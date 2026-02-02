@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC1000000134
+id: JPLAW:333AC1000000134
+law_no: 昭和三十三年法律第百三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC1000000134
+promulgation_date: '19580502'
+tags:
+- 水洗炭業に関する法律
+tier: 0
+title: 水洗炭業に関する法律
+law_id: 333AC1000000134
+official_title: 水洗炭業に関する法律
+aliases:
+- 水洗炭業に関する法律
+---
+
+# 水洗炭業に関する法律
+
+## Metadata
+- Law ID: `333AC1000000134`
+- Law No: 昭和三十三年法律第百三十四号
+- Promulgation Date: 19580502

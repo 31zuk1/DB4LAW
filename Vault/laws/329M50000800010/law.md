@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000800010
+id: JPLAW:329M50000800010
+law_no: 昭和二十九年運輸省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000800010
+promulgation_date: '19540303'
+tags:
+- 気象等証明及び鑑定規則
+tier: 0
+title: 気象等証明及び鑑定規則
+law_id: 329M50000800010
+official_title: 気象等証明及び鑑定規則
+aliases:
+- 気象等証明及び鑑定規則
+---
+
+# 気象等証明及び鑑定規則
+
+## Metadata
+- Law ID: `329M50000800010`
+- Law No: 昭和二十九年運輸省令第十号
+- Promulgation Date: 19540303

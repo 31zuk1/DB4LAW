@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413AC0000000044
+id: JPLAW:413AC0000000044
+law_no: 平成十三年法律第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/413AC0000000044
+promulgation_date: '20010608'
+tags:
+- 通信・放送融合技術の開発の促進に関する法律
+tier: 0
+title: 通信・放送融合技術の開発の促進に関する法律
+law_id: 413AC0000000044
+official_title: 通信・放送融合技術の開発の促進に関する法律
+aliases:
+- 通信・放送融合技術の開発の促進に関する法律
+---
+
+# 通信・放送融合技術の開発の促進に関する法律
+
+## Metadata
+- Law ID: `413AC0000000044`
+- Law No: 平成十三年法律第四十四号
+- Promulgation Date: 20010608

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 122M10000001012
+id: JPLAW:122M10000001012
+law_no: 明治二十二年閣令第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/122M10000001012
+promulgation_date: '18890327'
+tags:
+- 歳入歳出予算概定順序
+tier: 0
+title: 歳入歳出予算概定順序
+law_id: 122M10000001012
+official_title: 歳入歳出予算概定順序
+aliases:
+- 歳入歳出予算概定順序
+---
+
+# 歳入歳出予算概定順序
+
+## Metadata
+- Law ID: `122M10000001012`
+- Law No: 明治二十二年閣令第十二号
+- Promulgation Date: 18890327

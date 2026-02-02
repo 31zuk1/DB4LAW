@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407M50006000001
+id: JPLAW:407M50006000001
+law_no: 平成七年労働省・建設省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/407M50006000001
+promulgation_date: '19950317'
+tags:
+- 勤労者財産形成促進法施行令附則第八項の住宅を定める省令
+tier: 0
+title: 勤労者財産形成促進法施行令附則第八項の住宅を定める省令
+law_id: 407M50006000001
+official_title: 勤労者財産形成促進法施行令附則第八項の住宅を定める省令
+aliases:
+- 勤労者財産形成促進法施行令附則第八項の住宅を定める省令
+---
+
+# 勤労者財産形成促進法施行令附則第八項の住宅を定める省令
+
+## Metadata
+- Law ID: `407M50006000001`
+- Law No: 平成七年労働省・建設省令第一号
+- Promulgation Date: 19950317

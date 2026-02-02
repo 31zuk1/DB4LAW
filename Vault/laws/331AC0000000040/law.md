@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000040
+id: JPLAW:331AC0000000040
+law_no: 昭和三十一年法律第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000040
+promulgation_date: '19560330'
+tags:
+- 就学困難な児童及び生徒に係る就学奨励についての国の援助に関する法律
+tier: 0
+title: 就学困難な児童及び生徒に係る就学奨励についての国の援助に関する法律
+law_id: 331AC0000000040
+official_title: 就学困難な児童及び生徒に係る就学奨励についての国の援助に関する法律
+aliases:
+- 就学困難な児童及び生徒に係る就学奨励についての国の援助に関する法律
+---
+
+# 就学困難な児童及び生徒に係る就学奨励についての国の援助に関する法律
+
+## Metadata
+- Law ID: `331AC0000000040`
+- Law No: 昭和三十一年法律第四十号
+- Promulgation Date: 19560330

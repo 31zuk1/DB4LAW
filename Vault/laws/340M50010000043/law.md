@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50010000043
+id: JPLAW:340M50010000043
+law_no: 昭和四十年農林省令第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50010000043
+promulgation_date: '19650915'
+tags:
+- 砂糖及びでん粉の価格調整に関する法律施行規則
+tier: 0
+title: 砂糖及びでん粉の価格調整に関する法律施行規則
+law_id: 340M50010000043
+official_title: 砂糖及びでん粉の価格調整に関する法律施行規則
+aliases:
+- 砂糖及びでん粉の価格調整に関する法律施行規則
+---
+
+# 砂糖及びでん粉の価格調整に関する法律施行規則
+
+## Metadata
+- Law ID: `340M50010000043`
+- Law No: 昭和四十年農林省令第四十三号
+- Promulgation Date: 19650915

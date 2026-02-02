@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 321AC0000000006
+id: JPLAW:321AC0000000006
+law_no: 昭和二十一年法律第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/321AC0000000006
+promulgation_date: '19460815'
+tags:
+- 金融機関経理応急措置法
+tier: 0
+title: 金融機関経理応急措置法
+law_id: 321AC0000000006
+official_title: 金融機関経理応急措置法
+aliases:
+- 金融機関経理応急措置法
+---
+
+# 金融機関経理応急措置法
+
+## Metadata
+- Law ID: `321AC0000000006`
+- Law No: 昭和二十一年法律第六号
+- Promulgation Date: 19460815

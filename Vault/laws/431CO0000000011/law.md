@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 431CO0000000011
+id: JPLAW:431CO0000000011
+law_no: 平成三十一年政令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/431CO0000000011
+promulgation_date: '20190123'
+tags:
+- 船舶の再資源化解体の適正な実施に関する法律施行令
+tier: 0
+title: 船舶の再資源化解体の適正な実施に関する法律施行令
+law_id: 431CO0000000011
+official_title: 船舶の再資源化解体の適正な実施に関する法律施行令
+aliases:
+- 船舶の再資源化解体の適正な実施に関する法律施行令
+---
+
+# 船舶の再資源化解体の適正な実施に関する法律施行令
+
+## Metadata
+- Law ID: `431CO0000000011`
+- Law No: 平成三十一年政令第十一号
+- Promulgation Date: 20190123

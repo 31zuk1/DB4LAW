@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000151
+id: JPLAW:329CO0000000151
+law_no: 昭和二十九年政令第百五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000151
+promulgation_date: '19540619'
+tags:
+- 警察法施行令
+tier: 0
+title: 警察法施行令
+law_id: 329CO0000000151
+official_title: 警察法施行令
+aliases:
+- 警察法施行令
+---
+
+# 警察法施行令
+
+## Metadata
+- Law ID: `329CO0000000151`
+- Law No: 昭和二十九年政令第百五十一号
+- Promulgation Date: 19540619

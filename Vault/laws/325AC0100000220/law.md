@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0100000220
+id: JPLAW:325AC0100000220
+law_no: 昭和二十五年法律第二百二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0100000220
+promulgation_date: '19500628'
+tags:
+- 旧軍港市転換法
+tier: 0
+title: 旧軍港市転換法
+law_id: 325AC0100000220
+official_title: 旧軍港市転換法
+aliases:
+- 旧軍港市転換法
+---
+
+# 旧軍港市転換法
+
+## Metadata
+- Law ID: `325AC0100000220`
+- Law No: 昭和二十五年法律第二百二十号
+- Promulgation Date: 19500628

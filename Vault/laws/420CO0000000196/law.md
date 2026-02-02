@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000196
+id: JPLAW:420CO0000000196
+law_no: 平成二十年政令第百九十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000196
+promulgation_date: '20080613'
+tags:
+- 電解二酸化マンガンに対して課する不当廉売関税に関する政令
+tier: 0
+title: 電解二酸化マンガンに対して課する不当廉売関税に関する政令
+law_id: 420CO0000000196
+official_title: 電解二酸化マンガンに対して課する不当廉売関税に関する政令
+aliases:
+- 電解二酸化マンガンに対して課する不当廉売関税に関する政令
+---
+
+# 電解二酸化マンガンに対して課する不当廉売関税に関する政令
+
+## Metadata
+- Law ID: `420CO0000000196`
+- Law No: 平成二十年政令第百九十六号
+- Promulgation Date: 20080613

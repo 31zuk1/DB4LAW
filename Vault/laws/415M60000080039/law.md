@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000080039
+id: JPLAW:415M60000080039
+law_no: 平成十五年文部科学省令第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000080039
+promulgation_date: '20030916'
+tags:
+- 放送大学学園に関する省令
+tier: 0
+title: 放送大学学園に関する省令
+law_id: 415M60000080039
+official_title: 放送大学学園に関する省令
+aliases:
+- 放送大学学園に関する省令
+---
+
+# 放送大学学園に関する省令
+
+## Metadata
+- Law ID: `415M60000080039`
+- Law No: 平成十五年文部科学省令第三十九号
+- Promulgation Date: 20030916

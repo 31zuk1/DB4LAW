@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 502AC0000000037
+id: JPLAW:502AC0000000037
+law_no: 令和二年法律第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/502AC0000000037
+promulgation_date: '20200603'
+tags:
+- 特定高度情報通信技術活用システムの開発供給及び導入の促進に関する法律
+tier: 0
+title: 特定高度情報通信技術活用システムの開発供給及び導入の促進に関する法律
+law_id: 502AC0000000037
+official_title: 特定高度情報通信技術活用システムの開発供給及び導入の促進に関する法律
+aliases:
+- 特定高度情報通信技術活用システムの開発供給及び導入の促進に関する法律
+---
+
+# 特定高度情報通信技術活用システムの開発供給及び導入の促進に関する法律
+
+## Metadata
+- Law ID: `502AC0000000037`
+- Law No: 令和二年法律第三十七号
+- Promulgation Date: 20200603

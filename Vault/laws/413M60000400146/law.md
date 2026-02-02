@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000400146
+id: JPLAW:413M60000400146
+law_no: 平成十三年経済産業省令第百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000400146
+promulgation_date: '20010418'
+tags:
+- 伝統的工芸品産業の振興に関する法律施行規則
+tier: 0
+title: 伝統的工芸品産業の振興に関する法律施行規則
+law_id: 413M60000400146
+official_title: 伝統的工芸品産業の振興に関する法律施行規則
+aliases:
+- 伝統的工芸品産業の振興に関する法律施行規則
+---
+
+# 伝統的工芸品産業の振興に関する法律施行規則
+
+## Metadata
+- Law ID: `413M60000400146`
+- Law No: 平成十三年経済産業省令第百四十六号
+- Promulgation Date: 20010418

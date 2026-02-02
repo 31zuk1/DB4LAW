@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000209
+id: JPLAW:325AC0000000209
+law_no: 昭和二十五年法律第二百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000209
+promulgation_date: '19500527'
+tags:
+- 家畜改良増殖法
+tier: 0
+title: 家畜改良増殖法
+law_id: 325AC0000000209
+official_title: 家畜改良増殖法
+aliases:
+- 家畜改良増殖法
+---
+
+# 家畜改良増殖法
+
+## Metadata
+- Law ID: `325AC0000000209`
+- Law No: 昭和二十五年法律第二百九号
+- Promulgation Date: 19500527

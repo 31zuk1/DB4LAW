@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000198
+id: JPLAW:329CO0000000198
+law_no: 昭和二十九年政令第百九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000198
+promulgation_date: '19540708'
+tags:
+- 国債の元利金の支払の特例に関する政令
+tier: 0
+title: 国債の元利金の支払の特例に関する政令
+law_id: 329CO0000000198
+official_title: 国債の元利金の支払の特例に関する政令
+aliases:
+- 国債の元利金の支払の特例に関する政令
+---
+
+# 国債の元利金の支払の特例に関する政令
+
+## Metadata
+- Law ID: `329CO0000000198`
+- Law No: 昭和二十九年政令第百九十八号
+- Promulgation Date: 19540708

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417AC0000000097
+id: JPLAW:417AC0000000097
+law_no: 平成十七年法律第九十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/417AC0000000097
+promulgation_date: '20051021'
+tags:
+- 郵政民営化法
+tier: 0
+title: 郵政民営化法
+law_id: 417AC0000000097
+official_title: 郵政民営化法
+aliases:
+- 郵政民営化法
+---
+
+# 郵政民営化法
+
+## Metadata
+- Law ID: `417AC0000000097`
+- Law No: 平成十七年法律第九十七号
+- Promulgation Date: 20051021

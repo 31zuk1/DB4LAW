@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50002000032
+id: JPLAW:347M50002000032
+law_no: 昭和四十七年労働省令第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50002000032
+promulgation_date: '19720930'
+tags:
+- 労働安全衛生規則
+tier: 0
+title: 労働安全衛生規則
+law_id: 347M50002000032
+official_title: 労働安全衛生規則
+aliases:
+- 労働安全衛生規則
+---
+
+# 労働安全衛生規則
+
+## Metadata
+- Law ID: `347M50002000032`
+- Law No: 昭和四十七年労働省令第三十二号
+- Promulgation Date: 19720930

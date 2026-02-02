@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335M50000080011
+id: JPLAW:335M50000080011
+law_no: 昭和三十五年文部省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/335M50000080011
+promulgation_date: '19600628'
+tags:
+- 社会教育調査規則
+tier: 0
+title: 社会教育調査規則
+law_id: 335M50000080011
+official_title: 社会教育調査規則
+aliases:
+- 社会教育調査規則
+---
+
+# 社会教育調査規則
+
+## Metadata
+- Law ID: `335M50000080011`
+- Law No: 昭和三十五年文部省令第十一号
+- Promulgation Date: 19600628

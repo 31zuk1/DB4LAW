@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329AC0000000113
+id: JPLAW:329AC0000000113
+law_no: 昭和二十九年法律第百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/329AC0000000113
+promulgation_date: '19540518'
+tags:
+- 交通事件即決裁判手続法
+tier: 0
+title: 交通事件即決裁判手続法
+law_id: 329AC0000000113
+official_title: 交通事件即決裁判手続法
+aliases:
+- 交通事件即決裁判手続法
+---
+
+# 交通事件即決裁判手続法
+
+## Metadata
+- Law ID: `329AC0000000113`
+- Law No: 昭和二十九年法律第百十三号
+- Promulgation Date: 19540518

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353M50000002048
+id: JPLAW:353M50000002048
+law_no: 昭和五十三年総理府令第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/353M50000002048
+promulgation_date: '19781228'
+tags:
+- 核燃料物質等の運搬の届出等に関する内閣府令
+tier: 0
+title: 核燃料物質等の運搬の届出等に関する内閣府令
+law_id: 353M50000002048
+official_title: 核燃料物質等の運搬の届出等に関する内閣府令
+aliases:
+- 核燃料物質等の運搬の届出等に関する内閣府令
+---
+
+# 核燃料物質等の運搬の届出等に関する内閣府令
+
+## Metadata
+- Law ID: `353M50000002048`
+- Law No: 昭和五十三年総理府令第四十八号
+- Promulgation Date: 19781228

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353CO0000000287
+id: JPLAW:353CO0000000287
+law_no: 昭和五十三年政令第二百八十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/353CO0000000287
+promulgation_date: '19780711'
+tags:
+- 森林組合財務処理基準令
+tier: 0
+title: 森林組合財務処理基準令
+law_id: 353CO0000000287
+official_title: 森林組合財務処理基準令
+aliases:
+- 森林組合財務処理基準令
+---
+
+# 森林組合財務処理基準令
+
+## Metadata
+- Law ID: `353CO0000000287`
+- Law No: 昭和五十三年政令第二百八十七号
+- Promulgation Date: 19780711

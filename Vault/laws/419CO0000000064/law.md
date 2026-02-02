@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419CO0000000064
+id: JPLAW:419CO0000000064
+law_no: 平成十九年政令第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/419CO0000000064
+promulgation_date: '20070326'
+tags:
+- 公益認定等委員会令
+tier: 0
+title: 公益認定等委員会令
+law_id: 419CO0000000064
+official_title: 公益認定等委員会令
+aliases:
+- 公益認定等委員会令
+---
+
+# 公益認定等委員会令
+
+## Metadata
+- Law ID: `419CO0000000064`
+- Law No: 平成十九年政令第六十四号
+- Promulgation Date: 20070326

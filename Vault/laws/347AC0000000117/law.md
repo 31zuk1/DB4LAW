@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347AC0000000117
+id: JPLAW:347AC0000000117
+law_no: 昭和四十七年法律第百十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/347AC0000000117
+promulgation_date: '19720705'
+tags:
+- 警備業法
+tier: 0
+title: 警備業法
+law_id: 347AC0000000117
+official_title: 警備業法
+aliases:
+- 警備業法
+---
+
+# 警備業法
+
+## Metadata
+- Law ID: `347AC0000000117`
+- Law No: 昭和四十七年法律第百十七号
+- Promulgation Date: 19720705

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 422CO0000000019
+id: JPLAW:422CO0000000019
+law_no: 平成二十二年政令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/422CO0000000019
+promulgation_date: '20100301'
+tags:
+- 資金決済に関する法律施行令
+tier: 0
+title: 資金決済に関する法律施行令
+law_id: 422CO0000000019
+official_title: 資金決済に関する法律施行令
+aliases:
+- 資金決済に関する法律施行令
+---
+
+# 資金決済に関する法律施行令
+
+## Metadata
+- Law ID: `422CO0000000019`
+- Law No: 平成二十二年政令第十九号
+- Promulgation Date: 20100301

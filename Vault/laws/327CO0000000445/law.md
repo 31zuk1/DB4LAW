@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000445
+id: JPLAW:327CO0000000445
+law_no: 昭和二十七年政令第四百四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000445
+promulgation_date: '19521020'
+tags:
+- 農地法施行令
+tier: 0
+title: 農地法施行令
+law_id: 327CO0000000445
+official_title: 農地法施行令
+aliases:
+- 農地法施行令
+---
+
+# 農地法施行令
+
+## Metadata
+- Law ID: `327CO0000000445`
+- Law No: 昭和二十七年政令第四百四十五号
+- Promulgation Date: 19521020

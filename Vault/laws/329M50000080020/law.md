@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000080020
+id: JPLAW:329M50000080020
+law_no: 昭和二十九年文部省令第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000080020
+promulgation_date: '19540714'
+tags:
+- 特別支援学校への就学奨励に関する法律施行規則
+tier: 0
+title: 特別支援学校への就学奨励に関する法律施行規則
+law_id: 329M50000080020
+official_title: 特別支援学校への就学奨励に関する法律施行規則
+aliases:
+- 特別支援学校への就学奨励に関する法律施行規則
+---
+
+# 特別支援学校への就学奨励に関する法律施行規則
+
+## Metadata
+- Law ID: `329M50000080020`
+- Law No: 昭和二十九年文部省令第二十号
+- Promulgation Date: 19540714

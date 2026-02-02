@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349AC1000000092
+id: JPLAW:349AC1000000092
+law_no: 昭和四十九年法律第九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/349AC1000000092
+promulgation_date: '19740625'
+tags:
+- 国土利用計画法
+tier: 0
+title: 国土利用計画法
+law_id: 349AC1000000092
+official_title: 国土利用計画法
+aliases:
+- 国土利用計画法
+---
+
+# 国土利用計画法
+
+## Metadata
+- Law ID: `349AC1000000092`
+- Law No: 昭和四十九年法律第九十二号
+- Promulgation Date: 19740625

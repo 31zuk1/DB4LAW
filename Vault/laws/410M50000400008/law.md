@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000400008
+id: JPLAW:410M50000400008
+law_no: 平成十年通商産業省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000400008
+promulgation_date: '19980304'
+tags:
+- 貿易関係貿易外取引等に関する省令
+tier: 0
+title: 貿易関係貿易外取引等に関する省令
+law_id: 410M50000400008
+official_title: 貿易関係貿易外取引等に関する省令
+aliases:
+- 貿易関係貿易外取引等に関する省令
+---
+
+# 貿易関係貿易外取引等に関する省令
+
+## Metadata
+- Law ID: `410M50000400008`
+- Law No: 平成十年通商産業省令第八号
+- Promulgation Date: 19980304

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353M50000400006
+id: JPLAW:353M50000400006
+law_no: 昭和五十三年通商産業省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/353M50000400006
+promulgation_date: '19780310'
+tags:
+- 中小企業倒産防止共済法施行規則
+tier: 0
+title: 中小企業倒産防止共済法施行規則
+law_id: 353M50000400006
+official_title: 中小企業倒産防止共済法施行規則
+aliases:
+- 中小企業倒産防止共済法施行規則
+---
+
+# 中小企業倒産防止共済法施行規則
+
+## Metadata
+- Law ID: `353M50000400006`
+- Law No: 昭和五十三年通商産業省令第六号
+- Promulgation Date: 19780310

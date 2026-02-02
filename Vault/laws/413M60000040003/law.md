@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000040003
+id: JPLAW:413M60000040003
+law_no: 平成十三年財務省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000040003
+promulgation_date: '20010106'
+tags:
+- 財務省定員規則
+tier: 0
+title: 財務省定員規則
+law_id: 413M60000040003
+official_title: 財務省定員規則
+aliases:
+- 財務省定員規則
+---
+
+# 財務省定員規則
+
+## Metadata
+- Law ID: `413M60000040003`
+- Law No: 平成十三年財務省令第三号
+- Promulgation Date: 20010106

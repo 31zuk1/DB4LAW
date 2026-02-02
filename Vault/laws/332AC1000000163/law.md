@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332AC1000000163
+id: JPLAW:332AC1000000163
+law_no: 昭和三十二年法律第百六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/332AC1000000163
+promulgation_date: '19570603'
+tags:
+- 美容師法
+tier: 0
+title: 美容師法
+law_id: 332AC1000000163
+official_title: 美容師法
+aliases:
+- 美容師法
+---
+
+# 美容師法
+
+## Metadata
+- Law ID: `332AC1000000163`
+- Law No: 昭和三十二年法律第百六十三号
+- Promulgation Date: 19570603

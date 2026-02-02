@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000178
+id: JPLAW:329CO0000000178
+law_no: 昭和二十九年政令第百七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000178
+promulgation_date: '19540630'
+tags:
+- 防衛省組織令
+tier: 0
+title: 防衛省組織令
+law_id: 329CO0000000178
+official_title: 防衛省組織令
+aliases:
+- 防衛省組織令
+---
+
+# 防衛省組織令
+
+## Metadata
+- Law ID: `329CO0000000178`
+- Law No: 昭和二十九年政令第百七十八号
+- Promulgation Date: 19540630

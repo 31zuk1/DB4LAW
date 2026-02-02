@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50000800052
+id: JPLAW:347M50000800052
+law_no: 昭和四十七年運輸省令第五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50000800052
+promulgation_date: '19720808'
+tags:
+- 軽自動車検査協会に関する省令
+tier: 0
+title: 軽自動車検査協会に関する省令
+law_id: 347M50000800052
+official_title: 軽自動車検査協会に関する省令
+aliases:
+- 軽自動車検査協会に関する省令
+---
+
+# 軽自動車検査協会に関する省令
+
+## Metadata
+- Law ID: `347M50000800052`
+- Law No: 昭和四十七年運輸省令第五十二号
+- Promulgation Date: 19720808

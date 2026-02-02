@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0000000138
+id: JPLAW:336AC0000000138
+law_no: 昭和三十六年法律第百三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0000000138
+promulgation_date: '19610615'
+tags:
+- オリンピック東京大会の準備等のために必要な特別措置に関する法律
+tier: 0
+title: オリンピック東京大会の準備等のために必要な特別措置に関する法律
+law_id: 336AC0000000138
+official_title: オリンピック東京大会の準備等のために必要な特別措置に関する法律
+aliases:
+- オリンピック東京大会の準備等のために必要な特別措置に関する法律
+---
+
+# オリンピック東京大会の準備等のために必要な特別措置に関する法律
+
+## Metadata
+- Law ID: `336AC0000000138`
+- Law No: 昭和三十六年法律第百三十八号
+- Promulgation Date: 19610615

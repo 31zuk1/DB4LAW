@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326CO0000000191
+id: JPLAW:326CO0000000191
+law_no: 昭和二十六年政令第百九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/326CO0000000191
+promulgation_date: '19510602'
+tags:
+- 沖縄振興開発金融公庫の予算及び決算に関する法律施行令
+tier: 0
+title: 沖縄振興開発金融公庫の予算及び決算に関する法律施行令
+law_id: 326CO0000000191
+official_title: 沖縄振興開発金融公庫の予算及び決算に関する法律施行令
+aliases:
+- 沖縄振興開発金融公庫の予算及び決算に関する法律施行令
+---
+
+# 沖縄振興開発金融公庫の予算及び決算に関する法律施行令
+
+## Metadata
+- Law ID: `326CO0000000191`
+- Law No: 昭和二十六年政令第百九十一号
+- Promulgation Date: 19510602

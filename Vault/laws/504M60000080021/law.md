@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504M60000080021
+id: JPLAW:504M60000080021
+law_no: 令和四年文部科学省令第二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/504M60000080021
+promulgation_date: '20220621'
+tags:
+- 教育公務員特例法施行規則
+tier: 0
+title: 教育公務員特例法施行規則
+law_id: 504M60000080021
+official_title: 教育公務員特例法施行規則
+aliases:
+- 教育公務員特例法施行規則
+---
+
+# 教育公務員特例法施行規則
+
+## Metadata
+- Law ID: `504M60000080021`
+- Law No: 令和四年文部科学省令第二十一号
+- Promulgation Date: 20220621

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404AC0000000046
+id: JPLAW:404AC0000000046
+law_no: 平成四年法律第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/404AC0000000046
+promulgation_date: '19920520'
+tags:
+- 獣医療法
+tier: 0
+title: 獣医療法
+law_id: 404AC0000000046
+official_title: 獣医療法
+aliases:
+- 獣医療法
+---
+
+# 獣医療法
+
+## Metadata
+- Law ID: `404AC0000000046`
+- Law No: 平成四年法律第四十六号
+- Promulgation Date: 19920520

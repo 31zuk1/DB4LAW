@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409M50000002053
+id: JPLAW:409M50000002053
+law_no: 平成九年総理府令第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/409M50000002053
+promulgation_date: '19970929'
+tags:
+- 南極地域の環境の保護に関する法律施行規則
+tier: 0
+title: 南極地域の環境の保護に関する法律施行規則
+law_id: 409M50000002053
+official_title: 南極地域の環境の保護に関する法律施行規則
+aliases:
+- 南極地域の環境の保護に関する法律施行規則
+---
+
+# 南極地域の環境の保護に関する法律施行規則
+
+## Metadata
+- Law ID: `409M50000002053`
+- Law No: 平成九年総理府令第五十三号
+- Promulgation Date: 19970929

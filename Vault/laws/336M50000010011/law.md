@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336M50000010011
+id: JPLAW:336M50000010011
+law_no: 昭和三十六年法務省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/336M50000010011
+promulgation_date: '19610406'
+tags:
+- 矯正医官修学資金貸与法施行規則
+tier: 0
+title: 矯正医官修学資金貸与法施行規則
+law_id: 336M50000010011
+official_title: 矯正医官修学資金貸与法施行規則
+aliases:
+- 矯正医官修学資金貸与法施行規則
+---
+
+# 矯正医官修学資金貸与法施行規則
+
+## Metadata
+- Law ID: `336M50000010011`
+- Law No: 昭和三十六年法務省令第十一号
+- Promulgation Date: 19610406

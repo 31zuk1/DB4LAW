@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50010000056
+id: JPLAW:329M50010000056
+law_no: 昭和二十九年農林省令第五十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50010000056
+promulgation_date: '19540913'
+tags:
+- 日本中央競馬会法施行規則
+tier: 0
+title: 日本中央競馬会法施行規則
+law_id: 329M50010000056
+official_title: 日本中央競馬会法施行規則
+aliases:
+- 日本中央競馬会法施行規則
+---
+
+# 日本中央競馬会法施行規則
+
+## Metadata
+- Law ID: `329M50010000056`
+- Law No: 昭和二十九年農林省令第五十六号
+- Promulgation Date: 19540913

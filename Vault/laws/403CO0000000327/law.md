@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403CO0000000327
+id: JPLAW:403CO0000000327
+law_no: 平成三年政令第三百二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/403CO0000000327
+promulgation_date: '19911018'
+tags:
+- 資源の有効な利用の促進に関する法律施行令
+tier: 0
+title: 資源の有効な利用の促進に関する法律施行令
+law_id: 403CO0000000327
+official_title: 資源の有効な利用の促進に関する法律施行令
+aliases:
+- 資源の有効な利用の促進に関する法律施行令
+---
+
+# 資源の有効な利用の促進に関する法律施行令
+
+## Metadata
+- Law ID: `403CO0000000327`
+- Law No: 平成三年政令第三百二十七号
+- Promulgation Date: 19911018

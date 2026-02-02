@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358CO0000000269
+id: JPLAW:358CO0000000269
+law_no: 昭和五十八年政令第二百六十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/358CO0000000269
+promulgation_date: '19831223'
+tags:
+- 技術士法施行令
+tier: 0
+title: 技術士法施行令
+law_id: 358CO0000000269
+official_title: 技術士法施行令
+aliases:
+- 技術士法施行令
+---
+
+# 技術士法施行令
+
+## Metadata
+- Law ID: `358CO0000000269`
+- Law No: 昭和五十八年政令第二百六十九号
+- Promulgation Date: 19831223

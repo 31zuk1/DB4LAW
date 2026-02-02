@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404AC0000000075
+id: JPLAW:404AC0000000075
+law_no: 平成四年法律第七十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/404AC0000000075
+promulgation_date: '19920605'
+tags:
+- 絶滅のおそれのある野生動植物の種の保存に関する法律
+tier: 0
+title: 絶滅のおそれのある野生動植物の種の保存に関する法律
+law_id: 404AC0000000075
+official_title: 絶滅のおそれのある野生動植物の種の保存に関する法律
+aliases:
+- 絶滅のおそれのある野生動植物の種の保存に関する法律
+---
+
+# 絶滅のおそれのある野生動植物の種の保存に関する法律
+
+## Metadata
+- Law ID: `404AC0000000075`
+- Law No: 平成四年法律第七十五号
+- Promulgation Date: 19920605

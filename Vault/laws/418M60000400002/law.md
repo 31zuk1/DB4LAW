@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418M60000400002
+id: JPLAW:418M60000400002
+law_no: 平成十八年経済産業省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/418M60000400002
+promulgation_date: '20060131'
+tags:
+- 電気事業託送供給等収支計算規則
+tier: 0
+title: 電気事業託送供給等収支計算規則
+law_id: 418M60000400002
+official_title: 電気事業託送供給等収支計算規則
+aliases:
+- 電気事業託送供給等収支計算規則
+---
+
+# 電気事業託送供給等収支計算規則
+
+## Metadata
+- Law ID: `418M60000400002`
+- Law No: 平成十八年経済産業省令第二号
+- Promulgation Date: 20060131

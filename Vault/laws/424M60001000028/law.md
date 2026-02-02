@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424M60001000028
+id: JPLAW:424M60001000028
+law_no: 平成二十四年環境省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/424M60001000028
+promulgation_date: '20120921'
+tags:
+- 環境省定員規則
+tier: 0
+title: 環境省定員規則
+law_id: 424M60001000028
+official_title: 環境省定員規則
+aliases:
+- 環境省定員規則
+---
+
+# 環境省定員規則
+
+## Metadata
+- Law ID: `424M60001000028`
+- Law No: 平成二十四年環境省令第二十八号
+- Promulgation Date: 20120921

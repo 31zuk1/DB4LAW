@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361CO0000000265
+id: JPLAW:361CO0000000265
+law_no: 昭和六十一年政令第二百六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/361CO0000000265
+promulgation_date: '19860722'
+tags:
+- 特定都市鉄道整備促進特別措置法施行令
+tier: 0
+title: 特定都市鉄道整備促進特別措置法施行令
+law_id: 361CO0000000265
+official_title: 特定都市鉄道整備促進特別措置法施行令
+aliases:
+- 特定都市鉄道整備促進特別措置法施行令
+---
+
+# 特定都市鉄道整備促進特別措置法施行令
+
+## Metadata
+- Law ID: `361CO0000000265`
+- Law No: 昭和六十一年政令第二百六十五号
+- Promulgation Date: 19860722

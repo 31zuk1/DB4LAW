@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426CO0000000139
+id: JPLAW:426CO0000000139
+law_no: 平成二十六年政令第百三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/426CO0000000139
+promulgation_date: '20140331'
+tags:
+- 地方法人税法施行令
+tier: 0
+title: 地方法人税法施行令
+law_id: 426CO0000000139
+official_title: 地方法人税法施行令
+aliases:
+- 地方法人税法施行令
+---
+
+# 地方法人税法施行令
+
+## Metadata
+- Law ID: `426CO0000000139`
+- Law No: 平成二十六年政令第百三十九号
+- Promulgation Date: 20140331

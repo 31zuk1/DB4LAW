@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 318M20000140001
+id: JPLAW:318M20000140001
+law_no: 昭和十八年大蔵省・厚生省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/318M20000140001
+promulgation_date: '19431110'
+tags:
+- 厚生年金保険福祉施設資金融通規程
+tier: 0
+title: 厚生年金保険福祉施設資金融通規程
+law_id: 318M20000140001
+official_title: 厚生年金保険福祉施設資金融通規程
+aliases:
+- 厚生年金保険福祉施設資金融通規程
+---
+
+# 厚生年金保険福祉施設資金融通規程
+
+## Metadata
+- Law ID: `318M20000140001`
+- Law No: 昭和十八年大蔵省・厚生省令第一号
+- Promulgation Date: 19431110

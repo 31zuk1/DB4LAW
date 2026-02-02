@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358M50000800041
+id: JPLAW:358M50000800041
+law_no: 昭和五十八年運輸省令第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/358M50000800041
+promulgation_date: '19830824'
+tags:
+- 海洋汚染防止設備及び大気汚染防止検査対象設備型式承認規則
+tier: 0
+title: 海洋汚染防止設備及び大気汚染防止検査対象設備型式承認規則
+law_id: 358M50000800041
+official_title: 海洋汚染防止設備及び大気汚染防止検査対象設備型式承認規則
+aliases:
+- 海洋汚染防止設備及び大気汚染防止検査対象設備型式承認規則
+---
+
+# 海洋汚染防止設備及び大気汚染防止検査対象設備型式承認規則
+
+## Metadata
+- Law ID: `358M50000800041`
+- Law No: 昭和五十八年運輸省令第四十一号
+- Promulgation Date: 19830824

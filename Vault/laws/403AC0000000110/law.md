@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403AC0000000110
+id: JPLAW:403AC0000000110
+law_no: 平成三年法律第百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/403AC0000000110
+promulgation_date: '19911224'
+tags:
+- 地方公務員の育児休業等に関する法律
+tier: 0
+title: 地方公務員の育児休業等に関する法律
+law_id: 403AC0000000110
+official_title: 地方公務員の育児休業等に関する法律
+aliases:
+- 地方公務員の育児休業等に関する法律
+---
+
+# 地方公務員の育児休業等に関する法律
+
+## Metadata
+- Law ID: `403AC0000000110`
+- Law No: 平成三年法律第百十号
+- Promulgation Date: 19911224

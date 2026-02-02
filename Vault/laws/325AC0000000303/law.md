@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000303
+id: JPLAW:325AC0000000303
+law_no: 昭和二十五年法律第三百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000303
+promulgation_date: '19501228'
+tags:
+- 毒物及び劇物取締法
+tier: 0
+title: 毒物及び劇物取締法
+law_id: 325AC0000000303
+official_title: 毒物及び劇物取締法
+aliases:
+- 毒物及び劇物取締法
+---
+
+# 毒物及び劇物取締法
+
+## Metadata
+- Law ID: `325AC0000000303`
+- Law No: 昭和二十五年法律第三百三号
+- Promulgation Date: 19501228

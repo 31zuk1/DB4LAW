@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000408
+id: JPLAW:407CO0000000408
+law_no: 平成七年政令第四百八号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000408
+promulgation_date: '19951208'
+tags:
+- 地方自治法第二百五十二条の二十二第一項の中核市の指定に関する政令
+tier: 0
+title: 地方自治法第二百五十二条の二十二第一項の中核市の指定に関する政令
+law_id: 407CO0000000408
+official_title: 地方自治法第二百五十二条の二十二第一項の中核市の指定に関する政令
+aliases:
+- 地方自治法第二百五十二条の二十二第一項の中核市の指定に関する政令
+---
+
+# 地方自治法第二百五十二条の二十二第一項の中核市の指定に関する政令
+
+## Metadata
+- Law ID: `407CO0000000408`
+- Law No: 平成七年政令第四百八号
+- Promulgation Date: 19951208

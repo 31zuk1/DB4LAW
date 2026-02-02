@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000800044
+id: JPLAW:327M50000800044
+law_no: 昭和二十七年運輸省令第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000800044
+promulgation_date: '19520703'
+tags:
+- 空港管理規則
+tier: 0
+title: 空港管理規則
+law_id: 327M50000800044
+official_title: 空港管理規則
+aliases:
+- 空港管理規則
+---
+
+# 空港管理規則
+
+## Metadata
+- Law ID: `327M50000800044`
+- Law No: 昭和二十七年運輸省令第四十四号
+- Promulgation Date: 19520703

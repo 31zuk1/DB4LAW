@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50000040049
+id: JPLAW:340M50000040049
+law_no: 昭和四十年大蔵省令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50000040049
+promulgation_date: '19650813'
+tags:
+- 国税質問検査章規則
+tier: 0
+title: 国税質問検査章規則
+law_id: 340M50000040049
+official_title: 国税質問検査章規則
+aliases:
+- 国税質問検査章規則
+---
+
+# 国税質問検査章規則
+
+## Metadata
+- Law ID: `340M50000040049`
+- Law No: 昭和四十年大蔵省令第四十九号
+- Promulgation Date: 19650813

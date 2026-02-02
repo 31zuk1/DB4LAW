@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000010011
+id: JPLAW:427M60000010011
+law_no: 平成二十七年法務省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000010011
+promulgation_date: '20150331'
+tags:
+- 総合法律支援法施行規則
+tier: 0
+title: 総合法律支援法施行規則
+law_id: 427M60000010011
+official_title: 総合法律支援法施行規則
+aliases:
+- 総合法律支援法施行規則
+---
+
+# 総合法律支援法施行規則
+
+## Metadata
+- Law ID: `427M60000010011`
+- Law No: 平成二十七年法務省令第十一号
+- Promulgation Date: 20150331

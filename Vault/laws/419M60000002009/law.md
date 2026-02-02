@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000002009
+id: JPLAW:419M60000002009
+law_no: 平成十九年内閣府令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000002009
+promulgation_date: '20070104'
+tags:
+- 防衛省聴聞手続規則
+tier: 0
+title: 防衛省聴聞手続規則
+law_id: 419M60000002009
+official_title: 防衛省聴聞手続規則
+aliases:
+- 防衛省聴聞手続規則
+---
+
+# 防衛省聴聞手続規則
+
+## Metadata
+- Law ID: `419M60000002009`
+- Law No: 平成十九年内閣府令第九号
+- Promulgation Date: 20070104

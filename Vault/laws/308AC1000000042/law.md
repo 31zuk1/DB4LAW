@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 308AC1000000042
+id: JPLAW:308AC1000000042
+law_no: 昭和八年法律第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/308AC1000000042
+promulgation_date: '19330401'
+tags:
+- 昭和八年法律第四十二号（身元保証ニ関スル法律）
+tier: 0
+title: 昭和八年法律第四十二号（身元保証ニ関スル法律）
+law_id: 308AC1000000042
+official_title: 昭和八年法律第四十二号（身元保証ニ関スル法律）
+aliases:
+- 昭和八年法律第四十二号（身元保証ニ関スル法律）
+---
+
+# 昭和八年法律第四十二号（身元保証ニ関スル法律）
+
+## Metadata
+- Law ID: `308AC1000000042`
+- Law No: 昭和八年法律第四十二号
+- Promulgation Date: 19330401

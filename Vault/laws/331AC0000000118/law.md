@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000118
+id: JPLAW:331AC0000000118
+law_no: 昭和三十一年法律第百十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000118
+promulgation_date: '19560524'
+tags:
+- 売春防止法
+tier: 0
+title: 売春防止法
+law_id: 331AC0000000118
+official_title: 売春防止法
+aliases:
+- 売春防止法
+---
+
+# 売春防止法
+
+## Metadata
+- Law ID: `331AC0000000118`
+- Law No: 昭和三十一年法律第百十八号
+- Promulgation Date: 19560524

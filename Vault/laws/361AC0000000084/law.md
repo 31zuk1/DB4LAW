@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361AC0000000084
+id: JPLAW:361AC0000000084
+law_no: 昭和六十一年法律第八十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/361AC0000000084
+promulgation_date: '19860612'
+tags:
+- 扶養義務の準拠法に関する法律
+tier: 0
+title: 扶養義務の準拠法に関する法律
+law_id: 361AC0000000084
+official_title: 扶養義務の準拠法に関する法律
+aliases:
+- 扶養義務の準拠法に関する法律
+---
+
+# 扶養義務の準拠法に関する法律
+
+## Metadata
+- Law ID: `361AC0000000084`
+- Law No: 昭和六十一年法律第八十四号
+- Promulgation Date: 19860612

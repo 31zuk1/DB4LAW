@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000002017
+id: JPLAW:416M60000002017
+law_no: 平成十六年内閣府令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000002017
+promulgation_date: '20040325'
+tags:
+- 公認会計士法第二十八条に規定する研修に関する内閣府令
+tier: 0
+title: 公認会計士法第二十八条に規定する研修に関する内閣府令
+law_id: 416M60000002017
+official_title: 公認会計士法第二十八条に規定する研修に関する内閣府令
+aliases:
+- 公認会計士法第二十八条に規定する研修に関する内閣府令
+---
+
+# 公認会計士法第二十八条に規定する研修に関する内閣府令
+
+## Metadata
+- Law ID: `416M60000002017`
+- Law No: 平成十六年内閣府令第十七号
+- Promulgation Date: 20040325

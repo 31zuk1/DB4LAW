@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000068
+id: JPLAW:323AC0000000068
+law_no: 昭和二十三年法律第六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000068
+promulgation_date: '19480630'
+tags:
+- 予防接種法
+tier: 0
+title: 予防接種法
+law_id: 323AC0000000068
+official_title: 予防接種法
+aliases:
+- 予防接種法
+---
+
+# 予防接種法
+
+## Metadata
+- Law ID: `323AC0000000068`
+- Law No: 昭和二十三年法律第六十八号
+- Promulgation Date: 19480630

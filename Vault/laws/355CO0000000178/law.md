@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 355CO0000000178
+id: JPLAW:355CO0000000178
+law_no: 昭和五十五年政令第百七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/355CO0000000178
+promulgation_date: '19800620'
+tags:
+- 農業振興地域の整備に関する法律等による不動産登記に関する政令
+tier: 0
+title: 農業振興地域の整備に関する法律等による不動産登記に関する政令
+law_id: 355CO0000000178
+official_title: 農業振興地域の整備に関する法律等による不動産登記に関する政令
+aliases:
+- 農業振興地域の整備に関する法律等による不動産登記に関する政令
+---
+
+# 農業振興地域の整備に関する法律等による不動産登記に関する政令
+
+## Metadata
+- Law ID: `355CO0000000178`
+- Law No: 昭和五十五年政令第百七十八号
+- Promulgation Date: 19800620

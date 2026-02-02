@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425AC0000000061
+id: JPLAW:425AC0000000061
+law_no: 平成二十五年法律第六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/425AC0000000061
+promulgation_date: '20130626'
+tags:
+- 大規模な災害の被災地における借地借家に関する特別措置法
+tier: 0
+title: 大規模な災害の被災地における借地借家に関する特別措置法
+law_id: 425AC0000000061
+official_title: 大規模な災害の被災地における借地借家に関する特別措置法
+aliases:
+- 大規模な災害の被災地における借地借家に関する特別措置法
+---
+
+# 大規模な災害の被災地における借地借家に関する特別措置法
+
+## Metadata
+- Law ID: `425AC0000000061`
+- Law No: 平成二十五年法律第六十一号
+- Promulgation Date: 20130626

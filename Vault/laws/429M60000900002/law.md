@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429M60000900002
+id: JPLAW:429M60000900002
+law_no: 平成二十九年厚生労働省・国土交通省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/429M60000900002
+promulgation_date: '20171027'
+tags:
+- 住宅宿泊事業法施行規則
+tier: 0
+title: 住宅宿泊事業法施行規則
+law_id: 429M60000900002
+official_title: 住宅宿泊事業法施行規則
+aliases:
+- 住宅宿泊事業法施行規則
+---
+
+# 住宅宿泊事業法施行規則
+
+## Metadata
+- Law ID: `429M60000900002`
+- Law No: 平成二十九年厚生労働省・国土交通省令第二号
+- Promulgation Date: 20171027

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411M50000100037
+id: JPLAW:411M50000100037
+law_no: 平成十一年厚生省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/411M50000100037
+promulgation_date: '19990331'
+tags:
+- 指定居宅サービス等の事業の人員、設備及び運営に関する基準
+tier: 0
+title: 指定居宅サービス等の事業の人員、設備及び運営に関する基準
+law_id: 411M50000100037
+official_title: 指定居宅サービス等の事業の人員、設備及び運営に関する基準
+aliases:
+- 指定居宅サービス等の事業の人員、設備及び運営に関する基準
+---
+
+# 指定居宅サービス等の事業の人員、設備及び運営に関する基準
+
+## Metadata
+- Law ID: `411M50000100037`
+- Law No: 平成十一年厚生省令第三十七号
+- Promulgation Date: 19990331

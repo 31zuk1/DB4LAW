@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351RPMD12230000
+id: JPLAW:351RPMD12230000
+law_no: 昭和五十一年十二月二十三日内閣総理大臣決定
+links:
+  egov: https://laws.e-gov.go.jp/law/351RPMD12230000
+promulgation_date: '19761223'
+tags:
+- 内閣情報調査室組織規則
+tier: 0
+title: 内閣情報調査室組織規則
+law_id: 351RPMD12230000
+official_title: 内閣情報調査室組織規則
+aliases:
+- 内閣情報調査室組織規則
+---
+
+# 内閣情報調査室組織規則
+
+## Metadata
+- Law ID: `351RPMD12230000`
+- Law No: 昭和五十一年十二月二十三日内閣総理大臣決定
+- Promulgation Date: 19761223

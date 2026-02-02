@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417CO0000000236
+id: JPLAW:417CO0000000236
+law_no: 平成十七年政令第二百三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/417CO0000000236
+promulgation_date: '20050708'
+tags:
+- 食育推進会議令
+tier: 0
+title: 食育推進会議令
+law_id: 417CO0000000236
+official_title: 食育推進会議令
+aliases:
+- 食育推進会議令
+---
+
+# 食育推進会議令
+
+## Metadata
+- Law ID: `417CO0000000236`
+- Law No: 平成十七年政令第二百三十六号
+- Promulgation Date: 20050708

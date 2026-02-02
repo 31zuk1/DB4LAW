@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000162
+id: JPLAW:415CO0000000162
+law_no: 平成十五年政令第百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000162
+promulgation_date: '20030331'
+tags:
+- 社会資本整備重点計画法施行令
+tier: 0
+title: 社会資本整備重点計画法施行令
+law_id: 415CO0000000162
+official_title: 社会資本整備重点計画法施行令
+aliases:
+- 社会資本整備重点計画法施行令
+---
+
+# 社会資本整備重点計画法施行令
+
+## Metadata
+- Law ID: `415CO0000000162`
+- Law No: 平成十五年政令第百六十二号
+- Promulgation Date: 20030331

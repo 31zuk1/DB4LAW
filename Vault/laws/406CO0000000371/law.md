@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406CO0000000371
+id: JPLAW:406CO0000000371
+law_no: 平成六年政令第三百七十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/406CO0000000371
+promulgation_date: '19941125'
+tags:
+- 政党助成法施行令
+tier: 0
+title: 政党助成法施行令
+law_id: 406CO0000000371
+official_title: 政党助成法施行令
+aliases:
+- 政党助成法施行令
+---
+
+# 政党助成法施行令
+
+## Metadata
+- Law ID: `406CO0000000371`
+- Law No: 平成六年政令第三百七十一号
+- Promulgation Date: 19941125

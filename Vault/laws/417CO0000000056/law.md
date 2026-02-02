@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417CO0000000056
+id: JPLAW:417CO0000000056
+law_no: 平成十七年政令第五十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/417CO0000000056
+promulgation_date: '20050318'
+tags:
+- 特定障害者に対する特別障害給付金の支給に関する法律施行令
+tier: 0
+title: 特定障害者に対する特別障害給付金の支給に関する法律施行令
+law_id: 417CO0000000056
+official_title: 特定障害者に対する特別障害給付金の支給に関する法律施行令
+aliases:
+- 特定障害者に対する特別障害給付金の支給に関する法律施行令
+---
+
+# 特定障害者に対する特別障害給付金の支給に関する法律施行令
+
+## Metadata
+- Law ID: `417CO0000000056`
+- Law No: 平成十七年政令第五十六号
+- Promulgation Date: 20050318

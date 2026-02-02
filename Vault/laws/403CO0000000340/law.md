@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403CO0000000340
+id: JPLAW:403CO0000000340
+law_no: 平成三年政令第三百四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/403CO0000000340
+promulgation_date: '19911101'
+tags:
+- 抵当証券法施行令
+tier: 0
+title: 抵当証券法施行令
+law_id: 403CO0000000340
+official_title: 抵当証券法施行令
+aliases:
+- 抵当証券法施行令
+---
+
+# 抵当証券法施行令
+
+## Metadata
+- Law ID: `403CO0000000340`
+- Law No: 平成三年政令第三百四十号
+- Promulgation Date: 19911101

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345RJNJ09055000
+id: JPLAW:345RJNJ09055000
+law_no: 昭和四十五年人事院規則九―五五
+links:
+  egov: https://laws.e-gov.go.jp/law/345RJNJ09055000
+promulgation_date: '19701217'
+tags:
+- 人事院規則九―五五（特地勤務手当等）
+tier: 0
+title: 人事院規則九―五五（特地勤務手当等）
+law_id: 345RJNJ09055000
+official_title: 人事院規則九―五五（特地勤務手当等）
+aliases:
+- 人事院規則九―五五（特地勤務手当等）
+---
+
+# 人事院規則九―五五（特地勤務手当等）
+
+## Metadata
+- Law ID: `345RJNJ09055000`
+- Law No: 昭和四十五年人事院規則九―五五
+- Promulgation Date: 19701217

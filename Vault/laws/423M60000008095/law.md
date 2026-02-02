@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423M60000008095
+id: JPLAW:423M60000008095
+law_no: 平成二十三年総務省令第九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/423M60000008095
+promulgation_date: '20110629'
+tags:
+- 有線一般放送の品質に関する技術基準を定める省令
+tier: 0
+title: 有線一般放送の品質に関する技術基準を定める省令
+law_id: 423M60000008095
+official_title: 有線一般放送の品質に関する技術基準を定める省令
+aliases:
+- 有線一般放送の品質に関する技術基準を定める省令
+---
+
+# 有線一般放送の品質に関する技術基準を定める省令
+
+## Metadata
+- Law ID: `423M60000008095`
+- Law No: 平成二十三年総務省令第九十五号
+- Promulgation Date: 20110629

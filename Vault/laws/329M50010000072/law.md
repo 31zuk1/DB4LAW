@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50010000072
+id: JPLAW:329M50010000072
+law_no: 昭和二十九年農林省令第七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50010000072
+promulgation_date: '19541130'
+tags:
+- 輸出水産業の振興に関する法律施行規則
+tier: 0
+title: 輸出水産業の振興に関する法律施行規則
+law_id: 329M50010000072
+official_title: 輸出水産業の振興に関する法律施行規則
+aliases:
+- 輸出水産業の振興に関する法律施行規則
+---
+
+# 輸出水産業の振興に関する法律施行規則
+
+## Metadata
+- Law ID: `329M50010000072`
+- Law No: 昭和二十九年農林省令第七十二号
+- Promulgation Date: 19541130

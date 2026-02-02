@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50004000019
+id: JPLAW:326M50004000019
+law_no: 昭和二十六年建設省令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50004000019
+promulgation_date: '19510721'
+tags:
+- 公営住宅法施行規則
+tier: 0
+title: 公営住宅法施行規則
+law_id: 326M50004000019
+official_title: 公営住宅法施行規則
+aliases:
+- 公営住宅法施行規則
+---
+
+# 公営住宅法施行規則
+
+## Metadata
+- Law ID: `326M50004000019`
+- Law No: 昭和二十六年建設省令第十九号
+- Promulgation Date: 19510721

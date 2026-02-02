@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 132AC0000000095
+id: JPLAW:132AC0000000095
+law_no: 明治三十二年法律第九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/132AC0000000095
+promulgation_date: '18990329'
+tags:
+- 水難救護法
+tier: 0
+title: 水難救護法
+law_id: 132AC0000000095
+official_title: 水難救護法
+aliases:
+- 水難救護法
+---
+
+# 水難救護法
+
+## Metadata
+- Law ID: `132AC0000000095`
+- Law No: 明治三十二年法律第九十五号
+- Promulgation Date: 18990329

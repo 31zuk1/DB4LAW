@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000002004
+id: JPLAW:413M60000002004
+law_no: 平成十三年内閣府令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000002004
+promulgation_date: '20010106'
+tags:
+- 沖縄総合事務局組織規則
+tier: 0
+title: 沖縄総合事務局組織規則
+law_id: 413M60000002004
+official_title: 沖縄総合事務局組織規則
+aliases:
+- 沖縄総合事務局組織規則
+---
+
+# 沖縄総合事務局組織規則
+
+## Metadata
+- Law ID: `413M60000002004`
+- Law No: 平成十三年内閣府令第四号
+- Promulgation Date: 20010106

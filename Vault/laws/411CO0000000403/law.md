@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411CO0000000403
+id: JPLAW:411CO0000000403
+law_no: 平成十一年政令第四百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/411CO0000000403
+promulgation_date: '19991215'
+tags:
+- 無差別大量殺人行為を行った団体の規制に関する法律施行令
+tier: 0
+title: 無差別大量殺人行為を行った団体の規制に関する法律施行令
+law_id: 411CO0000000403
+official_title: 無差別大量殺人行為を行った団体の規制に関する法律施行令
+aliases:
+- 無差別大量殺人行為を行った団体の規制に関する法律施行令
+---
+
+# 無差別大量殺人行為を行った団体の規制に関する法律施行令
+
+## Metadata
+- Law ID: `411CO0000000403`
+- Law No: 平成十一年政令第四百三号
+- Promulgation Date: 19991215

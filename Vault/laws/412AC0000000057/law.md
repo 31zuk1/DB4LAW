@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC0000000057
+id: JPLAW:412AC0000000057
+law_no: 平成十二年法律第五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC0000000057
+promulgation_date: '20000508'
+tags:
+- 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律
+tier: 0
+title: 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律
+law_id: 412AC0000000057
+official_title: 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律
+aliases:
+- 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律
+---
+
+# 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律
+
+## Metadata
+- Law ID: `412AC0000000057`
+- Law No: 平成十二年法律第五十七号
+- Promulgation Date: 20000508

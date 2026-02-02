@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363M50000002032
+id: JPLAW:363M50000002032
+law_no: 昭和六十三年総理府令第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/363M50000002032
+promulgation_date: '19880523'
+tags:
+- 特定弔慰金等の支給の実施に関する法律施行規則
+tier: 0
+title: 特定弔慰金等の支給の実施に関する法律施行規則
+law_id: 363M50000002032
+official_title: 特定弔慰金等の支給の実施に関する法律施行規則
+aliases:
+- 特定弔慰金等の支給の実施に関する法律施行規則
+---
+
+# 特定弔慰金等の支給の実施に関する法律施行規則
+
+## Metadata
+- Law ID: `363M50000002032`
+- Law No: 昭和六十三年総理府令第三十二号
+- Promulgation Date: 19880523

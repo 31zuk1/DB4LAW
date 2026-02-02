@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC0000000103
+id: JPLAW:412AC0000000103
+law_no: 平成十二年法律第百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC0000000103
+promulgation_date: '20000531'
+tags:
+- 会社分割に伴う労働契約の承継等に関する法律
+tier: 0
+title: 会社分割に伴う労働契約の承継等に関する法律
+law_id: 412AC0000000103
+official_title: 会社分割に伴う労働契約の承継等に関する法律
+aliases:
+- 会社分割に伴う労働契約の承継等に関する法律
+---
+
+# 会社分割に伴う労働契約の承継等に関する法律
+
+## Metadata
+- Law ID: `412AC0000000103`
+- Law No: 平成十二年法律第百三号
+- Promulgation Date: 20000531

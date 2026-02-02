@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407M50000040041
+id: JPLAW:407M50000040041
+law_no: 平成七年大蔵省令第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/407M50000040041
+promulgation_date: '19950615'
+tags:
+- 特別葬祭給付金国庫債券の発行交付等に関する省令
+tier: 0
+title: 特別葬祭給付金国庫債券の発行交付等に関する省令
+law_id: 407M50000040041
+official_title: 特別葬祭給付金国庫債券の発行交付等に関する省令
+aliases:
+- 特別葬祭給付金国庫債券の発行交付等に関する省令
+---
+
+# 特別葬祭給付金国庫債券の発行交付等に関する省令
+
+## Metadata
+- Law ID: `407M50000040041`
+- Law No: 平成七年大蔵省令第四十一号
+- Promulgation Date: 19950615

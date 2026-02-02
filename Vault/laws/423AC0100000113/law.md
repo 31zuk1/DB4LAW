@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423AC0100000113
+id: JPLAW:423AC0100000113
+law_no: 平成二十三年法律第百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/423AC0100000113
+promulgation_date: '20111128'
+tags:
+- 株式会社東日本大震災事業者再生支援機構法
+tier: 0
+title: 株式会社東日本大震災事業者再生支援機構法
+law_id: 423AC0100000113
+official_title: 株式会社東日本大震災事業者再生支援機構法
+aliases:
+- 株式会社東日本大震災事業者再生支援機構法
+---
+
+# 株式会社東日本大震災事業者再生支援機構法
+
+## Metadata
+- Law ID: `423AC0100000113`
+- Law No: 平成二十三年法律第百十三号
+- Promulgation Date: 20111128

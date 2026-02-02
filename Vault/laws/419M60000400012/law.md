@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000400012
+id: JPLAW:419M60000400012
+law_no: 平成十九年経済産業省令第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000400012
+promulgation_date: '20070322'
+tags:
+- 商店街振興組合法施行規則
+tier: 0
+title: 商店街振興組合法施行規則
+law_id: 419M60000400012
+official_title: 商店街振興組合法施行規則
+aliases:
+- 商店街振興組合法施行規則
+---
+
+# 商店街振興組合法施行規則
+
+## Metadata
+- Law ID: `419M60000400012`
+- Law No: 平成十九年経済産業省令第十二号
+- Promulgation Date: 20070322

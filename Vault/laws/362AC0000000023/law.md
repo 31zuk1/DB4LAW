@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362AC0000000023
+id: JPLAW:362AC0000000023
+law_no: 昭和六十二年法律第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/362AC0000000023
+promulgation_date: '19870331'
+tags:
+- 地域雇用開発促進法
+tier: 0
+title: 地域雇用開発促進法
+law_id: 362AC0000000023
+official_title: 地域雇用開発促進法
+aliases:
+- 地域雇用開発促進法
+---
+
+# 地域雇用開発促進法
+
+## Metadata
+- Law ID: `362AC0000000023`
+- Law No: 昭和六十二年法律第二十三号
+- Promulgation Date: 19870331

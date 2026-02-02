@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326CO0000000205
+id: JPLAW:326CO0000000205
+law_no: 昭和二十六年政令第二百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/326CO0000000205
+promulgation_date: '19510611'
+tags:
+- 特別調達資金設置令
+tier: 0
+title: 特別調達資金設置令
+law_id: 326CO0000000205
+official_title: 特別調達資金設置令
+aliases:
+- 特別調達資金設置令
+---
+
+# 特別調達資金設置令
+
+## Metadata
+- Law ID: `326CO0000000205`
+- Law No: 昭和二十六年政令第二百五号
+- Promulgation Date: 19510611

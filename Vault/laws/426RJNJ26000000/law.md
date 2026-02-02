@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426RJNJ26000000
+id: JPLAW:426RJNJ26000000
+law_no: 平成二十六年人事院規則二六―〇
+links:
+  egov: https://laws.e-gov.go.jp/law/426RJNJ26000000
+promulgation_date: '20140213'
+tags:
+- 人事院規則二六―〇（職員の配偶者同行休業）
+tier: 0
+title: 人事院規則二六―〇（職員の配偶者同行休業）
+law_id: 426RJNJ26000000
+official_title: 人事院規則二六―〇（職員の配偶者同行休業）
+aliases:
+- 人事院規則二六―〇（職員の配偶者同行休業）
+---
+
+# 人事院規則二六―〇（職員の配偶者同行休業）
+
+## Metadata
+- Law ID: `426RJNJ26000000`
+- Law No: 平成二十六年人事院規則二六―〇
+- Promulgation Date: 20140213

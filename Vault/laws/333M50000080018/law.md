@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333M50000080018
+id: JPLAW:333M50000080018
+law_no: 昭和三十三年文部省令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/333M50000080018
+promulgation_date: '19580613'
+tags:
+- 学校保健安全法施行規則
+tier: 0
+title: 学校保健安全法施行規則
+law_id: 333M50000080018
+official_title: 学校保健安全法施行規則
+aliases:
+- 学校保健安全法施行規則
+---
+
+# 学校保健安全法施行規則
+
+## Metadata
+- Law ID: `333M50000080018`
+- Law No: 昭和三十三年文部省令第十八号
+- Promulgation Date: 19580613

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332RJNJ09002000
+id: JPLAW:332RJNJ09002000
+law_no: 昭和三十二年人事院規則九―二
+links:
+  egov: https://laws.e-gov.go.jp/law/332RJNJ09002000
+promulgation_date: '19570601'
+tags:
+- 人事院規則九―二（俸給表の適用範囲）
+tier: 0
+title: 人事院規則九―二（俸給表の適用範囲）
+law_id: 332RJNJ09002000
+official_title: 人事院規則九―二（俸給表の適用範囲）
+aliases:
+- 人事院規則九―二（俸給表の適用範囲）
+---
+
+# 人事院規則九―二（俸給表の適用範囲）
+
+## Metadata
+- Law ID: `332RJNJ09002000`
+- Law No: 昭和三十二年人事院規則九―二
+- Promulgation Date: 19570601

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000002005
+id: JPLAW:332M50000002005
+law_no: 昭和三十二年総理府令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000002005
+promulgation_date: '19570223'
+tags:
+- 消防団員等公務災害補償等責任共済等に関する法律施行規則
+tier: 0
+title: 消防団員等公務災害補償等責任共済等に関する法律施行規則
+law_id: 332M50000002005
+official_title: 消防団員等公務災害補償等責任共済等に関する法律施行規則
+aliases:
+- 消防団員等公務災害補償等責任共済等に関する法律施行規則
+---
+
+# 消防団員等公務災害補償等責任共済等に関する法律施行規則
+
+## Metadata
+- Law ID: `332M50000002005`
+- Law No: 昭和三十二年総理府令第五号
+- Promulgation Date: 19570223

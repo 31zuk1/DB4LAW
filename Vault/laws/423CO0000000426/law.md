@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423CO0000000426
+id: JPLAW:423CO0000000426
+law_no: 平成二十三年政令第四百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/423CO0000000426
+promulgation_date: '20111226'
+tags:
+- 津波防災地域づくりに関する法律施行令
+tier: 0
+title: 津波防災地域づくりに関する法律施行令
+law_id: 423CO0000000426
+official_title: 津波防災地域づくりに関する法律施行令
+aliases:
+- 津波防災地域づくりに関する法律施行令
+---
+
+# 津波防災地域づくりに関する法律施行令
+
+## Metadata
+- Law ID: `423CO0000000426`
+- Law No: 平成二十三年政令第四百二十六号
+- Promulgation Date: 20111226

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335AC0000000145
+id: JPLAW:335AC0000000145
+law_no: 昭和三十五年法律第百四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/335AC0000000145
+promulgation_date: '19600810'
+tags:
+- 医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律
+tier: 0
+title: 医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律
+law_id: 335AC0000000145
+official_title: 医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律
+aliases:
+- 医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律
+---
+
+# 医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律
+
+## Metadata
+- Law ID: `335AC0000000145`
+- Law No: 昭和三十五年法律第百四十五号
+- Promulgation Date: 19600810

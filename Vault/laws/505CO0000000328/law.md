@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505CO0000000328
+id: JPLAW:505CO0000000328
+law_no: 令和五年政令第三百二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/505CO0000000328
+promulgation_date: '20231110'
+tags:
+- 漁港水面施設運営権登録令
+tier: 0
+title: 漁港水面施設運営権登録令
+law_id: 505CO0000000328
+official_title: 漁港水面施設運営権登録令
+aliases:
+- 漁港水面施設運営権登録令
+---
+
+# 漁港水面施設運営権登録令
+
+## Metadata
+- Law ID: `505CO0000000328`
+- Law No: 令和五年政令第三百二十八号
+- Promulgation Date: 20231110

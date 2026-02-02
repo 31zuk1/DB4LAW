@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000800064
+id: JPLAW:416M60000800064
+law_no: 平成十六年国土交通省令第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000800064
+promulgation_date: '20040514'
+tags:
+- 特定都市河川浸水被害対策法施行規則
+tier: 0
+title: 特定都市河川浸水被害対策法施行規則
+law_id: 416M60000800064
+official_title: 特定都市河川浸水被害対策法施行規則
+aliases:
+- 特定都市河川浸水被害対策法施行規則
+---
+
+# 特定都市河川浸水被害対策法施行規則
+
+## Metadata
+- Law ID: `416M60000800064`
+- Law No: 平成十六年国土交通省令第六十四号
+- Promulgation Date: 20040514

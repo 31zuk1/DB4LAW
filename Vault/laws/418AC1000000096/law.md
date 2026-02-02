@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC1000000096
+id: JPLAW:418AC1000000096
+law_no: 平成十八年法律第九十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC1000000096
+promulgation_date: '20060623'
+tags:
+- 拉致問題その他北朝鮮当局による人権侵害問題への対処に関する法律
+tier: 0
+title: 拉致問題その他北朝鮮当局による人権侵害問題への対処に関する法律
+law_id: 418AC1000000096
+official_title: 拉致問題その他北朝鮮当局による人権侵害問題への対処に関する法律
+aliases:
+- 拉致問題その他北朝鮮当局による人権侵害問題への対処に関する法律
+---
+
+# 拉致問題その他北朝鮮当局による人権侵害問題への対処に関する法律
+
+## Metadata
+- Law ID: `418AC1000000096`
+- Law No: 平成十八年法律第九十六号
+- Promulgation Date: 20060623

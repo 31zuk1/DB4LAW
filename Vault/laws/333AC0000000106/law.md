@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC0000000106
+id: JPLAW:333AC0000000106
+law_no: 昭和三十三年法律第百六号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC0000000106
+promulgation_date: '19580430'
+tags:
+- 企業担保法
+tier: 0
+title: 企業担保法
+law_id: 333AC0000000106
+official_title: 企業担保法
+aliases:
+- 企業担保法
+---
+
+# 企業担保法
+
+## Metadata
+- Law ID: `333AC0000000106`
+- Law No: 昭和三十三年法律第百六号
+- Promulgation Date: 19580430

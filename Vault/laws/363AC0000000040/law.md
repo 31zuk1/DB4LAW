@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363AC0000000040
+id: JPLAW:363AC0000000040
+law_no: 昭和六十三年法律第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/363AC0000000040
+promulgation_date: '19880517'
+tags:
+- 港湾労働法
+tier: 0
+title: 港湾労働法
+law_id: 363AC0000000040
+official_title: 港湾労働法
+aliases:
+- 港湾労働法
+---
+
+# 港湾労働法
+
+## Metadata
+- Law ID: `363AC0000000040`
+- Law No: 昭和六十三年法律第四十号
+- Promulgation Date: 19880517

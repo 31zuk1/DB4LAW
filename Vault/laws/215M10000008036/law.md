@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 215M10000008036
+id: JPLAW:215M10000008036
+law_no: 大正十五年内務省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/215M10000008036
+promulgation_date: '19260701'
+tags:
+- 健康保険法施行規則
+tier: 0
+title: 健康保険法施行規則
+law_id: 215M10000008036
+official_title: 健康保険法施行規則
+aliases:
+- 健康保険法施行規則
+---
+
+# 健康保険法施行規則
+
+## Metadata
+- Law ID: `215M10000008036`
+- Law No: 大正十五年内務省令第三十六号
+- Promulgation Date: 19260701

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC0000000045
+id: JPLAW:326AC0000000045
+law_no: 昭和二十六年法律第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC0000000045
+promulgation_date: '19510329'
+tags:
+- 社会福祉法
+tier: 0
+title: 社会福祉法
+law_id: 326AC0000000045
+official_title: 社会福祉法
+aliases:
+- 社会福祉法
+---
+
+# 社会福祉法
+
+## Metadata
+- Law ID: `326AC0000000045`
+- Law No: 昭和二十六年法律第四十五号
+- Promulgation Date: 19510329

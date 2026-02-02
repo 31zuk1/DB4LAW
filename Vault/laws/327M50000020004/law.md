@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000020004
+id: JPLAW:327M50000020004
+law_no: 昭和二十七年外務省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000020004
+promulgation_date: '19520401'
+tags:
+- 領事官の徴収する手数料の額を定める省令
+tier: 0
+title: 領事官の徴収する手数料の額を定める省令
+law_id: 327M50000020004
+official_title: 領事官の徴収する手数料の額を定める省令
+aliases:
+- 領事官の徴収する手数料の額を定める省令
+---
+
+# 領事官の徴収する手数料の額を定める省令
+
+## Metadata
+- Law ID: `327M50000020004`
+- Law No: 昭和二十七年外務省令第四号
+- Promulgation Date: 19520401

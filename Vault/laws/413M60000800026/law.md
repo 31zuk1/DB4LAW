@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000800026
+id: JPLAW:413M60000800026
+law_no: 平成十三年国土交通省令第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000800026
+promulgation_date: '20010106'
+tags:
+- 航空交通管制部組織規則
+tier: 0
+title: 航空交通管制部組織規則
+law_id: 413M60000800026
+official_title: 航空交通管制部組織規則
+aliases:
+- 航空交通管制部組織規則
+---
+
+# 航空交通管制部組織規則
+
+## Metadata
+- Law ID: `413M60000800026`
+- Law No: 平成十三年国土交通省令第二十六号
+- Promulgation Date: 20010106

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000305
+id: JPLAW:329CO0000000305
+law_no: 昭和二十九年政令第三百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000305
+promulgation_date: '19541206'
+tags:
+- 建設機械登記令
+tier: 0
+title: 建設機械登記令
+law_id: 329CO0000000305
+official_title: 建設機械登記令
+aliases:
+- 建設機械登記令
+---
+
+# 建設機械登記令
+
+## Metadata
+- Law ID: `329CO0000000305`
+- Law No: 昭和二十九年政令第三百五号
+- Promulgation Date: 19541206

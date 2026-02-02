@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000040
+id: JPLAW:414AC0000000040
+law_no: 平成十四年法律第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000040
+promulgation_date: '20020510'
+tags:
+- 独立行政法人造幣局法
+tier: 0
+title: 独立行政法人造幣局法
+law_id: 414AC0000000040
+official_title: 独立行政法人造幣局法
+aliases:
+- 独立行政法人造幣局法
+---
+
+# 独立行政法人造幣局法
+
+## Metadata
+- Law ID: `414AC0000000040`
+- Law No: 平成十四年法律第四十号
+- Promulgation Date: 20020510

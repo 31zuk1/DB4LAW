@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417M60000010035
+id: JPLAW:417M60000010035
+law_no: 平成十七年法務省令第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/417M60000010035
+promulgation_date: '20050304'
+tags:
+- 夫婦財産契約登記規則
+tier: 0
+title: 夫婦財産契約登記規則
+law_id: 417M60000010035
+official_title: 夫婦財産契約登記規則
+aliases:
+- 夫婦財産契約登記規則
+---
+
+# 夫婦財産契約登記規則
+
+## Metadata
+- Law ID: `417M60000010035`
+- Law No: 平成十七年法務省令第三十五号
+- Promulgation Date: 20050304

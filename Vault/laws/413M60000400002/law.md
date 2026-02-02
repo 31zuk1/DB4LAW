@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000400002
+id: JPLAW:413M60000400002
+law_no: 平成十三年経済産業省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000400002
+promulgation_date: '20010106'
+tags:
+- 日本産業標準調査会規則
+tier: 0
+title: 日本産業標準調査会規則
+law_id: 413M60000400002
+official_title: 日本産業標準調査会規則
+aliases:
+- 日本産業標準調査会規則
+---
+
+# 日本産業標準調査会規則
+
+## Metadata
+- Law ID: `413M60000400002`
+- Law No: 平成十三年経済産業省令第二号
+- Promulgation Date: 20010106

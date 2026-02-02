@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339AC0000000161
+id: JPLAW:339AC0000000161
+law_no: 昭和三十九年法律第百六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/339AC0000000161
+promulgation_date: '19640709'
+tags:
+- 森林・林業基本法
+tier: 0
+title: 森林・林業基本法
+law_id: 339AC0000000161
+official_title: 森林・林業基本法
+aliases:
+- 森林・林業基本法
+---
+
+# 森林・林業基本法
+
+## Metadata
+- Law ID: `339AC0000000161`
+- Law No: 昭和三十九年法律第百六十一号
+- Promulgation Date: 19640709

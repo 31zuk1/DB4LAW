@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC1000000117
+id: JPLAW:418AC1000000117
+law_no: 平成十八年法律第百十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC1000000117
+promulgation_date: '20061220'
+tags:
+- 観光立国推進基本法
+tier: 0
+title: 観光立国推進基本法
+law_id: 418AC1000000117
+official_title: 観光立国推進基本法
+aliases:
+- 観光立国推進基本法
+---
+
+# 観光立国推進基本法
+
+## Metadata
+- Law ID: `418AC1000000117`
+- Law No: 平成十八年法律第百十七号
+- Promulgation Date: 20061220

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000064
+id: JPLAW:420CO0000000064
+law_no: 平成二十年政令第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000064
+promulgation_date: '20080324'
+tags:
+- ネパール選挙監視国際平和協力隊の設置等に関する政令
+tier: 0
+title: ネパール選挙監視国際平和協力隊の設置等に関する政令
+law_id: 420CO0000000064
+official_title: ネパール選挙監視国際平和協力隊の設置等に関する政令
+aliases:
+- ネパール選挙監視国際平和協力隊の設置等に関する政令
+---
+
+# ネパール選挙監視国際平和協力隊の設置等に関する政令
+
+## Metadata
+- Law ID: `420CO0000000064`
+- Law No: 平成二十年政令第六十四号
+- Promulgation Date: 20080324

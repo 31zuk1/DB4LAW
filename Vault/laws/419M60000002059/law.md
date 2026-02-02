@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000002059
+id: JPLAW:419M60000002059
+law_no: 平成十九年内閣府令第五十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000002059
+promulgation_date: '20070808'
+tags:
+- 有価証券の取引等の規制に関する内閣府令
+tier: 0
+title: 有価証券の取引等の規制に関する内閣府令
+law_id: 419M60000002059
+official_title: 有価証券の取引等の規制に関する内閣府令
+aliases:
+- 有価証券の取引等の規制に関する内閣府令
+---
+
+# 有価証券の取引等の規制に関する内閣府令
+
+## Metadata
+- Law ID: `419M60000002059`
+- Law No: 平成十九年内閣府令第五十九号
+- Promulgation Date: 20070808

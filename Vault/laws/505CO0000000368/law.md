@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505CO0000000368
+id: JPLAW:505CO0000000368
+law_no: 令和五年政令第三百六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/505CO0000000368
+promulgation_date: '20231220'
+tags:
+- 認知症施策推進本部令
+tier: 0
+title: 認知症施策推進本部令
+law_id: 505CO0000000368
+official_title: 認知症施策推進本部令
+aliases:
+- 認知症施策推進本部令
+---
+
+# 認知症施策推進本部令
+
+## Metadata
+- Law ID: `505CO0000000368`
+- Law No: 令和五年政令第三百六十八号
+- Promulgation Date: 20231220

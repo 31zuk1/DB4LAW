@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000123
+id: JPLAW:331AC0000000123
+law_no: 昭和三十一年法律第百二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000123
+promulgation_date: '19560601'
+tags:
+- 家畜取引法
+tier: 0
+title: 家畜取引法
+law_id: 331AC0000000123
+official_title: 家畜取引法
+aliases:
+- 家畜取引法
+---
+
+# 家畜取引法
+
+## Metadata
+- Law ID: `331AC0000000123`
+- Law No: 昭和三十一年法律第百二十三号
+- Promulgation Date: 19560601

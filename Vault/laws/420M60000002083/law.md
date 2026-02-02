@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000002083
+id: JPLAW:420M60000002083
+law_no: 平成二十年内閣府令第八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000002083
+promulgation_date: '20081225'
+tags:
+- 職員の退職管理に関する内閣官房令
+tier: 0
+title: 職員の退職管理に関する内閣官房令
+law_id: 420M60000002083
+official_title: 職員の退職管理に関する内閣官房令
+aliases:
+- 職員の退職管理に関する内閣官房令
+---
+
+# 職員の退職管理に関する内閣官房令
+
+## Metadata
+- Law ID: `420M60000002083`
+- Law No: 平成二十年内閣府令第八十三号
+- Promulgation Date: 20081225

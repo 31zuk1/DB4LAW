@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 215IO0000000243
+id: JPLAW:215IO0000000243
+law_no: 大正十五年勅令第二百四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/215IO0000000243
+promulgation_date: '19260630'
+tags:
+- 健康保険法施行令
+tier: 0
+title: 健康保険法施行令
+law_id: 215IO0000000243
+official_title: 健康保険法施行令
+aliases:
+- 健康保険法施行令
+---
+
+# 健康保険法施行令
+
+## Metadata
+- Law ID: `215IO0000000243`
+- Law No: 大正十五年勅令第二百四十三号
+- Promulgation Date: 19260630

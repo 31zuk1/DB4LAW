@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417R00000003003
+id: JPLAW:417R00000003003
+law_no: 平成十七年日本学術会議規則第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/417R00000003003
+promulgation_date: '20051024'
+tags:
+- 日本学術会議会則
+tier: 0
+title: 日本学術会議会則
+law_id: 417R00000003003
+official_title: 日本学術会議会則
+aliases:
+- 日本学術会議会則
+---
+
+# 日本学術会議会則
+
+## Metadata
+- Law ID: `417R00000003003`
+- Law No: 平成十七年日本学術会議規則第三号
+- Promulgation Date: 20051024

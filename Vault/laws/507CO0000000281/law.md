@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507CO0000000281
+id: JPLAW:507CO0000000281
+law_no: 令和七年政令第二百八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/507CO0000000281
+promulgation_date: '20250801'
+tags:
+- 人工知能戦略本部令
+tier: 0
+title: 人工知能戦略本部令
+law_id: 507CO0000000281
+official_title: 人工知能戦略本部令
+aliases:
+- 人工知能戦略本部令
+---
+
+# 人工知能戦略本部令
+
+## Metadata
+- Law ID: `507CO0000000281`
+- Law No: 令和七年政令第二百八十一号
+- Promulgation Date: 20250801

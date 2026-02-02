@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000165
+id: JPLAW:323AC0000000165
+law_no: 昭和二十三年法律第百六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000165
+promulgation_date: '19480715'
+tags:
+- 農業改良助長法
+tier: 0
+title: 農業改良助長法
+law_id: 323AC0000000165
+official_title: 農業改良助長法
+aliases:
+- 農業改良助長法
+---
+
+# 農業改良助長法
+
+## Metadata
+- Law ID: `323AC0000000165`
+- Law No: 昭和二十三年法律第百六十五号
+- Promulgation Date: 19480715

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 138M10001000037
+id: JPLAW:138M10001000037
+law_no: 明治三十八年逓信省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/138M10001000037
+promulgation_date: '19050522'
+tags:
+- 鉄道抵当法施行規則
+tier: 0
+title: 鉄道抵当法施行規則
+law_id: 138M10001000037
+official_title: 鉄道抵当法施行規則
+aliases:
+- 鉄道抵当法施行規則
+---
+
+# 鉄道抵当法施行規則
+
+## Metadata
+- Law ID: `138M10001000037`
+- Law No: 明治三十八年逓信省令第三十七号
+- Promulgation Date: 19050522

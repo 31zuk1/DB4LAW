@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334CO0000000108
+id: JPLAW:334CO0000000108
+law_no: 昭和三十四年政令第百八号
+links:
+  egov: https://laws.e-gov.go.jp/law/334CO0000000108
+promulgation_date: '19590408'
+tags:
+- 特定港湾施設整備特別措置法施行令
+tier: 0
+title: 特定港湾施設整備特別措置法施行令
+law_id: 334CO0000000108
+official_title: 特定港湾施設整備特別措置法施行令
+aliases:
+- 特定港湾施設整備特別措置法施行令
+---
+
+# 特定港湾施設整備特別措置法施行令
+
+## Metadata
+- Law ID: `334CO0000000108`
+- Law No: 昭和三十四年政令第百八号
+- Promulgation Date: 19590408

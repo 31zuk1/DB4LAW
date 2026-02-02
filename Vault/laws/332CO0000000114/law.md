@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332CO0000000114
+id: JPLAW:332CO0000000114
+law_no: 昭和三十二年政令第百十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/332CO0000000114
+promulgation_date: '19570528'
+tags:
+- 国の庁舎等の使用調整等に関する特別措置法施行令
+tier: 0
+title: 国の庁舎等の使用調整等に関する特別措置法施行令
+law_id: 332CO0000000114
+official_title: 国の庁舎等の使用調整等に関する特別措置法施行令
+aliases:
+- 国の庁舎等の使用調整等に関する特別措置法施行令
+---
+
+# 国の庁舎等の使用調整等に関する特別措置法施行令
+
+## Metadata
+- Law ID: `332CO0000000114`
+- Law No: 昭和三十二年政令第百十四号
+- Promulgation Date: 19570528

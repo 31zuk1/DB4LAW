@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000225
+id: JPLAW:411AC0000000225
+law_no: 平成十一年法律第二百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000225
+promulgation_date: '19991222'
+tags:
+- 民事再生法
+tier: 0
+title: 民事再生法
+law_id: 411AC0000000225
+official_title: 民事再生法
+aliases:
+- 民事再生法
+---
+
+# 民事再生法
+
+## Metadata
+- Law ID: `411AC0000000225`
+- Law No: 平成十一年法律第二百二十五号
+- Promulgation Date: 19991222

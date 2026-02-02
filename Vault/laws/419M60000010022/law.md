@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000010022
+id: JPLAW:419M60000010022
+law_no: 平成十九年法務省令第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000010022
+promulgation_date: '20070330'
+tags:
+- 保護観察所組織規則
+tier: 0
+title: 保護観察所組織規則
+law_id: 419M60000010022
+official_title: 保護観察所組織規則
+aliases:
+- 保護観察所組織規則
+---
+
+# 保護観察所組織規則
+
+## Metadata
+- Law ID: `419M60000010022`
+- Law No: 平成十九年法務省令第二十二号
+- Promulgation Date: 20070330

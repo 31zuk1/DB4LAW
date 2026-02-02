@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423M60000808001
+id: JPLAW:423M60000808001
+law_no: 平成二十三年総務省・国土交通省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/423M60000808001
+promulgation_date: '20110926'
+tags:
+- 運輸事業の振興の助成に関する法律施行規則
+tier: 0
+title: 運輸事業の振興の助成に関する法律施行規則
+law_id: 423M60000808001
+official_title: 運輸事業の振興の助成に関する法律施行規則
+aliases:
+- 運輸事業の振興の助成に関する法律施行規則
+---
+
+# 運輸事業の振興の助成に関する法律施行規則
+
+## Metadata
+- Law ID: `423M60000808001`
+- Law No: 平成二十三年総務省・国土交通省令第一号
+- Promulgation Date: 20110926

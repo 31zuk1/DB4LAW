@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 134IO0000000001
+id: JPLAW:134IO0000000001
+law_no: 明治三十四年勅令
+links:
+  egov: https://laws.e-gov.go.jp/law/134IO0000000001
+promulgation_date: '19010408'
+tags:
+- 日西特別通商条約
+tier: 0
+title: 日西特別通商条約
+law_id: 134IO0000000001
+official_title: 日西特別通商条約
+aliases:
+- 日西特別通商条約
+---
+
+# 日西特別通商条約
+
+## Metadata
+- Law ID: `134IO0000000001`
+- Law No: 明治三十四年勅令
+- Promulgation Date: 19010408

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404M50400000019
+id: JPLAW:404M50400000019
+law_no: 平成四年国家公安委員会規則第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/404M50400000019
+promulgation_date: '19920916'
+tags:
+- 原動機を用いる歩行補助車等の型式認定の手続等に関する規則
+tier: 0
+title: 原動機を用いる歩行補助車等の型式認定の手続等に関する規則
+law_id: 404M50400000019
+official_title: 原動機を用いる歩行補助車等の型式認定の手続等に関する規則
+aliases:
+- 原動機を用いる歩行補助車等の型式認定の手続等に関する規則
+---
+
+# 原動機を用いる歩行補助車等の型式認定の手続等に関する規則
+
+## Metadata
+- Law ID: `404M50400000019`
+- Law No: 平成四年国家公安委員会規則第十九号
+- Promulgation Date: 19920916

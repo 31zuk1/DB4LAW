@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000063
+id: JPLAW:322AC0000000063
+law_no: 昭和二十二年法律第六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000063
+promulgation_date: '19470417'
+tags:
+- 下級裁判所の設立及び管轄区域に関する法律
+tier: 0
+title: 下級裁判所の設立及び管轄区域に関する法律
+law_id: 322AC0000000063
+official_title: 下級裁判所の設立及び管轄区域に関する法律
+aliases:
+- 下級裁判所の設立及び管轄区域に関する法律
+---
+
+# 下級裁判所の設立及び管轄区域に関する法律
+
+## Metadata
+- Law ID: `322AC0000000063`
+- Law No: 昭和二十二年法律第六十三号
+- Promulgation Date: 19470417

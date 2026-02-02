@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000205
+id: JPLAW:323AC0000000205
+law_no: 昭和二十三年法律第二百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000205
+promulgation_date: '19480730'
+tags:
+- 医療法
+tier: 0
+title: 医療法
+law_id: 323AC0000000205
+official_title: 医療法
+aliases:
+- 医療法
+---
+
+# 医療法
+
+## Metadata
+- Law ID: `323AC0000000205`
+- Law No: 昭和二十三年法律第二百五号
+- Promulgation Date: 19480730

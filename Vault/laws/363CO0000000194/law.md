@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363CO0000000194
+id: JPLAW:363CO0000000194
+law_no: 昭和六十三年政令第百九十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/363CO0000000194
+promulgation_date: '19880614'
+tags:
+- 多極分散型国土形成促進法施行令
+tier: 0
+title: 多極分散型国土形成促進法施行令
+law_id: 363CO0000000194
+official_title: 多極分散型国土形成促進法施行令
+aliases:
+- 多極分散型国土形成促進法施行令
+---
+
+# 多極分散型国土形成促進法施行令
+
+## Metadata
+- Law ID: `363CO0000000194`
+- Law No: 昭和六十三年政令第百九十四号
+- Promulgation Date: 19880614

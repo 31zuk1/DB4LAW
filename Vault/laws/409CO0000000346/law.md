@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409CO0000000346
+id: JPLAW:409CO0000000346
+law_no: 平成九年政令第三百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/409CO0000000346
+promulgation_date: '19971203'
+tags:
+- 環境影響評価法施行令
+tier: 0
+title: 環境影響評価法施行令
+law_id: 409CO0000000346
+official_title: 環境影響評価法施行令
+aliases:
+- 環境影響評価法施行令
+---
+
+# 環境影響評価法施行令
+
+## Metadata
+- Law ID: `409CO0000000346`
+- Law No: 平成九年政令第三百四十六号
+- Promulgation Date: 19971203

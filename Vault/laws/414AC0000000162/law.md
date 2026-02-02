@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000162
+id: JPLAW:414AC0000000162
+law_no: 平成十四年法律第百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000162
+promulgation_date: '20021213'
+tags:
+- 独立行政法人日本スポーツ振興センター法
+tier: 0
+title: 独立行政法人日本スポーツ振興センター法
+law_id: 414AC0000000162
+official_title: 独立行政法人日本スポーツ振興センター法
+aliases:
+- 独立行政法人日本スポーツ振興センター法
+---
+
+# 独立行政法人日本スポーツ振興センター法
+
+## Metadata
+- Law ID: `414AC0000000162`
+- Law No: 平成十四年法律第百六十二号
+- Promulgation Date: 20021213

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60040000001
+id: JPLAW:420M60040000001
+law_no: 平成二十年運輸安全委員会規則第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60040000001
+promulgation_date: '20081001'
+tags:
+- 運輸安全委員会運営規則
+tier: 0
+title: 運輸安全委員会運営規則
+law_id: 420M60040000001
+official_title: 運輸安全委員会運営規則
+aliases:
+- 運輸安全委員会運営規則
+---
+
+# 運輸安全委員会運営規則
+
+## Metadata
+- Law ID: `420M60040000001`
+- Law No: 平成二十年運輸安全委員会規則第一号
+- Promulgation Date: 20081001

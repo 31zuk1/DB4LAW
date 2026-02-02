@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337M50000400014
+id: JPLAW:337M50000400014
+law_no: 昭和三十七年通商産業省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/337M50000400014
+promulgation_date: '19620327'
+tags:
+- 中小企業信用保険法施行規則
+tier: 0
+title: 中小企業信用保険法施行規則
+law_id: 337M50000400014
+official_title: 中小企業信用保険法施行規則
+aliases:
+- 中小企業信用保険法施行規則
+---
+
+# 中小企業信用保険法施行規則
+
+## Metadata
+- Law ID: `337M50000400014`
+- Law No: 昭和三十七年通商産業省令第十四号
+- Promulgation Date: 19620327

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403M50000040006
+id: JPLAW:403M50000040006
+law_no: 平成三年大蔵省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/403M50000040006
+promulgation_date: '19910315'
+tags:
+- 法人臨時特別税に関する省令
+tier: 0
+title: 法人臨時特別税に関する省令
+law_id: 403M50000040006
+official_title: 法人臨時特別税に関する省令
+aliases:
+- 法人臨時特別税に関する省令
+---
+
+# 法人臨時特別税に関する省令
+
+## Metadata
+- Law ID: `403M50000040006`
+- Law No: 平成三年大蔵省令第六号
+- Promulgation Date: 19910315

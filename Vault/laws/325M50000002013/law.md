@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50000002013
+id: JPLAW:325M50000002013
+law_no: 昭和二十五年総理府令第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50000002013
+promulgation_date: '19500420'
+tags:
+- 公職選挙法施行規則
+tier: 0
+title: 公職選挙法施行規則
+law_id: 325M50000002013
+official_title: 公職選挙法施行規則
+aliases:
+- 公職選挙法施行規則
+---
+
+# 公職選挙法施行規則
+
+## Metadata
+- Law ID: `325M50000002013`
+- Law No: 昭和二十五年総理府令第十三号
+- Promulgation Date: 19500420

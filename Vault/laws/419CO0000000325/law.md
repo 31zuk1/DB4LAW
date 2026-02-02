@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419CO0000000325
+id: JPLAW:419CO0000000325
+law_no: 平成十九年政令第三百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/419CO0000000325
+promulgation_date: '20071031'
+tags:
+- 前期高齢者交付金及び後期高齢者医療の国庫負担金の算定等に関する政令
+tier: 0
+title: 前期高齢者交付金及び後期高齢者医療の国庫負担金の算定等に関する政令
+law_id: 419CO0000000325
+official_title: 前期高齢者交付金及び後期高齢者医療の国庫負担金の算定等に関する政令
+aliases:
+- 前期高齢者交付金及び後期高齢者医療の国庫負担金の算定等に関する政令
+---
+
+# 前期高齢者交付金及び後期高齢者医療の国庫負担金の算定等に関する政令
+
+## Metadata
+- Law ID: `419CO0000000325`
+- Law No: 平成十九年政令第三百二十五号
+- Promulgation Date: 20071031

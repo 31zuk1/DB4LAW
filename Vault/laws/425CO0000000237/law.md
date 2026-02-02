@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425CO0000000237
+id: JPLAW:425CO0000000237
+law_no: 平成二十五年政令第二百三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/425CO0000000237
+promulgation_date: '20130819'
+tags:
+- 大規模災害からの復興に関する法律施行令
+tier: 0
+title: 大規模災害からの復興に関する法律施行令
+law_id: 425CO0000000237
+official_title: 大規模災害からの復興に関する法律施行令
+aliases:
+- 大規模災害からの復興に関する法律施行令
+---
+
+# 大規模災害からの復興に関する法律施行令
+
+## Metadata
+- Law ID: `425CO0000000237`
+- Law No: 平成二十五年政令第二百三十七号
+- Promulgation Date: 20130819

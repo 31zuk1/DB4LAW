@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339RJNJ09015000
+id: JPLAW:339RJNJ09015000
+law_no: 昭和三十九年人事院規則九―一五
+links:
+  egov: https://laws.e-gov.go.jp/law/339RJNJ09015000
+promulgation_date: '19641217'
+tags:
+- 人事院規則九―一五（宿日直手当）
+tier: 0
+title: 人事院規則九―一五（宿日直手当）
+law_id: 339RJNJ09015000
+official_title: 人事院規則九―一五（宿日直手当）
+aliases:
+- 人事院規則九―一五（宿日直手当）
+---
+
+# 人事院規則九―一五（宿日直手当）
+
+## Metadata
+- Law ID: `339RJNJ09015000`
+- Law No: 昭和三十九年人事院規則九―一五
+- Promulgation Date: 19641217

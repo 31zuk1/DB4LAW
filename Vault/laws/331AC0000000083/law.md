@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000083
+id: JPLAW:331AC0000000083
+law_no: 昭和三十一年法律第八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000083
+promulgation_date: '19560426'
+tags:
+- 首都圏整備法
+tier: 0
+title: 首都圏整備法
+law_id: 331AC0000000083
+official_title: 首都圏整備法
+aliases:
+- 首都圏整備法
+---
+
+# 首都圏整備法
+
+## Metadata
+- Law ID: `331AC0000000083`
+- Law No: 昭和三十一年法律第八十三号
+- Promulgation Date: 19560426

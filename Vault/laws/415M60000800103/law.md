@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000800103
+id: JPLAW:415M60000800103
+law_no: 平成十五年国土交通省令第百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000800103
+promulgation_date: '20031001'
+tags:
+- 独立行政法人国際観光振興機構に関する省令
+tier: 0
+title: 独立行政法人国際観光振興機構に関する省令
+law_id: 415M60000800103
+official_title: 独立行政法人国際観光振興機構に関する省令
+aliases:
+- 独立行政法人国際観光振興機構に関する省令
+---
+
+# 独立行政法人国際観光振興機構に関する省令
+
+## Metadata
+- Law ID: `415M60000800103`
+- Law No: 平成十五年国土交通省令第百三号
+- Promulgation Date: 20031001

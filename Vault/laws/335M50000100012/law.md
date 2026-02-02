@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335M50000100012
+id: JPLAW:335M50000100012
+law_no: 昭和三十五年厚生省令第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/335M50000100012
+promulgation_date: '19600423'
+tags:
+- 国民年金法施行規則
+tier: 0
+title: 国民年金法施行規則
+law_id: 335M50000100012
+official_title: 国民年金法施行規則
+aliases:
+- 国民年金法施行規則
+---
+
+# 国民年金法施行規則
+
+## Metadata
+- Law ID: `335M50000100012`
+- Law No: 昭和三十五年厚生省令第十二号
+- Promulgation Date: 19600423

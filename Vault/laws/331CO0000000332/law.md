@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331CO0000000332
+id: JPLAW:331CO0000000332
+law_no: 昭和三十一年政令第三百三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/331CO0000000332
+promulgation_date: '19561107'
+tags:
+- 海岸法施行令
+tier: 0
+title: 海岸法施行令
+law_id: 331CO0000000332
+official_title: 海岸法施行令
+aliases:
+- 海岸法施行令
+---
+
+# 海岸法施行令
+
+## Metadata
+- Law ID: `331CO0000000332`
+- Law No: 昭和三十一年政令第三百三十二号
+- Promulgation Date: 19561107

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC1000000239
+id: JPLAW:326AC1000000239
+law_no: 昭和二十六年法律第二百三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC1000000239
+promulgation_date: '19510615'
+tags:
+- 信用金庫法施行法
+tier: 0
+title: 信用金庫法施行法
+law_id: 326AC1000000239
+official_title: 信用金庫法施行法
+aliases:
+- 信用金庫法施行法
+---
+
+# 信用金庫法施行法
+
+## Metadata
+- Law ID: `326AC1000000239`
+- Law No: 昭和二十六年法律第二百三十九号
+- Promulgation Date: 19510615

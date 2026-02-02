@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333CO0000000279
+id: JPLAW:333CO0000000279
+law_no: 昭和三十三年政令第二百七十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/333CO0000000279
+promulgation_date: '19580929'
+tags:
+- お年玉付郵便葉書等に関する法律施行令
+tier: 0
+title: お年玉付郵便葉書等に関する法律施行令
+law_id: 333CO0000000279
+official_title: お年玉付郵便葉書等に関する法律施行令
+aliases:
+- お年玉付郵便葉書等に関する法律施行令
+---
+
+# お年玉付郵便葉書等に関する法律施行令
+
+## Metadata
+- Law ID: `333CO0000000279`
+- Law No: 昭和三十三年政令第二百七十九号
+- Promulgation Date: 19580929

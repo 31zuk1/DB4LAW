@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000318
+id: JPLAW:413CO0000000318
+law_no: 平成十三年政令第三百十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000318
+promulgation_date: '20010927'
+tags:
+- 家内労働法第四条第二項及び第八条第一項の審議会を定める政令
+tier: 0
+title: 家内労働法第四条第二項及び第八条第一項の審議会を定める政令
+law_id: 413CO0000000318
+official_title: 家内労働法第四条第二項及び第八条第一項の審議会を定める政令
+aliases:
+- 家内労働法第四条第二項及び第八条第一項の審議会を定める政令
+---
+
+# 家内労働法第四条第二項及び第八条第一項の審議会を定める政令
+
+## Metadata
+- Law ID: `413CO0000000318`
+- Law No: 平成十三年政令第三百十八号
+- Promulgation Date: 20010927

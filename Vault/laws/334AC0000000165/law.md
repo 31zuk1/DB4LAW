@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334AC0000000165
+id: JPLAW:334AC0000000165
+law_no: 昭和三十四年法律第百六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/334AC0000000165
+promulgation_date: '19590515'
+tags:
+- 連合国財産の返還等に伴う損失の処理等に関する法律
+tier: 0
+title: 連合国財産の返還等に伴う損失の処理等に関する法律
+law_id: 334AC0000000165
+official_title: 連合国財産の返還等に伴う損失の処理等に関する法律
+aliases:
+- 連合国財産の返還等に伴う損失の処理等に関する法律
+---
+
+# 連合国財産の返還等に伴う損失の処理等に関する法律
+
+## Metadata
+- Law ID: `334AC0000000165`
+- Law No: 昭和三十四年法律第百六十五号
+- Promulgation Date: 19590515

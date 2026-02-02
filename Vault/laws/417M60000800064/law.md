@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417M60000800064
+id: JPLAW:417M60000800064
+law_no: 平成十七年国土交通省令第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/417M60000800064
+promulgation_date: '20050601'
+tags:
+- 独立行政法人日本高速道路保有・債務返済機構に関する省令
+tier: 0
+title: 独立行政法人日本高速道路保有・債務返済機構に関する省令
+law_id: 417M60000800064
+official_title: 独立行政法人日本高速道路保有・債務返済機構に関する省令
+aliases:
+- 独立行政法人日本高速道路保有・債務返済機構に関する省令
+---
+
+# 独立行政法人日本高速道路保有・債務返済機構に関する省令
+
+## Metadata
+- Law ID: `417M60000800064`
+- Law No: 平成十七年国土交通省令第六十四号
+- Promulgation Date: 20050601

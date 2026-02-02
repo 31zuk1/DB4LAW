@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426M60000040070
+id: JPLAW:426M60000040070
+law_no: 平成二十六年財務省令第七十号
+links:
+  egov: https://laws.e-gov.go.jp/law/426M60000040070
+promulgation_date: '20140812'
+tags:
+- 法人番号の指定等に関する省令
+tier: 0
+title: 法人番号の指定等に関する省令
+law_id: 426M60000040070
+official_title: 法人番号の指定等に関する省令
+aliases:
+- 法人番号の指定等に関する省令
+---
+
+# 法人番号の指定等に関する省令
+
+## Metadata
+- Law ID: `426M60000040070`
+- Law No: 平成二十六年財務省令第七十号
+- Promulgation Date: 20140812

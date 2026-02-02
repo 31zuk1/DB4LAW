@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333CO0000000131
+id: JPLAW:333CO0000000131
+law_no: 昭和三十三年政令第百三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/333CO0000000131
+promulgation_date: '19580517'
+tags:
+- 駐留軍関係離職者等臨時措置法施行令
+tier: 0
+title: 駐留軍関係離職者等臨時措置法施行令
+law_id: 333CO0000000131
+official_title: 駐留軍関係離職者等臨時措置法施行令
+aliases:
+- 駐留軍関係離職者等臨時措置法施行令
+---
+
+# 駐留軍関係離職者等臨時措置法施行令
+
+## Metadata
+- Law ID: `333CO0000000131`
+- Law No: 昭和三十三年政令第百三十一号
+- Promulgation Date: 19580517

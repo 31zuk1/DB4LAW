@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331M50400000003
+id: JPLAW:331M50400000003
+law_no: 昭和三十一年国家公安委員会規則第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/331M50400000003
+promulgation_date: '19561122'
+tags:
+- 現場写真の作成及び現場写真記録の取扱に関する規則
+tier: 0
+title: 現場写真の作成及び現場写真記録の取扱に関する規則
+law_id: 331M50400000003
+official_title: 現場写真の作成及び現場写真記録の取扱に関する規則
+aliases:
+- 現場写真の作成及び現場写真記録の取扱に関する規則
+---
+
+# 現場写真の作成及び現場写真記録の取扱に関する規則
+
+## Metadata
+- Law ID: `331M50400000003`
+- Law No: 昭和三十一年国家公安委員会規則第三号
+- Promulgation Date: 19561122

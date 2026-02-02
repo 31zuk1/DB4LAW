@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50010000032
+id: JPLAW:326M50010000032
+law_no: 昭和二十六年農林省令第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50010000032
+promulgation_date: '19510519'
+tags:
+- 農産物検査法施行規則
+tier: 0
+title: 農産物検査法施行規則
+law_id: 326M50010000032
+official_title: 農産物検査法施行規則
+aliases:
+- 農産物検査法施行規則
+---
+
+# 農産物検査法施行規則
+
+## Metadata
+- Law ID: `326M50010000032`
+- Law No: 昭和二十六年農林省令第三十二号
+- Promulgation Date: 19510519

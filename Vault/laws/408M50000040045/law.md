@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408M50000040045
+id: JPLAW:408M50000040045
+law_no: 平成八年大蔵省令第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/408M50000040045
+promulgation_date: '19960718'
+tags:
+- 塩事業法施行規則
+tier: 0
+title: 塩事業法施行規則
+law_id: 408M50000040045
+official_title: 塩事業法施行規則
+aliases:
+- 塩事業法施行規則
+---
+
+# 塩事業法施行規則
+
+## Metadata
+- Law ID: `408M50000040045`
+- Law No: 平成八年大蔵省令第四十五号
+- Promulgation Date: 19960718

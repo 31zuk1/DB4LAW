@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC1000000130
+id: JPLAW:411AC1000000130
+law_no: 平成十一年法律第百三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC1000000130
+promulgation_date: '19990813'
+tags:
+- 自衛隊員倫理法
+tier: 0
+title: 自衛隊員倫理法
+law_id: 411AC1000000130
+official_title: 自衛隊員倫理法
+aliases:
+- 自衛隊員倫理法
+---
+
+# 自衛隊員倫理法
+
+## Metadata
+- Law ID: `411AC1000000130`
+- Law No: 平成十一年法律第百三十号
+- Promulgation Date: 19990813

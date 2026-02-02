@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341M50010000036
+id: JPLAW:341M50010000036
+law_no: 昭和四十一年農林省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/341M50010000036
+promulgation_date: '19660701'
+tags:
+- 野菜生産出荷安定法施行規則
+tier: 0
+title: 野菜生産出荷安定法施行規則
+law_id: 341M50010000036
+official_title: 野菜生産出荷安定法施行規則
+aliases:
+- 野菜生産出荷安定法施行規則
+---
+
+# 野菜生産出荷安定法施行規則
+
+## Metadata
+- Law ID: `341M50010000036`
+- Law No: 昭和四十一年農林省令第三十六号
+- Promulgation Date: 19660701

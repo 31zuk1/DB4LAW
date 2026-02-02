@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000250
+id: JPLAW:412CO0000000250
+law_no: 平成十二年政令第二百五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000250
+promulgation_date: '20000607'
+tags:
+- 財務省組織令
+tier: 0
+title: 財務省組織令
+law_id: 412CO0000000250
+official_title: 財務省組織令
+aliases:
+- 財務省組織令
+---
+
+# 財務省組織令
+
+## Metadata
+- Law ID: `412CO0000000250`
+- Law No: 平成十二年政令第二百五十号
+- Promulgation Date: 20000607

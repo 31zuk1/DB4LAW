@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000002014
+id: JPLAW:332M50000002014
+law_no: 昭和三十二年総理府令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000002014
+promulgation_date: '19570327'
+tags:
+- 水質調査作業規程準則
+tier: 0
+title: 水質調査作業規程準則
+law_id: 332M50000002014
+official_title: 水質調査作業規程準則
+aliases:
+- 水質調査作業規程準則
+---
+
+# 水質調査作業規程準則
+
+## Metadata
+- Law ID: `332M50000002014`
+- Law No: 昭和三十二年総理府令第十四号
+- Promulgation Date: 19570327

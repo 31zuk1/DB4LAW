@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336CO0000000265
+id: JPLAW:336CO0000000265
+law_no: 昭和三十六年政令第二百六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/336CO0000000265
+promulgation_date: '19610717'
+tags:
+- 車両制限令
+tier: 0
+title: 車両制限令
+law_id: 336CO0000000265
+official_title: 車両制限令
+aliases:
+- 車両制限令
+---
+
+# 車両制限令
+
+## Metadata
+- Law ID: `336CO0000000265`
+- Law No: 昭和三十六年政令第二百六十五号
+- Promulgation Date: 19610717

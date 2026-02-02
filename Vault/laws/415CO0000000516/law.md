@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000516
+id: JPLAW:415CO0000000516
+law_no: 平成十五年政令第五百十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000516
+promulgation_date: '20031212'
+tags:
+- 独立行政法人国立病院機構法施行令
+tier: 0
+title: 独立行政法人国立病院機構法施行令
+law_id: 415CO0000000516
+official_title: 独立行政法人国立病院機構法施行令
+aliases:
+- 独立行政法人国立病院機構法施行令
+---
+
+# 独立行政法人国立病院機構法施行令
+
+## Metadata
+- Law ID: `415CO0000000516`
+- Law No: 平成十五年政令第五百十六号
+- Promulgation Date: 20031212

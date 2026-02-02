@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000126
+id: JPLAW:325AC0000000126
+law_no: 昭和二十五年法律第百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000126
+promulgation_date: '19500501'
+tags:
+- 北海道開発法
+tier: 0
+title: 北海道開発法
+law_id: 325AC0000000126
+official_title: 北海道開発法
+aliases:
+- 北海道開発法
+---
+
+# 北海道開発法
+
+## Metadata
+- Law ID: `325AC0000000126`
+- Law No: 昭和二十五年法律第百二十六号
+- Promulgation Date: 19500501

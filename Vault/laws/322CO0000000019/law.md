@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322CO0000000019
+id: JPLAW:322CO0000000019
+law_no: 昭和二十二年政令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/322CO0000000019
+promulgation_date: '19470503'
+tags:
+- 地方自治法施行規程
+tier: 0
+title: 地方自治法施行規程
+law_id: 322CO0000000019
+official_title: 地方自治法施行規程
+aliases:
+- 地方自治法施行規程
+---
+
+# 地方自治法施行規程
+
+## Metadata
+- Law ID: `322CO0000000019`
+- Law No: 昭和二十二年政令第十九号
+- Promulgation Date: 19470503

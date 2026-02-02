@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000800002
+id: JPLAW:327M50000800002
+law_no: 昭和二十七年運輸省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000800002
+promulgation_date: '19520118'
+tags:
+- 自動車登録官及び自動車検査官の任命、服務及び研修に関する規則
+tier: 0
+title: 自動車登録官及び自動車検査官の任命、服務及び研修に関する規則
+law_id: 327M50000800002
+official_title: 自動車登録官及び自動車検査官の任命、服務及び研修に関する規則
+aliases:
+- 自動車登録官及び自動車検査官の任命、服務及び研修に関する規則
+---
+
+# 自動車登録官及び自動車検査官の任命、服務及び研修に関する規則
+
+## Metadata
+- Law ID: `327M50000800002`
+- Law No: 昭和二十七年運輸省令第二号
+- Promulgation Date: 19520118

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344M50000040016
+id: JPLAW:344M50000040016
+law_no: 昭和四十四年大蔵省令第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/344M50000040016
+promulgation_date: '19690331'
+tags:
+- 関税定率法施行規則
+tier: 0
+title: 関税定率法施行規則
+law_id: 344M50000040016
+official_title: 関税定率法施行規則
+aliases:
+- 関税定率法施行規則
+---
+
+# 関税定率法施行規則
+
+## Metadata
+- Law ID: `344M50000040016`
+- Law No: 昭和四十四年大蔵省令第十六号
+- Promulgation Date: 19690331

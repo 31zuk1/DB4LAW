@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361M50000002051
+id: JPLAW:361M50000002051
+law_no: 昭和六十一年総理府令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/361M50000002051
+promulgation_date: '19861118'
+tags:
+- 基準点測量作業規程準則
+tier: 0
+title: 基準点測量作業規程準則
+law_id: 361M50000002051
+official_title: 基準点測量作業規程準則
+aliases:
+- 基準点測量作業規程準則
+---
+
+# 基準点測量作業規程準則
+
+## Metadata
+- Law ID: `361M50000002051`
+- Law No: 昭和六十一年総理府令第五十一号
+- Promulgation Date: 19861118

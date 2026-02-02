@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362M50000800012
+id: JPLAW:362M50000800012
+law_no: 昭和六十二年運輸省令第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/362M50000800012
+promulgation_date: '19870302'
+tags:
+- 鉄道事業等監査規則
+tier: 0
+title: 鉄道事業等監査規則
+law_id: 362M50000800012
+official_title: 鉄道事業等監査規則
+aliases:
+- 鉄道事業等監査規則
+---
+
+# 鉄道事業等監査規則
+
+## Metadata
+- Law ID: `362M50000800012`
+- Law No: 昭和六十二年運輸省令第十二号
+- Promulgation Date: 19870302

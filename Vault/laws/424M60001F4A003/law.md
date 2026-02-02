@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424M60001F4A003
+id: JPLAW:424M60001F4A003
+law_no: 平成二十四年内閣府・総務省・財務省・厚生労働省・農林水産省・経済産業省・国土交通省・環境省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/424M60001F4A003
+promulgation_date: '20121031'
+tags:
+- 統括事業計画の認定等に関する命令
+tier: 0
+title: 統括事業計画の認定等に関する命令
+law_id: 424M60001F4A003
+official_title: 統括事業計画の認定等に関する命令
+aliases:
+- 統括事業計画の認定等に関する命令
+---
+
+# 統括事業計画の認定等に関する命令
+
+## Metadata
+- Law ID: `424M60001F4A003`
+- Law No: 平成二十四年内閣府・総務省・財務省・厚生労働省・農林水産省・経済産業省・国土交通省・環境省令第三号
+- Promulgation Date: 20121031

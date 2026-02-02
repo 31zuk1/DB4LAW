@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419AC0000000074
+id: JPLAW:419AC0000000074
+law_no: 平成十九年法律第七十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/419AC0000000074
+promulgation_date: '20070601'
+tags:
+- 株式会社商工組合中央金庫法
+tier: 0
+title: 株式会社商工組合中央金庫法
+law_id: 419AC0000000074
+official_title: 株式会社商工組合中央金庫法
+aliases:
+- 株式会社商工組合中央金庫法
+---
+
+# 株式会社商工組合中央金庫法
+
+## Metadata
+- Law ID: `419AC0000000074`
+- Law No: 平成十九年法律第七十四号
+- Promulgation Date: 20070601

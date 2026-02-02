@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341AC0000000119
+id: JPLAW:341AC0000000119
+law_no: 昭和四十一年法律第百十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/341AC0000000119
+promulgation_date: '19660704'
+tags:
+- 小型船造船業法
+tier: 0
+title: 小型船造船業法
+law_id: 341AC0000000119
+official_title: 小型船造船業法
+aliases:
+- 小型船造船業法
+---
+
+# 小型船造船業法
+
+## Metadata
+- Law ID: `341AC0000000119`
+- Law No: 昭和四十一年法律第百十九号
+- Promulgation Date: 19660704

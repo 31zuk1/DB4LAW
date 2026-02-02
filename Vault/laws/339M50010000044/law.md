@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50010000044
+id: JPLAW:339M50010000044
+law_no: 昭和三十九年農林省令第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50010000044
+promulgation_date: '19641016'
+tags:
+- 漁獲金額等の認定基準等に関する省令
+tier: 0
+title: 漁獲金額等の認定基準等に関する省令
+law_id: 339M50010000044
+official_title: 漁獲金額等の認定基準等に関する省令
+aliases:
+- 漁獲金額等の認定基準等に関する省令
+---
+
+# 漁獲金額等の認定基準等に関する省令
+
+## Metadata
+- Law ID: `339M50010000044`
+- Law No: 昭和三十九年農林省令第四十四号
+- Promulgation Date: 19641016

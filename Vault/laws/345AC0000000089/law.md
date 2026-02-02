@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345AC0000000089
+id: JPLAW:345AC0000000089
+law_no: 昭和四十五年法律第八十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/345AC0000000089
+promulgation_date: '19700522'
+tags:
+- 林業種苗法
+tier: 0
+title: 林業種苗法
+law_id: 345AC0000000089
+official_title: 林業種苗法
+aliases:
+- 林業種苗法
+---
+
+# 林業種苗法
+
+## Metadata
+- Law ID: `345AC0000000089`
+- Law No: 昭和四十五年法律第八十九号
+- Promulgation Date: 19700522

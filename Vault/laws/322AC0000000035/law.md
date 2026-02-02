@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000035
+id: JPLAW:322AC0000000035
+law_no: 昭和二十二年法律第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000035
+promulgation_date: '19470331'
+tags:
+- 会計法
+tier: 0
+title: 会計法
+law_id: 322AC0000000035
+official_title: 会計法
+aliases:
+- 会計法
+---
+
+# 会計法
+
+## Metadata
+- Law ID: `322AC0000000035`
+- Law No: 昭和二十二年法律第三十五号
+- Promulgation Date: 19470331

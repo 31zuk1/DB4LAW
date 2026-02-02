@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000203
+id: JPLAW:323AC0000000203
+law_no: 昭和二十三年法律第二百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000203
+promulgation_date: '19480730'
+tags:
+- 保健師助産師看護師法
+tier: 0
+title: 保健師助産師看護師法
+law_id: 323AC0000000203
+official_title: 保健師助産師看護師法
+aliases:
+- 保健師助産師看護師法
+---
+
+# 保健師助産師看護師法
+
+## Metadata
+- Law ID: `323AC0000000203`
+- Law No: 昭和二十三年法律第二百三号
+- Promulgation Date: 19480730

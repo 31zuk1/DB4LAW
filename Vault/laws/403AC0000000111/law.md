@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403AC0000000111
+id: JPLAW:403AC0000000111
+law_no: 平成三年法律第百十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/403AC0000000111
+promulgation_date: '19911224'
+tags:
+- 裁判官の育児休業に関する法律
+tier: 0
+title: 裁判官の育児休業に関する法律
+law_id: 403AC0000000111
+official_title: 裁判官の育児休業に関する法律
+aliases:
+- 裁判官の育児休業に関する法律
+---
+
+# 裁判官の育児休業に関する法律
+
+## Metadata
+- Law ID: `403AC0000000111`
+- Law No: 平成三年法律第百十一号
+- Promulgation Date: 19911224

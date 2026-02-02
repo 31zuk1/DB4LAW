@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50400000002
+id: JPLAW:329M50400000002
+law_no: 昭和二十九年国家公安委員会規則第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50400000002
+promulgation_date: '19540701'
+tags:
+- 従前の国家公安委員会のした定の効力の経過措置に関する規則
+tier: 0
+title: 従前の国家公安委員会のした定の効力の経過措置に関する規則
+law_id: 329M50400000002
+official_title: 従前の国家公安委員会のした定の効力の経過措置に関する規則
+aliases:
+- 従前の国家公安委員会のした定の効力の経過措置に関する規則
+---
+
+# 従前の国家公安委員会のした定の効力の経過措置に関する規則
+
+## Metadata
+- Law ID: `329M50400000002`
+- Law No: 昭和二十九年国家公安委員会規則第二号
+- Promulgation Date: 19540701

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324CO0000000006
+id: JPLAW:324CO0000000006
+law_no: 昭和二十四年政令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/324CO0000000006
+promulgation_date: '19490112'
+tags:
+- 教育公務員特例法施行令
+tier: 0
+title: 教育公務員特例法施行令
+law_id: 324CO0000000006
+official_title: 教育公務員特例法施行令
+aliases:
+- 教育公務員特例法施行令
+---
+
+# 教育公務員特例法施行令
+
+## Metadata
+- Law ID: `324CO0000000006`
+- Law No: 昭和二十四年政令第六号
+- Promulgation Date: 19490112

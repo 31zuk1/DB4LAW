@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503M60000A08001
+id: JPLAW:503M60000A08001
+law_no: 令和三年総務省・農林水産省・国土交通省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/503M60000A08001
+promulgation_date: '20210331'
+tags:
+- 過疎地域の持続的発展の支援に関する特別措置法施行規則
+tier: 0
+title: 過疎地域の持続的発展の支援に関する特別措置法施行規則
+law_id: 503M60000A08001
+official_title: 過疎地域の持続的発展の支援に関する特別措置法施行規則
+aliases:
+- 過疎地域の持続的発展の支援に関する特別措置法施行規則
+---
+
+# 過疎地域の持続的発展の支援に関する特別措置法施行規則
+
+## Metadata
+- Law ID: `503M60000A08001`
+- Law No: 令和三年総務省・農林水産省・国土交通省令第一号
+- Promulgation Date: 20210331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349AC0000000049
+id: JPLAW:349AC0000000049
+law_no: 昭和四十九年法律第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/349AC0000000049
+promulgation_date: '19740517'
+tags:
+- 沿岸漁場整備開発法
+tier: 0
+title: 沿岸漁場整備開発法
+law_id: 349AC0000000049
+official_title: 沿岸漁場整備開発法
+aliases:
+- 沿岸漁場整備開発法
+---
+
+# 沿岸漁場整備開発法
+
+## Metadata
+- Law ID: `349AC0000000049`
+- Law No: 昭和四十九年法律第四十九号
+- Promulgation Date: 19740517

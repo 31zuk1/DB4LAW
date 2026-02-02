@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC1000000064
+id: JPLAW:328AC1000000064
+law_no: 昭和二十八年法律第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC1000000064
+promulgation_date: '19530717'
+tags:
+- 北海道防寒住宅建設等促進法
+tier: 0
+title: 北海道防寒住宅建設等促進法
+law_id: 328AC1000000064
+official_title: 北海道防寒住宅建設等促進法
+aliases:
+- 北海道防寒住宅建設等促進法
+---
+
+# 北海道防寒住宅建設等促進法
+
+## Metadata
+- Law ID: `328AC1000000064`
+- Law No: 昭和二十八年法律第六十四号
+- Promulgation Date: 19530717

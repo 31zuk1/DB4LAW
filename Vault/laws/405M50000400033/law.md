@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405M50000400033
+id: JPLAW:405M50000400033
+law_no: 平成五年通商産業省令第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/405M50000400033
+promulgation_date: '19930630'
+tags:
+- 密閉形蓄電池の表示の標準となるべき事項を定める省令
+tier: 0
+title: 密閉形蓄電池の表示の標準となるべき事項を定める省令
+law_id: 405M50000400033
+official_title: 密閉形蓄電池の表示の標準となるべき事項を定める省令
+aliases:
+- 密閉形蓄電池の表示の標準となるべき事項を定める省令
+---
+
+# 密閉形蓄電池の表示の標準となるべき事項を定める省令
+
+## Metadata
+- Law ID: `405M50000400033`
+- Law No: 平成五年通商産業省令第三十三号
+- Promulgation Date: 19930630

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427CO0000000192
+id: JPLAW:427CO0000000192
+law_no: 平成二十七年政令第百九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/427CO0000000192
+promulgation_date: '20150410'
+tags:
+- 総務省国立研究開発法人審議会令
+tier: 0
+title: 総務省国立研究開発法人審議会令
+law_id: 427CO0000000192
+official_title: 総務省国立研究開発法人審議会令
+aliases:
+- 総務省国立研究開発法人審議会令
+---
+
+# 総務省国立研究開発法人審議会令
+
+## Metadata
+- Law ID: `427CO0000000192`
+- Law No: 平成二十七年政令第百九十二号
+- Promulgation Date: 20150410

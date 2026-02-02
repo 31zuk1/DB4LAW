@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409CO0000000349
+id: JPLAW:409CO0000000349
+law_no: 平成九年政令第三百四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/409CO0000000349
+promulgation_date: '19971205'
+tags:
+- 財政構造改革の推進に関する特別措置法施行令
+tier: 0
+title: 財政構造改革の推進に関する特別措置法施行令
+law_id: 409CO0000000349
+official_title: 財政構造改革の推進に関する特別措置法施行令
+aliases:
+- 財政構造改革の推進に関する特別措置法施行令
+---
+
+# 財政構造改革の推進に関する特別措置法施行令
+
+## Metadata
+- Law ID: `409CO0000000349`
+- Law No: 平成九年政令第三百四十九号
+- Promulgation Date: 19971205

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341M50000180002
+id: JPLAW:341M50000180002
+law_no: 昭和四十一年文部省・厚生省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/341M50000180002
+promulgation_date: '19660302'
+tags:
+- 管理栄養士学校指定規則
+tier: 0
+title: 管理栄養士学校指定規則
+law_id: 341M50000180002
+official_title: 管理栄養士学校指定規則
+aliases:
+- 管理栄養士学校指定規則
+---
+
+# 管理栄養士学校指定規則
+
+## Metadata
+- Law ID: `341M50000180002`
+- Law No: 昭和四十一年文部省・厚生省令第二号
+- Promulgation Date: 19660302

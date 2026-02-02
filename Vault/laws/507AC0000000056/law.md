@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507AC0000000056
+id: JPLAW:507AC0000000056
+law_no: 令和七年法律第五十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/507AC0000000056
+promulgation_date: '20250606'
+tags:
+- 譲渡担保契約及び所有権留保契約に関する法律
+tier: 0
+title: 譲渡担保契約及び所有権留保契約に関する法律
+law_id: 507AC0000000056
+official_title: 譲渡担保契約及び所有権留保契約に関する法律
+aliases:
+- 譲渡担保契約及び所有権留保契約に関する法律
+---
+
+# 譲渡担保契約及び所有権留保契約に関する法律
+
+## Metadata
+- Law ID: `507AC0000000056`
+- Law No: 令和七年法律第五十六号
+- Promulgation Date: 20250606

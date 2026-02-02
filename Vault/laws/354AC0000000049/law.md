@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354AC0000000049
+id: JPLAW:354AC0000000049
+law_no: 昭和五十四年法律第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/354AC0000000049
+promulgation_date: '19790622'
+tags:
+- エネルギーの使用の合理化及び非化石エネルギーへの転換等に関する法律
+tier: 0
+title: エネルギーの使用の合理化及び非化石エネルギーへの転換等に関する法律
+law_id: 354AC0000000049
+official_title: エネルギーの使用の合理化及び非化石エネルギーへの転換等に関する法律
+aliases:
+- エネルギーの使用の合理化及び非化石エネルギーへの転換等に関する法律
+---
+
+# エネルギーの使用の合理化及び非化石エネルギーへの転換等に関する法律
+
+## Metadata
+- Law ID: `354AC0000000049`
+- Law No: 昭和五十四年法律第四十九号
+- Promulgation Date: 19790622

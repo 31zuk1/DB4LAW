@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353M50000400077
+id: JPLAW:353M50000400077
+law_no: 昭和五十三年通商産業省令第七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/353M50000400077
+promulgation_date: '19781228'
+tags:
+- 実用発電用原子炉の設置、運転等に関する規則
+tier: 0
+title: 実用発電用原子炉の設置、運転等に関する規則
+law_id: 353M50000400077
+official_title: 実用発電用原子炉の設置、運転等に関する規則
+aliases:
+- 実用発電用原子炉の設置、運転等に関する規則
+---
+
+# 実用発電用原子炉の設置、運転等に関する規則
+
+## Metadata
+- Law ID: `353M50000400077`
+- Law No: 昭和五十三年通商産業省令第七十七号
+- Promulgation Date: 19781228

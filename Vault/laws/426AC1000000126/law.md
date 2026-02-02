@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426AC1000000126
+id: JPLAW:426AC1000000126
+law_no: 平成二十六年法律第百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/426AC1000000126
+promulgation_date: '20141127'
+tags:
+- 私事性的画像記録の提供等による被害の防止に関する法律
+tier: 0
+title: 私事性的画像記録の提供等による被害の防止に関する法律
+law_id: 426AC1000000126
+official_title: 私事性的画像記録の提供等による被害の防止に関する法律
+aliases:
+- 私事性的画像記録の提供等による被害の防止に関する法律
+---
+
+# 私事性的画像記録の提供等による被害の防止に関する法律
+
+## Metadata
+- Law ID: `426AC1000000126`
+- Law No: 平成二十六年法律第百二十六号
+- Promulgation Date: 20141127

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000004
+id: JPLAW:322AC0000000004
+law_no: 昭和二十二年法律第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000004
+promulgation_date: '19470116'
+tags:
+- 皇室経済法
+tier: 0
+title: 皇室経済法
+law_id: 322AC0000000004
+official_title: 皇室経済法
+aliases:
+- 皇室経済法
+---
+
+# 皇室経済法
+
+## Metadata
+- Law ID: `322AC0000000004`
+- Law No: 昭和二十二年法律第四号
+- Promulgation Date: 19470116

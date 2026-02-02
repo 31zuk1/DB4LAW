@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000310
+id: JPLAW:420CO0000000310
+law_no: 平成二十年政令第三百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000310
+promulgation_date: '20081008'
+tags:
+- スーダン国際平和協力隊の設置等に関する政令
+tier: 0
+title: スーダン国際平和協力隊の設置等に関する政令
+law_id: 420CO0000000310
+official_title: スーダン国際平和協力隊の設置等に関する政令
+aliases:
+- スーダン国際平和協力隊の設置等に関する政令
+---
+
+# スーダン国際平和協力隊の設置等に関する政令
+
+## Metadata
+- Law ID: `420CO0000000310`
+- Law No: 平成二十年政令第三百十号
+- Promulgation Date: 20081008

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC0100000198
+id: JPLAW:326AC0100000198
+law_no: 昭和二十六年法律第百九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC0100000198
+promulgation_date: '19510604'
+tags:
+- 投資信託及び投資法人に関する法律
+tier: 0
+title: 投資信託及び投資法人に関する法律
+law_id: 326AC0100000198
+official_title: 投資信託及び投資法人に関する法律
+aliases:
+- 投資信託及び投資法人に関する法律
+---
+
+# 投資信託及び投資法人に関する法律
+
+## Metadata
+- Law ID: `326AC0100000198`
+- Law No: 昭和二十六年法律第百九十八号
+- Promulgation Date: 19510604

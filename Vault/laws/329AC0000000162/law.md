@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329AC0000000162
+id: JPLAW:329AC0000000162
+law_no: 昭和二十九年法律第百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/329AC0000000162
+promulgation_date: '19540608'
+tags:
+- 警察法
+tier: 0
+title: 警察法
+law_id: 329AC0000000162
+official_title: 警察法
+aliases:
+- 警察法
+---
+
+# 警察法
+
+## Metadata
+- Law ID: `329AC0000000162`
+- Law No: 昭和二十九年法律第百六十二号
+- Promulgation Date: 19540608

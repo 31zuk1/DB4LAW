@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000370
+id: JPLAW:415CO0000000370
+law_no: 平成十五年政令第三百七十号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000370
+promulgation_date: '20030808'
+tags:
+- 独立行政法人日本芸術文化振興会法施行令
+tier: 0
+title: 独立行政法人日本芸術文化振興会法施行令
+law_id: 415CO0000000370
+official_title: 独立行政法人日本芸術文化振興会法施行令
+aliases:
+- 独立行政法人日本芸術文化振興会法施行令
+---
+
+# 独立行政法人日本芸術文化振興会法施行令
+
+## Metadata
+- Law ID: `415CO0000000370`
+- Law No: 平成十五年政令第三百七十号
+- Promulgation Date: 20030808

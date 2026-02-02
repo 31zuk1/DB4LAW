@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337AC0000000153
+id: JPLAW:337AC0000000153
+law_no: 昭和三十七年法律第百五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/337AC0000000153
+promulgation_date: '19620908'
+tags:
+- 地方公務員等共済組合法の長期給付等に関する施行法
+tier: 0
+title: 地方公務員等共済組合法の長期給付等に関する施行法
+law_id: 337AC0000000153
+official_title: 地方公務員等共済組合法の長期給付等に関する施行法
+aliases:
+- 地方公務員等共済組合法の長期給付等に関する施行法
+---
+
+# 地方公務員等共済組合法の長期給付等に関する施行法
+
+## Metadata
+- Law ID: `337AC0000000153`
+- Law No: 昭和三十七年法律第百五十三号
+- Promulgation Date: 19620908

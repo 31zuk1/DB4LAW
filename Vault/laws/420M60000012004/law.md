@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000012004
+id: JPLAW:420M60000012004
+law_no: 平成二十年内閣府・法務省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000012004
+promulgation_date: '20081022'
+tags:
+- 電子記録債権法施行規則
+tier: 0
+title: 電子記録債権法施行規則
+law_id: 420M60000012004
+official_title: 電子記録債権法施行規則
+aliases:
+- 電子記録債権法施行規則
+---
+
+# 電子記録債権法施行規則
+
+## Metadata
+- Law ID: `420M60000012004`
+- Law No: 平成二十年内閣府・法務省令第四号
+- Promulgation Date: 20081022

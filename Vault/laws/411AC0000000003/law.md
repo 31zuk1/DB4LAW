@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000003
+id: JPLAW:411AC0000000003
+law_no: 平成十一年法律第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000003
+promulgation_date: '19990325'
+tags:
+- 平成十一年度における公債の発行の特例に関する法律
+tier: 0
+title: 平成十一年度における公債の発行の特例に関する法律
+law_id: 411AC0000000003
+official_title: 平成十一年度における公債の発行の特例に関する法律
+aliases:
+- 平成十一年度における公債の発行の特例に関する法律
+---
+
+# 平成十一年度における公債の発行の特例に関する法律
+
+## Metadata
+- Law ID: `411AC0000000003`
+- Law No: 平成十一年法律第三号
+- Promulgation Date: 19990325

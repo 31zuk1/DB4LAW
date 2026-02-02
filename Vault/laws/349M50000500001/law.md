@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50000500001
+id: JPLAW:349M50000500001
+law_no: 昭和四十九年厚生省・通商産業省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50000500001
+promulgation_date: '19740415'
+tags:
+- 新規化学物質の製造又は輸入に係る届出等に関する省令
+tier: 0
+title: 新規化学物質の製造又は輸入に係る届出等に関する省令
+law_id: 349M50000500001
+official_title: 新規化学物質の製造又は輸入に係る届出等に関する省令
+aliases:
+- 新規化学物質の製造又は輸入に係る届出等に関する省令
+---
+
+# 新規化学物質の製造又は輸入に係る届出等に関する省令
+
+## Metadata
+- Law ID: `349M50000500001`
+- Law No: 昭和四十九年厚生省・通商産業省令第一号
+- Promulgation Date: 19740415

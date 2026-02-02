@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427AC0000000064
+id: JPLAW:427AC0000000064
+law_no: 平成二十七年法律第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/427AC0000000064
+promulgation_date: '20150904'
+tags:
+- 女性の職業生活における活躍の推進に関する法律
+tier: 0
+title: 女性の職業生活における活躍の推進に関する法律
+law_id: 427AC0000000064
+official_title: 女性の職業生活における活躍の推進に関する法律
+aliases:
+- 女性の職業生活における活躍の推進に関する法律
+---
+
+# 女性の職業生活における活躍の推進に関する法律
+
+## Metadata
+- Law ID: `427AC0000000064`
+- Law No: 平成二十七年法律第六十四号
+- Promulgation Date: 20150904

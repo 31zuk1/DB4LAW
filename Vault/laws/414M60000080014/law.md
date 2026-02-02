@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60000080014
+id: JPLAW:414M60000080014
+law_no: 平成十四年文部科学省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60000080014
+promulgation_date: '20020329'
+tags:
+- 小学校設置基準
+tier: 0
+title: 小学校設置基準
+law_id: 414M60000080014
+official_title: 小学校設置基準
+aliases:
+- 小学校設置基準
+---
+
+# 小学校設置基準
+
+## Metadata
+- Law ID: `414M60000080014`
+- Law No: 平成十四年文部科学省令第十四号
+- Promulgation Date: 20020329

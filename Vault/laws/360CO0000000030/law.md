@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360CO0000000030
+id: JPLAW:360CO0000000030
+law_no: 昭和六十年政令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/360CO0000000030
+promulgation_date: '19850315'
+tags:
+- 日本電信電話株式会社等に関する法律施行令
+tier: 0
+title: 日本電信電話株式会社等に関する法律施行令
+law_id: 360CO0000000030
+official_title: 日本電信電話株式会社等に関する法律施行令
+aliases:
+- 日本電信電話株式会社等に関する法律施行令
+---
+
+# 日本電信電話株式会社等に関する法律施行令
+
+## Metadata
+- Law ID: `360CO0000000030`
+- Law No: 昭和六十年政令第三十号
+- Promulgation Date: 19850315

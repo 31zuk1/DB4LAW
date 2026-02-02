@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424CO0000000186
+id: JPLAW:424CO0000000186
+law_no: 平成二十四年政令第百八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/424CO0000000186
+promulgation_date: '20120711'
+tags:
+- 宇宙政策委員会令
+tier: 0
+title: 宇宙政策委員会令
+law_id: 424CO0000000186
+official_title: 宇宙政策委員会令
+aliases:
+- 宇宙政策委員会令
+---
+
+# 宇宙政策委員会令
+
+## Metadata
+- Law ID: `424CO0000000186`
+- Law No: 平成二十四年政令第百八十六号
+- Promulgation Date: 20120711

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 422M60000012005
+id: JPLAW:422M60000012005
+law_no: 平成二十二年内閣府・法務省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/422M60000012005
+promulgation_date: '20100301'
+tags:
+- 資金移動業履行保証金規則
+tier: 0
+title: 資金移動業履行保証金規則
+law_id: 422M60000012005
+official_title: 資金移動業履行保証金規則
+aliases:
+- 資金移動業履行保証金規則
+---
+
+# 資金移動業履行保証金規則
+
+## Metadata
+- Law ID: `422M60000012005`
+- Law No: 平成二十二年内閣府・法務省令第五号
+- Promulgation Date: 20100301

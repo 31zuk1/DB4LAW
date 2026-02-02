@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352M50002000030
+id: JPLAW:352M50002000030
+law_no: 昭和五十二年労働省令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/352M50002000030
+promulgation_date: '19771226'
+tags:
+- 国際協定の締結等に伴う漁業離職者に関する臨時措置法施行規則
+tier: 0
+title: 国際協定の締結等に伴う漁業離職者に関する臨時措置法施行規則
+law_id: 352M50002000030
+official_title: 国際協定の締結等に伴う漁業離職者に関する臨時措置法施行規則
+aliases:
+- 国際協定の締結等に伴う漁業離職者に関する臨時措置法施行規則
+---
+
+# 国際協定の締結等に伴う漁業離職者に関する臨時措置法施行規則
+
+## Metadata
+- Law ID: `352M50002000030`
+- Law No: 昭和五十二年労働省令第三十号
+- Promulgation Date: 19771226

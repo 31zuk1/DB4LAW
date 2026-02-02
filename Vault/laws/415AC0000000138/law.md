@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000138
+id: JPLAW:415AC0000000138
+law_no: 平成十五年法律第百三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000138
+promulgation_date: '20030801'
+tags:
+- 仲裁法
+tier: 0
+title: 仲裁法
+law_id: 415AC0000000138
+official_title: 仲裁法
+aliases:
+- 仲裁法
+---
+
+# 仲裁法
+
+## Metadata
+- Law ID: `415AC0000000138`
+- Law No: 平成十五年法律第百三十八号
+- Promulgation Date: 20030801

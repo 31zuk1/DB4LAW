@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330M50010000045
+id: JPLAW:330M50010000045
+law_no: 昭和三十年農林省令第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/330M50010000045
+promulgation_date: '19551029'
+tags:
+- 養蜂振興法施行規則
+tier: 0
+title: 養蜂振興法施行規則
+law_id: 330M50010000045
+official_title: 養蜂振興法施行規則
+aliases:
+- 養蜂振興法施行規則
+---
+
+# 養蜂振興法施行規則
+
+## Metadata
+- Law ID: `330M50010000045`
+- Law No: 昭和三十年農林省令第四十五号
+- Promulgation Date: 19551029

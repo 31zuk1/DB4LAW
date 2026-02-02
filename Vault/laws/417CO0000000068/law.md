@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417CO0000000068
+id: JPLAW:417CO0000000068
+law_no: 平成十七年政令第六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/417CO0000000068
+promulgation_date: '20050324'
+tags:
+- 犯罪被害者等施策推進会議令
+tier: 0
+title: 犯罪被害者等施策推進会議令
+law_id: 417CO0000000068
+official_title: 犯罪被害者等施策推進会議令
+aliases:
+- 犯罪被害者等施策推進会議令
+---
+
+# 犯罪被害者等施策推進会議令
+
+## Metadata
+- Law ID: `417CO0000000068`
+- Law No: 平成十七年政令第六十八号
+- Promulgation Date: 20050324

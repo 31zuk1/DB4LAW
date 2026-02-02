@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343RJNJ17002000
+id: JPLAW:343RJNJ17002000
+law_no: 昭和四十三年人事院規則一七―二
+links:
+  egov: https://laws.e-gov.go.jp/law/343RJNJ17002000
+promulgation_date: '19681106'
+tags:
+- 人事院規則一七―二（職員団体のための職員の行為）
+tier: 0
+title: 人事院規則一七―二（職員団体のための職員の行為）
+law_id: 343RJNJ17002000
+official_title: 人事院規則一七―二（職員団体のための職員の行為）
+aliases:
+- 人事院規則一七―二（職員団体のための職員の行為）
+---
+
+# 人事院規則一七―二（職員団体のための職員の行為）
+
+## Metadata
+- Law ID: `343RJNJ17002000`
+- Law No: 昭和四十三年人事院規則一七―二
+- Promulgation Date: 19681106

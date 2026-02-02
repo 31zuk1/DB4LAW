@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60002000015
+id: JPLAW:427M60002000015
+law_no: 平成二十七年防衛省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60002000015
+promulgation_date: '20151001'
+tags:
+- 防衛装備庁施設等機関組織規則
+tier: 0
+title: 防衛装備庁施設等機関組織規則
+law_id: 427M60002000015
+official_title: 防衛装備庁施設等機関組織規則
+aliases:
+- 防衛装備庁施設等機関組織規則
+---
+
+# 防衛装備庁施設等機関組織規則
+
+## Metadata
+- Law ID: `427M60002000015`
+- Law No: 平成二十七年防衛省令第十五号
+- Promulgation Date: 20151001

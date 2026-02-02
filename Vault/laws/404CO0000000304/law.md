@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404CO0000000304
+id: JPLAW:404CO0000000304
+law_no: 平成四年政令第三百四号
+links:
+  egov: https://laws.e-gov.go.jp/law/404CO0000000304
+promulgation_date: '19920924'
+tags:
+- 産業廃棄物の処理に係る特定施設の整備の促進に関する法律施行令
+tier: 0
+title: 産業廃棄物の処理に係る特定施設の整備の促進に関する法律施行令
+law_id: 404CO0000000304
+official_title: 産業廃棄物の処理に係る特定施設の整備の促進に関する法律施行令
+aliases:
+- 産業廃棄物の処理に係る特定施設の整備の促進に関する法律施行令
+---
+
+# 産業廃棄物の処理に係る特定施設の整備の促進に関する法律施行令
+
+## Metadata
+- Law ID: `404CO0000000304`
+- Law No: 平成四年政令第三百四号
+- Promulgation Date: 19920924

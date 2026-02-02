@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417AC0000000009
+id: JPLAW:417AC0000000009
+law_no: 平成十七年法律第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/417AC0000000009
+promulgation_date: '20050330'
+tags:
+- 児童扶養手当法による児童扶養手当の額等の改定の特例に関する法律
+tier: 0
+title: 児童扶養手当法による児童扶養手当の額等の改定の特例に関する法律
+law_id: 417AC0000000009
+official_title: 児童扶養手当法による児童扶養手当の額等の改定の特例に関する法律
+aliases:
+- 児童扶養手当法による児童扶養手当の額等の改定の特例に関する法律
+---
+
+# 児童扶養手当法による児童扶養手当の額等の改定の特例に関する法律
+
+## Metadata
+- Law ID: `417AC0000000009`
+- Law No: 平成十七年法律第九号
+- Promulgation Date: 20050330

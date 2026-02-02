@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332CO0000000219
+id: JPLAW:332CO0000000219
+law_no: 昭和三十二年政令第二百十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/332CO0000000219
+promulgation_date: '19570731'
+tags:
+- 内閣官房組織令
+tier: 0
+title: 内閣官房組織令
+law_id: 332CO0000000219
+official_title: 内閣官房組織令
+aliases:
+- 内閣官房組織令
+---
+
+# 内閣官房組織令
+
+## Metadata
+- Law ID: `332CO0000000219`
+- Law No: 昭和三十二年政令第二百十九号
+- Promulgation Date: 19570731

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425AC0000000051
+id: JPLAW:425AC0000000051
+law_no: 平成二十五年法律第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/425AC0000000051
+promulgation_date: '20130619'
+tags:
+- 株式会社海外需要開拓支援機構法
+tier: 0
+title: 株式会社海外需要開拓支援機構法
+law_id: 425AC0000000051
+official_title: 株式会社海外需要開拓支援機構法
+aliases:
+- 株式会社海外需要開拓支援機構法
+---
+
+# 株式会社海外需要開拓支援機構法
+
+## Metadata
+- Law ID: `425AC0000000051`
+- Law No: 平成二十五年法律第五十一号
+- Promulgation Date: 20130619

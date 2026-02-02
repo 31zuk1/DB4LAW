@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000282
+id: JPLAW:340CO0000000282
+law_no: 昭和四十年政令第二百八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000282
+promulgation_date: '19650819'
+tags:
+- 砂糖及びでん粉の価格調整に関する法律施行令
+tier: 0
+title: 砂糖及びでん粉の価格調整に関する法律施行令
+law_id: 340CO0000000282
+official_title: 砂糖及びでん粉の価格調整に関する法律施行令
+aliases:
+- 砂糖及びでん粉の価格調整に関する法律施行令
+---
+
+# 砂糖及びでん粉の価格調整に関する法律施行令
+
+## Metadata
+- Law ID: `340CO0000000282`
+- Law No: 昭和四十年政令第二百八十二号
+- Promulgation Date: 19650819

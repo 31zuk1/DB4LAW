@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351CO0000000280
+id: JPLAW:351CO0000000280
+law_no: 昭和五十一年政令第二百八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/351CO0000000280
+promulgation_date: '19761022'
+tags:
+- 振動規制法施行令
+tier: 0
+title: 振動規制法施行令
+law_id: 351CO0000000280
+official_title: 振動規制法施行令
+aliases:
+- 振動規制法施行令
+---
+
+# 振動規制法施行令
+
+## Metadata
+- Law ID: `351CO0000000280`
+- Law No: 昭和五十一年政令第二百八十号
+- Promulgation Date: 19761022

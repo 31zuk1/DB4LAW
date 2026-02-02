@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50000040015
+id: JPLAW:406M50000040015
+law_no: 平成六年大蔵省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50000040015
+promulgation_date: '19940325'
+tags:
+- 信用協同組合及び信用協同組合連合会の優先出資に関する内閣府令
+tier: 0
+title: 信用協同組合及び信用協同組合連合会の優先出資に関する内閣府令
+law_id: 406M50000040015
+official_title: 信用協同組合及び信用協同組合連合会の優先出資に関する内閣府令
+aliases:
+- 信用協同組合及び信用協同組合連合会の優先出資に関する内閣府令
+---
+
+# 信用協同組合及び信用協同組合連合会の優先出資に関する内閣府令
+
+## Metadata
+- Law ID: `406M50000040015`
+- Law No: 平成六年大蔵省令第十五号
+- Promulgation Date: 19940325

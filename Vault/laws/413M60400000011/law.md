@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60400000011
+id: JPLAW:413M60400000011
+law_no: 平成十三年国家公安委員会規則第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60400000011
+promulgation_date: '20010413'
+tags:
+- 苦情の申出の手続に関する規則
+tier: 0
+title: 苦情の申出の手続に関する規則
+law_id: 413M60400000011
+official_title: 苦情の申出の手続に関する規則
+aliases:
+- 苦情の申出の手続に関する規則
+---
+
+# 苦情の申出の手続に関する規則
+
+## Metadata
+- Law ID: `413M60400000011`
+- Law No: 平成十三年国家公安委員会規則第十一号
+- Promulgation Date: 20010413

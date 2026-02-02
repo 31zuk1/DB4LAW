@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348AC0000000112
+id: JPLAW:348AC0000000112
+law_no: 昭和四十八年法律第百十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/348AC0000000112
+promulgation_date: '19731012'
+tags:
+- 有害物質を含有する家庭用品の規制に関する法律
+tier: 0
+title: 有害物質を含有する家庭用品の規制に関する法律
+law_id: 348AC0000000112
+official_title: 有害物質を含有する家庭用品の規制に関する法律
+aliases:
+- 有害物質を含有する家庭用品の規制に関する法律
+---
+
+# 有害物質を含有する家庭用品の規制に関する法律
+
+## Metadata
+- Law ID: `348AC0000000112`
+- Law No: 昭和四十八年法律第百十二号
+- Promulgation Date: 19731012

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50000400151
+id: JPLAW:412M50000400151
+law_no: 平成十二年通商産業省令第百五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50000400151
+promulgation_date: '20000831'
+tags:
+- 特定放射性廃棄物の最終処分に関する法律施行規則
+tier: 0
+title: 特定放射性廃棄物の最終処分に関する法律施行規則
+law_id: 412M50000400151
+official_title: 特定放射性廃棄物の最終処分に関する法律施行規則
+aliases:
+- 特定放射性廃棄物の最終処分に関する法律施行規則
+---
+
+# 特定放射性廃棄物の最終処分に関する法律施行規則
+
+## Metadata
+- Law ID: `412M50000400151`
+- Law No: 平成十二年通商産業省令第百五十一号
+- Promulgation Date: 20000831

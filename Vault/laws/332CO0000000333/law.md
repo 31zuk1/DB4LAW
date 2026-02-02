@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332CO0000000333
+id: JPLAW:332CO0000000333
+law_no: 昭和三十二年政令第三百三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/332CO0000000333
+promulgation_date: '19571206'
+tags:
+- 首都圏整備法施行令
+tier: 0
+title: 首都圏整備法施行令
+law_id: 332CO0000000333
+official_title: 首都圏整備法施行令
+aliases:
+- 首都圏整備法施行令
+---
+
+# 首都圏整備法施行令
+
+## Metadata
+- Law ID: `332CO0000000333`
+- Law No: 昭和三十二年政令第三百三十三号
+- Promulgation Date: 19571206

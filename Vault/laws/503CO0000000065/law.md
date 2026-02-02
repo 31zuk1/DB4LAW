@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503CO0000000065
+id: JPLAW:503CO0000000065
+law_no: 令和三年政令第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/503CO0000000065
+promulgation_date: '20210324'
+tags:
+- 炭酸二カリウムに対して課する不当廉売関税に関する政令
+tier: 0
+title: 炭酸二カリウムに対して課する不当廉売関税に関する政令
+law_id: 503CO0000000065
+official_title: 炭酸二カリウムに対して課する不当廉売関税に関する政令
+aliases:
+- 炭酸二カリウムに対して課する不当廉売関税に関する政令
+---
+
+# 炭酸二カリウムに対して課する不当廉売関税に関する政令
+
+## Metadata
+- Law ID: `503CO0000000065`
+- Law No: 令和三年政令第六十五号
+- Promulgation Date: 20210324

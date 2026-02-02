@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503M60004000007
+id: JPLAW:503M60004000007
+law_no: 令和三年デジタル庁令第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/503M60004000007
+promulgation_date: '20210901'
+tags:
+- デジタル庁所管補助金等交付規則
+tier: 0
+title: デジタル庁所管補助金等交付規則
+law_id: 503M60004000007
+official_title: デジタル庁所管補助金等交付規則
+aliases:
+- デジタル庁所管補助金等交付規則
+---
+
+# デジタル庁所管補助金等交付規則
+
+## Metadata
+- Law ID: `503M60004000007`
+- Law No: 令和三年デジタル庁令第七号
+- Promulgation Date: 20210901

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424AC0000000055
+id: JPLAW:424AC0000000055
+law_no: 平成二十四年法律第五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/424AC0000000055
+promulgation_date: '20120803'
+tags:
+- 特定多国籍企業による研究開発事業等の促進に関する特別措置法
+tier: 0
+title: 特定多国籍企業による研究開発事業等の促進に関する特別措置法
+law_id: 424AC0000000055
+official_title: 特定多国籍企業による研究開発事業等の促進に関する特別措置法
+aliases:
+- 特定多国籍企業による研究開発事業等の促進に関する特別措置法
+---
+
+# 特定多国籍企業による研究開発事業等の促進に関する特別措置法
+
+## Metadata
+- Law ID: `424AC0000000055`
+- Law No: 平成二十四年法律第五十五号
+- Promulgation Date: 20120803

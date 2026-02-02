@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50001000018
+id: JPLAW:402M50001000018
+law_no: 平成二年郵政省令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50001000018
+promulgation_date: '19900331'
+tags:
+- 無線従事者規則
+tier: 0
+title: 無線従事者規則
+law_id: 402M50001000018
+official_title: 無線従事者規則
+aliases:
+- 無線従事者規則
+---
+
+# 無線従事者規則
+
+## Metadata
+- Law ID: `402M50001000018`
+- Law No: 平成二年郵政省令第十八号
+- Promulgation Date: 19900331

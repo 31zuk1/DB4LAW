@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344CO0000000121
+id: JPLAW:344CO0000000121
+law_no: 昭和四十四年政令第百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/344CO0000000121
+promulgation_date: '19690516'
+tags:
+- 行政機関職員定員令
+tier: 0
+title: 行政機関職員定員令
+law_id: 344CO0000000121
+official_title: 行政機関職員定員令
+aliases:
+- 行政機関職員定員令
+---
+
+# 行政機関職員定員令
+
+## Metadata
+- Law ID: `344CO0000000121`
+- Law No: 昭和四十四年政令第百二十一号
+- Promulgation Date: 19690516

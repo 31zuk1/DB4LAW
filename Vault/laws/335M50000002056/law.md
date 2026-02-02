@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335M50000002056
+id: JPLAW:335M50000002056
+law_no: 昭和三十五年総理府令第五十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/335M50000002056
+promulgation_date: '19600930'
+tags:
+- 放射性同位元素等の規制に関する法律施行規則
+tier: 0
+title: 放射性同位元素等の規制に関する法律施行規則
+law_id: 335M50000002056
+official_title: 放射性同位元素等の規制に関する法律施行規則
+aliases:
+- 放射性同位元素等の規制に関する法律施行規則
+---
+
+# 放射性同位元素等の規制に関する法律施行規則
+
+## Metadata
+- Law ID: `335M50000002056`
+- Law No: 昭和三十五年総理府令第五十六号
+- Promulgation Date: 19600930

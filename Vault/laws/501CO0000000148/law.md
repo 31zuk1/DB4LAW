@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501CO0000000148
+id: JPLAW:501CO0000000148
+law_no: 令和元年政令第百四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/501CO0000000148
+promulgation_date: '20191107'
+tags:
+- 樹木採取権登録令
+tier: 0
+title: 樹木採取権登録令
+law_id: 501CO0000000148
+official_title: 樹木採取権登録令
+aliases:
+- 樹木採取権登録令
+---
+
+# 樹木採取権登録令
+
+## Metadata
+- Law ID: `501CO0000000148`
+- Law No: 令和元年政令第百四十八号
+- Promulgation Date: 20191107

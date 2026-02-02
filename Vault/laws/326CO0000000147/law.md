@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326CO0000000147
+id: JPLAW:326CO0000000147
+law_no: 昭和二十六年政令第百四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/326CO0000000147
+promulgation_date: '19510510'
+tags:
+- 文化功労者年金法施行令
+tier: 0
+title: 文化功労者年金法施行令
+law_id: 326CO0000000147
+official_title: 文化功労者年金法施行令
+aliases:
+- 文化功労者年金法施行令
+---
+
+# 文化功労者年金法施行令
+
+## Metadata
+- Law ID: `326CO0000000147`
+- Law No: 昭和二十六年政令第百四十七号
+- Promulgation Date: 19510510

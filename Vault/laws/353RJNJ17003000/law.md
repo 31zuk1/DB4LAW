@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353RJNJ17003000
+id: JPLAW:353RJNJ17003000
+law_no: 昭和五十三年人事院規則一七―三
+links:
+  egov: https://laws.e-gov.go.jp/law/353RJNJ17003000
+promulgation_date: '19780907'
+tags:
+- 人事院規則一七―三（職員団体等の規約の認証）
+tier: 0
+title: 人事院規則一七―三（職員団体等の規約の認証）
+law_id: 353RJNJ17003000
+official_title: 人事院規則一七―三（職員団体等の規約の認証）
+aliases:
+- 人事院規則一七―三（職員団体等の規約の認証）
+---
+
+# 人事院規則一七―三（職員団体等の規約の認証）
+
+## Metadata
+- Law ID: `353RJNJ17003000`
+- Law No: 昭和五十三年人事院規則一七―三
+- Promulgation Date: 19780907

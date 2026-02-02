@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000221
+id: JPLAW:420CO0000000221
+law_no: 平成二十年政令第二百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000221
+promulgation_date: '20080709'
+tags:
+- 国家公務員制度改革推進本部令
+tier: 0
+title: 国家公務員制度改革推進本部令
+law_id: 420CO0000000221
+official_title: 国家公務員制度改革推進本部令
+aliases:
+- 国家公務員制度改革推進本部令
+---
+
+# 国家公務員制度改革推進本部令
+
+## Metadata
+- Law ID: `420CO0000000221`
+- Law No: 平成二十年政令第二百二十一号
+- Promulgation Date: 20080709

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000324
+id: JPLAW:415CO0000000324
+law_no: 平成十五年政令第三百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000324
+promulgation_date: '20030724'
+tags:
+- 南海トラフ地震に係る地震防災対策の推進に関する特別措置法施行令
+tier: 0
+title: 南海トラフ地震に係る地震防災対策の推進に関する特別措置法施行令
+law_id: 415CO0000000324
+official_title: 南海トラフ地震に係る地震防災対策の推進に関する特別措置法施行令
+aliases:
+- 南海トラフ地震に係る地震防災対策の推進に関する特別措置法施行令
+---
+
+# 南海トラフ地震に係る地震防災対策の推進に関する特別措置法施行令
+
+## Metadata
+- Law ID: `415CO0000000324`
+- Law No: 平成十五年政令第三百二十四号
+- Promulgation Date: 20030724

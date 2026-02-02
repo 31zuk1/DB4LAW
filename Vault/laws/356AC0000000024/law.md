@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 356AC0000000024
+id: JPLAW:356AC0000000024
+law_no: 昭和五十六年法律第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/356AC0000000024
+promulgation_date: '19810417'
+tags:
+- 国際科学技術博覧会の準備及び運営のために必要な特別措置に関する法律
+tier: 0
+title: 国際科学技術博覧会の準備及び運営のために必要な特別措置に関する法律
+law_id: 356AC0000000024
+official_title: 国際科学技術博覧会の準備及び運営のために必要な特別措置に関する法律
+aliases:
+- 国際科学技術博覧会の準備及び運営のために必要な特別措置に関する法律
+---
+
+# 国際科学技術博覧会の準備及び運営のために必要な特別措置に関する法律
+
+## Metadata
+- Law ID: `356AC0000000024`
+- Law No: 昭和五十六年法律第二十四号
+- Promulgation Date: 19810417

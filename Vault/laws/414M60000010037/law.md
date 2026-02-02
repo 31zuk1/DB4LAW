@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60000010037
+id: JPLAW:414M60000010037
+law_no: 平成十四年法務省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60000010037
+promulgation_date: '20020605'
+tags:
+- 更生保護施設における処遇の基準等に関する規則
+tier: 0
+title: 更生保護施設における処遇の基準等に関する規則
+law_id: 414M60000010037
+official_title: 更生保護施設における処遇の基準等に関する規則
+aliases:
+- 更生保護施設における処遇の基準等に関する規則
+---
+
+# 更生保護施設における処遇の基準等に関する規則
+
+## Metadata
+- Law ID: `414M60000010037`
+- Law No: 平成十四年法務省令第三十七号
+- Promulgation Date: 20020605

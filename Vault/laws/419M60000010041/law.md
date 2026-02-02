@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000010041
+id: JPLAW:419M60000010041
+law_no: 平成十九年法務省令第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000010041
+promulgation_date: '20070704'
+tags:
+- 信託法施行規則
+tier: 0
+title: 信託法施行規則
+law_id: 419M60000010041
+official_title: 信託法施行規則
+aliases:
+- 信託法施行規則
+---
+
+# 信託法施行規則
+
+## Metadata
+- Law ID: `419M60000010041`
+- Law No: 平成十九年法務省令第四十一号
+- Promulgation Date: 20070704

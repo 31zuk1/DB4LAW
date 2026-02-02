@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000002054
+id: JPLAW:415M60000002054
+law_no: 平成十五年内閣府令第五十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000002054
+promulgation_date: '20030501'
+tags:
+- 各種勲章及び大勲位菊花章頸飾の制式及び形状を定める内閣府令
+tier: 0
+title: 各種勲章及び大勲位菊花章頸飾の制式及び形状を定める内閣府令
+law_id: 415M60000002054
+official_title: 各種勲章及び大勲位菊花章頸飾の制式及び形状を定める内閣府令
+aliases:
+- 各種勲章及び大勲位菊花章頸飾の制式及び形状を定める内閣府令
+---
+
+# 各種勲章及び大勲位菊花章頸飾の制式及び形状を定める内閣府令
+
+## Metadata
+- Law ID: `415M60000002054`
+- Law No: 平成十五年内閣府令第五十四号
+- Promulgation Date: 20030501

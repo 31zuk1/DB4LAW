@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 355CO0000000098
+id: JPLAW:355CO0000000098
+law_no: 昭和五十五年政令第九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/355CO0000000098
+promulgation_date: '19800415'
+tags:
+- 国勢調査令
+tier: 0
+title: 国勢調査令
+law_id: 355CO0000000098
+official_title: 国勢調査令
+aliases:
+- 国勢調査令
+---
+
+# 国勢調査令
+
+## Metadata
+- Law ID: `355CO0000000098`
+- Law No: 昭和五十五年政令第九十八号
+- Promulgation Date: 19800415

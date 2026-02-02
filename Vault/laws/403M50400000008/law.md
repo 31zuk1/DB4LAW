@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403M50400000008
+id: JPLAW:403M50400000008
+law_no: 平成三年国家公安委員会規則第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/403M50400000008
+promulgation_date: '19911129'
+tags:
+- 暴力的不法行為その他の罪に当たる違法な行為を定める規則
+tier: 0
+title: 暴力的不法行為その他の罪に当たる違法な行為を定める規則
+law_id: 403M50400000008
+official_title: 暴力的不法行為その他の罪に当たる違法な行為を定める規則
+aliases:
+- 暴力的不法行為その他の罪に当たる違法な行為を定める規則
+---
+
+# 暴力的不法行為その他の罪に当たる違法な行為を定める規則
+
+## Metadata
+- Law ID: `403M50400000008`
+- Law No: 平成三年国家公安委員会規則第八号
+- Promulgation Date: 19911129

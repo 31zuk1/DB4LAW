@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC1000000033
+id: JPLAW:328AC1000000033
+law_no: 昭和二十八年法律第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC1000000033
+promulgation_date: '19530401'
+tags:
+- 海上保安官に協力援助した者等の災害給付に関する法律
+tier: 0
+title: 海上保安官に協力援助した者等の災害給付に関する法律
+law_id: 328AC1000000033
+official_title: 海上保安官に協力援助した者等の災害給付に関する法律
+aliases:
+- 海上保安官に協力援助した者等の災害給付に関する法律
+---
+
+# 海上保安官に協力援助した者等の災害給付に関する法律
+
+## Metadata
+- Law ID: `328AC1000000033`
+- Law No: 昭和二十八年法律第三十三号
+- Promulgation Date: 19530401

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC0000000129
+id: JPLAW:333AC0000000129
+law_no: 昭和三十三年法律第百二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC0000000129
+promulgation_date: '19580501'
+tags:
+- 国家公務員共済組合法の長期給付に関する施行法
+tier: 0
+title: 国家公務員共済組合法の長期給付に関する施行法
+law_id: 333AC0000000129
+official_title: 国家公務員共済組合法の長期給付に関する施行法
+aliases:
+- 国家公務員共済組合法の長期給付に関する施行法
+---
+
+# 国家公務員共済組合法の長期給付に関する施行法
+
+## Metadata
+- Law ID: `333AC0000000129`
+- Law No: 昭和三十三年法律第百二十九号
+- Promulgation Date: 19580501

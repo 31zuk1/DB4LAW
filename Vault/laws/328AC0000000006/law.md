@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000006
+id: JPLAW:328AC0000000006
+law_no: 昭和二十八年法律第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000006
+promulgation_date: '19530228'
+tags:
+- 酒税法
+tier: 0
+title: 酒税法
+law_id: 328AC0000000006
+official_title: 酒税法
+aliases:
+- 酒税法
+---
+
+# 酒税法
+
+## Metadata
+- Law ID: `328AC0000000006`
+- Law No: 昭和二十八年法律第六号
+- Promulgation Date: 19530228

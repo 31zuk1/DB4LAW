@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346CO0000000024
+id: JPLAW:346CO0000000024
+law_no: 昭和四十六年政令第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/346CO0000000024
+promulgation_date: '19710312'
+tags:
+- 下請中小企業振興法施行令
+tier: 0
+title: 下請中小企業振興法施行令
+law_id: 346CO0000000024
+official_title: 下請中小企業振興法施行令
+aliases:
+- 下請中小企業振興法施行令
+---
+
+# 下請中小企業振興法施行令
+
+## Metadata
+- Law ID: `346CO0000000024`
+- Law No: 昭和四十六年政令第二十四号
+- Promulgation Date: 19710312

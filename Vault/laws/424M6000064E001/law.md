@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424M6000064E001
+id: JPLAW:424M6000064E001
+law_no: 平成二十四年内閣府・復興庁・総務省・財務省・農林水産省・経済産業省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/424M6000064E001
+promulgation_date: '20120222'
+tags:
+- 株式会社東日本大震災事業者再生支援機構法施行規則
+tier: 0
+title: 株式会社東日本大震災事業者再生支援機構法施行規則
+law_id: 424M6000064E001
+official_title: 株式会社東日本大震災事業者再生支援機構法施行規則
+aliases:
+- 株式会社東日本大震災事業者再生支援機構法施行規則
+---
+
+# 株式会社東日本大震災事業者再生支援機構法施行規則
+
+## Metadata
+- Law ID: `424M6000064E001`
+- Law No: 平成二十四年内閣府・復興庁・総務省・財務省・農林水産省・経済産業省令第一号
+- Promulgation Date: 20120222

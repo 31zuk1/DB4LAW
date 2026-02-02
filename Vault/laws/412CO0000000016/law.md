@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000016
+id: JPLAW:412CO0000000016
+law_no: 平成十二年政令第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000016
+promulgation_date: '20000121'
+tags:
+- 地方公共団体の手数料の標準に関する政令
+tier: 0
+title: 地方公共団体の手数料の標準に関する政令
+law_id: 412CO0000000016
+official_title: 地方公共団体の手数料の標準に関する政令
+aliases:
+- 地方公共団体の手数料の標準に関する政令
+---
+
+# 地方公共団体の手数料の標準に関する政令
+
+## Metadata
+- Law ID: `412CO0000000016`
+- Law No: 平成十二年政令第十六号
+- Promulgation Date: 20000121

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000800124
+id: JPLAW:413M60000800124
+law_no: 平成十三年国土交通省令第百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000800124
+promulgation_date: '20010831'
+tags:
+- 運輸安全委員会設置法施行規則
+tier: 0
+title: 運輸安全委員会設置法施行規則
+law_id: 413M60000800124
+official_title: 運輸安全委員会設置法施行規則
+aliases:
+- 運輸安全委員会設置法施行規則
+---
+
+# 運輸安全委員会設置法施行規則
+
+## Metadata
+- Law ID: `413M60000800124`
+- Law No: 平成十三年国土交通省令第百二十四号
+- Promulgation Date: 20010831

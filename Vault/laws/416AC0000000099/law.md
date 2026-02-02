@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416AC0000000099
+id: JPLAW:416AC0000000099
+law_no: 平成十六年法律第九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/416AC0000000099
+promulgation_date: '20040609'
+tags:
+- 高速道路株式会社法
+tier: 0
+title: 高速道路株式会社法
+law_id: 416AC0000000099
+official_title: 高速道路株式会社法
+aliases:
+- 高速道路株式会社法
+---
+
+# 高速道路株式会社法
+
+## Metadata
+- Law ID: `416AC0000000099`
+- Law No: 平成十六年法律第九十九号
+- Promulgation Date: 20040609

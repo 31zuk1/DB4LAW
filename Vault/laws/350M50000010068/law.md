@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 350M50000010068
+id: JPLAW:350M50000010068
+law_no: 昭和五十年法務省令第六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/350M50000010068
+promulgation_date: '19751226'
+tags:
+- 不動産の管轄登記所等の指定に関する省令
+tier: 0
+title: 不動産の管轄登記所等の指定に関する省令
+law_id: 350M50000010068
+official_title: 不動産の管轄登記所等の指定に関する省令
+aliases:
+- 不動産の管轄登記所等の指定に関する省令
+---
+
+# 不動産の管轄登記所等の指定に関する省令
+
+## Metadata
+- Law ID: `350M50000010068`
+- Law No: 昭和五十年法務省令第六十八号
+- Promulgation Date: 19751226

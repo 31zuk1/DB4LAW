@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346AC0000000077
+id: JPLAW:346AC0000000077
+law_no: 昭和四十六年法律第七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/346AC0000000077
+promulgation_date: '19710528'
+tags:
+- 公立の義務教育諸学校等の教育職員の給与等に関する特別措置法
+tier: 0
+title: 公立の義務教育諸学校等の教育職員の給与等に関する特別措置法
+law_id: 346AC0000000077
+official_title: 公立の義務教育諸学校等の教育職員の給与等に関する特別措置法
+aliases:
+- 公立の義務教育諸学校等の教育職員の給与等に関する特別措置法
+---
+
+# 公立の義務教育諸学校等の教育職員の給与等に関する特別措置法
+
+## Metadata
+- Law ID: `346AC0000000077`
+- Law No: 昭和四十六年法律第七十七号
+- Promulgation Date: 19710528

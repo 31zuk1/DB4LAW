@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 357AC1000000085
+id: JPLAW:357AC1000000085
+law_no: 昭和五十七年法律第八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/357AC1000000085
+promulgation_date: '19820831'
+tags:
+- 北方領土問題等の解決の促進のための特別措置に関する法律
+tier: 0
+title: 北方領土問題等の解決の促進のための特別措置に関する法律
+law_id: 357AC1000000085
+official_title: 北方領土問題等の解決の促進のための特別措置に関する法律
+aliases:
+- 北方領土問題等の解決の促進のための特別措置に関する法律
+---
+
+# 北方領土問題等の解決の促進のための特別措置に関する法律
+
+## Metadata
+- Law ID: `357AC1000000085`
+- Law No: 昭和五十七年法律第八十五号
+- Promulgation Date: 19820831

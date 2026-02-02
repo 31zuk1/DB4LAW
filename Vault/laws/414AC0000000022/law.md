@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000022
+id: JPLAW:414AC0000000022
+law_no: 平成十四年法律第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000022
+promulgation_date: '20020405'
+tags:
+- 都市再生特別措置法
+tier: 0
+title: 都市再生特別措置法
+law_id: 414AC0000000022
+official_title: 都市再生特別措置法
+aliases:
+- 都市再生特別措置法
+---
+
+# 都市再生特別措置法
+
+## Metadata
+- Law ID: `414AC0000000022`
+- Law No: 平成十四年法律第二十二号
+- Promulgation Date: 20020405

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423CO0000000300
+id: JPLAW:423CO0000000300
+law_no: 平成二十三年政令第三百号
+links:
+  egov: https://laws.e-gov.go.jp/law/423CO0000000300
+promulgation_date: '20110926'
+tags:
+- 運輸事業の振興の助成に関する法律第三条第一項の事業を定める政令
+tier: 0
+title: 運輸事業の振興の助成に関する法律第三条第一項の事業を定める政令
+law_id: 423CO0000000300
+official_title: 運輸事業の振興の助成に関する法律第三条第一項の事業を定める政令
+aliases:
+- 運輸事業の振興の助成に関する法律第三条第一項の事業を定める政令
+---
+
+# 運輸事業の振興の助成に関する法律第三条第一項の事業を定める政令
+
+## Metadata
+- Law ID: `423CO0000000300`
+- Law No: 平成二十三年政令第三百号
+- Promulgation Date: 20110926

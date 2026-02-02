@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 431CO0000000072
+id: JPLAW:431CO0000000072
+law_no: 平成三十一年政令第七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/431CO0000000072
+promulgation_date: '20190329'
+tags:
+- 特定複合観光施設区域整備法施行令
+tier: 0
+title: 特定複合観光施設区域整備法施行令
+law_id: 431CO0000000072
+official_title: 特定複合観光施設区域整備法施行令
+aliases:
+- 特定複合観光施設区域整備法施行令
+---
+
+# 特定複合観光施設区域整備法施行令
+
+## Metadata
+- Law ID: `431CO0000000072`
+- Law No: 平成三十一年政令第七十二号
+- Promulgation Date: 20190329

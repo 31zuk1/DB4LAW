@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338M50400000003
+id: JPLAW:338M50400000003
+law_no: 昭和三十八年国家公安委員会規則第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/338M50400000003
+promulgation_date: '19631114'
+tags:
+- 警備実施要則
+tier: 0
+title: 警備実施要則
+law_id: 338M50400000003
+official_title: 警備実施要則
+aliases:
+- 警備実施要則
+---
+
+# 警備実施要則
+
+## Metadata
+- Law ID: `338M50400000003`
+- Law No: 昭和三十八年国家公安委員会規則第三号
+- Promulgation Date: 19631114

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50000800021
+id: JPLAW:402M50000800021
+law_no: 平成二年運輸省令第二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50000800021
+promulgation_date: '19900730'
+tags:
+- 貨物自動車運送事業法施行規則
+tier: 0
+title: 貨物自動車運送事業法施行規則
+law_id: 402M50000800021
+official_title: 貨物自動車運送事業法施行規則
+aliases:
+- 貨物自動車運送事業法施行規則
+---
+
+# 貨物自動車運送事業法施行規則
+
+## Metadata
+- Law ID: `402M50000800021`
+- Law No: 平成二年運輸省令第二十一号
+- Promulgation Date: 19900730

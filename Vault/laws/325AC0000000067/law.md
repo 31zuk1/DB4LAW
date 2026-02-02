@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000067
+id: JPLAW:325AC0000000067
+law_no: 昭和二十五年法律第六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000067
+promulgation_date: '19500331'
+tags:
+- 貿易保険法
+tier: 0
+title: 貿易保険法
+law_id: 325AC0000000067
+official_title: 貿易保険法
+aliases:
+- 貿易保険法
+---
+
+# 貿易保険法
+
+## Metadata
+- Law ID: `325AC0000000067`
+- Law No: 昭和二十五年法律第六十七号
+- Promulgation Date: 19500331

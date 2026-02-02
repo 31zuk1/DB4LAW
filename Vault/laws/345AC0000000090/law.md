@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345AC0000000090
+id: JPLAW:345AC0000000090
+law_no: 昭和四十五年法律第九十号
+links:
+  egov: https://laws.e-gov.go.jp/law/345AC0000000090
+promulgation_date: '19700522'
+tags:
+- 情報処理の促進に関する法律
+tier: 0
+title: 情報処理の促進に関する法律
+law_id: 345AC0000000090
+official_title: 情報処理の促進に関する法律
+aliases:
+- 情報処理の促進に関する法律
+---
+
+# 情報処理の促進に関する法律
+
+## Metadata
+- Law ID: `345AC0000000090`
+- Law No: 昭和四十五年法律第九十号
+- Promulgation Date: 19700522

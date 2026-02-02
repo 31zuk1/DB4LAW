@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000320
+id: JPLAW:413CO0000000320
+law_no: 平成十三年政令第三百二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000320
+promulgation_date: '20010927'
+tags:
+- 地方労働審議会令
+tier: 0
+title: 地方労働審議会令
+law_id: 413CO0000000320
+official_title: 地方労働審議会令
+aliases:
+- 地方労働審議会令
+---
+
+# 地方労働審議会令
+
+## Metadata
+- Law ID: `413CO0000000320`
+- Law No: 平成十三年政令第三百二十号
+- Promulgation Date: 20010927

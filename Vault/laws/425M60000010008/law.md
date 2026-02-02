@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425M60000010008
+id: JPLAW:425M60000010008
+law_no: 平成二十五年法務省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/425M60000010008
+promulgation_date: '20130516'
+tags:
+- 矯正管区組織規則
+tier: 0
+title: 矯正管区組織規則
+law_id: 425M60000010008
+official_title: 矯正管区組織規則
+aliases:
+- 矯正管区組織規則
+---
+
+# 矯正管区組織規則
+
+## Metadata
+- Law ID: `425M60000010008`
+- Law No: 平成二十五年法務省令第八号
+- Promulgation Date: 20130516

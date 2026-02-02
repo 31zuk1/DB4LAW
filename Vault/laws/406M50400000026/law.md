@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50400000026
+id: JPLAW:406M50400000026
+law_no: 平成六年国家公安委員会規則第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50400000026
+promulgation_date: '19940926'
+tags:
+- 聴聞及び弁明の機会の付与に関する規則
+tier: 0
+title: 聴聞及び弁明の機会の付与に関する規則
+law_id: 406M50400000026
+official_title: 聴聞及び弁明の機会の付与に関する規則
+aliases:
+- 聴聞及び弁明の機会の付与に関する規則
+---
+
+# 聴聞及び弁明の機会の付与に関する規則
+
+## Metadata
+- Law ID: `406M50400000026`
+- Law No: 平成六年国家公安委員会規則第二十六号
+- Promulgation Date: 19940926

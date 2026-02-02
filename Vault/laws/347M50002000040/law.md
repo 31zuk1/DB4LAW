@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50002000040
+id: JPLAW:347M50002000040
+law_no: 昭和四十七年労働省令第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50002000040
+promulgation_date: '19720930'
+tags:
+- 高気圧作業安全衛生規則
+tier: 0
+title: 高気圧作業安全衛生規則
+law_id: 347M50002000040
+official_title: 高気圧作業安全衛生規則
+aliases:
+- 高気圧作業安全衛生規則
+---
+
+# 高気圧作業安全衛生規則
+
+## Metadata
+- Law ID: `347M50002000040`
+- Law No: 昭和四十七年労働省令第四十号
+- Promulgation Date: 19720930

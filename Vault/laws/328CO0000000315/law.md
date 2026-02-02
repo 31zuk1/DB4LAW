@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000315
+id: JPLAW:328CO0000000315
+law_no: 昭和二十八年政令第三百十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000315
+promulgation_date: '19530930'
+tags:
+- 商工会議所法施行令
+tier: 0
+title: 商工会議所法施行令
+law_id: 328CO0000000315
+official_title: 商工会議所法施行令
+aliases:
+- 商工会議所法施行令
+---
+
+# 商工会議所法施行令
+
+## Metadata
+- Law ID: `328CO0000000315`
+- Law No: 昭和二十八年政令第三百十五号
+- Promulgation Date: 19530930

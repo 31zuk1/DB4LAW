@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428AC0000000077
+id: JPLAW:428AC0000000077
+law_no: 平成二十八年法律第七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/428AC0000000077
+promulgation_date: '20161116'
+tags:
+- 衛星リモートセンシング記録の適正な取扱いの確保に関する法律
+tier: 0
+title: 衛星リモートセンシング記録の適正な取扱いの確保に関する法律
+law_id: 428AC0000000077
+official_title: 衛星リモートセンシング記録の適正な取扱いの確保に関する法律
+aliases:
+- 衛星リモートセンシング記録の適正な取扱いの確保に関する法律
+---
+
+# 衛星リモートセンシング記録の適正な取扱いの確保に関する法律
+
+## Metadata
+- Law ID: `428AC0000000077`
+- Law No: 平成二十八年法律第七十七号
+- Promulgation Date: 20161116

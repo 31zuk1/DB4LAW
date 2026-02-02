@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425M60000008008
+id: JPLAW:425M60000008008
+law_no: 平成二十五年総務省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/425M60000008008
+promulgation_date: '20130227'
+tags:
+- 大都市地域における特別区の設置に関する法律施行規則
+tier: 0
+title: 大都市地域における特別区の設置に関する法律施行規則
+law_id: 425M60000008008
+official_title: 大都市地域における特別区の設置に関する法律施行規則
+aliases:
+- 大都市地域における特別区の設置に関する法律施行規則
+---
+
+# 大都市地域における特別区の設置に関する法律施行規則
+
+## Metadata
+- Law ID: `425M60000008008`
+- Law No: 平成二十五年総務省令第八号
+- Promulgation Date: 20130227

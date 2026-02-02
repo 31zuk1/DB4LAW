@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000080031
+id: JPLAW:413M60000080031
+law_no: 平成十三年文部科学省令第三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000080031
+promulgation_date: '20010330'
+tags:
+- 独立行政法人国立女性教育会館に関する省令
+tier: 0
+title: 独立行政法人国立女性教育会館に関する省令
+law_id: 413M60000080031
+official_title: 独立行政法人国立女性教育会館に関する省令
+aliases:
+- 独立行政法人国立女性教育会館に関する省令
+---
+
+# 独立行政法人国立女性教育会館に関する省令
+
+## Metadata
+- Law ID: `413M60000080031`
+- Law No: 平成十三年文部科学省令第三十一号
+- Promulgation Date: 20010330

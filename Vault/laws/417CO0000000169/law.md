@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417CO0000000169
+id: JPLAW:417CO0000000169
+law_no: 平成十七年政令第百六十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/417CO0000000169
+promulgation_date: '20050427'
+tags:
+- 特定外来生物による生態系等に係る被害の防止に関する法律施行令
+tier: 0
+title: 特定外来生物による生態系等に係る被害の防止に関する法律施行令
+law_id: 417CO0000000169
+official_title: 特定外来生物による生態系等に係る被害の防止に関する法律施行令
+aliases:
+- 特定外来生物による生態系等に係る被害の防止に関する法律施行令
+---
+
+# 特定外来生物による生態系等に係る被害の防止に関する法律施行令
+
+## Metadata
+- Law ID: `417CO0000000169`
+- Law No: 平成十七年政令第百六十九号
+- Promulgation Date: 20050427

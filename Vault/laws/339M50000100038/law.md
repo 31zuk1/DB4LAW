@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50000100038
+id: JPLAW:339M50000100038
+law_no: 昭和三十九年厚生省令第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50000100038
+promulgation_date: '19640828'
+tags:
+- 特別児童扶養手当等の支給に関する法律施行規則
+tier: 0
+title: 特別児童扶養手当等の支給に関する法律施行規則
+law_id: 339M50000100038
+official_title: 特別児童扶養手当等の支給に関する法律施行規則
+aliases:
+- 特別児童扶養手当等の支給に関する法律施行規則
+---
+
+# 特別児童扶養手当等の支給に関する法律施行規則
+
+## Metadata
+- Law ID: `339M50000100038`
+- Law No: 昭和三十九年厚生省令第三十八号
+- Promulgation Date: 19640828

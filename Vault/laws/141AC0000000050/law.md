@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 141AC0000000050
+id: JPLAW:141AC0000000050
+law_no: 明治四十一年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/141AC0000000050
+promulgation_date: '19080413'
+tags:
+- 水害予防組合法
+tier: 0
+title: 水害予防組合法
+law_id: 141AC0000000050
+official_title: 水害予防組合法
+aliases:
+- 水害予防組合法
+---
+
+# 水害予防組合法
+
+## Metadata
+- Law ID: `141AC0000000050`
+- Law No: 明治四十一年法律第五十号
+- Promulgation Date: 19080413

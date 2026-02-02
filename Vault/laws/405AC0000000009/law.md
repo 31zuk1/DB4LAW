@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405AC0000000009
+id: JPLAW:405AC0000000009
+law_no: 平成五年法律第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/405AC0000000009
+promulgation_date: '19930331'
+tags:
+- 平成五年度における一般会計承継債務等の償還の特例等に関する法律
+tier: 0
+title: 平成五年度における一般会計承継債務等の償還の特例等に関する法律
+law_id: 405AC0000000009
+official_title: 平成五年度における一般会計承継債務等の償還の特例等に関する法律
+aliases:
+- 平成五年度における一般会計承継債務等の償還の特例等に関する法律
+---
+
+# 平成五年度における一般会計承継債務等の償還の特例等に関する法律
+
+## Metadata
+- Law ID: `405AC0000000009`
+- Law No: 平成五年法律第九号
+- Promulgation Date: 19930331

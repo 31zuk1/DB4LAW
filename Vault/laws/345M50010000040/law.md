@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345M50010000040
+id: JPLAW:345M50010000040
+law_no: 昭和四十五年農林省令第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/345M50010000040
+promulgation_date: '19700622'
+tags:
+- 林業種苗法施行規則
+tier: 0
+title: 林業種苗法施行規則
+law_id: 345M50010000040
+official_title: 林業種苗法施行規則
+aliases:
+- 林業種苗法施行規則
+---
+
+# 林業種苗法施行規則
+
+## Metadata
+- Law ID: `345M50010000040`
+- Law No: 昭和四十五年農林省令第四十号
+- Promulgation Date: 19700622

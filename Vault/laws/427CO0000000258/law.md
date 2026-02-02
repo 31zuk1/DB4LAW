@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427CO0000000258
+id: JPLAW:427CO0000000258
+law_no: 平成二十七年政令第二百五十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/427CO0000000258
+promulgation_date: '20150624'
+tags:
+- 平成三十一年ラグビーワールドカップ大会特別措置法施行令
+tier: 0
+title: 平成三十一年ラグビーワールドカップ大会特別措置法施行令
+law_id: 427CO0000000258
+official_title: 平成三十一年ラグビーワールドカップ大会特別措置法施行令
+aliases:
+- 平成三十一年ラグビーワールドカップ大会特別措置法施行令
+---
+
+# 平成三十一年ラグビーワールドカップ大会特別措置法施行令
+
+## Metadata
+- Law ID: `427CO0000000258`
+- Law No: 平成二十七年政令第二百五十八号
+- Promulgation Date: 20150624

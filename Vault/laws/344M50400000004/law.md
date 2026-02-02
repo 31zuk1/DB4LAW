@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344M50400000004
+id: JPLAW:344M50400000004
+law_no: 昭和四十四年国家公安委員会規則第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/344M50400000004
+promulgation_date: '19690605'
+tags:
+- 警察庁の定員に関する規則
+tier: 0
+title: 警察庁の定員に関する規則
+law_id: 344M50400000004
+official_title: 警察庁の定員に関する規則
+aliases:
+- 警察庁の定員に関する規則
+---
+
+# 警察庁の定員に関する規則
+
+## Metadata
+- Law ID: `344M50400000004`
+- Law No: 昭和四十四年国家公安委員会規則第四号
+- Promulgation Date: 19690605

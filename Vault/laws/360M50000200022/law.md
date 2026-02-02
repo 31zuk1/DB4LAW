@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360M50000200022
+id: JPLAW:360M50000200022
+law_no: 昭和六十年農林水産省令第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/360M50000200022
+promulgation_date: '19850628'
+tags:
+- 果樹農業振興特別措置法施行規則
+tier: 0
+title: 果樹農業振興特別措置法施行規則
+law_id: 360M50000200022
+official_title: 果樹農業振興特別措置法施行規則
+aliases:
+- 果樹農業振興特別措置法施行規則
+---
+
+# 果樹農業振興特別措置法施行規則
+
+## Metadata
+- Law ID: `360M50000200022`
+- Law No: 昭和六十年農林水産省令第二十二号
+- Promulgation Date: 19850628

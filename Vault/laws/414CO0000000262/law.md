@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414CO0000000262
+id: JPLAW:414CO0000000262
+law_no: 平成十四年政令第二百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/414CO0000000262
+promulgation_date: '20020726'
+tags:
+- ポリエステル短繊維に対して課する不当廉売関税に関する政令
+tier: 0
+title: ポリエステル短繊維に対して課する不当廉売関税に関する政令
+law_id: 414CO0000000262
+official_title: ポリエステル短繊維に対して課する不当廉売関税に関する政令
+aliases:
+- ポリエステル短繊維に対して課する不当廉売関税に関する政令
+---
+
+# ポリエステル短繊維に対して課する不当廉売関税に関する政令
+
+## Metadata
+- Law ID: `414CO0000000262`
+- Law No: 平成十四年政令第二百六十二号
+- Promulgation Date: 20020726

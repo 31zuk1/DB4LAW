@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339CO0000000221
+id: JPLAW:339CO0000000221
+law_no: 昭和三十九年政令第二百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/339CO0000000221
+promulgation_date: '19640701'
+tags:
+- 国有林野管理審議会令
+tier: 0
+title: 国有林野管理審議会令
+law_id: 339CO0000000221
+official_title: 国有林野管理審議会令
+aliases:
+- 国有林野管理審議会令
+---
+
+# 国有林野管理審議会令
+
+## Metadata
+- Law ID: `339CO0000000221`
+- Law No: 昭和三十九年政令第二百二十一号
+- Promulgation Date: 19640701

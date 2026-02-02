@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322M40000010078
+id: JPLAW:322M40000010078
+law_no: 昭和二十二年司法省令第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/322M40000010078
+promulgation_date: '19471001'
+tags:
+- 恩赦法施行規則
+tier: 0
+title: 恩赦法施行規則
+law_id: 322M40000010078
+official_title: 恩赦法施行規則
+aliases:
+- 恩赦法施行規則
+---
+
+# 恩赦法施行規則
+
+## Metadata
+- Law ID: `322M40000010078`
+- Law No: 昭和二十二年司法省令第七十八号
+- Promulgation Date: 19471001

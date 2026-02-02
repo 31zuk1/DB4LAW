@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507M60002000009
+id: JPLAW:507M60002000009
+law_no: 令和七年防衛省令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/507M60002000009
+promulgation_date: '20250401'
+tags:
+- 防衛省の職員の俸給の切替え等に関する省令
+tier: 0
+title: 防衛省の職員の俸給の切替え等に関する省令
+law_id: 507M60002000009
+official_title: 防衛省の職員の俸給の切替え等に関する省令
+aliases:
+- 防衛省の職員の俸給の切替え等に関する省令
+---
+
+# 防衛省の職員の俸給の切替え等に関する省令
+
+## Metadata
+- Law ID: `507M60002000009`
+- Law No: 令和七年防衛省令第九号
+- Promulgation Date: 20250401

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334M50000040059
+id: JPLAW:334M50000040059
+law_no: 昭和三十四年大蔵省令第五十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/334M50000040059
+promulgation_date: '19590822'
+tags:
+- 連合国財産の返還等に伴う損失の処理等に関する法律施行規則
+tier: 0
+title: 連合国財産の返還等に伴う損失の処理等に関する法律施行規則
+law_id: 334M50000040059
+official_title: 連合国財産の返還等に伴う損失の処理等に関する法律施行規則
+aliases:
+- 連合国財産の返還等に伴う損失の処理等に関する法律施行規則
+---
+
+# 連合国財産の返還等に伴う損失の処理等に関する法律施行規則
+
+## Metadata
+- Law ID: `334M50000040059`
+- Law No: 昭和三十四年大蔵省令第五十九号
+- Promulgation Date: 19590822

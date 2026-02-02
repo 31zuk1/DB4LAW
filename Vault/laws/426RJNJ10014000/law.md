@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426RJNJ10014000
+id: JPLAW:426RJNJ10014000
+law_no: 平成二十六年人事院規則一〇―一四
+links:
+  egov: https://laws.e-gov.go.jp/law/426RJNJ10014000
+promulgation_date: '20140529'
+tags:
+- 人事院規則一〇―一四（人事院が行う研修等）
+tier: 0
+title: 人事院規則一〇―一四（人事院が行う研修等）
+law_id: 426RJNJ10014000
+official_title: 人事院規則一〇―一四（人事院が行う研修等）
+aliases:
+- 人事院規則一〇―一四（人事院が行う研修等）
+---
+
+# 人事院規則一〇―一四（人事院が行う研修等）
+
+## Metadata
+- Law ID: `426RJNJ10014000`
+- Law No: 平成二十六年人事院規則一〇―一四
+- Promulgation Date: 20140529

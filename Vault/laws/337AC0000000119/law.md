@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337AC0000000119
+id: JPLAW:337AC0000000119
+law_no: 昭和三十七年法律第百十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/337AC0000000119
+promulgation_date: '19620510'
+tags:
+- 住居表示に関する法律
+tier: 0
+title: 住居表示に関する法律
+law_id: 337AC0000000119
+official_title: 住居表示に関する法律
+aliases:
+- 住居表示に関する法律
+---
+
+# 住居表示に関する法律
+
+## Metadata
+- Law ID: `337AC0000000119`
+- Law No: 昭和三十七年法律第百十九号
+- Promulgation Date: 19620510

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362AC0000000063
+id: JPLAW:362AC0000000063
+law_no: 昭和六十二年法律第六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/362AC0000000063
+promulgation_date: '19870602'
+tags:
+- 集落地域整備法
+tier: 0
+title: 集落地域整備法
+law_id: 362AC0000000063
+official_title: 集落地域整備法
+aliases:
+- 集落地域整備法
+---
+
+# 集落地域整備法
+
+## Metadata
+- Law ID: `362AC0000000063`
+- Law No: 昭和六十二年法律第六十三号
+- Promulgation Date: 19870602

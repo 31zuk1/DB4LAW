@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 202M10000008017
+id: JPLAW:202M10000008017
+law_no: 大正二年内務省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/202M10000008017
+promulgation_date: '19131128'
+tags:
+- 運河法施行規則
+tier: 0
+title: 運河法施行規則
+law_id: 202M10000008017
+official_title: 運河法施行規則
+aliases:
+- 運河法施行規則
+---
+
+# 運河法施行規則
+
+## Metadata
+- Law ID: `202M10000008017`
+- Law No: 大正二年内務省令第十七号
+- Promulgation Date: 19131128

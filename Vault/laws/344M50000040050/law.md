@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344M50000040050
+id: JPLAW:344M50000040050
+law_no: 昭和四十四年大蔵省令第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/344M50000040050
+promulgation_date: '19690922'
+tags:
+- 税関職員服制
+tier: 0
+title: 税関職員服制
+law_id: 344M50000040050
+official_title: 税関職員服制
+aliases:
+- 税関職員服制
+---
+
+# 税関職員服制
+
+## Metadata
+- Law ID: `344M50000040050`
+- Law No: 昭和四十四年大蔵省令第五十号
+- Promulgation Date: 19690922

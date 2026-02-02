@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331CO0000000335
+id: JPLAW:331CO0000000335
+law_no: 昭和三十一年政令第三百三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/331CO0000000335
+promulgation_date: '19561108'
+tags:
+- 非常勤消防団員等に係る損害補償の基準を定める政令
+tier: 0
+title: 非常勤消防団員等に係る損害補償の基準を定める政令
+law_id: 331CO0000000335
+official_title: 非常勤消防団員等に係る損害補償の基準を定める政令
+aliases:
+- 非常勤消防団員等に係る損害補償の基準を定める政令
+---
+
+# 非常勤消防団員等に係る損害補償の基準を定める政令
+
+## Metadata
+- Law ID: `331CO0000000335`
+- Law No: 昭和三十一年政令第三百三十五号
+- Promulgation Date: 19561108

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000100083
+id: JPLAW:427M60000100083
+law_no: 平成二十七年厚生労働省令第八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000100083
+promulgation_date: '20150410'
+tags:
+- 地方年金記録訂正審議会規則
+tier: 0
+title: 地方年金記録訂正審議会規則
+law_id: 427M60000100083
+official_title: 地方年金記録訂正審議会規則
+aliases:
+- 地方年金記録訂正審議会規則
+---
+
+# 地方年金記録訂正審議会規則
+
+## Metadata
+- Law ID: `427M60000100083`
+- Law No: 平成二十七年厚生労働省令第八十三号
+- Promulgation Date: 20150410

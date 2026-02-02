@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000247
+id: JPLAW:328AC0000000247
+law_no: 昭和二十八年法律第二百四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000247
+promulgation_date: '19530827'
+tags:
+- 公立学校施設災害復旧費国庫負担法
+tier: 0
+title: 公立学校施設災害復旧費国庫負担法
+law_id: 328AC0000000247
+official_title: 公立学校施設災害復旧費国庫負担法
+aliases:
+- 公立学校施設災害復旧費国庫負担法
+---
+
+# 公立学校施設災害復旧費国庫負担法
+
+## Metadata
+- Law ID: `328AC0000000247`
+- Law No: 昭和二十八年法律第二百四十七号
+- Promulgation Date: 19530827

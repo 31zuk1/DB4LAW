@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000010040
+id: JPLAW:427M60000010040
+law_no: 平成二十七年法務省令第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000010040
+promulgation_date: '20150831'
+tags:
+- 法務省関係国家戦略特別区域法施行規則
+tier: 0
+title: 法務省関係国家戦略特別区域法施行規則
+law_id: 427M60000010040
+official_title: 法務省関係国家戦略特別区域法施行規則
+aliases:
+- 法務省関係国家戦略特別区域法施行規則
+---
+
+# 法務省関係国家戦略特別区域法施行規則
+
+## Metadata
+- Law ID: `427M60000010040`
+- Law No: 平成二十七年法務省令第四十号
+- Promulgation Date: 20150831

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416AC0000000075
+id: JPLAW:416AC0000000075
+law_no: 平成十六年法律第七十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/416AC0000000075
+promulgation_date: '20040602'
+tags:
+- 破産法
+tier: 0
+title: 破産法
+law_id: 416AC0000000075
+official_title: 破産法
+aliases:
+- 破産法
+---
+
+# 破産法
+
+## Metadata
+- Law ID: `416AC0000000075`
+- Law No: 平成十六年法律第七十五号
+- Promulgation Date: 20040602

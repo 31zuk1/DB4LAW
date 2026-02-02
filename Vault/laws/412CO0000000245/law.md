@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000245
+id: JPLAW:412CO0000000245
+law_no: 平成十二年政令第二百四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000245
+promulgation_date: '20000607'
+tags:
+- 内閣府本府組織令
+tier: 0
+title: 内閣府本府組織令
+law_id: 412CO0000000245
+official_title: 内閣府本府組織令
+aliases:
+- 内閣府本府組織令
+---
+
+# 内閣府本府組織令
+
+## Metadata
+- Law ID: `412CO0000000245`
+- Law No: 平成十二年政令第二百四十五号
+- Promulgation Date: 20000607

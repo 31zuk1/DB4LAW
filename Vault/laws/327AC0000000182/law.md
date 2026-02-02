@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000182
+id: JPLAW:327AC0000000182
+law_no: 昭和二十七年法律第百八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000182
+promulgation_date: '19520612'
+tags:
+- 外国の領事官に交付する認可状の認証に関する法律
+tier: 0
+title: 外国の領事官に交付する認可状の認証に関する法律
+law_id: 327AC0000000182
+official_title: 外国の領事官に交付する認可状の認証に関する法律
+aliases:
+- 外国の領事官に交付する認可状の認証に関する法律
+---
+
+# 外国の領事官に交付する認可状の認証に関する法律
+
+## Metadata
+- Law ID: `327AC0000000182`
+- Law No: 昭和二十七年法律第百八十二号
+- Promulgation Date: 19520612

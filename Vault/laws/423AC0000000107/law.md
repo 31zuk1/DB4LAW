@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423AC0000000107
+id: JPLAW:423AC0000000107
+law_no: 平成二十三年法律第百七号
+links:
+  egov: https://laws.e-gov.go.jp/law/423AC0000000107
+promulgation_date: '20110830'
+tags:
+- 平成二十三年度における子ども手当の支給等に関する特別措置法
+tier: 0
+title: 平成二十三年度における子ども手当の支給等に関する特別措置法
+law_id: 423AC0000000107
+official_title: 平成二十三年度における子ども手当の支給等に関する特別措置法
+aliases:
+- 平成二十三年度における子ども手当の支給等に関する特別措置法
+---
+
+# 平成二十三年度における子ども手当の支給等に関する特別措置法
+
+## Metadata
+- Law ID: `423AC0000000107`
+- Law No: 平成二十三年法律第百七号
+- Promulgation Date: 20110830

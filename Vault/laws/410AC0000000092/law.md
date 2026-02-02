@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC0000000092
+id: JPLAW:410AC0000000092
+law_no: 平成十年法律第九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC0000000092
+promulgation_date: '19980603'
+tags:
+- 中心市街地の活性化に関する法律
+tier: 0
+title: 中心市街地の活性化に関する法律
+law_id: 410AC0000000092
+official_title: 中心市街地の活性化に関する法律
+aliases:
+- 中心市街地の活性化に関する法律
+---
+
+# 中心市街地の活性化に関する法律
+
+## Metadata
+- Law ID: `410AC0000000092`
+- Law No: 平成十年法律第九十二号
+- Promulgation Date: 19980603

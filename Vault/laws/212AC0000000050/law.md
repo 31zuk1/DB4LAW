@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 212AC0000000050
+id: JPLAW:212AC0000000050
+law_no: 大正十二年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/212AC0000000050
+promulgation_date: '19230418'
+tags:
+- 陪審法
+tier: 0
+title: 陪審法
+law_id: 212AC0000000050
+official_title: 陪審法
+aliases:
+- 陪審法
+---
+
+# 陪審法
+
+## Metadata
+- Law ID: `212AC0000000050`
+- Law No: 大正十二年法律第五十号
+- Promulgation Date: 19230418

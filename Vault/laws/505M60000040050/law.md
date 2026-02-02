@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505M60000040050
+id: JPLAW:505M60000040050
+law_no: 令和五年財務省令第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/505M60000040050
+promulgation_date: '20230802'
+tags:
+- 防衛力強化資金事務取扱規則
+tier: 0
+title: 防衛力強化資金事務取扱規則
+law_id: 505M60000040050
+official_title: 防衛力強化資金事務取扱規則
+aliases:
+- 防衛力強化資金事務取扱規則
+---
+
+# 防衛力強化資金事務取扱規則
+
+## Metadata
+- Law ID: `505M60000040050`
+- Law No: 令和五年財務省令第五十号
+- Promulgation Date: 20230802

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327RJNJ09013000
+id: JPLAW:327RJNJ09013000
+law_no: 昭和二十七年人事院規則九―一三
+links:
+  egov: https://laws.e-gov.go.jp/law/327RJNJ09013000
+promulgation_date: '19521229'
+tags:
+- 人事院規則九―一三（休職者の給与）
+tier: 0
+title: 人事院規則九―一三（休職者の給与）
+law_id: 327RJNJ09013000
+official_title: 人事院規則九―一三（休職者の給与）
+aliases:
+- 人事院規則九―一三（休職者の給与）
+---
+
+# 人事院規則九―一三（休職者の給与）
+
+## Metadata
+- Law ID: `327RJNJ09013000`
+- Law No: 昭和二十七年人事院規則九―一三
+- Promulgation Date: 19521229

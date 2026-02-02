@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50000008014
+id: JPLAW:349M50000008014
+law_no: 昭和四十九年自治省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50000008014
+promulgation_date: '19740516'
+tags:
+- 人口が急増している地域の指定に関する細目を定める省令
+tier: 0
+title: 人口が急増している地域の指定に関する細目を定める省令
+law_id: 349M50000008014
+official_title: 人口が急増している地域の指定に関する細目を定める省令
+aliases:
+- 人口が急増している地域の指定に関する細目を定める省令
+---
+
+# 人口が急増している地域の指定に関する細目を定める省令
+
+## Metadata
+- Law ID: `349M50000008014`
+- Law No: 昭和四十九年自治省令第十四号
+- Promulgation Date: 19740516

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353AC0000000026
+id: JPLAW:353AC0000000026
+law_no: 昭和五十三年法律第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/353AC0000000026
+promulgation_date: '19780420'
+tags:
+- 特定空港周辺航空機騒音対策特別措置法
+tier: 0
+title: 特定空港周辺航空機騒音対策特別措置法
+law_id: 353AC0000000026
+official_title: 特定空港周辺航空機騒音対策特別措置法
+aliases:
+- 特定空港周辺航空機騒音対策特別措置法
+---
+
+# 特定空港周辺航空機騒音対策特別措置法
+
+## Metadata
+- Law ID: `353AC0000000026`
+- Law No: 昭和五十三年法律第二十六号
+- Promulgation Date: 19780420

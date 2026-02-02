@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000200025
+id: JPLAW:410M50000200025
+law_no: 平成十年農林水産省令第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000200025
+promulgation_date: '19980331'
+tags:
+- 漁業協同組合合併促進法施行規則
+tier: 0
+title: 漁業協同組合合併促進法施行規則
+law_id: 410M50000200025
+official_title: 漁業協同組合合併促進法施行規則
+aliases:
+- 漁業協同組合合併促進法施行規則
+---
+
+# 漁業協同組合合併促進法施行規則
+
+## Metadata
+- Law ID: `410M50000200025`
+- Law No: 平成十年農林水産省令第二十五号
+- Promulgation Date: 19980331

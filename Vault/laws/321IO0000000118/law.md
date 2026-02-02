@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 321IO0000000118
+id: JPLAW:321IO0000000118
+law_no: 昭和二十一年勅令第百十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/321IO0000000118
+promulgation_date: '19460303'
+tags:
+- 物価統制令
+tier: 0
+title: 物価統制令
+law_id: 321IO0000000118
+official_title: 物価統制令
+aliases:
+- 物価統制令
+---
+
+# 物価統制令
+
+## Metadata
+- Law ID: `321IO0000000118`
+- Law No: 昭和二十一年勅令第百十八号
+- Promulgation Date: 19460303

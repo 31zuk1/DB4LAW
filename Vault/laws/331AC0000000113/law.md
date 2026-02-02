@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000113
+id: JPLAW:331AC0000000113
+law_no: 昭和三十一年法律第百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000113
+promulgation_date: '19560522'
+tags:
+- 物品管理法
+tier: 0
+title: 物品管理法
+law_id: 331AC0000000113
+official_title: 物品管理法
+aliases:
+- 物品管理法
+---
+
+# 物品管理法
+
+## Metadata
+- Law ID: `331AC0000000113`
+- Law No: 昭和三十一年法律第百十三号
+- Promulgation Date: 19560522

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503AC0000000036
+id: JPLAW:503AC0000000036
+law_no: 令和三年法律第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/503AC0000000036
+promulgation_date: '20210519'
+tags:
+- デジタル庁設置法
+tier: 0
+title: デジタル庁設置法
+law_id: 503AC0000000036
+official_title: デジタル庁設置法
+aliases:
+- デジタル庁設置法
+---
+
+# デジタル庁設置法
+
+## Metadata
+- Law ID: `503AC0000000036`
+- Law No: 令和三年法律第三十六号
+- Promulgation Date: 20210519

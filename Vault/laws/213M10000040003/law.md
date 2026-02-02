@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 213M10000040003
+id: JPLAW:213M10000040003
+law_no: 大正十三年大蔵省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/213M10000040003
+promulgation_date: '19240213'
+tags:
+- 六分半利付米貨公債発行規程
+tier: 0
+title: 六分半利付米貨公債発行規程
+law_id: 213M10000040003
+official_title: 六分半利付米貨公債発行規程
+aliases:
+- 六分半利付米貨公債発行規程
+---
+
+# 六分半利付米貨公債発行規程
+
+## Metadata
+- Law ID: `213M10000040003`
+- Law No: 大正十三年大蔵省令第三号
+- Promulgation Date: 19240213

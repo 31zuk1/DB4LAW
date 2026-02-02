@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427CO0000000434
+id: JPLAW:427CO0000000434
+law_no: 平成二十七年政令第四百三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/427CO0000000434
+promulgation_date: '20151218'
+tags:
+- 個人情報保護委員会事務局組織令
+tier: 0
+title: 個人情報保護委員会事務局組織令
+law_id: 427CO0000000434
+official_title: 個人情報保護委員会事務局組織令
+aliases:
+- 個人情報保護委員会事務局組織令
+---
+
+# 個人情報保護委員会事務局組織令
+
+## Metadata
+- Law ID: `427CO0000000434`
+- Law No: 平成二十七年政令第四百三十四号
+- Promulgation Date: 20151218

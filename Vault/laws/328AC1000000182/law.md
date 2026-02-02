@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC1000000182
+id: JPLAW:328AC1000000182
+law_no: 昭和二十八年法律第百八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC1000000182
+promulgation_date: '19530808'
+tags:
+- 国家公務員退職手当法
+tier: 0
+title: 国家公務員退職手当法
+law_id: 328AC1000000182
+official_title: 国家公務員退職手当法
+aliases:
+- 国家公務員退職手当法
+---
+
+# 国家公務員退職手当法
+
+## Metadata
+- Law ID: `328AC1000000182`
+- Law No: 昭和二十八年法律第百八十二号
+- Promulgation Date: 19530808

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419AC1000000081
+id: JPLAW:419AC1000000081
+law_no: 平成十九年法律第八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/419AC1000000081
+promulgation_date: '20070608'
+tags:
+- カネミ油症事件関係仮払金返還債権の免除についての特例に関する法律
+tier: 0
+title: カネミ油症事件関係仮払金返還債権の免除についての特例に関する法律
+law_id: 419AC1000000081
+official_title: カネミ油症事件関係仮払金返還債権の免除についての特例に関する法律
+aliases:
+- カネミ油症事件関係仮払金返還債権の免除についての特例に関する法律
+---
+
+# カネミ油症事件関係仮払金返還債権の免除についての特例に関する法律
+
+## Metadata
+- Law ID: `419AC1000000081`
+- Law No: 平成十九年法律第八十一号
+- Promulgation Date: 20070608

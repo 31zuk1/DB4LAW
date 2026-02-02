@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC1000000285
+id: JPLAW:326AC1000000285
+law_no: 昭和二十六年法律第二百八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC1000000285
+promulgation_date: '19511201'
+tags:
+- 博物館法
+tier: 0
+title: 博物館法
+law_id: 326AC1000000285
+official_title: 博物館法
+aliases:
+- 博物館法
+---
+
+# 博物館法
+
+## Metadata
+- Law ID: `326AC1000000285`
+- Law No: 昭和二十六年法律第二百八十五号
+- Promulgation Date: 19511201

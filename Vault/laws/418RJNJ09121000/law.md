@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418RJNJ09121000
+id: JPLAW:418RJNJ09121000
+law_no: 平成十八年人事院規則九―一二一
+links:
+  egov: https://laws.e-gov.go.jp/law/418RJNJ09121000
+promulgation_date: '20061215'
+tags:
+- 人事院規則九―一二一（広域異動手当）
+tier: 0
+title: 人事院規則九―一二一（広域異動手当）
+law_id: 418RJNJ09121000
+official_title: 人事院規則九―一二一（広域異動手当）
+aliases:
+- 人事院規則九―一二一（広域異動手当）
+---
+
+# 人事院規則九―一二一（広域異動手当）
+
+## Metadata
+- Law ID: `418RJNJ09121000`
+- Law No: 平成十八年人事院規則九―一二一
+- Promulgation Date: 20061215

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 357CO0000000042
+id: JPLAW:357CO0000000042
+law_no: 昭和五十七年政令第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/357CO0000000042
+promulgation_date: '19820327'
+tags:
+- 長期信用銀行法施行令
+tier: 0
+title: 長期信用銀行法施行令
+law_id: 357CO0000000042
+official_title: 長期信用銀行法施行令
+aliases:
+- 長期信用銀行法施行令
+---
+
+# 長期信用銀行法施行令
+
+## Metadata
+- Law ID: `357CO0000000042`
+- Law No: 昭和五十七年政令第四十二号
+- Promulgation Date: 19820327

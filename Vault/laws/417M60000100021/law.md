@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417M60000100021
+id: JPLAW:417M60000100021
+law_no: 平成十七年厚生労働省令第二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/417M60000100021
+promulgation_date: '20050224'
+tags:
+- 石綿障害予防規則
+tier: 0
+title: 石綿障害予防規則
+law_id: 417M60000100021
+official_title: 石綿障害予防規則
+aliases:
+- 石綿障害予防規則
+---
+
+# 石綿障害予防規則
+
+## Metadata
+- Law ID: `417M60000100021`
+- Law No: 平成十七年厚生労働省令第二十一号
+- Promulgation Date: 20050224

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505AC0000000085
+id: JPLAW:505AC0000000085
+law_no: 令和五年法律第八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/505AC0000000085
+promulgation_date: '20231213'
+tags:
+- 官報の発行に関する法律
+tier: 0
+title: 官報の発行に関する法律
+law_id: 505AC0000000085
+official_title: 官報の発行に関する法律
+aliases:
+- 官報の発行に関する法律
+---
+
+# 官報の発行に関する法律
+
+## Metadata
+- Law ID: `505AC0000000085`
+- Law No: 令和五年法律第八十五号
+- Promulgation Date: 20231213

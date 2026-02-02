@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000144
+id: JPLAW:323AC0000000144
+law_no: 昭和二十三年法律第百四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000144
+promulgation_date: '19480712'
+tags:
+- 当せん金付証票法
+tier: 0
+title: 当せん金付証票法
+law_id: 323AC0000000144
+official_title: 当せん金付証票法
+aliases:
+- 当せん金付証票法
+---
+
+# 当せん金付証票法
+
+## Metadata
+- Law ID: `323AC0000000144`
+- Law No: 昭和二十三年法律第百四十四号
+- Promulgation Date: 19480712

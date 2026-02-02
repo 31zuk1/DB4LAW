@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000097
+id: JPLAW:415AC0000000097
+law_no: 平成十五年法律第九十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000097
+promulgation_date: '20030618'
+tags:
+- 遺伝子組換え生物等の使用等の規制による生物の多様性の確保に関する法律
+tier: 0
+title: 遺伝子組換え生物等の使用等の規制による生物の多様性の確保に関する法律
+law_id: 415AC0000000097
+official_title: 遺伝子組換え生物等の使用等の規制による生物の多様性の確保に関する法律
+aliases:
+- 遺伝子組換え生物等の使用等の規制による生物の多様性の確保に関する法律
+---
+
+# 遺伝子組換え生物等の使用等の規制による生物の多様性の確保に関する法律
+
+## Metadata
+- Law ID: `415AC0000000097`
+- Law No: 平成十五年法律第九十七号
+- Promulgation Date: 20030618

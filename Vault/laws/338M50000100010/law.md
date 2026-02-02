@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338M50000100010
+id: JPLAW:338M50000100010
+law_no: 昭和三十八年厚生省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/338M50000100010
+promulgation_date: '19630323'
+tags:
+- 国民健康保険の調整交付金等の交付額の算定に関する省令
+tier: 0
+title: 国民健康保険の調整交付金等の交付額の算定に関する省令
+law_id: 338M50000100010
+official_title: 国民健康保険の調整交付金等の交付額の算定に関する省令
+aliases:
+- 国民健康保険の調整交付金等の交付額の算定に関する省令
+---
+
+# 国民健康保険の調整交付金等の交付額の算定に関する省令
+
+## Metadata
+- Law ID: `338M50000100010`
+- Law No: 昭和三十八年厚生省令第十号
+- Promulgation Date: 19630323

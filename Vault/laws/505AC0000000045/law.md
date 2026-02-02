@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505AC0000000045
+id: JPLAW:505AC0000000045
+law_no: 令和五年法律第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/505AC0000000045
+promulgation_date: '20230607'
+tags:
+- 孤独・孤立対策推進法
+tier: 0
+title: 孤独・孤立対策推進法
+law_id: 505AC0000000045
+official_title: 孤独・孤立対策推進法
+aliases:
+- 孤独・孤立対策推進法
+---
+
+# 孤独・孤立対策推進法
+
+## Metadata
+- Law ID: `505AC0000000045`
+- Law No: 令和五年法律第四十五号
+- Promulgation Date: 20230607

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50000002039
+id: JPLAW:347M50000002039
+law_no: 昭和四十七年総理府令第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50000002039
+promulgation_date: '19720530'
+tags:
+- 悪臭防止法施行規則
+tier: 0
+title: 悪臭防止法施行規則
+law_id: 347M50000002039
+official_title: 悪臭防止法施行規則
+aliases:
+- 悪臭防止法施行規則
+---
+
+# 悪臭防止法施行規則
+
+## Metadata
+- Law ID: `347M50000002039`
+- Law No: 昭和四十七年総理府令第三十九号
+- Promulgation Date: 19720530

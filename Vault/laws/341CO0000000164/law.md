@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341CO0000000164
+id: JPLAW:341CO0000000164
+law_no: 昭和四十一年政令第百六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/341CO0000000164
+promulgation_date: '19660531'
+tags:
+- 地震保険に関する法律施行令
+tier: 0
+title: 地震保険に関する法律施行令
+law_id: 341CO0000000164
+official_title: 地震保険に関する法律施行令
+aliases:
+- 地震保険に関する法律施行令
+---
+
+# 地震保険に関する法律施行令
+
+## Metadata
+- Law ID: `341CO0000000164`
+- Law No: 昭和四十一年政令第百六十四号
+- Promulgation Date: 19660531

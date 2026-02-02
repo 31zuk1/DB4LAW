@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000389
+id: JPLAW:420CO0000000389
+law_no: 平成二十年政令第三百八十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000389
+promulgation_date: '20081225'
+tags:
+- 職員の退職管理に関する政令
+tier: 0
+title: 職員の退職管理に関する政令
+law_id: 420CO0000000389
+official_title: 職員の退職管理に関する政令
+aliases:
+- 職員の退職管理に関する政令
+---
+
+# 職員の退職管理に関する政令
+
+## Metadata
+- Law ID: `420CO0000000389`
+- Law No: 平成二十年政令第三百八十九号
+- Promulgation Date: 20081225

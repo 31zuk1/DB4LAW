@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50002000019
+id: JPLAW:339M50002000019
+law_no: 昭和三十九年労働省令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50002000019
+promulgation_date: '19640731'
+tags:
+- 労働災害防止団体法施行規則
+tier: 0
+title: 労働災害防止団体法施行規則
+law_id: 339M50002000019
+official_title: 労働災害防止団体法施行規則
+aliases:
+- 労働災害防止団体法施行規則
+---
+
+# 労働災害防止団体法施行規則
+
+## Metadata
+- Law ID: `339M50002000019`
+- Law No: 昭和三十九年労働省令第十九号
+- Promulgation Date: 19640731

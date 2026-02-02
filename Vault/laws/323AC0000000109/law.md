@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000109
+id: JPLAW:323AC0000000109
+law_no: 昭和二十三年法律第百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000109
+promulgation_date: '19480707'
+tags:
+- 地方財政法
+tier: 0
+title: 地方財政法
+law_id: 323AC0000000109
+official_title: 地方財政法
+aliases:
+- 地方財政法
+---
+
+# 地方財政法
+
+## Metadata
+- Law ID: `323AC0000000109`
+- Law No: 昭和二十三年法律第百九号
+- Promulgation Date: 19480707

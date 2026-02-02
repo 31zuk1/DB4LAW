@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334CO0000000269
+id: JPLAW:334CO0000000269
+law_no: 昭和三十四年政令第二百六十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/334CO0000000269
+promulgation_date: '19590731'
+tags:
+- 独立行政法人等の恩給納付金に関する政令
+tier: 0
+title: 独立行政法人等の恩給納付金に関する政令
+law_id: 334CO0000000269
+official_title: 独立行政法人等の恩給納付金に関する政令
+aliases:
+- 独立行政法人等の恩給納付金に関する政令
+---
+
+# 独立行政法人等の恩給納付金に関する政令
+
+## Metadata
+- Law ID: `334CO0000000269`
+- Law No: 昭和三十四年政令第二百六十九号
+- Promulgation Date: 19590731

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334AC0000000067
+id: JPLAW:334AC0000000067
+law_no: 昭和三十四年法律第六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/334AC0000000067
+promulgation_date: '19590330'
+tags:
+- 特定港湾施設整備特別措置法
+tier: 0
+title: 特定港湾施設整備特別措置法
+law_id: 334AC0000000067
+official_title: 特定港湾施設整備特別措置法
+aliases:
+- 特定港湾施設整備特別措置法
+---
+
+# 特定港湾施設整備特別措置法
+
+## Metadata
+- Law ID: `334AC0000000067`
+- Law No: 昭和三十四年法律第六十七号
+- Promulgation Date: 19590330

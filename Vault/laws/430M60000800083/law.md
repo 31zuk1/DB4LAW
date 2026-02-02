@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430M60000800083
+id: JPLAW:430M60000800083
+law_no: 平成三十年国土交通省令第八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/430M60000800083
+promulgation_date: '20181109'
+tags:
+- 所有者不明土地の利用の円滑化等に関する特別措置法施行規則
+tier: 0
+title: 所有者不明土地の利用の円滑化等に関する特別措置法施行規則
+law_id: 430M60000800083
+official_title: 所有者不明土地の利用の円滑化等に関する特別措置法施行規則
+aliases:
+- 所有者不明土地の利用の円滑化等に関する特別措置法施行規則
+---
+
+# 所有者不明土地の利用の円滑化等に関する特別措置法施行規則
+
+## Metadata
+- Law ID: `430M60000800083`
+- Law No: 平成三十年国土交通省令第八十三号
+- Promulgation Date: 20181109

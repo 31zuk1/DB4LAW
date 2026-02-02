@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000200
+id: JPLAW:411AC0000000200
+law_no: 平成十一年法律第二百号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000200
+promulgation_date: '19991222'
+tags:
+- 独立行政法人経済産業研究所法
+tier: 0
+title: 独立行政法人経済産業研究所法
+law_id: 411AC0000000200
+official_title: 独立行政法人経済産業研究所法
+aliases:
+- 独立行政法人経済産業研究所法
+---
+
+# 独立行政法人経済産業研究所法
+
+## Metadata
+- Law ID: `411AC0000000200`
+- Law No: 平成十一年法律第二百号
+- Promulgation Date: 19991222

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50400000014
+id: JPLAW:329M50400000014
+law_no: 昭和二十九年国家公安委員会規則第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50400000014
+promulgation_date: '19540806'
+tags:
+- 警察表彰規則
+tier: 0
+title: 警察表彰規則
+law_id: 329M50400000014
+official_title: 警察表彰規則
+aliases:
+- 警察表彰規則
+---
+
+# 警察表彰規則
+
+## Metadata
+- Law ID: `329M50400000014`
+- Law No: 昭和二十九年国家公安委員会規則第十四号
+- Promulgation Date: 19540806

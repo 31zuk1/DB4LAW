@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324CO0000000280
+id: JPLAW:324CO0000000280
+law_no: 昭和二十四年政令第二百八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/324CO0000000280
+promulgation_date: '19490722'
+tags:
+- 社会教育法施行令
+tier: 0
+title: 社会教育法施行令
+law_id: 324CO0000000280
+official_title: 社会教育法施行令
+aliases:
+- 社会教育法施行令
+---
+
+# 社会教育法施行令
+
+## Metadata
+- Law ID: `324CO0000000280`
+- Law No: 昭和二十四年政令第二百八十号
+- Promulgation Date: 19490722

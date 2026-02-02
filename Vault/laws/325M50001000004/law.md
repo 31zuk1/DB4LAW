@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50001000004
+id: JPLAW:325M50001000004
+law_no: 昭和二十五年郵政省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50001000004
+promulgation_date: '19500428'
+tags:
+- 公職選挙郵便規則
+tier: 0
+title: 公職選挙郵便規則
+law_id: 325M50001000004
+official_title: 公職選挙郵便規則
+aliases:
+- 公職選挙郵便規則
+---
+
+# 公職選挙郵便規則
+
+## Metadata
+- Law ID: `325M50001000004`
+- Law No: 昭和二十五年郵政省令第四号
+- Promulgation Date: 19500428

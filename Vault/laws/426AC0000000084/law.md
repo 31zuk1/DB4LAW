@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426AC0000000084
+id: JPLAW:426AC0000000084
+law_no: 平成二十六年法律第八十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/426AC0000000084
+promulgation_date: '20140625'
+tags:
+- 特定農林水産物等の名称の保護に関する法律
+tier: 0
+title: 特定農林水産物等の名称の保護に関する法律
+law_id: 426AC0000000084
+official_title: 特定農林水産物等の名称の保護に関する法律
+aliases:
+- 特定農林水産物等の名称の保護に関する法律
+---
+
+# 特定農林水産物等の名称の保護に関する法律
+
+## Metadata
+- Law ID: `426AC0000000084`
+- Law No: 平成二十六年法律第八十四号
+- Promulgation Date: 20140625

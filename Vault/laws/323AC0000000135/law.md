@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000135
+id: JPLAW:323AC0000000135
+law_no: 昭和二十三年法律第百三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000135
+promulgation_date: '19480710'
+tags:
+- 市町村立学校職員給与負担法
+tier: 0
+title: 市町村立学校職員給与負担法
+law_id: 323AC0000000135
+official_title: 市町村立学校職員給与負担法
+aliases:
+- 市町村立学校職員給与負担法
+---
+
+# 市町村立学校職員給与負担法
+
+## Metadata
+- Law ID: `323AC0000000135`
+- Law No: 昭和二十三年法律第百三十五号
+- Promulgation Date: 19480710

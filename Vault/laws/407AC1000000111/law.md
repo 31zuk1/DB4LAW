@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407AC1000000111
+id: JPLAW:407AC1000000111
+law_no: 平成七年法律第百十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/407AC1000000111
+promulgation_date: '19950616'
+tags:
+- 地震防災対策特別措置法
+tier: 0
+title: 地震防災対策特別措置法
+law_id: 407AC1000000111
+official_title: 地震防災対策特別措置法
+aliases:
+- 地震防災対策特別措置法
+---
+
+# 地震防災対策特別措置法
+
+## Metadata
+- Law ID: `407AC1000000111`
+- Law No: 平成七年法律第百十一号
+- Promulgation Date: 19950616

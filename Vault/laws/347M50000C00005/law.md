@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50000C00005
+id: JPLAW:347M50000C00005
+law_no: 昭和四十七年通商産業省・運輸省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50000C00005
+promulgation_date: '19721225'
+tags:
+- 石油パイプライン事業の業務の監督に関する省令
+tier: 0
+title: 石油パイプライン事業の業務の監督に関する省令
+law_id: 347M50000C00005
+official_title: 石油パイプライン事業の業務の監督に関する省令
+aliases:
+- 石油パイプライン事業の業務の監督に関する省令
+---
+
+# 石油パイプライン事業の業務の監督に関する省令
+
+## Metadata
+- Law ID: `347M50000C00005`
+- Law No: 昭和四十七年通商産業省・運輸省令第五号
+- Promulgation Date: 19721225

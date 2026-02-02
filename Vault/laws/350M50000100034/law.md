@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 350M50000100034
+id: JPLAW:350M50000100034
+law_no: 昭和五十年厚生省令第三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/350M50000100034
+promulgation_date: '19750813'
+tags:
+- 障害児福祉手当及び特別障害者手当の支給に関する省令
+tier: 0
+title: 障害児福祉手当及び特別障害者手当の支給に関する省令
+law_id: 350M50000100034
+official_title: 障害児福祉手当及び特別障害者手当の支給に関する省令
+aliases:
+- 障害児福祉手当及び特別障害者手当の支給に関する省令
+---
+
+# 障害児福祉手当及び特別障害者手当の支給に関する省令
+
+## Metadata
+- Law ID: `350M50000100034`
+- Law No: 昭和五十年厚生省令第三十四号
+- Promulgation Date: 19750813

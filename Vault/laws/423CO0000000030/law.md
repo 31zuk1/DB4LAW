@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423CO0000000030
+id: JPLAW:423CO0000000030
+law_no: 平成二十三年政令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/423CO0000000030
+promulgation_date: '20110324'
+tags:
+- 放送法等の一部を改正する法律の一部の施行に伴う経過措置を定める政令
+tier: 0
+title: 放送法等の一部を改正する法律の一部の施行に伴う経過措置を定める政令
+law_id: 423CO0000000030
+official_title: 放送法等の一部を改正する法律の一部の施行に伴う経過措置を定める政令
+aliases:
+- 放送法等の一部を改正する法律の一部の施行に伴う経過措置を定める政令
+---
+
+# 放送法等の一部を改正する法律の一部の施行に伴う経過措置を定める政令
+
+## Metadata
+- Law ID: `423CO0000000030`
+- Law No: 平成二十三年政令第三十号
+- Promulgation Date: 20110324

@@ -1,0 +1,25 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415RJNJ01038000
+id: JPLAW:415RJNJ01038000
+law_no: 平成十五年人事院規則一―三八
+links:
+  egov: https://laws.e-gov.go.jp/law/415RJNJ01038000
+promulgation_date: '20030401'
+tags:
+- 人事院規則一―三八（人事院関係法令に基づく行政手続等における情報通信技術の活用）
+tier: 0
+title: 人事院規則一―三八（人事院関係法令に基づく行政手続等における情報通信技術の活用）
+law_id: 415RJNJ01038000
+aliases:
+- 人事院規則一―三八（人事院関係法令に基づく行政手続等における情報通信技術の活用）
+---
+
+# 人事院規則一―三八（人事院関係法令に基づく行政手続等における情報通信技術の活用）
+
+## Metadata
+- Law ID: `415RJNJ01038000`
+- Law No: 平成十五年人事院規則一―三八
+- Promulgation Date: 20030401

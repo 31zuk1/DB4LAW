@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323M40000100011
+id: JPLAW:323M40000100011
+law_no: 昭和二十三年厚生省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/323M40000100011
+promulgation_date: '19480331'
+tags:
+- 児童福祉法施行規則
+tier: 0
+title: 児童福祉法施行規則
+law_id: 323M40000100011
+official_title: 児童福祉法施行規則
+aliases:
+- 児童福祉法施行規則
+---
+
+# 児童福祉法施行規則
+
+## Metadata
+- Law ID: `323M40000100011`
+- Law No: 昭和二十三年厚生省令第十一号
+- Promulgation Date: 19480331

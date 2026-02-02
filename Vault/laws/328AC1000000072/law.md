@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC1000000072
+id: JPLAW:328AC1000000072
+law_no: 昭和二十八年法律第七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC1000000072
+promulgation_date: '19530722'
+tags:
+- 離島振興法
+tier: 0
+title: 離島振興法
+law_id: 328AC1000000072
+official_title: 離島振興法
+aliases:
+- 離島振興法
+---
+
+# 離島振興法
+
+## Metadata
+- Law ID: `328AC1000000072`
+- Law No: 昭和二十八年法律第七十二号
+- Promulgation Date: 19530722

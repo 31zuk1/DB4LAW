@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 350M50000002014
+id: JPLAW:350M50000002014
+law_no: 昭和五十年総理府令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/350M50000002014
+promulgation_date: '19750329'
+tags:
+- 失業者の退職手当支給規則
+tier: 0
+title: 失業者の退職手当支給規則
+law_id: 350M50000002014
+official_title: 失業者の退職手当支給規則
+aliases:
+- 失業者の退職手当支給規則
+---
+
+# 失業者の退職手当支給規則
+
+## Metadata
+- Law ID: `350M50000002014`
+- Law No: 昭和五十年総理府令第十四号
+- Promulgation Date: 19750329

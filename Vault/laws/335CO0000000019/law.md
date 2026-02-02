@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335CO0000000019
+id: JPLAW:335CO0000000019
+law_no: 昭和三十五年政令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/335CO0000000019
+promulgation_date: '19600308'
+tags:
+- 商標法施行令
+tier: 0
+title: 商標法施行令
+law_id: 335CO0000000019
+official_title: 商標法施行令
+aliases:
+- 商標法施行令
+---
+
+# 商標法施行令
+
+## Metadata
+- Law ID: `335CO0000000019`
+- Law No: 昭和三十五年政令第十九号
+- Promulgation Date: 19600308

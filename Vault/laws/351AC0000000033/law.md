@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351AC0000000033
+id: JPLAW:351AC0000000033
+law_no: 昭和五十一年法律第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/351AC0000000033
+promulgation_date: '19760527'
+tags:
+- 建設労働者の雇用の改善等に関する法律
+tier: 0
+title: 建設労働者の雇用の改善等に関する法律
+law_id: 351AC0000000033
+official_title: 建設労働者の雇用の改善等に関する法律
+aliases:
+- 建設労働者の雇用の改善等に関する法律
+---
+
+# 建設労働者の雇用の改善等に関する法律
+
+## Metadata
+- Law ID: `351AC0000000033`
+- Law No: 昭和五十一年法律第三十三号
+- Promulgation Date: 19760527

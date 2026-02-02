@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 114DF0000000063
+id: JPLAW:114DF0000000063
+law_no: 明治十四年太政官布告第六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/114DF0000000063
+promulgation_date: '18811207'
+tags:
+- 明治十四年太政官布告第六十三号（褒章条例）
+tier: 0
+title: 明治十四年太政官布告第六十三号（褒章条例）
+law_id: 114DF0000000063
+official_title: 明治十四年太政官布告第六十三号（褒章条例）
+aliases:
+- 明治十四年太政官布告第六十三号（褒章条例）
+---
+
+# 明治十四年太政官布告第六十三号（褒章条例）
+
+## Metadata
+- Law ID: `114DF0000000063`
+- Law No: 明治十四年太政官布告第六十三号
+- Promulgation Date: 18811207

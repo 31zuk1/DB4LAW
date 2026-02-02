@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000170
+id: JPLAW:328AC0000000170
+law_no: 昭和二十八年法律第百七十号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000170
+promulgation_date: '19530805'
+tags:
+- 港湾整備促進法
+tier: 0
+title: 港湾整備促進法
+law_id: 328AC0000000170
+official_title: 港湾整備促進法
+aliases:
+- 港湾整備促進法
+---
+
+# 港湾整備促進法
+
+## Metadata
+- Law ID: `328AC0000000170`
+- Law No: 昭和二十八年法律第百七十号
+- Promulgation Date: 19530805

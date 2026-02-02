@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347CO0000000186
+id: JPLAW:347CO0000000186
+law_no: 昭和四十七年政令第百八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/347CO0000000186
+promulgation_date: '19720513'
+tags:
+- 沖縄振興開発金融公庫法施行令
+tier: 0
+title: 沖縄振興開発金融公庫法施行令
+law_id: 347CO0000000186
+official_title: 沖縄振興開発金融公庫法施行令
+aliases:
+- 沖縄振興開発金融公庫法施行令
+---
+
+# 沖縄振興開発金融公庫法施行令
+
+## Metadata
+- Law ID: `347CO0000000186`
+- Law No: 昭和四十七年政令第百八十六号
+- Promulgation Date: 19720513

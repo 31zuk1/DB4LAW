@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404M50000080003
+id: JPLAW:404M50000080003
+law_no: 平成四年文部省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/404M50000080003
+promulgation_date: '19920227'
+tags:
+- 美術刀剣類製作承認規則
+tier: 0
+title: 美術刀剣類製作承認規則
+law_id: 404M50000080003
+official_title: 美術刀剣類製作承認規則
+aliases:
+- 美術刀剣類製作承認規則
+---
+
+# 美術刀剣類製作承認規則
+
+## Metadata
+- Law ID: `404M50000080003`
+- Law No: 平成四年文部省令第三号
+- Promulgation Date: 19920227

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000100028
+id: JPLAW:326M50000100028
+law_no: 昭和二十六年厚生省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000100028
+promulgation_date: '19510621'
+tags:
+- 社会福祉法施行規則
+tier: 0
+title: 社会福祉法施行規則
+law_id: 326M50000100028
+official_title: 社会福祉法施行規則
+aliases:
+- 社会福祉法施行規則
+---
+
+# 社会福祉法施行規則
+
+## Metadata
+- Law ID: `326M50000100028`
+- Law No: 昭和二十六年厚生省令第二十八号
+- Promulgation Date: 19510621

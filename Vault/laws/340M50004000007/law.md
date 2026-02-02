@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50004000007
+id: JPLAW:340M50004000007
+law_no: 昭和四十年建設省令第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50004000007
+promulgation_date: '19650313'
+tags:
+- 河川法施行規則
+tier: 0
+title: 河川法施行規則
+law_id: 340M50004000007
+official_title: 河川法施行規則
+aliases:
+- 河川法施行規則
+---
+
+# 河川法施行規則
+
+## Metadata
+- Law ID: `340M50004000007`
+- Law No: 昭和四十年建設省令第七号
+- Promulgation Date: 19650313

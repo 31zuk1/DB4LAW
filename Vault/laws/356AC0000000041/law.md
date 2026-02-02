@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 356AC0000000041
+id: JPLAW:356AC0000000041
+law_no: 昭和五十六年法律第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/356AC0000000041
+promulgation_date: '19810515'
+tags:
+- アフリカ開発銀行への加盟に伴う措置に関する法律
+tier: 0
+title: アフリカ開発銀行への加盟に伴う措置に関する法律
+law_id: 356AC0000000041
+official_title: アフリカ開発銀行への加盟に伴う措置に関する法律
+aliases:
+- アフリカ開発銀行への加盟に伴う措置に関する法律
+---
+
+# アフリカ開発銀行への加盟に伴う措置に関する法律
+
+## Metadata
+- Law ID: `356AC0000000041`
+- Law No: 昭和五十六年法律第四十一号
+- Promulgation Date: 19810515

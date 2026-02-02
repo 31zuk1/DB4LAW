@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507M60000400009
+id: JPLAW:507M60000400009
+law_no: 令和七年経済産業省令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/507M60000400009
+promulgation_date: '20250131'
+tags:
+- 特定輸入事業者の輸入に係る電気用品関係報告規則
+tier: 0
+title: 特定輸入事業者の輸入に係る電気用品関係報告規則
+law_id: 507M60000400009
+official_title: 特定輸入事業者の輸入に係る電気用品関係報告規則
+aliases:
+- 特定輸入事業者の輸入に係る電気用品関係報告規則
+---
+
+# 特定輸入事業者の輸入に係る電気用品関係報告規則
+
+## Metadata
+- Law ID: `507M60000400009`
+- Law No: 令和七年経済産業省令第九号
+- Promulgation Date: 20250131

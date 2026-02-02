@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M50000001010
+id: JPLAW:324M50000001010
+law_no: 昭和二十四年法務府令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M50000001010
+promulgation_date: '19490601'
+tags:
+- 公証人定員規則
+tier: 0
+title: 公証人定員規則
+law_id: 324M50000001010
+official_title: 公証人定員規則
+aliases:
+- 公証人定員規則
+---
+
+# 公証人定員規則
+
+## Metadata
+- Law ID: `324M50000001010`
+- Law No: 昭和二十四年法務府令第十号
+- Promulgation Date: 19490601

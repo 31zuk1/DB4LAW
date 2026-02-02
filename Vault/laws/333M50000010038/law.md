@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333M50000010038
+id: JPLAW:333M50000010038
+law_no: 昭和三十三年法務省令第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/333M50000010038
+promulgation_date: '19580627'
+tags:
+- 企業担保登記規則
+tier: 0
+title: 企業担保登記規則
+law_id: 333M50000010038
+official_title: 企業担保登記規則
+aliases:
+- 企業担保登記規則
+---
+
+# 企業担保登記規則
+
+## Metadata
+- Law ID: `333M50000010038`
+- Law No: 昭和三十三年法務省令第三十八号
+- Promulgation Date: 19580627

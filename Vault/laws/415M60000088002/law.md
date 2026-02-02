@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000088002
+id: JPLAW:415M60000088002
+law_no: 平成十五年総務省・文部科学省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000088002
+promulgation_date: '20031001'
+tags:
+- 放送大学学園法施行規則
+tier: 0
+title: 放送大学学園法施行規則
+law_id: 415M60000088002
+official_title: 放送大学学園法施行規則
+aliases:
+- 放送大学学園法施行規則
+---
+
+# 放送大学学園法施行規則
+
+## Metadata
+- Law ID: `415M60000088002`
+- Law No: 平成十五年総務省・文部科学省令第二号
+- Promulgation Date: 20031001

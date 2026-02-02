@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362AC0000000042
+id: JPLAW:362AC0000000042
+law_no: 昭和六十二年法律第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/362AC0000000042
+promulgation_date: '19870601'
+tags:
+- 通貨の単位及び貨幣の発行等に関する法律
+tier: 0
+title: 通貨の単位及び貨幣の発行等に関する法律
+law_id: 362AC0000000042
+official_title: 通貨の単位及び貨幣の発行等に関する法律
+aliases:
+- 通貨の単位及び貨幣の発行等に関する法律
+---
+
+# 通貨の単位及び貨幣の発行等に関する法律
+
+## Metadata
+- Law ID: `362AC0000000042`
+- Law No: 昭和六十二年法律第四十二号
+- Promulgation Date: 19870601

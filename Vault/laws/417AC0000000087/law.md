@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417AC0000000087
+id: JPLAW:417AC0000000087
+law_no: 平成十七年法律第八十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/417AC0000000087
+promulgation_date: '20050726'
+tags:
+- 会社法の施行に伴う関係法律の整備等に関する法律
+tier: 0
+title: 会社法の施行に伴う関係法律の整備等に関する法律
+law_id: 417AC0000000087
+official_title: 会社法の施行に伴う関係法律の整備等に関する法律
+aliases:
+- 会社法の施行に伴う関係法律の整備等に関する法律
+---
+
+# 会社法の施行に伴う関係法律の整備等に関する法律
+
+## Metadata
+- Law ID: `417AC0000000087`
+- Law No: 平成十七年法律第八十七号
+- Promulgation Date: 20050726

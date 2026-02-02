@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000306
+id: JPLAW:415CO0000000306
+law_no: 平成十五年政令第三百六号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000306
+promulgation_date: '20030707'
+tags:
+- イラク被災民救援国際平和協力隊の設置等に関する政令
+tier: 0
+title: イラク被災民救援国際平和協力隊の設置等に関する政令
+law_id: 415CO0000000306
+official_title: イラク被災民救援国際平和協力隊の設置等に関する政令
+aliases:
+- イラク被災民救援国際平和協力隊の設置等に関する政令
+---
+
+# イラク被災民救援国際平和協力隊の設置等に関する政令
+
+## Metadata
+- Law ID: `415CO0000000306`
+- Law No: 平成十五年政令第三百六号
+- Promulgation Date: 20030707

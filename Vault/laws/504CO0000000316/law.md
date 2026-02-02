@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504CO0000000316
+id: JPLAW:504CO0000000316
+law_no: 令和四年政令第三百十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/504CO0000000316
+promulgation_date: '20220929'
+tags:
+- 相続等により取得した土地所有権の国庫への帰属に関する法律施行令
+tier: 0
+title: 相続等により取得した土地所有権の国庫への帰属に関する法律施行令
+law_id: 504CO0000000316
+official_title: 相続等により取得した土地所有権の国庫への帰属に関する法律施行令
+aliases:
+- 相続等により取得した土地所有権の国庫への帰属に関する法律施行令
+---
+
+# 相続等により取得した土地所有権の国庫への帰属に関する法律施行令
+
+## Metadata
+- Law ID: `504CO0000000316`
+- Law No: 令和四年政令第三百十六号
+- Promulgation Date: 20220929

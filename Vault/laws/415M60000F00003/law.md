@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000F00003
+id: JPLAW:415M60000F00003
+law_no: 平成十五年厚生労働省・農林水産省・経済産業省・国土交通省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000F00003
+promulgation_date: '20031001'
+tags:
+- 独立行政法人水資源機構の業務運営に関する省令
+tier: 0
+title: 独立行政法人水資源機構の業務運営に関する省令
+law_id: 415M60000F00003
+official_title: 独立行政法人水資源機構の業務運営に関する省令
+aliases:
+- 独立行政法人水資源機構の業務運営に関する省令
+---
+
+# 独立行政法人水資源機構の業務運営に関する省令
+
+## Metadata
+- Law ID: `415M60000F00003`
+- Law No: 平成十五年厚生労働省・農林水産省・経済産業省・国土交通省令第三号
+- Promulgation Date: 20031001

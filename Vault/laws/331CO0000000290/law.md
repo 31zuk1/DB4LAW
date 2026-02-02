@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331CO0000000290
+id: JPLAW:331CO0000000290
+law_no: 昭和三十一年政令第二百九十号
+links:
+  egov: https://laws.e-gov.go.jp/law/331CO0000000290
+promulgation_date: '19560911'
+tags:
+- 都市公園法施行令
+tier: 0
+title: 都市公園法施行令
+law_id: 331CO0000000290
+official_title: 都市公園法施行令
+aliases:
+- 都市公園法施行令
+---
+
+# 都市公園法施行令
+
+## Metadata
+- Law ID: `331CO0000000290`
+- Law No: 昭和三十一年政令第二百九十号
+- Promulgation Date: 19560911

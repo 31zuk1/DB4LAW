@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50400000013
+id: JPLAW:412M50400000013
+law_no: 平成十二年国家公安委員会規則第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50400000013
+promulgation_date: '20000808'
+tags:
+- 通信傍受規則
+tier: 0
+title: 通信傍受規則
+law_id: 412M50400000013
+official_title: 通信傍受規則
+aliases:
+- 通信傍受規則
+---
+
+# 通信傍受規則
+
+## Metadata
+- Law ID: `412M50400000013`
+- Law No: 平成十二年国家公安委員会規則第十三号
+- Promulgation Date: 20000808

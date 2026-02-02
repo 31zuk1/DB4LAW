@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344M50004000049
+id: JPLAW:344M50004000049
+law_no: 昭和四十四年建設省令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/344M50004000049
+promulgation_date: '19690825'
+tags:
+- 都市計画法施行規則
+tier: 0
+title: 都市計画法施行規則
+law_id: 344M50004000049
+official_title: 都市計画法施行規則
+aliases:
+- 都市計画法施行規則
+---
+
+# 都市計画法施行規則
+
+## Metadata
+- Law ID: `344M50004000049`
+- Law No: 昭和四十四年建設省令第四十九号
+- Promulgation Date: 19690825

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348AC0000000101
+id: JPLAW:348AC0000000101
+law_no: 昭和四十八年法律第百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/348AC0000000101
+promulgation_date: '19730929'
+tags:
+- 中小小売商業振興法
+tier: 0
+title: 中小小売商業振興法
+law_id: 348AC0000000101
+official_title: 中小小売商業振興法
+aliases:
+- 中小小売商業振興法
+---
+
+# 中小小売商業振興法
+
+## Metadata
+- Law ID: `348AC0000000101`
+- Law No: 昭和四十八年法律第百一号
+- Promulgation Date: 19730929

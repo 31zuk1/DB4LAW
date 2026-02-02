@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330CO0000000100
+id: JPLAW:330CO0000000100
+law_no: 昭和三十年政令第百号
+links:
+  egov: https://laws.e-gov.go.jp/law/330CO0000000100
+promulgation_date: '19550630'
+tags:
+- 輸入品に対する内国消費税の徴収等に関する法律施行令
+tier: 0
+title: 輸入品に対する内国消費税の徴収等に関する法律施行令
+law_id: 330CO0000000100
+official_title: 輸入品に対する内国消費税の徴収等に関する法律施行令
+aliases:
+- 輸入品に対する内国消費税の徴収等に関する法律施行令
+---
+
+# 輸入品に対する内国消費税の徴収等に関する法律施行令
+
+## Metadata
+- Law ID: `330CO0000000100`
+- Law No: 昭和三十年政令第百号
+- Promulgation Date: 19550630

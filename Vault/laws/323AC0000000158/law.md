@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000158
+id: JPLAW:323AC0000000158
+law_no: 昭和二十三年法律第百五十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000158
+promulgation_date: '19480713'
+tags:
+- 競馬法
+tier: 0
+title: 競馬法
+law_id: 323AC0000000158
+official_title: 競馬法
+aliases:
+- 競馬法
+---
+
+# 競馬法
+
+## Metadata
+- Law ID: `323AC0000000158`
+- Law No: 昭和二十三年法律第百五十八号
+- Promulgation Date: 19480713

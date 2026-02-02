@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330M50004000005
+id: JPLAW:330M50004000005
+law_no: 昭和三十年建設省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/330M50004000005
+promulgation_date: '19550331'
+tags:
+- 土地区画整理法施行規則
+tier: 0
+title: 土地区画整理法施行規則
+law_id: 330M50004000005
+official_title: 土地区画整理法施行規則
+aliases:
+- 土地区画整理法施行規則
+---
+
+# 土地区画整理法施行規則
+
+## Metadata
+- Law ID: `330M50004000005`
+- Law No: 昭和三十年建設省令第五号
+- Promulgation Date: 19550331

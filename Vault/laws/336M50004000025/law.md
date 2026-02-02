@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336M50004000025
+id: JPLAW:336M50004000025
+law_no: 昭和三十六年建設省令第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/336M50004000025
+promulgation_date: '19610815'
+tags:
+- 公共用地の取得に関する特別措置法施行規則
+tier: 0
+title: 公共用地の取得に関する特別措置法施行規則
+law_id: 336M50004000025
+official_title: 公共用地の取得に関する特別措置法施行規則
+aliases:
+- 公共用地の取得に関する特別措置法施行規則
+---
+
+# 公共用地の取得に関する特別措置法施行規則
+
+## Metadata
+- Law ID: `336M50004000025`
+- Law No: 昭和三十六年建設省令第二十五号
+- Promulgation Date: 19610815

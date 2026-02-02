@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403CO0000000175
+id: JPLAW:403CO0000000175
+law_no: 平成三年政令第百七十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/403CO0000000175
+promulgation_date: '19910521'
+tags:
+- 土地評価審議会令
+tier: 0
+title: 土地評価審議会令
+law_id: 403CO0000000175
+official_title: 土地評価審議会令
+aliases:
+- 土地評価審議会令
+---
+
+# 土地評価審議会令
+
+## Metadata
+- Law ID: `403CO0000000175`
+- Law No: 平成三年政令第百七十五号
+- Promulgation Date: 19910521

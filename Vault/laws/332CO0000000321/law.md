@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332CO0000000321
+id: JPLAW:332CO0000000321
+law_no: 昭和三十二年政令第三百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/332CO0000000321
+promulgation_date: '19571118'
+tags:
+- 国有提供施設等所在市町村助成交付金に関する法律施行令
+tier: 0
+title: 国有提供施設等所在市町村助成交付金に関する法律施行令
+law_id: 332CO0000000321
+official_title: 国有提供施設等所在市町村助成交付金に関する法律施行令
+aliases:
+- 国有提供施設等所在市町村助成交付金に関する法律施行令
+---
+
+# 国有提供施設等所在市町村助成交付金に関する法律施行令
+
+## Metadata
+- Law ID: `332CO0000000321`
+- Law No: 昭和三十二年政令第三百二十一号
+- Promulgation Date: 19571118

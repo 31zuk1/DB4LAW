@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335M50010000018
+id: JPLAW:335M50010000018
+law_no: 昭和三十五年農林省令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/335M50010000018
+promulgation_date: '19600430'
+tags:
+- 養鶏振興法施行規則
+tier: 0
+title: 養鶏振興法施行規則
+law_id: 335M50010000018
+official_title: 養鶏振興法施行規則
+aliases:
+- 養鶏振興法施行規則
+---
+
+# 養鶏振興法施行規則
+
+## Metadata
+- Law ID: `335M50010000018`
+- Law No: 昭和三十五年農林省令第十八号
+- Promulgation Date: 19600430

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330M50000800070
+id: JPLAW:330M50000800070
+law_no: 昭和三十年運輸省令第七十号
+links:
+  egov: https://laws.e-gov.go.jp/law/330M50000800070
+promulgation_date: '19551224'
+tags:
+- 自動車運送事業等監査規則
+tier: 0
+title: 自動車運送事業等監査規則
+law_id: 330M50000800070
+official_title: 自動車運送事業等監査規則
+aliases:
+- 自動車運送事業等監査規則
+---
+
+# 自動車運送事業等監査規則
+
+## Metadata
+- Law ID: `330M50000800070`
+- Law No: 昭和三十年運輸省令第七十号
+- Promulgation Date: 19551224

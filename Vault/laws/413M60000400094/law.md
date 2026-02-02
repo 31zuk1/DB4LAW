@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000400094
+id: JPLAW:413M60000400094
+law_no: 平成十三年経済産業省令第九十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000400094
+promulgation_date: '20010328'
+tags:
+- 塩化ビニル製建設資材の表示の標準となるべき事項を定める省令
+tier: 0
+title: 塩化ビニル製建設資材の表示の標準となるべき事項を定める省令
+law_id: 413M60000400094
+official_title: 塩化ビニル製建設資材の表示の標準となるべき事項を定める省令
+aliases:
+- 塩化ビニル製建設資材の表示の標準となるべき事項を定める省令
+---
+
+# 塩化ビニル製建設資材の表示の標準となるべき事項を定める省令
+
+## Metadata
+- Law ID: `413M60000400094`
+- Law No: 平成十三年経済産業省令第九十四号
+- Promulgation Date: 20010328

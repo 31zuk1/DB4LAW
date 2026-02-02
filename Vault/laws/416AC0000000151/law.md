@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416AC0000000151
+id: JPLAW:416AC0000000151
+law_no: 平成十六年法律第百五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/416AC0000000151
+promulgation_date: '20041201'
+tags:
+- 裁判外紛争解決手続の利用の促進に関する法律
+tier: 0
+title: 裁判外紛争解決手続の利用の促進に関する法律
+law_id: 416AC0000000151
+official_title: 裁判外紛争解決手続の利用の促進に関する法律
+aliases:
+- 裁判外紛争解決手続の利用の促進に関する法律
+---
+
+# 裁判外紛争解決手続の利用の促進に関する法律
+
+## Metadata
+- Law ID: `416AC0000000151`
+- Law No: 平成十六年法律第百五十一号
+- Promulgation Date: 20041201

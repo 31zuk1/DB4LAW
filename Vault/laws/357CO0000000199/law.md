@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 357CO0000000199
+id: JPLAW:357CO0000000199
+law_no: 昭和五十七年政令第百九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/357CO0000000199
+promulgation_date: '19820716'
+tags:
+- 深海底鉱業暫定措置法関係手数料令
+tier: 0
+title: 深海底鉱業暫定措置法関係手数料令
+law_id: 357CO0000000199
+official_title: 深海底鉱業暫定措置法関係手数料令
+aliases:
+- 深海底鉱業暫定措置法関係手数料令
+---
+
+# 深海底鉱業暫定措置法関係手数料令
+
+## Metadata
+- Law ID: `357CO0000000199`
+- Law No: 昭和五十七年政令第百九十九号
+- Promulgation Date: 19820716

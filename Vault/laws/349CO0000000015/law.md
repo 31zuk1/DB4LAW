@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349CO0000000015
+id: JPLAW:349CO0000000015
+law_no: 昭和四十九年政令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/349CO0000000015
+promulgation_date: '19740123'
+tags:
+- 石油需給適正化法施行令
+tier: 0
+title: 石油需給適正化法施行令
+law_id: 349CO0000000015
+official_title: 石油需給適正化法施行令
+aliases:
+- 石油需給適正化法施行令
+---
+
+# 石油需給適正化法施行令
+
+## Metadata
+- Law ID: `349CO0000000015`
+- Law No: 昭和四十九年政令第十五号
+- Promulgation Date: 19740123

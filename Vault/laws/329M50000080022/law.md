@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000080022
+id: JPLAW:329M50000080022
+law_no: 昭和二十九年文部省令第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000080022
+promulgation_date: '19540827'
+tags:
+- 教育映像等審査規程
+tier: 0
+title: 教育映像等審査規程
+law_id: 329M50000080022
+official_title: 教育映像等審査規程
+aliases:
+- 教育映像等審査規程
+---
+
+# 教育映像等審査規程
+
+## Metadata
+- Law ID: `329M50000080022`
+- Law No: 昭和二十九年文部省令第二十二号
+- Promulgation Date: 19540827

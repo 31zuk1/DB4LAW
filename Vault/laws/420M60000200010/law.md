@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000200010
+id: JPLAW:420M60000200010
+law_no: 平成二十年農林水産省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000200010
+promulgation_date: '20080228'
+tags:
+- 水産業協同組合法施行規則
+tier: 0
+title: 水産業協同組合法施行規則
+law_id: 420M60000200010
+official_title: 水産業協同組合法施行規則
+aliases:
+- 水産業協同組合法施行規則
+---
+
+# 水産業協同組合法施行規則
+
+## Metadata
+- Law ID: `420M60000200010`
+- Law No: 平成二十年農林水産省令第十号
+- Promulgation Date: 20080228

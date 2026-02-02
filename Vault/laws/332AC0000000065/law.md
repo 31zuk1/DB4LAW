@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332AC0000000065
+id: JPLAW:332AC0000000065
+law_no: 昭和三十二年法律第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/332AC0000000065
+promulgation_date: '19570415'
+tags:
+- 公衆衛生修学資金貸与法
+tier: 0
+title: 公衆衛生修学資金貸与法
+law_id: 332AC0000000065
+official_title: 公衆衛生修学資金貸与法
+aliases:
+- 公衆衛生修学資金貸与法
+---
+
+# 公衆衛生修学資金貸与法
+
+## Metadata
+- Law ID: `332AC0000000065`
+- Law No: 昭和三十二年法律第六十五号
+- Promulgation Date: 19570415

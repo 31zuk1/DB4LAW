@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000100015
+id: JPLAW:332M50000100015
+law_no: 昭和三十二年厚生省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000100015
+promulgation_date: '19570430'
+tags:
+- 保険医療機関及び保険医療養担当規則
+tier: 0
+title: 保険医療機関及び保険医療養担当規則
+law_id: 332M50000100015
+official_title: 保険医療機関及び保険医療養担当規則
+aliases:
+- 保険医療機関及び保険医療養担当規則
+---
+
+# 保険医療機関及び保険医療養担当規則
+
+## Metadata
+- Law ID: `332M50000100015`
+- Law No: 昭和三十二年厚生省令第十五号
+- Promulgation Date: 19570430

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC1000000052
+id: JPLAW:328AC1000000052
+law_no: 昭和二十八年法律第五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC1000000052
+promulgation_date: '19530707'
+tags:
+- 国会における各会派に対する立法事務費の交付に関する法律
+tier: 0
+title: 国会における各会派に対する立法事務費の交付に関する法律
+law_id: 328AC1000000052
+official_title: 国会における各会派に対する立法事務費の交付に関する法律
+aliases:
+- 国会における各会派に対する立法事務費の交付に関する法律
+---
+
+# 国会における各会派に対する立法事務費の交付に関する法律
+
+## Metadata
+- Law ID: `328AC1000000052`
+- Law No: 昭和二十八年法律第五十二号
+- Promulgation Date: 19530707

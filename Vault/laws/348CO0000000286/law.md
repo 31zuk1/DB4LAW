@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348CO0000000286
+id: JPLAW:348CO0000000286
+law_no: 昭和四十八年政令第二百八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/348CO0000000286
+promulgation_date: '19730929'
+tags:
+- 中小小売商業振興法施行令
+tier: 0
+title: 中小小売商業振興法施行令
+law_id: 348CO0000000286
+official_title: 中小小売商業振興法施行令
+aliases:
+- 中小小売商業振興法施行令
+---
+
+# 中小小売商業振興法施行令
+
+## Metadata
+- Law ID: `348CO0000000286`
+- Law No: 昭和四十八年政令第二百八十六号
+- Promulgation Date: 19730929

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360M50400000010
+id: JPLAW:360M50400000010
+law_no: 昭和六十年国家公安委員会規則第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/360M50400000010
+promulgation_date: '19850406'
+tags:
+- 警察大学校国際警察センターの内部組織に関する規則
+tier: 0
+title: 警察大学校国際警察センターの内部組織に関する規則
+law_id: 360M50400000010
+official_title: 警察大学校国際警察センターの内部組織に関する規則
+aliases:
+- 警察大学校国際警察センターの内部組織に関する規則
+---
+
+# 警察大学校国際警察センターの内部組織に関する規則
+
+## Metadata
+- Law ID: `360M50400000010`
+- Law No: 昭和六十年国家公安委員会規則第十号
+- Promulgation Date: 19850406

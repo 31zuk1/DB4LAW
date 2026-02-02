@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000040087
+id: JPLAW:332M50000040087
+law_no: 昭和三十二年大蔵省令第八十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000040087
+promulgation_date: '19571224'
+tags:
+- 旧令共済組合年金等交付金交付規則
+tier: 0
+title: 旧令共済組合年金等交付金交付規則
+law_id: 332M50000040087
+official_title: 旧令共済組合年金等交付金交付規則
+aliases:
+- 旧令共済組合年金等交付金交付規則
+---
+
+# 旧令共済組合年金等交付金交付規則
+
+## Metadata
+- Law ID: `332M50000040087`
+- Law No: 昭和三十二年大蔵省令第八十七号
+- Promulgation Date: 19571224

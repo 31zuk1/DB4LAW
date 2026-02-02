@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413AC0000000120
+id: JPLAW:413AC0000000120
+law_no: 平成十三年法律第百二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/413AC0000000120
+promulgation_date: '20011116'
+tags:
+- 地方公共団体の特定の事務の郵便局における取扱いに関する法律
+tier: 0
+title: 地方公共団体の特定の事務の郵便局における取扱いに関する法律
+law_id: 413AC0000000120
+official_title: 地方公共団体の特定の事務の郵便局における取扱いに関する法律
+aliases:
+- 地方公共団体の特定の事務の郵便局における取扱いに関する法律
+---
+
+# 地方公共団体の特定の事務の郵便局における取扱いに関する法律
+
+## Metadata
+- Law ID: `413AC0000000120`
+- Law No: 平成十三年法律第百二十号
+- Promulgation Date: 20011116

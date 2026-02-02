@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406AC1000000106
+id: JPLAW:406AC1000000106
+law_no: 平成六年法律第百六号
+links:
+  egov: https://laws.e-gov.go.jp/law/406AC1000000106
+promulgation_date: '19941125'
+tags:
+- 政党交付金の交付を受ける政党等に対する法人格の付与に関する法律
+tier: 0
+title: 政党交付金の交付を受ける政党等に対する法人格の付与に関する法律
+law_id: 406AC1000000106
+official_title: 政党交付金の交付を受ける政党等に対する法人格の付与に関する法律
+aliases:
+- 政党交付金の交付を受ける政党等に対する法人格の付与に関する法律
+---
+
+# 政党交付金の交付を受ける政党等に対する法人格の付与に関する法律
+
+## Metadata
+- Law ID: `406AC1000000106`
+- Law No: 平成六年法律第百六号
+- Promulgation Date: 19941125

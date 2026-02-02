@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 422CO0000000166
+id: JPLAW:422CO0000000166
+law_no: 平成二十二年政令第百六十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/422CO0000000166
+promulgation_date: '20100625'
+tags:
+- 公文書管理委員会令
+tier: 0
+title: 公文書管理委員会令
+law_id: 422CO0000000166
+official_title: 公文書管理委員会令
+aliases:
+- 公文書管理委員会令
+---
+
+# 公文書管理委員会令
+
+## Metadata
+- Law ID: `422CO0000000166`
+- Law No: 平成二十二年政令第百六十六号
+- Promulgation Date: 20100625

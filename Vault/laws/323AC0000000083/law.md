@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000083
+id: JPLAW:323AC0000000083
+law_no: 昭和二十三年法律第八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000083
+promulgation_date: '19480702'
+tags:
+- 中小企業庁設置法
+tier: 0
+title: 中小企業庁設置法
+law_id: 323AC0000000083
+official_title: 中小企業庁設置法
+aliases:
+- 中小企業庁設置法
+---
+
+# 中小企業庁設置法
+
+## Metadata
+- Law ID: `323AC0000000083`
+- Law No: 昭和二十三年法律第八十三号
+- Promulgation Date: 19480702

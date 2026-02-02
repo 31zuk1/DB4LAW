@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0100000239
+id: JPLAW:327AC0100000239
+law_no: 昭和二十七年法律第二百三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0100000239
+promulgation_date: '19520718'
+tags:
+- 旅行業法
+tier: 0
+title: 旅行業法
+law_id: 327AC0100000239
+official_title: 旅行業法
+aliases:
+- 旅行業法
+---
+
+# 旅行業法
+
+## Metadata
+- Law ID: `327AC0100000239`
+- Law No: 昭和二十七年法律第二百三十九号
+- Promulgation Date: 19520718

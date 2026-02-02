@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429M60000800065
+id: JPLAW:429M60000800065
+law_no: 平成二十九年国土交通省令第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/429M60000800065
+promulgation_date: '20171027'
+tags:
+- 国土交通省関係住宅宿泊事業法施行規則
+tier: 0
+title: 国土交通省関係住宅宿泊事業法施行規則
+law_id: 429M60000800065
+official_title: 国土交通省関係住宅宿泊事業法施行規則
+aliases:
+- 国土交通省関係住宅宿泊事業法施行規則
+---
+
+# 国土交通省関係住宅宿泊事業法施行規則
+
+## Metadata
+- Law ID: `429M60000800065`
+- Law No: 平成二十九年国土交通省令第六十五号
+- Promulgation Date: 20171027

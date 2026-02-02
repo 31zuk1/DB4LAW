@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505CO0000000128
+id: JPLAW:505CO0000000128
+law_no: 令和五年政令第百二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/505CO0000000128
+promulgation_date: '20230330'
+tags:
+- こども政策推進会議令
+tier: 0
+title: こども政策推進会議令
+law_id: 505CO0000000128
+official_title: こども政策推進会議令
+aliases:
+- こども政策推進会議令
+---
+
+# こども政策推進会議令
+
+## Metadata
+- Law ID: `505CO0000000128`
+- Law No: 令和五年政令第百二十八号
+- Promulgation Date: 20230330

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000152
+id: JPLAW:325CO0000000152
+law_no: 昭和二十五年政令第百五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000152
+promulgation_date: '19500520'
+tags:
+- 農林水産業施設災害復旧事業費国庫補助の暫定措置に関する法律施行令
+tier: 0
+title: 農林水産業施設災害復旧事業費国庫補助の暫定措置に関する法律施行令
+law_id: 325CO0000000152
+official_title: 農林水産業施設災害復旧事業費国庫補助の暫定措置に関する法律施行令
+aliases:
+- 農林水産業施設災害復旧事業費国庫補助の暫定措置に関する法律施行令
+---
+
+# 農林水産業施設災害復旧事業費国庫補助の暫定措置に関する法律施行令
+
+## Metadata
+- Law ID: `325CO0000000152`
+- Law No: 昭和二十五年政令第百五十二号
+- Promulgation Date: 19500520

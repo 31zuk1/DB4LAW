@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417CO0000000157
+id: JPLAW:417CO0000000157
+law_no: 平成十七年政令第百五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/417CO0000000157
+promulgation_date: '20050415'
+tags:
+- 障害者政策委員会令
+tier: 0
+title: 障害者政策委員会令
+law_id: 417CO0000000157
+official_title: 障害者政策委員会令
+aliases:
+- 障害者政策委員会令
+---
+
+# 障害者政策委員会令
+
+## Metadata
+- Law ID: `417CO0000000157`
+- Law No: 平成十七年政令第百五十七号
+- Promulgation Date: 20050415

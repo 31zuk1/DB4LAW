@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505CO0000000379
+id: JPLAW:505CO0000000379
+law_no: 令和五年政令第三百七十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/505CO0000000379
+promulgation_date: '20231227'
+tags:
+- 脱炭素成長型経済構造への円滑な移行の推進に関する法律施行令
+tier: 0
+title: 脱炭素成長型経済構造への円滑な移行の推進に関する法律施行令
+law_id: 505CO0000000379
+official_title: 脱炭素成長型経済構造への円滑な移行の推進に関する法律施行令
+aliases:
+- 脱炭素成長型経済構造への円滑な移行の推進に関する法律施行令
+---
+
+# 脱炭素成長型経済構造への円滑な移行の推進に関する法律施行令
+
+## Metadata
+- Law ID: `505CO0000000379`
+- Law No: 令和五年政令第三百七十九号
+- Promulgation Date: 20231227

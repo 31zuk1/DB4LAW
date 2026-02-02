@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344CO0000000158
+id: JPLAW:344CO0000000158
+law_no: 昭和四十四年政令第百五十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/344CO0000000158
+promulgation_date: '19690613'
+tags:
+- 都市計画法施行令
+tier: 0
+title: 都市計画法施行令
+law_id: 344CO0000000158
+official_title: 都市計画法施行令
+aliases:
+- 都市計画法施行令
+---
+
+# 都市計画法施行令
+
+## Metadata
+- Law ID: `344CO0000000158`
+- Law No: 昭和四十四年政令第百五十八号
+- Promulgation Date: 19690613

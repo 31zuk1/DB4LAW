@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000080036
+id: JPLAW:413M60000080036
+law_no: 平成十三年文部科学省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000080036
+promulgation_date: '20010330'
+tags:
+- 国立研究開発法人物質・材料研究機構に関する省令
+tier: 0
+title: 国立研究開発法人物質・材料研究機構に関する省令
+law_id: 413M60000080036
+official_title: 国立研究開発法人物質・材料研究機構に関する省令
+aliases:
+- 国立研究開発法人物質・材料研究機構に関する省令
+---
+
+# 国立研究開発法人物質・材料研究機構に関する省令
+
+## Metadata
+- Law ID: `413M60000080036`
+- Law No: 平成十三年文部科学省令第三十六号
+- Promulgation Date: 20010330

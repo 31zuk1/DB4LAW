@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50004000020
+id: JPLAW:340M50004000020
+law_no: 昭和四十年建設省令第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50004000020
+promulgation_date: '19650612'
+tags:
+- 河川附帯工事の費用負担に関する事務取扱規則
+tier: 0
+title: 河川附帯工事の費用負担に関する事務取扱規則
+law_id: 340M50004000020
+official_title: 河川附帯工事の費用負担に関する事務取扱規則
+aliases:
+- 河川附帯工事の費用負担に関する事務取扱規則
+---
+
+# 河川附帯工事の費用負担に関する事務取扱規則
+
+## Metadata
+- Law ID: `340M50004000020`
+- Law No: 昭和四十年建設省令第二十号
+- Promulgation Date: 19650612

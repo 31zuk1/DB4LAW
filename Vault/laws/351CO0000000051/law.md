@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351CO0000000051
+id: JPLAW:351CO0000000051
+law_no: 昭和五十一年政令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/351CO0000000051
+promulgation_date: '19760331'
+tags:
+- 沿岸漁場整備開発法施行令
+tier: 0
+title: 沿岸漁場整備開発法施行令
+law_id: 351CO0000000051
+official_title: 沿岸漁場整備開発法施行令
+aliases:
+- 沿岸漁場整備開発法施行令
+---
+
+# 沿岸漁場整備開発法施行令
+
+## Metadata
+- Law ID: `351CO0000000051`
+- Law No: 昭和五十一年政令第五十一号
+- Promulgation Date: 19760331

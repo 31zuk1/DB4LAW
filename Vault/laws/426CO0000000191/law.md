@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426CO0000000191
+id: JPLAW:426CO0000000191
+law_no: 平成二十六年政令第百九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/426CO0000000191
+promulgation_date: '20140529'
+tags:
+- 幹部職員の任用等に関する政令
+tier: 0
+title: 幹部職員の任用等に関する政令
+law_id: 426CO0000000191
+official_title: 幹部職員の任用等に関する政令
+aliases:
+- 幹部職員の任用等に関する政令
+---
+
+# 幹部職員の任用等に関する政令
+
+## Metadata
+- Law ID: `426CO0000000191`
+- Law No: 平成二十六年政令第百九十一号
+- Promulgation Date: 20140529

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335M50000400033
+id: JPLAW:335M50000400033
+law_no: 昭和三十五年通商産業省令第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/335M50000400033
+promulgation_date: '19600330'
+tags:
+- 特許登録令施行規則
+tier: 0
+title: 特許登録令施行規則
+law_id: 335M50000400033
+official_title: 特許登録令施行規則
+aliases:
+- 特許登録令施行規則
+---
+
+# 特許登録令施行規則
+
+## Metadata
+- Law ID: `335M50000400033`
+- Law No: 昭和三十五年通商産業省令第三十三号
+- Promulgation Date: 19600330

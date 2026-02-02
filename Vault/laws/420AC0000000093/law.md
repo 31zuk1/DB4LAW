@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420AC0000000093
+id: JPLAW:420AC0000000093
+law_no: 平成二十年法律第九十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/420AC0000000093
+promulgation_date: '20081219'
+tags:
+- 高度専門医療に関する研究等を行う国立研究開発法人に関する法律
+tier: 0
+title: 高度専門医療に関する研究等を行う国立研究開発法人に関する法律
+law_id: 420AC0000000093
+official_title: 高度専門医療に関する研究等を行う国立研究開発法人に関する法律
+aliases:
+- 高度専門医療に関する研究等を行う国立研究開発法人に関する法律
+---
+
+# 高度専門医療に関する研究等を行う国立研究開発法人に関する法律
+
+## Metadata
+- Law ID: `420AC0000000093`
+- Law No: 平成二十年法律第九十三号
+- Promulgation Date: 20081219

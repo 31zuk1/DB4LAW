@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000325
+id: JPLAW:420CO0000000325
+law_no: 平成二十年政令第三百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000325
+promulgation_date: '20081022'
+tags:
+- 電子記録債権法施行令
+tier: 0
+title: 電子記録債権法施行令
+law_id: 420CO0000000325
+official_title: 電子記録債権法施行令
+aliases:
+- 電子記録債権法施行令
+---
+
+# 電子記録債権法施行令
+
+## Metadata
+- Law ID: `420CO0000000325`
+- Law No: 平成二十年政令第三百二十五号
+- Promulgation Date: 20081022

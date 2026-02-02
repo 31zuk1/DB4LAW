@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323M40000040092
+id: JPLAW:323M40000040092
+law_no: 昭和二十三年大蔵省令第九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/323M40000040092
+promulgation_date: '19480928'
+tags:
+- 国有財産法施行細則
+tier: 0
+title: 国有財産法施行細則
+law_id: 323M40000040092
+official_title: 国有財産法施行細則
+aliases:
+- 国有財産法施行細則
+---
+
+# 国有財産法施行細則
+
+## Metadata
+- Law ID: `323M40000040092`
+- Law No: 昭和二十三年大蔵省令第九十二号
+- Promulgation Date: 19480928

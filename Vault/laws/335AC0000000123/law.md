@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335AC0000000123
+id: JPLAW:335AC0000000123
+law_no: 昭和三十五年法律第百二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/335AC0000000123
+promulgation_date: '19600725'
+tags:
+- 障害者の雇用の促進等に関する法律
+tier: 0
+title: 障害者の雇用の促進等に関する法律
+law_id: 335AC0000000123
+official_title: 障害者の雇用の促進等に関する法律
+aliases:
+- 障害者の雇用の促進等に関する法律
+---
+
+# 障害者の雇用の促進等に関する法律
+
+## Metadata
+- Law ID: `335AC0000000123`
+- Law No: 昭和三十五年法律第百二十三号
+- Promulgation Date: 19600725

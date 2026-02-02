@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000800100
+id: JPLAW:416M60000800100
+law_no: 平成十六年国土交通省令第百号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000800100
+promulgation_date: '20041215'
+tags:
+- 景観法施行規則
+tier: 0
+title: 景観法施行規則
+law_id: 416M60000800100
+official_title: 景観法施行規則
+aliases:
+- 景観法施行規則
+---
+
+# 景観法施行規則
+
+## Metadata
+- Law ID: `416M60000800100`
+- Law No: 平成十六年国土交通省令第百号
+- Promulgation Date: 20041215

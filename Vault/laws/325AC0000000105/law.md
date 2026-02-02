@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000105
+id: JPLAW:325AC0000000105
+law_no: 昭和二十五年法律第百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000105
+promulgation_date: '19500419'
+tags:
+- 日本政府在外事務所設置法
+tier: 0
+title: 日本政府在外事務所設置法
+law_id: 325AC0000000105
+official_title: 日本政府在外事務所設置法
+aliases:
+- 日本政府在外事務所設置法
+---
+
+# 日本政府在外事務所設置法
+
+## Metadata
+- Law ID: `325AC0000000105`
+- Law No: 昭和二十五年法律第百五号
+- Promulgation Date: 19500419

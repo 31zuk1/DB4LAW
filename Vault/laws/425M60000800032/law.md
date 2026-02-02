@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425M60000800032
+id: JPLAW:425M60000800032
+law_no: 平成二十五年国土交通省令第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/425M60000800032
+promulgation_date: '20130501'
+tags:
+- 船員の労働条件等の検査等に関する規則
+tier: 0
+title: 船員の労働条件等の検査等に関する規則
+law_id: 425M60000800032
+official_title: 船員の労働条件等の検査等に関する規則
+aliases:
+- 船員の労働条件等の検査等に関する規則
+---
+
+# 船員の労働条件等の検査等に関する規則
+
+## Metadata
+- Law ID: `425M60000800032`
+- Law No: 平成二十五年国土交通省令第三十二号
+- Promulgation Date: 20130501

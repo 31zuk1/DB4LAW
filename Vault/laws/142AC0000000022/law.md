@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 142AC0000000022
+id: JPLAW:142AC0000000022
+law_no: 明治四十二年法律第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/142AC0000000022
+promulgation_date: '19090405'
+tags:
+- 明治四十二年法律第二十二号（立木ニ関スル法律）
+tier: 0
+title: 明治四十二年法律第二十二号（立木ニ関スル法律）
+law_id: 142AC0000000022
+official_title: 明治四十二年法律第二十二号（立木ニ関スル法律）
+aliases:
+- 明治四十二年法律第二十二号（立木ニ関スル法律）
+---
+
+# 明治四十二年法律第二十二号（立木ニ関スル法律）
+
+## Metadata
+- Law ID: `142AC0000000022`
+- Law No: 明治四十二年法律第二十二号
+- Promulgation Date: 19090405

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000252
+id: JPLAW:328CO0000000252
+law_no: 昭和二十八年政令第二百五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000252
+promulgation_date: '19530831'
+tags:
+- 家畜商法施行令
+tier: 0
+title: 家畜商法施行令
+law_id: 328CO0000000252
+official_title: 家畜商法施行令
+aliases:
+- 家畜商法施行令
+---
+
+# 家畜商法施行令
+
+## Metadata
+- Law ID: `328CO0000000252`
+- Law No: 昭和二十八年政令第二百五十二号
+- Promulgation Date: 19530831

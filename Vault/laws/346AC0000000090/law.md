@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346AC0000000090
+id: JPLAW:346AC0000000090
+law_no: 昭和四十六年法律第九十号
+links:
+  egov: https://laws.e-gov.go.jp/law/346AC0000000090
+promulgation_date: '19710531'
+tags:
+- 自動車重量譲与税法
+tier: 0
+title: 自動車重量譲与税法
+law_id: 346AC0000000090
+official_title: 自動車重量譲与税法
+aliases:
+- 自動車重量譲与税法
+---
+
+# 自動車重量譲与税法
+
+## Metadata
+- Law ID: `346AC0000000090`
+- Law No: 昭和四十六年法律第九十号
+- Promulgation Date: 19710531

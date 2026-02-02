@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC1000000007
+id: JPLAW:410AC1000000007
+law_no: 平成十年法律第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC1000000007
+promulgation_date: '19980325'
+tags:
+- 特定非営利活動促進法
+tier: 0
+title: 特定非営利活動促進法
+law_id: 410AC1000000007
+official_title: 特定非営利活動促進法
+aliases:
+- 特定非営利活動促進法
+---
+
+# 特定非営利活動促進法
+
+## Metadata
+- Law ID: `410AC1000000007`
+- Law No: 平成十年法律第七号
+- Promulgation Date: 19980325

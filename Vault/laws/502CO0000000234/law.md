@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 502CO0000000234
+id: JPLAW:502CO0000000234
+law_no: 令和二年政令第二百三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/502CO0000000234
+promulgation_date: '20200805'
+tags:
+- 令和二年七月豪雨による災害についての非常災害の指定に関する政令
+tier: 0
+title: 令和二年七月豪雨による災害についての非常災害の指定に関する政令
+law_id: 502CO0000000234
+official_title: 令和二年七月豪雨による災害についての非常災害の指定に関する政令
+aliases:
+- 令和二年七月豪雨による災害についての非常災害の指定に関する政令
+---
+
+# 令和二年七月豪雨による災害についての非常災害の指定に関する政令
+
+## Metadata
+- Law ID: `502CO0000000234`
+- Law No: 令和二年政令第二百三十四号
+- Promulgation Date: 20200805

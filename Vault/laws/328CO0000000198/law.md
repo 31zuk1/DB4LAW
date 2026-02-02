@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000198
+id: JPLAW:328CO0000000198
+law_no: 昭和二十八年政令第百九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000198
+promulgation_date: '19530815'
+tags:
+- 武器等製造法施行令
+tier: 0
+title: 武器等製造法施行令
+law_id: 328CO0000000198
+official_title: 武器等製造法施行令
+aliases:
+- 武器等製造法施行令
+---
+
+# 武器等製造法施行令
+
+## Metadata
+- Law ID: `328CO0000000198`
+- Law No: 昭和二十八年政令第百九十八号
+- Promulgation Date: 19530815

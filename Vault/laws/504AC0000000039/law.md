@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504AC0000000039
+id: JPLAW:504AC0000000039
+law_no: 令和四年法律第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/504AC0000000039
+promulgation_date: '20220509'
+tags:
+- 情報通信技術を利用する方法による国の歳入等の納付に関する法律
+tier: 0
+title: 情報通信技術を利用する方法による国の歳入等の納付に関する法律
+law_id: 504AC0000000039
+official_title: 情報通信技術を利用する方法による国の歳入等の納付に関する法律
+aliases:
+- 情報通信技術を利用する方法による国の歳入等の納付に関する法律
+---
+
+# 情報通信技術を利用する方法による国の歳入等の納付に関する法律
+
+## Metadata
+- Law ID: `504AC0000000039`
+- Law No: 令和四年法律第三十九号
+- Promulgation Date: 20220509

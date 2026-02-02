@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340AC0100000085
+id: JPLAW:340AC0100000085
+law_no: 昭和四十年法律第八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/340AC0100000085
+promulgation_date: '19650526'
+tags:
+- 閉鎖機関令等の規定によつてされた信託の処理に関する法律
+tier: 0
+title: 閉鎖機関令等の規定によつてされた信託の処理に関する法律
+law_id: 340AC0100000085
+official_title: 閉鎖機関令等の規定によつてされた信託の処理に関する法律
+aliases:
+- 閉鎖機関令等の規定によつてされた信託の処理に関する法律
+---
+
+# 閉鎖機関令等の規定によつてされた信託の処理に関する法律
+
+## Metadata
+- Law ID: `340AC0100000085`
+- Law No: 昭和四十年法律第八十五号
+- Promulgation Date: 19650526

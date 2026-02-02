@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000002
+id: JPLAW:340CO0000000002
+law_no: 昭和四十年政令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000002
+promulgation_date: '19650104'
+tags:
+- 毒物及び劇物指定令
+tier: 0
+title: 毒物及び劇物指定令
+law_id: 340CO0000000002
+official_title: 毒物及び劇物指定令
+aliases:
+- 毒物及び劇物指定令
+---
+
+# 毒物及び劇物指定令
+
+## Metadata
+- Law ID: `340CO0000000002`
+- Law No: 昭和四十年政令第二号
+- Promulgation Date: 19650104

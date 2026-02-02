@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000012008
+id: JPLAW:419M60000012008
+law_no: 平成十九年内閣府・法務省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000012008
+promulgation_date: '20071207'
+tags:
+- 有限責任監査法人供託金規則
+tier: 0
+title: 有限責任監査法人供託金規則
+law_id: 419M60000012008
+official_title: 有限責任監査法人供託金規則
+aliases:
+- 有限責任監査法人供託金規則
+---
+
+# 有限責任監査法人供託金規則
+
+## Metadata
+- Law ID: `419M60000012008`
+- Law No: 平成十九年内閣府・法務省令第八号
+- Promulgation Date: 20071207

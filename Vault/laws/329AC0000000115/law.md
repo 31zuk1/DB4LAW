@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329AC0000000115
+id: JPLAW:329AC0000000115
+law_no: 昭和二十九年法律第百十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/329AC0000000115
+promulgation_date: '19540519'
+tags:
+- 厚生年金保険法
+tier: 0
+title: 厚生年金保険法
+law_id: 329AC0000000115
+official_title: 厚生年金保険法
+aliases:
+- 厚生年金保険法
+---
+
+# 厚生年金保険法
+
+## Metadata
+- Law ID: `329AC0000000115`
+- Law No: 昭和二十九年法律第百十五号
+- Promulgation Date: 19540519

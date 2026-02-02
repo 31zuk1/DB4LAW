@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423M60000002055
+id: JPLAW:423M60000002055
+law_no: 平成二十三年内閣府令第五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/423M60000002055
+promulgation_date: '20111014'
+tags:
+- 特定非営利活動促進法施行規則
+tier: 0
+title: 特定非営利活動促進法施行規則
+law_id: 423M60000002055
+official_title: 特定非営利活動促進法施行規則
+aliases:
+- 特定非営利活動促進法施行規則
+---
+
+# 特定非営利活動促進法施行規則
+
+## Metadata
+- Law ID: `423M60000002055`
+- Law No: 平成二十三年内閣府令第五十五号
+- Promulgation Date: 20111014

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407AC1000000133
+id: JPLAW:407AC1000000133
+law_no: 平成七年法律第百三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/407AC1000000133
+promulgation_date: '19951208'
+tags:
+- 接収刀剣類の処理に関する法律
+tier: 0
+title: 接収刀剣類の処理に関する法律
+law_id: 407AC1000000133
+official_title: 接収刀剣類の処理に関する法律
+aliases:
+- 接収刀剣類の処理に関する法律
+---
+
+# 接収刀剣類の処理に関する法律
+
+## Metadata
+- Law ID: `407AC1000000133`
+- Law No: 平成七年法律第百三十三号
+- Promulgation Date: 19951208

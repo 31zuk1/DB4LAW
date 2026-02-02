@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000026
+id: JPLAW:322AC0000000026
+law_no: 昭和二十二年法律第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000026
+promulgation_date: '19470331'
+tags:
+- 学校教育法
+tier: 0
+title: 学校教育法
+law_id: 322AC0000000026
+official_title: 学校教育法
+aliases:
+- 学校教育法
+---
+
+# 学校教育法
+
+## Metadata
+- Law ID: `322AC0000000026`
+- Law No: 昭和二十二年法律第二十六号
+- Promulgation Date: 19470331

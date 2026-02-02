@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351M50000008026
+id: JPLAW:351M50000008026
+law_no: 昭和五十一年自治省令第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/351M50000008026
+promulgation_date: '19760827'
+tags:
+- 危険物保安技術協会に関する省令
+tier: 0
+title: 危険物保安技術協会に関する省令
+law_id: 351M50000008026
+official_title: 危険物保安技術協会に関する省令
+aliases:
+- 危険物保安技術協会に関する省令
+---
+
+# 危険物保安技術協会に関する省令
+
+## Metadata
+- Law ID: `351M50000008026`
+- Law No: 昭和五十一年自治省令第二十六号
+- Promulgation Date: 19760827

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507AC0000000042
+id: JPLAW:507AC0000000042
+law_no: 令和七年法律第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/507AC0000000042
+promulgation_date: '20250523'
+tags:
+- 重要電子計算機に対する不正な行為による被害の防止に関する法律
+tier: 0
+title: 重要電子計算機に対する不正な行為による被害の防止に関する法律
+law_id: 507AC0000000042
+official_title: 重要電子計算機に対する不正な行為による被害の防止に関する法律
+aliases:
+- 重要電子計算機に対する不正な行為による被害の防止に関する法律
+---
+
+# 重要電子計算機に対する不正な行為による被害の防止に関する法律
+
+## Metadata
+- Law ID: `507AC0000000042`
+- Law No: 令和七年法律第四十二号
+- Promulgation Date: 20250523

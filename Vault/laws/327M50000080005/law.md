@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000080005
+id: JPLAW:327M50000080005
+law_no: 昭和二十七年文部省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000080005
+promulgation_date: '19520311'
+tags:
+- 学校保健統計調査規則
+tier: 0
+title: 学校保健統計調査規則
+law_id: 327M50000080005
+official_title: 学校保健統計調査規則
+aliases:
+- 学校保健統計調査規則
+---
+
+# 学校保健統計調査規則
+
+## Metadata
+- Law ID: `327M50000080005`
+- Law No: 昭和二十七年文部省令第五号
+- Promulgation Date: 19520311

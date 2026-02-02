@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406AC0000000028
+id: JPLAW:406AC0000000028
+law_no: 平成六年法律第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/406AC0000000028
+promulgation_date: '19940331'
+tags:
+- 平成六年分所得税の特別減税の実施等のための公債の発行の特例に関する法律
+tier: 0
+title: 平成六年分所得税の特別減税の実施等のための公債の発行の特例に関する法律
+law_id: 406AC0000000028
+official_title: 平成六年分所得税の特別減税の実施等のための公債の発行の特例に関する法律
+aliases:
+- 平成六年分所得税の特別減税の実施等のための公債の発行の特例に関する法律
+---
+
+# 平成六年分所得税の特別減税の実施等のための公債の発行の特例に関する法律
+
+## Metadata
+- Law ID: `406AC0000000028`
+- Law No: 平成六年法律第二十八号
+- Promulgation Date: 19940331

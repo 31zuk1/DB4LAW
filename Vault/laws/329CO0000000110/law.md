@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000110
+id: JPLAW:329CO0000000110
+law_no: 昭和二十九年政令第百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000110
+promulgation_date: '19540524'
+tags:
+- 厚生年金保険法施行令
+tier: 0
+title: 厚生年金保険法施行令
+law_id: 329CO0000000110
+official_title: 厚生年金保険法施行令
+aliases:
+- 厚生年金保険法施行令
+---
+
+# 厚生年金保険法施行令
+
+## Metadata
+- Law ID: `329CO0000000110`
+- Law No: 昭和二十九年政令第百十号
+- Promulgation Date: 19540524

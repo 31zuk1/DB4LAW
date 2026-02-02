@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000297
+id: JPLAW:412CO0000000297
+law_no: 平成十二年政令第二百九十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000297
+promulgation_date: '20000607'
+tags:
+- 国土交通省設置法第四条第一項第二十八号の資産等を定める政令
+tier: 0
+title: 国土交通省設置法第四条第一項第二十八号の資産等を定める政令
+law_id: 412CO0000000297
+official_title: 国土交通省設置法第四条第一項第二十八号の資産等を定める政令
+aliases:
+- 国土交通省設置法第四条第一項第二十八号の資産等を定める政令
+---
+
+# 国土交通省設置法第四条第一項第二十八号の資産等を定める政令
+
+## Metadata
+- Law ID: `412CO0000000297`
+- Law No: 平成十二年政令第二百九十七号
+- Promulgation Date: 20000607

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347AC0000000085
+id: JPLAW:347AC0000000085
+law_no: 昭和四十七年法律第八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/347AC0000000085
+promulgation_date: '19720622'
+tags:
+- 自然環境保全法
+tier: 0
+title: 自然環境保全法
+law_id: 347AC0000000085
+official_title: 自然環境保全法
+aliases:
+- 自然環境保全法
+---
+
+# 自然環境保全法
+
+## Metadata
+- Law ID: `347AC0000000085`
+- Law No: 昭和四十七年法律第八十五号
+- Promulgation Date: 19720622

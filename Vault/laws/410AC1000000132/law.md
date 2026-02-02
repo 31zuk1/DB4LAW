@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC1000000132
+id: JPLAW:410AC1000000132
+law_no: 平成十年法律第百三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC1000000132
+promulgation_date: '19981016'
+tags:
+- 金融機能の再生のための緊急措置に関する法律
+tier: 0
+title: 金融機能の再生のための緊急措置に関する法律
+law_id: 410AC1000000132
+official_title: 金融機能の再生のための緊急措置に関する法律
+aliases:
+- 金融機能の再生のための緊急措置に関する法律
+---
+
+# 金融機能の再生のための緊急措置に関する法律
+
+## Metadata
+- Law ID: `410AC1000000132`
+- Law No: 平成十年法律第百三十二号
+- Promulgation Date: 19981016

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362AC1000000103
+id: JPLAW:362AC1000000103
+law_no: 昭和六十二年法律第百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/362AC1000000103
+promulgation_date: '19870926'
+tags:
+- 流通食品への毒物の混入等の防止等に関する特別措置法
+tier: 0
+title: 流通食品への毒物の混入等の防止等に関する特別措置法
+law_id: 362AC1000000103
+official_title: 流通食品への毒物の混入等の防止等に関する特別措置法
+aliases:
+- 流通食品への毒物の混入等の防止等に関する特別措置法
+---
+
+# 流通食品への毒物の混入等の防止等に関する特別措置法
+
+## Metadata
+- Law ID: `362AC1000000103`
+- Law No: 昭和六十二年法律第百三号
+- Promulgation Date: 19870926

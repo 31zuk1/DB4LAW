@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329AC0000000166
+id: JPLAW:329AC0000000166
+law_no: 昭和二十九年法律第百六十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/329AC0000000166
+promulgation_date: '19540609'
+tags:
+- 日米相互防衛援助協定等に伴う秘密保護法
+tier: 0
+title: 日米相互防衛援助協定等に伴う秘密保護法
+law_id: 329AC0000000166
+official_title: 日米相互防衛援助協定等に伴う秘密保護法
+aliases:
+- 日米相互防衛援助協定等に伴う秘密保護法
+---
+
+# 日米相互防衛援助協定等に伴う秘密保護法
+
+## Metadata
+- Law ID: `329AC0000000166`
+- Law No: 昭和二十九年法律第百六十六号
+- Promulgation Date: 19540609

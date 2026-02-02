@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504AC0000000075
+id: JPLAW:504AC0000000075
+law_no: 令和四年法律第七十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/504AC0000000075
+promulgation_date: '20220622'
+tags:
+- こども家庭庁設置法
+tier: 0
+title: こども家庭庁設置法
+law_id: 504AC0000000075
+official_title: こども家庭庁設置法
+aliases:
+- こども家庭庁設置法
+---
+
+# こども家庭庁設置法
+
+## Metadata
+- Law ID: `504AC0000000075`
+- Law No: 令和四年法律第七十五号
+- Promulgation Date: 20220622

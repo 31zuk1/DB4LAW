@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362AC0000000036
+id: JPLAW:362AC0000000036
+law_no: 昭和六十二年法律第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/362AC0000000036
+promulgation_date: '19870529'
+tags:
+- 多数国間投資保証機関への加盟に伴う措置に関する法律
+tier: 0
+title: 多数国間投資保証機関への加盟に伴う措置に関する法律
+law_id: 362AC0000000036
+official_title: 多数国間投資保証機関への加盟に伴う措置に関する法律
+aliases:
+- 多数国間投資保証機関への加盟に伴う措置に関する法律
+---
+
+# 多数国間投資保証機関への加盟に伴う措置に関する法律
+
+## Metadata
+- Law ID: `362AC0000000036`
+- Law No: 昭和六十二年法律第三十六号
+- Promulgation Date: 19870529

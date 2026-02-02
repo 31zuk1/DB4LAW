@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424CO0000000231
+id: JPLAW:424CO0000000231
+law_no: 平成二十四年政令第二百三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/424CO0000000231
+promulgation_date: '20120914'
+tags:
+- 原子炉安全専門審査会令
+tier: 0
+title: 原子炉安全専門審査会令
+law_id: 424CO0000000231
+official_title: 原子炉安全専門審査会令
+aliases:
+- 原子炉安全専門審査会令
+---
+
+# 原子炉安全専門審査会令
+
+## Metadata
+- Law ID: `424CO0000000231`
+- Law No: 平成二十四年政令第二百三十一号
+- Promulgation Date: 20120914

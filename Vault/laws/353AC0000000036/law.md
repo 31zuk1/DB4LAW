@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353AC0000000036
+id: JPLAW:353AC0000000036
+law_no: 昭和五十三年法律第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/353AC0000000036
+promulgation_date: '19780501'
+tags:
+- 森林組合法
+tier: 0
+title: 森林組合法
+law_id: 353AC0000000036
+official_title: 森林組合法
+aliases:
+- 森林組合法
+---
+
+# 森林組合法
+
+## Metadata
+- Law ID: `353AC0000000036`
+- Law No: 昭和五十三年法律第三十六号
+- Promulgation Date: 19780501

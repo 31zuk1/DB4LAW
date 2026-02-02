@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343M50002100001
+id: JPLAW:343M50002100001
+law_no: 昭和四十三年厚生省・労働省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/343M50002100001
+promulgation_date: '19681128'
+tags:
+- 社会保険労務士法施行規則
+tier: 0
+title: 社会保険労務士法施行規則
+law_id: 343M50002100001
+official_title: 社会保険労務士法施行規則
+aliases:
+- 社会保険労務士法施行規則
+---
+
+# 社会保険労務士法施行規則
+
+## Metadata
+- Law ID: `343M50002100001`
+- Law No: 昭和四十三年厚生省・労働省令第一号
+- Promulgation Date: 19681128

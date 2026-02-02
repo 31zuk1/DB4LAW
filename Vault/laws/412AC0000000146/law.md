@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC0000000146
+id: JPLAW:412AC0000000146
+law_no: 平成十二年法律第百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC0000000146
+promulgation_date: '20001206'
+tags:
+- ヒトに関するクローン技術等の規制に関する法律
+tier: 0
+title: ヒトに関するクローン技術等の規制に関する法律
+law_id: 412AC0000000146
+official_title: ヒトに関するクローン技術等の規制に関する法律
+aliases:
+- ヒトに関するクローン技術等の規制に関する法律
+---
+
+# ヒトに関するクローン技術等の規制に関する法律
+
+## Metadata
+- Law ID: `412AC0000000146`
+- Law No: 平成十二年法律第百四十六号
+- Promulgation Date: 20001206

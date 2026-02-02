@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50010000051
+id: JPLAW:329M50010000051
+law_no: 昭和二十九年農林省令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50010000051
+promulgation_date: '19540818'
+tags:
+- 酪農及び肉用牛生産の振興に関する法律施行規則
+tier: 0
+title: 酪農及び肉用牛生産の振興に関する法律施行規則
+law_id: 329M50010000051
+official_title: 酪農及び肉用牛生産の振興に関する法律施行規則
+aliases:
+- 酪農及び肉用牛生産の振興に関する法律施行規則
+---
+
+# 酪農及び肉用牛生産の振興に関する法律施行規則
+
+## Metadata
+- Law ID: `329M50010000051`
+- Law No: 昭和二十九年農林省令第五十一号
+- Promulgation Date: 19540818

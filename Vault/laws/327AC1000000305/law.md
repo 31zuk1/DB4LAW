@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC1000000305
+id: JPLAW:327AC1000000305
+law_no: 昭和二十七年法律第三百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC1000000305
+promulgation_date: '19520814'
+tags:
+- 日本赤十字社法
+tier: 0
+title: 日本赤十字社法
+law_id: 327AC1000000305
+official_title: 日本赤十字社法
+aliases:
+- 日本赤十字社法
+---
+
+# 日本赤十字社法
+
+## Metadata
+- Law ID: `327AC1000000305`
+- Law No: 昭和二十七年法律第三百五号
+- Promulgation Date: 19520814

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000219
+id: JPLAW:340CO0000000219
+law_no: 昭和四十年政令第二百十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000219
+promulgation_date: '19650622'
+tags:
+- 港則法施行令
+tier: 0
+title: 港則法施行令
+law_id: 340CO0000000219
+official_title: 港則法施行令
+aliases:
+- 港則法施行令
+---
+
+# 港則法施行令
+
+## Metadata
+- Law ID: `340CO0000000219`
+- Law No: 昭和四十年政令第二百十九号
+- Promulgation Date: 19650622

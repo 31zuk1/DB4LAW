@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000080043
+id: JPLAW:410M50000080043
+law_no: 平成十年文部省令第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000080043
+promulgation_date: '19981127'
+tags:
+- 美術品の美術館における公開の促進に関する法律施行規則
+tier: 0
+title: 美術品の美術館における公開の促進に関する法律施行規則
+law_id: 410M50000080043
+official_title: 美術品の美術館における公開の促進に関する法律施行規則
+aliases:
+- 美術品の美術館における公開の促進に関する法律施行規則
+---
+
+# 美術品の美術館における公開の促進に関する法律施行規則
+
+## Metadata
+- Law ID: `410M50000080043`
+- Law No: 平成十年文部省令第四十三号
+- Promulgation Date: 19981127

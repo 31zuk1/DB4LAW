@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50000002033
+id: JPLAW:339M50000002033
+law_no: 昭和三十九年総理府令第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50000002033
+promulgation_date: '19640814'
+tags:
+- 寒冷地手当支給規則
+tier: 0
+title: 寒冷地手当支給規則
+law_id: 339M50000002033
+official_title: 寒冷地手当支給規則
+aliases:
+- 寒冷地手当支給規則
+---
+
+# 寒冷地手当支給規則
+
+## Metadata
+- Law ID: `339M50000002033`
+- Law No: 昭和三十九年総理府令第三十三号
+- Promulgation Date: 19640814

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416RJNJ02003025
+id: JPLAW:416RJNJ02003025
+law_no: 平成十六年人事院規則二―三―二五
+links:
+  egov: https://laws.e-gov.go.jp/law/416RJNJ02003025
+promulgation_date: '20040401'
+tags:
+- 人事院規則二―三（人事院事務総局等の組織）
+tier: 0
+title: 人事院規則二―三（人事院事務総局等の組織）
+law_id: 416RJNJ02003025
+official_title: 人事院規則二―三（人事院事務総局等の組織）
+aliases:
+- 人事院規則二―三（人事院事務総局等の組織）
+---
+
+# 人事院規則二―三（人事院事務総局等の組織）
+
+## Metadata
+- Law ID: `416RJNJ02003025`
+- Law No: 平成十六年人事院規則二―三―二五
+- Promulgation Date: 20040401

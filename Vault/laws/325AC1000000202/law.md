@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC1000000202
+id: JPLAW:325AC1000000202
+law_no: 昭和二十五年法律第二百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC1000000202
+promulgation_date: '19500524'
+tags:
+- 建築士法
+tier: 0
+title: 建築士法
+law_id: 325AC1000000202
+official_title: 建築士法
+aliases:
+- 建築士法
+---
+
+# 建築士法
+
+## Metadata
+- Law ID: `325AC1000000202`
+- Law No: 昭和二十五年法律第二百二号
+- Promulgation Date: 19500524

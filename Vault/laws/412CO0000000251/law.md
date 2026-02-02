@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000251
+id: JPLAW:412CO0000000251
+law_no: 平成十二年政令第二百五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000251
+promulgation_date: '20000607'
+tags:
+- 文部科学省組織令
+tier: 0
+title: 文部科学省組織令
+law_id: 412CO0000000251
+official_title: 文部科学省組織令
+aliases:
+- 文部科学省組織令
+---
+
+# 文部科学省組織令
+
+## Metadata
+- Law ID: `412CO0000000251`
+- Law No: 平成十二年政令第二百五十一号
+- Promulgation Date: 20000607

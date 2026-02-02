@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503M60001000009
+id: JPLAW:503M60001000009
+law_no: 令和三年環境省令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/503M60001000009
+promulgation_date: '20210408'
+tags:
+- 動物の愛護及び管理に関する法律に基づく指定登録機関に関する省令
+tier: 0
+title: 動物の愛護及び管理に関する法律に基づく指定登録機関に関する省令
+law_id: 503M60001000009
+official_title: 動物の愛護及び管理に関する法律に基づく指定登録機関に関する省令
+aliases:
+- 動物の愛護及び管理に関する法律に基づく指定登録機関に関する省令
+---
+
+# 動物の愛護及び管理に関する法律に基づく指定登録機関に関する省令
+
+## Metadata
+- Law ID: `503M60001000009`
+- Law No: 令和三年環境省令第九号
+- Promulgation Date: 20210408

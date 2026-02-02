@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000010047
+id: JPLAW:329M50000010047
+law_no: 昭和二十九年法務省令第四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000010047
+promulgation_date: '19540424'
+tags:
+- 保護司実費弁償金支給規則
+tier: 0
+title: 保護司実費弁償金支給規則
+law_id: 329M50000010047
+official_title: 保護司実費弁償金支給規則
+aliases:
+- 保護司実費弁償金支給規則
+---
+
+# 保護司実費弁償金支給規則
+
+## Metadata
+- Law ID: `329M50000010047`
+- Law No: 昭和二十九年法務省令第四十七号
+- Promulgation Date: 19540424

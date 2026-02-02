@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322R00000001001
+id: JPLAW:322R00000001001
+law_no: 昭和二十二年会計検査院規則第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/322R00000001001
+promulgation_date: '19470503'
+tags:
+- 会計検査院規則の公布に関する規則
+tier: 0
+title: 会計検査院規則の公布に関する規則
+law_id: 322R00000001001
+official_title: 会計検査院規則の公布に関する規則
+aliases:
+- 会計検査院規則の公布に関する規則
+---
+
+# 会計検査院規則の公布に関する規則
+
+## Metadata
+- Law ID: `322R00000001001`
+- Law No: 昭和二十二年会計検査院規則第一号
+- Promulgation Date: 19470503

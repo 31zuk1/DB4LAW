@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000002086
+id: JPLAW:329M50000002086
+law_no: 昭和二十九年総理府令第八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000002086
+promulgation_date: '19541210'
+tags:
+- 降水量調査作業規程準則
+tier: 0
+title: 降水量調査作業規程準則
+law_id: 329M50000002086
+official_title: 降水量調査作業規程準則
+aliases:
+- 降水量調査作業規程準則
+---
+
+# 降水量調査作業規程準則
+
+## Metadata
+- Law ID: `329M50000002086`
+- Law No: 昭和二十九年総理府令第八十六号
+- Promulgation Date: 19541210

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC0000000127
+id: JPLAW:412AC0000000127
+law_no: 平成十二年法律第百二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC0000000127
+promulgation_date: '20001127'
+tags:
+- 公共工事の入札及び契約の適正化の促進に関する法律
+tier: 0
+title: 公共工事の入札及び契約の適正化の促進に関する法律
+law_id: 412AC0000000127
+official_title: 公共工事の入札及び契約の適正化の促進に関する法律
+aliases:
+- 公共工事の入札及び契約の適正化の促進に関する法律
+---
+
+# 公共工事の入札及び契約の適正化の促進に関する法律
+
+## Metadata
+- Law ID: `412AC0000000127`
+- Law No: 平成十二年法律第百二十七号
+- Promulgation Date: 20001127

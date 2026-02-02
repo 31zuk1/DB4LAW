@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000513
+id: JPLAW:415CO0000000513
+law_no: 平成十五年政令第五百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000513
+promulgation_date: '20031212'
+tags:
+- 司法試験委員会令
+tier: 0
+title: 司法試験委員会令
+law_id: 415CO0000000513
+official_title: 司法試験委員会令
+aliases:
+- 司法試験委員会令
+---
+
+# 司法試験委員会令
+
+## Metadata
+- Law ID: `415CO0000000513`
+- Law No: 平成十五年政令第五百十三号
+- Promulgation Date: 20031212

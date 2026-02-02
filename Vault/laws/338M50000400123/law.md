@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338M50000400123
+id: JPLAW:338M50000400123
+law_no: 昭和三十八年通商産業省令第百二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/338M50000400123
+promulgation_date: '19631019'
+tags:
+- 中小企業支援事業の実施に関する基準を定める省令
+tier: 0
+title: 中小企業支援事業の実施に関する基準を定める省令
+law_id: 338M50000400123
+official_title: 中小企業支援事業の実施に関する基準を定める省令
+aliases:
+- 中小企業支援事業の実施に関する基準を定める省令
+---
+
+# 中小企業支援事業の実施に関する基準を定める省令
+
+## Metadata
+- Law ID: `338M50000400123`
+- Law No: 昭和三十八年通商産業省令第百二十三号
+- Promulgation Date: 19631019

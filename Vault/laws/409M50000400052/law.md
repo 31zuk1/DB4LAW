@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409M50000400052
+id: JPLAW:409M50000400052
+law_no: 平成九年通商産業省令第五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/409M50000400052
+promulgation_date: '19970327'
+tags:
+- 電気設備に関する技術基準を定める省令
+tier: 0
+title: 電気設備に関する技術基準を定める省令
+law_id: 409M50000400052
+official_title: 電気設備に関する技術基準を定める省令
+aliases:
+- 電気設備に関する技術基準を定める省令
+---
+
+# 電気設備に関する技術基準を定める省令
+
+## Metadata
+- Law ID: `409M50000400052`
+- Law No: 平成九年通商産業省令第五十二号
+- Promulgation Date: 19970327

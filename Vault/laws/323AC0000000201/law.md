@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000201
+id: JPLAW:323AC0000000201
+law_no: 昭和二十三年法律第二百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000201
+promulgation_date: '19480730'
+tags:
+- 医師法
+tier: 0
+title: 医師法
+law_id: 323AC0000000201
+official_title: 医師法
+aliases:
+- 医師法
+---
+
+# 医師法
+
+## Metadata
+- Law ID: `323AC0000000201`
+- Law No: 昭和二十三年法律第二百一号
+- Promulgation Date: 19480730

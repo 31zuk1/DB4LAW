@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 130IO0000000382
+id: JPLAW:130IO0000000382
+law_no: 明治三十年勅令第三百八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/130IO0000000382
+promulgation_date: '18971026'
+tags:
+- 砂防法施行規程
+tier: 0
+title: 砂防法施行規程
+law_id: 130IO0000000382
+official_title: 砂防法施行規程
+aliases:
+- 砂防法施行規程
+---
+
+# 砂防法施行規程
+
+## Metadata
+- Law ID: `130IO0000000382`
+- Law No: 明治三十年勅令第三百八十二号
+- Promulgation Date: 18971026

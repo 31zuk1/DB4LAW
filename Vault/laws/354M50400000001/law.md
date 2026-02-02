@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354M50400000001
+id: JPLAW:354M50400000001
+law_no: 昭和五十四年国家公安委員会規則第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/354M50400000001
+promulgation_date: '19790201'
+tags:
+- 警衛要則
+tier: 0
+title: 警衛要則
+law_id: 354M50400000001
+official_title: 警衛要則
+aliases:
+- 警衛要則
+---
+
+# 警衛要則
+
+## Metadata
+- Law ID: `354M50400000001`
+- Law No: 昭和五十四年国家公安委員会規則第一号
+- Promulgation Date: 19790201

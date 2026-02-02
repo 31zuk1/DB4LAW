@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417M60000200124
+id: JPLAW:417M60000200124
+law_no: 平成十七年農林水産省令第百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/417M60000200124
+promulgation_date: '20051228'
+tags:
+- 木材統計調査規則
+tier: 0
+title: 木材統計調査規則
+law_id: 417M60000200124
+official_title: 木材統計調査規則
+aliases:
+- 木材統計調査規則
+---
+
+# 木材統計調査規則
+
+## Metadata
+- Law ID: `417M60000200124`
+- Law No: 平成十七年農林水産省令第百二十四号
+- Promulgation Date: 20051228

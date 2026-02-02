@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 321IO0000000391
+id: JPLAW:321IO0000000391
+law_no: 昭和二十一年勅令第三百九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/321IO0000000391
+promulgation_date: '19460815'
+tags:
+- 会社経理応急措置法施行令
+tier: 0
+title: 会社経理応急措置法施行令
+law_id: 321IO0000000391
+official_title: 会社経理応急措置法施行令
+aliases:
+- 会社経理応急措置法施行令
+---
+
+# 会社経理応急措置法施行令
+
+## Metadata
+- Law ID: `321IO0000000391`
+- Law No: 昭和二十一年勅令第三百九十一号
+- Promulgation Date: 19460815

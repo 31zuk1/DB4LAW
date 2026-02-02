@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000212
+id: JPLAW:329CO0000000212
+law_no: 昭和二十九年政令第二百十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000212
+promulgation_date: '19540723'
+tags:
+- 学校給食法施行令
+tier: 0
+title: 学校給食法施行令
+law_id: 329CO0000000212
+official_title: 学校給食法施行令
+aliases:
+- 学校給食法施行令
+---
+
+# 学校給食法施行令
+
+## Metadata
+- Law ID: `329CO0000000212`
+- Law No: 昭和二十九年政令第二百十二号
+- Promulgation Date: 19540723

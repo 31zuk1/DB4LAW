@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404CO0000000357
+id: JPLAW:404CO0000000357
+law_no: 平成四年政令第三百五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/404CO0000000357
+promulgation_date: '19921118'
+tags:
+- 計量単位令
+tier: 0
+title: 計量単位令
+law_id: 404CO0000000357
+official_title: 計量単位令
+aliases:
+- 計量単位令
+---
+
+# 計量単位令
+
+## Metadata
+- Law ID: `404CO0000000357`
+- Law No: 平成四年政令第三百五十七号
+- Promulgation Date: 19921118

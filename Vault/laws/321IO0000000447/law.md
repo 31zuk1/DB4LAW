@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 321IO0000000447
+id: JPLAW:321IO0000000447
+law_no: 昭和二十一年勅令第四百四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/321IO0000000447
+promulgation_date: '19460930'
+tags:
+- 人口動態調査令
+tier: 0
+title: 人口動態調査令
+law_id: 321IO0000000447
+official_title: 人口動態調査令
+aliases:
+- 人口動態調査令
+---
+
+# 人口動態調査令
+
+## Metadata
+- Law ID: `321IO0000000447`
+- Law No: 昭和二十一年勅令第四百四十七号
+- Promulgation Date: 19460930

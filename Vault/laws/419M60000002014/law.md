@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000002014
+id: JPLAW:419M60000002014
+law_no: 平成十九年内閣府令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000002014
+promulgation_date: '20070124'
+tags:
+- 道州制特別区域における広域行政の推進に関する法律施行規則
+tier: 0
+title: 道州制特別区域における広域行政の推進に関する法律施行規則
+law_id: 419M60000002014
+official_title: 道州制特別区域における広域行政の推進に関する法律施行規則
+aliases:
+- 道州制特別区域における広域行政の推進に関する法律施行規則
+---
+
+# 道州制特別区域における広域行政の推進に関する法律施行規則
+
+## Metadata
+- Law ID: `419M60000002014`
+- Law No: 平成十九年内閣府令第十四号
+- Promulgation Date: 20070124

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341M50000100045
+id: JPLAW:341M50000100045
+law_no: 昭和四十一年厚生省令第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/341M50000100045
+promulgation_date: '19661226'
+tags:
+- 製菓衛生師法施行規則
+tier: 0
+title: 製菓衛生師法施行規則
+law_id: 341M50000100045
+official_title: 製菓衛生師法施行規則
+aliases:
+- 製菓衛生師法施行規則
+---
+
+# 製菓衛生師法施行規則
+
+## Metadata
+- Law ID: `341M50000100045`
+- Law No: 昭和四十一年厚生省令第四十五号
+- Promulgation Date: 19661226

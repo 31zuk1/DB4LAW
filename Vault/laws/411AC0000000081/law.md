@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000081
+id: JPLAW:411AC0000000081
+law_no: 平成十一年法律第八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000081
+promulgation_date: '19990623'
+tags:
+- 住宅の品質確保の促進等に関する法律
+tier: 0
+title: 住宅の品質確保の促進等に関する法律
+law_id: 411AC0000000081
+official_title: 住宅の品質確保の促進等に関する法律
+aliases:
+- 住宅の品質確保の促進等に関する法律
+---
+
+# 住宅の品質確保の促進等に関する法律
+
+## Metadata
+- Law ID: `411AC0000000081`
+- Law No: 平成十一年法律第八十一号
+- Promulgation Date: 19990623

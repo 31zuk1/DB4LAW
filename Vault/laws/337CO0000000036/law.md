@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337CO0000000036
+id: JPLAW:337CO0000000036
+law_no: 昭和三十七年政令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/337CO0000000036
+promulgation_date: '19620226'
+tags:
+- 低開発地域工業開発促進法施行令
+tier: 0
+title: 低開発地域工業開発促進法施行令
+law_id: 337CO0000000036
+official_title: 低開発地域工業開発促進法施行令
+aliases:
+- 低開発地域工業開発促進法施行令
+---
+
+# 低開発地域工業開発促進法施行令
+
+## Metadata
+- Law ID: `337CO0000000036`
+- Law No: 昭和三十七年政令第三十六号
+- Promulgation Date: 19620226

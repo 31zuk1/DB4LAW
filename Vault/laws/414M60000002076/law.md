@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60000002076
+id: JPLAW:414M60000002076
+law_no: 平成十四年内閣府令第七十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60000002076
+promulgation_date: '20021206'
+tags:
+- 金融商品取引清算機関等に関する内閣府令
+tier: 0
+title: 金融商品取引清算機関等に関する内閣府令
+law_id: 414M60000002076
+official_title: 金融商品取引清算機関等に関する内閣府令
+aliases:
+- 金融商品取引清算機関等に関する内閣府令
+---
+
+# 金融商品取引清算機関等に関する内閣府令
+
+## Metadata
+- Law ID: `414M60000002076`
+- Law No: 平成十四年内閣府令第七十六号
+- Promulgation Date: 20021206

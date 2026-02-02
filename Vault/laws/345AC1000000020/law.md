@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345AC1000000020
+id: JPLAW:345AC1000000020
+law_no: 昭和四十五年法律第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/345AC1000000020
+promulgation_date: '19700414'
+tags:
+- 建築物における衛生的環境の確保に関する法律
+tier: 0
+title: 建築物における衛生的環境の確保に関する法律
+law_id: 345AC1000000020
+official_title: 建築物における衛生的環境の確保に関する法律
+aliases:
+- 建築物における衛生的環境の確保に関する法律
+---
+
+# 建築物における衛生的環境の確保に関する法律
+
+## Metadata
+- Law ID: `345AC1000000020`
+- Law No: 昭和四十五年法律第二十号
+- Promulgation Date: 19700414

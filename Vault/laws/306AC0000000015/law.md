@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 306AC0000000015
+id: JPLAW:306AC0000000015
+law_no: 昭和六年法律第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/306AC0000000015
+promulgation_date: '19310330'
+tags:
+- 抵当証券法
+tier: 0
+title: 抵当証券法
+law_id: 306AC0000000015
+official_title: 抵当証券法
+aliases:
+- 抵当証券法
+---
+
+# 抵当証券法
+
+## Metadata
+- Law ID: `306AC0000000015`
+- Law No: 昭和六年法律第十五号
+- Promulgation Date: 19310330

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332AC0000000177
+id: JPLAW:332AC0000000177
+law_no: 昭和三十二年法律第百七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/332AC0000000177
+promulgation_date: '19570615'
+tags:
+- 水道法
+tier: 0
+title: 水道法
+law_id: 332AC0000000177
+official_title: 水道法
+aliases:
+- 水道法
+---
+
+# 水道法
+
+## Metadata
+- Law ID: `332AC0000000177`
+- Law No: 昭和三十二年法律第百七十七号
+- Promulgation Date: 19570615

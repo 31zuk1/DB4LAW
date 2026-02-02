@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425M60000400034
+id: JPLAW:425M60000400034
+law_no: 平成二十五年経済産業省令第三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/425M60000400034
+promulgation_date: '20130701'
+tags:
+- 電気用品の技術上の基準を定める省令
+tier: 0
+title: 電気用品の技術上の基準を定める省令
+law_id: 425M60000400034
+official_title: 電気用品の技術上の基準を定める省令
+aliases:
+- 電気用品の技術上の基準を定める省令
+---
+
+# 電気用品の技術上の基準を定める省令
+
+## Metadata
+- Law ID: `425M60000400034`
+- Law No: 平成二十五年経済産業省令第三十四号
+- Promulgation Date: 20130701

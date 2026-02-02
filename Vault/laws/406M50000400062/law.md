@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50000400062
+id: JPLAW:406M50000400062
+law_no: 平成六年通商産業省令第六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50000400062
+promulgation_date: '19940928'
+tags:
+- 経済産業省聴聞手続規則
+tier: 0
+title: 経済産業省聴聞手続規則
+law_id: 406M50000400062
+official_title: 経済産業省聴聞手続規則
+aliases:
+- 経済産業省聴聞手続規則
+---
+
+# 経済産業省聴聞手続規則
+
+## Metadata
+- Law ID: `406M50000400062`
+- Law No: 平成六年通商産業省令第六十二号
+- Promulgation Date: 19940928

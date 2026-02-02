@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 142M10000001006
+id: JPLAW:142M10000001006
+law_no: 明治四十二年閣令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/142M10000001006
+promulgation_date: '19090721'
+tags:
+- 軌道抵当取扱規則
+tier: 0
+title: 軌道抵当取扱規則
+law_id: 142M10000001006
+official_title: 軌道抵当取扱規則
+aliases:
+- 軌道抵当取扱規則
+---
+
+# 軌道抵当取扱規則
+
+## Metadata
+- Law ID: `142M10000001006`
+- Law No: 明治四十二年閣令第六号
+- Promulgation Date: 19090721

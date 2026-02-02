@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 313AC0000000071
+id: JPLAW:313AC0000000071
+law_no: 昭和十三年法律第七十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/313AC0000000071
+promulgation_date: '19380402'
+tags:
+- 陸上交通事業調整法
+tier: 0
+title: 陸上交通事業調整法
+law_id: 313AC0000000071
+official_title: 陸上交通事業調整法
+aliases:
+- 陸上交通事業調整法
+---
+
+# 陸上交通事業調整法
+
+## Metadata
+- Law ID: `313AC0000000071`
+- Law No: 昭和十三年法律第七十一号
+- Promulgation Date: 19380402

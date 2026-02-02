@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000296
+id: JPLAW:407CO0000000296
+law_no: 平成七年政令第二百九十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000296
+promulgation_date: '19950714'
+tags:
+- 地震調査研究推進本部令
+tier: 0
+title: 地震調査研究推進本部令
+law_id: 407CO0000000296
+official_title: 地震調査研究推進本部令
+aliases:
+- 地震調査研究推進本部令
+---
+
+# 地震調査研究推進本部令
+
+## Metadata
+- Law ID: `407CO0000000296`
+- Law No: 平成七年政令第二百九十六号
+- Promulgation Date: 19950714

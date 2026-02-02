@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420RPMD03310000
+id: JPLAW:420RPMD03310000
+law_no: 平成二十年三月三十一日内閣総理大臣決定
+links:
+  egov: https://laws.e-gov.go.jp/law/420RPMD03310000
+promulgation_date: '20080331'
+tags:
+- 内閣情報調査室に内閣情報分析官等を置く規則
+tier: 0
+title: 内閣情報調査室に内閣情報分析官等を置く規則
+law_id: 420RPMD03310000
+official_title: 内閣情報調査室に内閣情報分析官等を置く規則
+aliases:
+- 内閣情報調査室に内閣情報分析官等を置く規則
+---
+
+# 内閣情報調査室に内閣情報分析官等を置く規則
+
+## Metadata
+- Law ID: `420RPMD03310000`
+- Law No: 平成二十年三月三十一日内閣総理大臣決定
+- Promulgation Date: 20080331

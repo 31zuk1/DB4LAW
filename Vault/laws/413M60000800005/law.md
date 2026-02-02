@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000800005
+id: JPLAW:413M60000800005
+law_no: 平成十三年国土交通省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000800005
+promulgation_date: '20010106'
+tags:
+- 海難審判所組織規則
+tier: 0
+title: 海難審判所組織規則
+law_id: 413M60000800005
+official_title: 海難審判所組織規則
+aliases:
+- 海難審判所組織規則
+---
+
+# 海難審判所組織規則
+
+## Metadata
+- Law ID: `413M60000800005`
+- Law No: 平成十三年国土交通省令第五号
+- Promulgation Date: 20010106

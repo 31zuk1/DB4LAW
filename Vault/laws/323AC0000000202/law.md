@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000202
+id: JPLAW:323AC0000000202
+law_no: 昭和二十三年法律第二百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000202
+promulgation_date: '19480730'
+tags:
+- 歯科医師法
+tier: 0
+title: 歯科医師法
+law_id: 323AC0000000202
+official_title: 歯科医師法
+aliases:
+- 歯科医師法
+---
+
+# 歯科医師法
+
+## Metadata
+- Law ID: `323AC0000000202`
+- Law No: 昭和二十三年法律第二百二号
+- Promulgation Date: 19480730

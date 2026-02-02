@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000008006
+id: JPLAW:415M60000008006
+law_no: 平成十五年総務省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000008006
+promulgation_date: '20030114'
+tags:
+- 国際郵便規則
+tier: 0
+title: 国際郵便規則
+law_id: 415M60000008006
+official_title: 国際郵便規則
+aliases:
+- 国際郵便規則
+---
+
+# 国際郵便規則
+
+## Metadata
+- Law ID: `415M60000008006`
+- Law No: 平成十五年総務省令第六号
+- Promulgation Date: 20030114

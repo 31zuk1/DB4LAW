@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000388
+id: JPLAW:413CO0000000388
+law_no: 平成十三年政令第三百八十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000388
+promulgation_date: '20011205'
+tags:
+- 不正競争防止法施行令
+tier: 0
+title: 不正競争防止法施行令
+law_id: 413CO0000000388
+official_title: 不正競争防止法施行令
+aliases:
+- 不正競争防止法施行令
+---
+
+# 不正競争防止法施行令
+
+## Metadata
+- Law ID: `413CO0000000388`
+- Law No: 平成十三年政令第三百八十八号
+- Promulgation Date: 20011205

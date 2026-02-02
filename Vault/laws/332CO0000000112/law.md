@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332CO0000000112
+id: JPLAW:332CO0000000112
+law_no: 昭和三十二年政令第百十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/332CO0000000112
+promulgation_date: '19570528'
+tags:
+- 引揚者給付金等支給法施行令
+tier: 0
+title: 引揚者給付金等支給法施行令
+law_id: 332CO0000000112
+official_title: 引揚者給付金等支給法施行令
+aliases:
+- 引揚者給付金等支給法施行令
+---
+
+# 引揚者給付金等支給法施行令
+
+## Metadata
+- Law ID: `332CO0000000112`
+- Law No: 昭和三十二年政令第百十二号
+- Promulgation Date: 19570528

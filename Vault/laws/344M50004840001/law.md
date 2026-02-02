@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344M50004840001
+id: JPLAW:344M50004840001
+law_no: 昭和四十四年大蔵省・運輸省・建設省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/344M50004840001
+promulgation_date: '19690614'
+tags:
+- 財政投融資特別会計特定国有財産整備勘定事務取扱規則
+tier: 0
+title: 財政投融資特別会計特定国有財産整備勘定事務取扱規則
+law_id: 344M50004840001
+official_title: 財政投融資特別会計特定国有財産整備勘定事務取扱規則
+aliases:
+- 財政投融資特別会計特定国有財産整備勘定事務取扱規則
+---
+
+# 財政投融資特別会計特定国有財産整備勘定事務取扱規則
+
+## Metadata
+- Law ID: `344M50004840001`
+- Law No: 昭和四十四年大蔵省・運輸省・建設省令第一号
+- Promulgation Date: 19690614

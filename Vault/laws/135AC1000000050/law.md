@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 135AC1000000050
+id: JPLAW:135AC1000000050
+law_no: 明治三十五年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/135AC1000000050
+promulgation_date: '19021202'
+tags:
+- 明治三十五年法律第五十号（年齢計算ニ関スル法律）
+tier: 0
+title: 明治三十五年法律第五十号（年齢計算ニ関スル法律）
+law_id: 135AC1000000050
+official_title: 明治三十五年法律第五十号（年齢計算ニ関スル法律）
+aliases:
+- 明治三十五年法律第五十号（年齢計算ニ関スル法律）
+---
+
+# 明治三十五年法律第五十号（年齢計算ニ関スル法律）
+
+## Metadata
+- Law ID: `135AC1000000050`
+- Law No: 明治三十五年法律第五十号
+- Promulgation Date: 19021202

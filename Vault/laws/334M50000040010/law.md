@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334M50000040010
+id: JPLAW:334M50000040010
+law_no: 昭和三十四年大蔵省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/334M50000040010
+promulgation_date: '19590225'
+tags:
+- 国家公務員宿舎法施行規則
+tier: 0
+title: 国家公務員宿舎法施行規則
+law_id: 334M50000040010
+official_title: 国家公務員宿舎法施行規則
+aliases:
+- 国家公務員宿舎法施行規則
+---
+
+# 国家公務員宿舎法施行規則
+
+## Metadata
+- Law ID: `334M50000040010`
+- Law No: 昭和三十四年大蔵省令第十号
+- Promulgation Date: 19590225

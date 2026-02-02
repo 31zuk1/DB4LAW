@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000174
+id: JPLAW:411AC0000000174
+law_no: 平成十一年法律第百七十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000174
+promulgation_date: '19991222'
+tags:
+- 国立研究開発法人防災科学技術研究所法
+tier: 0
+title: 国立研究開発法人防災科学技術研究所法
+law_id: 411AC0000000174
+official_title: 国立研究開発法人防災科学技術研究所法
+aliases:
+- 国立研究開発法人防災科学技術研究所法
+---
+
+# 国立研究開発法人防災科学技術研究所法
+
+## Metadata
+- Law ID: `411AC0000000174`
+- Law No: 平成十一年法律第百七十四号
+- Promulgation Date: 19991222

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC1000000045
+id: JPLAW:410AC1000000045
+law_no: 平成十年法律第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC1000000045
+promulgation_date: '19980424'
+tags:
+- オウム真理教に係る破産手続における国の債権に関する特例に関する法律
+tier: 0
+title: オウム真理教に係る破産手続における国の債権に関する特例に関する法律
+law_id: 410AC1000000045
+official_title: オウム真理教に係る破産手続における国の債権に関する特例に関する法律
+aliases:
+- オウム真理教に係る破産手続における国の債権に関する特例に関する法律
+---
+
+# オウム真理教に係る破産手続における国の債権に関する特例に関する法律
+
+## Metadata
+- Law ID: `410AC1000000045`
+- Law No: 平成十年法律第四十五号
+- Promulgation Date: 19980424

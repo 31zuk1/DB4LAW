@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000281
+id: JPLAW:329CO0000000281
+law_no: 昭和二十九年政令第二百八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000281
+promulgation_date: '19541020'
+tags:
+- あへんの売渡価格を定める政令
+tier: 0
+title: あへんの売渡価格を定める政令
+law_id: 329CO0000000281
+official_title: あへんの売渡価格を定める政令
+aliases:
+- あへんの売渡価格を定める政令
+---
+
+# あへんの売渡価格を定める政令
+
+## Metadata
+- Law ID: `329CO0000000281`
+- Law No: 昭和二十九年政令第二百八十一号
+- Promulgation Date: 19541020

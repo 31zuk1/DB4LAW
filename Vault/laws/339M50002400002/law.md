@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50002400002
+id: JPLAW:339M50002400002
+law_no: 昭和三十九年通商産業省・労働省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50002400002
+promulgation_date: '19640930'
+tags:
+- 鉱業に係る労働災害防止協会に関する省令
+tier: 0
+title: 鉱業に係る労働災害防止協会に関する省令
+law_id: 339M50002400002
+official_title: 鉱業に係る労働災害防止協会に関する省令
+aliases:
+- 鉱業に係る労働災害防止協会に関する省令
+---
+
+# 鉱業に係る労働災害防止協会に関する省令
+
+## Metadata
+- Law ID: `339M50002400002`
+- Law No: 昭和三十九年通商産業省・労働省令第二号
+- Promulgation Date: 19640930

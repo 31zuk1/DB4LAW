@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000024
+id: JPLAW:412CO0000000024
+law_no: 平成十二年政令第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000024
+promulgation_date: '20000128'
+tags:
+- 後見登記等に関する政令
+tier: 0
+title: 後見登記等に関する政令
+law_id: 412CO0000000024
+official_title: 後見登記等に関する政令
+aliases:
+- 後見登記等に関する政令
+---
+
+# 後見登記等に関する政令
+
+## Metadata
+- Law ID: `412CO0000000024`
+- Law No: 平成十二年政令第二十四号
+- Promulgation Date: 20000128

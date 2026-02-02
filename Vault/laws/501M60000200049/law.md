@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501M60000200049
+id: JPLAW:501M60000200049
+law_no: 令和元年農林水産省令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/501M60000200049
+promulgation_date: '20191219'
+tags:
+- 樹木採取権登録令施行規則
+tier: 0
+title: 樹木採取権登録令施行規則
+law_id: 501M60000200049
+official_title: 樹木採取権登録令施行規則
+aliases:
+- 樹木採取権登録令施行規則
+---
+
+# 樹木採取権登録令施行規則
+
+## Metadata
+- Law ID: `501M60000200049`
+- Law No: 令和元年農林水産省令第四十九号
+- Promulgation Date: 20191219

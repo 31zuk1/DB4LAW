@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419AC0000000059
+id: JPLAW:419AC0000000059
+law_no: 平成十九年法律第五十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/419AC0000000059
+promulgation_date: '20070525'
+tags:
+- 地域公共交通の活性化及び再生に関する法律
+tier: 0
+title: 地域公共交通の活性化及び再生に関する法律
+law_id: 419AC0000000059
+official_title: 地域公共交通の活性化及び再生に関する法律
+aliases:
+- 地域公共交通の活性化及び再生に関する法律
+---
+
+# 地域公共交通の活性化及び再生に関する法律
+
+## Metadata
+- Law ID: `419AC0000000059`
+- Law No: 平成十九年法律第五十九号
+- Promulgation Date: 20070525

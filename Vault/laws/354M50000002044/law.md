@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354M50000002044
+id: JPLAW:354M50000002044
+law_no: 昭和五十四年総理府令第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/354M50000002044
+promulgation_date: '19791001'
+tags:
+- 公害等調整委員会の事務局総務課に調査官を置く省令
+tier: 0
+title: 公害等調整委員会の事務局総務課に調査官を置く省令
+law_id: 354M50000002044
+official_title: 公害等調整委員会の事務局総務課に調査官を置く省令
+aliases:
+- 公害等調整委員会の事務局総務課に調査官を置く省令
+---
+
+# 公害等調整委員会の事務局総務課に調査官を置く省令
+
+## Metadata
+- Law ID: `354M50000002044`
+- Law No: 昭和五十四年総理府令第四十四号
+- Promulgation Date: 19791001

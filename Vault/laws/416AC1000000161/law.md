@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416AC1000000161
+id: JPLAW:416AC1000000161
+law_no: 平成十六年法律第百六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/416AC1000000161
+promulgation_date: '20041208'
+tags:
+- 犯罪被害者等基本法
+tier: 0
+title: 犯罪被害者等基本法
+law_id: 416AC1000000161
+official_title: 犯罪被害者等基本法
+aliases:
+- 犯罪被害者等基本法
+---
+
+# 犯罪被害者等基本法
+
+## Metadata
+- Law ID: `416AC1000000161`
+- Law No: 平成十六年法律第百六十一号
+- Promulgation Date: 20041208

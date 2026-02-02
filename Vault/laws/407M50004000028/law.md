@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407M50004000028
+id: JPLAW:407M50004000028
+law_no: 平成七年建設省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/407M50004000028
+promulgation_date: '19951225'
+tags:
+- 建築物の耐震改修の促進に関する法律施行規則
+tier: 0
+title: 建築物の耐震改修の促進に関する法律施行規則
+law_id: 407M50004000028
+official_title: 建築物の耐震改修の促進に関する法律施行規則
+aliases:
+- 建築物の耐震改修の促進に関する法律施行規則
+---
+
+# 建築物の耐震改修の促進に関する法律施行規則
+
+## Metadata
+- Law ID: `407M50004000028`
+- Law No: 平成七年建設省令第二十八号
+- Promulgation Date: 19951225

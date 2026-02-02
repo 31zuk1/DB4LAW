@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334AC0000000141
+id: JPLAW:334AC0000000141
+law_no: 昭和三十四年法律第百四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/334AC0000000141
+promulgation_date: '19590416'
+tags:
+- 国民年金法
+tier: 0
+title: 国民年金法
+law_id: 334AC0000000141
+official_title: 国民年金法
+aliases:
+- 国民年金法
+---
+
+# 国民年金法
+
+## Metadata
+- Law ID: `334AC0000000141`
+- Law No: 昭和三十四年法律第百四十一号
+- Promulgation Date: 19590416

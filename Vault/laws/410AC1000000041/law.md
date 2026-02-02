@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC1000000041
+id: JPLAW:410AC1000000041
+law_no: 平成十年法律第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC1000000041
+promulgation_date: '19980417'
+tags:
+- 優良田園住宅の建設の促進に関する法律
+tier: 0
+title: 優良田園住宅の建設の促進に関する法律
+law_id: 410AC1000000041
+official_title: 優良田園住宅の建設の促進に関する法律
+aliases:
+- 優良田園住宅の建設の促進に関する法律
+---
+
+# 優良田園住宅の建設の促進に関する法律
+
+## Metadata
+- Law ID: `410AC1000000041`
+- Law No: 平成十年法律第四十一号
+- Promulgation Date: 19980417

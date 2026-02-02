@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC0000000030
+id: JPLAW:333AC0000000030
+law_no: 昭和三十三年法律第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC0000000030
+promulgation_date: '19580331'
+tags:
+- 地すべり等防止法
+tier: 0
+title: 地すべり等防止法
+law_id: 333AC0000000030
+official_title: 地すべり等防止法
+aliases:
+- 地すべり等防止法
+---
+
+# 地すべり等防止法
+
+## Metadata
+- Law ID: `333AC0000000030`
+- Law No: 昭和三十三年法律第三十号
+- Promulgation Date: 19580331

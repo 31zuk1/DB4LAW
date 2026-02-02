@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329AC0000000097
+id: JPLAW:329AC0000000097
+law_no: 昭和二十九年法律第九十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/329AC0000000097
+promulgation_date: '19540515'
+tags:
+- 建設機械抵当法
+tier: 0
+title: 建設機械抵当法
+law_id: 329AC0000000097
+official_title: 建設機械抵当法
+aliases:
+- 建設機械抵当法
+---
+
+# 建設機械抵当法
+
+## Metadata
+- Law ID: `329AC0000000097`
+- Law No: 昭和二十九年法律第九十七号
+- Promulgation Date: 19540515

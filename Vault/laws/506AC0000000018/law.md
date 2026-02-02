@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506AC0000000018
+id: JPLAW:506AC0000000018
+law_no: 令和六年法律第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/506AC0000000018
+promulgation_date: '20240419'
+tags:
+- 地域における生物の多様性の増進のための活動の促進等に関する法律
+tier: 0
+title: 地域における生物の多様性の増進のための活動の促進等に関する法律
+law_id: 506AC0000000018
+official_title: 地域における生物の多様性の増進のための活動の促進等に関する法律
+aliases:
+- 地域における生物の多様性の増進のための活動の促進等に関する法律
+---
+
+# 地域における生物の多様性の増進のための活動の促進等に関する法律
+
+## Metadata
+- Law ID: `506AC0000000018`
+- Law No: 令和六年法律第十八号
+- Promulgation Date: 20240419

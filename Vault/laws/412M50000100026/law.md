@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50000100026
+id: JPLAW:412M50000100026
+law_no: 平成十二年厚生省令第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50000100026
+promulgation_date: '20000315'
+tags:
+- 介護保険の調整交付金等の交付額の算定に関する省令
+tier: 0
+title: 介護保険の調整交付金等の交付額の算定に関する省令
+law_id: 412M50000100026
+official_title: 介護保険の調整交付金等の交付額の算定に関する省令
+aliases:
+- 介護保険の調整交付金等の交付額の算定に関する省令
+---
+
+# 介護保険の調整交付金等の交付額の算定に関する省令
+
+## Metadata
+- Law ID: `412M50000100026`
+- Law No: 平成十二年厚生省令第二十六号
+- Promulgation Date: 20000315

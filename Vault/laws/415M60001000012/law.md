@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60001000012
+id: JPLAW:415M60001000012
+law_no: 平成十五年環境省令第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60001000012
+promulgation_date: '20030331'
+tags:
+- 環境省関係構造改革特別区域法施行規則
+tier: 0
+title: 環境省関係構造改革特別区域法施行規則
+law_id: 415M60001000012
+official_title: 環境省関係構造改革特別区域法施行規則
+aliases:
+- 環境省関係構造改革特別区域法施行規則
+---
+
+# 環境省関係構造改革特別区域法施行規則
+
+## Metadata
+- Law ID: `415M60001000012`
+- Law No: 平成十五年環境省令第十二号
+- Promulgation Date: 20030331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50080000010
+id: JPLAW:325M50080000010
+law_no: 昭和二十五年電波監理委員会規則第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50080000010
+promulgation_date: '19500630'
+tags:
+- 放送法施行規則
+tier: 0
+title: 放送法施行規則
+law_id: 325M50080000010
+official_title: 放送法施行規則
+aliases:
+- 放送法施行規則
+---
+
+# 放送法施行規則
+
+## Metadata
+- Law ID: `325M50080000010`
+- Law No: 昭和二十五年電波監理委員会規則第十号
+- Promulgation Date: 19500630

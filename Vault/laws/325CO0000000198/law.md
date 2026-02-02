@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000198
+id: JPLAW:325CO0000000198
+law_no: 昭和二十五年政令第百九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000198
+promulgation_date: '19500620'
+tags:
+- 肥料の品質の確保等に関する法律施行令
+tier: 0
+title: 肥料の品質の確保等に関する法律施行令
+law_id: 325CO0000000198
+official_title: 肥料の品質の確保等に関する法律施行令
+aliases:
+- 肥料の品質の確保等に関する法律施行令
+---
+
+# 肥料の品質の確保等に関する法律施行令
+
+## Metadata
+- Law ID: `325CO0000000198`
+- Law No: 昭和二十五年政令第百九十八号
+- Promulgation Date: 19500620

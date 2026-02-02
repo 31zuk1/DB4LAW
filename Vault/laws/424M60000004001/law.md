@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424M60000004001
+id: JPLAW:424M60000004001
+law_no: 平成二十四年復興庁令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/424M60000004001
+promulgation_date: '20120130'
+tags:
+- 復興庁組織規則
+tier: 0
+title: 復興庁組織規則
+law_id: 424M60000004001
+official_title: 復興庁組織規則
+aliases:
+- 復興庁組織規則
+---
+
+# 復興庁組織規則
+
+## Metadata
+- Law ID: `424M60000004001`
+- Law No: 平成二十四年復興庁令第一号
+- Promulgation Date: 20120130

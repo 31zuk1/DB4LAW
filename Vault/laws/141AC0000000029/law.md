@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 141AC0000000029
+id: JPLAW:141AC0000000029
+law_no: 明治四十一年法律第二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/141AC0000000029
+promulgation_date: '19080328'
+tags:
+- 刑法施行法
+tier: 0
+title: 刑法施行法
+law_id: 141AC0000000029
+official_title: 刑法施行法
+aliases:
+- 刑法施行法
+---
+
+# 刑法施行法
+
+## Metadata
+- Law ID: `141AC0000000029`
+- Law No: 明治四十一年法律第二十九号
+- Promulgation Date: 19080328

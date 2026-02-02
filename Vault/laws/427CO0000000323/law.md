@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427CO0000000323
+id: JPLAW:427CO0000000323
+law_no: 平成二十七年政令第三百二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/427CO0000000323
+promulgation_date: '20150909'
+tags:
+- がん登録等の推進に関する法律施行令
+tier: 0
+title: がん登録等の推進に関する法律施行令
+law_id: 427CO0000000323
+official_title: がん登録等の推進に関する法律施行令
+aliases:
+- がん登録等の推進に関する法律施行令
+---
+
+# がん登録等の推進に関する法律施行令
+
+## Metadata
+- Law ID: `427CO0000000323`
+- Law No: 平成二十七年政令第三百二十三号
+- Promulgation Date: 20150909

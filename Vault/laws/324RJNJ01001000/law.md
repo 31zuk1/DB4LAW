@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324RJNJ01001000
+id: JPLAW:324RJNJ01001000
+law_no: 昭和二十四年人事院規則一―一
+links:
+  egov: https://laws.e-gov.go.jp/law/324RJNJ01001000
+promulgation_date: '19490101'
+tags:
+- 人事院規則一―一（規則の分類）
+tier: 0
+title: 人事院規則一―一（規則の分類）
+law_id: 324RJNJ01001000
+official_title: 人事院規則一―一（規則の分類）
+aliases:
+- 人事院規則一―一（規則の分類）
+---
+
+# 人事院規則一―一（規則の分類）
+
+## Metadata
+- Law ID: `324RJNJ01001000`
+- Law No: 昭和二十四年人事院規則一―一
+- Promulgation Date: 19490101

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506M60000028001
+id: JPLAW:506M60000028001
+law_no: 令和六年総務省・外務省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/506M60000028001
+promulgation_date: '20240524'
+tags:
+- 個人番号カードを引き渡すことができる領事官等に関する省令
+tier: 0
+title: 個人番号カードを引き渡すことができる領事官等に関する省令
+law_id: 506M60000028001
+official_title: 個人番号カードを引き渡すことができる領事官等に関する省令
+aliases:
+- 個人番号カードを引き渡すことができる領事官等に関する省令
+---
+
+# 個人番号カードを引き渡すことができる領事官等に関する省令
+
+## Metadata
+- Law ID: `506M60000028001`
+- Law No: 令和六年総務省・外務省令第一号
+- Promulgation Date: 20240524

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504AC0000000051
+id: JPLAW:504AC0000000051
+law_no: 令和四年法律第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/504AC0000000051
+promulgation_date: '20220525'
+tags:
+- 国際卓越研究大学の研究及び研究成果の活用のための体制の強化に関する法律
+tier: 0
+title: 国際卓越研究大学の研究及び研究成果の活用のための体制の強化に関する法律
+law_id: 504AC0000000051
+official_title: 国際卓越研究大学の研究及び研究成果の活用のための体制の強化に関する法律
+aliases:
+- 国際卓越研究大学の研究及び研究成果の活用のための体制の強化に関する法律
+---
+
+# 国際卓越研究大学の研究及び研究成果の活用のための体制の強化に関する法律
+
+## Metadata
+- Law ID: `504AC0000000051`
+- Law No: 令和四年法律第五十一号
+- Promulgation Date: 20220525

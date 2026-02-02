@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334M50000800035
+id: JPLAW:334M50000800035
+law_no: 昭和三十四年運輸省令第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/334M50000800035
+promulgation_date: '19590710'
+tags:
+- 船員の最低賃金に関する省令
+tier: 0
+title: 船員の最低賃金に関する省令
+law_id: 334M50000800035
+official_title: 船員の最低賃金に関する省令
+aliases:
+- 船員の最低賃金に関する省令
+---
+
+# 船員の最低賃金に関する省令
+
+## Metadata
+- Law ID: `334M50000800035`
+- Law No: 昭和三十四年運輸省令第三十五号
+- Promulgation Date: 19590710

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327RJNJ11004000
+id: JPLAW:327RJNJ11004000
+law_no: 昭和二十七年人事院規則一一―四
+links:
+  egov: https://laws.e-gov.go.jp/law/327RJNJ11004000
+promulgation_date: '19520523'
+tags:
+- 人事院規則一一―四（職員の身分保障）
+tier: 0
+title: 人事院規則一一―四（職員の身分保障）
+law_id: 327RJNJ11004000
+official_title: 人事院規則一一―四（職員の身分保障）
+aliases:
+- 人事院規則一一―四（職員の身分保障）
+---
+
+# 人事院規則一一―四（職員の身分保障）
+
+## Metadata
+- Law ID: `327RJNJ11004000`
+- Law No: 昭和二十七年人事院規則一一―四
+- Promulgation Date: 19520523

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000014
+id: JPLAW:340CO0000000014
+law_no: 昭和四十年政令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000014
+promulgation_date: '19650211'
+tags:
+- 河川法施行令
+tier: 0
+title: 河川法施行令
+law_id: 340CO0000000014
+official_title: 河川法施行令
+aliases:
+- 河川法施行令
+---
+
+# 河川法施行令
+
+## Metadata
+- Law ID: `340CO0000000014`
+- Law No: 昭和四十年政令第十四号
+- Promulgation Date: 19650211

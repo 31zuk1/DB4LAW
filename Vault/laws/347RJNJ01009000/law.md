@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347RJNJ01009000
+id: JPLAW:347RJNJ01009000
+law_no: 昭和四十七年人事院規則一―九
+links:
+  egov: https://laws.e-gov.go.jp/law/347RJNJ01009000
+promulgation_date: '19720513'
+tags:
+- 人事院規則一―九（沖縄の復帰に伴う国家公務員法等の適用の特別措置等）
+tier: 0
+title: 人事院規則一―九（沖縄の復帰に伴う国家公務員法等の適用の特別措置等）
+law_id: 347RJNJ01009000
+official_title: 人事院規則一―九（沖縄の復帰に伴う国家公務員法等の適用の特別措置等）
+aliases:
+- 人事院規則一―九（沖縄の復帰に伴う国家公務員法等の適用の特別措置等）
+---
+
+# 人事院規則一―九（沖縄の復帰に伴う国家公務員法等の適用の特別措置等）
+
+## Metadata
+- Law ID: `347RJNJ01009000`
+- Law No: 昭和四十七年人事院規則一―九
+- Promulgation Date: 19720513

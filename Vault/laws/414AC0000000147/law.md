@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000147
+id: JPLAW:414AC0000000147
+law_no: 平成十四年法律第百四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000147
+promulgation_date: '20021211'
+tags:
+- 独立行政法人中小企業基盤整備機構法
+tier: 0
+title: 独立行政法人中小企業基盤整備機構法
+law_id: 414AC0000000147
+official_title: 独立行政法人中小企業基盤整備機構法
+aliases:
+- 独立行政法人中小企業基盤整備機構法
+---
+
+# 独立行政法人中小企業基盤整備機構法
+
+## Metadata
+- Law ID: `414AC0000000147`
+- Law No: 平成十四年法律第百四十七号
+- Promulgation Date: 20021211

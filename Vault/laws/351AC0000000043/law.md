@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351AC0000000043
+id: JPLAW:351AC0000000043
+law_no: 昭和五十一年法律第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/351AC0000000043
+promulgation_date: '19760601'
+tags:
+- 漁業経営の改善及び再建整備に関する特別措置法
+tier: 0
+title: 漁業経営の改善及び再建整備に関する特別措置法
+law_id: 351AC0000000043
+official_title: 漁業経営の改善及び再建整備に関する特別措置法
+aliases:
+- 漁業経営の改善及び再建整備に関する特別措置法
+---
+
+# 漁業経営の改善及び再建整備に関する特別措置法
+
+## Metadata
+- Law ID: `351AC0000000043`
+- Law No: 昭和五十一年法律第四十三号
+- Promulgation Date: 19760601

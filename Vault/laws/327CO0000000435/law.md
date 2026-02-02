@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000435
+id: JPLAW:327CO0000000435
+law_no: 昭和二十七年政令第四百三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000435
+promulgation_date: '19521010'
+tags:
+- 援護審査会令
+tier: 0
+title: 援護審査会令
+law_id: 327CO0000000435
+official_title: 援護審査会令
+aliases:
+- 援護審査会令
+---
+
+# 援護審査会令
+
+## Metadata
+- Law ID: `327CO0000000435`
+- Law No: 昭和二十七年政令第四百三十五号
+- Promulgation Date: 19521010

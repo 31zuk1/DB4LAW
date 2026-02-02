@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346M50004010002
+id: JPLAW:346M50004010002
+law_no: 昭和四十六年法務省・建設省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/346M50004010002
+promulgation_date: '19711225'
+tags:
+- 積立式宅地建物販売業者営業保証金規則
+tier: 0
+title: 積立式宅地建物販売業者営業保証金規則
+law_id: 346M50004010002
+official_title: 積立式宅地建物販売業者営業保証金規則
+aliases:
+- 積立式宅地建物販売業者営業保証金規則
+---
+
+# 積立式宅地建物販売業者営業保証金規則
+
+## Metadata
+- Law ID: `346M50004010002`
+- Law No: 昭和四十六年法務省・建設省令第二号
+- Promulgation Date: 19711225

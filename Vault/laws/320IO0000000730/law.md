@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 320IO0000000730
+id: JPLAW:320IO0000000730
+law_no: 昭和二十年勅令第七百三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/320IO0000000730
+promulgation_date: '19451229'
+tags:
+- 昭和二十年勅令第七百三十号（政治犯人等ノ資格回復ニ関スル件）
+tier: 0
+title: 昭和二十年勅令第七百三十号（政治犯人等ノ資格回復ニ関スル件）
+law_id: 320IO0000000730
+official_title: 昭和二十年勅令第七百三十号（政治犯人等ノ資格回復ニ関スル件）
+aliases:
+- 昭和二十年勅令第七百三十号（政治犯人等ノ資格回復ニ関スル件）
+---
+
+# 昭和二十年勅令第七百三十号（政治犯人等ノ資格回復ニ関スル件）
+
+## Metadata
+- Law ID: `320IO0000000730`
+- Law No: 昭和二十年勅令第七百三十号
+- Promulgation Date: 19451229

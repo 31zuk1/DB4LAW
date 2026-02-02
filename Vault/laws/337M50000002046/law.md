@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337M50000002046
+id: JPLAW:337M50000002046
+law_no: 昭和三十七年総理府令第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/337M50000002046
+promulgation_date: '19620907'
+tags:
+- 指定射撃場の指定に関する内閣府令
+tier: 0
+title: 指定射撃場の指定に関する内閣府令
+law_id: 337M50000002046
+official_title: 指定射撃場の指定に関する内閣府令
+aliases:
+- 指定射撃場の指定に関する内閣府令
+---
+
+# 指定射撃場の指定に関する内閣府令
+
+## Metadata
+- Law ID: `337M50000002046`
+- Law No: 昭和三十七年総理府令第四十六号
+- Promulgation Date: 19620907

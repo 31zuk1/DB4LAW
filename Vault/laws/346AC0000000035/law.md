@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346AC0000000035
+id: JPLAW:346AC0000000035
+law_no: 昭和四十六年法律第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/346AC0000000035
+promulgation_date: '19710403'
+tags:
+- 卸売市場法
+tier: 0
+title: 卸売市場法
+law_id: 346AC0000000035
+official_title: 卸売市場法
+aliases:
+- 卸売市場法
+---
+
+# 卸売市場法
+
+## Metadata
+- Law ID: `346AC0000000035`
+- Law No: 昭和四十六年法律第三十五号
+- Promulgation Date: 19710403

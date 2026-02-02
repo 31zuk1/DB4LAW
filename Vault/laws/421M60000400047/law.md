@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421M60000400047
+id: JPLAW:421M60000400047
+law_no: 平成二十一年経済産業省令第四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/421M60000400047
+promulgation_date: '20090828'
+tags:
+- 家庭用品品質表示法の規定に基づく権限の委任に関する省令
+tier: 0
+title: 家庭用品品質表示法の規定に基づく権限の委任に関する省令
+law_id: 421M60000400047
+official_title: 家庭用品品質表示法の規定に基づく権限の委任に関する省令
+aliases:
+- 家庭用品品質表示法の規定に基づく権限の委任に関する省令
+---
+
+# 家庭用品品質表示法の規定に基づく権限の委任に関する省令
+
+## Metadata
+- Law ID: `421M60000400047`
+- Law No: 平成二十一年経済産業省令第四十七号
+- Promulgation Date: 20090828

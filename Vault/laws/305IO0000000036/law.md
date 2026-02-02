@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 305IO0000000036
+id: JPLAW:305IO0000000036
+law_no: 昭和五年勅令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/305IO0000000036
+promulgation_date: '19300306'
+tags:
+- 昭和五年勅令第三十六号（高等師範学校専攻科卒業者ノ称号ニ関スル件）
+tier: 0
+title: 昭和五年勅令第三十六号（高等師範学校専攻科卒業者ノ称号ニ関スル件）
+law_id: 305IO0000000036
+official_title: 昭和五年勅令第三十六号（高等師範学校専攻科卒業者ノ称号ニ関スル件）
+aliases:
+- 昭和五年勅令第三十六号（高等師範学校専攻科卒業者ノ称号ニ関スル件）
+---
+
+# 昭和五年勅令第三十六号（高等師範学校専攻科卒業者ノ称号ニ関スル件）
+
+## Metadata
+- Law ID: `305IO0000000036`
+- Law No: 昭和五年勅令第三十六号
+- Promulgation Date: 19300306

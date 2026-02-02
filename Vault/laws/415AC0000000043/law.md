@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000043
+id: JPLAW:415AC0000000043
+law_no: 平成十五年法律第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000043
+promulgation_date: '20030516'
+tags:
+- 独立行政法人環境再生保全機構法
+tier: 0
+title: 独立行政法人環境再生保全機構法
+law_id: 415AC0000000043
+official_title: 独立行政法人環境再生保全機構法
+aliases:
+- 独立行政法人環境再生保全機構法
+---
+
+# 独立行政法人環境再生保全機構法
+
+## Metadata
+- Law ID: `415AC0000000043`
+- Law No: 平成十五年法律第四十三号
+- Promulgation Date: 20030516

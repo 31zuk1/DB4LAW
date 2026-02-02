@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504RJNJ11012000
+id: JPLAW:504RJNJ11012000
+law_no: 令和四年人事院規則一一―一二
+links:
+  egov: https://laws.e-gov.go.jp/law/504RJNJ11012000
+promulgation_date: '20220218'
+tags:
+- 人事院規則一一―一二（定年退職者等の暫定再任用）
+tier: 0
+title: 人事院規則一一―一二（定年退職者等の暫定再任用）
+law_id: 504RJNJ11012000
+official_title: 人事院規則一一―一二（定年退職者等の暫定再任用）
+aliases:
+- 人事院規則一一―一二（定年退職者等の暫定再任用）
+---
+
+# 人事院規則一一―一二（定年退職者等の暫定再任用）
+
+## Metadata
+- Law ID: `504RJNJ11012000`
+- Law No: 令和四年人事院規則一一―一二
+- Promulgation Date: 20220218

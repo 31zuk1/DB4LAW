@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000800037
+id: JPLAW:420M60000800037
+law_no: 平成二十年国土交通省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000800037
+promulgation_date: '20080528'
+tags:
+- 建築士法に基づく中央指定登録機関等に関する省令
+tier: 0
+title: 建築士法に基づく中央指定登録機関等に関する省令
+law_id: 420M60000800037
+official_title: 建築士法に基づく中央指定登録機関等に関する省令
+aliases:
+- 建築士法に基づく中央指定登録機関等に関する省令
+---
+
+# 建築士法に基づく中央指定登録機関等に関する省令
+
+## Metadata
+- Law ID: `420M60000800037`
+- Law No: 平成二十年国土交通省令第三十七号
+- Promulgation Date: 20080528

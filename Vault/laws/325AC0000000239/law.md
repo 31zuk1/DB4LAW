@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000239
+id: JPLAW:325AC0000000239
+law_no: 昭和二十五年法律第二百三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000239
+promulgation_date: '19500805'
+tags:
+- 商品先物取引法
+tier: 0
+title: 商品先物取引法
+law_id: 325AC0000000239
+official_title: 商品先物取引法
+aliases:
+- 商品先物取引法
+---
+
+# 商品先物取引法
+
+## Metadata
+- Law ID: `325AC0000000239`
+- Law No: 昭和二十五年法律第二百三十九号
+- Promulgation Date: 19500805

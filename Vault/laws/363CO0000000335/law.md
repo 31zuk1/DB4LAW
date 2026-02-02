@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363CO0000000335
+id: JPLAW:363CO0000000335
+law_no: 昭和六十三年政令第三百三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/363CO0000000335
+promulgation_date: '19881213'
+tags:
+- 港湾労働法施行令
+tier: 0
+title: 港湾労働法施行令
+law_id: 363CO0000000335
+official_title: 港湾労働法施行令
+aliases:
+- 港湾労働法施行令
+---
+
+# 港湾労働法施行令
+
+## Metadata
+- Law ID: `363CO0000000335`
+- Law No: 昭和六十三年政令第三百三十五号
+- Promulgation Date: 19881213

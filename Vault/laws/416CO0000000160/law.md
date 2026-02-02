@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000160
+id: JPLAW:416CO0000000160
+law_no: 平成十六年政令第百六十号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000160
+promulgation_date: '20040409'
+tags:
+- 独立行政法人都市再生機構法施行令
+tier: 0
+title: 独立行政法人都市再生機構法施行令
+law_id: 416CO0000000160
+official_title: 独立行政法人都市再生機構法施行令
+aliases:
+- 独立行政法人都市再生機構法施行令
+---
+
+# 独立行政法人都市再生機構法施行令
+
+## Metadata
+- Law ID: `416CO0000000160`
+- Law No: 平成十六年政令第百六十号
+- Promulgation Date: 20040409

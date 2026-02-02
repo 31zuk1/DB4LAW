@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000379
+id: JPLAW:416CO0000000379
+law_no: 平成十六年政令第三百七十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000379
+promulgation_date: '20041201'
+tags:
+- 不動産登記令
+tier: 0
+title: 不動産登記令
+law_id: 416CO0000000379
+official_title: 不動産登記令
+aliases:
+- 不動産登記令
+---
+
+# 不動産登記令
+
+## Metadata
+- Law ID: `416CO0000000379`
+- Law No: 平成十六年政令第三百七十九号
+- Promulgation Date: 20041201

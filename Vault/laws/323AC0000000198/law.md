@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000198
+id: JPLAW:323AC0000000198
+law_no: 昭和二十三年法律第百九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000198
+promulgation_date: '19480729'
+tags:
+- 民生委員法
+tier: 0
+title: 民生委員法
+law_id: 323AC0000000198
+official_title: 民生委員法
+aliases:
+- 民生委員法
+---
+
+# 民生委員法
+
+## Metadata
+- Law ID: `323AC0000000198`
+- Law No: 昭和二十三年法律第百九十八号
+- Promulgation Date: 19480729

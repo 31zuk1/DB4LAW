@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346AC0000000060
+id: JPLAW:346AC0000000060
+law_no: 昭和四十六年法律第六十号
+links:
+  egov: https://laws.e-gov.go.jp/law/346AC0000000060
+promulgation_date: '19710517'
+tags:
+- 海洋水産資源開発促進法
+tier: 0
+title: 海洋水産資源開発促進法
+law_id: 346AC0000000060
+official_title: 海洋水産資源開発促進法
+aliases:
+- 海洋水産資源開発促進法
+---
+
+# 海洋水産資源開発促進法
+
+## Metadata
+- Law ID: `346AC0000000060`
+- Law No: 昭和四十六年法律第六十号
+- Promulgation Date: 19710517

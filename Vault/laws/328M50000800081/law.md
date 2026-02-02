@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M50000800081
+id: JPLAW:328M50000800081
+law_no: 昭和二十八年運輸省令第八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M50000800081
+promulgation_date: '19531225'
+tags:
+- 鉄道軌道整備法施行規則
+tier: 0
+title: 鉄道軌道整備法施行規則
+law_id: 328M50000800081
+official_title: 鉄道軌道整備法施行規則
+aliases:
+- 鉄道軌道整備法施行規則
+---
+
+# 鉄道軌道整備法施行規則
+
+## Metadata
+- Law ID: `328M50000800081`
+- Law No: 昭和二十八年運輸省令第八十一号
+- Promulgation Date: 19531225

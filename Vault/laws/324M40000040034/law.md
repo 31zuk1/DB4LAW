@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M40000040034
+id: JPLAW:324M40000040034
+law_no: 昭和二十四年大蔵省令第三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M40000040034
+promulgation_date: '19490520'
+tags:
+- 閉鎖機関のために特殊清算人のなす公告の方法に関する省令
+tier: 0
+title: 閉鎖機関のために特殊清算人のなす公告の方法に関する省令
+law_id: 324M40000040034
+official_title: 閉鎖機関のために特殊清算人のなす公告の方法に関する省令
+aliases:
+- 閉鎖機関のために特殊清算人のなす公告の方法に関する省令
+---
+
+# 閉鎖機関のために特殊清算人のなす公告の方法に関する省令
+
+## Metadata
+- Law ID: `324M40000040034`
+- Law No: 昭和二十四年大蔵省令第三十四号
+- Promulgation Date: 19490520

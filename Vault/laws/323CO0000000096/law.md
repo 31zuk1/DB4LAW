@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323CO0000000096
+id: JPLAW:323CO0000000096
+law_no: 昭和二十三年政令第九十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/323CO0000000096
+promulgation_date: '19480430'
+tags:
+- 海上保安庁法施行令
+tier: 0
+title: 海上保安庁法施行令
+law_id: 323CO0000000096
+official_title: 海上保安庁法施行令
+aliases:
+- 海上保安庁法施行令
+---
+
+# 海上保安庁法施行令
+
+## Metadata
+- Law ID: `323CO0000000096`
+- Law No: 昭和二十三年政令第九十六号
+- Promulgation Date: 19480430

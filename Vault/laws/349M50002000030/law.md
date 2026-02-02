@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50002000030
+id: JPLAW:349M50002000030
+law_no: 昭和四十九年労働省令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50002000030
+promulgation_date: '19741228'
+tags:
+- 労働者災害補償保険特別支給金支給規則
+tier: 0
+title: 労働者災害補償保険特別支給金支給規則
+law_id: 349M50002000030
+official_title: 労働者災害補償保険特別支給金支給規則
+aliases:
+- 労働者災害補償保険特別支給金支給規則
+---
+
+# 労働者災害補償保険特別支給金支給規則
+
+## Metadata
+- Law ID: `349M50002000030`
+- Law No: 昭和四十九年労働省令第三十号
+- Promulgation Date: 19741228

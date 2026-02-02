@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360M50001000025
+id: JPLAW:360M50001000025
+law_no: 昭和六十年郵政省令第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/360M50001000025
+promulgation_date: '19850401'
+tags:
+- 電気通信事業法施行規則
+tier: 0
+title: 電気通信事業法施行規則
+law_id: 360M50001000025
+official_title: 電気通信事業法施行規則
+aliases:
+- 電気通信事業法施行規則
+---
+
+# 電気通信事業法施行規則
+
+## Metadata
+- Law ID: `360M50001000025`
+- Law No: 昭和六十年郵政省令第二十五号
+- Promulgation Date: 19850401

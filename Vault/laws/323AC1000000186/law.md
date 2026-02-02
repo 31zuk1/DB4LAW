@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC1000000186
+id: JPLAW:323AC1000000186
+law_no: 昭和二十三年法律第百八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC1000000186
+promulgation_date: '19480724'
+tags:
+- 消防法
+tier: 0
+title: 消防法
+law_id: 323AC1000000186
+official_title: 消防法
+aliases:
+- 消防法
+---
+
+# 消防法
+
+## Metadata
+- Law ID: `323AC1000000186`
+- Law No: 昭和二十三年法律第百八十六号
+- Promulgation Date: 19480724

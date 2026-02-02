@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354M50000002042
+id: JPLAW:354M50000002042
+law_no: 昭和五十四年総理府令第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/354M50000002042
+promulgation_date: '19790926'
+tags:
+- 恩給年額を職権により改定する場合の手続等に関する省令
+tier: 0
+title: 恩給年額を職権により改定する場合の手続等に関する省令
+law_id: 354M50000002042
+official_title: 恩給年額を職権により改定する場合の手続等に関する省令
+aliases:
+- 恩給年額を職権により改定する場合の手続等に関する省令
+---
+
+# 恩給年額を職権により改定する場合の手続等に関する省令
+
+## Metadata
+- Law ID: `354M50000002042`
+- Law No: 昭和五十四年総理府令第四十二号
+- Promulgation Date: 19790926

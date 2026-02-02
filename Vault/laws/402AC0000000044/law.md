@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402AC0000000044
+id: JPLAW:402AC0000000044
+law_no: 平成二年法律第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/402AC0000000044
+promulgation_date: '19900622'
+tags:
+- 市民農園整備促進法
+tier: 0
+title: 市民農園整備促進法
+law_id: 402AC0000000044
+official_title: 市民農園整備促進法
+aliases:
+- 市民農園整備促進法
+---
+
+# 市民農園整備促進法
+
+## Metadata
+- Law ID: `402AC0000000044`
+- Law No: 平成二年法律第四十四号
+- Promulgation Date: 19900622

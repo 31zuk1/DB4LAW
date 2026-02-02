@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000096
+id: JPLAW:340CO0000000096
+law_no: 昭和四十年政令第九十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000096
+promulgation_date: '19650331'
+tags:
+- 所得税法施行令
+tier: 0
+title: 所得税法施行令
+law_id: 340CO0000000096
+official_title: 所得税法施行令
+aliases:
+- 所得税法施行令
+---
+
+# 所得税法施行令
+
+## Metadata
+- Law ID: `340CO0000000096`
+- Law No: 昭和四十年政令第九十六号
+- Promulgation Date: 19650331

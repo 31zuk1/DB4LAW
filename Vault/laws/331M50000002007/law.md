@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331M50000002007
+id: JPLAW:331M50000002007
+law_no: 昭和三十一年総理府令第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/331M50000002007
+promulgation_date: '19560309'
+tags:
+- 地方揮発油譲与税法施行規則
+tier: 0
+title: 地方揮発油譲与税法施行規則
+law_id: 331M50000002007
+official_title: 地方揮発油譲与税法施行規則
+aliases:
+- 地方揮発油譲与税法施行規則
+---
+
+# 地方揮発油譲与税法施行規則
+
+## Metadata
+- Law ID: `331M50000002007`
+- Law No: 昭和三十一年総理府令第七号
+- Promulgation Date: 19560309

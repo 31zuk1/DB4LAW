@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423M60000802008
+id: JPLAW:423M60000802008
+law_no: 平成二十三年内閣府・国土交通省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/423M60000802008
+promulgation_date: '20111226'
+tags:
+- 指定避難施設の管理及び協定避難施設の管理協定に関する命令
+tier: 0
+title: 指定避難施設の管理及び協定避難施設の管理協定に関する命令
+law_id: 423M60000802008
+official_title: 指定避難施設の管理及び協定避難施設の管理協定に関する命令
+aliases:
+- 指定避難施設の管理及び協定避難施設の管理協定に関する命令
+---
+
+# 指定避難施設の管理及び協定避難施設の管理協定に関する命令
+
+## Metadata
+- Law ID: `423M60000802008`
+- Law No: 平成二十三年内閣府・国土交通省令第八号
+- Promulgation Date: 20111226

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424AC0100000061
+id: JPLAW:424AC0100000061
+law_no: 平成二十四年法律第六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/424AC0100000061
+promulgation_date: '20120822'
+tags:
+- 消費者教育の推進に関する法律
+tier: 0
+title: 消費者教育の推進に関する法律
+law_id: 424AC0100000061
+official_title: 消費者教育の推進に関する法律
+aliases:
+- 消費者教育の推進に関する法律
+---
+
+# 消費者教育の推進に関する法律
+
+## Metadata
+- Law ID: `424AC0100000061`
+- Law No: 平成二十四年法律第六十一号
+- Promulgation Date: 20120822

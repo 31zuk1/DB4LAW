@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M50000100042
+id: JPLAW:328M50000100042
+law_no: 昭和二十八年厚生省令第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M50000100042
+promulgation_date: '19530911'
+tags:
+- 未帰還者留守家族等援護法施行規則
+tier: 0
+title: 未帰還者留守家族等援護法施行規則
+law_id: 328M50000100042
+official_title: 未帰還者留守家族等援護法施行規則
+aliases:
+- 未帰還者留守家族等援護法施行規則
+---
+
+# 未帰還者留守家族等援護法施行規則
+
+## Metadata
+- Law ID: `328M50000100042`
+- Law No: 昭和二十八年厚生省令第四十二号
+- Promulgation Date: 19530911

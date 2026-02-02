@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50400000003
+id: JPLAW:342M50400000003
+law_no: 昭和四十二年国家公安委員会規則第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50400000003
+promulgation_date: '19670601'
+tags:
+- 巡査長に関する規則
+tier: 0
+title: 巡査長に関する規則
+law_id: 342M50400000003
+official_title: 巡査長に関する規則
+aliases:
+- 巡査長に関する規則
+---
+
+# 巡査長に関する規則
+
+## Metadata
+- Law ID: `342M50400000003`
+- Law No: 昭和四十二年国家公安委員会規則第三号
+- Promulgation Date: 19670601

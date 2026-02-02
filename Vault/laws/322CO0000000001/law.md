@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322CO0000000001
+id: JPLAW:322CO0000000001
+law_no: 昭和二十二年政令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/322CO0000000001
+promulgation_date: '19470503'
+tags:
+- 皇統譜令
+tier: 0
+title: 皇統譜令
+law_id: 322CO0000000001
+official_title: 皇統譜令
+aliases:
+- 皇統譜令
+---
+
+# 皇統譜令
+
+## Metadata
+- Law ID: `322CO0000000001`
+- Law No: 昭和二十二年政令第一号
+- Promulgation Date: 19470503

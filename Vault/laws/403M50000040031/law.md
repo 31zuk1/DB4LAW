@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403M50000040031
+id: JPLAW:403M50000040031
+law_no: 平成三年大蔵省令第三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/403M50000040031
+promulgation_date: '19910606'
+tags:
+- 地価税法施行規則
+tier: 0
+title: 地価税法施行規則
+law_id: 403M50000040031
+official_title: 地価税法施行規則
+aliases:
+- 地価税法施行規則
+---
+
+# 地価税法施行規則
+
+## Metadata
+- Law ID: `403M50000040031`
+- Law No: 平成三年大蔵省令第三十一号
+- Promulgation Date: 19910606

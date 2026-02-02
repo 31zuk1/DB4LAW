@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507CO0000000418
+id: JPLAW:507CO0000000418
+law_no: 令和七年政令第四百十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/507CO0000000418
+promulgation_date: '20251217'
+tags:
+- 船員法等の一部を改正する法律の施行に伴う経過措置に関する政令
+tier: 0
+title: 船員法等の一部を改正する法律の施行に伴う経過措置に関する政令
+law_id: 507CO0000000418
+official_title: 船員法等の一部を改正する法律の施行に伴う経過措置に関する政令
+aliases:
+- 船員法等の一部を改正する法律の施行に伴う経過措置に関する政令
+---
+
+# 船員法等の一部を改正する法律の施行に伴う経過措置に関する政令
+
+## Metadata
+- Law ID: `507CO0000000418`
+- Law No: 令和七年政令第四百十八号
+- Promulgation Date: 20251217

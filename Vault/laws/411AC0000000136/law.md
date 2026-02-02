@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000136
+id: JPLAW:411AC0000000136
+law_no: 平成十一年法律第百三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000136
+promulgation_date: '19990818'
+tags:
+- 組織的な犯罪の処罰及び犯罪収益の規制等に関する法律
+tier: 0
+title: 組織的な犯罪の処罰及び犯罪収益の規制等に関する法律
+law_id: 411AC0000000136
+official_title: 組織的な犯罪の処罰及び犯罪収益の規制等に関する法律
+aliases:
+- 組織的な犯罪の処罰及び犯罪収益の規制等に関する法律
+---
+
+# 組織的な犯罪の処罰及び犯罪収益の規制等に関する法律
+
+## Metadata
+- Law ID: `411AC0000000136`
+- Law No: 平成十一年法律第百三十六号
+- Promulgation Date: 19990818

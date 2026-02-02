@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362AC0000000071
+id: JPLAW:362AC0000000071
+law_no: 昭和六十二年法律第七十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/362AC0000000071
+promulgation_date: '19870609'
+tags:
+- 総合保養地域整備法
+tier: 0
+title: 総合保養地域整備法
+law_id: 362AC0000000071
+official_title: 総合保養地域整備法
+aliases:
+- 総合保養地域整備法
+---
+
+# 総合保養地域整備法
+
+## Metadata
+- Law ID: `362AC0000000071`
+- Law No: 昭和六十二年法律第七十一号
+- Promulgation Date: 19870609

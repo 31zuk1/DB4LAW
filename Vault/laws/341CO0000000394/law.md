@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341CO0000000394
+id: JPLAW:341CO0000000394
+law_no: 昭和四十一年政令第三百九十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/341CO0000000394
+promulgation_date: '19661228'
+tags:
+- 執行官国庫補助基準額令
+tier: 0
+title: 執行官国庫補助基準額令
+law_id: 341CO0000000394
+official_title: 執行官国庫補助基準額令
+aliases:
+- 執行官国庫補助基準額令
+---
+
+# 執行官国庫補助基準額令
+
+## Metadata
+- Law ID: `341CO0000000394`
+- Law No: 昭和四十一年政令第三百九十四号
+- Promulgation Date: 19661228

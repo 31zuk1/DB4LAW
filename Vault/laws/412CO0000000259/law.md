@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000259
+id: JPLAW:412CO0000000259
+law_no: 平成十二年政令第二百五十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000259
+promulgation_date: '20000607'
+tags:
+- 男女共同参画会議令
+tier: 0
+title: 男女共同参画会議令
+law_id: 412CO0000000259
+official_title: 男女共同参画会議令
+aliases:
+- 男女共同参画会議令
+---
+
+# 男女共同参画会議令
+
+## Metadata
+- Law ID: `412CO0000000259`
+- Law No: 平成十二年政令第二百五十九号
+- Promulgation Date: 20000607

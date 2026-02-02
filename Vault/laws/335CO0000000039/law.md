@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335CO0000000039
+id: JPLAW:335CO0000000039
+law_no: 昭和三十五年政令第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/335CO0000000039
+promulgation_date: '19600324'
+tags:
+- 特許登録令
+tier: 0
+title: 特許登録令
+law_id: 335CO0000000039
+official_title: 特許登録令
+aliases:
+- 特許登録令
+---
+
+# 特許登録令
+
+## Metadata
+- Law ID: `335CO0000000039`
+- Law No: 昭和三十五年政令第三十九号
+- Promulgation Date: 19600324

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346M50400000005
+id: JPLAW:346M50400000005
+law_no: 昭和四十六年国家公安委員会規則第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/346M50400000005
+promulgation_date: '19710520'
+tags:
+- 猟銃の口径の長さの特例に関する規則
+tier: 0
+title: 猟銃の口径の長さの特例に関する規則
+law_id: 346M50400000005
+official_title: 猟銃の口径の長さの特例に関する規則
+aliases:
+- 猟銃の口径の長さの特例に関する規則
+---
+
+# 猟銃の口径の長さの特例に関する規則
+
+## Metadata
+- Law ID: `346M50400000005`
+- Law No: 昭和四十六年国家公安委員会規則第五号
+- Promulgation Date: 19710520

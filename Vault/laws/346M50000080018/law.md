@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346M50000080018
+id: JPLAW:346M50000080018
+law_no: 昭和四十六年文部省令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/346M50000080018
+promulgation_date: '19710401'
+tags:
+- 学校法人会計基準
+tier: 0
+title: 学校法人会計基準
+law_id: 346M50000080018
+official_title: 学校法人会計基準
+aliases:
+- 学校法人会計基準
+---
+
+# 学校法人会計基準
+
+## Metadata
+- Law ID: `346M50000080018`
+- Law No: 昭和四十六年文部省令第十八号
+- Promulgation Date: 19710401

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363M50000200004
+id: JPLAW:363M50000200004
+law_no: 昭和六十三年農林水産省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/363M50000200004
+promulgation_date: '19880223'
+tags:
+- 集落地域整備法施行規則
+tier: 0
+title: 集落地域整備法施行規則
+law_id: 363M50000200004
+official_title: 集落地域整備法施行規則
+aliases:
+- 集落地域整備法施行規則
+---
+
+# 集落地域整備法施行規則
+
+## Metadata
+- Law ID: `363M50000200004`
+- Law No: 昭和六十三年農林水産省令第四号
+- Promulgation Date: 19880223

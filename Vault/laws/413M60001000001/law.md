@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60001000001
+id: JPLAW:413M60001000001
+law_no: 平成十三年環境省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60001000001
+promulgation_date: '20010106'
+tags:
+- 環境省組織規則
+tier: 0
+title: 環境省組織規則
+law_id: 413M60001000001
+official_title: 環境省組織規則
+aliases:
+- 環境省組織規則
+---
+
+# 環境省組織規則
+
+## Metadata
+- Law ID: `413M60001000001`
+- Law No: 平成十三年環境省令第一号
+- Promulgation Date: 20010106

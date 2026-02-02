@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341RJNJ17001000
+id: JPLAW:341RJNJ17001000
+law_no: 昭和四十一年人事院規則一七―一
+links:
+  egov: https://laws.e-gov.go.jp/law/341RJNJ17001000
+promulgation_date: '19660709'
+tags:
+- 人事院規則一七―一（職員団体の登録）
+tier: 0
+title: 人事院規則一七―一（職員団体の登録）
+law_id: 341RJNJ17001000
+official_title: 人事院規則一七―一（職員団体の登録）
+aliases:
+- 人事院規則一七―一（職員団体の登録）
+---
+
+# 人事院規則一七―一（職員団体の登録）
+
+## Metadata
+- Law ID: `341RJNJ17001000`
+- Law No: 昭和四十一年人事院規則一七―一
+- Promulgation Date: 19660709

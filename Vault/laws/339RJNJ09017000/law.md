@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339RJNJ09017000
+id: JPLAW:339RJNJ09017000
+law_no: 昭和三十九年人事院規則九―一七
+links:
+  egov: https://laws.e-gov.go.jp/law/339RJNJ09017000
+promulgation_date: '19641226'
+tags:
+- 人事院規則九―一七（俸給の特別調整額）
+tier: 0
+title: 人事院規則九―一七（俸給の特別調整額）
+law_id: 339RJNJ09017000
+official_title: 人事院規則九―一七（俸給の特別調整額）
+aliases:
+- 人事院規則九―一七（俸給の特別調整額）
+---
+
+# 人事院規則九―一七（俸給の特別調整額）
+
+## Metadata
+- Law ID: `339RJNJ09017000`
+- Law No: 昭和三十九年人事院規則九―一七
+- Promulgation Date: 19641226

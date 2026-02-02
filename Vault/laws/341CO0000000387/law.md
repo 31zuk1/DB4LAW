@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341CO0000000387
+id: JPLAW:341CO0000000387
+law_no: 昭和四十一年政令第三百八十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/341CO0000000387
+promulgation_date: '19661224'
+tags:
+- 製菓衛生師法施行令
+tier: 0
+title: 製菓衛生師法施行令
+law_id: 341CO0000000387
+official_title: 製菓衛生師法施行令
+aliases:
+- 製菓衛生師法施行令
+---
+
+# 製菓衛生師法施行令
+
+## Metadata
+- Law ID: `341CO0000000387`
+- Law No: 昭和四十一年政令第三百八十七号
+- Promulgation Date: 19661224

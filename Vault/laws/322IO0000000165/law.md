@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322IO0000000165
+id: JPLAW:322IO0000000165
+law_no: 昭和二十二年勅令第百六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/322IO0000000165
+promulgation_date: '19470430'
+tags:
+- 予算決算及び会計令
+tier: 0
+title: 予算決算及び会計令
+law_id: 322IO0000000165
+official_title: 予算決算及び会計令
+aliases:
+- 予算決算及び会計令
+---
+
+# 予算決算及び会計令
+
+## Metadata
+- Law ID: `322IO0000000165`
+- Law No: 昭和二十二年勅令第百六十五号
+- Promulgation Date: 19470430

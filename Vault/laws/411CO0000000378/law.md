@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411CO0000000378
+id: JPLAW:411CO0000000378
+law_no: 平成十一年政令第三百七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/411CO0000000378
+promulgation_date: '19991122'
+tags:
+- 東チモール避難民救援国際平和協力隊の設置等に関する政令
+tier: 0
+title: 東チモール避難民救援国際平和協力隊の設置等に関する政令
+law_id: 411CO0000000378
+official_title: 東チモール避難民救援国際平和協力隊の設置等に関する政令
+aliases:
+- 東チモール避難民救援国際平和協力隊の設置等に関する政令
+---
+
+# 東チモール避難民救援国際平和協力隊の設置等に関する政令
+
+## Metadata
+- Law ID: `411CO0000000378`
+- Law No: 平成十一年政令第三百七十八号
+- Promulgation Date: 19991122

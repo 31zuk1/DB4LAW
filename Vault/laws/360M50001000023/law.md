@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360M50001000023
+id: JPLAW:360M50001000023
+law_no: 昭和六十年郵政省令第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/360M50001000023
+promulgation_date: '19850401'
+tags:
+- 日本電信電話株式会社等に関する法律施行規則
+tier: 0
+title: 日本電信電話株式会社等に関する法律施行規則
+law_id: 360M50001000023
+official_title: 日本電信電話株式会社等に関する法律施行規則
+aliases:
+- 日本電信電話株式会社等に関する法律施行規則
+---
+
+# 日本電信電話株式会社等に関する法律施行規則
+
+## Metadata
+- Law ID: `360M50001000023`
+- Law No: 昭和六十年郵政省令第二十三号
+- Promulgation Date: 19850401

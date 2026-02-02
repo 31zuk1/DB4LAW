@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000002001
+id: JPLAW:413M60000002001
+law_no: 平成十三年内閣府令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000002001
+promulgation_date: '20010106'
+tags:
+- 内閣府本府組織規則
+tier: 0
+title: 内閣府本府組織規則
+law_id: 413M60000002001
+official_title: 内閣府本府組織規則
+aliases:
+- 内閣府本府組織規則
+---
+
+# 内閣府本府組織規則
+
+## Metadata
+- Law ID: `413M60000002001`
+- Law No: 平成十三年内閣府令第一号
+- Promulgation Date: 20010106

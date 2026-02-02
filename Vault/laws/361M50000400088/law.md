@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361M50000400088
+id: JPLAW:361M50000400088
+law_no: 昭和六十一年通商産業省令第八十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/361M50000400088
+promulgation_date: '19861213'
+tags:
+- コンビナート等保安規則
+tier: 0
+title: コンビナート等保安規則
+law_id: 361M50000400088
+official_title: コンビナート等保安規則
+aliases:
+- コンビナート等保安規則
+---
+
+# コンビナート等保安規則
+
+## Metadata
+- Law ID: `361M50000400088`
+- Law No: 昭和六十一年通商産業省令第八十八号
+- Promulgation Date: 19861213

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402AC1000000049
+id: JPLAW:402AC1000000049
+law_no: 平成二年法律第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/402AC1000000049
+promulgation_date: '19900627'
+tags:
+- 国会議員の秘書の給与等に関する法律
+tier: 0
+title: 国会議員の秘書の給与等に関する法律
+law_id: 402AC1000000049
+official_title: 国会議員の秘書の給与等に関する法律
+aliases:
+- 国会議員の秘書の給与等に関する法律
+---
+
+# 国会議員の秘書の給与等に関する法律
+
+## Metadata
+- Law ID: `402AC1000000049`
+- Law No: 平成二年法律第四十九号
+- Promulgation Date: 19900627

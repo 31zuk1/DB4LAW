@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424CO0000000244
+id: JPLAW:424CO0000000244
+law_no: 平成二十四年政令第二百四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/424CO0000000244
+promulgation_date: '20120920'
+tags:
+- 障害者虐待の防止、障害者の養護者に対する支援等に関する法律施行令
+tier: 0
+title: 障害者虐待の防止、障害者の養護者に対する支援等に関する法律施行令
+law_id: 424CO0000000244
+official_title: 障害者虐待の防止、障害者の養護者に対する支援等に関する法律施行令
+aliases:
+- 障害者虐待の防止、障害者の養護者に対する支援等に関する法律施行令
+---
+
+# 障害者虐待の防止、障害者の養護者に対する支援等に関する法律施行令
+
+## Metadata
+- Law ID: `424CO0000000244`
+- Law No: 平成二十四年政令第二百四十四号
+- Promulgation Date: 20120920

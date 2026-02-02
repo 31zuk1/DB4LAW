@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420AC0000000064
+id: JPLAW:420AC0000000064
+law_no: 平成二十年法律第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/420AC0000000064
+promulgation_date: '20080611'
+tags:
+- 領海等における外国船舶の航行に関する法律
+tier: 0
+title: 領海等における外国船舶の航行に関する法律
+law_id: 420AC0000000064
+official_title: 領海等における外国船舶の航行に関する法律
+aliases:
+- 領海等における外国船舶の航行に関する法律
+---
+
+# 領海等における外国船舶の航行に関する法律
+
+## Metadata
+- Law ID: `420AC0000000064`
+- Law No: 平成二十年法律第六十四号
+- Promulgation Date: 20080611

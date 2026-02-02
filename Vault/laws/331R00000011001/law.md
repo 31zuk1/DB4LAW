@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331R00000011001
+id: JPLAW:331R00000011001
+law_no: 昭和三十一年文化財保護委員会規則第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/331R00000011001
+promulgation_date: '19560312'
+tags:
+- 重要有形民俗文化財指定書規則
+tier: 0
+title: 重要有形民俗文化財指定書規則
+law_id: 331R00000011001
+official_title: 重要有形民俗文化財指定書規則
+aliases:
+- 重要有形民俗文化財指定書規則
+---
+
+# 重要有形民俗文化財指定書規則
+
+## Metadata
+- Law ID: `331R00000011001`
+- Law No: 昭和三十一年文化財保護委員会規則第一号
+- Promulgation Date: 19560312

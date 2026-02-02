@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421AC1000000040
+id: JPLAW:421AC1000000040
+law_no: 平成二十一年法律第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/421AC1000000040
+promulgation_date: '20090520'
+tags:
+- 公共サービス基本法
+tier: 0
+title: 公共サービス基本法
+law_id: 421AC1000000040
+official_title: 公共サービス基本法
+aliases:
+- 公共サービス基本法
+---
+
+# 公共サービス基本法
+
+## Metadata
+- Law ID: `421AC1000000040`
+- Law No: 平成二十一年法律第四十号
+- Promulgation Date: 20090520

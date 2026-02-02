@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349AC0000000078
+id: JPLAW:349AC0000000078
+law_no: 昭和四十九年法律第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/349AC0000000078
+promulgation_date: '19740606'
+tags:
+- 発電用施設周辺地域整備法
+tier: 0
+title: 発電用施設周辺地域整備法
+law_id: 349AC0000000078
+official_title: 発電用施設周辺地域整備法
+aliases:
+- 発電用施設周辺地域整備法
+---
+
+# 発電用施設周辺地域整備法
+
+## Metadata
+- Law ID: `349AC0000000078`
+- Law No: 昭和四十九年法律第七十八号
+- Promulgation Date: 19740606

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000303
+id: JPLAW:329CO0000000303
+law_no: 昭和二十九年政令第三百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000303
+promulgation_date: '19541130'
+tags:
+- 輸出水産業の振興に関する法律施行令
+tier: 0
+title: 輸出水産業の振興に関する法律施行令
+law_id: 329CO0000000303
+official_title: 輸出水産業の振興に関する法律施行令
+aliases:
+- 輸出水産業の振興に関する法律施行令
+---
+
+# 輸出水産業の振興に関する法律施行令
+
+## Metadata
+- Law ID: `329CO0000000303`
+- Law No: 昭和二十九年政令第三百三号
+- Promulgation Date: 19541130

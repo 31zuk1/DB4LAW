@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000080016
+id: JPLAW:415M60000080016
+law_no: 平成十五年文部科学省令第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000080016
+promulgation_date: '20030331'
+tags:
+- 専門職大学院設置基準
+tier: 0
+title: 専門職大学院設置基準
+law_id: 415M60000080016
+official_title: 専門職大学院設置基準
+aliases:
+- 専門職大学院設置基準
+---
+
+# 専門職大学院設置基準
+
+## Metadata
+- Law ID: `415M60000080016`
+- Law No: 平成十五年文部科学省令第十六号
+- Promulgation Date: 20030331

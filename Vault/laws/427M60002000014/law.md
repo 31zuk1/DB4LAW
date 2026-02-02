@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60002000014
+id: JPLAW:427M60002000014
+law_no: 平成二十七年防衛省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60002000014
+promulgation_date: '20151001'
+tags:
+- 防衛省定員規則
+tier: 0
+title: 防衛省定員規則
+law_id: 427M60002000014
+official_title: 防衛省定員規則
+aliases:
+- 防衛省定員規則
+---
+
+# 防衛省定員規則
+
+## Metadata
+- Law ID: `427M60002000014`
+- Law No: 平成二十七年防衛省令第十四号
+- Promulgation Date: 20151001

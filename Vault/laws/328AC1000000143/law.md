@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC1000000143
+id: JPLAW:328AC1000000143
+law_no: 昭和二十八年法律第百四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC1000000143
+promulgation_date: '19530801'
+tags:
+- 商工会議所法
+tier: 0
+title: 商工会議所法
+law_id: 328AC1000000143
+official_title: 商工会議所法
+aliases:
+- 商工会議所法
+---
+
+# 商工会議所法
+
+## Metadata
+- Law ID: `328AC1000000143`
+- Law No: 昭和二十八年法律第百四十三号
+- Promulgation Date: 19530801

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402CO0000000371
+id: JPLAW:402CO0000000371
+law_no: 平成二年政令第三百七十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/402CO0000000371
+promulgation_date: '19901227'
+tags:
+- スパイクタイヤ粉じんの発生の防止に関する法律施行令
+tier: 0
+title: スパイクタイヤ粉じんの発生の防止に関する法律施行令
+law_id: 402CO0000000371
+official_title: スパイクタイヤ粉じんの発生の防止に関する法律施行令
+aliases:
+- スパイクタイヤ粉じんの発生の防止に関する法律施行令
+---
+
+# スパイクタイヤ粉じんの発生の防止に関する法律施行令
+
+## Metadata
+- Law ID: `402CO0000000371`
+- Law No: 平成二年政令第三百七十一号
+- Promulgation Date: 19901227

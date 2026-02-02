@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426CO0000000046
+id: JPLAW:426CO0000000046
+law_no: 平成二十六年政令第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/426CO0000000046
+promulgation_date: '20140226'
+tags:
+- 農地中間管理事業の推進に関する法律施行令
+tier: 0
+title: 農地中間管理事業の推進に関する法律施行令
+law_id: 426CO0000000046
+official_title: 農地中間管理事業の推進に関する法律施行令
+aliases:
+- 農地中間管理事業の推進に関する法律施行令
+---
+
+# 農地中間管理事業の推進に関する法律施行令
+
+## Metadata
+- Law ID: `426CO0000000046`
+- Law No: 平成二十六年政令第四十六号
+- Promulgation Date: 20140226

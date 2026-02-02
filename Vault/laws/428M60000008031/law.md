@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428M60000008031
+id: JPLAW:428M60000008031
+law_no: 平成二十八年総務省令第三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/428M60000008031
+promulgation_date: '20160329'
+tags:
+- 第二種指定電気通信設備接続料規則
+tier: 0
+title: 第二種指定電気通信設備接続料規則
+law_id: 428M60000008031
+official_title: 第二種指定電気通信設備接続料規則
+aliases:
+- 第二種指定電気通信設備接続料規則
+---
+
+# 第二種指定電気通信設備接続料規則
+
+## Metadata
+- Law ID: `428M60000008031`
+- Law No: 平成二十八年総務省令第三十一号
+- Promulgation Date: 20160329

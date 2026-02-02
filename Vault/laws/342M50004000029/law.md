@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50004000029
+id: JPLAW:342M50004000029
+law_no: 昭和四十二年建設省令第二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50004000029
+promulgation_date: '19671026'
+tags:
+- 開発道路に関する占用料等徴収規則
+tier: 0
+title: 開発道路に関する占用料等徴収規則
+law_id: 342M50004000029
+official_title: 開発道路に関する占用料等徴収規則
+aliases:
+- 開発道路に関する占用料等徴収規則
+---
+
+# 開発道路に関する占用料等徴収規則
+
+## Metadata
+- Law ID: `342M50004000029`
+- Law No: 昭和四十二年建設省令第二十九号
+- Promulgation Date: 19671026

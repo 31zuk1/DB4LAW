@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506M60001000002
+id: JPLAW:506M60001000002
+law_no: 令和六年環境省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/506M60001000002
+promulgation_date: '20240116'
+tags:
+- 気候変動適応法施行規則
+tier: 0
+title: 気候変動適応法施行規則
+law_id: 506M60001000002
+official_title: 気候変動適応法施行規則
+aliases:
+- 気候変動適応法施行規則
+---
+
+# 気候変動適応法施行規則
+
+## Metadata
+- Law ID: `506M60001000002`
+- Law No: 令和六年環境省令第二号
+- Promulgation Date: 20240116

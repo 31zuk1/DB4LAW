@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421AC0000000026
+id: JPLAW:421AC0000000026
+law_no: 平成二十一年法律第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/421AC0000000026
+promulgation_date: '20090424'
+tags:
+- 米穀等の取引等に係る情報の記録及び産地情報の伝達に関する法律
+tier: 0
+title: 米穀等の取引等に係る情報の記録及び産地情報の伝達に関する法律
+law_id: 421AC0000000026
+official_title: 米穀等の取引等に係る情報の記録及び産地情報の伝達に関する法律
+aliases:
+- 米穀等の取引等に係る情報の記録及び産地情報の伝達に関する法律
+---
+
+# 米穀等の取引等に係る情報の記録及び産地情報の伝達に関する法律
+
+## Metadata
+- Law ID: `421AC0000000026`
+- Law No: 平成二十一年法律第二十六号
+- Promulgation Date: 20090424

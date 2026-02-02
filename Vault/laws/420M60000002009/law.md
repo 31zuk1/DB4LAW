@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000002009
+id: JPLAW:420M60000002009
+law_no: 平成二十年内閣府令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000002009
+promulgation_date: '20080314'
+tags:
+- 外国監査法人等に関する内閣府令
+tier: 0
+title: 外国監査法人等に関する内閣府令
+law_id: 420M60000002009
+official_title: 外国監査法人等に関する内閣府令
+aliases:
+- 外国監査法人等に関する内閣府令
+---
+
+# 外国監査法人等に関する内閣府令
+
+## Metadata
+- Law ID: `420M60000002009`
+- Law No: 平成二十年内閣府令第九号
+- Promulgation Date: 20080314

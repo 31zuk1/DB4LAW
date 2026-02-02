@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50000040052
+id: JPLAW:342M50000040052
+law_no: 昭和四十二年大蔵省令第五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50000040052
+promulgation_date: '19670816'
+tags:
+- 引揚者特別交付金国庫債券の発行交付等に関する省令
+tier: 0
+title: 引揚者特別交付金国庫債券の発行交付等に関する省令
+law_id: 342M50000040052
+official_title: 引揚者特別交付金国庫債券の発行交付等に関する省令
+aliases:
+- 引揚者特別交付金国庫債券の発行交付等に関する省令
+---
+
+# 引揚者特別交付金国庫債券の発行交付等に関する省令
+
+## Metadata
+- Law ID: `342M50000040052`
+- Law No: 昭和四十二年大蔵省令第五十二号
+- Promulgation Date: 19670816

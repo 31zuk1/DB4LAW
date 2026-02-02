@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60000010022
+id: JPLAW:414M60000010022
+law_no: 平成十四年法務省令第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60000010022
+promulgation_date: '20020329'
+tags:
+- 商法施行規則
+tier: 0
+title: 商法施行規則
+law_id: 414M60000010022
+official_title: 商法施行規則
+aliases:
+- 商法施行規則
+---
+
+# 商法施行規則
+
+## Metadata
+- Law ID: `414M60000010022`
+- Law No: 平成十四年法務省令第二十二号
+- Promulgation Date: 20020329

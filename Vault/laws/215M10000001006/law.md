@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 215M10000001006
+id: JPLAW:215M10000001006
+law_no: 大正十五年閣令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/215M10000001006
+promulgation_date: '19261021'
+tags:
+- 位階令施行細則
+tier: 0
+title: 位階令施行細則
+law_id: 215M10000001006
+official_title: 位階令施行細則
+aliases:
+- 位階令施行細則
+---
+
+# 位階令施行細則
+
+## Metadata
+- Law ID: `215M10000001006`
+- Law No: 大正十五年閣令第六号
+- Promulgation Date: 19261021

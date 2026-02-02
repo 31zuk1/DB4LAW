@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349AC0000000087
+id: JPLAW:349AC0000000087
+law_no: 昭和四十九年法律第八十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/349AC0000000087
+promulgation_date: '19740619'
+tags:
+- 航空の危険を生じさせる行為等の処罰に関する法律
+tier: 0
+title: 航空の危険を生じさせる行為等の処罰に関する法律
+law_id: 349AC0000000087
+official_title: 航空の危険を生じさせる行為等の処罰に関する法律
+aliases:
+- 航空の危険を生じさせる行為等の処罰に関する法律
+---
+
+# 航空の危険を生じさせる行為等の処罰に関する法律
+
+## Metadata
+- Law ID: `349AC0000000087`
+- Law No: 昭和四十九年法律第八十七号
+- Promulgation Date: 19740619

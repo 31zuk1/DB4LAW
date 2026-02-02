@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359M50000800028
+id: JPLAW:359M50000800028
+law_no: 昭和五十九年運輸省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/359M50000800028
+promulgation_date: '19840830'
+tags:
+- 船舶機関規則
+tier: 0
+title: 船舶機関規則
+law_id: 359M50000800028
+official_title: 船舶機関規則
+aliases:
+- 船舶機関規則
+---
+
+# 船舶機関規則
+
+## Metadata
+- Law ID: `359M50000800028`
+- Law No: 昭和五十九年運輸省令第二十八号
+- Promulgation Date: 19840830

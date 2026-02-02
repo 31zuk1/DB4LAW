@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334AC0000000124
+id: JPLAW:334AC0000000124
+law_no: 昭和三十四年法律第百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/334AC0000000124
+promulgation_date: '19590413'
+tags:
+- 実用新案法施行法
+tier: 0
+title: 実用新案法施行法
+law_id: 334AC0000000124
+official_title: 実用新案法施行法
+aliases:
+- 実用新案法施行法
+---
+
+# 実用新案法施行法
+
+## Metadata
+- Law ID: `334AC0000000124`
+- Law No: 昭和三十四年法律第百二十四号
+- Promulgation Date: 19590413

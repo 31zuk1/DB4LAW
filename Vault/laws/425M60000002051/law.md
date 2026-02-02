@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425M60000002051
+id: JPLAW:425M60000002051
+law_no: 平成二十五年内閣府令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/425M60000002051
+promulgation_date: '20130819'
+tags:
+- 大規模災害からの復興に関する法律施行規則
+tier: 0
+title: 大規模災害からの復興に関する法律施行規則
+law_id: 425M60000002051
+official_title: 大規模災害からの復興に関する法律施行規則
+aliases:
+- 大規模災害からの復興に関する法律施行規則
+---
+
+# 大規模災害からの復興に関する法律施行規則
+
+## Metadata
+- Law ID: `425M60000002051`
+- Law No: 平成二十五年内閣府令第五十一号
+- Promulgation Date: 20130819

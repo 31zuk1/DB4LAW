@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405M50000400077
+id: JPLAW:405M50000400077
+law_no: 平成五年通商産業省令第七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/405M50000400077
+promulgation_date: '19931109'
+tags:
+- 指定製造事業者の指定等に関する省令
+tier: 0
+title: 指定製造事業者の指定等に関する省令
+law_id: 405M50000400077
+official_title: 指定製造事業者の指定等に関する省令
+aliases:
+- 指定製造事業者の指定等に関する省令
+---
+
+# 指定製造事業者の指定等に関する省令
+
+## Metadata
+- Law ID: `405M50000400077`
+- Law No: 平成五年通商産業省令第七十七号
+- Promulgation Date: 19931109

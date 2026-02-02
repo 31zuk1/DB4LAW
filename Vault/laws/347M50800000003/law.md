@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50800000003
+id: JPLAW:347M50800000003
+law_no: 昭和四十七年公害等調整委員会規則第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50800000003
+promulgation_date: '19720930'
+tags:
+- 公害紛争の処理手続等に関する規則
+tier: 0
+title: 公害紛争の処理手続等に関する規則
+law_id: 347M50800000003
+official_title: 公害紛争の処理手続等に関する規則
+aliases:
+- 公害紛争の処理手続等に関する規則
+---
+
+# 公害紛争の処理手続等に関する規則
+
+## Metadata
+- Law ID: `347M50800000003`
+- Law No: 昭和四十七年公害等調整委員会規則第三号
+- Promulgation Date: 19720930

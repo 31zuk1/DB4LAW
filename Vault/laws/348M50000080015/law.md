@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348M50000080015
+id: JPLAW:348M50000080015
+law_no: 昭和四十八年文部省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/348M50000080015
+promulgation_date: '19730727'
+tags:
+- 児童生徒急増地域の指定に関する細目を定める省令
+tier: 0
+title: 児童生徒急増地域の指定に関する細目を定める省令
+law_id: 348M50000080015
+official_title: 児童生徒急増地域の指定に関する細目を定める省令
+aliases:
+- 児童生徒急増地域の指定に関する細目を定める省令
+---
+
+# 児童生徒急増地域の指定に関する細目を定める省令
+
+## Metadata
+- Law ID: `348M50000080015`
+- Law No: 昭和四十八年文部省令第十五号
+- Promulgation Date: 19730727

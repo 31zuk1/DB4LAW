@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000040049
+id: JPLAW:332M50000040049
+law_no: 昭和三十二年大蔵省令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000040049
+promulgation_date: '19570612'
+tags:
+- 引揚者国庫債券の発行交付等に関する省令
+tier: 0
+title: 引揚者国庫債券の発行交付等に関する省令
+law_id: 332M50000040049
+official_title: 引揚者国庫債券の発行交付等に関する省令
+aliases:
+- 引揚者国庫債券の発行交付等に関する省令
+---
+
+# 引揚者国庫債券の発行交付等に関する省令
+
+## Metadata
+- Law ID: `332M50000040049`
+- Law No: 昭和三十二年大蔵省令第四十九号
+- Promulgation Date: 19570612

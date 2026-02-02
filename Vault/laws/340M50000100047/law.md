@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50000100047
+id: JPLAW:340M50000100047
+law_no: 昭和四十年厚生省令第四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50000100047
+promulgation_date: '19651020'
+tags:
+- 理学療法士及び作業療法士法施行規則
+tier: 0
+title: 理学療法士及び作業療法士法施行規則
+law_id: 340M50000100047
+official_title: 理学療法士及び作業療法士法施行規則
+aliases:
+- 理学療法士及び作業療法士法施行規則
+---
+
+# 理学療法士及び作業療法士法施行規則
+
+## Metadata
+- Law ID: `340M50000100047`
+- Law No: 昭和四十年厚生省令第四十七号
+- Promulgation Date: 19651020

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360M50400000004
+id: JPLAW:360M50400000004
+law_no: 昭和六十年国家公安委員会規則第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/360M50400000004
+promulgation_date: '19850212'
+tags:
+- 遊技機の認定及び型式の検定等に関する規則
+tier: 0
+title: 遊技機の認定及び型式の検定等に関する規則
+law_id: 360M50400000004
+official_title: 遊技機の認定及び型式の検定等に関する規則
+aliases:
+- 遊技機の認定及び型式の検定等に関する規則
+---
+
+# 遊技機の認定及び型式の検定等に関する規則
+
+## Metadata
+- Law ID: `360M50400000004`
+- Law No: 昭和六十年国家公安委員会規則第四号
+- Promulgation Date: 19850212

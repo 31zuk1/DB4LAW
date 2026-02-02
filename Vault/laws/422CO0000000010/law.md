@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 422CO0000000010
+id: JPLAW:422CO0000000010
+law_no: 平成二十二年政令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/422CO0000000010
+promulgation_date: '20100205'
+tags:
+- ハイチ国際平和協力隊の設置等に関する政令
+tier: 0
+title: ハイチ国際平和協力隊の設置等に関する政令
+law_id: 422CO0000000010
+official_title: ハイチ国際平和協力隊の設置等に関する政令
+aliases:
+- ハイチ国際平和協力隊の設置等に関する政令
+---
+
+# ハイチ国際平和協力隊の設置等に関する政令
+
+## Metadata
+- Law ID: `422CO0000000010`
+- Law No: 平成二十二年政令第十号
+- Promulgation Date: 20100205

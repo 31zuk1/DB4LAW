@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000146
+id: JPLAW:331AC0000000146
+law_no: 昭和三十一年法律第百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000146
+promulgation_date: '19560611'
+tags:
+- 工業用水法
+tier: 0
+title: 工業用水法
+law_id: 331AC0000000146
+official_title: 工業用水法
+aliases:
+- 工業用水法
+---
+
+# 工業用水法
+
+## Metadata
+- Law ID: `331AC0000000146`
+- Law No: 昭和三十一年法律第百四十六号
+- Promulgation Date: 19560611

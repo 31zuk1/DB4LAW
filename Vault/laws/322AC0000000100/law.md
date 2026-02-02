@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000100
+id: JPLAW:322AC0000000100
+law_no: 昭和二十二年法律第百号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000100
+promulgation_date: '19470901'
+tags:
+- 船員法
+tier: 0
+title: 船員法
+law_id: 322AC0000000100
+official_title: 船員法
+aliases:
+- 船員法
+---
+
+# 船員法
+
+## Metadata
+- Law ID: `322AC0000000100`
+- Law No: 昭和二十二年法律第百号
+- Promulgation Date: 19470901

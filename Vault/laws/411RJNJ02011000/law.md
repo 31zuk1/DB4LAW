@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411RJNJ02011000
+id: JPLAW:411RJNJ02011000
+law_no: 平成十一年人事院規則二―一一
+links:
+  egov: https://laws.e-gov.go.jp/law/411RJNJ02011000
+promulgation_date: '19991222'
+tags:
+- 人事院規則二―一一（交流審査会）
+tier: 0
+title: 人事院規則二―一一（交流審査会）
+law_id: 411RJNJ02011000
+official_title: 人事院規則二―一一（交流審査会）
+aliases:
+- 人事院規則二―一一（交流審査会）
+---
+
+# 人事院規則二―一一（交流審査会）
+
+## Metadata
+- Law ID: `411RJNJ02011000`
+- Law No: 平成十一年人事院規則二―一一
+- Promulgation Date: 19991222

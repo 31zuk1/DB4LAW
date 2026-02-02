@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50004000012
+id: JPLAW:332M50004000012
+law_no: 昭和三十二年建設省令第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50004000012
+promulgation_date: '19570722'
+tags:
+- 宅地建物取引業法施行規則
+tier: 0
+title: 宅地建物取引業法施行規則
+law_id: 332M50004000012
+official_title: 宅地建物取引業法施行規則
+aliases:
+- 宅地建物取引業法施行規則
+---
+
+# 宅地建物取引業法施行規則
+
+## Metadata
+- Law ID: `332M50004000012`
+- Law No: 昭和三十二年建設省令第十二号
+- Promulgation Date: 19570722

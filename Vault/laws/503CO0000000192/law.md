@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503CO0000000192
+id: JPLAW:503CO0000000192
+law_no: 令和三年政令第百九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/503CO0000000192
+promulgation_date: '20210702'
+tags:
+- デジタル庁組織令
+tier: 0
+title: デジタル庁組織令
+law_id: 503CO0000000192
+official_title: デジタル庁組織令
+aliases:
+- デジタル庁組織令
+---
+
+# デジタル庁組織令
+
+## Metadata
+- Law ID: `503CO0000000192`
+- Law No: 令和三年政令第百九十二号
+- Promulgation Date: 20210702

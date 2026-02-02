@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408M50000040005
+id: JPLAW:408M50000040005
+law_no: 平成八年大蔵省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/408M50000040005
+promulgation_date: '19960229'
+tags:
+- 保険業法施行規則
+tier: 0
+title: 保険業法施行規則
+law_id: 408M50000040005
+official_title: 保険業法施行規則
+aliases:
+- 保険業法施行規則
+---
+
+# 保険業法施行規則
+
+## Metadata
+- Law ID: `408M50000040005`
+- Law No: 平成八年大蔵省令第五号
+- Promulgation Date: 19960229

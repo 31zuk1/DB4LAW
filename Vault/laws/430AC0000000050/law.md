@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430AC0000000050
+id: JPLAW:430AC0000000050
+law_no: 平成三十年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/430AC0000000050
+promulgation_date: '20180613'
+tags:
+- 気候変動適応法
+tier: 0
+title: 気候変動適応法
+law_id: 430AC0000000050
+official_title: 気候変動適応法
+aliases:
+- 気候変動適応法
+---
+
+# 気候変動適応法
+
+## Metadata
+- Law ID: `430AC0000000050`
+- Law No: 平成三十年法律第五十号
+- Promulgation Date: 20180613

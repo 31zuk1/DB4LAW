@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M50000400010
+id: JPLAW:328M50000400010
+law_no: 昭和二十八年通商産業省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M50000400010
+promulgation_date: '19530401'
+tags:
+- 経済産業省生産動態統計調査規則
+tier: 0
+title: 経済産業省生産動態統計調査規則
+law_id: 328M50000400010
+official_title: 経済産業省生産動態統計調査規則
+aliases:
+- 経済産業省生産動態統計調査規則
+---
+
+# 経済産業省生産動態統計調査規則
+
+## Metadata
+- Law ID: `328M50000400010`
+- Law No: 昭和二十八年通商産業省令第十号
+- Promulgation Date: 19530401

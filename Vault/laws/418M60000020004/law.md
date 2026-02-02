@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418M60000020004
+id: JPLAW:418M60000020004
+law_no: 平成十八年外務省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/418M60000020004
+promulgation_date: '20060217'
+tags:
+- 国外における旅券手数料の額を定める省令
+tier: 0
+title: 国外における旅券手数料の額を定める省令
+law_id: 418M60000020004
+official_title: 国外における旅券手数料の額を定める省令
+aliases:
+- 国外における旅券手数料の額を定める省令
+---
+
+# 国外における旅券手数料の額を定める省令
+
+## Metadata
+- Law ID: `418M60000020004`
+- Law No: 平成十八年外務省令第四号
+- Promulgation Date: 20060217

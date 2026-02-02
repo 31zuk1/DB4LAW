@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349CO0000000027
+id: JPLAW:349CO0000000027
+law_no: 昭和四十九年政令第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/349CO0000000027
+promulgation_date: '19740221'
+tags:
+- 水源地域対策特別措置法施行令
+tier: 0
+title: 水源地域対策特別措置法施行令
+law_id: 349CO0000000027
+official_title: 水源地域対策特別措置法施行令
+aliases:
+- 水源地域対策特別措置法施行令
+---
+
+# 水源地域対策特別措置法施行令
+
+## Metadata
+- Law ID: `349CO0000000027`
+- Law No: 昭和四十九年政令第二十七号
+- Promulgation Date: 19740221

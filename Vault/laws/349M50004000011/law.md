@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50004000011
+id: JPLAW:349M50004000011
+law_no: 昭和四十九年建設省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50004000011
+promulgation_date: '19740819'
+tags:
+- 生産緑地法施行規則
+tier: 0
+title: 生産緑地法施行規則
+law_id: 349M50004000011
+official_title: 生産緑地法施行規則
+aliases:
+- 生産緑地法施行規則
+---
+
+# 生産緑地法施行規則
+
+## Metadata
+- Law ID: `349M50004000011`
+- Law No: 昭和四十九年建設省令第十一号
+- Promulgation Date: 19740819

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 502M60000008010
+id: JPLAW:502M60000008010
+law_no: 令和二年総務省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/502M60000008010
+promulgation_date: '20200312'
+tags:
+- 子ども・子育て支援臨時交付金に関する省令
+tier: 0
+title: 子ども・子育て支援臨時交付金に関する省令
+law_id: 502M60000008010
+official_title: 子ども・子育て支援臨時交付金に関する省令
+aliases:
+- 子ども・子育て支援臨時交付金に関する省令
+---
+
+# 子ども・子育て支援臨時交付金に関する省令
+
+## Metadata
+- Law ID: `502M60000008010`
+- Law No: 令和二年総務省令第十号
+- Promulgation Date: 20200312

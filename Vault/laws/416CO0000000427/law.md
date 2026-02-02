@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000427
+id: JPLAW:416CO0000000427
+law_no: 平成十六年政令第四百二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000427
+promulgation_date: '20041227'
+tags:
+- 信託業法施行令
+tier: 0
+title: 信託業法施行令
+law_id: 416CO0000000427
+official_title: 信託業法施行令
+aliases:
+- 信託業法施行令
+---
+
+# 信託業法施行令
+
+## Metadata
+- Law ID: `416CO0000000427`
+- Law No: 平成十六年政令第四百二十七号
+- Promulgation Date: 20041227

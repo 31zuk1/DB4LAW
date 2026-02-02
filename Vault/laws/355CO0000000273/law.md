@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 355CO0000000273
+id: JPLAW:355CO0000000273
+law_no: 昭和五十五年政令第二百七十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/355CO0000000273
+promulgation_date: '19801024'
+tags:
+- 幹線道路の沿道の整備に関する法律施行令
+tier: 0
+title: 幹線道路の沿道の整備に関する法律施行令
+law_id: 355CO0000000273
+official_title: 幹線道路の沿道の整備に関する法律施行令
+aliases:
+- 幹線道路の沿道の整備に関する法律施行令
+---
+
+# 幹線道路の沿道の整備に関する法律施行令
+
+## Metadata
+- Law ID: `355CO0000000273`
+- Law No: 昭和五十五年政令第二百七十三号
+- Promulgation Date: 19801024

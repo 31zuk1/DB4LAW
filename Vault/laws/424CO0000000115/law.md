@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424CO0000000115
+id: JPLAW:424CO0000000115
+law_no: 平成二十四年政令第百十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/424CO0000000115
+promulgation_date: '20120331'
+tags:
+- 福島復興再生特別措置法施行令
+tier: 0
+title: 福島復興再生特別措置法施行令
+law_id: 424CO0000000115
+official_title: 福島復興再生特別措置法施行令
+aliases:
+- 福島復興再生特別措置法施行令
+---
+
+# 福島復興再生特別措置法施行令
+
+## Metadata
+- Law ID: `424CO0000000115`
+- Law No: 平成二十四年政令第百十五号
+- Promulgation Date: 20120331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344M50000400030
+id: JPLAW:344M50000400030
+law_no: 昭和四十四年通商産業省令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/344M50000400030
+promulgation_date: '19690414'
+tags:
+- 経済産業研修所規則
+tier: 0
+title: 経済産業研修所規則
+law_id: 344M50000400030
+official_title: 経済産業研修所規則
+aliases:
+- 経済産業研修所規則
+---
+
+# 経済産業研修所規則
+
+## Metadata
+- Law ID: `344M50000400030`
+- Law No: 昭和四十四年通商産業省令第三十号
+- Promulgation Date: 19690414

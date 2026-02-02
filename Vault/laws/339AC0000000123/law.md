@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339AC0000000123
+id: JPLAW:339AC0000000123
+law_no: 昭和三十九年法律第百二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/339AC0000000123
+promulgation_date: '19640630'
+tags:
+- 公認会計士特例試験等に関する法律
+tier: 0
+title: 公認会計士特例試験等に関する法律
+law_id: 339AC0000000123
+official_title: 公認会計士特例試験等に関する法律
+aliases:
+- 公認会計士特例試験等に関する法律
+---
+
+# 公認会計士特例試験等に関する法律
+
+## Metadata
+- Law ID: `339AC0000000123`
+- Law No: 昭和三十九年法律第百二十三号
+- Promulgation Date: 19640630

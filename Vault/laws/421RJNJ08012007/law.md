@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421RJNJ08012007
+id: JPLAW:421RJNJ08012007
+law_no: 平成二十一年人事院規則八―一二―七
+links:
+  egov: https://laws.e-gov.go.jp/law/421RJNJ08012007
+promulgation_date: '20090318'
+tags:
+- 人事院規則八―一二（職員の任免）
+tier: 0
+title: 人事院規則八―一二（職員の任免）
+law_id: 421RJNJ08012007
+official_title: 人事院規則八―一二（職員の任免）
+aliases:
+- 人事院規則八―一二（職員の任免）
+---
+
+# 人事院規則八―一二（職員の任免）
+
+## Metadata
+- Law ID: `421RJNJ08012007`
+- Law No: 平成二十一年人事院規則八―一二―七
+- Promulgation Date: 20090318

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 308M10000010033
+id: JPLAW:308M10000010033
+law_no: 昭和八年司法省令第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/308M10000010033
+promulgation_date: '19330930'
+tags:
+- 自動車交通事業財団抵当登記取扱手続
+tier: 0
+title: 自動車交通事業財団抵当登記取扱手続
+law_id: 308M10000010033
+official_title: 自動車交通事業財団抵当登記取扱手続
+aliases:
+- 自動車交通事業財団抵当登記取扱手続
+---
+
+# 自動車交通事業財団抵当登記取扱手続
+
+## Metadata
+- Law ID: `308M10000010033`
+- Law No: 昭和八年司法省令第三十三号
+- Promulgation Date: 19330930

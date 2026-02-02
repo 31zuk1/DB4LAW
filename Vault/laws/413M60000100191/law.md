@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000100191
+id: JPLAW:413M60000100191
+law_no: 平成十三年厚生労働省令第百九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000100191
+promulgation_date: '20010919'
+tags:
+- 個別労働関係紛争の解決の促進に関する法律施行規則
+tier: 0
+title: 個別労働関係紛争の解決の促進に関する法律施行規則
+law_id: 413M60000100191
+official_title: 個別労働関係紛争の解決の促進に関する法律施行規則
+aliases:
+- 個別労働関係紛争の解決の促進に関する法律施行規則
+---
+
+# 個別労働関係紛争の解決の促進に関する法律施行規則
+
+## Metadata
+- Law ID: `413M60000100191`
+- Law No: 平成十三年厚生労働省令第百九十一号
+- Promulgation Date: 20010919

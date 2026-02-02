@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418M60001400004
+id: JPLAW:418M60001400004
+law_no: 平成十八年経済産業省・環境省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/418M60001400004
+promulgation_date: '20060329'
+tags:
+- 温室効果ガス算定排出量等の集計の方法等を定める省令
+tier: 0
+title: 温室効果ガス算定排出量等の集計の方法等を定める省令
+law_id: 418M60001400004
+official_title: 温室効果ガス算定排出量等の集計の方法等を定める省令
+aliases:
+- 温室効果ガス算定排出量等の集計の方法等を定める省令
+---
+
+# 温室効果ガス算定排出量等の集計の方法等を定める省令
+
+## Metadata
+- Law ID: `418M60001400004`
+- Law No: 平成十八年経済産業省・環境省令第四号
+- Promulgation Date: 20060329

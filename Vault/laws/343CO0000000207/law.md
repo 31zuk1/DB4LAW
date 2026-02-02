@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343CO0000000207
+id: JPLAW:343CO0000000207
+law_no: 昭和四十三年政令第二百七号
+links:
+  egov: https://laws.e-gov.go.jp/law/343CO0000000207
+promulgation_date: '19680624'
+tags:
+- 小笠原諸島の復帰に伴う運輸省関係法律の適用の暫定措置等に関する政令
+tier: 0
+title: 小笠原諸島の復帰に伴う運輸省関係法律の適用の暫定措置等に関する政令
+law_id: 343CO0000000207
+official_title: 小笠原諸島の復帰に伴う運輸省関係法律の適用の暫定措置等に関する政令
+aliases:
+- 小笠原諸島の復帰に伴う運輸省関係法律の適用の暫定措置等に関する政令
+---
+
+# 小笠原諸島の復帰に伴う運輸省関係法律の適用の暫定措置等に関する政令
+
+## Metadata
+- Law ID: `343CO0000000207`
+- Law No: 昭和四十三年政令第二百七号
+- Promulgation Date: 19680624

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50000040036
+id: JPLAW:402M50000040036
+law_no: 平成二年大蔵省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50000040036
+promulgation_date: '19901120'
+tags:
+- 株券等の大量保有の状況の開示に関する内閣府令
+tier: 0
+title: 株券等の大量保有の状況の開示に関する内閣府令
+law_id: 402M50000040036
+official_title: 株券等の大量保有の状況の開示に関する内閣府令
+aliases:
+- 株券等の大量保有の状況の開示に関する内閣府令
+---
+
+# 株券等の大量保有の状況の開示に関する内閣府令
+
+## Metadata
+- Law ID: `402M50000040036`
+- Law No: 平成二年大蔵省令第三十六号
+- Promulgation Date: 19901120

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC1000000137
+id: JPLAW:322AC1000000137
+law_no: 昭和二十二年法律第百三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC1000000137
+promulgation_date: '19471120'
+tags:
+- 裁判官弾劾法
+tier: 0
+title: 裁判官弾劾法
+law_id: 322AC1000000137
+official_title: 裁判官弾劾法
+aliases:
+- 裁判官弾劾法
+---
+
+# 裁判官弾劾法
+
+## Metadata
+- Law ID: `322AC1000000137`
+- Law No: 昭和二十二年法律第百三十七号
+- Promulgation Date: 19471120

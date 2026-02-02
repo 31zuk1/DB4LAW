@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336CO0000000167
+id: JPLAW:336CO0000000167
+law_no: 昭和三十六年政令第百六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/336CO0000000167
+promulgation_date: '19610601'
+tags:
+- 農業協同組合合併助成法施行令
+tier: 0
+title: 農業協同組合合併助成法施行令
+law_id: 336CO0000000167
+official_title: 農業協同組合合併助成法施行令
+aliases:
+- 農業協同組合合併助成法施行令
+---
+
+# 農業協同組合合併助成法施行令
+
+## Metadata
+- Law ID: `336CO0000000167`
+- Law No: 昭和三十六年政令第百六十七号
+- Promulgation Date: 19610601

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341M50000100019
+id: JPLAW:341M50000100019
+law_no: 昭和四十一年厚生省令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/341M50000100019
+promulgation_date: '19660701'
+tags:
+- 養護老人ホームの設備及び運営に関する基準
+tier: 0
+title: 養護老人ホームの設備及び運営に関する基準
+law_id: 341M50000100019
+official_title: 養護老人ホームの設備及び運営に関する基準
+aliases:
+- 養護老人ホームの設備及び運営に関する基準
+---
+
+# 養護老人ホームの設備及び運営に関する基準
+
+## Metadata
+- Law ID: `341M50000100019`
+- Law No: 昭和四十一年厚生省令第十九号
+- Promulgation Date: 19660701

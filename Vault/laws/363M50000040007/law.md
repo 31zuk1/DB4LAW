@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363M50000040007
+id: JPLAW:363M50000040007
+law_no: 昭和六十三年大蔵省令第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/363M50000040007
+promulgation_date: '19880323'
+tags:
+- 通貨の単位及び貨幣の発行等に関する法律施行規則
+tier: 0
+title: 通貨の単位及び貨幣の発行等に関する法律施行規則
+law_id: 363M50000040007
+official_title: 通貨の単位及び貨幣の発行等に関する法律施行規則
+aliases:
+- 通貨の単位及び貨幣の発行等に関する法律施行規則
+---
+
+# 通貨の単位及び貨幣の発行等に関する法律施行規則
+
+## Metadata
+- Law ID: `363M50000040007`
+- Law No: 昭和六十三年大蔵省令第七号
+- Promulgation Date: 19880323

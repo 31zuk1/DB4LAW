@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50000040022
+id: JPLAW:349M50000040022
+law_no: 昭和四十九年大蔵省令第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50000040022
+promulgation_date: '19740330'
+tags:
+- 財政融資資金出納及び計算整理規則
+tier: 0
+title: 財政融資資金出納及び計算整理規則
+law_id: 349M50000040022
+official_title: 財政融資資金出納及び計算整理規則
+aliases:
+- 財政融資資金出納及び計算整理規則
+---
+
+# 財政融資資金出納及び計算整理規則
+
+## Metadata
+- Law ID: `349M50000040022`
+- Law No: 昭和四十九年大蔵省令第二十二号
+- Promulgation Date: 19740330

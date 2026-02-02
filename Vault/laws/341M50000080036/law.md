@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341M50000080036
+id: JPLAW:341M50000080036
+law_no: 昭和四十一年文部省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/341M50000080036
+promulgation_date: '19660701'
+tags:
+- 就学義務猶予免除者等の中学校卒業程度認定規則
+tier: 0
+title: 就学義務猶予免除者等の中学校卒業程度認定規則
+law_id: 341M50000080036
+official_title: 就学義務猶予免除者等の中学校卒業程度認定規則
+aliases:
+- 就学義務猶予免除者等の中学校卒業程度認定規則
+---
+
+# 就学義務猶予免除者等の中学校卒業程度認定規則
+
+## Metadata
+- Law ID: `341M50000080036`
+- Law No: 昭和四十一年文部省令第三十六号
+- Promulgation Date: 19660701

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417CO0000000279
+id: JPLAW:417CO0000000279
+law_no: 平成十七年政令第二百七十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/417CO0000000279
+promulgation_date: '20050815'
+tags:
+- 独立行政法人地域医療機能推進機構法施行令
+tier: 0
+title: 独立行政法人地域医療機能推進機構法施行令
+law_id: 417CO0000000279
+official_title: 独立行政法人地域医療機能推進機構法施行令
+aliases:
+- 独立行政法人地域医療機能推進機構法施行令
+---
+
+# 独立行政法人地域医療機能推進機構法施行令
+
+## Metadata
+- Law ID: `417CO0000000279`
+- Law No: 平成十七年政令第二百七十九号
+- Promulgation Date: 20050815

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413AC0000000089
+id: JPLAW:413AC0000000089
+law_no: 平成十三年法律第八十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/413AC0000000089
+promulgation_date: '20010629'
+tags:
+- 水産基本法
+tier: 0
+title: 水産基本法
+law_id: 413AC0000000089
+official_title: 水産基本法
+aliases:
+- 水産基本法
+---
+
+# 水産基本法
+
+## Metadata
+- Law ID: `413AC0000000089`
+- Law No: 平成十三年法律第八十九号
+- Promulgation Date: 20010629

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50000800036
+id: JPLAW:349M50000800036
+law_no: 昭和四十九年運輸省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50000800036
+promulgation_date: '19740827'
+tags:
+- 小型船舶安全規則
+tier: 0
+title: 小型船舶安全規則
+law_id: 349M50000800036
+official_title: 小型船舶安全規則
+aliases:
+- 小型船舶安全規則
+---
+
+# 小型船舶安全規則
+
+## Metadata
+- Law ID: `349M50000800036`
+- Law No: 昭和四十九年運輸省令第三十六号
+- Promulgation Date: 19740827

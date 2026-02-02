@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352AC0000000062
+id: JPLAW:352AC0000000062
+law_no: 昭和五十二年法律第六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/352AC0000000062
+promulgation_date: '19770601'
+tags:
+- 海上衝突予防法
+tier: 0
+title: 海上衝突予防法
+law_id: 352AC0000000062
+official_title: 海上衝突予防法
+aliases:
+- 海上衝突予防法
+---
+
+# 海上衝突予防法
+
+## Metadata
+- Law ID: `352AC0000000062`
+- Law No: 昭和五十二年法律第六十二号
+- Promulgation Date: 19770601

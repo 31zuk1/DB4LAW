@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504CO0000000209
+id: JPLAW:504CO0000000209
+law_no: 令和四年政令第二百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/504CO0000000209
+promulgation_date: '20220527'
+tags:
+- 労働者協同組合法施行令
+tier: 0
+title: 労働者協同組合法施行令
+law_id: 504CO0000000209
+official_title: 労働者協同組合法施行令
+aliases:
+- 労働者協同組合法施行令
+---
+
+# 労働者協同組合法施行令
+
+## Metadata
+- Law ID: `504CO0000000209`
+- Law No: 令和四年政令第二百九号
+- Promulgation Date: 20220527

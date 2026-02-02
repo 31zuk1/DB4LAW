@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331M50002000017
+id: JPLAW:331M50002000017
+law_no: 昭和三十一年労働省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/331M50002000017
+promulgation_date: '19560801'
+tags:
+- 労働保険審査官及び労働保険審査会法施行規則
+tier: 0
+title: 労働保険審査官及び労働保険審査会法施行規則
+law_id: 331M50002000017
+official_title: 労働保険審査官及び労働保険審査会法施行規則
+aliases:
+- 労働保険審査官及び労働保険審査会法施行規則
+---
+
+# 労働保険審査官及び労働保険審査会法施行規則
+
+## Metadata
+- Law ID: `331M50002000017`
+- Law No: 昭和三十一年労働省令第十七号
+- Promulgation Date: 19560801

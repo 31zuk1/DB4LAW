@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000080037
+id: JPLAW:413M60000080037
+law_no: 平成十三年文部科学省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000080037
+promulgation_date: '20010330'
+tags:
+- 国立研究開発法人防災科学技術研究所に関する省令
+tier: 0
+title: 国立研究開発法人防災科学技術研究所に関する省令
+law_id: 413M60000080037
+official_title: 国立研究開発法人防災科学技術研究所に関する省令
+aliases:
+- 国立研究開発法人防災科学技術研究所に関する省令
+---
+
+# 国立研究開発法人防災科学技術研究所に関する省令
+
+## Metadata
+- Law ID: `413M60000080037`
+- Law No: 平成十三年文部科学省令第三十七号
+- Promulgation Date: 20010330

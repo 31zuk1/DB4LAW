@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000129
+id: JPLAW:323AC0000000129
+law_no: 昭和二十三年法律第百二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000129
+promulgation_date: '19480710'
+tags:
+- 社会保険診療報酬支払基金法
+tier: 0
+title: 社会保険診療報酬支払基金法
+law_id: 323AC0000000129
+official_title: 社会保険診療報酬支払基金法
+aliases:
+- 社会保険診療報酬支払基金法
+---
+
+# 社会保険診療報酬支払基金法
+
+## Metadata
+- Law ID: `323AC0000000129`
+- Law No: 昭和二十三年法律第百二十九号
+- Promulgation Date: 19480710

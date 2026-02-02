@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403M50400000007
+id: JPLAW:403M50400000007
+law_no: 平成三年国家公安委員会規則第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/403M50400000007
+promulgation_date: '19911025'
+tags:
+- 暴力追放運動推進センターに関する規則
+tier: 0
+title: 暴力追放運動推進センターに関する規則
+law_id: 403M50400000007
+official_title: 暴力追放運動推進センターに関する規則
+aliases:
+- 暴力追放運動推進センターに関する規則
+---
+
+# 暴力追放運動推進センターに関する規則
+
+## Metadata
+- Law ID: `403M50400000007`
+- Law No: 平成三年国家公安委員会規則第七号
+- Promulgation Date: 19911025

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000240
+id: JPLAW:416CO0000000240
+law_no: 平成十六年政令第二百四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000240
+promulgation_date: '20040723'
+tags:
+- 金融機能の強化のための特別措置に関する法律施行令
+tier: 0
+title: 金融機能の強化のための特別措置に関する法律施行令
+law_id: 416CO0000000240
+official_title: 金融機能の強化のための特別措置に関する法律施行令
+aliases:
+- 金融機能の強化のための特別措置に関する法律施行令
+---
+
+# 金融機能の強化のための特別措置に関する法律施行令
+
+## Metadata
+- Law ID: `416CO0000000240`
+- Law No: 平成十六年政令第二百四十号
+- Promulgation Date: 20040723

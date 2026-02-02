@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361CO0000000287
+id: JPLAW:361CO0000000287
+law_no: 昭和六十一年政令第二百八十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/361CO0000000287
+promulgation_date: '19860829'
+tags:
+- プログラムの著作物に係る登録の特例に関する法律施行令
+tier: 0
+title: プログラムの著作物に係る登録の特例に関する法律施行令
+law_id: 361CO0000000287
+official_title: プログラムの著作物に係る登録の特例に関する法律施行令
+aliases:
+- プログラムの著作物に係る登録の特例に関する法律施行令
+---
+
+# プログラムの著作物に係る登録の特例に関する法律施行令
+
+## Metadata
+- Law ID: `361CO0000000287`
+- Law No: 昭和六十一年政令第二百八十七号
+- Promulgation Date: 19860829

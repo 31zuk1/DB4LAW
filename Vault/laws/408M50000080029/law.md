@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408M50000080029
+id: JPLAW:408M50000080029
+law_no: 平成八年文部省令第二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/408M50000080029
+promulgation_date: '19960830'
+tags:
+- 登録有形文化財に係る登録手続及び届出書等に関する規則
+tier: 0
+title: 登録有形文化財に係る登録手続及び届出書等に関する規則
+law_id: 408M50000080029
+official_title: 登録有形文化財に係る登録手続及び届出書等に関する規則
+aliases:
+- 登録有形文化財に係る登録手続及び届出書等に関する規則
+---
+
+# 登録有形文化財に係る登録手続及び届出書等に関する規則
+
+## Metadata
+- Law ID: `408M50000080029`
+- Law No: 平成八年文部省令第二十九号
+- Promulgation Date: 19960830

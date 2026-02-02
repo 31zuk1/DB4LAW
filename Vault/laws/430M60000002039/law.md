@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430M60000002039
+id: JPLAW:430M60000002039
+law_no: 平成三十年内閣府令第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/430M60000002039
+promulgation_date: '20180731'
+tags:
+- 桂離宮の施設に係る参観料の徴収に関する内閣府令
+tier: 0
+title: 桂離宮の施設に係る参観料の徴収に関する内閣府令
+law_id: 430M60000002039
+official_title: 桂離宮の施設に係る参観料の徴収に関する内閣府令
+aliases:
+- 桂離宮の施設に係る参観料の徴収に関する内閣府令
+---
+
+# 桂離宮の施設に係る参観料の徴収に関する内閣府令
+
+## Metadata
+- Law ID: `430M60000002039`
+- Law No: 平成三十年内閣府令第三十九号
+- Promulgation Date: 20180731

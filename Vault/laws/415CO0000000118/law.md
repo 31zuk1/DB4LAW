@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000118
+id: JPLAW:415CO0000000118
+law_no: 平成十五年政令第百十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000118
+promulgation_date: '20030328'
+tags:
+- 金融機関等の更生手続の特例等に関する法律施行令
+tier: 0
+title: 金融機関等の更生手続の特例等に関する法律施行令
+law_id: 415CO0000000118
+official_title: 金融機関等の更生手続の特例等に関する法律施行令
+aliases:
+- 金融機関等の更生手続の特例等に関する法律施行令
+---
+
+# 金融機関等の更生手続の特例等に関する法律施行令
+
+## Metadata
+- Law ID: `415CO0000000118`
+- Law No: 平成十五年政令第百十八号
+- Promulgation Date: 20030328

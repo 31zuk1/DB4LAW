@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331CO0000000199
+id: JPLAW:331CO0000000199
+law_no: 昭和三十一年政令第百九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/331CO0000000199
+promulgation_date: '19560625'
+tags:
+- 農林水産技術会議令
+tier: 0
+title: 農林水産技術会議令
+law_id: 331CO0000000199
+official_title: 農林水産技術会議令
+aliases:
+- 農林水産技術会議令
+---
+
+# 農林水産技術会議令
+
+## Metadata
+- Law ID: `331CO0000000199`
+- Law No: 昭和三十一年政令第百九十九号
+- Promulgation Date: 19560625

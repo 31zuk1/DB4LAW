@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342CO0000000325
+id: JPLAW:342CO0000000325
+law_no: 昭和四十二年政令第三百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/342CO0000000325
+promulgation_date: '19671009'
+tags:
+- 外国人漁業の規制に関する法律施行令
+tier: 0
+title: 外国人漁業の規制に関する法律施行令
+law_id: 342CO0000000325
+official_title: 外国人漁業の規制に関する法律施行令
+aliases:
+- 外国人漁業の規制に関する法律施行令
+---
+
+# 外国人漁業の規制に関する法律施行令
+
+## Metadata
+- Law ID: `342CO0000000325`
+- Law No: 昭和四十二年政令第三百二十五号
+- Promulgation Date: 19671009

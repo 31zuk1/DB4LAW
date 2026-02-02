@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335CO0000000018
+id: JPLAW:335CO0000000018
+law_no: 昭和三十五年政令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/335CO0000000018
+promulgation_date: '19600308'
+tags:
+- 意匠法施行令
+tier: 0
+title: 意匠法施行令
+law_id: 335CO0000000018
+official_title: 意匠法施行令
+aliases:
+- 意匠法施行令
+---
+
+# 意匠法施行令
+
+## Metadata
+- Law ID: `335CO0000000018`
+- Law No: 昭和三十五年政令第十八号
+- Promulgation Date: 19600308

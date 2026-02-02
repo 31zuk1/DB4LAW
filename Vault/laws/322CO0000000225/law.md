@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322CO0000000225
+id: JPLAW:322CO0000000225
+law_no: 昭和二十二年政令第二百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/322CO0000000225
+promulgation_date: '19471030'
+tags:
+- 災害救助法施行令
+tier: 0
+title: 災害救助法施行令
+law_id: 322CO0000000225
+official_title: 災害救助法施行令
+aliases:
+- 災害救助法施行令
+---
+
+# 災害救助法施行令
+
+## Metadata
+- Law ID: `322CO0000000225`
+- Law No: 昭和二十二年政令第二百二十五号
+- Promulgation Date: 19471030

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427AC0000000053
+id: JPLAW:427AC0000000053
+law_no: 平成二十七年法律第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/427AC0000000053
+promulgation_date: '20150708'
+tags:
+- 建築物のエネルギー消費性能の向上等に関する法律
+tier: 0
+title: 建築物のエネルギー消費性能の向上等に関する法律
+law_id: 427AC0000000053
+official_title: 建築物のエネルギー消費性能の向上等に関する法律
+aliases:
+- 建築物のエネルギー消費性能の向上等に関する法律
+---
+
+# 建築物のエネルギー消費性能の向上等に関する法律
+
+## Metadata
+- Law ID: `427AC0000000053`
+- Law No: 平成二十七年法律第五十三号
+- Promulgation Date: 20150708

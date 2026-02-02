@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000100058
+id: JPLAW:415M60000100058
+law_no: 平成十五年厚生労働省令第五十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000100058
+promulgation_date: '20030327'
+tags:
+- 厚生労働省関係構造改革特別区域法施行規則
+tier: 0
+title: 厚生労働省関係構造改革特別区域法施行規則
+law_id: 415M60000100058
+official_title: 厚生労働省関係構造改革特別区域法施行規則
+aliases:
+- 厚生労働省関係構造改革特別区域法施行規則
+---
+
+# 厚生労働省関係構造改革特別区域法施行規則
+
+## Metadata
+- Law ID: `415M60000100058`
+- Law No: 平成十五年厚生労働省令第五十八号
+- Promulgation Date: 20030327

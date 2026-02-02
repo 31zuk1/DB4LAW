@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000A08002
+id: JPLAW:427M60000A08002
+law_no: 平成二十七年総務省・農林水産省・国土交通省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000A08002
+promulgation_date: '20150331'
+tags:
+- 半島振興法施行規則
+tier: 0
+title: 半島振興法施行規則
+law_id: 427M60000A08002
+official_title: 半島振興法施行規則
+aliases:
+- 半島振興法施行規則
+---
+
+# 半島振興法施行規則
+
+## Metadata
+- Law ID: `427M60000A08002`
+- Law No: 平成二十七年総務省・農林水産省・国土交通省令第二号
+- Promulgation Date: 20150331

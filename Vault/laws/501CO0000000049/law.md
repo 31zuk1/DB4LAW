@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501CO0000000049
+id: JPLAW:501CO0000000049
+law_no: 令和元年政令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/501CO0000000049
+promulgation_date: '20190628'
+tags:
+- 大学等における修学の支援に関する法律施行令
+tier: 0
+title: 大学等における修学の支援に関する法律施行令
+law_id: 501CO0000000049
+official_title: 大学等における修学の支援に関する法律施行令
+aliases:
+- 大学等における修学の支援に関する法律施行令
+---
+
+# 大学等における修学の支援に関する法律施行令
+
+## Metadata
+- Law ID: `501CO0000000049`
+- Law No: 令和元年政令第四十九号
+- Promulgation Date: 20190628

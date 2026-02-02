@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418M60000010048
+id: JPLAW:418M60000010048
+law_no: 平成十八年法務省令第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/418M60000010048
+promulgation_date: '20060414'
+tags:
+- 更生保護施設整備費補助金及び更生保護事業費補助金交付規則
+tier: 0
+title: 更生保護施設整備費補助金及び更生保護事業費補助金交付規則
+law_id: 418M60000010048
+official_title: 更生保護施設整備費補助金及び更生保護事業費補助金交付規則
+aliases:
+- 更生保護施設整備費補助金及び更生保護事業費補助金交付規則
+---
+
+# 更生保護施設整備費補助金及び更生保護事業費補助金交付規則
+
+## Metadata
+- Law ID: `418M60000010048`
+- Law No: 平成十八年法務省令第四十八号
+- Promulgation Date: 20060414

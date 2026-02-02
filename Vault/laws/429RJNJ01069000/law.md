@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429RJNJ01069000
+id: JPLAW:429RJNJ01069000
+law_no: 平成二十九年人事院規則一―六九
+links:
+  egov: https://laws.e-gov.go.jp/law/429RJNJ01069000
+promulgation_date: '20170519'
+tags:
+- 人事院規則一―六九（職員の公益社団法人福島相双復興推進機構への派遣）
+tier: 0
+title: 人事院規則一―六九（職員の公益社団法人福島相双復興推進機構への派遣）
+law_id: 429RJNJ01069000
+official_title: 人事院規則一―六九（職員の公益社団法人福島相双復興推進機構への派遣）
+aliases:
+- 人事院規則一―六九（職員の公益社団法人福島相双復興推進機構への派遣）
+---
+
+# 人事院規則一―六九（職員の公益社団法人福島相双復興推進機構への派遣）
+
+## Metadata
+- Law ID: `429RJNJ01069000`
+- Law No: 平成二十九年人事院規則一―六九
+- Promulgation Date: 20170519

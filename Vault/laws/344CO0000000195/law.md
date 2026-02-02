@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344CO0000000195
+id: JPLAW:344CO0000000195
+law_no: 昭和四十四年政令第百九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/344CO0000000195
+promulgation_date: '19690717'
+tags:
+- 外航船舶建造融資利子補給臨時措置法施行令
+tier: 0
+title: 外航船舶建造融資利子補給臨時措置法施行令
+law_id: 344CO0000000195
+official_title: 外航船舶建造融資利子補給臨時措置法施行令
+aliases:
+- 外航船舶建造融資利子補給臨時措置法施行令
+---
+
+# 外航船舶建造融資利子補給臨時措置法施行令
+
+## Metadata
+- Law ID: `344CO0000000195`
+- Law No: 昭和四十四年政令第百九十五号
+- Promulgation Date: 19690717

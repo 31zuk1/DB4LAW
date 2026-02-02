@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000148
+id: JPLAW:327CO0000000148
+law_no: 昭和二十七年政令第百四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000148
+promulgation_date: '19520513'
+tags:
+- 農業改良助長法施行令
+tier: 0
+title: 農業改良助長法施行令
+law_id: 327CO0000000148
+official_title: 農業改良助長法施行令
+aliases:
+- 農業改良助長法施行令
+---
+
+# 農業改良助長法施行令
+
+## Metadata
+- Law ID: `327CO0000000148`
+- Law No: 昭和二十七年政令第百四十八号
+- Promulgation Date: 19520513

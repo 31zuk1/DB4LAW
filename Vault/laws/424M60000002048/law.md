@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424M60000002048
+id: JPLAW:424M60000002048
+law_no: 平成二十四年内閣府令第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/424M60000002048
+promulgation_date: '20120711'
+tags:
+- 店頭デリバティブ取引等の規制に関する内閣府令
+tier: 0
+title: 店頭デリバティブ取引等の規制に関する内閣府令
+law_id: 424M60000002048
+official_title: 店頭デリバティブ取引等の規制に関する内閣府令
+aliases:
+- 店頭デリバティブ取引等の規制に関する内閣府令
+---
+
+# 店頭デリバティブ取引等の規制に関する内閣府令
+
+## Metadata
+- Law ID: `424M60000002048`
+- Law No: 平成二十四年内閣府令第四十八号
+- Promulgation Date: 20120711

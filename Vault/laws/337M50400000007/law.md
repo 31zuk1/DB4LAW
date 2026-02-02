@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337M50400000007
+id: JPLAW:337M50400000007
+law_no: 昭和三十七年国家公安委員会規則第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/337M50400000007
+promulgation_date: '19620510'
+tags:
+- 警察官等拳銃使用及び取扱い規範
+tier: 0
+title: 警察官等拳銃使用及び取扱い規範
+law_id: 337M50400000007
+official_title: 警察官等拳銃使用及び取扱い規範
+aliases:
+- 警察官等拳銃使用及び取扱い規範
+---
+
+# 警察官等拳銃使用及び取扱い規範
+
+## Metadata
+- Law ID: `337M50400000007`
+- Law No: 昭和三十七年国家公安委員会規則第七号
+- Promulgation Date: 19620510

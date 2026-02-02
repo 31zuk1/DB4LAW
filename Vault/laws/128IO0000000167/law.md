@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 128IO0000000167
+id: JPLAW:128IO0000000167
+law_no: 明治二十八年勅令第百六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/128IO0000000167
+promulgation_date: '18951228'
+tags:
+- 明治二十八年勅令第百六十七号（標準時ニ関スル件）
+tier: 0
+title: 明治二十八年勅令第百六十七号（標準時ニ関スル件）
+law_id: 128IO0000000167
+official_title: 明治二十八年勅令第百六十七号（標準時ニ関スル件）
+aliases:
+- 明治二十八年勅令第百六十七号（標準時ニ関スル件）
+---
+
+# 明治二十八年勅令第百六十七号（標準時ニ関スル件）
+
+## Metadata
+- Law ID: `128IO0000000167`
+- Law No: 明治二十八年勅令第百六十七号
+- Promulgation Date: 18951228

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50000040017
+id: JPLAW:325M50000040017
+law_no: 昭和二十五年大蔵省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50000040017
+promulgation_date: '19500331'
+tags:
+- 相続税法施行規則
+tier: 0
+title: 相続税法施行規則
+law_id: 325M50000040017
+official_title: 相続税法施行規則
+aliases:
+- 相続税法施行規則
+---
+
+# 相続税法施行規則
+
+## Metadata
+- Law ID: `325M50000040017`
+- Law No: 昭和二十五年大蔵省令第十七号
+- Promulgation Date: 19500331

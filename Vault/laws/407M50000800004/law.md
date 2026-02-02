@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407M50000800004
+id: JPLAW:407M50000800004
+law_no: 平成七年運輸省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/407M50000800004
+promulgation_date: '19950120'
+tags:
+- 指定漁船に乗り組む船員の有給休暇に関する省令
+tier: 0
+title: 指定漁船に乗り組む船員の有給休暇に関する省令
+law_id: 407M50000800004
+official_title: 指定漁船に乗り組む船員の有給休暇に関する省令
+aliases:
+- 指定漁船に乗り組む船員の有給休暇に関する省令
+---
+
+# 指定漁船に乗り組む船員の有給休暇に関する省令
+
+## Metadata
+- Law ID: `407M50000800004`
+- Law No: 平成七年運輸省令第四号
+- Promulgation Date: 19950120

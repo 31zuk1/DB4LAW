@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC0000000108
+id: JPLAW:410AC0000000108
+law_no: 平成十年法律第百八号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC0000000108
+promulgation_date: '19980615'
+tags:
+- 金融機関等が行う特定金融取引の一括清算に関する法律
+tier: 0
+title: 金融機関等が行う特定金融取引の一括清算に関する法律
+law_id: 410AC0000000108
+official_title: 金融機関等が行う特定金融取引の一括清算に関する法律
+aliases:
+- 金融機関等が行う特定金融取引の一括清算に関する法律
+---
+
+# 金融機関等が行う特定金融取引の一括清算に関する法律
+
+## Metadata
+- Law ID: `410AC0000000108`
+- Law No: 平成十年法律第百八号
+- Promulgation Date: 19980615

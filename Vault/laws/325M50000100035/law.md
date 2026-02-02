@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50000100035
+id: JPLAW:325M50000100035
+law_no: 昭和二十五年厚生省令第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50000100035
+promulgation_date: '19500701'
+tags:
+- クリーニング業法施行規則
+tier: 0
+title: クリーニング業法施行規則
+law_id: 325M50000100035
+official_title: クリーニング業法施行規則
+aliases:
+- クリーニング業法施行規則
+---
+
+# クリーニング業法施行規則
+
+## Metadata
+- Law ID: `325M50000100035`
+- Law No: 昭和二十五年厚生省令第三十五号
+- Promulgation Date: 19500701

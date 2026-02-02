@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 133M10001000038
+id: JPLAW:133M10001000038
+law_no: 明治三十三年逓信省令第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/133M10001000038
+promulgation_date: '19000810'
+tags:
+- 伝染病患者鉄道乗車規程
+tier: 0
+title: 伝染病患者鉄道乗車規程
+law_id: 133M10001000038
+official_title: 伝染病患者鉄道乗車規程
+aliases:
+- 伝染病患者鉄道乗車規程
+---
+
+# 伝染病患者鉄道乗車規程
+
+## Metadata
+- Law ID: `133M10001000038`
+- Law No: 明治三十三年逓信省令第三十八号
+- Promulgation Date: 19000810

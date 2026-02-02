@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359CO0000000025
+id: JPLAW:359CO0000000025
+law_no: 昭和五十九年政令第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/359CO0000000025
+promulgation_date: '19840309'
+tags:
+- 温泉法施行令
+tier: 0
+title: 温泉法施行令
+law_id: 359CO0000000025
+official_title: 温泉法施行令
+aliases:
+- 温泉法施行令
+---
+
+# 温泉法施行令
+
+## Metadata
+- Law ID: `359CO0000000025`
+- Law No: 昭和五十九年政令第二十五号
+- Promulgation Date: 19840309

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346AC0000000041
+id: JPLAW:346AC0000000041
+law_no: 昭和四十六年法律第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/346AC0000000041
+promulgation_date: '19710406'
+tags:
+- 刑事訴訟費用等に関する法律
+tier: 0
+title: 刑事訴訟費用等に関する法律
+law_id: 346AC0000000041
+official_title: 刑事訴訟費用等に関する法律
+aliases:
+- 刑事訴訟費用等に関する法律
+---
+
+# 刑事訴訟費用等に関する法律
+
+## Metadata
+- Law ID: `346AC0000000041`
+- Law No: 昭和四十六年法律第四十一号
+- Promulgation Date: 19710406

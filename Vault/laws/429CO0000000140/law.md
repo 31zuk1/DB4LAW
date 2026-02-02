@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429CO0000000140
+id: JPLAW:429CO0000000140
+law_no: 平成二十九年政令第百四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/429CO0000000140
+promulgation_date: '20170421'
+tags:
+- 休眠預金等活用審議会令
+tier: 0
+title: 休眠預金等活用審議会令
+law_id: 429CO0000000140
+official_title: 休眠預金等活用審議会令
+aliases:
+- 休眠預金等活用審議会令
+---
+
+# 休眠預金等活用審議会令
+
+## Metadata
+- Law ID: `429CO0000000140`
+- Law No: 平成二十九年政令第百四十号
+- Promulgation Date: 20170421

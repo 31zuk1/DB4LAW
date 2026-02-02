@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326CO0000000342
+id: JPLAW:326CO0000000342
+law_no: 昭和二十六年政令第三百四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/326CO0000000342
+promulgation_date: '19511027'
+tags:
+- 土地収用法施行令
+tier: 0
+title: 土地収用法施行令
+law_id: 326CO0000000342
+official_title: 土地収用法施行令
+aliases:
+- 土地収用法施行令
+---
+
+# 土地収用法施行令
+
+## Metadata
+- Law ID: `326CO0000000342`
+- Law No: 昭和二十六年政令第三百四十二号
+- Promulgation Date: 19511027

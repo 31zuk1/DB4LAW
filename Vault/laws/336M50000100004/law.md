@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336M50000100004
+id: JPLAW:336M50000100004
+law_no: 昭和三十六年厚生省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/336M50000100004
+promulgation_date: '19610201'
+tags:
+- 放射性医薬品の製造及び取扱規則
+tier: 0
+title: 放射性医薬品の製造及び取扱規則
+law_id: 336M50000100004
+official_title: 放射性医薬品の製造及び取扱規則
+aliases:
+- 放射性医薬品の製造及び取扱規則
+---
+
+# 放射性医薬品の製造及び取扱規則
+
+## Metadata
+- Law ID: `336M50000100004`
+- Law No: 昭和三十六年厚生省令第四号
+- Promulgation Date: 19610201

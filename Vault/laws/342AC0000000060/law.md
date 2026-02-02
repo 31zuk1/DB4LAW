@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342AC0000000060
+id: JPLAW:342AC0000000060
+law_no: 昭和四十二年法律第六十号
+links:
+  egov: https://laws.e-gov.go.jp/law/342AC0000000060
+promulgation_date: '19670714'
+tags:
+- 外国人漁業の規制に関する法律
+tier: 0
+title: 外国人漁業の規制に関する法律
+law_id: 342AC0000000060
+official_title: 外国人漁業の規制に関する法律
+aliases:
+- 外国人漁業の規制に関する法律
+---
+
+# 外国人漁業の規制に関する法律
+
+## Metadata
+- Law ID: `342AC0000000060`
+- Law No: 昭和四十二年法律第六十号
+- Promulgation Date: 19670714

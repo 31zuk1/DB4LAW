@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC1000000250
+id: JPLAW:326AC1000000250
+law_no: 昭和二十六年法律第二百五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC1000000250
+promulgation_date: '19510626'
+tags:
+- 森林法施行法
+tier: 0
+title: 森林法施行法
+law_id: 326AC1000000250
+official_title: 森林法施行法
+aliases:
+- 森林法施行法
+---
+
+# 森林法施行法
+
+## Metadata
+- Law ID: `326AC1000000250`
+- Law No: 昭和二十六年法律第二百五十号
+- Promulgation Date: 19510626

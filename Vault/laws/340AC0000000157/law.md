@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340AC0000000157
+id: JPLAW:340AC0000000157
+law_no: 昭和四十年法律第百五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/340AC0000000157
+promulgation_date: '19651229'
+tags:
+- 石油ガス譲与税法
+tier: 0
+title: 石油ガス譲与税法
+law_id: 340AC0000000157
+official_title: 石油ガス譲与税法
+aliases:
+- 石油ガス譲与税法
+---
+
+# 石油ガス譲与税法
+
+## Metadata
+- Law ID: `340AC0000000157`
+- Law No: 昭和四十年法律第百五十七号
+- Promulgation Date: 19651229

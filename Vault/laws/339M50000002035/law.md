@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50000002035
+id: JPLAW:339M50000002035
+law_no: 昭和三十九年総理府令第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50000002035
+promulgation_date: '19640828'
+tags:
+- 防衛省の職員に対する寒冷地手当支給規則
+tier: 0
+title: 防衛省の職員に対する寒冷地手当支給規則
+law_id: 339M50000002035
+official_title: 防衛省の職員に対する寒冷地手当支給規則
+aliases:
+- 防衛省の職員に対する寒冷地手当支給規則
+---
+
+# 防衛省の職員に対する寒冷地手当支給規則
+
+## Metadata
+- Law ID: `339M50000002035`
+- Law No: 昭和三十九年総理府令第三十五号
+- Promulgation Date: 19640828

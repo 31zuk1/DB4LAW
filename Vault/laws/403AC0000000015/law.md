@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403AC0000000015
+id: JPLAW:403AC0000000015
+law_no: 平成三年法律第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/403AC0000000015
+promulgation_date: '19910330'
+tags:
+- 国の補助金等の臨時特例等に関する法律
+tier: 0
+title: 国の補助金等の臨時特例等に関する法律
+law_id: 403AC0000000015
+official_title: 国の補助金等の臨時特例等に関する法律
+aliases:
+- 国の補助金等の臨時特例等に関する法律
+---
+
+# 国の補助金等の臨時特例等に関する法律
+
+## Metadata
+- Law ID: `403AC0000000015`
+- Law No: 平成三年法律第十五号
+- Promulgation Date: 19910330

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 309M10001000006
+id: JPLAW:309M10001000006
+law_no: 昭和九年逓信省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/309M10001000006
+promulgation_date: '19340201'
+tags:
+- 船舶設備規程
+tier: 0
+title: 船舶設備規程
+law_id: 309M10001000006
+official_title: 船舶設備規程
+aliases:
+- 船舶設備規程
+---
+
+# 船舶設備規程
+
+## Metadata
+- Law ID: `309M10001000006`
+- Law No: 昭和九年逓信省令第六号
+- Promulgation Date: 19340201

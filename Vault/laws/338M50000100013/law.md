@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338M50000100013
+id: JPLAW:338M50000100013
+law_no: 昭和三十八年厚生省令第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/338M50000100013
+promulgation_date: '19630410'
+tags:
+- 戦没者等の妻に対する特別給付金支給法施行規則
+tier: 0
+title: 戦没者等の妻に対する特別給付金支給法施行規則
+law_id: 338M50000100013
+official_title: 戦没者等の妻に対する特別給付金支給法施行規則
+aliases:
+- 戦没者等の妻に対する特別給付金支給法施行規則
+---
+
+# 戦没者等の妻に対する特別給付金支給法施行規則
+
+## Metadata
+- Law ID: `338M50000100013`
+- Law No: 昭和三十八年厚生省令第十三号
+- Promulgation Date: 19630410

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413AC0000000131
+id: JPLAW:413AC0000000131
+law_no: 平成十三年法律第百三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/413AC0000000131
+promulgation_date: '20011128'
+tags:
+- 銀行等の株式等の保有の制限等に関する法律
+tier: 0
+title: 銀行等の株式等の保有の制限等に関する法律
+law_id: 413AC0000000131
+official_title: 銀行等の株式等の保有の制限等に関する法律
+aliases:
+- 銀行等の株式等の保有の制限等に関する法律
+---
+
+# 銀行等の株式等の保有の制限等に関する法律
+
+## Metadata
+- Law ID: `413AC0000000131`
+- Law No: 平成十三年法律第百三十一号
+- Promulgation Date: 20011128

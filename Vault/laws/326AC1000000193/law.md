@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC1000000193
+id: JPLAW:326AC1000000193
+law_no: 昭和二十六年法律第百九十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC1000000193
+promulgation_date: '19510604'
+tags:
+- 公営住宅法
+tier: 0
+title: 公営住宅法
+law_id: 326AC1000000193
+official_title: 公営住宅法
+aliases:
+- 公営住宅法
+---
+
+# 公営住宅法
+
+## Metadata
+- Law ID: `326AC1000000193`
+- Law No: 昭和二十六年法律第百九十三号
+- Promulgation Date: 19510604

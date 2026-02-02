@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504AC1000000064
+id: JPLAW:504AC1000000064
+law_no: 令和四年法律第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/504AC1000000064
+promulgation_date: '20220613'
+tags:
+- 令和四年度子育て世帯生活支援特別給付金に係る差押禁止等に関する法律
+tier: 0
+title: 令和四年度子育て世帯生活支援特別給付金に係る差押禁止等に関する法律
+law_id: 504AC1000000064
+official_title: 令和四年度子育て世帯生活支援特別給付金に係る差押禁止等に関する法律
+aliases:
+- 令和四年度子育て世帯生活支援特別給付金に係る差押禁止等に関する法律
+---
+
+# 令和四年度子育て世帯生活支援特別給付金に係る差押禁止等に関する法律
+
+## Metadata
+- Law ID: `504AC1000000064`
+- Law No: 令和四年法律第六十四号
+- Promulgation Date: 20220613

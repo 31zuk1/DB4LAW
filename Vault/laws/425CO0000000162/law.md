@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425CO0000000162
+id: JPLAW:425CO0000000162
+law_no: 平成二十五年政令第百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/425CO0000000162
+promulgation_date: '20130531'
+tags:
+- 森林の間伐等の実施の促進に関する特別措置法施行令
+tier: 0
+title: 森林の間伐等の実施の促進に関する特別措置法施行令
+law_id: 425CO0000000162
+official_title: 森林の間伐等の実施の促進に関する特別措置法施行令
+aliases:
+- 森林の間伐等の実施の促進に関する特別措置法施行令
+---
+
+# 森林の間伐等の実施の促進に関する特別措置法施行令
+
+## Metadata
+- Law ID: `425CO0000000162`
+- Law No: 平成二十五年政令第百六十二号
+- Promulgation Date: 20130531

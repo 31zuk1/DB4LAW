@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330M50000080002
+id: JPLAW:330M50000080002
+law_no: 昭和三十年文部省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/330M50000080002
+promulgation_date: '19550228'
+tags:
+- 公立学校施設災害復旧費国庫負担法施行規則
+tier: 0
+title: 公立学校施設災害復旧費国庫負担法施行規則
+law_id: 330M50000080002
+official_title: 公立学校施設災害復旧費国庫負担法施行規則
+aliases:
+- 公立学校施設災害復旧費国庫負担法施行規則
+---
+
+# 公立学校施設災害復旧費国庫負担法施行規則
+
+## Metadata
+- Law ID: `330M50000080002`
+- Law No: 昭和三十年文部省令第二号
+- Promulgation Date: 19550228

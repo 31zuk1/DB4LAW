@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506CO0000000282
+id: JPLAW:506CO0000000282
+law_no: 令和六年政令第二百八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/506CO0000000282
+promulgation_date: '20240911'
+tags:
+- 大麻草の栽培の規制に関する法律施行令
+tier: 0
+title: 大麻草の栽培の規制に関する法律施行令
+law_id: 506CO0000000282
+official_title: 大麻草の栽培の規制に関する法律施行令
+aliases:
+- 大麻草の栽培の規制に関する法律施行令
+---
+
+# 大麻草の栽培の規制に関する法律施行令
+
+## Metadata
+- Law ID: `506CO0000000282`
+- Law No: 令和六年政令第二百八十二号
+- Promulgation Date: 20240911

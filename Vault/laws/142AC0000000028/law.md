@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 142AC0000000028
+id: JPLAW:142AC0000000028
+law_no: 明治四十二年法律第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/142AC0000000028
+promulgation_date: '19090413'
+tags:
+- 明治四十二年法律第二十八号（軌道ノ抵当ニ関スル法律）
+tier: 0
+title: 明治四十二年法律第二十八号（軌道ノ抵当ニ関スル法律）
+law_id: 142AC0000000028
+official_title: 明治四十二年法律第二十八号（軌道ノ抵当ニ関スル法律）
+aliases:
+- 明治四十二年法律第二十八号（軌道ノ抵当ニ関スル法律）
+---
+
+# 明治四十二年法律第二十八号（軌道ノ抵当ニ関スル法律）
+
+## Metadata
+- Law ID: `142AC0000000028`
+- Law No: 明治四十二年法律第二十八号
+- Promulgation Date: 19090413

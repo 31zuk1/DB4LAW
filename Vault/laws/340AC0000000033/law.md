@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340AC0000000033
+id: JPLAW:340AC0000000033
+law_no: 昭和四十年法律第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/340AC0000000033
+promulgation_date: '19650331'
+tags:
+- 所得税法
+tier: 0
+title: 所得税法
+law_id: 340AC0000000033
+official_title: 所得税法
+aliases:
+- 所得税法
+---
+
+# 所得税法
+
+## Metadata
+- Law ID: `340AC0000000033`
+- Law No: 昭和四十年法律第三十三号
+- Promulgation Date: 19650331

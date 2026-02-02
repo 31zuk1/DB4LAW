@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC1000000185
+id: JPLAW:328AC1000000185
+law_no: 昭和二十八年法律第百八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC1000000185
+promulgation_date: '19530808'
+tags:
+- 学校図書館法
+tier: 0
+title: 学校図書館法
+law_id: 328AC1000000185
+official_title: 学校図書館法
+aliases:
+- 学校図書館法
+---
+
+# 学校図書館法
+
+## Metadata
+- Law ID: `328AC1000000185`
+- Law No: 昭和二十八年法律第百八十五号
+- Promulgation Date: 19530808

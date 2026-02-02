@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC1000000105
+id: JPLAW:414AC1000000105
+law_no: 平成十四年法律第百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC1000000105
+promulgation_date: '20020807'
+tags:
+- ホームレスの自立の支援等に関する特別措置法
+tier: 0
+title: ホームレスの自立の支援等に関する特別措置法
+law_id: 414AC1000000105
+official_title: ホームレスの自立の支援等に関する特別措置法
+aliases:
+- ホームレスの自立の支援等に関する特別措置法
+---
+
+# ホームレスの自立の支援等に関する特別措置法
+
+## Metadata
+- Law ID: `414AC1000000105`
+- Law No: 平成十四年法律第百五号
+- Promulgation Date: 20020807

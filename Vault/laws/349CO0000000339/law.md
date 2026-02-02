@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349CO0000000339
+id: JPLAW:349CO0000000339
+law_no: 昭和四十九年政令第三百三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/349CO0000000339
+promulgation_date: '19740927'
+tags:
+- 電源開発促進税法施行令
+tier: 0
+title: 電源開発促進税法施行令
+law_id: 349CO0000000339
+official_title: 電源開発促進税法施行令
+aliases:
+- 電源開発促進税法施行令
+---
+
+# 電源開発促進税法施行令
+
+## Metadata
+- Law ID: `349CO0000000339`
+- Law No: 昭和四十九年政令第三百三十九号
+- Promulgation Date: 19740927

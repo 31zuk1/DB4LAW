@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330CO0000000261
+id: JPLAW:330CO0000000261
+law_no: 昭和三十年政令第二百六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/330CO0000000261
+promulgation_date: '19550928'
+tags:
+- 毒物及び劇物取締法施行令
+tier: 0
+title: 毒物及び劇物取締法施行令
+law_id: 330CO0000000261
+official_title: 毒物及び劇物取締法施行令
+aliases:
+- 毒物及び劇物取締法施行令
+---
+
+# 毒物及び劇物取締法施行令
+
+## Metadata
+- Law ID: `330CO0000000261`
+- Law No: 昭和三十年政令第二百六十一号
+- Promulgation Date: 19550928

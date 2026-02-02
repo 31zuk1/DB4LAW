@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421CO0000000310
+id: JPLAW:421CO0000000310
+law_no: 平成二十一年政令第三百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/421CO0000000310
+promulgation_date: '20091228'
+tags:
+- 日本年金機構の設立に伴う関係政令の整備等及び経過措置に関する政令
+tier: 0
+title: 日本年金機構の設立に伴う関係政令の整備等及び経過措置に関する政令
+law_id: 421CO0000000310
+official_title: 日本年金機構の設立に伴う関係政令の整備等及び経過措置に関する政令
+aliases:
+- 日本年金機構の設立に伴う関係政令の整備等及び経過措置に関する政令
+---
+
+# 日本年金機構の設立に伴う関係政令の整備等及び経過措置に関する政令
+
+## Metadata
+- Law ID: `421CO0000000310`
+- Law No: 平成二十一年政令第三百十号
+- Promulgation Date: 20091228

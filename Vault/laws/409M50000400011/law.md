@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409M50000400011
+id: JPLAW:409M50000400011
+law_no: 平成九年通商産業省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/409M50000400011
+promulgation_date: '19970310'
+tags:
+- 液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則
+tier: 0
+title: 液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則
+law_id: 409M50000400011
+official_title: 液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則
+aliases:
+- 液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則
+---
+
+# 液化石油ガスの保安の確保及び取引の適正化に関する法律施行規則
+
+## Metadata
+- Law ID: `409M50000400011`
+- Law No: 平成九年通商産業省令第十一号
+- Promulgation Date: 19970310

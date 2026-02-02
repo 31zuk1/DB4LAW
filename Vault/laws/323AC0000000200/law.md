@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000200
+id: JPLAW:323AC0000000200
+law_no: 昭和二十三年法律第二百号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000200
+promulgation_date: '19480730'
+tags:
+- 消費生活協同組合法
+tier: 0
+title: 消費生活協同組合法
+law_id: 323AC0000000200
+official_title: 消費生活協同組合法
+aliases:
+- 消費生活協同組合法
+---
+
+# 消費生活協同組合法
+
+## Metadata
+- Law ID: `323AC0000000200`
+- Law No: 昭和二十三年法律第二百号
+- Promulgation Date: 19480730

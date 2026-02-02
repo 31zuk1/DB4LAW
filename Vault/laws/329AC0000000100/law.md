@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329AC0000000100
+id: JPLAW:329AC0000000100
+law_no: 昭和二十九年法律第百号
+links:
+  egov: https://laws.e-gov.go.jp/law/329AC0000000100
+promulgation_date: '19540515'
+tags:
+- 利息制限法
+tier: 0
+title: 利息制限法
+law_id: 329AC0000000100
+official_title: 利息制限法
+aliases:
+- 利息制限法
+---
+
+# 利息制限法
+
+## Metadata
+- Law ID: `329AC0000000100`
+- Law No: 昭和二十九年法律第百号
+- Promulgation Date: 19540515

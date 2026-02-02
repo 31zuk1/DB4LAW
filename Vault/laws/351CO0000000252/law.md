@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351CO0000000252
+id: JPLAW:351CO0000000252
+law_no: 昭和五十一年政令第二百五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/351CO0000000252
+promulgation_date: '19760928'
+tags:
+- 高年齢者等の雇用の安定等に関する法律施行令
+tier: 0
+title: 高年齢者等の雇用の安定等に関する法律施行令
+law_id: 351CO0000000252
+official_title: 高年齢者等の雇用の安定等に関する法律施行令
+aliases:
+- 高年齢者等の雇用の安定等に関する法律施行令
+---
+
+# 高年齢者等の雇用の安定等に関する法律施行令
+
+## Metadata
+- Law ID: `351CO0000000252`
+- Law No: 昭和五十一年政令第二百五十二号
+- Promulgation Date: 19760928

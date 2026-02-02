@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506AC0000000038
+id: JPLAW:506AC0000000038
+law_no: 令和六年法律第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/506AC0000000038
+promulgation_date: '20240524'
+tags:
+- 二酸化炭素の貯留事業に関する法律
+tier: 0
+title: 二酸化炭素の貯留事業に関する法律
+law_id: 506AC0000000038
+official_title: 二酸化炭素の貯留事業に関する法律
+aliases:
+- 二酸化炭素の貯留事業に関する法律
+---
+
+# 二酸化炭素の貯留事業に関する法律
+
+## Metadata
+- Law ID: `506AC0000000038`
+- Law No: 令和六年法律第三十八号
+- Promulgation Date: 20240524

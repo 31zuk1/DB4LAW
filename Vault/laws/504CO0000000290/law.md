@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504CO0000000290
+id: JPLAW:504CO0000000290
+law_no: 令和四年政令第二百九十号
+links:
+  egov: https://laws.e-gov.go.jp/law/504CO0000000290
+promulgation_date: '20220831'
+tags:
+- 電波監理審議会令
+tier: 0
+title: 電波監理審議会令
+law_id: 504CO0000000290
+official_title: 電波監理審議会令
+aliases:
+- 電波監理審議会令
+---
+
+# 電波監理審議会令
+
+## Metadata
+- Law ID: `504CO0000000290`
+- Law No: 令和四年政令第二百九十号
+- Promulgation Date: 20220831

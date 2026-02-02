@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50002000028
+id: JPLAW:342M50002000028
+law_no: 昭和四十二年労働省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50002000028
+promulgation_date: '19671024'
+tags:
+- 炭鉱災害による一酸化炭素中毒症に関する特別措置法施行規則
+tier: 0
+title: 炭鉱災害による一酸化炭素中毒症に関する特別措置法施行規則
+law_id: 342M50002000028
+official_title: 炭鉱災害による一酸化炭素中毒症に関する特別措置法施行規則
+aliases:
+- 炭鉱災害による一酸化炭素中毒症に関する特別措置法施行規則
+---
+
+# 炭鉱災害による一酸化炭素中毒症に関する特別措置法施行規則
+
+## Metadata
+- Law ID: `342M50002000028`
+- Law No: 昭和四十二年労働省令第二十八号
+- Promulgation Date: 19671024

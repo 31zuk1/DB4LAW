@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 321IO0000000499
+id: JPLAW:321IO0000000499
+law_no: 昭和二十一年勅令第四百九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/321IO0000000499
+promulgation_date: '19461029'
+tags:
+- 金融機関再建整備法施行令
+tier: 0
+title: 金融機関再建整備法施行令
+law_id: 321IO0000000499
+official_title: 金融機関再建整備法施行令
+aliases:
+- 金融機関再建整備法施行令
+---
+
+# 金融機関再建整備法施行令
+
+## Metadata
+- Law ID: `321IO0000000499`
+- Law No: 昭和二十一年勅令第四百九十九号
+- Promulgation Date: 19461029

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360M50000400081
+id: JPLAW:360M50000400081
+law_no: 昭和六十年通商産業省令第八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/360M50000400081
+promulgation_date: '19851224'
+tags:
+- 回路配置利用権等の登録に関する省令
+tier: 0
+title: 回路配置利用権等の登録に関する省令
+law_id: 360M50000400081
+official_title: 回路配置利用権等の登録に関する省令
+aliases:
+- 回路配置利用権等の登録に関する省令
+---
+
+# 回路配置利用権等の登録に関する省令
+
+## Metadata
+- Law ID: `360M50000400081`
+- Law No: 昭和六十年通商産業省令第八十一号
+- Promulgation Date: 19851224

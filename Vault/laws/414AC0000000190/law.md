@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000190
+id: JPLAW:414AC0000000190
+law_no: 平成十四年法律第百九十号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000190
+promulgation_date: '20021218'
+tags:
+- 金融機関等の組織再編成の促進に関する特別措置法
+tier: 0
+title: 金融機関等の組織再編成の促進に関する特別措置法
+law_id: 414AC0000000190
+official_title: 金融機関等の組織再編成の促進に関する特別措置法
+aliases:
+- 金融機関等の組織再編成の促進に関する特別措置法
+---
+
+# 金融機関等の組織再編成の促進に関する特別措置法
+
+## Metadata
+- Law ID: `414AC0000000190`
+- Law No: 平成十四年法律第百九十号
+- Promulgation Date: 20021218

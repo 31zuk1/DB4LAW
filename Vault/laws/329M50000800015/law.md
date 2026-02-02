@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000800015
+id: JPLAW:329M50000800015
+law_no: 昭和二十九年運輸省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000800015
+promulgation_date: '19540401'
+tags:
+- 鉄道車両等生産動態統計調査規則
+tier: 0
+title: 鉄道車両等生産動態統計調査規則
+law_id: 329M50000800015
+official_title: 鉄道車両等生産動態統計調査規則
+aliases:
+- 鉄道車両等生産動態統計調査規則
+---
+
+# 鉄道車両等生産動態統計調査規則
+
+## Metadata
+- Law ID: `329M50000800015`
+- Law No: 昭和二十九年運輸省令第十五号
+- Promulgation Date: 19540401

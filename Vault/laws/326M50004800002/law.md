@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50004800002
+id: JPLAW:326M50004800002
+law_no: 昭和二十六年運輸省・建設省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50004800002
+promulgation_date: '19510823'
+tags:
+- 自動車道事業規則
+tier: 0
+title: 自動車道事業規則
+law_id: 326M50004800002
+official_title: 自動車道事業規則
+aliases:
+- 自動車道事業規則
+---
+
+# 自動車道事業規則
+
+## Metadata
+- Law ID: `326M50004800002`
+- Law No: 昭和二十六年運輸省・建設省令第二号
+- Promulgation Date: 19510823

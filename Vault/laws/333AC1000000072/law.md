@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC1000000072
+id: JPLAW:333AC1000000072
+law_no: 昭和三十三年法律第七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC1000000072
+promulgation_date: '19580422'
+tags:
+- 台風常襲地帯における災害の防除に関する特別措置法
+tier: 0
+title: 台風常襲地帯における災害の防除に関する特別措置法
+law_id: 333AC1000000072
+official_title: 台風常襲地帯における災害の防除に関する特別措置法
+aliases:
+- 台風常襲地帯における災害の防除に関する特別措置法
+---
+
+# 台風常襲地帯における災害の防除に関する特別措置法
+
+## Metadata
+- Law ID: `333AC1000000072`
+- Law No: 昭和三十三年法律第七十二号
+- Promulgation Date: 19580422

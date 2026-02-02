@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338CO0000000343
+id: JPLAW:338CO0000000343
+law_no: 昭和三十八年政令第三百四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/338CO0000000343
+promulgation_date: '19631004'
+tags:
+- 共同溝の整備等に関する特別措置法施行令
+tier: 0
+title: 共同溝の整備等に関する特別措置法施行令
+law_id: 338CO0000000343
+official_title: 共同溝の整備等に関する特別措置法施行令
+aliases:
+- 共同溝の整備等に関する特別措置法施行令
+---
+
+# 共同溝の整備等に関する特別措置法施行令
+
+## Metadata
+- Law ID: `338CO0000000343`
+- Law No: 昭和三十八年政令第三百四十三号
+- Promulgation Date: 19631004

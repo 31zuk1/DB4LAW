@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423AC1000000078
+id: JPLAW:423AC1000000078
+law_no: 平成二十三年法律第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/423AC1000000078
+promulgation_date: '20110624'
+tags:
+- スポーツ基本法
+tier: 0
+title: スポーツ基本法
+law_id: 423AC1000000078
+official_title: スポーツ基本法
+aliases:
+- スポーツ基本法
+---
+
+# スポーツ基本法
+
+## Metadata
+- Law ID: `423AC1000000078`
+- Law No: 平成二十三年法律第七十八号
+- Promulgation Date: 20110624

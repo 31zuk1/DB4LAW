@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000226
+id: JPLAW:411AC0000000226
+law_no: 平成十一年法律第二百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000226
+promulgation_date: '19991222'
+tags:
+- 電気通信回線による登記情報の提供に関する法律
+tier: 0
+title: 電気通信回線による登記情報の提供に関する法律
+law_id: 411AC0000000226
+official_title: 電気通信回線による登記情報の提供に関する法律
+aliases:
+- 電気通信回線による登記情報の提供に関する法律
+---
+
+# 電気通信回線による登記情報の提供に関する法律
+
+## Metadata
+- Law ID: `411AC0000000226`
+- Law No: 平成十一年法律第二百二十六号
+- Promulgation Date: 19991222

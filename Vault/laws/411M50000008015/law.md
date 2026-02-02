@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411M50000008015
+id: JPLAW:411M50000008015
+law_no: 平成十一年自治省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/411M50000008015
+promulgation_date: '19990331'
+tags:
+- 地方特例交付金に関する省令
+tier: 0
+title: 地方特例交付金に関する省令
+law_id: 411M50000008015
+official_title: 地方特例交付金に関する省令
+aliases:
+- 地方特例交付金に関する省令
+---
+
+# 地方特例交付金に関する省令
+
+## Metadata
+- Law ID: `411M50000008015`
+- Law No: 平成十一年自治省令第十五号
+- Promulgation Date: 19990331

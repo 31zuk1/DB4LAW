@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341CO0000000222
+id: JPLAW:341CO0000000222
+law_no: 昭和四十一年政令第二百二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/341CO0000000222
+promulgation_date: '19660630'
+tags:
+- 行政相談委員法第二条第一項第一号の法人を定める政令
+tier: 0
+title: 行政相談委員法第二条第一項第一号の法人を定める政令
+law_id: 341CO0000000222
+official_title: 行政相談委員法第二条第一項第一号の法人を定める政令
+aliases:
+- 行政相談委員法第二条第一項第一号の法人を定める政令
+---
+
+# 行政相談委員法第二条第一項第一号の法人を定める政令
+
+## Metadata
+- Law ID: `341CO0000000222`
+- Law No: 昭和四十一年政令第二百二十二号
+- Promulgation Date: 19660630

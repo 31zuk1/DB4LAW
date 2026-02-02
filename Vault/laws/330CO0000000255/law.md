@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330CO0000000255
+id: JPLAW:330CO0000000255
+law_no: 昭和三十年政令第二百五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/330CO0000000255
+promulgation_date: '19550926'
+tags:
+- 補助金等に係る予算の執行の適正化に関する法律施行令
+tier: 0
+title: 補助金等に係る予算の執行の適正化に関する法律施行令
+law_id: 330CO0000000255
+official_title: 補助金等に係る予算の執行の適正化に関する法律施行令
+aliases:
+- 補助金等に係る予算の執行の適正化に関する法律施行令
+---
+
+# 補助金等に係る予算の執行の適正化に関する法律施行令
+
+## Metadata
+- Law ID: `330CO0000000255`
+- Law No: 昭和三十年政令第二百五十五号
+- Promulgation Date: 19550926

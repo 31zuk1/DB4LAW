@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363M50000040031
+id: JPLAW:363M50000040031
+law_no: 昭和六十三年大蔵省令第三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/363M50000040031
+promulgation_date: '19880701'
+tags:
+- 多数国間投資保証機関への加盟に伴う国債の発行等に関する省令
+tier: 0
+title: 多数国間投資保証機関への加盟に伴う国債の発行等に関する省令
+law_id: 363M50000040031
+official_title: 多数国間投資保証機関への加盟に伴う国債の発行等に関する省令
+aliases:
+- 多数国間投資保証機関への加盟に伴う国債の発行等に関する省令
+---
+
+# 多数国間投資保証機関への加盟に伴う国債の発行等に関する省令
+
+## Metadata
+- Law ID: `363M50000040031`
+- Law No: 昭和六十三年大蔵省令第三十一号
+- Promulgation Date: 19880701

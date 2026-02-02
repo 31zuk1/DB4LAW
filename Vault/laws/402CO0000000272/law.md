@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402CO0000000272
+id: JPLAW:402CO0000000272
+law_no: 平成二年政令第二百七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/402CO0000000272
+promulgation_date: '19900914'
+tags:
+- 市民農園整備促進法施行令
+tier: 0
+title: 市民農園整備促進法施行令
+law_id: 402CO0000000272
+official_title: 市民農園整備促進法施行令
+aliases:
+- 市民農園整備促進法施行令
+---
+
+# 市民農園整備促進法施行令
+
+## Metadata
+- Law ID: `402CO0000000272`
+- Law No: 平成二年政令第二百七十二号
+- Promulgation Date: 19900914

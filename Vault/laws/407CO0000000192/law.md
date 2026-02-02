@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000192
+id: JPLAW:407CO0000000192
+law_no: 平成七年政令第百九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000192
+promulgation_date: '19950501'
+tags:
+- 化学兵器の禁止及び特定物質の規制等に関する法律施行令
+tier: 0
+title: 化学兵器の禁止及び特定物質の規制等に関する法律施行令
+law_id: 407CO0000000192
+official_title: 化学兵器の禁止及び特定物質の規制等に関する法律施行令
+aliases:
+- 化学兵器の禁止及び特定物質の規制等に関する法律施行令
+---
+
+# 化学兵器の禁止及び特定物質の規制等に関する法律施行令
+
+## Metadata
+- Law ID: `407CO0000000192`
+- Law No: 平成七年政令第百九十二号
+- Promulgation Date: 19950501

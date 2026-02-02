@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407M50004000002
+id: JPLAW:407M50004000002
+law_no: 平成七年建設省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/407M50004000002
+promulgation_date: '19950226'
+tags:
+- 被災市街地復興特別措置法施行規則
+tier: 0
+title: 被災市街地復興特別措置法施行規則
+law_id: 407M50004000002
+official_title: 被災市街地復興特別措置法施行規則
+aliases:
+- 被災市街地復興特別措置法施行規則
+---
+
+# 被災市街地復興特別措置法施行規則
+
+## Metadata
+- Law ID: `407M50004000002`
+- Law No: 平成七年建設省令第二号
+- Promulgation Date: 19950226

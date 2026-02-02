@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407AC0000000105
+id: JPLAW:407AC0000000105
+law_no: 平成七年法律第百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/407AC0000000105
+promulgation_date: '19950607'
+tags:
+- 保険業法
+tier: 0
+title: 保険業法
+law_id: 407AC0000000105
+official_title: 保険業法
+aliases:
+- 保険業法
+---
+
+# 保険業法
+
+## Metadata
+- Law ID: `407AC0000000105`
+- Law No: 平成七年法律第百五号
+- Promulgation Date: 19950607

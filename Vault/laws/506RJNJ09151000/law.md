@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506RJNJ09151000
+id: JPLAW:506RJNJ09151000
+law_no: 令和六年人事院規則九―一五一
+links:
+  egov: https://laws.e-gov.go.jp/law/506RJNJ09151000
+promulgation_date: '20240123'
+tags:
+- 人事院規則九―一五一（在宅勤務等手当）
+tier: 0
+title: 人事院規則九―一五一（在宅勤務等手当）
+law_id: 506RJNJ09151000
+official_title: 人事院規則九―一五一（在宅勤務等手当）
+aliases:
+- 人事院規則九―一五一（在宅勤務等手当）
+---
+
+# 人事院規則九―一五一（在宅勤務等手当）
+
+## Metadata
+- Law ID: `506RJNJ09151000`
+- Law No: 令和六年人事院規則九―一五一
+- Promulgation Date: 20240123

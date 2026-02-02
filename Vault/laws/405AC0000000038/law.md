@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405AC0000000038
+id: JPLAW:405AC0000000038
+law_no: 平成五年法律第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/405AC0000000038
+promulgation_date: '19930506'
+tags:
+- 福祉用具の研究開発及び普及の促進に関する法律
+tier: 0
+title: 福祉用具の研究開発及び普及の促進に関する法律
+law_id: 405AC0000000038
+official_title: 福祉用具の研究開発及び普及の促進に関する法律
+aliases:
+- 福祉用具の研究開発及び普及の促進に関する法律
+---
+
+# 福祉用具の研究開発及び普及の促進に関する法律
+
+## Metadata
+- Law ID: `405AC0000000038`
+- Law No: 平成五年法律第三十八号
+- Promulgation Date: 19930506

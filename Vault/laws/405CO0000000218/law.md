@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405CO0000000218
+id: JPLAW:405CO0000000218
+law_no: 平成五年政令第二百十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/405CO0000000218
+promulgation_date: '19930623'
+tags:
+- 商工会及び商工会議所による小規模事業者の支援に関する法律施行令
+tier: 0
+title: 商工会及び商工会議所による小規模事業者の支援に関する法律施行令
+law_id: 405CO0000000218
+official_title: 商工会及び商工会議所による小規模事業者の支援に関する法律施行令
+aliases:
+- 商工会及び商工会議所による小規模事業者の支援に関する法律施行令
+---
+
+# 商工会及び商工会議所による小規模事業者の支援に関する法律施行令
+
+## Metadata
+- Law ID: `405CO0000000218`
+- Law No: 平成五年政令第二百十八号
+- Promulgation Date: 19930623

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000266
+id: JPLAW:327AC0000000266
+law_no: 昭和二十七年法律第二百六十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000266
+promulgation_date: '19520731'
+tags:
+- 防衛省の職員の給与等に関する法律
+tier: 0
+title: 防衛省の職員の給与等に関する法律
+law_id: 327AC0000000266
+official_title: 防衛省の職員の給与等に関する法律
+aliases:
+- 防衛省の職員の給与等に関する法律
+---
+
+# 防衛省の職員の給与等に関する法律
+
+## Metadata
+- Law ID: `327AC0000000266`
+- Law No: 昭和二十七年法律第二百六十六号
+- Promulgation Date: 19520731

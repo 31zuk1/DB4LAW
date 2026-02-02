@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344AC0000000033
+id: JPLAW:344AC0000000033
+law_no: 昭和四十四年法律第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/344AC0000000033
+promulgation_date: '19690516'
+tags:
+- 行政機関の職員の定員に関する法律
+tier: 0
+title: 行政機関の職員の定員に関する法律
+law_id: 344AC0000000033
+official_title: 行政機関の職員の定員に関する法律
+aliases:
+- 行政機関の職員の定員に関する法律
+---
+
+# 行政機関の職員の定員に関する法律
+
+## Metadata
+- Law ID: `344AC0000000033`
+- Law No: 昭和四十四年法律第三十三号
+- Promulgation Date: 19690516

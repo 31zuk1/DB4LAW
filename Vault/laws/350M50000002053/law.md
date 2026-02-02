@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 350M50000002053
+id: JPLAW:350M50000002053
+law_no: 昭和五十年総理府令第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/350M50000002053
+promulgation_date: '19750825'
+tags:
+- 自動車安全運転センター法施行規則
+tier: 0
+title: 自動車安全運転センター法施行規則
+law_id: 350M50000002053
+official_title: 自動車安全運転センター法施行規則
+aliases:
+- 自動車安全運転センター法施行規則
+---
+
+# 自動車安全運転センター法施行規則
+
+## Metadata
+- Law ID: `350M50000002053`
+- Law No: 昭和五十年総理府令第五十三号
+- Promulgation Date: 19750825

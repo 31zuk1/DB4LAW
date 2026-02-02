@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000808001
+id: JPLAW:427M60000808001
+law_no: 平成二十七年総務省・国土交通省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000808001
+promulgation_date: '20150422'
+tags:
+- 空家等対策の推進に関する特別措置法施行規則
+tier: 0
+title: 空家等対策の推進に関する特別措置法施行規則
+law_id: 427M60000808001
+official_title: 空家等対策の推進に関する特別措置法施行規則
+aliases:
+- 空家等対策の推進に関する特別措置法施行規則
+---
+
+# 空家等対策の推進に関する特別措置法施行規則
+
+## Metadata
+- Law ID: `427M60000808001`
+- Law No: 平成二十七年総務省・国土交通省令第一号
+- Promulgation Date: 20150422

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411M50000008035
+id: JPLAW:411M50000008035
+law_no: 平成十一年自治省令第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/411M50000008035
+promulgation_date: '19991006'
+tags:
+- 住民基本台帳法施行規則
+tier: 0
+title: 住民基本台帳法施行規則
+law_id: 411M50000008035
+official_title: 住民基本台帳法施行規則
+aliases:
+- 住民基本台帳法施行規則
+---
+
+# 住民基本台帳法施行規則
+
+## Metadata
+- Law ID: `411M50000008035`
+- Law No: 平成十一年自治省令第三十五号
+- Promulgation Date: 19991006

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330CO0000000221
+id: JPLAW:330CO0000000221
+law_no: 昭和三十年政令第二百二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/330CO0000000221
+promulgation_date: '19550901'
+tags:
+- 土地区画整理登記令
+tier: 0
+title: 土地区画整理登記令
+law_id: 330CO0000000221
+official_title: 土地区画整理登記令
+aliases:
+- 土地区画整理登記令
+---
+
+# 土地区画整理登記令
+
+## Metadata
+- Law ID: `330CO0000000221`
+- Law No: 昭和三十年政令第二百二十一号
+- Promulgation Date: 19550901

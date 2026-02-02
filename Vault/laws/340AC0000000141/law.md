@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340AC0000000141
+id: JPLAW:340AC0000000141
+law_no: 昭和四十年法律第百四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/340AC0000000141
+promulgation_date: '19650818'
+tags:
+- 母子保健法
+tier: 0
+title: 母子保健法
+law_id: 340AC0000000141
+official_title: 母子保健法
+aliases:
+- 母子保健法
+---
+
+# 母子保健法
+
+## Metadata
+- Law ID: `340AC0000000141`
+- Law No: 昭和四十年法律第百四十一号
+- Promulgation Date: 19650818

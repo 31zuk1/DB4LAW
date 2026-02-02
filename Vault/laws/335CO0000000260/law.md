@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335CO0000000260
+id: JPLAW:335CO0000000260
+law_no: 昭和三十五年政令第二百六十号
+links:
+  egov: https://laws.e-gov.go.jp/law/335CO0000000260
+promulgation_date: '19600930'
+tags:
+- 電気工事士法施行令
+tier: 0
+title: 電気工事士法施行令
+law_id: 335CO0000000260
+official_title: 電気工事士法施行令
+aliases:
+- 電気工事士法施行令
+---
+
+# 電気工事士法施行令
+
+## Metadata
+- Law ID: `335CO0000000260`
+- Law No: 昭和三十五年政令第二百六十号
+- Promulgation Date: 19600930

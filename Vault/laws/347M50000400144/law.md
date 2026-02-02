@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50000400144
+id: JPLAW:347M50000400144
+law_no: 昭和四十七年通商産業省令第百四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50000400144
+promulgation_date: '19721220'
+tags:
+- 熱供給事業会計規則
+tier: 0
+title: 熱供給事業会計規則
+law_id: 347M50000400144
+official_title: 熱供給事業会計規則
+aliases:
+- 熱供給事業会計規則
+---
+
+# 熱供給事業会計規則
+
+## Metadata
+- Law ID: `347M50000400144`
+- Law No: 昭和四十七年通商産業省令第百四十四号
+- Promulgation Date: 19721220

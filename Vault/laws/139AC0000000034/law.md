@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 139AC0000000034
+id: JPLAW:139AC0000000034
+law_no: 明治三十九年法律第三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/139AC0000000034
+promulgation_date: '19060411'
+tags:
+- 明治三十九年法律第三十四号（国債ニ関スル法律）
+tier: 0
+title: 明治三十九年法律第三十四号（国債ニ関スル法律）
+law_id: 139AC0000000034
+official_title: 明治三十九年法律第三十四号（国債ニ関スル法律）
+aliases:
+- 明治三十九年法律第三十四号（国債ニ関スル法律）
+---
+
+# 明治三十九年法律第三十四号（国債ニ関スル法律）
+
+## Metadata
+- Law ID: `139AC0000000034`
+- Law No: 明治三十九年法律第三十四号
+- Promulgation Date: 19060411

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC0000000120
+id: JPLAW:418AC0000000120
+law_no: 平成十八年法律第百二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC0000000120
+promulgation_date: '20061222'
+tags:
+- 教育基本法
+tier: 0
+title: 教育基本法
+law_id: 418AC0000000120
+official_title: 教育基本法
+aliases:
+- 教育基本法
+---
+
+# 教育基本法
+
+## Metadata
+- Law ID: `418AC0000000120`
+- Law No: 平成十八年法律第百二十号
+- Promulgation Date: 20061222

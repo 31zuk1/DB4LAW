@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351M50000008035
+id: JPLAW:351M50000008035
+law_no: 昭和五十一年自治省令第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/351M50000008035
+promulgation_date: '19761224'
+tags:
+- 特別交付税に関する省令
+tier: 0
+title: 特別交付税に関する省令
+law_id: 351M50000008035
+official_title: 特別交付税に関する省令
+aliases:
+- 特別交付税に関する省令
+---
+
+# 特別交付税に関する省令
+
+## Metadata
+- Law ID: `351M50000008035`
+- Law No: 昭和五十一年自治省令第三十五号
+- Promulgation Date: 19761224

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50000002040
+id: JPLAW:342M50000002040
+law_no: 昭和四十二年総理府令第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50000002040
+promulgation_date: '19670801'
+tags:
+- 引揚者等に対する特別交付金の支給に関する法律施行規則
+tier: 0
+title: 引揚者等に対する特別交付金の支給に関する法律施行規則
+law_id: 342M50000002040
+official_title: 引揚者等に対する特別交付金の支給に関する法律施行規則
+aliases:
+- 引揚者等に対する特別交付金の支給に関する法律施行規則
+---
+
+# 引揚者等に対する特別交付金の支給に関する法律施行規則
+
+## Metadata
+- Law ID: `342M50000002040`
+- Law No: 昭和四十二年総理府令第四十号
+- Promulgation Date: 19670801

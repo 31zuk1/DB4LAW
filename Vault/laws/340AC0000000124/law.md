@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340AC0000000124
+id: JPLAW:340AC0000000124
+law_no: 昭和四十年法律第百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/340AC0000000124
+promulgation_date: '19650610'
+tags:
+- 地方住宅供給公社法
+tier: 0
+title: 地方住宅供給公社法
+law_id: 340AC0000000124
+official_title: 地方住宅供給公社法
+aliases:
+- 地方住宅供給公社法
+---
+
+# 地方住宅供給公社法
+
+## Metadata
+- Law ID: `340AC0000000124`
+- Law No: 昭和四十年法律第百二十四号
+- Promulgation Date: 19650610

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407AC0000000078
+id: JPLAW:407AC0000000078
+law_no: 平成七年法律第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/407AC0000000078
+promulgation_date: '19950421'
+tags:
+- サリン等による人身被害の防止に関する法律
+tier: 0
+title: サリン等による人身被害の防止に関する法律
+law_id: 407AC0000000078
+official_title: サリン等による人身被害の防止に関する法律
+aliases:
+- サリン等による人身被害の防止に関する法律
+---
+
+# サリン等による人身被害の防止に関する法律
+
+## Metadata
+- Law ID: `407AC0000000078`
+- Law No: 平成七年法律第七十八号
+- Promulgation Date: 19950421

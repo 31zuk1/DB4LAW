@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC1000000007
+id: JPLAW:326AC1000000007
+law_no: 昭和二十六年法律第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC1000000007
+promulgation_date: '19510301'
+tags:
+- 松江国際文化観光都市建設法
+tier: 0
+title: 松江国際文化観光都市建設法
+law_id: 326AC1000000007
+official_title: 松江国際文化観光都市建設法
+aliases:
+- 松江国際文化観光都市建設法
+---
+
+# 松江国際文化観光都市建設法
+
+## Metadata
+- Law ID: `326AC1000000007`
+- Law No: 昭和二十六年法律第七号
+- Promulgation Date: 19510301

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50000800062
+id: JPLAW:339M50000800062
+law_no: 昭和三十九年運輸省令第六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50000800062
+promulgation_date: '19640902'
+tags:
+- 特殊貨物船舶運送規則
+tier: 0
+title: 特殊貨物船舶運送規則
+law_id: 339M50000800062
+official_title: 特殊貨物船舶運送規則
+aliases:
+- 特殊貨物船舶運送規則
+---
+
+# 特殊貨物船舶運送規則
+
+## Metadata
+- Law ID: `339M50000800062`
+- Law No: 昭和三十九年運輸省令第六十二号
+- Promulgation Date: 19640902

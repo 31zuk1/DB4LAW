@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337CO0000000390
+id: JPLAW:337CO0000000390
+law_no: 昭和三十七年政令第三百九十号
+links:
+  egov: https://laws.e-gov.go.jp/law/337CO0000000390
+promulgation_date: '19620929'
+tags:
+- 家庭用品品質表示法施行令
+tier: 0
+title: 家庭用品品質表示法施行令
+law_id: 337CO0000000390
+official_title: 家庭用品品質表示法施行令
+aliases:
+- 家庭用品品質表示法施行令
+---
+
+# 家庭用品品質表示法施行令
+
+## Metadata
+- Law ID: `337CO0000000390`
+- Law No: 昭和三十七年政令第三百九十号
+- Promulgation Date: 19620929

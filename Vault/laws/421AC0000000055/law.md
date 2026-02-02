@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421AC0000000055
+id: JPLAW:421AC0000000055
+law_no: 平成二十一年法律第五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/421AC0000000055
+promulgation_date: '20090624'
+tags:
+- 海賊行為の処罰及び海賊行為への対処に関する法律
+tier: 0
+title: 海賊行為の処罰及び海賊行為への対処に関する法律
+law_id: 421AC0000000055
+official_title: 海賊行為の処罰及び海賊行為への対処に関する法律
+aliases:
+- 海賊行為の処罰及び海賊行為への対処に関する法律
+---
+
+# 海賊行為の処罰及び海賊行為への対処に関する法律
+
+## Metadata
+- Law ID: `421AC0000000055`
+- Law No: 平成二十一年法律第五十五号
+- Promulgation Date: 20090624

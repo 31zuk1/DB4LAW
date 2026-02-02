@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361CO0000000240
+id: JPLAW:361CO0000000240
+law_no: 昭和六十一年政令第二百四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/361CO0000000240
+promulgation_date: '19860627'
+tags:
+- 中小企業投資育成株式会社法第五条第二項第一号の額を定める政令
+tier: 0
+title: 中小企業投資育成株式会社法第五条第二項第一号の額を定める政令
+law_id: 361CO0000000240
+official_title: 中小企業投資育成株式会社法第五条第二項第一号の額を定める政令
+aliases:
+- 中小企業投資育成株式会社法第五条第二項第一号の額を定める政令
+---
+
+# 中小企業投資育成株式会社法第五条第二項第一号の額を定める政令
+
+## Metadata
+- Law ID: `361CO0000000240`
+- Law No: 昭和六十一年政令第二百四十号
+- Promulgation Date: 19860627

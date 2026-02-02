@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000319
+id: JPLAW:327CO0000000319
+law_no: 昭和二十七年政令第三百十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000319
+promulgation_date: '19520731'
+tags:
+- 物価統制令施行令
+tier: 0
+title: 物価統制令施行令
+law_id: 327CO0000000319
+official_title: 物価統制令施行令
+aliases:
+- 物価統制令施行令
+---
+
+# 物価統制令施行令
+
+## Metadata
+- Law ID: `327CO0000000319`
+- Law No: 昭和二十七年政令第三百十九号
+- Promulgation Date: 19520731

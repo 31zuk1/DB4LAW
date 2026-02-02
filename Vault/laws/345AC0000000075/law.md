@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345AC0000000075
+id: JPLAW:345AC0000000075
+law_no: 昭和四十五年法律第七十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/345AC0000000075
+promulgation_date: '19700519'
+tags:
+- タクシー業務適正化特別措置法
+tier: 0
+title: タクシー業務適正化特別措置法
+law_id: 345AC0000000075
+official_title: タクシー業務適正化特別措置法
+aliases:
+- タクシー業務適正化特別措置法
+---
+
+# タクシー業務適正化特別措置法
+
+## Metadata
+- Law ID: `345AC0000000075`
+- Law No: 昭和四十五年法律第七十五号
+- Promulgation Date: 19700519

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347AC0000000086
+id: JPLAW:347AC0000000086
+law_no: 昭和四十七年法律第八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/347AC0000000086
+promulgation_date: '19720622'
+tags:
+- 新都市基盤整備法
+tier: 0
+title: 新都市基盤整備法
+law_id: 347AC0000000086
+official_title: 新都市基盤整備法
+aliases:
+- 新都市基盤整備法
+---
+
+# 新都市基盤整備法
+
+## Metadata
+- Law ID: `347AC0000000086`
+- Law No: 昭和四十七年法律第八十六号
+- Promulgation Date: 19720622

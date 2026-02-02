@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338CO0000000146
+id: JPLAW:338CO0000000146
+law_no: 昭和三十八年政令第百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/338CO0000000146
+promulgation_date: '19630425'
+tags:
+- 住宅宅地債券令
+tier: 0
+title: 住宅宅地債券令
+law_id: 338CO0000000146
+official_title: 住宅宅地債券令
+aliases:
+- 住宅宅地債券令
+---
+
+# 住宅宅地債券令
+
+## Metadata
+- Law ID: `338CO0000000146`
+- Law No: 昭和三十八年政令第百四十六号
+- Promulgation Date: 19630425

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347CO0000000183
+id: JPLAW:347CO0000000183
+law_no: 昭和四十七年政令第百八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/347CO0000000183
+promulgation_date: '19720513'
+tags:
+- 内閣府において経費の配分計画に関する事務を行う事業等を定める政令
+tier: 0
+title: 内閣府において経費の配分計画に関する事務を行う事業等を定める政令
+law_id: 347CO0000000183
+official_title: 内閣府において経費の配分計画に関する事務を行う事業等を定める政令
+aliases:
+- 内閣府において経費の配分計画に関する事務を行う事業等を定める政令
+---
+
+# 内閣府において経費の配分計画に関する事務を行う事業等を定める政令
+
+## Metadata
+- Law ID: `347CO0000000183`
+- Law No: 昭和四十七年政令第百八十三号
+- Promulgation Date: 19720513

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346CO0000000246
+id: JPLAW:346CO0000000246
+law_no: 昭和四十六年政令第二百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/346CO0000000246
+promulgation_date: '19710716'
+tags:
+- 視能訓練士法施行令
+tier: 0
+title: 視能訓練士法施行令
+law_id: 346CO0000000246
+official_title: 視能訓練士法施行令
+aliases:
+- 視能訓練士法施行令
+---
+
+# 視能訓練士法施行令
+
+## Metadata
+- Law ID: `346CO0000000246`
+- Law No: 昭和四十六年政令第二百四十六号
+- Promulgation Date: 19710716

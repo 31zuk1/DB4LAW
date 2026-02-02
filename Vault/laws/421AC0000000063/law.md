@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421AC0000000063
+id: JPLAW:421AC0000000063
+law_no: 平成二十一年法律第六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/421AC0000000063
+promulgation_date: '20090626'
+tags:
+- 株式会社地域経済活性化支援機構法
+tier: 0
+title: 株式会社地域経済活性化支援機構法
+law_id: 421AC0000000063
+official_title: 株式会社地域経済活性化支援機構法
+aliases:
+- 株式会社地域経済活性化支援機構法
+---
+
+# 株式会社地域経済活性化支援機構法
+
+## Metadata
+- Law ID: `421AC0000000063`
+- Law No: 平成二十一年法律第六十三号
+- Promulgation Date: 20090626

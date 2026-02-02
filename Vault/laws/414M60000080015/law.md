@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60000080015
+id: JPLAW:414M60000080015
+law_no: 平成十四年文部科学省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60000080015
+promulgation_date: '20020329'
+tags:
+- 中学校設置基準
+tier: 0
+title: 中学校設置基準
+law_id: 414M60000080015
+official_title: 中学校設置基準
+aliases:
+- 中学校設置基準
+---
+
+# 中学校設置基準
+
+## Metadata
+- Law ID: `414M60000080015`
+- Law No: 平成十四年文部科学省令第十五号
+- Promulgation Date: 20020329

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405M50000400069
+id: JPLAW:405M50000400069
+law_no: 平成五年通商産業省令第六十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/405M50000400069
+promulgation_date: '19931025'
+tags:
+- 計量法施行規則
+tier: 0
+title: 計量法施行規則
+law_id: 405M50000400069
+official_title: 計量法施行規則
+aliases:
+- 計量法施行規則
+---
+
+# 計量法施行規則
+
+## Metadata
+- Law ID: `405M50000400069`
+- Law No: 平成五年通商産業省令第六十九号
+- Promulgation Date: 19931025

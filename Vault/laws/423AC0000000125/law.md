@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423AC0000000125
+id: JPLAW:423AC0000000125
+law_no: 平成二十三年法律第百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/423AC0000000125
+promulgation_date: '20111216'
+tags:
+- 復興庁設置法
+tier: 0
+title: 復興庁設置法
+law_id: 423AC0000000125
+official_title: 復興庁設置法
+aliases:
+- 復興庁設置法
+---
+
+# 復興庁設置法
+
+## Metadata
+- Law ID: `423AC0000000125`
+- Law No: 平成二十三年法律第百二十五号
+- Promulgation Date: 20111216

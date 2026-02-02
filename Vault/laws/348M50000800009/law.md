@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348M50000800009
+id: JPLAW:348M50000800009
+law_no: 昭和四十八年運輸省令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/348M50000800009
+promulgation_date: '19730327'
+tags:
+- 海上交通安全法施行規則
+tier: 0
+title: 海上交通安全法施行規則
+law_id: 348M50000800009
+official_title: 海上交通安全法施行規則
+aliases:
+- 海上交通安全法施行規則
+---
+
+# 海上交通安全法施行規則
+
+## Metadata
+- Law ID: `348M50000800009`
+- Law No: 昭和四十八年運輸省令第九号
+- Promulgation Date: 19730327

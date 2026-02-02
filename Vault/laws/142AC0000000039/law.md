@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 142AC0000000039
+id: JPLAW:142AC0000000039
+law_no: 明治四十二年法律第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/142AC0000000039
+promulgation_date: '19090428'
+tags:
+- 印紙犯罪処罰法
+tier: 0
+title: 印紙犯罪処罰法
+law_id: 142AC0000000039
+official_title: 印紙犯罪処罰法
+aliases:
+- 印紙犯罪処罰法
+---
+
+# 印紙犯罪処罰法
+
+## Metadata
+- Law ID: `142AC0000000039`
+- Law No: 明治四十二年法律第三十九号
+- Promulgation Date: 19090428

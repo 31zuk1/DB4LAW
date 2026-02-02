@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 350AC0000000028
+id: JPLAW:350AC0000000028
+law_no: 昭和五十年法律第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/350AC0000000028
+promulgation_date: '19750501'
+tags:
+- 作業環境測定法
+tier: 0
+title: 作業環境測定法
+law_id: 350AC0000000028
+official_title: 作業環境測定法
+aliases:
+- 作業環境測定法
+---
+
+# 作業環境測定法
+
+## Metadata
+- Law ID: `350AC0000000028`
+- Law No: 昭和五十年法律第二十八号
+- Promulgation Date: 19750501

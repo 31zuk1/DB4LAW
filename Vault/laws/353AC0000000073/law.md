@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353AC0000000073
+id: JPLAW:353AC0000000073
+law_no: 昭和五十三年法律第七十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/353AC0000000073
+promulgation_date: '19780615'
+tags:
+- 大規模地震対策特別措置法
+tier: 0
+title: 大規模地震対策特別措置法
+law_id: 353AC0000000073
+official_title: 大規模地震対策特別措置法
+aliases:
+- 大規模地震対策特別措置法
+---
+
+# 大規模地震対策特別措置法
+
+## Metadata
+- Law ID: `353AC0000000073`
+- Law No: 昭和五十三年法律第七十三号
+- Promulgation Date: 19780615

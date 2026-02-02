@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331CO0000000131
+id: JPLAW:331CO0000000131
+law_no: 昭和三十一年政令第百三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/331CO0000000131
+promulgation_date: '19560512'
+tags:
+- 農業改良資金融通法施行令
+tier: 0
+title: 農業改良資金融通法施行令
+law_id: 331CO0000000131
+official_title: 農業改良資金融通法施行令
+aliases:
+- 農業改良資金融通法施行令
+---
+
+# 農業改良資金融通法施行令
+
+## Metadata
+- Law ID: `331CO0000000131`
+- Law No: 昭和三十一年政令第百三十一号
+- Promulgation Date: 19560512

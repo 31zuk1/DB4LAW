@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000140
+id: JPLAW:324AC0000000140
+law_no: 昭和二十四年法律第百四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000140
+promulgation_date: '19490531'
+tags:
+- 司法試験法
+tier: 0
+title: 司法試験法
+law_id: 324AC0000000140
+official_title: 司法試験法
+aliases:
+- 司法試験法
+---
+
+# 司法試験法
+
+## Metadata
+- Law ID: `324AC0000000140`
+- Law No: 昭和二十四年法律第百四十号
+- Promulgation Date: 19490531

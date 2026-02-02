@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000350
+id: JPLAW:325CO0000000350
+law_no: 昭和二十五年政令第三百五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000350
+promulgation_date: '19501214'
+tags:
+- 中小企業信用保険法施行令
+tier: 0
+title: 中小企業信用保険法施行令
+law_id: 325CO0000000350
+official_title: 中小企業信用保険法施行令
+aliases:
+- 中小企業信用保険法施行令
+---
+
+# 中小企業信用保険法施行令
+
+## Metadata
+- Law ID: `325CO0000000350`
+- Law No: 昭和二十五年政令第三百五十号
+- Promulgation Date: 19501214

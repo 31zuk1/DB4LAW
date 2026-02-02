@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333RJNJ09024000
+id: JPLAW:333RJNJ09024000
+law_no: 昭和三十三年人事院規則九―二四
+links:
+  egov: https://laws.e-gov.go.jp/law/333RJNJ09024000
+promulgation_date: '19580425'
+tags:
+- 人事院規則九―二四（通勤手当）
+tier: 0
+title: 人事院規則九―二四（通勤手当）
+law_id: 333RJNJ09024000
+official_title: 人事院規則九―二四（通勤手当）
+aliases:
+- 人事院規則九―二四（通勤手当）
+---
+
+# 人事院規則九―二四（通勤手当）
+
+## Metadata
+- Law ID: `333RJNJ09024000`
+- Law No: 昭和三十三年人事院規則九―二四
+- Promulgation Date: 19580425

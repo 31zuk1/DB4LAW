@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343M50000002046
+id: JPLAW:343M50000002046
+law_no: 昭和四十三年総理府令第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/343M50000002046
+promulgation_date: '19680720'
+tags:
+- 核原料物質の使用に関する規則
+tier: 0
+title: 核原料物質の使用に関する規則
+law_id: 343M50000002046
+official_title: 核原料物質の使用に関する規則
+aliases:
+- 核原料物質の使用に関する規則
+---
+
+# 核原料物質の使用に関する規則
+
+## Metadata
+- Law ID: `343M50000002046`
+- Law No: 昭和四十三年総理府令第四十六号
+- Promulgation Date: 19680720

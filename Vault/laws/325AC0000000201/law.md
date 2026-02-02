@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000201
+id: JPLAW:325AC0000000201
+law_no: 昭和二十五年法律第二百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000201
+promulgation_date: '19500524'
+tags:
+- 建築基準法
+tier: 0
+title: 建築基準法
+law_id: 325AC0000000201
+official_title: 建築基準法
+aliases:
+- 建築基準法
+---
+
+# 建築基準法
+
+## Metadata
+- Law ID: `325AC0000000201`
+- Law No: 昭和二十五年法律第二百一号
+- Promulgation Date: 19500524

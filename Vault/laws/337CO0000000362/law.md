@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337CO0000000362
+id: JPLAW:337CO0000000362
+law_no: 昭和三十七年政令第三百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/337CO0000000362
+promulgation_date: '19620920'
+tags:
+- 船員法関係手数料令
+tier: 0
+title: 船員法関係手数料令
+law_id: 337CO0000000362
+official_title: 船員法関係手数料令
+aliases:
+- 船員法関係手数料令
+---
+
+# 船員法関係手数料令
+
+## Metadata
+- Law ID: `337CO0000000362`
+- Law No: 昭和三十七年政令第三百六十二号
+- Promulgation Date: 19620920

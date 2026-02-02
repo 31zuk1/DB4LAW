@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403AC0000000022
+id: JPLAW:403AC0000000022
+law_no: 平成三年法律第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/403AC0000000022
+promulgation_date: '19910330'
+tags:
+- 欧州復興開発銀行への加盟に伴う措置に関する法律
+tier: 0
+title: 欧州復興開発銀行への加盟に伴う措置に関する法律
+law_id: 403AC0000000022
+official_title: 欧州復興開発銀行への加盟に伴う措置に関する法律
+aliases:
+- 欧州復興開発銀行への加盟に伴う措置に関する法律
+---
+
+# 欧州復興開発銀行への加盟に伴う措置に関する法律
+
+## Metadata
+- Law ID: `403AC0000000022`
+- Law No: 平成三年法律第二十二号
+- Promulgation Date: 19910330

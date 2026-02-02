@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000008155
+id: JPLAW:413M60000008155
+law_no: 平成十三年総務省令第百五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000008155
+promulgation_date: '20011129'
+tags:
+- 電気通信紛争処理委員会手続規則
+tier: 0
+title: 電気通信紛争処理委員会手続規則
+law_id: 413M60000008155
+official_title: 電気通信紛争処理委員会手続規則
+aliases:
+- 電気通信紛争処理委員会手続規則
+---
+
+# 電気通信紛争処理委員会手続規則
+
+## Metadata
+- Law ID: `413M60000008155`
+- Law No: 平成十三年総務省令第百五十五号
+- Promulgation Date: 20011129

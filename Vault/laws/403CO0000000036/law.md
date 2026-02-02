@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403CO0000000036
+id: JPLAW:403CO0000000036
+law_no: 平成三年政令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/403CO0000000036
+promulgation_date: '19910315'
+tags:
+- 石油臨時特別税に関する政令
+tier: 0
+title: 石油臨時特別税に関する政令
+law_id: 403CO0000000036
+official_title: 石油臨時特別税に関する政令
+aliases:
+- 石油臨時特別税に関する政令
+---
+
+# 石油臨時特別税に関する政令
+
+## Metadata
+- Law ID: `403CO0000000036`
+- Law No: 平成三年政令第三十六号
+- Promulgation Date: 19910315

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345AC0000000137
+id: JPLAW:345AC0000000137
+law_no: 昭和四十五年法律第百三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/345AC0000000137
+promulgation_date: '19701225'
+tags:
+- 廃棄物の処理及び清掃に関する法律
+tier: 0
+title: 廃棄物の処理及び清掃に関する法律
+law_id: 345AC0000000137
+official_title: 廃棄物の処理及び清掃に関する法律
+aliases:
+- 廃棄物の処理及び清掃に関する法律
+---
+
+# 廃棄物の処理及び清掃に関する法律
+
+## Metadata
+- Law ID: `345AC0000000137`
+- Law No: 昭和四十五年法律第百三十七号
+- Promulgation Date: 19701225

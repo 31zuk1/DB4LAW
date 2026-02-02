@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000040088
+id: JPLAW:332M50000040088
+law_no: 昭和三十二年大蔵省令第八十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000040088
+promulgation_date: '19571224'
+tags:
+- 日本製鉄八幡共済組合年金交付金交付規則
+tier: 0
+title: 日本製鉄八幡共済組合年金交付金交付規則
+law_id: 332M50000040088
+official_title: 日本製鉄八幡共済組合年金交付金交付規則
+aliases:
+- 日本製鉄八幡共済組合年金交付金交付規則
+---
+
+# 日本製鉄八幡共済組合年金交付金交付規則
+
+## Metadata
+- Law ID: `332M50000040088`
+- Law No: 昭和三十二年大蔵省令第八十八号
+- Promulgation Date: 19571224

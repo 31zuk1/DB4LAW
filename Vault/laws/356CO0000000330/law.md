@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 356CO0000000330
+id: JPLAW:356CO0000000330
+law_no: 昭和五十六年政令第三百三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/356CO0000000330
+promulgation_date: '19811130'
+tags:
+- 広域臨海環境整備センター法施行令
+tier: 0
+title: 広域臨海環境整備センター法施行令
+law_id: 356CO0000000330
+official_title: 広域臨海環境整備センター法施行令
+aliases:
+- 広域臨海環境整備センター法施行令
+---
+
+# 広域臨海環境整備センター法施行令
+
+## Metadata
+- Law ID: `356CO0000000330`
+- Law No: 昭和五十六年政令第三百三十号
+- Promulgation Date: 19811130

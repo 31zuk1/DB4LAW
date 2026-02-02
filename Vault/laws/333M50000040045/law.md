@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333M50000040045
+id: JPLAW:333M50000040045
+law_no: 昭和三十三年大蔵省令第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/333M50000040045
+promulgation_date: '19580830'
+tags:
+- 特別調達資金債権管理事務取扱規則
+tier: 0
+title: 特別調達資金債権管理事務取扱規則
+law_id: 333M50000040045
+official_title: 特別調達資金債権管理事務取扱規則
+aliases:
+- 特別調達資金債権管理事務取扱規則
+---
+
+# 特別調達資金債権管理事務取扱規則
+
+## Metadata
+- Law ID: `333M50000040045`
+- Law No: 昭和三十三年大蔵省令第四十五号
+- Promulgation Date: 19580830

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 401M50000080020
+id: JPLAW:401M50000080020
+law_no: 平成元年文部省令第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/401M50000080020
+promulgation_date: '19890404'
+tags:
+- 教科用図書検定規則
+tier: 0
+title: 教科用図書検定規則
+law_id: 401M50000080020
+official_title: 教科用図書検定規則
+aliases:
+- 教科用図書検定規則
+---
+
+# 教科用図書検定規則
+
+## Metadata
+- Law ID: `401M50000080020`
+- Law No: 平成元年文部省令第二十号
+- Promulgation Date: 19890404

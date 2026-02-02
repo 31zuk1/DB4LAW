@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425AC0000000098
+id: JPLAW:425AC0000000098
+law_no: 平成二十五年法律第九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/425AC0000000098
+promulgation_date: '20131211'
+tags:
+- 産業競争力強化法
+tier: 0
+title: 産業競争力強化法
+law_id: 425AC0000000098
+official_title: 産業競争力強化法
+aliases:
+- 産業競争力強化法
+---
+
+# 産業競争力強化法
+
+## Metadata
+- Law ID: `425AC0000000098`
+- Law No: 平成二十五年法律第九十八号
+- Promulgation Date: 20131211

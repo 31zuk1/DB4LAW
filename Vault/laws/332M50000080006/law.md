@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000080006
+id: JPLAW:332M50000080006
+law_no: 昭和三十二年文部省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000080006
+promulgation_date: '19570402'
+tags:
+- 夜間課程を置く高等学校における学校給食に関する法律施行規則
+tier: 0
+title: 夜間課程を置く高等学校における学校給食に関する法律施行規則
+law_id: 332M50000080006
+official_title: 夜間課程を置く高等学校における学校給食に関する法律施行規則
+aliases:
+- 夜間課程を置く高等学校における学校給食に関する法律施行規則
+---
+
+# 夜間課程を置く高等学校における学校給食に関する法律施行規則
+
+## Metadata
+- Law ID: `332M50000080006`
+- Law No: 昭和三十二年文部省令第六号
+- Promulgation Date: 19570402

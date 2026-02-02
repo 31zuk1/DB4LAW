@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50004800014
+id: JPLAW:412M50004800014
+law_no: 平成十二年運輸省・建設省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50004800014
+promulgation_date: '20001215'
+tags:
+- 公共土木施設災害復旧事業費国庫負担法施行規則
+tier: 0
+title: 公共土木施設災害復旧事業費国庫負担法施行規則
+law_id: 412M50004800014
+official_title: 公共土木施設災害復旧事業費国庫負担法施行規則
+aliases:
+- 公共土木施設災害復旧事業費国庫負担法施行規則
+---
+
+# 公共土木施設災害復旧事業費国庫負担法施行規則
+
+## Metadata
+- Law ID: `412M50004800014`
+- Law No: 平成十二年運輸省・建設省令第十四号
+- Promulgation Date: 20001215

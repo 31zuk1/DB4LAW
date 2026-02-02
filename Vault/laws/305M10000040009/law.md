@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 305M10000040009
+id: JPLAW:305M10000040009
+law_no: 昭和五年大蔵省令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/305M10000040009
+promulgation_date: '19300512'
+tags:
+- 五分半利付英貨公債発行規程
+tier: 0
+title: 五分半利付英貨公債発行規程
+law_id: 305M10000040009
+official_title: 五分半利付英貨公債発行規程
+aliases:
+- 五分半利付英貨公債発行規程
+---
+
+# 五分半利付英貨公債発行規程
+
+## Metadata
+- Law ID: `305M10000040009`
+- Law No: 昭和五年大蔵省令第九号
+- Promulgation Date: 19300512

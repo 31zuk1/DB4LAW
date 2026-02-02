@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 431M60000008046
+id: JPLAW:431M60000008046
+law_no: 平成三十一年総務省令第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/431M60000008046
+promulgation_date: '20190401'
+tags:
+- 経済センサス基礎調査規則
+tier: 0
+title: 経済センサス基礎調査規則
+law_id: 431M60000008046
+official_title: 経済センサス基礎調査規則
+aliases:
+- 経済センサス基礎調査規則
+---
+
+# 経済センサス基礎調査規則
+
+## Metadata
+- Law ID: `431M60000008046`
+- Law No: 平成三十一年総務省令第四十六号
+- Promulgation Date: 20190401

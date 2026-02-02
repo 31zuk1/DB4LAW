@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC1000000082
+id: JPLAW:412AC1000000082
+law_no: 平成十二年法律第八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC1000000082
+promulgation_date: '20000524'
+tags:
+- 児童虐待の防止等に関する法律
+tier: 0
+title: 児童虐待の防止等に関する法律
+law_id: 412AC1000000082
+official_title: 児童虐待の防止等に関する法律
+aliases:
+- 児童虐待の防止等に関する法律
+---
+
+# 児童虐待の防止等に関する法律
+
+## Metadata
+- Law ID: `412AC1000000082`
+- Law No: 平成十二年法律第八十二号
+- Promulgation Date: 20000524

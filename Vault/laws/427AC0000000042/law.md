@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427AC0000000042
+id: JPLAW:427AC0000000042
+law_no: 平成二十七年法律第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/427AC0000000042
+promulgation_date: '20150619'
+tags:
+- 水銀による環境の汚染の防止に関する法律
+tier: 0
+title: 水銀による環境の汚染の防止に関する法律
+law_id: 427AC0000000042
+official_title: 水銀による環境の汚染の防止に関する法律
+aliases:
+- 水銀による環境の汚染の防止に関する法律
+---
+
+# 水銀による環境の汚染の防止に関する法律
+
+## Metadata
+- Law ID: `427AC0000000042`
+- Law No: 平成二十七年法律第四十二号
+- Promulgation Date: 20150619

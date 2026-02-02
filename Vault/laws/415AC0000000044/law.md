@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000044
+id: JPLAW:415AC0000000044
+law_no: 平成十五年法律第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000044
+promulgation_date: '20030516'
+tags:
+- 中間貯蔵・環境安全事業株式会社法
+tier: 0
+title: 中間貯蔵・環境安全事業株式会社法
+law_id: 415AC0000000044
+official_title: 中間貯蔵・環境安全事業株式会社法
+aliases:
+- 中間貯蔵・環境安全事業株式会社法
+---
+
+# 中間貯蔵・環境安全事業株式会社法
+
+## Metadata
+- Law ID: `415AC0000000044`
+- Law No: 平成十五年法律第四十四号
+- Promulgation Date: 20030516

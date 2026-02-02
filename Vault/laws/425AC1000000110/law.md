@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425AC1000000110
+id: JPLAW:425AC1000000110
+law_no: 平成二十五年法律第百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/425AC1000000110
+promulgation_date: '20131213'
+tags:
+- 消防団を中核とした地域防災力の充実強化に関する法律
+tier: 0
+title: 消防団を中核とした地域防災力の充実強化に関する法律
+law_id: 425AC1000000110
+official_title: 消防団を中核とした地域防災力の充実強化に関する法律
+aliases:
+- 消防団を中核とした地域防災力の充実強化に関する法律
+---
+
+# 消防団を中核とした地域防災力の充実強化に関する法律
+
+## Metadata
+- Law ID: `425AC1000000110`
+- Law No: 平成二十五年法律第百十号
+- Promulgation Date: 20131213

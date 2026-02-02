@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000080017
+id: JPLAW:416M60000080017
+law_no: 平成十六年文部科学省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000080017
+promulgation_date: '20040331'
+tags:
+- 国立高等専門学校の授業料その他の費用に関する省令
+tier: 0
+title: 国立高等専門学校の授業料その他の費用に関する省令
+law_id: 416M60000080017
+official_title: 国立高等専門学校の授業料その他の費用に関する省令
+aliases:
+- 国立高等専門学校の授業料その他の費用に関する省令
+---
+
+# 国立高等専門学校の授業料その他の費用に関する省令
+
+## Metadata
+- Law ID: `416M60000080017`
+- Law No: 平成十六年文部科学省令第十七号
+- Promulgation Date: 20040331

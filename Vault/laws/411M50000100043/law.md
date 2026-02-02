@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411M50000100043
+id: JPLAW:411M50000100043
+law_no: 平成十一年厚生省令第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/411M50000100043
+promulgation_date: '19990331'
+tags:
+- 介護保険の医療保険者の納付金の算定等に関する省令
+tier: 0
+title: 介護保険の医療保険者の納付金の算定等に関する省令
+law_id: 411M50000100043
+official_title: 介護保険の医療保険者の納付金の算定等に関する省令
+aliases:
+- 介護保険の医療保険者の納付金の算定等に関する省令
+---
+
+# 介護保険の医療保険者の納付金の算定等に関する省令
+
+## Metadata
+- Law ID: `411M50000100043`
+- Law No: 平成十一年厚生省令第四十三号
+- Promulgation Date: 19990331

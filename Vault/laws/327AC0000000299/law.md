@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000299
+id: JPLAW:327AC0000000299
+law_no: 昭和二十七年法律第二百九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000299
+promulgation_date: '19520805'
+tags:
+- 輸出入取引法
+tier: 0
+title: 輸出入取引法
+law_id: 327AC0000000299
+official_title: 輸出入取引法
+aliases:
+- 輸出入取引法
+---
+
+# 輸出入取引法
+
+## Metadata
+- Law ID: `327AC0000000299`
+- Law No: 昭和二十七年法律第二百九十九号
+- Promulgation Date: 19520805

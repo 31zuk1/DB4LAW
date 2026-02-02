@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC1000000085
+id: JPLAW:322AC1000000085
+law_no: 昭和二十二年法律第八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC1000000085
+promulgation_date: '19470430'
+tags:
+- 国会職員法
+tier: 0
+title: 国会職員法
+law_id: 322AC1000000085
+official_title: 国会職員法
+aliases:
+- 国会職員法
+---
+
+# 国会職員法
+
+## Metadata
+- Law ID: `322AC1000000085`
+- Law No: 昭和二十二年法律第八十五号
+- Promulgation Date: 19470430

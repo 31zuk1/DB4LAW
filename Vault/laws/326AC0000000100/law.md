@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC0000000100
+id: JPLAW:326AC0000000100
+law_no: 昭和二十六年法律第百号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC0000000100
+promulgation_date: '19510331'
+tags:
+- 財政融資資金法
+tier: 0
+title: 財政融資資金法
+law_id: 326AC0000000100
+official_title: 財政融資資金法
+aliases:
+- 財政融資資金法
+---
+
+# 財政融資資金法
+
+## Metadata
+- Law ID: `326AC0000000100`
+- Law No: 昭和二十六年法律第百号
+- Promulgation Date: 19510331

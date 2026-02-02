@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501AC0100000049
+id: JPLAW:501AC0100000049
+law_no: 令和元年法律第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/501AC0100000049
+promulgation_date: '20190628'
+tags:
+- 視覚障害者等の読書環境の整備の推進に関する法律
+tier: 0
+title: 視覚障害者等の読書環境の整備の推進に関する法律
+law_id: 501AC0100000049
+official_title: 視覚障害者等の読書環境の整備の推進に関する法律
+aliases:
+- 視覚障害者等の読書環境の整備の推進に関する法律
+---
+
+# 視覚障害者等の読書環境の整備の推進に関する法律
+
+## Metadata
+- Law ID: `501AC0100000049`
+- Law No: 令和元年法律第四十九号
+- Promulgation Date: 20190628

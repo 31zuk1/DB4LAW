@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346CO0000000338
+id: JPLAW:346CO0000000338
+law_no: 昭和四十六年政令第三百三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/346CO0000000338
+promulgation_date: '19711105'
+tags:
+- 旅行業法施行令
+tier: 0
+title: 旅行業法施行令
+law_id: 346CO0000000338
+official_title: 旅行業法施行令
+aliases:
+- 旅行業法施行令
+---
+
+# 旅行業法施行令
+
+## Metadata
+- Law ID: `346CO0000000338`
+- Law No: 昭和四十六年政令第三百三十八号
+- Promulgation Date: 19711105

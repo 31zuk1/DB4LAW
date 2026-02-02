@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428CO0000000218
+id: JPLAW:428CO0000000218
+law_no: 平成二十八年政令第二百十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/428CO0000000218
+promulgation_date: '20160513'
+tags:
+- 平成二十八年熊本地震による災害についての非常災害の指定に関する政令
+tier: 0
+title: 平成二十八年熊本地震による災害についての非常災害の指定に関する政令
+law_id: 428CO0000000218
+official_title: 平成二十八年熊本地震による災害についての非常災害の指定に関する政令
+aliases:
+- 平成二十八年熊本地震による災害についての非常災害の指定に関する政令
+---
+
+# 平成二十八年熊本地震による災害についての非常災害の指定に関する政令
+
+## Metadata
+- Law ID: `428CO0000000218`
+- Law No: 平成二十八年政令第二百十八号
+- Promulgation Date: 20160513

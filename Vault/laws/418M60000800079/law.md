@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418M60000800079
+id: JPLAW:418M60000800079
+law_no: 平成十八年国土交通省令第七十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/418M60000800079
+promulgation_date: '20060714'
+tags:
+- 鉄道事業動力車操縦者資質管理報告規則
+tier: 0
+title: 鉄道事業動力車操縦者資質管理報告規則
+law_id: 418M60000800079
+official_title: 鉄道事業動力車操縦者資質管理報告規則
+aliases:
+- 鉄道事業動力車操縦者資質管理報告規則
+---
+
+# 鉄道事業動力車操縦者資質管理報告規則
+
+## Metadata
+- Law ID: `418M60000800079`
+- Law No: 平成十八年国土交通省令第七十九号
+- Promulgation Date: 20060714

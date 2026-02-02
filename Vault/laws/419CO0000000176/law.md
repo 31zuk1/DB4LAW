@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419CO0000000176
+id: JPLAW:419CO0000000176
+law_no: 平成十九年政令第百七十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/419CO0000000176
+promulgation_date: '20070601'
+tags:
+- 株式会社産業再生機構法第四十五条第一項の政令で定める割合を定める政令
+tier: 0
+title: 株式会社産業再生機構法第四十五条第一項の政令で定める割合を定める政令
+law_id: 419CO0000000176
+official_title: 株式会社産業再生機構法第四十五条第一項の政令で定める割合を定める政令
+aliases:
+- 株式会社産業再生機構法第四十五条第一項の政令で定める割合を定める政令
+---
+
+# 株式会社産業再生機構法第四十五条第一項の政令で定める割合を定める政令
+
+## Metadata
+- Law ID: `419CO0000000176`
+- Law No: 平成十九年政令第百七十六号
+- Promulgation Date: 20070601

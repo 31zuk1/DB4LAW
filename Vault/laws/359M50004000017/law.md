@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359M50004000017
+id: JPLAW:359M50004000017
+law_no: 昭和五十九年建設省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/359M50004000017
+promulgation_date: '19841228'
+tags:
+- 浄化槽設備士に関する省令
+tier: 0
+title: 浄化槽設備士に関する省令
+law_id: 359M50004000017
+official_title: 浄化槽設備士に関する省令
+aliases:
+- 浄化槽設備士に関する省令
+---
+
+# 浄化槽設備士に関する省令
+
+## Metadata
+- Law ID: `359M50004000017`
+- Law No: 昭和五十九年建設省令第十七号
+- Promulgation Date: 19841228

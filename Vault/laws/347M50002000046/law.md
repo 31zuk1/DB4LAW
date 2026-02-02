@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50002000046
+id: JPLAW:347M50002000046
+law_no: 昭和四十七年労働省令第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50002000046
+promulgation_date: '19720930'
+tags:
+- 産業安全専門官及び労働衛生専門官規程
+tier: 0
+title: 産業安全専門官及び労働衛生専門官規程
+law_id: 347M50002000046
+official_title: 産業安全専門官及び労働衛生専門官規程
+aliases:
+- 産業安全専門官及び労働衛生専門官規程
+---
+
+# 産業安全専門官及び労働衛生専門官規程
+
+## Metadata
+- Law ID: `347M50002000046`
+- Law No: 昭和四十七年労働省令第四十六号
+- Promulgation Date: 19720930

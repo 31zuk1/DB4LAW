@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 357AC0000000041
+id: JPLAW:357AC0000000041
+law_no: 昭和五十七年法律第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/357AC0000000041
+promulgation_date: '19820501'
+tags:
+- 昭和五十七年度の公債の発行の特例に関する法律
+tier: 0
+title: 昭和五十七年度の公債の発行の特例に関する法律
+law_id: 357AC0000000041
+official_title: 昭和五十七年度の公債の発行の特例に関する法律
+aliases:
+- 昭和五十七年度の公債の発行の特例に関する法律
+---
+
+# 昭和五十七年度の公債の発行の特例に関する法律
+
+## Metadata
+- Law ID: `357AC0000000041`
+- Law No: 昭和五十七年法律第四十一号
+- Promulgation Date: 19820501

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324CO0000000134
+id: JPLAW:324CO0000000134
+law_no: 昭和二十四年政令第百三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/324CO0000000134
+promulgation_date: '19490531'
+tags:
+- 法制審議会令
+tier: 0
+title: 法制審議会令
+law_id: 324CO0000000134
+official_title: 法制審議会令
+aliases:
+- 法制審議会令
+---
+
+# 法制審議会令
+
+## Metadata
+- Law ID: `324CO0000000134`
+- Law No: 昭和二十四年政令第百三十四号
+- Promulgation Date: 19490531

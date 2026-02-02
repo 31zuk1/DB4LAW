@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426AC0000000050
+id: JPLAW:426AC0000000050
+law_no: 平成二十六年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/426AC0000000050
+promulgation_date: '20140530'
+tags:
+- 難病の患者に対する医療等に関する法律
+tier: 0
+title: 難病の患者に対する医療等に関する法律
+law_id: 426AC0000000050
+official_title: 難病の患者に対する医療等に関する法律
+aliases:
+- 難病の患者に対する医療等に関する法律
+---
+
+# 難病の患者に対する医療等に関する法律
+
+## Metadata
+- Law ID: `426AC0000000050`
+- Law No: 平成二十六年法律第五十号
+- Promulgation Date: 20140530

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417M60001000019
+id: JPLAW:417M60001000019
+law_no: 平成十七年環境省令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/417M60001000019
+promulgation_date: '20050920'
+tags:
+- 地方環境事務所組織規則
+tier: 0
+title: 地方環境事務所組織規則
+law_id: 417M60001000019
+official_title: 地方環境事務所組織規則
+aliases:
+- 地方環境事務所組織規則
+---
+
+# 地方環境事務所組織規則
+
+## Metadata
+- Law ID: `417M60001000019`
+- Law No: 平成十七年環境省令第十九号
+- Promulgation Date: 20050920

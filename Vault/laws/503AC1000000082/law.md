@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503AC1000000082
+id: JPLAW:503AC1000000082
+law_no: 令和三年法律第八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/503AC1000000082
+promulgation_date: '20210618'
+tags:
+- 特定患者等の郵便等を用いて行う投票方法の特例に関する法律
+tier: 0
+title: 特定患者等の郵便等を用いて行う投票方法の特例に関する法律
+law_id: 503AC1000000082
+official_title: 特定患者等の郵便等を用いて行う投票方法の特例に関する法律
+aliases:
+- 特定患者等の郵便等を用いて行う投票方法の特例に関する法律
+---
+
+# 特定患者等の郵便等を用いて行う投票方法の特例に関する法律
+
+## Metadata
+- Law ID: `503AC1000000082`
+- Law No: 令和三年法律第八十二号
+- Promulgation Date: 20210618

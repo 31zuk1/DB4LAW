@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324CO0000000338
+id: JPLAW:324CO0000000338
+law_no: 昭和二十四年政令第三百三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/324CO0000000338
+promulgation_date: '19490919'
+tags:
+- 教育職員免許法施行令
+tier: 0
+title: 教育職員免許法施行令
+law_id: 324CO0000000338
+official_title: 教育職員免許法施行令
+aliases:
+- 教育職員免許法施行令
+---
+
+# 教育職員免許法施行令
+
+## Metadata
+- Law ID: `324CO0000000338`
+- Law No: 昭和二十四年政令第三百三十八号
+- Promulgation Date: 19490919

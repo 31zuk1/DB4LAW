@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000080073
+id: JPLAW:413M60000080073
+law_no: 平成十三年文部科学省令第七十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000080073
+promulgation_date: '20010615'
+tags:
+- 著作権等管理事業法施行規則
+tier: 0
+title: 著作権等管理事業法施行規則
+law_id: 413M60000080073
+official_title: 著作権等管理事業法施行規則
+aliases:
+- 著作権等管理事業法施行規則
+---
+
+# 著作権等管理事業法施行規則
+
+## Metadata
+- Law ID: `413M60000080073`
+- Law No: 平成十三年文部科学省令第七十三号
+- Promulgation Date: 20010615

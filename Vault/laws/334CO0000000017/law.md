@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334CO0000000017
+id: JPLAW:334CO0000000017
+law_no: 昭和三十四年政令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/334CO0000000017
+promulgation_date: '19590216'
+tags:
+- 道路整備事業に係る国の財政上の特別措置に関する法律施行令
+tier: 0
+title: 道路整備事業に係る国の財政上の特別措置に関する法律施行令
+law_id: 334CO0000000017
+official_title: 道路整備事業に係る国の財政上の特別措置に関する法律施行令
+aliases:
+- 道路整備事業に係る国の財政上の特別措置に関する法律施行令
+---
+
+# 道路整備事業に係る国の財政上の特別措置に関する法律施行令
+
+## Metadata
+- Law ID: `334CO0000000017`
+- Law No: 昭和三十四年政令第十七号
+- Promulgation Date: 19590216

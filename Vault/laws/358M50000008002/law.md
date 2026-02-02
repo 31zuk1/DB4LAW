@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358M50000008002
+id: JPLAW:358M50000008002
+law_no: 昭和五十八年自治省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/358M50000008002
+promulgation_date: '19830118'
+tags:
+- 流水検知装置の技術上の規格を定める省令
+tier: 0
+title: 流水検知装置の技術上の規格を定める省令
+law_id: 358M50000008002
+official_title: 流水検知装置の技術上の規格を定める省令
+aliases:
+- 流水検知装置の技術上の規格を定める省令
+---
+
+# 流水検知装置の技術上の規格を定める省令
+
+## Metadata
+- Law ID: `358M50000008002`
+- Law No: 昭和五十八年自治省令第二号
+- Promulgation Date: 19830118

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000232
+id: JPLAW:328CO0000000232
+law_no: 昭和二十八年政令第二百三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000232
+promulgation_date: '19530831'
+tags:
+- 理容師法施行令
+tier: 0
+title: 理容師法施行令
+law_id: 328CO0000000232
+official_title: 理容師法施行令
+aliases:
+- 理容師法施行令
+---
+
+# 理容師法施行令
+
+## Metadata
+- Law ID: `328CO0000000232`
+- Law No: 昭和二十八年政令第二百三十二号
+- Promulgation Date: 19530831

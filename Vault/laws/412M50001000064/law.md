@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50001000064
+id: JPLAW:412M50001000064
+law_no: 平成十二年郵政省令第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50001000064
+promulgation_date: '20001116'
+tags:
+- 第一種指定電気通信設備接続料規則
+tier: 0
+title: 第一種指定電気通信設備接続料規則
+law_id: 412M50001000064
+official_title: 第一種指定電気通信設備接続料規則
+aliases:
+- 第一種指定電気通信設備接続料規則
+---
+
+# 第一種指定電気通信設備接続料規則
+
+## Metadata
+- Law ID: `412M50001000064`
+- Law No: 平成十二年郵政省令第六十四号
+- Promulgation Date: 20001116

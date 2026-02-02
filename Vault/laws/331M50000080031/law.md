@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331M50000080031
+id: JPLAW:331M50000080031
+law_no: 昭和三十一年文部省令第三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/331M50000080031
+promulgation_date: '19561205'
+tags:
+- 各種学校規程
+tier: 0
+title: 各種学校規程
+law_id: 331M50000080031
+official_title: 各種学校規程
+aliases:
+- 各種学校規程
+---
+
+# 各種学校規程
+
+## Metadata
+- Law ID: `331M50000080031`
+- Law No: 昭和三十一年文部省令第三十一号
+- Promulgation Date: 19561205

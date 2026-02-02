@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353CO0000000132
+id: JPLAW:353CO0000000132
+law_no: 昭和五十三年政令第百三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/353CO0000000132
+promulgation_date: '19780418'
+tags:
+- 石油石炭税法施行令
+tier: 0
+title: 石油石炭税法施行令
+law_id: 353CO0000000132
+official_title: 石油石炭税法施行令
+aliases:
+- 石油石炭税法施行令
+---
+
+# 石油石炭税法施行令
+
+## Metadata
+- Law ID: `353CO0000000132`
+- Law No: 昭和五十三年政令第百三十二号
+- Promulgation Date: 19780418

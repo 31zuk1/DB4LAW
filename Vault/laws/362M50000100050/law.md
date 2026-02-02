@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362M50000100050
+id: JPLAW:362M50000100050
+law_no: 昭和六十二年厚生省令第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/362M50000100050
+promulgation_date: '19871215'
+tags:
+- 社会福祉士介護福祉士養成施設指定規則
+tier: 0
+title: 社会福祉士介護福祉士養成施設指定規則
+law_id: 362M50000100050
+official_title: 社会福祉士介護福祉士養成施設指定規則
+aliases:
+- 社会福祉士介護福祉士養成施設指定規則
+---
+
+# 社会福祉士介護福祉士養成施設指定規則
+
+## Metadata
+- Law ID: `362M50000100050`
+- Law No: 昭和六十二年厚生省令第五十号
+- Promulgation Date: 19871215

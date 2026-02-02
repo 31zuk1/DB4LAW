@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000366
+id: JPLAW:420CO0000000366
+law_no: 平成二十年政令第三百六十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000366
+promulgation_date: '20081203'
+tags:
+- 愛がん動物用飼料の安全性の確保に関する法律施行令
+tier: 0
+title: 愛がん動物用飼料の安全性の確保に関する法律施行令
+law_id: 420CO0000000366
+official_title: 愛がん動物用飼料の安全性の確保に関する法律施行令
+aliases:
+- 愛がん動物用飼料の安全性の確保に関する法律施行令
+---
+
+# 愛がん動物用飼料の安全性の確保に関する法律施行令
+
+## Metadata
+- Law ID: `420CO0000000366`
+- Law No: 平成二十年政令第三百六十六号
+- Promulgation Date: 20081203

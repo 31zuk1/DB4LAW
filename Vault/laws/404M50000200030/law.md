@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404M50000200030
+id: JPLAW:404M50000200030
+law_no: 平成四年農林水産省令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/404M50000200030
+promulgation_date: '19920522'
+tags:
+- 農業協同組合合併助成法施行規則
+tier: 0
+title: 農業協同組合合併助成法施行規則
+law_id: 404M50000200030
+official_title: 農業協同組合合併助成法施行規則
+aliases:
+- 農業協同組合合併助成法施行規則
+---
+
+# 農業協同組合合併助成法施行規則
+
+## Metadata
+- Law ID: `404M50000200030`
+- Law No: 平成四年農林水産省令第三十号
+- Promulgation Date: 19920522

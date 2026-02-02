@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC0000000011
+id: JPLAW:418AC0000000011
+law_no: 平成十八年法律第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC0000000011
+promulgation_date: '20060331'
+tags:
+- 平成十八年度における財政運営のための公債の発行の特例等に関する法律
+tier: 0
+title: 平成十八年度における財政運営のための公債の発行の特例等に関する法律
+law_id: 418AC0000000011
+official_title: 平成十八年度における財政運営のための公債の発行の特例等に関する法律
+aliases:
+- 平成十八年度における財政運営のための公債の発行の特例等に関する法律
+---
+
+# 平成十八年度における財政運営のための公債の発行の特例等に関する法律
+
+## Metadata
+- Law ID: `418AC0000000011`
+- Law No: 平成十八年法律第十一号
+- Promulgation Date: 20060331

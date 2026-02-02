@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359M50000002023
+id: JPLAW:359M50000002023
+law_no: 昭和五十九年総理府令第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/359M50000002023
+promulgation_date: '19840420'
+tags:
+- 全国家計構造調査規則
+tier: 0
+title: 全国家計構造調査規則
+law_id: 359M50000002023
+official_title: 全国家計構造調査規則
+aliases:
+- 全国家計構造調査規則
+---
+
+# 全国家計構造調査規則
+
+## Metadata
+- Law ID: `359M50000002023`
+- Law No: 昭和五十九年総理府令第二十三号
+- Promulgation Date: 19840420

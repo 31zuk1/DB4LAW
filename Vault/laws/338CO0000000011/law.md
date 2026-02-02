@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338CO0000000011
+id: JPLAW:338CO0000000011
+law_no: 昭和三十八年政令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/338CO0000000011
+promulgation_date: '19630128'
+tags:
+- 指定都市又は中核市の指定があつた場合における必要な事項を定める政令
+tier: 0
+title: 指定都市又は中核市の指定があつた場合における必要な事項を定める政令
+law_id: 338CO0000000011
+official_title: 指定都市又は中核市の指定があつた場合における必要な事項を定める政令
+aliases:
+- 指定都市又は中核市の指定があつた場合における必要な事項を定める政令
+---
+
+# 指定都市又は中核市の指定があつた場合における必要な事項を定める政令
+
+## Metadata
+- Law ID: `338CO0000000011`
+- Law No: 昭和三十八年政令第十一号
+- Promulgation Date: 19630128

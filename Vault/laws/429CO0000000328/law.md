@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429CO0000000328
+id: JPLAW:429CO0000000328
+law_no: 平成二十九年政令第三百二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/429CO0000000328
+promulgation_date: '20171227'
+tags:
+- 電子委任状の普及の促進に関する法律第六条第一項の期間を定める政令
+tier: 0
+title: 電子委任状の普及の促進に関する法律第六条第一項の期間を定める政令
+law_id: 429CO0000000328
+official_title: 電子委任状の普及の促進に関する法律第六条第一項の期間を定める政令
+aliases:
+- 電子委任状の普及の促進に関する法律第六条第一項の期間を定める政令
+---
+
+# 電子委任状の普及の促進に関する法律第六条第一項の期間を定める政令
+
+## Metadata
+- Law ID: `429CO0000000328`
+- Law No: 平成二十九年政令第三百二十八号
+- Promulgation Date: 20171227

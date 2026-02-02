@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC1000000356
+id: JPLAW:327AC1000000356
+law_no: 昭和二十七年法律第三百五十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC1000000356
+promulgation_date: '19521229'
+tags:
+- 飼料需給安定法
+tier: 0
+title: 飼料需給安定法
+law_id: 327AC1000000356
+official_title: 飼料需給安定法
+aliases:
+- 飼料需給安定法
+---
+
+# 飼料需給安定法
+
+## Metadata
+- Law ID: `327AC1000000356`
+- Law No: 昭和二十七年法律第三百五十六号
+- Promulgation Date: 19521229

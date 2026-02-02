@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418M60000100170
+id: JPLAW:418M60000100170
+law_no: 平成十八年厚生労働省令第百七十号
+links:
+  egov: https://laws.e-gov.go.jp/law/418M60000100170
+promulgation_date: '20060929'
+tags:
+- 介護給付費等の請求に関する命令
+tier: 0
+title: 介護給付費等の請求に関する命令
+law_id: 418M60000100170
+official_title: 介護給付費等の請求に関する命令
+aliases:
+- 介護給付費等の請求に関する命令
+---
+
+# 介護給付費等の請求に関する命令
+
+## Metadata
+- Law ID: `418M60000100170`
+- Law No: 平成十八年厚生労働省令第百七十号
+- Promulgation Date: 20060929

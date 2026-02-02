@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M40000080005
+id: JPLAW:324M40000080005
+law_no: 昭和二十四年文部省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M40000080005
+promulgation_date: '19490201'
+tags:
+- 学校施設の確保に関する政令施行規則
+tier: 0
+title: 学校施設の確保に関する政令施行規則
+law_id: 324M40000080005
+official_title: 学校施設の確保に関する政令施行規則
+aliases:
+- 学校施設の確保に関する政令施行規則
+---
+
+# 学校施設の確保に関する政令施行規則
+
+## Metadata
+- Law ID: `324M40000080005`
+- Law No: 昭和二十四年文部省令第五号
+- Promulgation Date: 19490201

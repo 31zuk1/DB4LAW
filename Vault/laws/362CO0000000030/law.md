@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362CO0000000030
+id: JPLAW:362CO0000000030
+law_no: 昭和六十二年政令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/362CO0000000030
+promulgation_date: '19870306'
+tags:
+- 外国弁護士による法律事務の取扱い等に関する法律関係手数料令
+tier: 0
+title: 外国弁護士による法律事務の取扱い等に関する法律関係手数料令
+law_id: 362CO0000000030
+official_title: 外国弁護士による法律事務の取扱い等に関する法律関係手数料令
+aliases:
+- 外国弁護士による法律事務の取扱い等に関する法律関係手数料令
+---
+
+# 外国弁護士による法律事務の取扱い等に関する法律関係手数料令
+
+## Metadata
+- Law ID: `362CO0000000030`
+- Law No: 昭和六十二年政令第三十号
+- Promulgation Date: 19870306

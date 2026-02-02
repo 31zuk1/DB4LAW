@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000080027
+id: JPLAW:329M50000080027
+law_no: 昭和二十九年文部省令第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000080027
+promulgation_date: '19541027'
+tags:
+- 教育職員免許法施行法施行規則
+tier: 0
+title: 教育職員免許法施行法施行規則
+law_id: 329M50000080027
+official_title: 教育職員免許法施行法施行規則
+aliases:
+- 教育職員免許法施行法施行規則
+---
+
+# 教育職員免許法施行法施行規則
+
+## Metadata
+- Law ID: `329M50000080027`
+- Law No: 昭和二十九年文部省令第二十七号
+- Promulgation Date: 19541027

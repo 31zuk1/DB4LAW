@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505M60000002038
+id: JPLAW:505M60000002038
+law_no: 令和五年内閣府令第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/505M60000002038
+promulgation_date: '20230401'
+tags:
+- こども家庭庁組織規則
+tier: 0
+title: こども家庭庁組織規則
+law_id: 505M60000002038
+official_title: こども家庭庁組織規則
+aliases:
+- こども家庭庁組織規則
+---
+
+# こども家庭庁組織規則
+
+## Metadata
+- Law ID: `505M60000002038`
+- Law No: 令和五年内閣府令第三十八号
+- Promulgation Date: 20230401

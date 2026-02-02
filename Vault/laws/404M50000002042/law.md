@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404M50000002042
+id: JPLAW:404M50000002042
+law_no: 平成四年総理府令第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/404M50000002042
+promulgation_date: '19920807'
+tags:
+- 国際連合平和維持活動等に対する協力に関する法律施行規則
+tier: 0
+title: 国際連合平和維持活動等に対する協力に関する法律施行規則
+law_id: 404M50000002042
+official_title: 国際連合平和維持活動等に対する協力に関する法律施行規則
+aliases:
+- 国際連合平和維持活動等に対する協力に関する法律施行規則
+---
+
+# 国際連合平和維持活動等に対する協力に関する法律施行規則
+
+## Metadata
+- Law ID: `404M50000002042`
+- Law No: 平成四年総理府令第四十二号
+- Promulgation Date: 19920807

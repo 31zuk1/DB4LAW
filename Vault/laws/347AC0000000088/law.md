@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347AC0000000088
+id: JPLAW:347AC0000000088
+law_no: 昭和四十七年法律第八十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/347AC0000000088
+promulgation_date: '19720622'
+tags:
+- 熱供給事業法
+tier: 0
+title: 熱供給事業法
+law_id: 347AC0000000088
+official_title: 熱供給事業法
+aliases:
+- 熱供給事業法
+---
+
+# 熱供給事業法
+
+## Metadata
+- Law ID: `347AC0000000088`
+- Law No: 昭和四十七年法律第八十八号
+- Promulgation Date: 19720622

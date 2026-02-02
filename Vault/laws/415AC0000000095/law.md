@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000095
+id: JPLAW:415AC0000000095
+law_no: 平成十五年法律第九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000095
+promulgation_date: '20030618'
+tags:
+- 国立研究開発法人海洋研究開発機構法
+tier: 0
+title: 国立研究開発法人海洋研究開発機構法
+law_id: 415AC0000000095
+official_title: 国立研究開発法人海洋研究開発機構法
+aliases:
+- 国立研究開発法人海洋研究開発機構法
+---
+
+# 国立研究開発法人海洋研究開発機構法
+
+## Metadata
+- Law ID: `415AC0000000095`
+- Law No: 平成十五年法律第九十五号
+- Promulgation Date: 20030618

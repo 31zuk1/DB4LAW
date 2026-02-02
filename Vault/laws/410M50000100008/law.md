@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000100008
+id: JPLAW:410M50000100008
+law_no: 平成十年厚生省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000100008
+promulgation_date: '19980127'
+tags:
+- 美容師養成施設指定規則
+tier: 0
+title: 美容師養成施設指定規則
+law_id: 410M50000100008
+official_title: 美容師養成施設指定規則
+aliases:
+- 美容師養成施設指定規則
+---
+
+# 美容師養成施設指定規則
+
+## Metadata
+- Law ID: `410M50000100008`
+- Law No: 平成十年厚生省令第八号
+- Promulgation Date: 19980127

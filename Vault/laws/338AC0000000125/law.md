@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338AC0000000125
+id: JPLAW:338AC0000000125
+law_no: 昭和三十八年法律第百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/338AC0000000125
+promulgation_date: '19630709'
+tags:
+- 商業登記法
+tier: 0
+title: 商業登記法
+law_id: 338AC0000000125
+official_title: 商業登記法
+aliases:
+- 商業登記法
+---
+
+# 商業登記法
+
+## Metadata
+- Law ID: `338AC0000000125`
+- Law No: 昭和三十八年法律第百二十五号
+- Promulgation Date: 19630709

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507CO0000000243
+id: JPLAW:507CO0000000243
+law_no: 令和七年政令第二百四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/507CO0000000243
+promulgation_date: '20250702'
+tags:
+- 事業性融資の推進等に関する法律施行令
+tier: 0
+title: 事業性融資の推進等に関する法律施行令
+law_id: 507CO0000000243
+official_title: 事業性融資の推進等に関する法律施行令
+aliases:
+- 事業性融資の推進等に関する法律施行令
+---
+
+# 事業性融資の推進等に関する法律施行令
+
+## Metadata
+- Law ID: `507CO0000000243`
+- Law No: 令和七年政令第二百四十三号
+- Promulgation Date: 20250702

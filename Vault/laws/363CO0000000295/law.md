@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363CO0000000295
+id: JPLAW:363CO0000000295
+law_no: 昭和六十三年政令第二百九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/363CO0000000295
+promulgation_date: '19881007'
+tags:
+- 国の所有に係る沖縄電力株式会社の株式の処分に関する政令
+tier: 0
+title: 国の所有に係る沖縄電力株式会社の株式の処分に関する政令
+law_id: 363CO0000000295
+official_title: 国の所有に係る沖縄電力株式会社の株式の処分に関する政令
+aliases:
+- 国の所有に係る沖縄電力株式会社の株式の処分に関する政令
+---
+
+# 国の所有に係る沖縄電力株式会社の株式の処分に関する政令
+
+## Metadata
+- Law ID: `363CO0000000295`
+- Law No: 昭和六十三年政令第二百九十五号
+- Promulgation Date: 19881007

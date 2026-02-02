@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000040074
+id: JPLAW:327M50000040074
+law_no: 昭和二十七年大蔵省令第七十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000040074
+promulgation_date: '19520621'
+tags:
+- 遺族国庫債券の担保権の設定に関する省令
+tier: 0
+title: 遺族国庫債券の担保権の設定に関する省令
+law_id: 327M50000040074
+official_title: 遺族国庫債券の担保権の設定に関する省令
+aliases:
+- 遺族国庫債券の担保権の設定に関する省令
+---
+
+# 遺族国庫債券の担保権の設定に関する省令
+
+## Metadata
+- Law ID: `327M50000040074`
+- Law No: 昭和二十七年大蔵省令第七十四号
+- Promulgation Date: 19520621

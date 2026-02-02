@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421CO0000000309
+id: JPLAW:421CO0000000309
+law_no: 平成二十一年政令第三百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/421CO0000000309
+promulgation_date: '20091228'
+tags:
+- 肝炎対策推進協議会令
+tier: 0
+title: 肝炎対策推進協議会令
+law_id: 421CO0000000309
+official_title: 肝炎対策推進協議会令
+aliases:
+- 肝炎対策推進協議会令
+---
+
+# 肝炎対策推進協議会令
+
+## Metadata
+- Law ID: `421CO0000000309`
+- Law No: 平成二十一年政令第三百九号
+- Promulgation Date: 20091228

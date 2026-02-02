@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 357M50000080003
+id: JPLAW:357M50000080003
+law_no: 昭和五十七年文部省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/357M50000080003
+promulgation_date: '19820323'
+tags:
+- 短期大学通信教育設置基準
+tier: 0
+title: 短期大学通信教育設置基準
+law_id: 357M50000080003
+official_title: 短期大学通信教育設置基準
+aliases:
+- 短期大学通信教育設置基準
+---
+
+# 短期大学通信教育設置基準
+
+## Metadata
+- Law ID: `357M50000080003`
+- Law No: 昭和五十七年文部省令第三号
+- Promulgation Date: 19820323

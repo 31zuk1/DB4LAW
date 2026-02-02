@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507M60000040054
+id: JPLAW:507M60000040054
+law_no: 令和七年財務省令第五十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/507M60000040054
+promulgation_date: '20250623'
+tags:
+- 米州投資公社への加盟に伴う国債の発行等に関する省令
+tier: 0
+title: 米州投資公社への加盟に伴う国債の発行等に関する省令
+law_id: 507M60000040054
+official_title: 米州投資公社への加盟に伴う国債の発行等に関する省令
+aliases:
+- 米州投資公社への加盟に伴う国債の発行等に関する省令
+---
+
+# 米州投資公社への加盟に伴う国債の発行等に関する省令
+
+## Metadata
+- Law ID: `507M60000040054`
+- Law No: 令和七年財務省令第五十四号
+- Promulgation Date: 20250623

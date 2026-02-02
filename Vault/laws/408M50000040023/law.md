@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408M50000040023
+id: JPLAW:408M50000040023
+law_no: 平成八年大蔵省令第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/408M50000040023
+promulgation_date: '19960331'
+tags:
+- 平成八年分所得税の特別減税のための臨時措置法施行規則
+tier: 0
+title: 平成八年分所得税の特別減税のための臨時措置法施行規則
+law_id: 408M50000040023
+official_title: 平成八年分所得税の特別減税のための臨時措置法施行規則
+aliases:
+- 平成八年分所得税の特別減税のための臨時措置法施行規則
+---
+
+# 平成八年分所得税の特別減税のための臨時措置法施行規則
+
+## Metadata
+- Law ID: `408M50000040023`
+- Law No: 平成八年大蔵省令第二十三号
+- Promulgation Date: 19960331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337AC0000000152
+id: JPLAW:337AC0000000152
+law_no: 昭和三十七年法律第百五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/337AC0000000152
+promulgation_date: '19620908'
+tags:
+- 地方公務員等共済組合法
+tier: 0
+title: 地方公務員等共済組合法
+law_id: 337AC0000000152
+official_title: 地方公務員等共済組合法
+aliases:
+- 地方公務員等共済組合法
+---
+
+# 地方公務員等共済組合法
+
+## Metadata
+- Law ID: `337AC0000000152`
+- Law No: 昭和三十七年法律第百五十二号
+- Promulgation Date: 19620908

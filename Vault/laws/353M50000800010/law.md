@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353M50000800010
+id: JPLAW:353M50000800010
+law_no: 昭和五十三年運輸省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/353M50000800010
+promulgation_date: '19780318'
+tags:
+- 港湾運送事業報告規則
+tier: 0
+title: 港湾運送事業報告規則
+law_id: 353M50000800010
+official_title: 港湾運送事業報告規則
+aliases:
+- 港湾運送事業報告規則
+---
+
+# 港湾運送事業報告規則
+
+## Metadata
+- Law ID: `353M50000800010`
+- Law No: 昭和五十三年運輸省令第十号
+- Promulgation Date: 19780318

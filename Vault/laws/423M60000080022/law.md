@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423M60000080022
+id: JPLAW:423M60000080022
+law_no: 平成二十三年文部科学省令第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/423M60000080022
+promulgation_date: '20110531'
+tags:
+- プログラムの著作物に係る登録の特例に関する法律施行規則
+tier: 0
+title: プログラムの著作物に係る登録の特例に関する法律施行規則
+law_id: 423M60000080022
+official_title: プログラムの著作物に係る登録の特例に関する法律施行規則
+aliases:
+- プログラムの著作物に係る登録の特例に関する法律施行規則
+---
+
+# プログラムの著作物に係る登録の特例に関する法律施行規則
+
+## Metadata
+- Law ID: `423M60000080022`
+- Law No: 平成二十三年文部科学省令第二十二号
+- Promulgation Date: 20110531

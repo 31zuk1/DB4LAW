@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430AC1000000028
+id: JPLAW:430AC1000000028
+law_no: 平成三十年法律第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/430AC1000000028
+promulgation_date: '20180523'
+tags:
+- 政治分野における男女共同参画の推進に関する法律
+tier: 0
+title: 政治分野における男女共同参画の推進に関する法律
+law_id: 430AC1000000028
+official_title: 政治分野における男女共同参画の推進に関する法律
+aliases:
+- 政治分野における男女共同参画の推進に関する法律
+---
+
+# 政治分野における男女共同参画の推進に関する法律
+
+## Metadata
+- Law ID: `430AC1000000028`
+- Law No: 平成三十年法律第二十八号
+- Promulgation Date: 20180523

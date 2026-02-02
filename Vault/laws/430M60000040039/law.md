@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430M60000040039
+id: JPLAW:430M60000040039
+law_no: 平成三十年財務省令第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/430M60000040039
+promulgation_date: '20180418'
+tags:
+- 国際観光旅客税法施行規則
+tier: 0
+title: 国際観光旅客税法施行規則
+law_id: 430M60000040039
+official_title: 国際観光旅客税法施行規則
+aliases:
+- 国際観光旅客税法施行規則
+---
+
+# 国際観光旅客税法施行規則
+
+## Metadata
+- Law ID: `430M60000040039`
+- Law No: 平成三十年財務省令第三十九号
+- Promulgation Date: 20180418

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000141
+id: JPLAW:322AC0000000141
+law_no: 昭和二十二年法律第百四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000141
+promulgation_date: '19471130'
+tags:
+- 職業安定法
+tier: 0
+title: 職業安定法
+law_id: 322AC0000000141
+official_title: 職業安定法
+aliases:
+- 職業安定法
+---
+
+# 職業安定法
+
+## Metadata
+- Law ID: `322AC0000000141`
+- Law No: 昭和二十二年法律第百四十一号
+- Promulgation Date: 19471130

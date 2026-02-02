@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505AC0000000025
+id: JPLAW:505AC0000000025
+law_no: 令和五年法律第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/505AC0000000025
+promulgation_date: '20230512'
+tags:
+- 特定受託事業者に係る取引の適正化等に関する法律
+tier: 0
+title: 特定受託事業者に係る取引の適正化等に関する法律
+law_id: 505AC0000000025
+official_title: 特定受託事業者に係る取引の適正化等に関する法律
+aliases:
+- 特定受託事業者に係る取引の適正化等に関する法律
+---
+
+# 特定受託事業者に係る取引の適正化等に関する法律
+
+## Metadata
+- Law ID: `505AC0000000025`
+- Law No: 令和五年法律第二十五号
+- Promulgation Date: 20230512

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330AC1000000180
+id: JPLAW:330AC1000000180
+law_no: 昭和三十年法律第百八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/330AC1000000180
+promulgation_date: '19550827'
+tags:
+- 養蜂振興法
+tier: 0
+title: 養蜂振興法
+law_id: 330AC1000000180
+official_title: 養蜂振興法
+aliases:
+- 養蜂振興法
+---
+
+# 養蜂振興法
+
+## Metadata
+- Law ID: `330AC1000000180`
+- Law No: 昭和三十年法律第百八十号
+- Promulgation Date: 19550827

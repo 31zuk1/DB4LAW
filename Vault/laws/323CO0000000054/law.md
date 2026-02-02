@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323CO0000000054
+id: JPLAW:323CO0000000054
+law_no: 昭和二十三年政令第五十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/323CO0000000054
+promulgation_date: '19480306'
+tags:
+- 海難審判法施行令
+tier: 0
+title: 海難審判法施行令
+law_id: 323CO0000000054
+official_title: 海難審判法施行令
+aliases:
+- 海難審判法施行令
+---
+
+# 海難審判法施行令
+
+## Metadata
+- Law ID: `323CO0000000054`
+- Law No: 昭和二十三年政令第五十四号
+- Promulgation Date: 19480306

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000002010
+id: JPLAW:427M60000002010
+law_no: 平成二十七年内閣府令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000002010
+promulgation_date: '20150320'
+tags:
+- 食品表示基準
+tier: 0
+title: 食品表示基準
+law_id: 427M60000002010
+official_title: 食品表示基準
+aliases:
+- 食品表示基準
+---
+
+# 食品表示基準
+
+## Metadata
+- Law ID: `427M60000002010`
+- Law No: 平成二十七年内閣府令第十号
+- Promulgation Date: 20150320

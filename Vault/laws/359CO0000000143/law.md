@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359CO0000000143
+id: JPLAW:359CO0000000143
+law_no: 昭和五十九年政令第百四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/359CO0000000143
+promulgation_date: '19840515'
+tags:
+- 農産物検査法関係手数料令
+tier: 0
+title: 農産物検査法関係手数料令
+law_id: 359CO0000000143
+official_title: 農産物検査法関係手数料令
+aliases:
+- 農産物検査法関係手数料令
+---
+
+# 農産物検査法関係手数料令
+
+## Metadata
+- Law ID: `359CO0000000143`
+- Law No: 昭和五十九年政令第百四十三号
+- Promulgation Date: 19840515

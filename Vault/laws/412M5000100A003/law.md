@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M5000100A003
+id: JPLAW:412M5000100A003
+law_no: 平成十二年総理府・郵政省・自治省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M5000100A003
+promulgation_date: '20001222'
+tags:
+- 総務省聴聞手続規則
+tier: 0
+title: 総務省聴聞手続規則
+law_id: 412M5000100A003
+official_title: 総務省聴聞手続規則
+aliases:
+- 総務省聴聞手続規則
+---
+
+# 総務省聴聞手続規則
+
+## Metadata
+- Law ID: `412M5000100A003`
+- Law No: 平成十二年総理府・郵政省・自治省令第三号
+- Promulgation Date: 20001222

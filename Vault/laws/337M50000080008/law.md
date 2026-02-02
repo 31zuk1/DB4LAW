@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337M50000080008
+id: JPLAW:337M50000080008
+law_no: 昭和三十七年文部省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/337M50000080008
+promulgation_date: '19620331'
+tags:
+- 技能教育施設の指定等に関する規則
+tier: 0
+title: 技能教育施設の指定等に関する規則
+law_id: 337M50000080008
+official_title: 技能教育施設の指定等に関する規則
+aliases:
+- 技能教育施設の指定等に関する規則
+---
+
+# 技能教育施設の指定等に関する規則
+
+## Metadata
+- Law ID: `337M50000080008`
+- Law No: 昭和三十七年文部省令第八号
+- Promulgation Date: 19620331

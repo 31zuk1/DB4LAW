@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000840002
+id: JPLAW:327M50000840002
+law_no: 昭和二十七年大蔵省・運輸省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000840002
+promulgation_date: '19520428'
+tags:
+- 連合国財産の返還の請求の手続等に関する命令
+tier: 0
+title: 連合国財産の返還の請求の手続等に関する命令
+law_id: 327M50000840002
+official_title: 連合国財産の返還の請求の手続等に関する命令
+aliases:
+- 連合国財産の返還の請求の手続等に関する命令
+---
+
+# 連合国財産の返還の請求の手続等に関する命令
+
+## Metadata
+- Law ID: `327M50000840002`
+- Law No: 昭和二十七年大蔵省・運輸省令第二号
+- Promulgation Date: 19520428

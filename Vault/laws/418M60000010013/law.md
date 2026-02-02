@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418M60000010013
+id: JPLAW:418M60000010013
+law_no: 平成十八年法務省令第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/418M60000010013
+promulgation_date: '20060207'
+tags:
+- 会社計算規則
+tier: 0
+title: 会社計算規則
+law_id: 418M60000010013
+official_title: 会社計算規則
+aliases:
+- 会社計算規則
+---
+
+# 会社計算規則
+
+## Metadata
+- Law ID: `418M60000010013`
+- Law No: 平成十八年法務省令第十三号
+- Promulgation Date: 20060207

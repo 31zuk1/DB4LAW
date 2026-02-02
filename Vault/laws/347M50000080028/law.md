@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50000080028
+id: JPLAW:347M50000080028
+law_no: 昭和四十七年文部省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50000080028
+promulgation_date: '19720513'
+tags:
+- 沖縄の復帰に伴う文部省関係省令の適用の特別措置等に関する省令
+tier: 0
+title: 沖縄の復帰に伴う文部省関係省令の適用の特別措置等に関する省令
+law_id: 347M50000080028
+official_title: 沖縄の復帰に伴う文部省関係省令の適用の特別措置等に関する省令
+aliases:
+- 沖縄の復帰に伴う文部省関係省令の適用の特別措置等に関する省令
+---
+
+# 沖縄の復帰に伴う文部省関係省令の適用の特別措置等に関する省令
+
+## Metadata
+- Law ID: `347M50000080028`
+- Law No: 昭和四十七年文部省令第二十八号
+- Promulgation Date: 19720513

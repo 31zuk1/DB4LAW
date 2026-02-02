@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507M60000002097
+id: JPLAW:507M60000002097
+law_no: 令和七年内閣府令第九十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/507M60000002097
+promulgation_date: '20251114'
+tags:
+- 会員予定者の候補者の内閣総理大臣への推薦手続を定める内閣府令
+tier: 0
+title: 会員予定者の候補者の内閣総理大臣への推薦手続を定める内閣府令
+law_id: 507M60000002097
+official_title: 会員予定者の候補者の内閣総理大臣への推薦手続を定める内閣府令
+aliases:
+- 会員予定者の候補者の内閣総理大臣への推薦手続を定める内閣府令
+---
+
+# 会員予定者の候補者の内閣総理大臣への推薦手続を定める内閣府令
+
+## Metadata
+- Law ID: `507M60000002097`
+- Law No: 令和七年内閣府令第九十七号
+- Promulgation Date: 20251114

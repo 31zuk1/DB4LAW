@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403CO0000000335
+id: JPLAW:403CO0000000335
+law_no: 平成三年政令第三百三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/403CO0000000335
+promulgation_date: '19911025'
+tags:
+- 暴力団員による不当な行為の防止等に関する法律施行令
+tier: 0
+title: 暴力団員による不当な行為の防止等に関する法律施行令
+law_id: 403CO0000000335
+official_title: 暴力団員による不当な行為の防止等に関する法律施行令
+aliases:
+- 暴力団員による不当な行為の防止等に関する法律施行令
+---
+
+# 暴力団員による不当な行為の防止等に関する法律施行令
+
+## Metadata
+- Law ID: `403CO0000000335`
+- Law No: 平成三年政令第三百三十五号
+- Promulgation Date: 19911025

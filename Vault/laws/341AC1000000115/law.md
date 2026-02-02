@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341AC1000000115
+id: JPLAW:341AC1000000115
+law_no: 昭和四十一年法律第百十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/341AC1000000115
+promulgation_date: '19660704'
+tags:
+- 製菓衛生師法
+tier: 0
+title: 製菓衛生師法
+law_id: 341AC1000000115
+official_title: 製菓衛生師法
+aliases:
+- 製菓衛生師法
+---
+
+# 製菓衛生師法
+
+## Metadata
+- Law ID: `341AC1000000115`
+- Law No: 昭和四十一年法律第百十五号
+- Promulgation Date: 19660704

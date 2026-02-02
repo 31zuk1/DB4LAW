@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000800066
+id: JPLAW:410M50000800066
+law_no: 平成十年運輸省令第六十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000800066
+promulgation_date: '19981009'
+tags:
+- 装置型式指定規則
+tier: 0
+title: 装置型式指定規則
+law_id: 410M50000800066
+official_title: 装置型式指定規則
+aliases:
+- 装置型式指定規則
+---
+
+# 装置型式指定規則
+
+## Metadata
+- Law ID: `410M50000800066`
+- Law No: 平成十年運輸省令第六十六号
+- Promulgation Date: 19981009

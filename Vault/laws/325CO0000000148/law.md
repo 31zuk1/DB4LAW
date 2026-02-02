@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000148
+id: JPLAW:325CO0000000148
+law_no: 昭和二十五年政令第百四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000148
+promulgation_date: '19500520'
+tags:
+- 生活保護法施行令
+tier: 0
+title: 生活保護法施行令
+law_id: 325CO0000000148
+official_title: 生活保護法施行令
+aliases:
+- 生活保護法施行令
+---
+
+# 生活保護法施行令
+
+## Metadata
+- Law ID: `325CO0000000148`
+- Law No: 昭和二十五年政令第百四十八号
+- Promulgation Date: 19500520

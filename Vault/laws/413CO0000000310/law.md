@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000310
+id: JPLAW:413CO0000000310
+law_no: 平成十三年政令第三百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000310
+promulgation_date: '20010919'
+tags:
+- 浄化槽法施行令
+tier: 0
+title: 浄化槽法施行令
+law_id: 413CO0000000310
+official_title: 浄化槽法施行令
+aliases:
+- 浄化槽法施行令
+---
+
+# 浄化槽法施行令
+
+## Metadata
+- Law ID: `413CO0000000310`
+- Law No: 平成十三年政令第三百十号
+- Promulgation Date: 20010919

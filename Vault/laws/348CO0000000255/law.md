@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348CO0000000255
+id: JPLAW:348CO0000000255
+law_no: 昭和四十八年政令第二百五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/348CO0000000255
+promulgation_date: '19730904'
+tags:
+- 道路運送車両法の一部を改正する法律の施行に伴う経過措置を定める政令
+tier: 0
+title: 道路運送車両法の一部を改正する法律の施行に伴う経過措置を定める政令
+law_id: 348CO0000000255
+official_title: 道路運送車両法の一部を改正する法律の施行に伴う経過措置を定める政令
+aliases:
+- 道路運送車両法の一部を改正する法律の施行に伴う経過措置を定める政令
+---
+
+# 道路運送車両法の一部を改正する法律の施行に伴う経過措置を定める政令
+
+## Metadata
+- Law ID: `348CO0000000255`
+- Law No: 昭和四十八年政令第二百五十五号
+- Promulgation Date: 19730904

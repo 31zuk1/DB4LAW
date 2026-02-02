@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417AC0000000019
+id: JPLAW:417AC0000000019
+law_no: 平成十七年法律第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/417AC0000000019
+promulgation_date: '20050331'
+tags:
+- 平成十七年度における財政運営のための公債の発行の特例等に関する法律
+tier: 0
+title: 平成十七年度における財政運営のための公債の発行の特例等に関する法律
+law_id: 417AC0000000019
+official_title: 平成十七年度における財政運営のための公債の発行の特例等に関する法律
+aliases:
+- 平成十七年度における財政運営のための公債の発行の特例等に関する法律
+---
+
+# 平成十七年度における財政運営のための公債の発行の特例等に関する法律
+
+## Metadata
+- Law ID: `417AC0000000019`
+- Law No: 平成十七年法律第十九号
+- Promulgation Date: 20050331

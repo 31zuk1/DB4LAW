@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50000100053
+id: JPLAW:412M50000100053
+law_no: 平成十二年厚生省令第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50000100053
+promulgation_date: '20000329'
+tags:
+- 社会福祉主事養成機関等指定規則
+tier: 0
+title: 社会福祉主事養成機関等指定規則
+law_id: 412M50000100053
+official_title: 社会福祉主事養成機関等指定規則
+aliases:
+- 社会福祉主事養成機関等指定規則
+---
+
+# 社会福祉主事養成機関等指定規則
+
+## Metadata
+- Law ID: `412M50000100053`
+- Law No: 平成十二年厚生省令第五十三号
+- Promulgation Date: 20000329

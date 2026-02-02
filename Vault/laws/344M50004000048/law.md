@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344M50004000048
+id: JPLAW:344M50004000048
+law_no: 昭和四十四年建設省令第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/344M50004000048
+promulgation_date: '19690731'
+tags:
+- 急傾斜地の崩壊による災害の防止に関する法律施行規則
+tier: 0
+title: 急傾斜地の崩壊による災害の防止に関する法律施行規則
+law_id: 344M50004000048
+official_title: 急傾斜地の崩壊による災害の防止に関する法律施行規則
+aliases:
+- 急傾斜地の崩壊による災害の防止に関する法律施行規則
+---
+
+# 急傾斜地の崩壊による災害の防止に関する法律施行規則
+
+## Metadata
+- Law ID: `344M50004000048`
+- Law No: 昭和四十四年建設省令第四十八号
+- Promulgation Date: 19690731

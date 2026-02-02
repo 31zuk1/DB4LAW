@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429AC0000000016
+id: JPLAW:429AC0000000016
+law_no: 平成二十九年法律第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/429AC0000000016
+promulgation_date: '20170414'
+tags:
+- 臨床研究法
+tier: 0
+title: 臨床研究法
+law_id: 429AC0000000016
+official_title: 臨床研究法
+aliases:
+- 臨床研究法
+---
+
+# 臨床研究法
+
+## Metadata
+- Law ID: `429AC0000000016`
+- Law No: 平成二十九年法律第十六号
+- Promulgation Date: 20170414

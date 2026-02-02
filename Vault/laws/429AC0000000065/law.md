@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429AC0000000065
+id: JPLAW:429AC0000000065
+law_no: 平成二十九年法律第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/429AC0000000065
+promulgation_date: '20170616'
+tags:
+- 住宅宿泊事業法
+tier: 0
+title: 住宅宿泊事業法
+law_id: 429AC0000000065
+official_title: 住宅宿泊事業法
+aliases:
+- 住宅宿泊事業法
+---
+
+# 住宅宿泊事業法
+
+## Metadata
+- Law ID: `429AC0000000065`
+- Law No: 平成二十九年法律第六十五号
+- Promulgation Date: 20170616

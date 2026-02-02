@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000002071
+id: JPLAW:332M50000002071
+law_no: 昭和三十二年総理府令第七十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000002071
+promulgation_date: '19571024'
+tags:
+- 地籍調査作業規程準則
+tier: 0
+title: 地籍調査作業規程準則
+law_id: 332M50000002071
+official_title: 地籍調査作業規程準則
+aliases:
+- 地籍調査作業規程準則
+---
+
+# 地籍調査作業規程準則
+
+## Metadata
+- Law ID: `332M50000002071`
+- Law No: 昭和三十二年総理府令第七十一号
+- Promulgation Date: 19571024

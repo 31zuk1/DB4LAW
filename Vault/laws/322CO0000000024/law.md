@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322CO0000000024
+id: JPLAW:322CO0000000024
+law_no: 昭和二十二年政令第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/322CO0000000024
+promulgation_date: '19470503'
+tags:
+- 裁判所法施行令
+tier: 0
+title: 裁判所法施行令
+law_id: 322CO0000000024
+official_title: 裁判所法施行令
+aliases:
+- 裁判所法施行令
+---
+
+# 裁判所法施行令
+
+## Metadata
+- Law ID: `322CO0000000024`
+- Law No: 昭和二十二年政令第二十四号
+- Promulgation Date: 19470503

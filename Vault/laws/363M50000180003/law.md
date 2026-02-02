@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363M50000180003
+id: JPLAW:363M50000180003
+law_no: 昭和六十三年文部省・厚生省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/363M50000180003
+promulgation_date: '19880328'
+tags:
+- 義肢装具士学校養成所指定規則
+tier: 0
+title: 義肢装具士学校養成所指定規則
+law_id: 363M50000180003
+official_title: 義肢装具士学校養成所指定規則
+aliases:
+- 義肢装具士学校養成所指定規則
+---
+
+# 義肢装具士学校養成所指定規則
+
+## Metadata
+- Law ID: `363M50000180003`
+- Law No: 昭和六十三年文部省・厚生省令第三号
+- Promulgation Date: 19880328

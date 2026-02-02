@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000206
+id: JPLAW:328AC0000000206
+law_no: 昭和二十八年法律第二百六号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000206
+promulgation_date: '19530814'
+tags:
+- 社会保険審査官及び社会保険審査会法
+tier: 0
+title: 社会保険審査官及び社会保険審査会法
+law_id: 328AC0000000206
+official_title: 社会保険審査官及び社会保険審査会法
+aliases:
+- 社会保険審査官及び社会保険審査会法
+---
+
+# 社会保険審査官及び社会保険審査会法
+
+## Metadata
+- Law ID: `328AC0000000206`
+- Law No: 昭和二十八年法律第二百六号
+- Promulgation Date: 19530814

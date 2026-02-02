@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362AC0000000061
+id: JPLAW:362AC0000000061
+law_no: 昭和六十二年法律第六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/362AC0000000061
+promulgation_date: '19870602'
+tags:
+- 義肢装具士法
+tier: 0
+title: 義肢装具士法
+law_id: 362AC0000000061
+official_title: 義肢装具士法
+aliases:
+- 義肢装具士法
+---
+
+# 義肢装具士法
+
+## Metadata
+- Law ID: `362AC0000000061`
+- Law No: 昭和六十二年法律第六十一号
+- Promulgation Date: 19870602

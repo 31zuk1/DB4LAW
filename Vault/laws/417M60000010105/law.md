@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417M60000010105
+id: JPLAW:417M60000010105
+law_no: 平成十七年法務省令第百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/417M60000010105
+promulgation_date: '20051111'
+tags:
+- 筆界特定申請手数料規則
+tier: 0
+title: 筆界特定申請手数料規則
+law_id: 417M60000010105
+official_title: 筆界特定申請手数料規則
+aliases:
+- 筆界特定申請手数料規則
+---
+
+# 筆界特定申請手数料規則
+
+## Metadata
+- Law ID: `417M60000010105`
+- Law No: 平成十七年法務省令第百五号
+- Promulgation Date: 20051111

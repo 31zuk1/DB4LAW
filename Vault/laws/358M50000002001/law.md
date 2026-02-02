@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358M50000002001
+id: JPLAW:358M50000002001
+law_no: 昭和五十八年総理府令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/358M50000002001
+promulgation_date: '19830110'
+tags:
+- 警備業法施行規則
+tier: 0
+title: 警備業法施行規則
+law_id: 358M50000002001
+official_title: 警備業法施行規則
+aliases:
+- 警備業法施行規則
+---
+
+# 警備業法施行規則
+
+## Metadata
+- Law ID: `358M50000002001`
+- Law No: 昭和五十八年総理府令第一号
+- Promulgation Date: 19830110

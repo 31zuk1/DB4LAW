@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000486
+id: JPLAW:415CO0000000486
+law_no: 平成十五年政令第四百八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000486
+promulgation_date: '20031203'
+tags:
+- 地方独立行政法人法施行令
+tier: 0
+title: 地方独立行政法人法施行令
+law_id: 415CO0000000486
+official_title: 地方独立行政法人法施行令
+aliases:
+- 地方独立行政法人法施行令
+---
+
+# 地方独立行政法人法施行令
+
+## Metadata
+- Law ID: `415CO0000000486`
+- Law No: 平成十五年政令第四百八十六号
+- Promulgation Date: 20031203

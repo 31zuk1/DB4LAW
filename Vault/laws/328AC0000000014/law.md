@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000014
+id: JPLAW:328AC0000000014
+law_no: 昭和二十八年法律第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000014
+promulgation_date: '19530317'
+tags:
+- 麻薬及び向精神薬取締法
+tier: 0
+title: 麻薬及び向精神薬取締法
+law_id: 328AC0000000014
+official_title: 麻薬及び向精神薬取締法
+aliases:
+- 麻薬及び向精神薬取締法
+---
+
+# 麻薬及び向精神薬取締法
+
+## Metadata
+- Law ID: `328AC0000000014`
+- Law No: 昭和二十八年法律第十四号
+- Promulgation Date: 19530317

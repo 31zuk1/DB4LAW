@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419AC0000000102
+id: JPLAW:419AC0000000102
+law_no: 平成十九年法律第百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/419AC0000000102
+promulgation_date: '20070627'
+tags:
+- 電子記録債権法
+tier: 0
+title: 電子記録債権法
+law_id: 419AC0000000102
+official_title: 電子記録債権法
+aliases:
+- 電子記録債権法
+---
+
+# 電子記録債権法
+
+## Metadata
+- Law ID: `419AC0000000102`
+- Law No: 平成十九年法律第百二号
+- Promulgation Date: 20070627

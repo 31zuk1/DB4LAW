@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000002075
+id: JPLAW:329M50000002075
+law_no: 昭和二十九年総理府令第七十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000002075
+promulgation_date: '19541009'
+tags:
+- 水位及び流量調査作業規程準則
+tier: 0
+title: 水位及び流量調査作業規程準則
+law_id: 329M50000002075
+official_title: 水位及び流量調査作業規程準則
+aliases:
+- 水位及び流量調査作業規程準則
+---
+
+# 水位及び流量調査作業規程準則
+
+## Metadata
+- Law ID: `329M50000002075`
+- Law No: 昭和二十九年総理府令第七十五号
+- Promulgation Date: 19541009

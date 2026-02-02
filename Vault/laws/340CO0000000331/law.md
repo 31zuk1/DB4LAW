@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000331
+id: JPLAW:340CO0000000331
+law_no: 昭和四十年政令第三百三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000331
+promulgation_date: '19651001'
+tags:
+- 山村振興法施行令
+tier: 0
+title: 山村振興法施行令
+law_id: 340CO0000000331
+official_title: 山村振興法施行令
+aliases:
+- 山村振興法施行令
+---
+
+# 山村振興法施行令
+
+## Metadata
+- Law ID: `340CO0000000331`
+- Law No: 昭和四十年政令第三百三十一号
+- Promulgation Date: 19651001

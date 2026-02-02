@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000010036
+id: JPLAW:420M60000010036
+law_no: 平成二十年法務省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000010036
+promulgation_date: '20080519'
+tags:
+- 地方更生保護委員会事務局組織規則
+tier: 0
+title: 地方更生保護委員会事務局組織規則
+law_id: 420M60000010036
+official_title: 地方更生保護委員会事務局組織規則
+aliases:
+- 地方更生保護委員会事務局組織規則
+---
+
+# 地方更生保護委員会事務局組織規則
+
+## Metadata
+- Law ID: `420M60000010036`
+- Law No: 平成二十年法務省令第三十六号
+- Promulgation Date: 20080519

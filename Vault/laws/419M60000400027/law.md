@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000400027
+id: JPLAW:419M60000400027
+law_no: 平成十九年経済産業省令第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000400027
+promulgation_date: '20070330'
+tags:
+- 輸出入取引法施行規則
+tier: 0
+title: 輸出入取引法施行規則
+law_id: 419M60000400027
+official_title: 輸出入取引法施行規則
+aliases:
+- 輸出入取引法施行規則
+---
+
+# 輸出入取引法施行規則
+
+## Metadata
+- Law ID: `419M60000400027`
+- Law No: 平成十九年経済産業省令第二十七号
+- Promulgation Date: 20070330

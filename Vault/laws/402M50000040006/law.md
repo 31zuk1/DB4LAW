@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50000040006
+id: JPLAW:402M50000040006
+law_no: 平成二年大蔵省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50000040006
+promulgation_date: '19900327'
+tags:
+- 特別保健福祉事業資金事務取扱規則
+tier: 0
+title: 特別保健福祉事業資金事務取扱規則
+law_id: 402M50000040006
+official_title: 特別保健福祉事業資金事務取扱規則
+aliases:
+- 特別保健福祉事業資金事務取扱規則
+---
+
+# 特別保健福祉事業資金事務取扱規則
+
+## Metadata
+- Law ID: `402M50000040006`
+- Law No: 平成二年大蔵省令第六号
+- Promulgation Date: 19900327

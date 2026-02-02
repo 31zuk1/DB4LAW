@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M50000400052
+id: JPLAW:328M50000400052
+law_no: 昭和二十八年通商産業省令第五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M50000400052
+promulgation_date: '19531001'
+tags:
+- 商工会議所法施行規則
+tier: 0
+title: 商工会議所法施行規則
+law_id: 328M50000400052
+official_title: 商工会議所法施行規則
+aliases:
+- 商工会議所法施行規則
+---
+
+# 商工会議所法施行規則
+
+## Metadata
+- Law ID: `328M50000400052`
+- Law No: 昭和二十八年通商産業省令第五十二号
+- Promulgation Date: 19531001

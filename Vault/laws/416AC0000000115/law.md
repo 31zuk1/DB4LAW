@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416AC0000000115
+id: JPLAW:416AC0000000115
+law_no: 平成十六年法律第百十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/416AC0000000115
+promulgation_date: '20040618'
+tags:
+- 国際人道法の重大な違反行為の処罰に関する法律
+tier: 0
+title: 国際人道法の重大な違反行為の処罰に関する法律
+law_id: 416AC0000000115
+official_title: 国際人道法の重大な違反行為の処罰に関する法律
+aliases:
+- 国際人道法の重大な違反行為の処罰に関する法律
+---
+
+# 国際人道法の重大な違反行為の処罰に関する法律
+
+## Metadata
+- Law ID: `416AC0000000115`
+- Law No: 平成十六年法律第百十五号
+- Promulgation Date: 20040618

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504AC0000000084
+id: JPLAW:504AC0000000084
+law_no: 令和四年法律第八十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/504AC0000000084
+promulgation_date: '20221118'
+tags:
+- 地方公共団体の議会の議員及び長の選挙期日等の臨時特例に関する法律
+tier: 0
+title: 地方公共団体の議会の議員及び長の選挙期日等の臨時特例に関する法律
+law_id: 504AC0000000084
+official_title: 地方公共団体の議会の議員及び長の選挙期日等の臨時特例に関する法律
+aliases:
+- 地方公共団体の議会の議員及び長の選挙期日等の臨時特例に関する法律
+---
+
+# 地方公共団体の議会の議員及び長の選挙期日等の臨時特例に関する法律
+
+## Metadata
+- Law ID: `504AC0000000084`
+- Law No: 令和四年法律第八十四号
+- Promulgation Date: 20221118

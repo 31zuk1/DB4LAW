@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424AC0000000084
+id: JPLAW:424AC0000000084
+law_no: 平成二十四年法律第八十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/424AC0000000084
+promulgation_date: '20120905'
+tags:
+- 都市の低炭素化の促進に関する法律
+tier: 0
+title: 都市の低炭素化の促進に関する法律
+law_id: 424AC0000000084
+official_title: 都市の低炭素化の促進に関する法律
+aliases:
+- 都市の低炭素化の促進に関する法律
+---
+
+# 都市の低炭素化の促進に関する法律
+
+## Metadata
+- Law ID: `424AC0000000084`
+- Law No: 平成二十四年法律第八十四号
+- Promulgation Date: 20120905

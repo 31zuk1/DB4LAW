@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403AC0000000045
+id: JPLAW:403AC0000000045
+law_no: 平成三年法律第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/403AC0000000045
+promulgation_date: '19910426'
+tags:
+- 新幹線鉄道に係る鉄道施設の譲渡等に関する法律
+tier: 0
+title: 新幹線鉄道に係る鉄道施設の譲渡等に関する法律
+law_id: 403AC0000000045
+official_title: 新幹線鉄道に係る鉄道施設の譲渡等に関する法律
+aliases:
+- 新幹線鉄道に係る鉄道施設の譲渡等に関する法律
+---
+
+# 新幹線鉄道に係る鉄道施設の譲渡等に関する法律
+
+## Metadata
+- Law ID: `403AC0000000045`
+- Law No: 平成三年法律第四十五号
+- Promulgation Date: 19910426

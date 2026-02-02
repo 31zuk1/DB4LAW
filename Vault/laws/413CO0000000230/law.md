@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000230
+id: JPLAW:413CO0000000230
+law_no: 平成十三年政令第二百三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000230
+promulgation_date: '20010629'
+tags:
+- 水産政策審議会令
+tier: 0
+title: 水産政策審議会令
+law_id: 413CO0000000230
+official_title: 水産政策審議会令
+aliases:
+- 水産政策審議会令
+---
+
+# 水産政策審議会令
+
+## Metadata
+- Law ID: `413CO0000000230`
+- Law No: 平成十三年政令第二百三十号
+- Promulgation Date: 20010629

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60000040068
+id: JPLAW:414M60000040068
+law_no: 平成十四年財務省令第六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60000040068
+promulgation_date: '20021206'
+tags:
+- 個人向け国債の発行等に関する省令
+tier: 0
+title: 個人向け国債の発行等に関する省令
+law_id: 414M60000040068
+official_title: 個人向け国債の発行等に関する省令
+aliases:
+- 個人向け国債の発行等に関する省令
+---
+
+# 個人向け国債の発行等に関する省令
+
+## Metadata
+- Law ID: `414M60000040068`
+- Law No: 平成十四年財務省令第六十八号
+- Promulgation Date: 20021206

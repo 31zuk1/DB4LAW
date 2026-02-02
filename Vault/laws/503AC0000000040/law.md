@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503AC0000000040
+id: JPLAW:503AC0000000040
+law_no: 令和三年法律第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/503AC0000000040
+promulgation_date: '20210519'
+tags:
+- 地方公共団体情報システムの標準化に関する法律
+tier: 0
+title: 地方公共団体情報システムの標準化に関する法律
+law_id: 503AC0000000040
+official_title: 地方公共団体情報システムの標準化に関する法律
+aliases:
+- 地方公共団体情報システムの標準化に関する法律
+---
+
+# 地方公共団体情報システムの標準化に関する法律
+
+## Metadata
+- Law ID: `503AC0000000040`
+- Law No: 令和三年法律第四十号
+- Promulgation Date: 20210519

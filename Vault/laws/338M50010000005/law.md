@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338M50010000005
+id: JPLAW:338M50010000005
+law_no: 昭和三十八年農林省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/338M50010000005
+promulgation_date: '19630122'
+tags:
+- 漁業の許可及び取締り等に関する省令
+tier: 0
+title: 漁業の許可及び取締り等に関する省令
+law_id: 338M50010000005
+official_title: 漁業の許可及び取締り等に関する省令
+aliases:
+- 漁業の許可及び取締り等に関する省令
+---
+
+# 漁業の許可及び取締り等に関する省令
+
+## Metadata
+- Law ID: `338M50010000005`
+- Law No: 昭和三十八年農林省令第五号
+- Promulgation Date: 19630122

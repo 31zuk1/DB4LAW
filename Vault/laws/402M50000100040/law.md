@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50000100040
+id: JPLAW:402M50000100040
+law_no: 平成二年厚生省令第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50000100040
+promulgation_date: '19900629'
+tags:
+- 食鳥処理の事業の規制及び食鳥検査に関する法律施行規則
+tier: 0
+title: 食鳥処理の事業の規制及び食鳥検査に関する法律施行規則
+law_id: 402M50000100040
+official_title: 食鳥処理の事業の規制及び食鳥検査に関する法律施行規則
+aliases:
+- 食鳥処理の事業の規制及び食鳥検査に関する法律施行規則
+---
+
+# 食鳥処理の事業の規制及び食鳥検査に関する法律施行規則
+
+## Metadata
+- Law ID: `402M50000100040`
+- Law No: 平成二年厚生省令第四十号
+- Promulgation Date: 19900629

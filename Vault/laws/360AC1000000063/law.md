@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360AC1000000063
+id: JPLAW:360AC1000000063
+law_no: 昭和六十年法律第六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/360AC1000000063
+promulgation_date: '19850614'
+tags:
+- 半島振興法
+tier: 0
+title: 半島振興法
+law_id: 360AC1000000063
+official_title: 半島振興法
+aliases:
+- 半島振興法
+---
+
+# 半島振興法
+
+## Metadata
+- Law ID: `360AC1000000063`
+- Law No: 昭和六十年法律第六十三号
+- Promulgation Date: 19850614

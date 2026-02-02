@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344CO0000000088
+id: JPLAW:344CO0000000088
+law_no: 昭和四十四年政令第八十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/344CO0000000088
+promulgation_date: '19690409'
+tags:
+- 地方揮発油譲与税法施行令
+tier: 0
+title: 地方揮発油譲与税法施行令
+law_id: 344CO0000000088
+official_title: 地方揮発油譲与税法施行令
+aliases:
+- 地方揮発油譲与税法施行令
+---
+
+# 地方揮発油譲与税法施行令
+
+## Metadata
+- Law ID: `344CO0000000088`
+- Law No: 昭和四十四年政令第八十八号
+- Promulgation Date: 19690409

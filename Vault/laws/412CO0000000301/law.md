@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000301
+id: JPLAW:412CO0000000301
+law_no: 平成十二年政令第三百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000301
+promulgation_date: '20000607'
+tags:
+- 運輸審議会令
+tier: 0
+title: 運輸審議会令
+law_id: 412CO0000000301
+official_title: 運輸審議会令
+aliases:
+- 運輸審議会令
+---
+
+# 運輸審議会令
+
+## Metadata
+- Law ID: `412CO0000000301`
+- Law No: 平成十二年政令第三百一号
+- Promulgation Date: 20000607

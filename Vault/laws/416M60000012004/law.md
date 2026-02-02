@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000012004
+id: JPLAW:416M60000012004
+law_no: 平成十六年内閣府・法務省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000012004
+promulgation_date: '20041228'
+tags:
+- 信託兼営金融機関営業保証金規則
+tier: 0
+title: 信託兼営金融機関営業保証金規則
+law_id: 416M60000012004
+official_title: 信託兼営金融機関営業保証金規則
+aliases:
+- 信託兼営金融機関営業保証金規則
+---
+
+# 信託兼営金融機関営業保証金規則
+
+## Metadata
+- Law ID: `416M60000012004`
+- Law No: 平成十六年内閣府・法務省令第四号
+- Promulgation Date: 20041228

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60000040065
+id: JPLAW:414M60000040065
+law_no: 平成十四年財務省令第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60000040065
+promulgation_date: '20021206'
+tags:
+- 振替国債を取り扱う振替機関への同意等に関する省令
+tier: 0
+title: 振替国債を取り扱う振替機関への同意等に関する省令
+law_id: 414M60000040065
+official_title: 振替国債を取り扱う振替機関への同意等に関する省令
+aliases:
+- 振替国債を取り扱う振替機関への同意等に関する省令
+---
+
+# 振替国債を取り扱う振替機関への同意等に関する省令
+
+## Metadata
+- Law ID: `414M60000040065`
+- Law No: 平成十四年財務省令第六十五号
+- Promulgation Date: 20021206

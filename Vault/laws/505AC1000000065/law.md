@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505AC1000000065
+id: JPLAW:505AC1000000065
+law_no: 令和五年法律第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/505AC1000000065
+promulgation_date: '20230616'
+tags:
+- 共生社会の実現を推進するための認知症基本法
+tier: 0
+title: 共生社会の実現を推進するための認知症基本法
+law_id: 505AC1000000065
+official_title: 共生社会の実現を推進するための認知症基本法
+aliases:
+- 共生社会の実現を推進するための認知症基本法
+---
+
+# 共生社会の実現を推進するための認知症基本法
+
+## Metadata
+- Law ID: `505AC1000000065`
+- Law No: 令和五年法律第六十五号
+- Promulgation Date: 20230616

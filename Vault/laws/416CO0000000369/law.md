@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000369
+id: JPLAW:416CO0000000369
+law_no: 平成十六年政令第三百六十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000369
+promulgation_date: '20041125'
+tags:
+- 船員職業安定法施行令
+tier: 0
+title: 船員職業安定法施行令
+law_id: 416CO0000000369
+official_title: 船員職業安定法施行令
+aliases:
+- 船員職業安定法施行令
+---
+
+# 船員職業安定法施行令
+
+## Metadata
+- Law ID: `416CO0000000369`
+- Law No: 平成十六年政令第三百六十九号
+- Promulgation Date: 20041125

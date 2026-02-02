@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 321AC0000000007
+id: JPLAW:321AC0000000007
+law_no: 昭和二十一年法律第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/321AC0000000007
+promulgation_date: '19460815'
+tags:
+- 会社経理応急措置法
+tier: 0
+title: 会社経理応急措置法
+law_id: 321AC0000000007
+official_title: 会社経理応急措置法
+aliases:
+- 会社経理応急措置法
+---
+
+# 会社経理応急措置法
+
+## Metadata
+- Law ID: `321AC0000000007`
+- Law No: 昭和二十一年法律第七号
+- Promulgation Date: 19460815

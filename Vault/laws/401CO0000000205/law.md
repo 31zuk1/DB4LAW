@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 401CO0000000205
+id: JPLAW:401CO0000000205
+law_no: 平成元年政令第二百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/401CO0000000205
+promulgation_date: '19890630'
+tags:
+- 地域における医療及び介護の総合的な確保の促進に関する法律施行令
+tier: 0
+title: 地域における医療及び介護の総合的な確保の促進に関する法律施行令
+law_id: 401CO0000000205
+official_title: 地域における医療及び介護の総合的な確保の促進に関する法律施行令
+aliases:
+- 地域における医療及び介護の総合的な確保の促進に関する法律施行令
+---
+
+# 地域における医療及び介護の総合的な確保の促進に関する法律施行令
+
+## Metadata
+- Law ID: `401CO0000000205`
+- Law No: 平成元年政令第二百五号
+- Promulgation Date: 19890630

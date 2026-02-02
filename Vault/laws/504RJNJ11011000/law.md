@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504RJNJ11011000
+id: JPLAW:504RJNJ11011000
+law_no: 令和四年人事院規則一一―一一
+links:
+  egov: https://laws.e-gov.go.jp/law/504RJNJ11011000
+promulgation_date: '20220218'
+tags:
+- 人事院規則一一―一一（管理監督職勤務上限年齢による降任等）
+tier: 0
+title: 人事院規則一一―一一（管理監督職勤務上限年齢による降任等）
+law_id: 504RJNJ11011000
+official_title: 人事院規則一一―一一（管理監督職勤務上限年齢による降任等）
+aliases:
+- 人事院規則一一―一一（管理監督職勤務上限年齢による降任等）
+---
+
+# 人事院規則一一―一一（管理監督職勤務上限年齢による降任等）
+
+## Metadata
+- Law ID: `504RJNJ11011000`
+- Law No: 令和四年人事院規則一一―一一
+- Promulgation Date: 20220218

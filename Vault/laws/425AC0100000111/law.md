@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425AC0100000111
+id: JPLAW:425AC0100000111
+law_no: 平成二十五年法律第百十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/425AC0100000111
+promulgation_date: '20131213'
+tags:
+- がん登録等の推進に関する法律
+tier: 0
+title: がん登録等の推進に関する法律
+law_id: 425AC0100000111
+official_title: がん登録等の推進に関する法律
+aliases:
+- がん登録等の推進に関する法律
+---
+
+# がん登録等の推進に関する法律
+
+## Metadata
+- Law ID: `425AC0100000111`
+- Law No: 平成二十五年法律第百十一号
+- Promulgation Date: 20131213

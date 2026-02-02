@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50000800037
+id: JPLAW:340M50000800037
+law_no: 昭和四十年運輸省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50000800037
+promulgation_date: '19650519'
+tags:
+- 船舶消防設備規則
+tier: 0
+title: 船舶消防設備規則
+law_id: 340M50000800037
+official_title: 船舶消防設備規則
+aliases:
+- 船舶消防設備規則
+---
+
+# 船舶消防設備規則
+
+## Metadata
+- Law ID: `340M50000800037`
+- Law No: 昭和四十年運輸省令第三十七号
+- Promulgation Date: 19650519

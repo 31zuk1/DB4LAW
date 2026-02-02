@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000010015
+id: JPLAW:327M50000010015
+law_no: 昭和二十七年法務省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000010015
+promulgation_date: '19520818'
+tags:
+- 道路交通事業抵当登記規則
+tier: 0
+title: 道路交通事業抵当登記規則
+law_id: 327M50000010015
+official_title: 道路交通事業抵当登記規則
+aliases:
+- 道路交通事業抵当登記規則
+---
+
+# 道路交通事業抵当登記規則
+
+## Metadata
+- Law ID: `327M50000010015`
+- Law No: 昭和二十七年法務省令第十五号
+- Promulgation Date: 19520818

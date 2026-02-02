@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC0000000004
+id: JPLAW:418AC0000000004
+law_no: 平成十八年法律第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC0000000004
+promulgation_date: '20060210'
+tags:
+- 石綿による健康被害の救済に関する法律
+tier: 0
+title: 石綿による健康被害の救済に関する法律
+law_id: 418AC0000000004
+official_title: 石綿による健康被害の救済に関する法律
+aliases:
+- 石綿による健康被害の救済に関する法律
+---
+
+# 石綿による健康被害の救済に関する法律
+
+## Metadata
+- Law ID: `418AC0000000004`
+- Law No: 平成十八年法律第四号
+- Promulgation Date: 20060210

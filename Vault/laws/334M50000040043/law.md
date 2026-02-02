@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334M50000040043
+id: JPLAW:334M50000040043
+law_no: 昭和三十四年大蔵省令第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/334M50000040043
+promulgation_date: '19590530'
+tags:
+- 接収貴金属等の処理に関する法律施行規則
+tier: 0
+title: 接収貴金属等の処理に関する法律施行規則
+law_id: 334M50000040043
+official_title: 接収貴金属等の処理に関する法律施行規則
+aliases:
+- 接収貴金属等の処理に関する法律施行規則
+---
+
+# 接収貴金属等の処理に関する法律施行規則
+
+## Metadata
+- Law ID: `334M50000040043`
+- Law No: 昭和三十四年大蔵省令第四十三号
+- Promulgation Date: 19590530

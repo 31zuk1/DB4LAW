@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410CO0000000005
+id: JPLAW:410CO0000000005
+law_no: 平成十年政令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/410CO0000000005
+promulgation_date: '19980108'
+tags:
+- 精神保健福祉士法施行令
+tier: 0
+title: 精神保健福祉士法施行令
+law_id: 410CO0000000005
+official_title: 精神保健福祉士法施行令
+aliases:
+- 精神保健福祉士法施行令
+---
+
+# 精神保健福祉士法施行令
+
+## Metadata
+- Law ID: `410CO0000000005`
+- Law No: 平成十年政令第五号
+- Promulgation Date: 19980108

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 321AC0000000056
+id: JPLAW:321AC0000000056
+law_no: 昭和二十一年法律第五十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/321AC0000000056
+promulgation_date: '19461118'
+tags:
+- 大蔵省預金部等損失特別処理法
+tier: 0
+title: 大蔵省預金部等損失特別処理法
+law_id: 321AC0000000056
+official_title: 大蔵省預金部等損失特別処理法
+aliases:
+- 大蔵省預金部等損失特別処理法
+---
+
+# 大蔵省預金部等損失特別処理法
+
+## Metadata
+- Law ID: `321AC0000000056`
+- Law No: 昭和二十一年法律第五十六号
+- Promulgation Date: 19461118

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000120
+id: JPLAW:322AC0000000120
+law_no: 昭和二十二年法律第百二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000120
+promulgation_date: '19471021'
+tags:
+- 国家公務員法
+tier: 0
+title: 国家公務員法
+law_id: 322AC0000000120
+official_title: 国家公務員法
+aliases:
+- 国家公務員法
+---
+
+# 国家公務員法
+
+## Metadata
+- Law ID: `322AC0000000120`
+- Law No: 昭和二十二年法律第百二十号
+- Promulgation Date: 19471021

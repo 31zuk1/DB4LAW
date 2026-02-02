@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427CO0000000309
+id: JPLAW:427CO0000000309
+law_no: 平成二十七年政令第三百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/427CO0000000309
+promulgation_date: '20150828'
+tags:
+- 電力・ガス取引監視等委員会令
+tier: 0
+title: 電力・ガス取引監視等委員会令
+law_id: 427CO0000000309
+official_title: 電力・ガス取引監視等委員会令
+aliases:
+- 電力・ガス取引監視等委員会令
+---
+
+# 電力・ガス取引監視等委員会令
+
+## Metadata
+- Law ID: `427CO0000000309`
+- Law No: 平成二十七年政令第三百九号
+- Promulgation Date: 20150828

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC1000000008
+id: JPLAW:326AC1000000008
+law_no: 昭和二十六年法律第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC1000000008
+promulgation_date: '19510303'
+tags:
+- 芦屋国際文化住宅都市建設法
+tier: 0
+title: 芦屋国際文化住宅都市建設法
+law_id: 326AC1000000008
+official_title: 芦屋国際文化住宅都市建設法
+aliases:
+- 芦屋国際文化住宅都市建設法
+---
+
+# 芦屋国際文化住宅都市建設法
+
+## Metadata
+- Law ID: `326AC1000000008`
+- Law No: 昭和二十六年法律第八号
+- Promulgation Date: 19510303

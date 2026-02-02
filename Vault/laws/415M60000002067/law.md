@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000002067
+id: JPLAW:415M60000002067
+law_no: 平成十五年内閣府令第六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000002067
+promulgation_date: '20030623'
+tags:
+- 食品安全委員会事務局組織規則
+tier: 0
+title: 食品安全委員会事務局組織規則
+law_id: 415M60000002067
+official_title: 食品安全委員会事務局組織規則
+aliases:
+- 食品安全委員会事務局組織規則
+---
+
+# 食品安全委員会事務局組織規則
+
+## Metadata
+- Law ID: `415M60000002067`
+- Law No: 平成十五年内閣府令第六十七号
+- Promulgation Date: 20030623

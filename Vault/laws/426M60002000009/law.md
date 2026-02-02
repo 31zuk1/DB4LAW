@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426M60002000009
+id: JPLAW:426M60002000009
+law_no: 平成二十六年防衛省令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/426M60002000009
+promulgation_date: '20140530'
+tags:
+- 標準的な官職を定める省令
+tier: 0
+title: 標準的な官職を定める省令
+law_id: 426M60002000009
+official_title: 標準的な官職を定める省令
+aliases:
+- 標準的な官職を定める省令
+---
+
+# 標準的な官職を定める省令
+
+## Metadata
+- Law ID: `426M60002000009`
+- Law No: 平成二十六年防衛省令第九号
+- Promulgation Date: 20140530

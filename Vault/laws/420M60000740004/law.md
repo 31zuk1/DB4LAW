@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000740004
+id: JPLAW:420M60000740004
+law_no: 平成二十年財務省・厚生労働省・農林水産省・経済産業省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000740004
+promulgation_date: '20080908'
+tags:
+- 株式会社日本政策金融公庫法施行規則
+tier: 0
+title: 株式会社日本政策金融公庫法施行規則
+law_id: 420M60000740004
+official_title: 株式会社日本政策金融公庫法施行規則
+aliases:
+- 株式会社日本政策金融公庫法施行規則
+---
+
+# 株式会社日本政策金融公庫法施行規則
+
+## Metadata
+- Law ID: `420M60000740004`
+- Law No: 平成二十年財務省・厚生労働省・農林水産省・経済産業省令第四号
+- Promulgation Date: 20080908

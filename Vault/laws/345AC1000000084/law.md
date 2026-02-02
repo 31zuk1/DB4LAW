@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345AC1000000084
+id: JPLAW:345AC1000000084
+law_no: 昭和四十五年法律第八十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/345AC1000000084
+promulgation_date: '19700521'
+tags:
+- 障害者基本法
+tier: 0
+title: 障害者基本法
+law_id: 345AC1000000084
+official_title: 障害者基本法
+aliases:
+- 障害者基本法
+---
+
+# 障害者基本法
+
+## Metadata
+- Law ID: `345AC1000000084`
+- Law No: 昭和四十五年法律第八十四号
+- Promulgation Date: 19700521

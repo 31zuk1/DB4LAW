@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60000800004
+id: JPLAW:414M60000800004
+law_no: 平成十四年国土交通省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60000800004
+promulgation_date: '20020201'
+tags:
+- 小型船舶登録規則
+tier: 0
+title: 小型船舶登録規則
+law_id: 414M60000800004
+official_title: 小型船舶登録規則
+aliases:
+- 小型船舶登録規則
+---
+
+# 小型船舶登録規則
+
+## Metadata
+- Law ID: `414M60000800004`
+- Law No: 平成十四年国土交通省令第四号
+- Promulgation Date: 20020201

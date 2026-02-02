@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504M60000020010
+id: JPLAW:504M60000020010
+law_no: 令和四年外務省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/504M60000020010
+promulgation_date: '20221005'
+tags:
+- 旅券法施行規則
+tier: 0
+title: 旅券法施行規則
+law_id: 504M60000020010
+official_title: 旅券法施行規則
+aliases:
+- 旅券法施行規則
+---
+
+# 旅券法施行規則
+
+## Metadata
+- Law ID: `504M60000020010`
+- Law No: 令和四年外務省令第十号
+- Promulgation Date: 20221005

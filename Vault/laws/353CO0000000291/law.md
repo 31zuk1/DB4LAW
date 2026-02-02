@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353CO0000000291
+id: JPLAW:353CO0000000291
+law_no: 昭和五十三年政令第二百九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/353CO0000000291
+promulgation_date: '19780714'
+tags:
+- 特許協力条約に基づく国際出願等に関する法律施行令
+tier: 0
+title: 特許協力条約に基づく国際出願等に関する法律施行令
+law_id: 353CO0000000291
+official_title: 特許協力条約に基づく国際出願等に関する法律施行令
+aliases:
+- 特許協力条約に基づく国際出願等に関する法律施行令
+---
+
+# 特許協力条約に基づく国際出願等に関する法律施行令
+
+## Metadata
+- Law ID: `353CO0000000291`
+- Law No: 昭和五十三年政令第二百九十一号
+- Promulgation Date: 19780714

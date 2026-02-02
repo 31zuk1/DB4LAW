@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424M60000040014
+id: JPLAW:424M60000040014
+law_no: 平成二十四年財務省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/424M60000040014
+promulgation_date: '20120326'
+tags:
+- 株式会社国際協力銀行法施行規則
+tier: 0
+title: 株式会社国際協力銀行法施行規則
+law_id: 424M60000040014
+official_title: 株式会社国際協力銀行法施行規則
+aliases:
+- 株式会社国際協力銀行法施行規則
+---
+
+# 株式会社国際協力銀行法施行規則
+
+## Metadata
+- Law ID: `424M60000040014`
+- Law No: 平成二十四年財務省令第十四号
+- Promulgation Date: 20120326

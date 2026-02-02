@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352M50000800019
+id: JPLAW:352M50000800019
+law_no: 昭和五十二年運輸省令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/352M50000800019
+promulgation_date: '19770701'
+tags:
+- 海上衝突予防法施行規則
+tier: 0
+title: 海上衝突予防法施行規則
+law_id: 352M50000800019
+official_title: 海上衝突予防法施行規則
+aliases:
+- 海上衝突予防法施行規則
+---
+
+# 海上衝突予防法施行規則
+
+## Metadata
+- Law ID: `352M50000800019`
+- Law No: 昭和五十二年運輸省令第十九号
+- Promulgation Date: 19770701

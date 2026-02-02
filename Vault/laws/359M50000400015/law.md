@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359M50000400015
+id: JPLAW:359M50000400015
+law_no: 昭和五十九年通商産業省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/359M50000400015
+promulgation_date: '19840309'
+tags:
+- エネルギー管理士の試験及び免状の交付に関する規則
+tier: 0
+title: エネルギー管理士の試験及び免状の交付に関する規則
+law_id: 359M50000400015
+official_title: エネルギー管理士の試験及び免状の交付に関する規則
+aliases:
+- エネルギー管理士の試験及び免状の交付に関する規則
+---
+
+# エネルギー管理士の試験及び免状の交付に関する規則
+
+## Metadata
+- Law ID: `359M50000400015`
+- Law No: 昭和五十九年通商産業省令第十五号
+- Promulgation Date: 19840309

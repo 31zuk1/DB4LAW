@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000002018
+id: JPLAW:416M60000002018
+law_no: 平成十六年内閣府令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000002018
+promulgation_date: '20040325'
+tags:
+- 公認会計士試験規則
+tier: 0
+title: 公認会計士試験規則
+law_id: 416M60000002018
+official_title: 公認会計士試験規則
+aliases:
+- 公認会計士試験規則
+---
+
+# 公認会計士試験規則
+
+## Metadata
+- Law ID: `416M60000002018`
+- Law No: 平成十六年内閣府令第十八号
+- Promulgation Date: 20040325

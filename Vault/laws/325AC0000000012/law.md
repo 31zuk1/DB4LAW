@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000012
+id: JPLAW:325AC0000000012
+law_no: 昭和二十五年法律第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000012
+promulgation_date: '19500318'
+tags:
+- 家畜保健衛生所法
+tier: 0
+title: 家畜保健衛生所法
+law_id: 325AC0000000012
+official_title: 家畜保健衛生所法
+aliases:
+- 家畜保健衛生所法
+---
+
+# 家畜保健衛生所法
+
+## Metadata
+- Law ID: `325AC0000000012`
+- Law No: 昭和二十五年法律第十二号
+- Promulgation Date: 19500318

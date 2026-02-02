@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000117
+id: JPLAW:327AC0000000117
+law_no: 昭和二十七年法律第百十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000117
+promulgation_date: '19520428'
+tags:
+- 公務員等の懲戒免除等に関する法律
+tier: 0
+title: 公務員等の懲戒免除等に関する法律
+law_id: 327AC0000000117
+official_title: 公務員等の懲戒免除等に関する法律
+aliases:
+- 公務員等の懲戒免除等に関する法律
+---
+
+# 公務員等の懲戒免除等に関する法律
+
+## Metadata
+- Law ID: `327AC0000000117`
+- Law No: 昭和二十七年法律第百十七号
+- Promulgation Date: 19520428

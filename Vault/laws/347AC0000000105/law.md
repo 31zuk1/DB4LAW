@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347AC0000000105
+id: JPLAW:347AC0000000105
+law_no: 昭和四十七年法律第百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/347AC0000000105
+promulgation_date: '19720626'
+tags:
+- 石油パイプライン事業法
+tier: 0
+title: 石油パイプライン事業法
+law_id: 347AC0000000105
+official_title: 石油パイプライン事業法
+aliases:
+- 石油パイプライン事業法
+---
+
+# 石油パイプライン事業法
+
+## Metadata
+- Law ID: `347AC0000000105`
+- Law No: 昭和四十七年法律第百五号
+- Promulgation Date: 19720626

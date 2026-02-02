@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50000040016
+id: JPLAW:406M50000040016
+law_no: 平成六年大蔵省令第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50000040016
+promulgation_date: '19940325'
+tags:
+- 信用金庫及び信用金庫連合会の優先出資に関する内閣府令
+tier: 0
+title: 信用金庫及び信用金庫連合会の優先出資に関する内閣府令
+law_id: 406M50000040016
+official_title: 信用金庫及び信用金庫連合会の優先出資に関する内閣府令
+aliases:
+- 信用金庫及び信用金庫連合会の優先出資に関する内閣府令
+---
+
+# 信用金庫及び信用金庫連合会の優先出資に関する内閣府令
+
+## Metadata
+- Law ID: `406M50000040016`
+- Law No: 平成六年大蔵省令第十六号
+- Promulgation Date: 19940325

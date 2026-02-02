@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000473
+id: JPLAW:327CO0000000473
+law_no: 昭和二十七年政令第四百七十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000473
+promulgation_date: '19521201'
+tags:
+- 外務公務員法施行令
+tier: 0
+title: 外務公務員法施行令
+law_id: 327CO0000000473
+official_title: 外務公務員法施行令
+aliases:
+- 外務公務員法施行令
+---
+
+# 外務公務員法施行令
+
+## Metadata
+- Law ID: `327CO0000000473`
+- Law No: 昭和二十七年政令第四百七十三号
+- Promulgation Date: 19521201

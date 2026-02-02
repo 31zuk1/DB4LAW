@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324CO0000000016
+id: JPLAW:324CO0000000016
+law_no: 昭和二十四年政令第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/324CO0000000016
+promulgation_date: '19490120'
+tags:
+- 母体保護法施行令
+tier: 0
+title: 母体保護法施行令
+law_id: 324CO0000000016
+official_title: 母体保護法施行令
+aliases:
+- 母体保護法施行令
+---
+
+# 母体保護法施行令
+
+## Metadata
+- Law ID: `324CO0000000016`
+- Law No: 昭和二十四年政令第十六号
+- Promulgation Date: 19490120

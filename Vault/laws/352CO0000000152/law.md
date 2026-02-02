@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352CO0000000152
+id: JPLAW:352CO0000000152
+law_no: 昭和五十二年政令第百五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/352CO0000000152
+promulgation_date: '19770517'
+tags:
+- 揮発油等の品質の確保等に関する法律施行令
+tier: 0
+title: 揮発油等の品質の確保等に関する法律施行令
+law_id: 352CO0000000152
+official_title: 揮発油等の品質の確保等に関する法律施行令
+aliases:
+- 揮発油等の品質の確保等に関する法律施行令
+---
+
+# 揮発油等の品質の確保等に関する法律施行令
+
+## Metadata
+- Law ID: `352CO0000000152`
+- Law No: 昭和五十二年政令第百五十二号
+- Promulgation Date: 19770517

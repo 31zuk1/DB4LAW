@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000103
+id: JPLAW:323AC0000000103
+law_no: 昭和二十三年法律第百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000103
+promulgation_date: '19480706'
+tags:
+- 公認会計士法
+tier: 0
+title: 公認会計士法
+law_id: 323AC0000000103
+official_title: 公認会計士法
+aliases:
+- 公認会計士法
+---
+
+# 公認会計士法
+
+## Metadata
+- Law ID: `323AC0000000103`
+- Law No: 昭和二十三年法律第百三号
+- Promulgation Date: 19480706

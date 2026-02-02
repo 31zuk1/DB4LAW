@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351M50000080002
+id: JPLAW:351M50000080002
+law_no: 昭和五十一年文部省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/351M50000080002
+promulgation_date: '19760110'
+tags:
+- 専修学校設置基準
+tier: 0
+title: 専修学校設置基準
+law_id: 351M50000080002
+official_title: 専修学校設置基準
+aliases:
+- 専修学校設置基準
+---
+
+# 専修学校設置基準
+
+## Metadata
+- Law ID: `351M50000080002`
+- Law No: 昭和五十一年文部省令第二号
+- Promulgation Date: 19760110

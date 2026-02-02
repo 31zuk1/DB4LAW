@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50000100058
+id: JPLAW:402M50000100058
+law_no: 平成二年厚生省令第五十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50000100058
+promulgation_date: '19901219'
+tags:
+- 国民年金基金規則
+tier: 0
+title: 国民年金基金規則
+law_id: 402M50000100058
+official_title: 国民年金基金規則
+aliases:
+- 国民年金基金規則
+---
+
+# 国民年金基金規則
+
+## Metadata
+- Law ID: `402M50000100058`
+- Law No: 平成二年厚生省令第五十八号
+- Promulgation Date: 19901219

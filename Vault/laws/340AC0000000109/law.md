@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340AC0000000109
+id: JPLAW:340AC0000000109
+law_no: 昭和四十年法律第百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/340AC0000000109
+promulgation_date: '19650602'
+tags:
+- 砂糖及びでん粉の価格調整に関する法律
+tier: 0
+title: 砂糖及びでん粉の価格調整に関する法律
+law_id: 340AC0000000109
+official_title: 砂糖及びでん粉の価格調整に関する法律
+aliases:
+- 砂糖及びでん粉の価格調整に関する法律
+---
+
+# 砂糖及びでん粉の価格調整に関する法律
+
+## Metadata
+- Law ID: `340AC0000000109`
+- Law No: 昭和四十年法律第百九号
+- Promulgation Date: 19650602

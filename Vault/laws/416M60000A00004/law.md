@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000A00004
+id: JPLAW:416M60000A00004
+law_no: 平成十六年農林水産省・国土交通省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000A00004
+promulgation_date: '20041215'
+tags:
+- 都市計画区域外の景観重要樹木及び景観協定に関する省令
+tier: 0
+title: 都市計画区域外の景観重要樹木及び景観協定に関する省令
+law_id: 416M60000A00004
+official_title: 都市計画区域外の景観重要樹木及び景観協定に関する省令
+aliases:
+- 都市計画区域外の景観重要樹木及び景観協定に関する省令
+---
+
+# 都市計画区域外の景観重要樹木及び景観協定に関する省令
+
+## Metadata
+- Law ID: `416M60000A00004`
+- Law No: 平成十六年農林水産省・国土交通省令第四号
+- Promulgation Date: 20041215

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000014
+id: JPLAW:414AC0000000014
+law_no: 平成十四年法律第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000014
+promulgation_date: '20020331'
+tags:
+- 沖縄振興特別措置法
+tier: 0
+title: 沖縄振興特別措置法
+law_id: 414AC0000000014
+official_title: 沖縄振興特別措置法
+aliases:
+- 沖縄振興特別措置法
+---
+
+# 沖縄振興特別措置法
+
+## Metadata
+- Law ID: `414AC0000000014`
+- Law No: 平成十四年法律第十四号
+- Promulgation Date: 20020331

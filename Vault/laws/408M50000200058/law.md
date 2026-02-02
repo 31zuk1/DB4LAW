@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408M50000200058
+id: JPLAW:408M50000200058
+law_no: 平成八年農林水産省令第五十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/408M50000200058
+promulgation_date: '19961025'
+tags:
+- 木材の安定供給の確保に関する特別措置法施行規則
+tier: 0
+title: 木材の安定供給の確保に関する特別措置法施行規則
+law_id: 408M50000200058
+official_title: 木材の安定供給の確保に関する特別措置法施行規則
+aliases:
+- 木材の安定供給の確保に関する特別措置法施行規則
+---
+
+# 木材の安定供給の確保に関する特別措置法施行規則
+
+## Metadata
+- Law ID: `408M50000200058`
+- Law No: 平成八年農林水産省令第五十八号
+- Promulgation Date: 19961025

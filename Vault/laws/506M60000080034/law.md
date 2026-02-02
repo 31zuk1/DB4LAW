@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506M60000080034
+id: JPLAW:506M60000080034
+law_no: 令和六年文部科学省令第三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/506M60000080034
+promulgation_date: '20241213'
+tags:
+- 認証評価機関の認証の申請及び届出に係る手続等に関する規則
+tier: 0
+title: 認証評価機関の認証の申請及び届出に係る手続等に関する規則
+law_id: 506M60000080034
+official_title: 認証評価機関の認証の申請及び届出に係る手続等に関する規則
+aliases:
+- 認証評価機関の認証の申請及び届出に係る手続等に関する規則
+---
+
+# 認証評価機関の認証の申請及び届出に係る手続等に関する規則
+
+## Metadata
+- Law ID: `506M60000080034`
+- Law No: 令和六年文部科学省令第三十四号
+- Promulgation Date: 20241213

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 355AC0000000065
+id: JPLAW:355AC0000000065
+law_no: 昭和五十五年法律第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/355AC0000000065
+promulgation_date: '19800528'
+tags:
+- 農業経営基盤強化促進法
+tier: 0
+title: 農業経営基盤強化促進法
+law_id: 355AC0000000065
+official_title: 農業経営基盤強化促進法
+aliases:
+- 農業経営基盤強化促進法
+---
+
+# 農業経営基盤強化促進法
+
+## Metadata
+- Law ID: `355AC0000000065`
+- Law No: 昭和五十五年法律第六十五号
+- Promulgation Date: 19800528

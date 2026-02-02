@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353M50000800072
+id: JPLAW:353M50000800072
+law_no: 昭和五十三年運輸省令第七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/353M50000800072
+promulgation_date: '19781228'
+tags:
+- 核燃料物質等車両運搬規則
+tier: 0
+title: 核燃料物質等車両運搬規則
+law_id: 353M50000800072
+official_title: 核燃料物質等車両運搬規則
+aliases:
+- 核燃料物質等車両運搬規則
+---
+
+# 核燃料物質等車両運搬規則
+
+## Metadata
+- Law ID: `353M50000800072`
+- Law No: 昭和五十三年運輸省令第七十二号
+- Promulgation Date: 19781228

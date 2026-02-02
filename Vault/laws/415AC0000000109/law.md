@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000109
+id: JPLAW:415AC0000000109
+law_no: 平成十五年法律第百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000109
+promulgation_date: '20030716'
+tags:
+- 人事訴訟法
+tier: 0
+title: 人事訴訟法
+law_id: 415AC0000000109
+official_title: 人事訴訟法
+aliases:
+- 人事訴訟法
+---
+
+# 人事訴訟法
+
+## Metadata
+- Law ID: `415AC0000000109`
+- Law No: 平成十五年法律第百九号
+- Promulgation Date: 20030716

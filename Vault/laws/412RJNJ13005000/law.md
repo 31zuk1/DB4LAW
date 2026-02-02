@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412RJNJ13005000
+id: JPLAW:412RJNJ13005000
+law_no: 平成十二年人事院規則一三―五
+links:
+  egov: https://laws.e-gov.go.jp/law/412RJNJ13005000
+promulgation_date: '20000601'
+tags:
+- 人事院規則一三―五（職員からの苦情相談）
+tier: 0
+title: 人事院規則一三―五（職員からの苦情相談）
+law_id: 412RJNJ13005000
+official_title: 人事院規則一三―五（職員からの苦情相談）
+aliases:
+- 人事院規則一三―五（職員からの苦情相談）
+---
+
+# 人事院規則一三―五（職員からの苦情相談）
+
+## Metadata
+- Law ID: `412RJNJ13005000`
+- Law No: 平成十二年人事院規則一三―五
+- Promulgation Date: 20000601

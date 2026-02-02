@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000500
+id: JPLAW:412CO0000000500
+law_no: 平成十二年政令第五百号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000500
+promulgation_date: '20001206'
+tags:
+- 大深度地下の公共的使用に関する特別措置法施行令
+tier: 0
+title: 大深度地下の公共的使用に関する特別措置法施行令
+law_id: 412CO0000000500
+official_title: 大深度地下の公共的使用に関する特別措置法施行令
+aliases:
+- 大深度地下の公共的使用に関する特別措置法施行令
+---
+
+# 大深度地下の公共的使用に関する特別措置法施行令
+
+## Metadata
+- Law ID: `412CO0000000500`
+- Law No: 平成十二年政令第五百号
+- Promulgation Date: 20001206

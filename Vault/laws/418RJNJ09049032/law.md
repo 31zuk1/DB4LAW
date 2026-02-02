@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418RJNJ09049032
+id: JPLAW:418RJNJ09049032
+law_no: 平成十八年人事院規則九―四九―三二
+links:
+  egov: https://laws.e-gov.go.jp/law/418RJNJ09049032
+promulgation_date: '20060201'
+tags:
+- 人事院規則九―四九（地域手当）
+tier: 0
+title: 人事院規則九―四九（地域手当）
+law_id: 418RJNJ09049032
+official_title: 人事院規則九―四九（地域手当）
+aliases:
+- 人事院規則九―四九（地域手当）
+---
+
+# 人事院規則九―四九（地域手当）
+
+## Metadata
+- Law ID: `418RJNJ09049032`
+- Law No: 平成十八年人事院規則九―四九―三二
+- Promulgation Date: 20060201

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000010013
+id: JPLAW:416M60000010013
+law_no: 平成十六年法務省令第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000010013
+promulgation_date: '20040308'
+tags:
+- 弁護士となる資格に係る認定の手続等に関する規則
+tier: 0
+title: 弁護士となる資格に係る認定の手続等に関する規則
+law_id: 416M60000010013
+official_title: 弁護士となる資格に係る認定の手続等に関する規則
+aliases:
+- 弁護士となる資格に係る認定の手続等に関する規則
+---
+
+# 弁護士となる資格に係る認定の手続等に関する規則
+
+## Metadata
+- Law ID: `416M60000010013`
+- Law No: 平成十六年法務省令第十三号
+- Promulgation Date: 20040308

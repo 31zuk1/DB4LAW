@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330M50000040014
+id: JPLAW:330M50000040014
+law_no: 昭和三十年大蔵省令第十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/330M50000040014
+promulgation_date: '19550414'
+tags:
+- 歳入歳出外の国庫内移換に関する規則
+tier: 0
+title: 歳入歳出外の国庫内移換に関する規則
+law_id: 330M50000040014
+official_title: 歳入歳出外の国庫内移換に関する規則
+aliases:
+- 歳入歳出外の国庫内移換に関する規則
+---
+
+# 歳入歳出外の国庫内移換に関する規則
+
+## Metadata
+- Law ID: `330M50000040014`
+- Law No: 昭和三十年大蔵省令第十四号
+- Promulgation Date: 19550414

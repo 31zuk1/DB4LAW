@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50000008045
+id: JPLAW:406M50000008045
+law_no: 平成六年自治省令第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50000008045
+promulgation_date: '19941128'
+tags:
+- 政党助成法施行規則
+tier: 0
+title: 政党助成法施行規則
+law_id: 406M50000008045
+official_title: 政党助成法施行規則
+aliases:
+- 政党助成法施行規則
+---
+
+# 政党助成法施行規則
+
+## Metadata
+- Law ID: `406M50000008045`
+- Law No: 平成六年自治省令第四十五号
+- Promulgation Date: 19941128

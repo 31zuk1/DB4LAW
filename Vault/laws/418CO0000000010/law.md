@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418CO0000000010
+id: JPLAW:418CO0000000010
+law_no: 平成十八年政令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/418CO0000000010
+promulgation_date: '20060125'
+tags:
+- 障害者の日常生活及び社会生活を総合的に支援するための法律施行令
+tier: 0
+title: 障害者の日常生活及び社会生活を総合的に支援するための法律施行令
+law_id: 418CO0000000010
+official_title: 障害者の日常生活及び社会生活を総合的に支援するための法律施行令
+aliases:
+- 障害者の日常生活及び社会生活を総合的に支援するための法律施行令
+---
+
+# 障害者の日常生活及び社会生活を総合的に支援するための法律施行令
+
+## Metadata
+- Law ID: `418CO0000000010`
+- Law No: 平成十八年政令第十号
+- Promulgation Date: 20060125

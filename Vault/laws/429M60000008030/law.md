@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429M60000008030
+id: JPLAW:429M60000008030
+law_no: 平成二十九年総務省令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/429M60000008030
+promulgation_date: '20170331'
+tags:
+- 都及び特別区の標準税収入額の算定方法に関する省令
+tier: 0
+title: 都及び特別区の標準税収入額の算定方法に関する省令
+law_id: 429M60000008030
+official_title: 都及び特別区の標準税収入額の算定方法に関する省令
+aliases:
+- 都及び特別区の標準税収入額の算定方法に関する省令
+---
+
+# 都及び特別区の標準税収入額の算定方法に関する省令
+
+## Metadata
+- Law ID: `429M60000008030`
+- Law No: 平成二十九年総務省令第三十号
+- Promulgation Date: 20170331

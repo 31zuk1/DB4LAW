@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 344M50400000005
+id: JPLAW:344M50400000005
+law_no: 昭和四十四年国家公安委員会規則第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/344M50400000005
+promulgation_date: '19690619'
+tags:
+- 地域警察運営規則
+tier: 0
+title: 地域警察運営規則
+law_id: 344M50400000005
+official_title: 地域警察運営規則
+aliases:
+- 地域警察運営規則
+---
+
+# 地域警察運営規則
+
+## Metadata
+- Law ID: `344M50400000005`
+- Law No: 昭和四十四年国家公安委員会規則第五号
+- Promulgation Date: 19690619

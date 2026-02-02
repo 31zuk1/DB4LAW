@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506CO0000000195
+id: JPLAW:506CO0000000195
+law_no: 令和六年政令第百九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/506CO0000000195
+promulgation_date: '20240529'
+tags:
+- 船舶活用医療推進本部令
+tier: 0
+title: 船舶活用医療推進本部令
+law_id: 506CO0000000195
+official_title: 船舶活用医療推進本部令
+aliases:
+- 船舶活用医療推進本部令
+---
+
+# 船舶活用医療推進本部令
+
+## Metadata
+- Law ID: `506CO0000000195`
+- Law No: 令和六年政令第百九十五号
+- Promulgation Date: 20240529

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000130
+id: JPLAW:327CO0000000130
+law_no: 昭和二十七年政令第百三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000130
+promulgation_date: '19520428'
+tags:
+- 日本国との平和条約の効力発生に伴う国家公務員等の懲戒免除に関する政令
+tier: 0
+title: 日本国との平和条約の効力発生に伴う国家公務員等の懲戒免除に関する政令
+law_id: 327CO0000000130
+official_title: 日本国との平和条約の効力発生に伴う国家公務員等の懲戒免除に関する政令
+aliases:
+- 日本国との平和条約の効力発生に伴う国家公務員等の懲戒免除に関する政令
+---
+
+# 日本国との平和条約の効力発生に伴う国家公務員等の懲戒免除に関する政令
+
+## Metadata
+- Law ID: `327CO0000000130`
+- Law No: 昭和二十七年政令第百三十号
+- Promulgation Date: 19520428

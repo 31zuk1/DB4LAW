@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000040002
+id: JPLAW:415M60000040002
+law_no: 平成十五年財務省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000040002
+promulgation_date: '20030131'
+tags:
+- 国債の買入消却に関する省令
+tier: 0
+title: 国債の買入消却に関する省令
+law_id: 415M60000040002
+official_title: 国債の買入消却に関する省令
+aliases:
+- 国債の買入消却に関する省令
+---
+
+# 国債の買入消却に関する省令
+
+## Metadata
+- Law ID: `415M60000040002`
+- Law No: 平成十五年財務省令第二号
+- Promulgation Date: 20030131

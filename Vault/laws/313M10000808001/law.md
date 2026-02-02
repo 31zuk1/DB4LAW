@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 313M10000808001
+id: JPLAW:313M10000808001
+law_no: 昭和十三年鉄道省・内務省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/313M10000808001
+promulgation_date: '19380802'
+tags:
+- 陸上交通事業調整法施行規則
+tier: 0
+title: 陸上交通事業調整法施行規則
+law_id: 313M10000808001
+official_title: 陸上交通事業調整法施行規則
+aliases:
+- 陸上交通事業調整法施行規則
+---
+
+# 陸上交通事業調整法施行規則
+
+## Metadata
+- Law ID: `313M10000808001`
+- Law No: 昭和十三年鉄道省・内務省令第一号
+- Promulgation Date: 19380802

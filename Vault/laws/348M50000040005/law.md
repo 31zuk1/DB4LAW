@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348M50000040005
+id: JPLAW:348M50000040005
+law_no: 昭和四十八年大蔵省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/348M50000040005
+promulgation_date: '19730130'
+tags:
+- 企業内容等の開示に関する内閣府令
+tier: 0
+title: 企業内容等の開示に関する内閣府令
+law_id: 348M50000040005
+official_title: 企業内容等の開示に関する内閣府令
+aliases:
+- 企業内容等の開示に関する内閣府令
+---
+
+# 企業内容等の開示に関する内閣府令
+
+## Metadata
+- Law ID: `348M50000040005`
+- Law No: 昭和四十八年大蔵省令第五号
+- Promulgation Date: 19730130

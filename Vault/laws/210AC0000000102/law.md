@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 210AC0000000102
+id: JPLAW:210AC0000000102
+law_no: 大正十年法律第百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/210AC0000000102
+promulgation_date: '19210518'
+tags:
+- 大正十年法律第百二号（定年ニ因ル退職判事検察官ノ恩給ニ関スル法律）
+tier: 0
+title: 大正十年法律第百二号（定年ニ因ル退職判事検察官ノ恩給ニ関スル法律）
+law_id: 210AC0000000102
+official_title: 大正十年法律第百二号（定年ニ因ル退職判事検察官ノ恩給ニ関スル法律）
+aliases:
+- 大正十年法律第百二号（定年ニ因ル退職判事検察官ノ恩給ニ関スル法律）
+---
+
+# 大正十年法律第百二号（定年ニ因ル退職判事検察官ノ恩給ニ関スル法律）
+
+## Metadata
+- Law ID: `210AC0000000102`
+- Law No: 大正十年法律第百二号
+- Promulgation Date: 19210518

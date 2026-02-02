@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000050
+id: JPLAW:322AC0000000050
+law_no: 昭和二十二年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000050
+promulgation_date: '19470407'
+tags:
+- 労働者災害補償保険法
+tier: 0
+title: 労働者災害補償保険法
+law_id: 322AC0000000050
+official_title: 労働者災害補償保険法
+aliases:
+- 労働者災害補償保険法
+---
+
+# 労働者災害補償保険法
+
+## Metadata
+- Law ID: `322AC0000000050`
+- Law No: 昭和二十二年法律第五十号
+- Promulgation Date: 19470407

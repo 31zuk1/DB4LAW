@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC1000000083
+id: JPLAW:322AC1000000083
+law_no: 昭和二十二年法律第八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC1000000083
+promulgation_date: '19470430'
+tags:
+- 議院事務局法
+tier: 0
+title: 議院事務局法
+law_id: 322AC1000000083
+official_title: 議院事務局法
+aliases:
+- 議院事務局法
+---
+
+# 議院事務局法
+
+## Metadata
+- Law ID: `322AC1000000083`
+- Law No: 昭和二十二年法律第八十三号
+- Promulgation Date: 19470430

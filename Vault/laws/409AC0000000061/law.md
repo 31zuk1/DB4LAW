@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409AC0000000061
+id: JPLAW:409AC0000000061
+law_no: 平成九年法律第六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/409AC0000000061
+promulgation_date: '19970528'
+tags:
+- 南極地域の環境の保護に関する法律
+tier: 0
+title: 南極地域の環境の保護に関する法律
+law_id: 409AC0000000061
+official_title: 南極地域の環境の保護に関する法律
+aliases:
+- 南極地域の環境の保護に関する法律
+---
+
+# 南極地域の環境の保護に関する法律
+
+## Metadata
+- Law ID: `409AC0000000061`
+- Law No: 平成九年法律第六十一号
+- Promulgation Date: 19970528

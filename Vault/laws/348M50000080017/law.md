@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348M50000080017
+id: JPLAW:348M50000080017
+law_no: 昭和四十八年文部省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/348M50000080017
+promulgation_date: '19730809'
+tags:
+- 教員資格認定試験規程
+tier: 0
+title: 教員資格認定試験規程
+law_id: 348M50000080017
+official_title: 教員資格認定試験規程
+aliases:
+- 教員資格認定試験規程
+---
+
+# 教員資格認定試験規程
+
+## Metadata
+- Law ID: `348M50000080017`
+- Law No: 昭和四十八年文部省令第十七号
+- Promulgation Date: 19730809

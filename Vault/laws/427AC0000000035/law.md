@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427AC0000000035
+id: JPLAW:427AC0000000035
+law_no: 平成二十七年法律第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/427AC0000000035
+promulgation_date: '20150605'
+tags:
+- 株式会社海外通信・放送・郵便事業支援機構法
+tier: 0
+title: 株式会社海外通信・放送・郵便事業支援機構法
+law_id: 427AC0000000035
+official_title: 株式会社海外通信・放送・郵便事業支援機構法
+aliases:
+- 株式会社海外通信・放送・郵便事業支援機構法
+---
+
+# 株式会社海外通信・放送・郵便事業支援機構法
+
+## Metadata
+- Law ID: `427AC0000000035`
+- Law No: 平成二十七年法律第三十五号
+- Promulgation Date: 20150605

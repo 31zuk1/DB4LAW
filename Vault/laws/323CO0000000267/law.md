@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323CO0000000267
+id: JPLAW:323CO0000000267
+law_no: 昭和二十三年政令第二百六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/323CO0000000267
+promulgation_date: '19480827'
+tags:
+- 地方財政法施行令
+tier: 0
+title: 地方財政法施行令
+law_id: 323CO0000000267
+official_title: 地方財政法施行令
+aliases:
+- 地方財政法施行令
+---
+
+# 地方財政法施行令
+
+## Metadata
+- Law ID: `323CO0000000267`
+- Law No: 昭和二十三年政令第二百六十七号
+- Promulgation Date: 19480827

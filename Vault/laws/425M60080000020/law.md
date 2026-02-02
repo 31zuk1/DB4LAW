@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425M60080000020
+id: JPLAW:425M60080000020
+law_no: 平成二十五年原子力規制委員会規則第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/425M60080000020
+promulgation_date: '20131206'
+tags:
+- 核燃料取扱主任者試験の実施細目等に関する規則
+tier: 0
+title: 核燃料取扱主任者試験の実施細目等に関する規則
+law_id: 425M60080000020
+official_title: 核燃料取扱主任者試験の実施細目等に関する規則
+aliases:
+- 核燃料取扱主任者試験の実施細目等に関する規則
+---
+
+# 核燃料取扱主任者試験の実施細目等に関する規則
+
+## Metadata
+- Law ID: `425M60080000020`
+- Law No: 平成二十五年原子力規制委員会規則第二十号
+- Promulgation Date: 20131206

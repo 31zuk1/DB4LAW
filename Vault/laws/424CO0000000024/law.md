@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424CO0000000024
+id: JPLAW:424CO0000000024
+law_no: 平成二十四年政令第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/424CO0000000024
+promulgation_date: '20120201'
+tags:
+- 復興推進委員会令
+tier: 0
+title: 復興推進委員会令
+law_id: 424CO0000000024
+official_title: 復興推進委員会令
+aliases:
+- 復興推進委員会令
+---
+
+# 復興推進委員会令
+
+## Metadata
+- Law ID: `424CO0000000024`
+- Law No: 平成二十四年政令第二十四号
+- Promulgation Date: 20120201

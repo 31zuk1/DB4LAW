@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337AC0000000150
+id: JPLAW:337AC0000000150
+law_no: 昭和三十七年法律第百五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/337AC0000000150
+promulgation_date: '19620906'
+tags:
+- 激甚災害に対処するための特別の財政援助等に関する法律
+tier: 0
+title: 激甚災害に対処するための特別の財政援助等に関する法律
+law_id: 337AC0000000150
+official_title: 激甚災害に対処するための特別の財政援助等に関する法律
+aliases:
+- 激甚災害に対処するための特別の財政援助等に関する法律
+---
+
+# 激甚災害に対処するための特別の財政援助等に関する法律
+
+## Metadata
+- Law ID: `337AC0000000150`
+- Law No: 昭和三十七年法律第百五十号
+- Promulgation Date: 19620906

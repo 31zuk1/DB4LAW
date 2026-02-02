@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403CO0000000052
+id: JPLAW:403CO0000000052
+law_no: 平成三年政令第五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/403CO0000000052
+promulgation_date: '19910325'
+tags:
+- 食鳥処理の事業の規制及び食鳥検査に関する法律施行令
+tier: 0
+title: 食鳥処理の事業の規制及び食鳥検査に関する法律施行令
+law_id: 403CO0000000052
+official_title: 食鳥処理の事業の規制及び食鳥検査に関する法律施行令
+aliases:
+- 食鳥処理の事業の規制及び食鳥検査に関する法律施行令
+---
+
+# 食鳥処理の事業の規制及び食鳥検査に関する法律施行令
+
+## Metadata
+- Law ID: `403CO0000000052`
+- Law No: 平成三年政令第五十二号
+- Promulgation Date: 19910325

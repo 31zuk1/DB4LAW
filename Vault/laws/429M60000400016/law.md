@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429M60000400016
+id: JPLAW:429M60000400016
+law_no: 平成二十九年経済産業省令第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/429M60000400016
+promulgation_date: '20170328'
+tags:
+- ガス関係報告規則
+tier: 0
+title: ガス関係報告規則
+law_id: 429M60000400016
+official_title: ガス関係報告規則
+aliases:
+- ガス関係報告規則
+---
+
+# ガス関係報告規則
+
+## Metadata
+- Law ID: `429M60000400016`
+- Law No: 平成二十九年経済産業省令第十六号
+- Promulgation Date: 20170328

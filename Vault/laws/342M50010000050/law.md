@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50010000050
+id: JPLAW:342M50010000050
+law_no: 昭和四十二年農林省令第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50010000050
+promulgation_date: '19671009'
+tags:
+- 外国人漁業の規制に関する法律施行規則
+tier: 0
+title: 外国人漁業の規制に関する法律施行規則
+law_id: 342M50010000050
+official_title: 外国人漁業の規制に関する法律施行規則
+aliases:
+- 外国人漁業の規制に関する法律施行規則
+---
+
+# 外国人漁業の規制に関する法律施行規則
+
+## Metadata
+- Law ID: `342M50010000050`
+- Law No: 昭和四十二年農林省令第五十号
+- Promulgation Date: 19671009

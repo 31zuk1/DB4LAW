@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000213
+id: JPLAW:324AC0000000213
+law_no: 昭和二十四年法律第二百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000213
+promulgation_date: '19490615'
+tags:
+- 簡易郵便局法
+tier: 0
+title: 簡易郵便局法
+law_id: 324AC0000000213
+official_title: 簡易郵便局法
+aliases:
+- 簡易郵便局法
+---
+
+# 簡易郵便局法
+
+## Metadata
+- Law ID: `324AC0000000213`
+- Law No: 昭和二十四年法律第二百十三号
+- Promulgation Date: 19490615

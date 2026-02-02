@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000082
+id: JPLAW:331AC0000000082
+law_no: 昭和三十一年法律第八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000082
+promulgation_date: '19560424'
+tags:
+- 国有資産等所在市町村交付金法
+tier: 0
+title: 国有資産等所在市町村交付金法
+law_id: 331AC0000000082
+official_title: 国有資産等所在市町村交付金法
+aliases:
+- 国有資産等所在市町村交付金法
+---
+
+# 国有資産等所在市町村交付金法
+
+## Metadata
+- Law ID: `331AC0000000082`
+- Law No: 昭和三十一年法律第八十二号
+- Promulgation Date: 19560424

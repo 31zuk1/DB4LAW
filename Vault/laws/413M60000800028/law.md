@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000800028
+id: JPLAW:413M60000800028
+law_no: 平成十三年国土交通省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000800028
+promulgation_date: '20010106'
+tags:
+- 国土交通省定員規則
+tier: 0
+title: 国土交通省定員規則
+law_id: 413M60000800028
+official_title: 国土交通省定員規則
+aliases:
+- 国土交通省定員規則
+---
+
+# 国土交通省定員規則
+
+## Metadata
+- Law ID: `413M60000800028`
+- Law No: 平成十三年国土交通省令第二十八号
+- Promulgation Date: 20010106

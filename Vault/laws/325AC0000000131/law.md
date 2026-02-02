@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000131
+id: JPLAW:325AC0000000131
+law_no: 昭和二十五年法律第百三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000131
+promulgation_date: '19500502'
+tags:
+- 電波法
+tier: 0
+title: 電波法
+law_id: 325AC0000000131
+official_title: 電波法
+aliases:
+- 電波法
+---
+
+# 電波法
+
+## Metadata
+- Law ID: `325AC0000000131`
+- Law No: 昭和二十五年法律第百三十一号
+- Promulgation Date: 19500502

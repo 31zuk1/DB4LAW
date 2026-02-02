@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50002100006
+id: JPLAW:412M50002100006
+law_no: 平成十二年厚生省・労働省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50002100006
+promulgation_date: '20001124'
+tags:
+- 厚生労働省所管補助金等交付規則
+tier: 0
+title: 厚生労働省所管補助金等交付規則
+law_id: 412M50002100006
+official_title: 厚生労働省所管補助金等交付規則
+aliases:
+- 厚生労働省所管補助金等交付規則
+---
+
+# 厚生労働省所管補助金等交付規則
+
+## Metadata
+- Law ID: `412M50002100006`
+- Law No: 平成十二年厚生省・労働省令第六号
+- Promulgation Date: 20001124

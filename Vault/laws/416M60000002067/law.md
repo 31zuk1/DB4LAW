@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000002067
+id: JPLAW:416M60000002067
+law_no: 平成十六年内閣府令第六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000002067
+promulgation_date: '20040726'
+tags:
+- 金融機能の強化のための特別措置に関する内閣府令
+tier: 0
+title: 金融機能の強化のための特別措置に関する内閣府令
+law_id: 416M60000002067
+official_title: 金融機能の強化のための特別措置に関する内閣府令
+aliases:
+- 金融機能の強化のための特別措置に関する内閣府令
+---
+
+# 金融機能の強化のための特別措置に関する内閣府令
+
+## Metadata
+- Law ID: `416M60000002067`
+- Law No: 平成十六年内閣府令第六十七号
+- Promulgation Date: 20040726

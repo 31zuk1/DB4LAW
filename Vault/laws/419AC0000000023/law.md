@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419AC0000000023
+id: JPLAW:419AC0000000023
+law_no: 平成十九年法律第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/419AC0000000023
+promulgation_date: '20070331'
+tags:
+- 特別会計に関する法律
+tier: 0
+title: 特別会計に関する法律
+law_id: 419AC0000000023
+official_title: 特別会計に関する法律
+aliases:
+- 特別会計に関する法律
+---
+
+# 特別会計に関する法律
+
+## Metadata
+- Law ID: `419AC0000000023`
+- Law No: 平成十九年法律第二十三号
+- Promulgation Date: 20070331

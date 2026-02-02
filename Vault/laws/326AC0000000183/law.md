@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC0000000183
+id: JPLAW:326AC0000000183
+law_no: 昭和二十六年法律第百八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC0000000183
+promulgation_date: '19510601'
+tags:
+- 道路運送法
+tier: 0
+title: 道路運送法
+law_id: 326AC0000000183
+official_title: 道路運送法
+aliases:
+- 道路運送法
+---
+
+# 道路運送法
+
+## Metadata
+- Law ID: `326AC0000000183`
+- Law No: 昭和二十六年法律第百八十三号
+- Promulgation Date: 19510601

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324RJNJ01002000
+id: JPLAW:324RJNJ01002000
+law_no: 昭和二十四年人事院規則一―二
+links:
+  egov: https://laws.e-gov.go.jp/law/324RJNJ01002000
+promulgation_date: '19490101'
+tags:
+- 人事院規則一―二（用語の定義）
+tier: 0
+title: 人事院規則一―二（用語の定義）
+law_id: 324RJNJ01002000
+official_title: 人事院規則一―二（用語の定義）
+aliases:
+- 人事院規則一―二（用語の定義）
+---
+
+# 人事院規則一―二（用語の定義）
+
+## Metadata
+- Law ID: `324RJNJ01002000`
+- Law No: 昭和二十四年人事院規則一―二
+- Promulgation Date: 19490101

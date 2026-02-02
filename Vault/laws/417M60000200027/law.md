@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417M60000200027
+id: JPLAW:417M60000200027
+law_no: 平成十七年農林水産省令第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/417M60000200027
+promulgation_date: '20050322'
+tags:
+- 農業協同組合法施行規則
+tier: 0
+title: 農業協同組合法施行規則
+law_id: 417M60000200027
+official_title: 農業協同組合法施行規則
+aliases:
+- 農業協同組合法施行規則
+---
+
+# 農業協同組合法施行規則
+
+## Metadata
+- Law ID: `417M60000200027`
+- Law No: 平成十七年農林水産省令第二十七号
+- Promulgation Date: 20050322

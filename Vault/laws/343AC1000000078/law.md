@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343AC1000000078
+id: JPLAW:343AC1000000078
+law_no: 昭和四十三年法律第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/343AC1000000078
+promulgation_date: '19680530'
+tags:
+- 消費者基本法
+tier: 0
+title: 消費者基本法
+law_id: 343AC1000000078
+official_title: 消費者基本法
+aliases:
+- 消費者基本法
+---
+
+# 消費者基本法
+
+## Metadata
+- Law ID: `343AC1000000078`
+- Law No: 昭和四十三年法律第七十八号
+- Promulgation Date: 19680530

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50010000013
+id: JPLAW:340M50010000013
+law_no: 昭和四十年農林省令第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50010000013
+promulgation_date: '19650331'
+tags:
+- とうもろこし等の関税割当制度に関する省令
+tier: 0
+title: とうもろこし等の関税割当制度に関する省令
+law_id: 340M50010000013
+official_title: とうもろこし等の関税割当制度に関する省令
+aliases:
+- とうもろこし等の関税割当制度に関する省令
+---
+
+# とうもろこし等の関税割当制度に関する省令
+
+## Metadata
+- Law ID: `340M50010000013`
+- Law No: 昭和四十年農林省令第十三号
+- Promulgation Date: 19650331

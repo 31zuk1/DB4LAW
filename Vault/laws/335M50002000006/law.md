@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335M50002000006
+id: JPLAW:335M50002000006
+law_no: 昭和三十五年労働省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/335M50002000006
+promulgation_date: '19600331'
+tags:
+- じん肺法施行規則
+tier: 0
+title: じん肺法施行規則
+law_id: 335M50002000006
+official_title: じん肺法施行規則
+aliases:
+- じん肺法施行規則
+---
+
+# じん肺法施行規則
+
+## Metadata
+- Law ID: `335M50002000006`
+- Law No: 昭和三十五年労働省令第六号
+- Promulgation Date: 19600331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 308M10010048000
+id: JPLAW:308M10010048000
+law_no: 昭和八年農林省・大蔵省・内務省令
+links:
+  egov: https://laws.e-gov.go.jp/law/308M10010048000
+promulgation_date: '19330731'
+tags:
+- 農村負債整理組合法施行規則
+tier: 0
+title: 農村負債整理組合法施行規則
+law_id: 308M10010048000
+official_title: 農村負債整理組合法施行規則
+aliases:
+- 農村負債整理組合法施行規則
+---
+
+# 農村負債整理組合法施行規則
+
+## Metadata
+- Law ID: `308M10010048000`
+- Law No: 昭和八年農林省・大蔵省・内務省令
+- Promulgation Date: 19330731

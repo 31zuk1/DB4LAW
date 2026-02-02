@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323CO0000000306
+id: JPLAW:323CO0000000306
+law_no: 昭和二十三年政令第三百六号
+links:
+  egov: https://laws.e-gov.go.jp/law/323CO0000000306
+promulgation_date: '19480930'
+tags:
+- 沖縄関係事務整理に伴う恩給の特別措置に関する政令
+tier: 0
+title: 沖縄関係事務整理に伴う恩給の特別措置に関する政令
+law_id: 323CO0000000306
+official_title: 沖縄関係事務整理に伴う恩給の特別措置に関する政令
+aliases:
+- 沖縄関係事務整理に伴う恩給の特別措置に関する政令
+---
+
+# 沖縄関係事務整理に伴う恩給の特別措置に関する政令
+
+## Metadata
+- Law ID: `323CO0000000306`
+- Law No: 昭和二十三年政令第三百六号
+- Promulgation Date: 19480930

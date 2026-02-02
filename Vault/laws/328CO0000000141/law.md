@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000141
+id: JPLAW:328CO0000000141
+law_no: 昭和二十八年政令第百四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000141
+promulgation_date: '19530731'
+tags:
+- 貿易保険法施行令
+tier: 0
+title: 貿易保険法施行令
+law_id: 328CO0000000141
+official_title: 貿易保険法施行令
+aliases:
+- 貿易保険法施行令
+---
+
+# 貿易保険法施行令
+
+## Metadata
+- Law ID: `328CO0000000141`
+- Law No: 昭和二十八年政令第百四十一号
+- Promulgation Date: 19530731

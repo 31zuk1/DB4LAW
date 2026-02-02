@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000425
+id: JPLAW:407CO0000000425
+law_no: 平成七年政令第四百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000425
+promulgation_date: '19951222'
+tags:
+- 保険業法施行令
+tier: 0
+title: 保険業法施行令
+law_id: 407CO0000000425
+official_title: 保険業法施行令
+aliases:
+- 保険業法施行令
+---
+
+# 保険業法施行令
+
+## Metadata
+- Law ID: `407CO0000000425`
+- Law No: 平成七年政令第四百二十五号
+- Promulgation Date: 19951222

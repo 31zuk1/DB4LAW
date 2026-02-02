@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337M50010000039
+id: JPLAW:337M50010000039
+law_no: 昭和三十七年農林省令第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/337M50010000039
+promulgation_date: '19620716'
+tags:
+- 地方競馬全国協会の財務及び会計に関する省令
+tier: 0
+title: 地方競馬全国協会の財務及び会計に関する省令
+law_id: 337M50010000039
+official_title: 地方競馬全国協会の財務及び会計に関する省令
+aliases:
+- 地方競馬全国協会の財務及び会計に関する省令
+---
+
+# 地方競馬全国協会の財務及び会計に関する省令
+
+## Metadata
+- Law ID: `337M50010000039`
+- Law No: 昭和三十七年農林省令第三十九号
+- Promulgation Date: 19620716

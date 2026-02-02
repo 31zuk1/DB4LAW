@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428AC1000000012
+id: JPLAW:428AC1000000012
+law_no: 平成二十八年法律第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/428AC1000000012
+promulgation_date: '20160330'
+tags:
+- 戦没者の遺骨収集の推進に関する法律
+tier: 0
+title: 戦没者の遺骨収集の推進に関する法律
+law_id: 428AC1000000012
+official_title: 戦没者の遺骨収集の推進に関する法律
+aliases:
+- 戦没者の遺骨収集の推進に関する法律
+---
+
+# 戦没者の遺骨収集の推進に関する法律
+
+## Metadata
+- Law ID: `428AC1000000012`
+- Law No: 平成二十八年法律第十二号
+- Promulgation Date: 20160330

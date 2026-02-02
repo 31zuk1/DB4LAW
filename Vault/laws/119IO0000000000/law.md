@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 119IO0000000000
+id: JPLAW:119IO0000000000
+law_no: 明治十九年勅令
+links:
+  egov: https://laws.e-gov.go.jp/law/119IO0000000000
+promulgation_date: '18860420'
+tags:
+- メートル条約
+tier: 0
+title: メートル条約
+law_id: 119IO0000000000
+official_title: メートル条約
+aliases:
+- メートル条約
+---
+
+# メートル条約
+
+## Metadata
+- Law ID: `119IO0000000000`
+- Law No: 明治十九年勅令
+- Promulgation Date: 18860420

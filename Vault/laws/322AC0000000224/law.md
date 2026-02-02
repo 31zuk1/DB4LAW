@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000224
+id: JPLAW:322AC0000000224
+law_no: 昭和二十二年法律第二百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000224
+promulgation_date: '19471222'
+tags:
+- 戸籍法
+tier: 0
+title: 戸籍法
+law_id: 322AC0000000224
+official_title: 戸籍法
+aliases:
+- 戸籍法
+---
+
+# 戸籍法
+
+## Metadata
+- Law ID: `322AC0000000224`
+- Law No: 昭和二十二年法律第二百二十四号
+- Promulgation Date: 19471222

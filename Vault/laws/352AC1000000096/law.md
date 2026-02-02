@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352AC1000000096
+id: JPLAW:352AC1000000096
+law_no: 昭和五十二年法律第九十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/352AC1000000096
+promulgation_date: '19771226'
+tags:
+- 船員の雇用の促進に関する特別措置法
+tier: 0
+title: 船員の雇用の促進に関する特別措置法
+law_id: 352AC1000000096
+official_title: 船員の雇用の促進に関する特別措置法
+aliases:
+- 船員の雇用の促進に関する特別措置法
+---
+
+# 船員の雇用の促進に関する特別措置法
+
+## Metadata
+- Law ID: `352AC1000000096`
+- Law No: 昭和五十二年法律第九十六号
+- Promulgation Date: 19771226

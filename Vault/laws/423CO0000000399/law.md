@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423CO0000000399
+id: JPLAW:423CO0000000399
+law_no: 平成二十三年政令第三百九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/423CO0000000399
+promulgation_date: '20111216'
+tags:
+- 特定Ｂ型肝炎ウイルス感染者給付金等の支給に関する特別措置法施行令
+tier: 0
+title: 特定Ｂ型肝炎ウイルス感染者給付金等の支給に関する特別措置法施行令
+law_id: 423CO0000000399
+official_title: 特定Ｂ型肝炎ウイルス感染者給付金等の支給に関する特別措置法施行令
+aliases:
+- 特定Ｂ型肝炎ウイルス感染者給付金等の支給に関する特別措置法施行令
+---
+
+# 特定Ｂ型肝炎ウイルス感染者給付金等の支給に関する特別措置法施行令
+
+## Metadata
+- Law ID: `423CO0000000399`
+- Law No: 平成二十三年政令第三百九十九号
+- Promulgation Date: 20111216

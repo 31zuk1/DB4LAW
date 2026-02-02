@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324RJNJ02001000
+id: JPLAW:324RJNJ02001000
+law_no: 昭和二十四年人事院規則二―一
+links:
+  egov: https://laws.e-gov.go.jp/law/324RJNJ02001000
+promulgation_date: '19490115'
+tags:
+- 人事院規則二―一（人事院会議及びその手続）
+tier: 0
+title: 人事院規則二―一（人事院会議及びその手続）
+law_id: 324RJNJ02001000
+official_title: 人事院規則二―一（人事院会議及びその手続）
+aliases:
+- 人事院規則二―一（人事院会議及びその手続）
+---
+
+# 人事院規則二―一（人事院会議及びその手続）
+
+## Metadata
+- Law ID: `324RJNJ02001000`
+- Law No: 昭和二十四年人事院規則二―一
+- Promulgation Date: 19490115

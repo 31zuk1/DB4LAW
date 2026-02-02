@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000211
+id: JPLAW:325AC0000000211
+law_no: 昭和二十五年法律第二百十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000211
+promulgation_date: '19500530'
+tags:
+- 地方交付税法
+tier: 0
+title: 地方交付税法
+law_id: 325AC0000000211
+official_title: 地方交付税法
+aliases:
+- 地方交付税法
+---
+
+# 地方交付税法
+
+## Metadata
+- Law ID: `325AC0000000211`
+- Law No: 昭和二十五年法律第二百十一号
+- Promulgation Date: 19500530

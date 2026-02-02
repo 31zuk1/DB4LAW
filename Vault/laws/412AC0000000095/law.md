@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC0000000095
+id: JPLAW:412AC0000000095
+law_no: 平成十二年法律第九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC0000000095
+promulgation_date: '20000531'
+tags:
+- 農水産業協同組合の再生手続の特例等に関する法律
+tier: 0
+title: 農水産業協同組合の再生手続の特例等に関する法律
+law_id: 412AC0000000095
+official_title: 農水産業協同組合の再生手続の特例等に関する法律
+aliases:
+- 農水産業協同組合の再生手続の特例等に関する法律
+---
+
+# 農水産業協同組合の再生手続の特例等に関する法律
+
+## Metadata
+- Law ID: `412AC0000000095`
+- Law No: 平成十二年法律第九十五号
+- Promulgation Date: 20000531

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 105DF0000000337
+id: JPLAW:105DF0000000337
+law_no: 明治五年太政官布告第三百三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/105DF0000000337
+promulgation_date: '18721109'
+tags:
+- 明治五年太政官布告第三百三十七号（改暦ノ布告）
+tier: 0
+title: 明治五年太政官布告第三百三十七号（改暦ノ布告）
+law_id: 105DF0000000337
+official_title: 明治五年太政官布告第三百三十七号（改暦ノ布告）
+aliases:
+- 明治五年太政官布告第三百三十七号（改暦ノ布告）
+---
+
+# 明治五年太政官布告第三百三十七号（改暦ノ布告）
+
+## Metadata
+- Law ID: `105DF0000000337`
+- Law No: 明治五年太政官布告第三百三十七号
+- Promulgation Date: 18721109

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418M60000010057
+id: JPLAW:418M60000010057
+law_no: 平成十八年法務省令第五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/418M60000010057
+promulgation_date: '20060523'
+tags:
+- 刑事施設及び被収容者の処遇に関する規則
+tier: 0
+title: 刑事施設及び被収容者の処遇に関する規則
+law_id: 418M60000010057
+official_title: 刑事施設及び被収容者の処遇に関する規則
+aliases:
+- 刑事施設及び被収容者の処遇に関する規則
+---
+
+# 刑事施設及び被収容者の処遇に関する規則
+
+## Metadata
+- Law ID: `418M60000010057`
+- Law No: 平成十八年法務省令第五十七号
+- Promulgation Date: 20060523

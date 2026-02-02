@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 306AC0000000042
+id: JPLAW:306AC0000000042
+law_no: 昭和六年法律第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/306AC0000000042
+promulgation_date: '19310401'
+tags:
+- 無尽業法
+tier: 0
+title: 無尽業法
+law_id: 306AC0000000042
+official_title: 無尽業法
+aliases:
+- 無尽業法
+---
+
+# 無尽業法
+
+## Metadata
+- Law ID: `306AC0000000042`
+- Law No: 昭和六年法律第四十二号
+- Promulgation Date: 19310401

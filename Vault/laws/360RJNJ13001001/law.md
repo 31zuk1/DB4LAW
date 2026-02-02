@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 360RJNJ13001001
+id: JPLAW:360RJNJ13001001
+law_no: 昭和六十年人事院規則一三―一―一
+links:
+  egov: https://laws.e-gov.go.jp/law/360RJNJ13001001
+promulgation_date: '19850104'
+tags:
+- 人事院規則一三―一（不利益処分についての審査請求）
+tier: 0
+title: 人事院規則一三―一（不利益処分についての審査請求）
+law_id: 360RJNJ13001001
+official_title: 人事院規則一三―一（不利益処分についての審査請求）
+aliases:
+- 人事院規則一三―一（不利益処分についての審査請求）
+---
+
+# 人事院規則一三―一（不利益処分についての審査請求）
+
+## Metadata
+- Law ID: `360RJNJ13001001`
+- Law No: 昭和六十年人事院規則一三―一―一
+- Promulgation Date: 19850104

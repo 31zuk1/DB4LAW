@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333CO0000000362
+id: JPLAW:333CO0000000362
+law_no: 昭和三十三年政令第三百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/333CO0000000362
+promulgation_date: '19581227'
+tags:
+- 国民健康保険法施行令
+tier: 0
+title: 国民健康保険法施行令
+law_id: 333CO0000000362
+official_title: 国民健康保険法施行令
+aliases:
+- 国民健康保険法施行令
+---
+
+# 国民健康保険法施行令
+
+## Metadata
+- Law ID: `333CO0000000362`
+- Law No: 昭和三十三年政令第三百六十二号
+- Promulgation Date: 19581227

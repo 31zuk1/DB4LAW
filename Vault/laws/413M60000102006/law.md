@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000102006
+id: JPLAW:413M60000102006
+law_no: 平成十三年内閣府・厚生労働省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000102006
+promulgation_date: '20010723'
+tags:
+- 確定拠出年金運営管理機関に関する命令
+tier: 0
+title: 確定拠出年金運営管理機関に関する命令
+law_id: 413M60000102006
+official_title: 確定拠出年金運営管理機関に関する命令
+aliases:
+- 確定拠出年金運営管理機関に関する命令
+---
+
+# 確定拠出年金運営管理機関に関する命令
+
+## Metadata
+- Law ID: `413M60000102006`
+- Law No: 平成十三年内閣府・厚生労働省令第六号
+- Promulgation Date: 20010723

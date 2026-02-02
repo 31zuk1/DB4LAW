@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347CO0000000169
+id: JPLAW:347CO0000000169
+law_no: 昭和四十七年政令第百六十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/347CO0000000169
+promulgation_date: '19720508'
+tags:
+- 沖縄弁護士に関する政令
+tier: 0
+title: 沖縄弁護士に関する政令
+law_id: 347CO0000000169
+official_title: 沖縄弁護士に関する政令
+aliases:
+- 沖縄弁護士に関する政令
+---
+
+# 沖縄弁護士に関する政令
+
+## Metadata
+- Law ID: `347CO0000000169`
+- Law No: 昭和四十七年政令第百六十九号
+- Promulgation Date: 19720508

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423M60000A00002
+id: JPLAW:423M60000A00002
+law_no: 平成二十三年農林水産省・国土交通省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/423M60000A00002
+promulgation_date: '20111222'
+tags:
+- 農林水産省・国土交通省関係東日本大震災復興特別区域法施行規則
+tier: 0
+title: 農林水産省・国土交通省関係東日本大震災復興特別区域法施行規則
+law_id: 423M60000A00002
+official_title: 農林水産省・国土交通省関係東日本大震災復興特別区域法施行規則
+aliases:
+- 農林水産省・国土交通省関係東日本大震災復興特別区域法施行規則
+---
+
+# 農林水産省・国土交通省関係東日本大震災復興特別区域法施行規則
+
+## Metadata
+- Law ID: `423M60000A00002`
+- Law No: 平成二十三年農林水産省・国土交通省令第二号
+- Promulgation Date: 20111222

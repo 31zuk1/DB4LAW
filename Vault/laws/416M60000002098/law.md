@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000002098
+id: JPLAW:416M60000002098
+law_no: 平成十六年内閣府令第九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000002098
+promulgation_date: '20041210'
+tags:
+- 外国軍用品審判規則
+tier: 0
+title: 外国軍用品審判規則
+law_id: 416M60000002098
+official_title: 外国軍用品審判規則
+aliases:
+- 外国軍用品審判規則
+---
+
+# 外国軍用品審判規則
+
+## Metadata
+- Law ID: `416M60000002098`
+- Law No: 平成十六年内閣府令第九十八号
+- Promulgation Date: 20041210

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348CO0000000334
+id: JPLAW:348CO0000000334
+law_no: 昭和四十八年政令第三百三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/348CO0000000334
+promulgation_date: '19731106'
+tags:
+- 覚醒剤取締法施行令
+tier: 0
+title: 覚醒剤取締法施行令
+law_id: 348CO0000000334
+official_title: 覚醒剤取締法施行令
+aliases:
+- 覚醒剤取締法施行令
+---
+
+# 覚醒剤取締法施行令
+
+## Metadata
+- Law ID: `348CO0000000334`
+- Law No: 昭和四十八年政令第三百三十四号
+- Promulgation Date: 19731106

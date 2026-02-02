@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416AC0000000110
+id: JPLAW:416AC0000000110
+law_no: 平成十六年法律第百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/416AC0000000110
+promulgation_date: '20040618'
+tags:
+- 景観法
+tier: 0
+title: 景観法
+law_id: 416AC0000000110
+official_title: 景観法
+aliases:
+- 景観法
+---
+
+# 景観法
+
+## Metadata
+- Law ID: `416AC0000000110`
+- Law No: 平成十六年法律第百十号
+- Promulgation Date: 20040618

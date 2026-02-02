@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0100000004
+id: JPLAW:411AC0100000004
+law_no: 平成十一年法律第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0100000004
+promulgation_date: '19990329'
+tags:
+- 特定融資枠契約に関する法律
+tier: 0
+title: 特定融資枠契約に関する法律
+law_id: 411AC0100000004
+official_title: 特定融資枠契約に関する法律
+aliases:
+- 特定融資枠契約に関する法律
+---
+
+# 特定融資枠契約に関する法律
+
+## Metadata
+- Law ID: `411AC0100000004`
+- Law No: 平成十一年法律第四号
+- Promulgation Date: 19990329

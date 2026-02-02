@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50004800003
+id: JPLAW:339M50004800003
+law_no: 昭和三十九年運輸省・建設省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50004800003
+promulgation_date: '19640331'
+tags:
+- 自動車道事業会計規則
+tier: 0
+title: 自動車道事業会計規則
+law_id: 339M50004800003
+official_title: 自動車道事業会計規則
+aliases:
+- 自動車道事業会計規則
+---
+
+# 自動車道事業会計規則
+
+## Metadata
+- Law ID: `339M50004800003`
+- Law No: 昭和三十九年運輸省・建設省令第三号
+- Promulgation Date: 19640331

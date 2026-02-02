@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329AC0000000051
+id: JPLAW:329AC0000000051
+law_no: 昭和二十九年法律第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/329AC0000000051
+promulgation_date: '19540331'
+tags:
+- ガス事業法
+tier: 0
+title: ガス事業法
+law_id: 329AC0000000051
+official_title: ガス事業法
+aliases:
+- ガス事業法
+---
+
+# ガス事業法
+
+## Metadata
+- Law ID: `329AC0000000051`
+- Law No: 昭和二十九年法律第五十一号
+- Promulgation Date: 19540331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501AC1000000050
+id: JPLAW:501AC1000000050
+law_no: 令和元年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/501AC1000000050
+promulgation_date: '20190628'
+tags:
+- 愛玩動物看護師法
+tier: 0
+title: 愛玩動物看護師法
+law_id: 501AC1000000050
+official_title: 愛玩動物看護師法
+aliases:
+- 愛玩動物看護師法
+---
+
+# 愛玩動物看護師法
+
+## Metadata
+- Law ID: `501AC1000000050`
+- Law No: 令和元年法律第五十号
+- Promulgation Date: 20190628

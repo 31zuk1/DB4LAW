@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354M50400000005
+id: JPLAW:354M50400000005
+law_no: 昭和五十四年国家公安委員会規則第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/354M50400000005
+promulgation_date: '19790404'
+tags:
+- 管区警察学校の各部の内部組織に関する規則
+tier: 0
+title: 管区警察学校の各部の内部組織に関する規則
+law_id: 354M50400000005
+official_title: 管区警察学校の各部の内部組織に関する規則
+aliases:
+- 管区警察学校の各部の内部組織に関する規則
+---
+
+# 管区警察学校の各部の内部組織に関する規則
+
+## Metadata
+- Law ID: `354M50400000005`
+- Law No: 昭和五十四年国家公安委員会規則第五号
+- Promulgation Date: 19790404

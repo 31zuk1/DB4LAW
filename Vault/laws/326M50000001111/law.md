@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000001111
+id: JPLAW:326M50000001111
+law_no: 昭和二十六年法務府令第百十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000001111
+promulgation_date: '19510629'
+tags:
+- 地上権登記索引簿規則
+tier: 0
+title: 地上権登記索引簿規則
+law_id: 326M50000001111
+official_title: 地上権登記索引簿規則
+aliases:
+- 地上権登記索引簿規則
+---
+
+# 地上権登記索引簿規則
+
+## Metadata
+- Law ID: `326M50000001111`
+- Law No: 昭和二十六年法務府令第百十一号
+- Promulgation Date: 19510629

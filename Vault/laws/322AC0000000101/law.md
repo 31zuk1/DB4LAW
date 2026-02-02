@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000101
+id: JPLAW:322AC0000000101
+law_no: 昭和二十二年法律第百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000101
+promulgation_date: '19470905'
+tags:
+- 地域保健法
+tier: 0
+title: 地域保健法
+law_id: 322AC0000000101
+official_title: 地域保健法
+aliases:
+- 地域保健法
+---
+
+# 地域保健法
+
+## Metadata
+- Law ID: `322AC0000000101`
+- Law No: 昭和二十二年法律第百一号
+- Promulgation Date: 19470905

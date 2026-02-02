@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000100021
+id: JPLAW:415M60000100021
+law_no: 平成十五年厚生労働省令第二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000100021
+promulgation_date: '20030312'
+tags:
+- 身体障害者社会参加支援施設の設備及び運営に関する基準
+tier: 0
+title: 身体障害者社会参加支援施設の設備及び運営に関する基準
+law_id: 415M60000100021
+official_title: 身体障害者社会参加支援施設の設備及び運営に関する基準
+aliases:
+- 身体障害者社会参加支援施設の設備及び運営に関する基準
+---
+
+# 身体障害者社会参加支援施設の設備及び運営に関する基準
+
+## Metadata
+- Law ID: `415M60000100021`
+- Law No: 平成十五年厚生労働省令第二十一号
+- Promulgation Date: 20030312

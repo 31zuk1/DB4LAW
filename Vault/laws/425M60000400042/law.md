@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425M60000400042
+id: JPLAW:425M60000400042
+law_no: 平成二十五年経済産業省令第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/425M60000400042
+promulgation_date: '20130913'
+tags:
+- 株式会社海外需要開拓支援機構法施行規則
+tier: 0
+title: 株式会社海外需要開拓支援機構法施行規則
+law_id: 425M60000400042
+official_title: 株式会社海外需要開拓支援機構法施行規則
+aliases:
+- 株式会社海外需要開拓支援機構法施行規則
+---
+
+# 株式会社海外需要開拓支援機構法施行規則
+
+## Metadata
+- Law ID: `425M60000400042`
+- Law No: 平成二十五年経済産業省令第四十二号
+- Promulgation Date: 20130913

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000400119
+id: JPLAW:416M60000400119
+law_no: 平成十六年経済産業省令第百十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000400119
+promulgation_date: '20041220'
+tags:
+- 電源線に係る費用に関する省令
+tier: 0
+title: 電源線に係る費用に関する省令
+law_id: 416M60000400119
+official_title: 電源線に係る費用に関する省令
+aliases:
+- 電源線に係る費用に関する省令
+---
+
+# 電源線に係る費用に関する省令
+
+## Metadata
+- Law ID: `416M60000400119`
+- Law No: 平成十六年経済産業省令第百十九号
+- Promulgation Date: 20041220

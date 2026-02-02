@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409M50400000013
+id: JPLAW:409M50400000013
+law_no: 平成九年国家公安委員会規則第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/409M50400000013
+promulgation_date: '19971225'
+tags:
+- 指掌紋取扱規則
+tier: 0
+title: 指掌紋取扱規則
+law_id: 409M50400000013
+official_title: 指掌紋取扱規則
+aliases:
+- 指掌紋取扱規則
+---
+
+# 指掌紋取扱規則
+
+## Metadata
+- Law ID: `409M50400000013`
+- Law No: 平成九年国家公安委員会規則第十三号
+- Promulgation Date: 19971225

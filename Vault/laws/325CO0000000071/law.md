@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000071
+id: JPLAW:325CO0000000071
+law_no: 昭和二十五年政令第七十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000071
+promulgation_date: '19500331'
+tags:
+- 相続税法施行令
+tier: 0
+title: 相続税法施行令
+law_id: 325CO0000000071
+official_title: 相続税法施行令
+aliases:
+- 相続税法施行令
+---
+
+# 相続税法施行令
+
+## Metadata
+- Law ID: `325CO0000000071`
+- Law No: 昭和二十五年政令第七十一号
+- Promulgation Date: 19500331

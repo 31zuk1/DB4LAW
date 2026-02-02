@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323CO0000000052
+id: JPLAW:323CO0000000052
+law_no: 昭和二十三年政令第五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/323CO0000000052
+promulgation_date: '19480306'
+tags:
+- 昭和二十三年政令第五十二号（消防組織法の施行に関する政令）
+tier: 0
+title: 昭和二十三年政令第五十二号（消防組織法の施行に関する政令）
+law_id: 323CO0000000052
+official_title: 昭和二十三年政令第五十二号（消防組織法の施行に関する政令）
+aliases:
+- 昭和二十三年政令第五十二号（消防組織法の施行に関する政令）
+---
+
+# 昭和二十三年政令第五十二号（消防組織法の施行に関する政令）
+
+## Metadata
+- Law ID: `323CO0000000052`
+- Law No: 昭和二十三年政令第五十二号
+- Promulgation Date: 19480306

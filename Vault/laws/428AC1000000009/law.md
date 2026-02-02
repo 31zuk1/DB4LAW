@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428AC1000000009
+id: JPLAW:428AC1000000009
+law_no: 平成二十八年法律第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/428AC1000000009
+promulgation_date: '20160318'
+tags:
+- 重要施設の周辺地域の上空における小型無人機等の飛行の禁止に関する法律
+tier: 0
+title: 重要施設の周辺地域の上空における小型無人機等の飛行の禁止に関する法律
+law_id: 428AC1000000009
+official_title: 重要施設の周辺地域の上空における小型無人機等の飛行の禁止に関する法律
+aliases:
+- 重要施設の周辺地域の上空における小型無人機等の飛行の禁止に関する法律
+---
+
+# 重要施設の周辺地域の上空における小型無人機等の飛行の禁止に関する法律
+
+## Metadata
+- Law ID: `428AC1000000009`
+- Law No: 平成二十八年法律第九号
+- Promulgation Date: 20160318

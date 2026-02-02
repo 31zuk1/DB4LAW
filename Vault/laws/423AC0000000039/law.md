@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423AC0000000039
+id: JPLAW:423AC0000000039
+law_no: 平成二十三年法律第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/423AC0000000039
+promulgation_date: '20110502'
+tags:
+- 株式会社国際協力銀行法
+tier: 0
+title: 株式会社国際協力銀行法
+law_id: 423AC0000000039
+official_title: 株式会社国際協力銀行法
+aliases:
+- 株式会社国際協力銀行法
+---
+
+# 株式会社国際協力銀行法
+
+## Metadata
+- Law ID: `423AC0000000039`
+- Law No: 平成二十三年法律第三十九号
+- Promulgation Date: 20110502

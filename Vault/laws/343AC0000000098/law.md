@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343AC0000000098
+id: JPLAW:343AC0000000098
+law_no: 昭和四十三年法律第九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/343AC0000000098
+promulgation_date: '19680610'
+tags:
+- 騒音規制法
+tier: 0
+title: 騒音規制法
+law_id: 343AC0000000098
+official_title: 騒音規制法
+aliases:
+- 騒音規制法
+---
+
+# 騒音規制法
+
+## Metadata
+- Law ID: `343AC0000000098`
+- Law No: 昭和四十三年法律第九十八号
+- Promulgation Date: 19680610

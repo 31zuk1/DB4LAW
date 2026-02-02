@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0000000119
+id: JPLAW:336AC0000000119
+law_no: 昭和三十六年法律第百十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0000000119
+promulgation_date: '19610608'
+tags:
+- 選挙制度審議会設置法
+tier: 0
+title: 選挙制度審議会設置法
+law_id: 336AC0000000119
+official_title: 選挙制度審議会設置法
+aliases:
+- 選挙制度審議会設置法
+---
+
+# 選挙制度審議会設置法
+
+## Metadata
+- Law ID: `336AC0000000119`
+- Law No: 昭和三十六年法律第百十九号
+- Promulgation Date: 19610608

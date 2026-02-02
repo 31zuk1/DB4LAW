@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000242
+id: JPLAW:323AC0000000242
+law_no: 昭和二十三年法律第二百四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000242
+promulgation_date: '19481215'
+tags:
+- 水産業協同組合法
+tier: 0
+title: 水産業協同組合法
+law_id: 323AC0000000242
+official_title: 水産業協同組合法
+aliases:
+- 水産業協同組合法
+---
+
+# 水産業協同組合法
+
+## Metadata
+- Law ID: `323AC0000000242`
+- Law No: 昭和二十三年法律第二百四十二号
+- Promulgation Date: 19481215

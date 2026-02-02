@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363M50000400080
+id: JPLAW:363M50000400080
+law_no: 昭和六十三年通商産業省令第八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/363M50000400080
+promulgation_date: '19881224'
+tags:
+- 特定物質等の規制等によるオゾン層の保護に関する法律施行規則
+tier: 0
+title: 特定物質等の規制等によるオゾン層の保護に関する法律施行規則
+law_id: 363M50000400080
+official_title: 特定物質等の規制等によるオゾン層の保護に関する法律施行規則
+aliases:
+- 特定物質等の規制等によるオゾン層の保護に関する法律施行規則
+---
+
+# 特定物質等の規制等によるオゾン層の保護に関する法律施行規則
+
+## Metadata
+- Law ID: `363M50000400080`
+- Law No: 昭和六十三年通商産業省令第八十号
+- Promulgation Date: 19881224

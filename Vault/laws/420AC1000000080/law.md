@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420AC1000000080
+id: JPLAW:420AC1000000080
+law_no: 平成二十年法律第八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/420AC1000000080
+promulgation_date: '20080618'
+tags:
+- オウム真理教犯罪被害者等を救済するための給付金の支給に関する法律
+tier: 0
+title: オウム真理教犯罪被害者等を救済するための給付金の支給に関する法律
+law_id: 420AC1000000080
+official_title: オウム真理教犯罪被害者等を救済するための給付金の支給に関する法律
+aliases:
+- オウム真理教犯罪被害者等を救済するための給付金の支給に関する法律
+---
+
+# オウム真理教犯罪被害者等を救済するための給付金の支給に関する法律
+
+## Metadata
+- Law ID: `420AC1000000080`
+- Law No: 平成二十年法律第八十号
+- Promulgation Date: 20080618

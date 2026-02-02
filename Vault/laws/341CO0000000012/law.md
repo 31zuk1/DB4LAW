@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341CO0000000012
+id: JPLAW:341CO0000000012
+law_no: 昭和四十一年政令第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/341CO0000000012
+promulgation_date: '19660210'
+tags:
+- 人事統計報告に関する政令
+tier: 0
+title: 人事統計報告に関する政令
+law_id: 341CO0000000012
+official_title: 人事統計報告に関する政令
+aliases:
+- 人事統計報告に関する政令
+---
+
+# 人事統計報告に関する政令
+
+## Metadata
+- Law ID: `341CO0000000012`
+- Law No: 昭和四十一年政令第十二号
+- Promulgation Date: 19660210

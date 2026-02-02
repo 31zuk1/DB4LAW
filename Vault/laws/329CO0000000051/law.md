@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000051
+id: JPLAW:329CO0000000051
+law_no: 昭和二十九年政令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000051
+promulgation_date: '19540331'
+tags:
+- 国税収納金整理資金に関する法律施行令
+tier: 0
+title: 国税収納金整理資金に関する法律施行令
+law_id: 329CO0000000051
+official_title: 国税収納金整理資金に関する法律施行令
+aliases:
+- 国税収納金整理資金に関する法律施行令
+---
+
+# 国税収納金整理資金に関する法律施行令
+
+## Metadata
+- Law ID: `329CO0000000051`
+- Law No: 昭和二十九年政令第五十一号
+- Promulgation Date: 19540331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332CO0000000049
+id: JPLAW:332CO0000000049
+law_no: 昭和三十二年政令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/332CO0000000049
+promulgation_date: '19570331'
+tags:
+- 特別とん税法施行令
+tier: 0
+title: 特別とん税法施行令
+law_id: 332CO0000000049
+official_title: 特別とん税法施行令
+aliases:
+- 特別とん税法施行令
+---
+
+# 特別とん税法施行令
+
+## Metadata
+- Law ID: `332CO0000000049`
+- Law No: 昭和三十二年政令第四十九号
+- Promulgation Date: 19570331

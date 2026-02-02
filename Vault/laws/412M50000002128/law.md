@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50000002128
+id: JPLAW:412M50000002128
+law_no: 平成十二年総理府令第百二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50000002128
+promulgation_date: '20001117'
+tags:
+- 資産の流動化に関する法律施行規則
+tier: 0
+title: 資産の流動化に関する法律施行規則
+law_id: 412M50000002128
+official_title: 資産の流動化に関する法律施行規則
+aliases:
+- 資産の流動化に関する法律施行規則
+---
+
+# 資産の流動化に関する法律施行規則
+
+## Metadata
+- Law ID: `412M50000002128`
+- Law No: 平成十二年総理府令第百二十八号
+- Promulgation Date: 20001117

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000200055
+id: JPLAW:415M60000200055
+law_no: 平成十五年農林水産省令第五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000200055
+promulgation_date: '20030611'
+tags:
+- 林業・木材産業改善資金助成法施行規則
+tier: 0
+title: 林業・木材産業改善資金助成法施行規則
+law_id: 415M60000200055
+official_title: 林業・木材産業改善資金助成法施行規則
+aliases:
+- 林業・木材産業改善資金助成法施行規則
+---
+
+# 林業・木材産業改善資金助成法施行規則
+
+## Metadata
+- Law ID: `415M60000200055`
+- Law No: 平成十五年農林水産省令第五十五号
+- Promulgation Date: 20030611

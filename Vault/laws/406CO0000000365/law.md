@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406CO0000000365
+id: JPLAW:406CO0000000365
+law_no: 平成六年政令第三百六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/406CO0000000365
+promulgation_date: '19941124'
+tags:
+- 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法施行令
+tier: 0
+title: 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法施行令
+law_id: 406CO0000000365
+official_title: 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法施行令
+aliases:
+- 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法施行令
+---
+
+# 天災による被害農林漁業者等に対する資金の融通に関する暫定措置法施行令
+
+## Metadata
+- Law ID: `406CO0000000365`
+- Law No: 平成六年政令第三百六十五号
+- Promulgation Date: 19941124

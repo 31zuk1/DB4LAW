@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362CO0000000078
+id: JPLAW:362CO0000000078
+law_no: 昭和六十二年政令第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/362CO0000000078
+promulgation_date: '19870327'
+tags:
+- 鉄道線路の道路への敷設の許可手続を定める政令
+tier: 0
+title: 鉄道線路の道路への敷設の許可手続を定める政令
+law_id: 362CO0000000078
+official_title: 鉄道線路の道路への敷設の許可手続を定める政令
+aliases:
+- 鉄道線路の道路への敷設の許可手続を定める政令
+---
+
+# 鉄道線路の道路への敷設の許可手続を定める政令
+
+## Metadata
+- Law ID: `362CO0000000078`
+- Law No: 昭和六十二年政令第七十八号
+- Promulgation Date: 19870327

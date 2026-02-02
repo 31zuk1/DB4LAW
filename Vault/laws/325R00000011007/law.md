@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325R00000011007
+id: JPLAW:325R00000011007
+law_no: 昭和二十五年文化財保護委員会規則第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/325R00000011007
+promulgation_date: '19501229'
+tags:
+- 国宝又は重要文化財指定書規則
+tier: 0
+title: 国宝又は重要文化財指定書規則
+law_id: 325R00000011007
+official_title: 国宝又は重要文化財指定書規則
+aliases:
+- 国宝又は重要文化財指定書規則
+---
+
+# 国宝又は重要文化財指定書規則
+
+## Metadata
+- Law ID: `325R00000011007`
+- Law No: 昭和二十五年文化財保護委員会規則第七号
+- Promulgation Date: 19501229

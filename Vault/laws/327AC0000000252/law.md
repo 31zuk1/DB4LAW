@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000252
+id: JPLAW:327AC0000000252
+law_no: 昭和二十七年法律第二百五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000252
+promulgation_date: '19520731'
+tags:
+- 内閣法制局設置法
+tier: 0
+title: 内閣法制局設置法
+law_id: 327AC0000000252
+official_title: 内閣法制局設置法
+aliases:
+- 内閣法制局設置法
+---
+
+# 内閣法制局設置法
+
+## Metadata
+- Law ID: `327AC0000000252`
+- Law No: 昭和二十七年法律第二百五十二号
+- Promulgation Date: 19520731

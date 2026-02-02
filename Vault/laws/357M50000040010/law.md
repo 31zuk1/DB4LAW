@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 357M50000040010
+id: JPLAW:357M50000040010
+law_no: 昭和五十七年大蔵省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/357M50000040010
+promulgation_date: '19820331'
+tags:
+- 銀行法施行規則
+tier: 0
+title: 銀行法施行規則
+law_id: 357M50000040010
+official_title: 銀行法施行規則
+aliases:
+- 銀行法施行規則
+---
+
+# 銀行法施行規則
+
+## Metadata
+- Law ID: `357M50000040010`
+- Law No: 昭和五十七年大蔵省令第十号
+- Promulgation Date: 19820331

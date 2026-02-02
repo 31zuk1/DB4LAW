@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 205AC0000000010
+id: JPLAW:205AC0000000010
+law_no: 大正五年法律第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/205AC0000000010
+promulgation_date: '19160307'
+tags:
+- 大正五年法律第十号（証券ヲ以テスル歳入納付ニ関スル法律）
+tier: 0
+title: 大正五年法律第十号（証券ヲ以テスル歳入納付ニ関スル法律）
+law_id: 205AC0000000010
+official_title: 大正五年法律第十号（証券ヲ以テスル歳入納付ニ関スル法律）
+aliases:
+- 大正五年法律第十号（証券ヲ以テスル歳入納付ニ関スル法律）
+---
+
+# 大正五年法律第十号（証券ヲ以テスル歳入納付ニ関スル法律）
+
+## Metadata
+- Law ID: `205AC0000000010`
+- Law No: 大正五年法律第十号
+- Promulgation Date: 19160307

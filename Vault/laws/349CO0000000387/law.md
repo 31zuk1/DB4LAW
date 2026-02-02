@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349CO0000000387
+id: JPLAW:349CO0000000387
+law_no: 昭和四十九年政令第三百八十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/349CO0000000387
+promulgation_date: '19741220'
+tags:
+- 国土利用計画法施行令
+tier: 0
+title: 国土利用計画法施行令
+law_id: 349CO0000000387
+official_title: 国土利用計画法施行令
+aliases:
+- 国土利用計画法施行令
+---
+
+# 国土利用計画法施行令
+
+## Metadata
+- Law ID: `349CO0000000387`
+- Law No: 昭和四十九年政令第三百八十七号
+- Promulgation Date: 19741220

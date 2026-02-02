@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404AC0000000051
+id: JPLAW:404AC0000000051
+law_no: 平成四年法律第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/404AC0000000051
+promulgation_date: '19920520'
+tags:
+- 計量法
+tier: 0
+title: 計量法
+law_id: 404AC0000000051
+official_title: 計量法
+aliases:
+- 計量法
+---
+
+# 計量法
+
+## Metadata
+- Law ID: `404AC0000000051`
+- Law No: 平成四年法律第五十一号
+- Promulgation Date: 19920520

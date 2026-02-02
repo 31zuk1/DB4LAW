@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000235
+id: JPLAW:328CO0000000235
+law_no: 昭和二十八年政令第二百三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000235
+promulgation_date: '19530831'
+tags:
+- 家畜伝染病予防法施行令
+tier: 0
+title: 家畜伝染病予防法施行令
+law_id: 328CO0000000235
+official_title: 家畜伝染病予防法施行令
+aliases:
+- 家畜伝染病予防法施行令
+---
+
+# 家畜伝染病予防法施行令
+
+## Metadata
+- Law ID: `328CO0000000235`
+- Law No: 昭和二十八年政令第二百三十五号
+- Promulgation Date: 19530831

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362M50000002004
+id: JPLAW:362M50000002004
+law_no: 昭和六十二年総理府令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/362M50000002004
+promulgation_date: '19870214'
+tags:
+- 有害液体物質の排出率等を定める省令
+tier: 0
+title: 有害液体物質の排出率等を定める省令
+law_id: 362M50000002004
+official_title: 有害液体物質の排出率等を定める省令
+aliases:
+- 有害液体物質の排出率等を定める省令
+---
+
+# 有害液体物質の排出率等を定める省令
+
+## Metadata
+- Law ID: `362M50000002004`
+- Law No: 昭和六十二年総理府令第四号
+- Promulgation Date: 19870214

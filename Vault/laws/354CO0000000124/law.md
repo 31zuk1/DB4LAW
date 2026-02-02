@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354CO0000000124
+id: JPLAW:354CO0000000124
+law_no: 昭和五十四年政令第百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/354CO0000000124
+promulgation_date: '19790427'
+tags:
+- 沿岸漁業改善資金助成法施行令
+tier: 0
+title: 沿岸漁業改善資金助成法施行令
+law_id: 354CO0000000124
+official_title: 沿岸漁業改善資金助成法施行令
+aliases:
+- 沿岸漁業改善資金助成法施行令
+---
+
+# 沿岸漁業改善資金助成法施行令
+
+## Metadata
+- Law ID: `354CO0000000124`
+- Law No: 昭和五十四年政令第百二十四号
+- Promulgation Date: 19790427

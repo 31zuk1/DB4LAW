@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000039
+id: JPLAW:323AC0000000039
+law_no: 昭和二十三年法律第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000039
+promulgation_date: '19480501'
+tags:
+- 軽犯罪法
+tier: 0
+title: 軽犯罪法
+law_id: 323AC0000000039
+official_title: 軽犯罪法
+aliases:
+- 軽犯罪法
+---
+
+# 軽犯罪法
+
+## Metadata
+- Law ID: `323AC0000000039`
+- Law No: 昭和二十三年法律第三十九号
+- Promulgation Date: 19480501

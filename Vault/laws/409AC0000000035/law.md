@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409AC0000000035
+id: JPLAW:409AC0000000035
+law_no: 平成九年法律第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/409AC0000000035
+promulgation_date: '19970411'
+tags:
+- 中東・北アフリカ経済協力開発銀行への加盟に伴う措置に関する法律
+tier: 0
+title: 中東・北アフリカ経済協力開発銀行への加盟に伴う措置に関する法律
+law_id: 409AC0000000035
+official_title: 中東・北アフリカ経済協力開発銀行への加盟に伴う措置に関する法律
+aliases:
+- 中東・北アフリカ経済協力開発銀行への加盟に伴う措置に関する法律
+---
+
+# 中東・北アフリカ経済協力開発銀行への加盟に伴う措置に関する法律
+
+## Metadata
+- Law ID: `409AC0000000035`
+- Law No: 平成九年法律第三十五号
+- Promulgation Date: 19970411

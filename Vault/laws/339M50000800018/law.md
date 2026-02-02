@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339M50000800018
+id: JPLAW:339M50000800018
+law_no: 昭和三十九年運輸省令第十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/339M50000800018
+promulgation_date: '19640331'
+tags:
+- 自動車検査登録印紙の売りさばきに関する省令
+tier: 0
+title: 自動車検査登録印紙の売りさばきに関する省令
+law_id: 339M50000800018
+official_title: 自動車検査登録印紙の売りさばきに関する省令
+aliases:
+- 自動車検査登録印紙の売りさばきに関する省令
+---
+
+# 自動車検査登録印紙の売りさばきに関する省令
+
+## Metadata
+- Law ID: `339M50000800018`
+- Law No: 昭和三十九年運輸省令第十八号
+- Promulgation Date: 19640331

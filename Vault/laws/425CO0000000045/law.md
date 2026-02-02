@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425CO0000000045
+id: JPLAW:425CO0000000045
+law_no: 平成二十五年政令第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/425CO0000000045
+promulgation_date: '20130306'
+tags:
+- 使用済小型電子機器等の再資源化の促進に関する法律施行令
+tier: 0
+title: 使用済小型電子機器等の再資源化の促進に関する法律施行令
+law_id: 425CO0000000045
+official_title: 使用済小型電子機器等の再資源化の促進に関する法律施行令
+aliases:
+- 使用済小型電子機器等の再資源化の促進に関する法律施行令
+---
+
+# 使用済小型電子機器等の再資源化の促進に関する法律施行令
+
+## Metadata
+- Law ID: `425CO0000000045`
+- Law No: 平成二十五年政令第四十五号
+- Promulgation Date: 20130306

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000800104
+id: JPLAW:326M50000800104
+law_no: 昭和二十六年運輸省令第百四号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000800104
+promulgation_date: '19511220'
+tags:
+- 自動車事故報告規則
+tier: 0
+title: 自動車事故報告規則
+law_id: 326M50000800104
+official_title: 自動車事故報告規則
+aliases:
+- 自動車事故報告規則
+---
+
+# 自動車事故報告規則
+
+## Metadata
+- Law ID: `326M50000800104`
+- Law No: 昭和二十六年運輸省令第百四号
+- Promulgation Date: 19511220

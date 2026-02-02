@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337M5000008A001
+id: JPLAW:337M5000008A001
+law_no: 昭和三十七年総理府・文部省・自治省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/337M5000008A001
+promulgation_date: '19620908'
+tags:
+- 地方公務員等共済組合法施行規程
+tier: 0
+title: 地方公務員等共済組合法施行規程
+law_id: 337M5000008A001
+official_title: 地方公務員等共済組合法施行規程
+aliases:
+- 地方公務員等共済組合法施行規程
+---
+
+# 地方公務員等共済組合法施行規程
+
+## Metadata
+- Law ID: `337M5000008A001`
+- Law No: 昭和三十七年総理府・文部省・自治省令第一号
+- Promulgation Date: 19620908

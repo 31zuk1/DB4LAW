@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000080017
+id: JPLAW:413M60000080017
+law_no: 平成十三年文部科学省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000080017
+promulgation_date: '20010106'
+tags:
+- 文部科学省定員規則
+tier: 0
+title: 文部科学省定員規則
+law_id: 413M60000080017
+official_title: 文部科学省定員規則
+aliases:
+- 文部科学省定員規則
+---
+
+# 文部科学省定員規則
+
+## Metadata
+- Law ID: `413M60000080017`
+- Law No: 平成十三年文部科学省令第十七号
+- Promulgation Date: 20010106

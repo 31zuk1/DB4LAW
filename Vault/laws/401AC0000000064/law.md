@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 401AC0000000064
+id: JPLAW:401AC0000000064
+law_no: 平成元年法律第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/401AC0000000064
+promulgation_date: '19890630'
+tags:
+- 地域における医療及び介護の総合的な確保の促進に関する法律
+tier: 0
+title: 地域における医療及び介護の総合的な確保の促進に関する法律
+law_id: 401AC0000000064
+official_title: 地域における医療及び介護の総合的な確保の促進に関する法律
+aliases:
+- 地域における医療及び介護の総合的な確保の促進に関する法律
+---
+
+# 地域における医療及び介護の総合的な確保の促進に関する法律
+
+## Metadata
+- Law ID: `401AC0000000064`
+- Law No: 平成元年法律第六十四号
+- Promulgation Date: 19890630

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50000002042
+id: JPLAW:402M50000002042
+law_no: 平成二年総理府令第四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50000002042
+promulgation_date: '19900831'
+tags:
+- 効率的手法導入推進基本調査作業規程準則
+tier: 0
+title: 効率的手法導入推進基本調査作業規程準則
+law_id: 402M50000002042
+official_title: 効率的手法導入推進基本調査作業規程準則
+aliases:
+- 効率的手法導入推進基本調査作業規程準則
+---
+
+# 効率的手法導入推進基本調査作業規程準則
+
+## Metadata
+- Law ID: `402M50000002042`
+- Law No: 平成二年総理府令第四十二号
+- Promulgation Date: 19900831

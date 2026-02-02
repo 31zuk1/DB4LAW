@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 363CO0000000144
+id: JPLAW:363CO0000000144
+law_no: 昭和六十三年政令第百四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/363CO0000000144
+promulgation_date: '19880517'
+tags:
+- 特定弔慰金等の支給の実施に関する法律施行令
+tier: 0
+title: 特定弔慰金等の支給の実施に関する法律施行令
+law_id: 363CO0000000144
+official_title: 特定弔慰金等の支給の実施に関する法律施行令
+aliases:
+- 特定弔慰金等の支給の実施に関する法律施行令
+---
+
+# 特定弔慰金等の支給の実施に関する法律施行令
+
+## Metadata
+- Law ID: `363CO0000000144`
+- Law No: 昭和六十三年政令第百四十四号
+- Promulgation Date: 19880517

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0100000103
+id: JPLAW:336AC0100000103
+law_no: 昭和三十六年法律第百三号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0100000103
+promulgation_date: '19610601'
+tags:
+- 酒に酔つて公衆に迷惑をかける行為の防止等に関する法律
+tier: 0
+title: 酒に酔つて公衆に迷惑をかける行為の防止等に関する法律
+law_id: 336AC0100000103
+official_title: 酒に酔つて公衆に迷惑をかける行為の防止等に関する法律
+aliases:
+- 酒に酔つて公衆に迷惑をかける行為の防止等に関する法律
+---
+
+# 酒に酔つて公衆に迷惑をかける行為の防止等に関する法律
+
+## Metadata
+- Law ID: `336AC0100000103`
+- Law No: 昭和三十六年法律第百三号
+- Promulgation Date: 19610601

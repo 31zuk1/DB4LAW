@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000084
+id: JPLAW:413CO0000000084
+law_no: 平成十三年政令第八十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000084
+promulgation_date: '20010328'
+tags:
+- 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律施行令
+tier: 0
+title: 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律施行令
+law_id: 413CO0000000084
+official_title: 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律施行令
+aliases:
+- 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律施行令
+---
+
+# 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律施行令
+
+## Metadata
+- Law ID: `413CO0000000084`
+- Law No: 平成十三年政令第八十四号
+- Promulgation Date: 20010328

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC1000000249
+id: JPLAW:325AC1000000249
+law_no: 昭和二十五年法律第二百四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC1000000249
+promulgation_date: '19501021'
+tags:
+- 神戸国際港都建設法
+tier: 0
+title: 神戸国際港都建設法
+law_id: 325AC1000000249
+official_title: 神戸国際港都建設法
+aliases:
+- 神戸国際港都建設法
+---
+
+# 神戸国際港都建設法
+
+## Metadata
+- Law ID: `325AC1000000249`
+- Law No: 昭和二十五年法律第二百四十九号
+- Promulgation Date: 19501021

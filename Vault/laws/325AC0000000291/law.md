@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC0000000291
+id: JPLAW:325AC0000000291
+law_no: 昭和二十五年法律第二百九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC0000000291
+promulgation_date: '19501220'
+tags:
+- 採石法
+tier: 0
+title: 採石法
+law_id: 325AC0000000291
+official_title: 採石法
+aliases:
+- 採石法
+---
+
+# 採石法
+
+## Metadata
+- Law ID: `325AC0000000291`
+- Law No: 昭和二十五年法律第二百九十一号
+- Promulgation Date: 19501220

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331CO0000000107
+id: JPLAW:331CO0000000107
+law_no: 昭和三十一年政令第百七号
+links:
+  egov: https://laws.e-gov.go.jp/law/331CO0000000107
+promulgation_date: '19560424'
+tags:
+- 国有資産等所在市町村交付金法施行令
+tier: 0
+title: 国有資産等所在市町村交付金法施行令
+law_id: 331CO0000000107
+official_title: 国有資産等所在市町村交付金法施行令
+aliases:
+- 国有資産等所在市町村交付金法施行令
+---
+
+# 国有資産等所在市町村交付金法施行令
+
+## Metadata
+- Law ID: `331CO0000000107`
+- Law No: 昭和三十一年政令第百七号
+- Promulgation Date: 19560424

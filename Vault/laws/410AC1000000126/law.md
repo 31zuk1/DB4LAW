@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC1000000126
+id: JPLAW:410AC1000000126
+law_no: 平成十年法律第百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC1000000126
+promulgation_date: '19981016'
+tags:
+- 債権管理回収業に関する特別措置法
+tier: 0
+title: 債権管理回収業に関する特別措置法
+law_id: 410AC1000000126
+official_title: 債権管理回収業に関する特別措置法
+aliases:
+- 債権管理回収業に関する特別措置法
+---
+
+# 債権管理回収業に関する特別措置法
+
+## Metadata
+- Law ID: `410AC1000000126`
+- Law No: 平成十年法律第百二十六号
+- Promulgation Date: 19981016

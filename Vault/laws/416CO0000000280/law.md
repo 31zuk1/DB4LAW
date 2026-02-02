@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000280
+id: JPLAW:416CO0000000280
+law_no: 平成十六年政令第二百八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000280
+promulgation_date: '20040915'
+tags:
+- 武力攻撃事態等における特定公共施設等の利用に関する法律施行令
+tier: 0
+title: 武力攻撃事態等における特定公共施設等の利用に関する法律施行令
+law_id: 416CO0000000280
+official_title: 武力攻撃事態等における特定公共施設等の利用に関する法律施行令
+aliases:
+- 武力攻撃事態等における特定公共施設等の利用に関する法律施行令
+---
+
+# 武力攻撃事態等における特定公共施設等の利用に関する法律施行令
+
+## Metadata
+- Law ID: `416CO0000000280`
+- Law No: 平成十六年政令第二百八十号
+- Promulgation Date: 20040915

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418CO0000000219
+id: JPLAW:418CO0000000219
+law_no: 平成十八年政令第二百十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/418CO0000000219
+promulgation_date: '20060621'
+tags:
+- 行政改革推進本部令
+tier: 0
+title: 行政改革推進本部令
+law_id: 418CO0000000219
+official_title: 行政改革推進本部令
+aliases:
+- 行政改革推進本部令
+---
+
+# 行政改革推進本部令
+
+## Metadata
+- Law ID: `418CO0000000219`
+- Law No: 平成十八年政令第二百十九号
+- Promulgation Date: 20060621

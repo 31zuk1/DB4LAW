@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413AC0000000102
+id: JPLAW:413AC0000000102
+law_no: 平成十三年法律第百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/413AC0000000102
+promulgation_date: '20010704'
+tags:
+- 小型船舶の登録等に関する法律
+tier: 0
+title: 小型船舶の登録等に関する法律
+law_id: 413AC0000000102
+official_title: 小型船舶の登録等に関する法律
+aliases:
+- 小型船舶の登録等に関する法律
+---
+
+# 小型船舶の登録等に関する法律
+
+## Metadata
+- Law ID: `413AC0000000102`
+- Law No: 平成十三年法律第百二号
+- Promulgation Date: 20010704

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411CO0000000348
+id: JPLAW:411CO0000000348
+law_no: 平成十一年政令第三百四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/411CO0000000348
+promulgation_date: '19991029'
+tags:
+- 家畜排せつ物の管理の適正化及び利用の促進に関する法律施行令
+tier: 0
+title: 家畜排せつ物の管理の適正化及び利用の促進に関する法律施行令
+law_id: 411CO0000000348
+official_title: 家畜排せつ物の管理の適正化及び利用の促進に関する法律施行令
+aliases:
+- 家畜排せつ物の管理の適正化及び利用の促進に関する法律施行令
+---
+
+# 家畜排せつ物の管理の適正化及び利用の促進に関する法律施行令
+
+## Metadata
+- Law ID: `411CO0000000348`
+- Law No: 平成十一年政令第三百四十八号
+- Promulgation Date: 19991029

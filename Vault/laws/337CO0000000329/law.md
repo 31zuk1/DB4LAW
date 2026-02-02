@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337CO0000000329
+id: JPLAW:337CO0000000329
+law_no: 昭和三十七年政令第三百二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/337CO0000000329
+promulgation_date: '19620820'
+tags:
+- 自動車の保管場所の確保等に関する法律施行令
+tier: 0
+title: 自動車の保管場所の確保等に関する法律施行令
+law_id: 337CO0000000329
+official_title: 自動車の保管場所の確保等に関する法律施行令
+aliases:
+- 自動車の保管場所の確保等に関する法律施行令
+---
+
+# 自動車の保管場所の確保等に関する法律施行令
+
+## Metadata
+- Law ID: `337CO0000000329`
+- Law No: 昭和三十七年政令第三百二十九号
+- Promulgation Date: 19620820

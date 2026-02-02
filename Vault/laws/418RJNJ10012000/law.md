@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418RJNJ10012000
+id: JPLAW:418RJNJ10012000
+law_no: 平成十八年人事院規則一〇―一二
+links:
+  egov: https://laws.e-gov.go.jp/law/418RJNJ10012000
+promulgation_date: '20060614'
+tags:
+- 人事院規則一〇―一二（職員の留学費用の償還）
+tier: 0
+title: 人事院規則一〇―一二（職員の留学費用の償還）
+law_id: 418RJNJ10012000
+official_title: 人事院規則一〇―一二（職員の留学費用の償還）
+aliases:
+- 人事院規則一〇―一二（職員の留学費用の償還）
+---
+
+# 人事院規則一〇―一二（職員の留学費用の償還）
+
+## Metadata
+- Law ID: `418RJNJ10012000`
+- Law No: 平成十八年人事院規則一〇―一二
+- Promulgation Date: 20060614

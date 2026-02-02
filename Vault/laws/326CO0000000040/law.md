@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326CO0000000040
+id: JPLAW:326CO0000000040
+law_no: 昭和二十六年政令第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/326CO0000000040
+promulgation_date: '19510306'
+tags:
+- 朝鮮総督府交通局共済組合の本邦内にある財産の整理に関する政令
+tier: 0
+title: 朝鮮総督府交通局共済組合の本邦内にある財産の整理に関する政令
+law_id: 326CO0000000040
+official_title: 朝鮮総督府交通局共済組合の本邦内にある財産の整理に関する政令
+aliases:
+- 朝鮮総督府交通局共済組合の本邦内にある財産の整理に関する政令
+---
+
+# 朝鮮総督府交通局共済組合の本邦内にある財産の整理に関する政令
+
+## Metadata
+- Law ID: `326CO0000000040`
+- Law No: 昭和二十六年政令第四十号
+- Promulgation Date: 19510306

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000112
+id: JPLAW:415AC0000000112
+law_no: 平成十五年法律第百十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000112
+promulgation_date: '20030716'
+tags:
+- 国立大学法人法
+tier: 0
+title: 国立大学法人法
+law_id: 415AC0000000112
+official_title: 国立大学法人法
+aliases:
+- 国立大学法人法
+---
+
+# 国立大学法人法
+
+## Metadata
+- Law ID: `415AC0000000112`
+- Law No: 平成十五年法律第百十二号
+- Promulgation Date: 20030716

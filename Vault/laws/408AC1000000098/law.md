@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408AC1000000098
+id: JPLAW:408AC1000000098
+law_no: 平成八年法律第九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/408AC1000000098
+promulgation_date: '19960621'
+tags:
+- 特定住宅金融専門会社が有する債権の時効の停止等に関する特別措置法
+tier: 0
+title: 特定住宅金融専門会社が有する債権の時効の停止等に関する特別措置法
+law_id: 408AC1000000098
+official_title: 特定住宅金融専門会社が有する債権の時効の停止等に関する特別措置法
+aliases:
+- 特定住宅金融専門会社が有する債権の時効の停止等に関する特別措置法
+---
+
+# 特定住宅金融専門会社が有する債権の時効の停止等に関する特別措置法
+
+## Metadata
+- Law ID: `408AC1000000098`
+- Law No: 平成八年法律第九十八号
+- Promulgation Date: 19960621

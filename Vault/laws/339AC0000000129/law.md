@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339AC0000000129
+id: JPLAW:339AC0000000129
+law_no: 昭和三十九年法律第百二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/339AC0000000129
+promulgation_date: '19640701'
+tags:
+- 母子及び父子並びに寡婦福祉法
+tier: 0
+title: 母子及び父子並びに寡婦福祉法
+law_id: 339AC0000000129
+official_title: 母子及び父子並びに寡婦福祉法
+aliases:
+- 母子及び父子並びに寡婦福祉法
+---
+
+# 母子及び父子並びに寡婦福祉法
+
+## Metadata
+- Law ID: `339AC0000000129`
+- Law No: 昭和三十九年法律第百二十九号
+- Promulgation Date: 19640701

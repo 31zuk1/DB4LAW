@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 330M50000040045
+id: JPLAW:330M50000040045
+law_no: 昭和三十年大蔵省令第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/330M50000040045
+promulgation_date: '19550801'
+tags:
+- 証券金融会社に関する内閣府令
+tier: 0
+title: 証券金融会社に関する内閣府令
+law_id: 330M50000040045
+official_title: 証券金融会社に関する内閣府令
+aliases:
+- 証券金融会社に関する内閣府令
+---
+
+# 証券金融会社に関する内閣府令
+
+## Metadata
+- Law ID: `330M50000040045`
+- Law No: 昭和三十年大蔵省令第四十五号
+- Promulgation Date: 19550801

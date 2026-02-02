@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 138AC0000000053
+id: JPLAW:138AC0000000053
+law_no: 明治三十八年法律第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/138AC0000000053
+promulgation_date: '19050313'
+tags:
+- 鉄道抵当法
+tier: 0
+title: 鉄道抵当法
+law_id: 138AC0000000053
+official_title: 鉄道抵当法
+aliases:
+- 鉄道抵当法
+---
+
+# 鉄道抵当法
+
+## Metadata
+- Law ID: `138AC0000000053`
+- Law No: 明治三十八年法律第五十三号
+- Promulgation Date: 19050313

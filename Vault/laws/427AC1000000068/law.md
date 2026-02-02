@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427AC1000000068
+id: JPLAW:427AC1000000068
+law_no: 平成二十七年法律第六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/427AC1000000068
+promulgation_date: '20150916'
+tags:
+- 公認心理師法
+tier: 0
+title: 公認心理師法
+law_id: 427AC1000000068
+official_title: 公認心理師法
+aliases:
+- 公認心理師法
+---
+
+# 公認心理師法
+
+## Metadata
+- Law ID: `427AC1000000068`
+- Law No: 平成二十七年法律第六十八号
+- Promulgation Date: 20150916

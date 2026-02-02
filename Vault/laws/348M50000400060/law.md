@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348M50000400060
+id: JPLAW:348M50000400060
+law_no: 昭和四十八年通商産業省令第六十号
+links:
+  egov: https://laws.e-gov.go.jp/law/348M50000400060
+promulgation_date: '19730630'
+tags:
+- 金属鉱業等鉱害対策特別措置法施行規則
+tier: 0
+title: 金属鉱業等鉱害対策特別措置法施行規則
+law_id: 348M50000400060
+official_title: 金属鉱業等鉱害対策特別措置法施行規則
+aliases:
+- 金属鉱業等鉱害対策特別措置法施行規則
+---
+
+# 金属鉱業等鉱害対策特別措置法施行規則
+
+## Metadata
+- Law ID: `348M50000400060`
+- Law No: 昭和四十八年通商産業省令第六十号
+- Promulgation Date: 19730630

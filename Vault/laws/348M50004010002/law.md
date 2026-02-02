@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348M50004010002
+id: JPLAW:348M50004010002
+law_no: 昭和四十八年法務省・建設省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/348M50004010002
+promulgation_date: '19730507'
+tags:
+- 宅地建物取引業保証協会弁済業務保証金規則
+tier: 0
+title: 宅地建物取引業保証協会弁済業務保証金規則
+law_id: 348M50004010002
+official_title: 宅地建物取引業保証協会弁済業務保証金規則
+aliases:
+- 宅地建物取引業保証協会弁済業務保証金規則
+---
+
+# 宅地建物取引業保証協会弁済業務保証金規則
+
+## Metadata
+- Law ID: `348M50004010002`
+- Law No: 昭和四十八年法務省・建設省令第二号
+- Promulgation Date: 19730507

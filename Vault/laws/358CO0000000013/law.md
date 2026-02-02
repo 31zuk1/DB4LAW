@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 358CO0000000013
+id: JPLAW:358CO0000000013
+law_no: 昭和五十八年政令第十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/358CO0000000013
+promulgation_date: '19830212'
+tags:
+- 船舶職員及び小型船舶操縦者法施行令
+tier: 0
+title: 船舶職員及び小型船舶操縦者法施行令
+law_id: 358CO0000000013
+official_title: 船舶職員及び小型船舶操縦者法施行令
+aliases:
+- 船舶職員及び小型船舶操縦者法施行令
+---
+
+# 船舶職員及び小型船舶操縦者法施行令
+
+## Metadata
+- Law ID: `358CO0000000013`
+- Law No: 昭和五十八年政令第十三号
+- Promulgation Date: 19830212

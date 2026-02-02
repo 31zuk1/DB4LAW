@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349AC0000000116
+id: JPLAW:349AC0000000116
+law_no: 昭和四十九年法律第百十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/349AC0000000116
+promulgation_date: '19741228'
+tags:
+- 雇用保険法
+tier: 0
+title: 雇用保険法
+law_id: 349AC0000000116
+official_title: 雇用保険法
+aliases:
+- 雇用保険法
+---
+
+# 雇用保険法
+
+## Metadata
+- Law ID: `349AC0000000116`
+- Law No: 昭和四十九年法律第百十六号
+- Promulgation Date: 19741228

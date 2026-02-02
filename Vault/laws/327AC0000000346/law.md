@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000346
+id: JPLAW:327AC0000000346
+law_no: 昭和二十七年法律第三百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000346
+promulgation_date: '19521227'
+tags:
+- 中小漁業融資保証法
+tier: 0
+title: 中小漁業融資保証法
+law_id: 327AC0000000346
+official_title: 中小漁業融資保証法
+aliases:
+- 中小漁業融資保証法
+---
+
+# 中小漁業融資保証法
+
+## Metadata
+- Law ID: `327AC0000000346`
+- Law No: 昭和二十七年法律第三百四十六号
+- Promulgation Date: 19521227

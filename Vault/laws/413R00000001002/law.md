@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413R00000001002
+id: JPLAW:413R00000001002
+law_no: 平成十三年会計検査院規則第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/413R00000001002
+promulgation_date: '20010305'
+tags:
+- 会計検査院の情報公開に関する権限又は事務の委任に関する規則
+tier: 0
+title: 会計検査院の情報公開に関する権限又は事務の委任に関する規則
+law_id: 413R00000001002
+official_title: 会計検査院の情報公開に関する権限又は事務の委任に関する規則
+aliases:
+- 会計検査院の情報公開に関する権限又は事務の委任に関する規則
+---
+
+# 会計検査院の情報公開に関する権限又は事務の委任に関する規則
+
+## Metadata
+- Law ID: `413R00000001002`
+- Law No: 平成十三年会計検査院規則第二号
+- Promulgation Date: 20010305

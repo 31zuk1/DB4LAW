@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419CO0000000202
+id: JPLAW:419CO0000000202
+law_no: 平成十九年政令第二百二号
+links:
+  egov: https://laws.e-gov.go.jp/law/419CO0000000202
+promulgation_date: '20070706'
+tags:
+- 総合海洋政策本部令
+tier: 0
+title: 総合海洋政策本部令
+law_id: 419CO0000000202
+official_title: 総合海洋政策本部令
+aliases:
+- 総合海洋政策本部令
+---
+
+# 総合海洋政策本部令
+
+## Metadata
+- Law ID: `419CO0000000202`
+- Law No: 平成十九年政令第二百二号
+- Promulgation Date: 20070706

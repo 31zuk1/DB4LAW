@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335CO0000000149
+id: JPLAW:335CO0000000149
+law_no: 昭和三十五年政令第百四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/335CO0000000149
+promulgation_date: '19600609'
+tags:
+- 商工会法第六十条の規定により都道府県が処理する事務に関する政令
+tier: 0
+title: 商工会法第六十条の規定により都道府県が処理する事務に関する政令
+law_id: 335CO0000000149
+official_title: 商工会法第六十条の規定により都道府県が処理する事務に関する政令
+aliases:
+- 商工会法第六十条の規定により都道府県が処理する事務に関する政令
+---
+
+# 商工会法第六十条の規定により都道府県が処理する事務に関する政令
+
+## Metadata
+- Law ID: `335CO0000000149`
+- Law No: 昭和三十五年政令第百四十九号
+- Promulgation Date: 19600609

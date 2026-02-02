@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0000000015
+id: JPLAW:336AC0000000015
+law_no: 昭和三十六年法律第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0000000015
+promulgation_date: '19610330'
+tags:
+- 果樹農業振興特別措置法
+tier: 0
+title: 果樹農業振興特別措置法
+law_id: 336AC0000000015
+official_title: 果樹農業振興特別措置法
+aliases:
+- 果樹農業振興特別措置法
+---
+
+# 果樹農業振興特別措置法
+
+## Metadata
+- Law ID: `336AC0000000015`
+- Law No: 昭和三十六年法律第十五号
+- Promulgation Date: 19610330

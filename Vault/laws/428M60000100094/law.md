@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428M60000100094
+id: JPLAW:428M60000100094
+law_no: 平成二十八年厚生労働省令第九十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/428M60000100094
+promulgation_date: '20160420'
+tags:
+- 厚生労働省関係地域再生法施行規則
+tier: 0
+title: 厚生労働省関係地域再生法施行規則
+law_id: 428M60000100094
+official_title: 厚生労働省関係地域再生法施行規則
+aliases:
+- 厚生労働省関係地域再生法施行規則
+---
+
+# 厚生労働省関係地域再生法施行規則
+
+## Metadata
+- Law ID: `428M60000100094`
+- Law No: 平成二十八年厚生労働省令第九十四号
+- Promulgation Date: 20160420

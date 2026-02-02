@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345AC0000000117
+id: JPLAW:345AC0000000117
+law_no: 昭和四十五年法律第百十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/345AC0000000117
+promulgation_date: '19701217'
+tags:
+- 国際機関等に派遣される一般職の国家公務員の処遇等に関する法律
+tier: 0
+title: 国際機関等に派遣される一般職の国家公務員の処遇等に関する法律
+law_id: 345AC0000000117
+official_title: 国際機関等に派遣される一般職の国家公務員の処遇等に関する法律
+aliases:
+- 国際機関等に派遣される一般職の国家公務員の処遇等に関する法律
+---
+
+# 国際機関等に派遣される一般職の国家公務員の処遇等に関する法律
+
+## Metadata
+- Law ID: `345AC0000000117`
+- Law No: 昭和四十五年法律第百十七号
+- Promulgation Date: 19701217

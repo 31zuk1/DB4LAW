@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000800085
+id: JPLAW:326M50000800085
+law_no: 昭和二十六年運輸省令第八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000800085
+promulgation_date: '19510918'
+tags:
+- 自動車型式指定規則
+tier: 0
+title: 自動車型式指定規則
+law_id: 326M50000800085
+official_title: 自動車型式指定規則
+aliases:
+- 自動車型式指定規則
+---
+
+# 自動車型式指定規則
+
+## Metadata
+- Law ID: `326M50000800085`
+- Law No: 昭和二十六年運輸省令第八十五号
+- Promulgation Date: 19510918

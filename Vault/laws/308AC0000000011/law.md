@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 308AC0000000011
+id: JPLAW:308AC0000000011
+law_no: 昭和八年法律第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/308AC0000000011
+promulgation_date: '19330315'
+tags:
+- 船舶安全法
+tier: 0
+title: 船舶安全法
+law_id: 308AC0000000011
+official_title: 船舶安全法
+aliases:
+- 船舶安全法
+---
+
+# 船舶安全法
+
+## Metadata
+- Law ID: `308AC0000000011`
+- Law No: 昭和八年法律第十一号
+- Promulgation Date: 19330315

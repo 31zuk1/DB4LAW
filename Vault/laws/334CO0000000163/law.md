@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334CO0000000163
+id: JPLAW:334CO0000000163
+law_no: 昭和三十四年政令第百六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/334CO0000000163
+promulgation_date: '19590504'
+tags:
+- 最低賃金審議会令
+tier: 0
+title: 最低賃金審議会令
+law_id: 334CO0000000163
+official_title: 最低賃金審議会令
+aliases:
+- 最低賃金審議会令
+---
+
+# 最低賃金審議会令
+
+## Metadata
+- Law ID: `334CO0000000163`
+- Law No: 昭和三十四年政令第百六十三号
+- Promulgation Date: 19590504

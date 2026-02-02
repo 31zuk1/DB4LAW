@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50010000065
+id: JPLAW:327M50010000065
+law_no: 昭和二十七年農林省令第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50010000065
+promulgation_date: '19520808'
+tags:
+- 海面漁業生産統計調査規則
+tier: 0
+title: 海面漁業生産統計調査規則
+law_id: 327M50010000065
+official_title: 海面漁業生産統計調査規則
+aliases:
+- 海面漁業生産統計調査規則
+---
+
+# 海面漁業生産統計調査規則
+
+## Metadata
+- Law ID: `327M50010000065`
+- Law No: 昭和二十七年農林省令第六十五号
+- Promulgation Date: 19520808

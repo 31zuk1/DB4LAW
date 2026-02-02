@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342AC0000000061
+id: JPLAW:342AC0000000061
+law_no: 昭和四十二年法律第六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/342AC0000000061
+promulgation_date: '19670715'
+tags:
+- 船員災害防止活動の促進に関する法律
+tier: 0
+title: 船員災害防止活動の促進に関する法律
+law_id: 342AC0000000061
+official_title: 船員災害防止活動の促進に関する法律
+aliases:
+- 船員災害防止活動の促進に関する法律
+---
+
+# 船員災害防止活動の促進に関する法律
+
+## Metadata
+- Law ID: `342AC0000000061`
+- Law No: 昭和四十二年法律第六十一号
+- Promulgation Date: 19670715

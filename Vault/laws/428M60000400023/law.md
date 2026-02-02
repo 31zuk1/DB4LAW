@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428M60000400023
+id: JPLAW:428M60000400023
+law_no: 平成二十八年経済産業省令第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/428M60000400023
+promulgation_date: '20160318'
+tags:
+- みなし小売電気事業者特定小売供給約款料金算定規則
+tier: 0
+title: みなし小売電気事業者特定小売供給約款料金算定規則
+law_id: 428M60000400023
+official_title: みなし小売電気事業者特定小売供給約款料金算定規則
+aliases:
+- みなし小売電気事業者特定小売供給約款料金算定規則
+---
+
+# みなし小売電気事業者特定小売供給約款料金算定規則
+
+## Metadata
+- Law ID: `428M60000400023`
+- Law No: 平成二十八年経済産業省令第二十三号
+- Promulgation Date: 20160318

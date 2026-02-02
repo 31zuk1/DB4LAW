@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50010000033
+id: JPLAW:347M50010000033
+law_no: 昭和四十七年農林省令第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50010000033
+promulgation_date: '19720515'
+tags:
+- 沖縄県の区域における製造用原料品の減免税割当制度に関する省令
+tier: 0
+title: 沖縄県の区域における製造用原料品の減免税割当制度に関する省令
+law_id: 347M50010000033
+official_title: 沖縄県の区域における製造用原料品の減免税割当制度に関する省令
+aliases:
+- 沖縄県の区域における製造用原料品の減免税割当制度に関する省令
+---
+
+# 沖縄県の区域における製造用原料品の減免税割当制度に関する省令
+
+## Metadata
+- Law ID: `347M50010000033`
+- Law No: 昭和四十七年農林省令第三十三号
+- Promulgation Date: 19720515

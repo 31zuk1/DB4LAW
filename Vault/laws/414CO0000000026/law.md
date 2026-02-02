@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414CO0000000026
+id: JPLAW:414CO0000000026
+law_no: 平成十四年政令第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/414CO0000000026
+promulgation_date: '20020206'
+tags:
+- 自動車運転代行業の業務の適正化に関する法律施行令
+tier: 0
+title: 自動車運転代行業の業務の適正化に関する法律施行令
+law_id: 414CO0000000026
+official_title: 自動車運転代行業の業務の適正化に関する法律施行令
+aliases:
+- 自動車運転代行業の業務の適正化に関する法律施行令
+---
+
+# 自動車運転代行業の業務の適正化に関する法律施行令
+
+## Metadata
+- Law ID: `414CO0000000026`
+- Law No: 平成十四年政令第二十六号
+- Promulgation Date: 20020206

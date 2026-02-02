@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50004000005
+id: JPLAW:342M50004000005
+law_no: 昭和四十二年建設省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50004000005
+promulgation_date: '19670215'
+tags:
+- ダム使用権登録令施行規則
+tier: 0
+title: ダム使用権登録令施行規則
+law_id: 342M50004000005
+official_title: ダム使用権登録令施行規則
+aliases:
+- ダム使用権登録令施行規則
+---
+
+# ダム使用権登録令施行規則
+
+## Metadata
+- Law ID: `342M50004000005`
+- Law No: 昭和四十二年建設省令第五号
+- Promulgation Date: 19670215

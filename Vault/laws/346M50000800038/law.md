@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346M50000800038
+id: JPLAW:346M50000800038
+law_no: 昭和四十六年運輸省令第三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/346M50000800038
+promulgation_date: '19710623'
+tags:
+- 海洋汚染等及び海上災害の防止に関する法律施行規則
+tier: 0
+title: 海洋汚染等及び海上災害の防止に関する法律施行規則
+law_id: 346M50000800038
+official_title: 海洋汚染等及び海上災害の防止に関する法律施行規則
+aliases:
+- 海洋汚染等及び海上災害の防止に関する法律施行規則
+---
+
+# 海洋汚染等及び海上災害の防止に関する法律施行規則
+
+## Metadata
+- Law ID: `346M50000800038`
+- Law No: 昭和四十六年運輸省令第三十八号
+- Promulgation Date: 19710623

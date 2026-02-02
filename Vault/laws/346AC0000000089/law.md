@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346AC0000000089
+id: JPLAW:346AC0000000089
+law_no: 昭和四十六年法律第八十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/346AC0000000089
+promulgation_date: '19710531'
+tags:
+- 自動車重量税法
+tier: 0
+title: 自動車重量税法
+law_id: 346AC0000000089
+official_title: 自動車重量税法
+aliases:
+- 自動車重量税法
+---
+
+# 自動車重量税法
+
+## Metadata
+- Law ID: `346AC0000000089`
+- Law No: 昭和四十六年法律第八十九号
+- Promulgation Date: 19710531

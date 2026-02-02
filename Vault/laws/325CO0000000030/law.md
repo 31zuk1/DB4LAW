@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000030
+id: JPLAW:325CO0000000030
+law_no: 昭和二十五年政令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000030
+promulgation_date: '19500313'
+tags:
+- 漁業法施行令
+tier: 0
+title: 漁業法施行令
+law_id: 325CO0000000030
+official_title: 漁業法施行令
+aliases:
+- 漁業法施行令
+---
+
+# 漁業法施行令
+
+## Metadata
+- Law ID: `325CO0000000030`
+- Law No: 昭和二十五年政令第三十号
+- Promulgation Date: 19500313

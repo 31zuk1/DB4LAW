@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000100037
+id: JPLAW:329M50000100037
+law_no: 昭和二十九年厚生省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000100037
+promulgation_date: '19540701'
+tags:
+- 厚生年金保険法施行規則
+tier: 0
+title: 厚生年金保険法施行規則
+law_id: 329M50000100037
+official_title: 厚生年金保険法施行規則
+aliases:
+- 厚生年金保険法施行規則
+---
+
+# 厚生年金保険法施行規則
+
+## Metadata
+- Law ID: `329M50000100037`
+- Law No: 昭和二十九年厚生省令第三十七号
+- Promulgation Date: 19540701

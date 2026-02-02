@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501AC0100000033
+id: JPLAW:501AC0100000033
+law_no: 令和元年法律第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/501AC0100000033
+promulgation_date: '20190612'
+tags:
+- 死因究明等推進基本法
+tier: 0
+title: 死因究明等推進基本法
+law_id: 501AC0100000033
+official_title: 死因究明等推進基本法
+aliases:
+- 死因究明等推進基本法
+---
+
+# 死因究明等推進基本法
+
+## Metadata
+- Law ID: `501AC0100000033`
+- Law No: 令和元年法律第三十三号
+- Promulgation Date: 20190612

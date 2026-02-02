@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342CO0000000276
+id: JPLAW:342CO0000000276
+law_no: 昭和四十二年政令第二百七十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/342CO0000000276
+promulgation_date: '19670901'
+tags:
+- 石炭鉱業年金基金法施行令
+tier: 0
+title: 石炭鉱業年金基金法施行令
+law_id: 342CO0000000276
+official_title: 石炭鉱業年金基金法施行令
+aliases:
+- 石炭鉱業年金基金法施行令
+---
+
+# 石炭鉱業年金基金法施行令
+
+## Metadata
+- Law ID: `342CO0000000276`
+- Law No: 昭和四十二年政令第二百七十六号
+- Promulgation Date: 19670901

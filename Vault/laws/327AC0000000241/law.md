@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000241
+id: JPLAW:327AC0000000241
+law_no: 昭和二十七年法律第二百四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000241
+promulgation_date: '19520721'
+tags:
+- 公安調査庁設置法
+tier: 0
+title: 公安調査庁設置法
+law_id: 327AC0000000241
+official_title: 公安調査庁設置法
+aliases:
+- 公安調査庁設置法
+---
+
+# 公安調査庁設置法
+
+## Metadata
+- Law ID: `327AC0000000241`
+- Law No: 昭和二十七年法律第二百四十一号
+- Promulgation Date: 19520721

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50001000031
+id: JPLAW:347M50001000031
+law_no: 昭和四十七年郵政省令第三十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50001000031
+promulgation_date: '19721030'
+tags:
+- 郵便切手類模造等の許可に関する省令
+tier: 0
+title: 郵便切手類模造等の許可に関する省令
+law_id: 347M50001000031
+official_title: 郵便切手類模造等の許可に関する省令
+aliases:
+- 郵便切手類模造等の許可に関する省令
+---
+
+# 郵便切手類模造等の許可に関する省令
+
+## Metadata
+- Law ID: `347M50001000031`
+- Law No: 昭和四十七年郵政省令第三十一号
+- Promulgation Date: 19721030

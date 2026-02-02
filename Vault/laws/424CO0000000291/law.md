@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 424CO0000000291
+id: JPLAW:424CO0000000291
+law_no: 平成二十四年政令第二百九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/424CO0000000291
+promulgation_date: '20121212'
+tags:
+- 消費者教育推進会議令
+tier: 0
+title: 消費者教育推進会議令
+law_id: 424CO0000000291
+official_title: 消費者教育推進会議令
+aliases:
+- 消費者教育推進会議令
+---
+
+# 消費者教育推進会議令
+
+## Metadata
+- Law ID: `424CO0000000291`
+- Law No: 平成二十四年政令第二百九十一号
+- Promulgation Date: 20121212

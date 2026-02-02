@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000010046
+id: JPLAW:419M60000010046
+law_no: 平成十九年法務省令第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000010046
+promulgation_date: '20070814'
+tags:
+- 限定責任信託登記規則
+tier: 0
+title: 限定責任信託登記規則
+law_id: 419M60000010046
+official_title: 限定責任信託登記規則
+aliases:
+- 限定責任信託登記規則
+---
+
+# 限定責任信託登記規則
+
+## Metadata
+- Law ID: `419M60000010046`
+- Law No: 平成十九年法務省令第四十六号
+- Promulgation Date: 20070814

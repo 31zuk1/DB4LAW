@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322M40000040095
+id: JPLAW:322M40000040095
+law_no: 昭和二十二年大蔵省令第九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/322M40000040095
+promulgation_date: '19470927'
+tags:
+- 出納官吏事務規程
+tier: 0
+title: 出納官吏事務規程
+law_id: 322M40000040095
+official_title: 出納官吏事務規程
+aliases:
+- 出納官吏事務規程
+---
+
+# 出納官吏事務規程
+
+## Metadata
+- Law ID: `322M40000040095`
+- Law No: 昭和二十二年大蔵省令第九十五号
+- Promulgation Date: 19470927

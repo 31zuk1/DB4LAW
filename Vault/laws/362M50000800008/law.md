@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362M50000800008
+id: JPLAW:362M50000800008
+law_no: 昭和六十二年運輸省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/362M50000800008
+promulgation_date: '19870220'
+tags:
+- 鉄道事故等報告規則
+tier: 0
+title: 鉄道事故等報告規則
+law_id: 362M50000800008
+official_title: 鉄道事故等報告規則
+aliases:
+- 鉄道事故等報告規則
+---
+
+# 鉄道事故等報告規則
+
+## Metadata
+- Law ID: `362M50000800008`
+- Law No: 昭和六十二年運輸省令第八号
+- Promulgation Date: 19870220

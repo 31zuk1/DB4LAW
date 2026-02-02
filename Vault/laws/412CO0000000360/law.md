@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412CO0000000360
+id: JPLAW:412CO0000000360
+law_no: 平成十二年政令第三百六十号
+links:
+  egov: https://laws.e-gov.go.jp/law/412CO0000000360
+promulgation_date: '20000623'
+tags:
+- 財政融資資金法施行令
+tier: 0
+title: 財政融資資金法施行令
+law_id: 412CO0000000360
+official_title: 財政融資資金法施行令
+aliases:
+- 財政融資資金法施行令
+---
+
+# 財政融資資金法施行令
+
+## Metadata
+- Law ID: `412CO0000000360`
+- Law No: 平成十二年政令第三百六十号
+- Promulgation Date: 20000623

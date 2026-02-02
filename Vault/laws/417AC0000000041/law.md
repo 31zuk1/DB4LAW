@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417AC0000000041
+id: JPLAW:417AC0000000041
+law_no: 平成十七年法律第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/417AC0000000041
+promulgation_date: '20050506'
+tags:
+- 都市鉄道等利便増進法
+tier: 0
+title: 都市鉄道等利便増進法
+law_id: 417AC0000000041
+official_title: 都市鉄道等利便増進法
+aliases:
+- 都市鉄道等利便増進法
+---
+
+# 都市鉄道等利便増進法
+
+## Metadata
+- Law ID: `417AC0000000041`
+- Law No: 平成十七年法律第四十一号
+- Promulgation Date: 20050506

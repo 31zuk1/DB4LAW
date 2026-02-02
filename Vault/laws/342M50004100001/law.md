@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342M50004100001
+id: JPLAW:342M50004100001
+law_no: 昭和四十二年厚生省・建設省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/342M50004100001
+promulgation_date: '19671219'
+tags:
+- 下水の処理開始の公示事項等に関する省令
+tier: 0
+title: 下水の処理開始の公示事項等に関する省令
+law_id: 342M50004100001
+official_title: 下水の処理開始の公示事項等に関する省令
+aliases:
+- 下水の処理開始の公示事項等に関する省令
+---
+
+# 下水の処理開始の公示事項等に関する省令
+
+## Metadata
+- Law ID: `342M50004100001`
+- Law No: 昭和四十二年厚生省・建設省令第一号
+- Promulgation Date: 19671219

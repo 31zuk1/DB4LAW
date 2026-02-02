@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50000400111
+id: JPLAW:412M50000400111
+law_no: 平成十二年通商産業省令第百十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50000400111
+promulgation_date: '20000531'
+tags:
+- ガス工作物の技術上の基準を定める省令
+tier: 0
+title: ガス工作物の技術上の基準を定める省令
+law_id: 412M50000400111
+official_title: ガス工作物の技術上の基準を定める省令
+aliases:
+- ガス工作物の技術上の基準を定める省令
+---
+
+# ガス工作物の技術上の基準を定める省令
+
+## Metadata
+- Law ID: `412M50000400111`
+- Law No: 平成十二年通商産業省令第百十一号
+- Promulgation Date: 20000531

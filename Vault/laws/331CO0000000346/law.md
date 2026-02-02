@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331CO0000000346
+id: JPLAW:331CO0000000346
+law_no: 昭和三十一年政令第三百四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/331CO0000000346
+promulgation_date: '19561119'
+tags:
+- 消防団員等公務災害補償等責任共済等に関する法律施行令
+tier: 0
+title: 消防団員等公務災害補償等責任共済等に関する法律施行令
+law_id: 331CO0000000346
+official_title: 消防団員等公務災害補償等責任共済等に関する法律施行令
+aliases:
+- 消防団員等公務災害補償等責任共済等に関する法律施行令
+---
+
+# 消防団員等公務災害補償等責任共済等に関する法律施行令
+
+## Metadata
+- Law ID: `331CO0000000346`
+- Law No: 昭和三十一年政令第三百四十六号
+- Promulgation Date: 19561119

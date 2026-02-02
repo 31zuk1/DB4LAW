@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50002000037
+id: JPLAW:347M50002000037
+law_no: 昭和四十七年労働省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50002000037
+promulgation_date: '19720930'
+tags:
+- 鉛中毒予防規則
+tier: 0
+title: 鉛中毒予防規則
+law_id: 347M50002000037
+official_title: 鉛中毒予防規則
+aliases:
+- 鉛中毒予防規則
+---
+
+# 鉛中毒予防規則
+
+## Metadata
+- Law ID: `347M50002000037`
+- Law No: 昭和四十七年労働省令第三十七号
+- Promulgation Date: 19720930

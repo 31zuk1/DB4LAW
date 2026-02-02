@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 308AC0000000021
+id: JPLAW:308AC0000000021
+law_no: 昭和八年法律第二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/308AC0000000021
+promulgation_date: '19330329'
+tags:
+- 農村負債整理組合法
+tier: 0
+title: 農村負債整理組合法
+law_id: 308AC0000000021
+official_title: 農村負債整理組合法
+aliases:
+- 農村負債整理組合法
+---
+
+# 農村負債整理組合法
+
+## Metadata
+- Law ID: `308AC0000000021`
+- Law No: 昭和八年法律第二十一号
+- Promulgation Date: 19330329

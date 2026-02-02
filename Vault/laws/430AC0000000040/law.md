@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430AC0000000040
+id: JPLAW:430AC0000000040
+law_no: 平成三十年法律第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/430AC0000000040
+promulgation_date: '20180601'
+tags:
+- 海外社会資本事業への我が国事業者の参入の促進に関する法律
+tier: 0
+title: 海外社会資本事業への我が国事業者の参入の促進に関する法律
+law_id: 430AC0000000040
+official_title: 海外社会資本事業への我が国事業者の参入の促進に関する法律
+aliases:
+- 海外社会資本事業への我が国事業者の参入の促進に関する法律
+---
+
+# 海外社会資本事業への我が国事業者の参入の促進に関する法律
+
+## Metadata
+- Law ID: `430AC0000000040`
+- Law No: 平成三十年法律第四十号
+- Promulgation Date: 20180601

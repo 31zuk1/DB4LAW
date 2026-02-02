@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000002084
+id: JPLAW:420M60000002084
+law_no: 平成二十年内閣府令第八十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000002084
+promulgation_date: '20081225'
+tags:
+- 行政執行法人の役員の退職管理に関する内閣官房令
+tier: 0
+title: 行政執行法人の役員の退職管理に関する内閣官房令
+law_id: 420M60000002084
+official_title: 行政執行法人の役員の退職管理に関する内閣官房令
+aliases:
+- 行政執行法人の役員の退職管理に関する内閣官房令
+---
+
+# 行政執行法人の役員の退職管理に関する内閣官房令
+
+## Metadata
+- Law ID: `420M60000002084`
+- Law No: 平成二十年内閣府令第八十四号
+- Promulgation Date: 20081225

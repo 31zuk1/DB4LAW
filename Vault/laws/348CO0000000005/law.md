@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 348CO0000000005
+id: JPLAW:348CO0000000005
+law_no: 昭和四十八年政令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/348CO0000000005
+promulgation_date: '19730126'
+tags:
+- 海上交通安全法施行令
+tier: 0
+title: 海上交通安全法施行令
+law_id: 348CO0000000005
+official_title: 海上交通安全法施行令
+aliases:
+- 海上交通安全法施行令
+---
+
+# 海上交通安全法施行令
+
+## Metadata
+- Law ID: `348CO0000000005`
+- Law No: 昭和四十八年政令第五号
+- Promulgation Date: 19730126

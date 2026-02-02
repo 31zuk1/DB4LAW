@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352M50000002047
+id: JPLAW:352M50000002047
+law_no: 昭和五十二年総理府令第四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/352M50000002047
+promulgation_date: '19771201'
+tags:
+- 沖縄位置境界明確化審議会規則
+tier: 0
+title: 沖縄位置境界明確化審議会規則
+law_id: 352M50000002047
+official_title: 沖縄位置境界明確化審議会規則
+aliases:
+- 沖縄位置境界明確化審議会規則
+---
+
+# 沖縄位置境界明確化審議会規則
+
+## Metadata
+- Law ID: `352M50000002047`
+- Law No: 昭和五十二年総理府令第四十七号
+- Promulgation Date: 19771201

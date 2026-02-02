@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000416
+id: JPLAW:407CO0000000416
+law_no: 平成七年政令第四百十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000416
+promulgation_date: '19951215'
+tags:
+- 高齢社会対策会議令
+tier: 0
+title: 高齢社会対策会議令
+law_id: 407CO0000000416
+official_title: 高齢社会対策会議令
+aliases:
+- 高齢社会対策会議令
+---
+
+# 高齢社会対策会議令
+
+## Metadata
+- Law ID: `407CO0000000416`
+- Law No: 平成七年政令第四百十六号
+- Promulgation Date: 19951215

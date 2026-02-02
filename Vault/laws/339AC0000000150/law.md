@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 339AC0000000150
+id: JPLAW:339AC0000000150
+law_no: 昭和三十九年法律第百五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/339AC0000000150
+promulgation_date: '19640704'
+tags:
+- 日本電気計器検定所法
+tier: 0
+title: 日本電気計器検定所法
+law_id: 339AC0000000150
+official_title: 日本電気計器検定所法
+aliases:
+- 日本電気計器検定所法
+---
+
+# 日本電気計器検定所法
+
+## Metadata
+- Law ID: `339AC0000000150`
+- Law No: 昭和三十九年法律第百五十号
+- Promulgation Date: 19640704

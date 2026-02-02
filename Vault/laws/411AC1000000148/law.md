@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC1000000148
+id: JPLAW:411AC1000000148
+law_no: 平成十一年法律第百四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC1000000148
+promulgation_date: '19991207'
+tags:
+- 特定破産法人の破産財団に属すべき財産の回復に関する特別措置法
+tier: 0
+title: 特定破産法人の破産財団に属すべき財産の回復に関する特別措置法
+law_id: 411AC1000000148
+official_title: 特定破産法人の破産財団に属すべき財産の回復に関する特別措置法
+aliases:
+- 特定破産法人の破産財団に属すべき財産の回復に関する特別措置法
+---
+
+# 特定破産法人の破産財団に属すべき財産の回復に関する特別措置法
+
+## Metadata
+- Law ID: `411AC1000000148`
+- Law No: 平成十一年法律第百四十八号
+- Promulgation Date: 19991207

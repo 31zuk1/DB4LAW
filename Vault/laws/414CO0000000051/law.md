@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414CO0000000051
+id: JPLAW:414CO0000000051
+law_no: 平成十四年政令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/414CO0000000051
+promulgation_date: '20020320'
+tags:
+- 担保付社債信託法施行令
+tier: 0
+title: 担保付社債信託法施行令
+law_id: 414CO0000000051
+official_title: 担保付社債信託法施行令
+aliases:
+- 担保付社債信託法施行令
+---
+
+# 担保付社債信託法施行令
+
+## Metadata
+- Law ID: `414CO0000000051`
+- Law No: 平成十四年政令第五十一号
+- Promulgation Date: 20020320

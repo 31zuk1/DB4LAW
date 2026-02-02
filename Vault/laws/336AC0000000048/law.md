@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0000000048
+id: JPLAW:336AC0000000048
+law_no: 昭和三十六年法律第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0000000048
+promulgation_date: '19610331'
+tags:
+- 農業協同組合合併助成法
+tier: 0
+title: 農業協同組合合併助成法
+law_id: 336AC0000000048
+official_title: 農業協同組合合併助成法
+aliases:
+- 農業協同組合合併助成法
+---
+
+# 農業協同組合合併助成法
+
+## Metadata
+- Law ID: `336AC0000000048`
+- Law No: 昭和三十六年法律第四十八号
+- Promulgation Date: 19610331

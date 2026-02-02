@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418CO0000000344
+id: JPLAW:418CO0000000344
+law_no: 平成十八年政令第三百四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/418CO0000000344
+promulgation_date: '20061027'
+tags:
+- 自殺総合対策会議令
+tier: 0
+title: 自殺総合対策会議令
+law_id: 418CO0000000344
+official_title: 自殺総合対策会議令
+aliases:
+- 自殺総合対策会議令
+---
+
+# 自殺総合対策会議令
+
+## Metadata
+- Law ID: `418CO0000000344`
+- Law No: 平成十八年政令第三百四十四号
+- Promulgation Date: 20061027

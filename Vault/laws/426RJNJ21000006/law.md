@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426RJNJ21000006
+id: JPLAW:426RJNJ21000006
+law_no: 平成二十六年人事院規則二一―〇―六
+links:
+  egov: https://laws.e-gov.go.jp/law/426RJNJ21000006
+promulgation_date: '20140529'
+tags:
+- 人事院規則二一―〇（国と民間企業との間の人事交流）
+tier: 0
+title: 人事院規則二一―〇（国と民間企業との間の人事交流）
+law_id: 426RJNJ21000006
+official_title: 人事院規則二一―〇（国と民間企業との間の人事交流）
+aliases:
+- 人事院規則二一―〇（国と民間企業との間の人事交流）
+---
+
+# 人事院規則二一―〇（国と民間企業との間の人事交流）
+
+## Metadata
+- Law ID: `426RJNJ21000006`
+- Law No: 平成二十六年人事院規則二一―〇―六
+- Promulgation Date: 20140529

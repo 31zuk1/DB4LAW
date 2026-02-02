@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413AC0000000050
+id: JPLAW:413AC0000000050
+law_no: 平成十三年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/413AC0000000050
+promulgation_date: '20010615'
+tags:
+- 確定給付企業年金法
+tier: 0
+title: 確定給付企業年金法
+law_id: 413AC0000000050
+official_title: 確定給付企業年金法
+aliases:
+- 確定給付企業年金法
+---
+
+# 確定給付企業年金法
+
+## Metadata
+- Law ID: `413AC0000000050`
+- Law No: 平成十三年法律第五十号
+- Promulgation Date: 20010615

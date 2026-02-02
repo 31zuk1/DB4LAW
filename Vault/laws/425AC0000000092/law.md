@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425AC0000000092
+id: JPLAW:425AC0000000092
+law_no: 平成二十五年法律第九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/425AC0000000092
+promulgation_date: '20131204'
+tags:
+- 交通政策基本法
+tier: 0
+title: 交通政策基本法
+law_id: 425AC0000000092
+official_title: 交通政策基本法
+aliases:
+- 交通政策基本法
+---
+
+# 交通政策基本法
+
+## Metadata
+- Law ID: `425AC0000000092`
+- Law No: 平成二十五年法律第九十二号
+- Promulgation Date: 20131204

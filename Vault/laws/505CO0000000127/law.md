@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505CO0000000127
+id: JPLAW:505CO0000000127
+law_no: 令和五年政令第百二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/505CO0000000127
+promulgation_date: '20230330'
+tags:
+- こども家庭審議会令
+tier: 0
+title: こども家庭審議会令
+law_id: 505CO0000000127
+official_title: こども家庭審議会令
+aliases:
+- こども家庭審議会令
+---
+
+# こども家庭審議会令
+
+## Metadata
+- Law ID: `505CO0000000127`
+- Law No: 令和五年政令第百二十七号
+- Promulgation Date: 20230330

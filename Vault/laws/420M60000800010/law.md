@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000800010
+id: JPLAW:420M60000800010
+law_no: 平成二十年国土交通省令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000800010
+promulgation_date: '20080324'
+tags:
+- 特定住宅瑕疵担保責任の履行の確保等に関する法律施行規則
+tier: 0
+title: 特定住宅瑕疵担保責任の履行の確保等に関する法律施行規則
+law_id: 420M60000800010
+official_title: 特定住宅瑕疵担保責任の履行の確保等に関する法律施行規則
+aliases:
+- 特定住宅瑕疵担保責任の履行の確保等に関する法律施行規則
+---
+
+# 特定住宅瑕疵担保責任の履行の確保等に関する法律施行規則
+
+## Metadata
+- Law ID: `420M60000800010`
+- Law No: 平成二十年国土交通省令第十号
+- Promulgation Date: 20080324

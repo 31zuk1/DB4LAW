@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC1000000233
+id: JPLAW:325AC1000000233
+law_no: 昭和二十五年法律第二百三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC1000000233
+promulgation_date: '19500801'
+tags:
+- 熱海国際観光温泉文化都市建設法
+tier: 0
+title: 熱海国際観光温泉文化都市建設法
+law_id: 325AC1000000233
+official_title: 熱海国際観光温泉文化都市建設法
+aliases:
+- 熱海国際観光温泉文化都市建設法
+---
+
+# 熱海国際観光温泉文化都市建設法
+
+## Metadata
+- Law ID: `325AC1000000233`
+- Law No: 昭和二十五年法律第二百三十三号
+- Promulgation Date: 19500801

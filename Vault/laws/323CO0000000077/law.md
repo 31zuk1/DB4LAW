@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323CO0000000077
+id: JPLAW:323CO0000000077
+law_no: 昭和二十三年政令第七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/323CO0000000077
+promulgation_date: '19480402'
+tags:
+- 地域保健法施行令
+tier: 0
+title: 地域保健法施行令
+law_id: 323CO0000000077
+official_title: 地域保健法施行令
+aliases:
+- 地域保健法施行令
+---
+
+# 地域保健法施行令
+
+## Metadata
+- Law ID: `323CO0000000077`
+- Law No: 昭和二十三年政令第七十七号
+- Promulgation Date: 19480402

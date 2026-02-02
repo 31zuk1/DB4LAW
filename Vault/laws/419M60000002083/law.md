@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60000002083
+id: JPLAW:419M60000002083
+law_no: 平成十九年内閣府令第八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60000002083
+promulgation_date: '20071207'
+tags:
+- 特定社員登録規則
+tier: 0
+title: 特定社員登録規則
+law_id: 419M60000002083
+official_title: 特定社員登録規則
+aliases:
+- 特定社員登録規則
+---
+
+# 特定社員登録規則
+
+## Metadata
+- Law ID: `419M60000002083`
+- Law No: 平成十九年内閣府令第八十三号
+- Promulgation Date: 20071207

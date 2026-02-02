@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 504M60000400015
+id: JPLAW:504M60000400015
+law_no: 令和四年経済産業省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/504M60000400015
+promulgation_date: '20220315'
+tags:
+- 輸出貿易管理令別表第二の三の規定に基づき貨物を定める省令
+tier: 0
+title: 輸出貿易管理令別表第二の三の規定に基づき貨物を定める省令
+law_id: 504M60000400015
+official_title: 輸出貿易管理令別表第二の三の規定に基づき貨物を定める省令
+aliases:
+- 輸出貿易管理令別表第二の三の規定に基づき貨物を定める省令
+---
+
+# 輸出貿易管理令別表第二の三の規定に基づき貨物を定める省令
+
+## Metadata
+- Law ID: `504M60000400015`
+- Law No: 令和四年経済産業省令第十五号
+- Promulgation Date: 20220315

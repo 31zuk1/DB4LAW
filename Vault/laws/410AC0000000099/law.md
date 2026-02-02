@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC0000000099
+id: JPLAW:410AC0000000099
+law_no: 平成十年法律第九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC0000000099
+promulgation_date: '19980610'
+tags:
+- 美術品の美術館における公開の促進に関する法律
+tier: 0
+title: 美術品の美術館における公開の促進に関する法律
+law_id: 410AC0000000099
+official_title: 美術品の美術館における公開の促進に関する法律
+aliases:
+- 美術品の美術館における公開の促進に関する法律
+---
+
+# 美術品の美術館における公開の促進に関する法律
+
+## Metadata
+- Law ID: `410AC0000000099`
+- Law No: 平成十年法律第九十九号
+- Promulgation Date: 19980610

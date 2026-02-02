@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410CO0000000296
+id: JPLAW:410CO0000000296
+law_no: 平成十年政令第二百九十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/410CO0000000296
+promulgation_date: '19980828'
+tags:
+- 動産・債権譲渡登記令
+tier: 0
+title: 動産・債権譲渡登記令
+law_id: 410CO0000000296
+official_title: 動産・債権譲渡登記令
+aliases:
+- 動産・債権譲渡登記令
+---
+
+# 動産・債権譲渡登記令
+
+## Metadata
+- Law ID: `410CO0000000296`
+- Law No: 平成十年政令第二百九十六号
+- Promulgation Date: 19980828

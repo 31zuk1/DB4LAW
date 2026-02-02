@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414R00000008001
+id: JPLAW:414R00000008001
+law_no: 平成十四年司法試験管理委員会規則第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/414R00000008001
+promulgation_date: '20020422'
+tags:
+- 司法試験管理委員会の会議等に関する規則
+tier: 0
+title: 司法試験管理委員会の会議等に関する規則
+law_id: 414R00000008001
+official_title: 司法試験管理委員会の会議等に関する規則
+aliases:
+- 司法試験管理委員会の会議等に関する規則
+---
+
+# 司法試験管理委員会の会議等に関する規則
+
+## Metadata
+- Law ID: `414R00000008001`
+- Law No: 平成十四年司法試験管理委員会規則第一号
+- Promulgation Date: 20020422

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 305M10001800000
+id: JPLAW:305M10001800000
+law_no: 昭和五年逓信省・鉄道省令
+links:
+  egov: https://laws.e-gov.go.jp/law/305M10001800000
+promulgation_date: '19300326'
+tags:
+- 鉄道船舶通シ運送規則
+tier: 0
+title: 鉄道船舶通シ運送規則
+law_id: 305M10001800000
+official_title: 鉄道船舶通シ運送規則
+aliases:
+- 鉄道船舶通シ運送規則
+---
+
+# 鉄道船舶通シ運送規則
+
+## Metadata
+- Law ID: `305M10001800000`
+- Law No: 昭和五年逓信省・鉄道省令
+- Promulgation Date: 19300326

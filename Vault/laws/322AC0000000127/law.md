@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000127
+id: JPLAW:322AC0000000127
+law_no: 昭和二十二年法律第百二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000127
+promulgation_date: '19471029'
+tags:
+- 裁判官分限法
+tier: 0
+title: 裁判官分限法
+law_id: 322AC0000000127
+official_title: 裁判官分限法
+aliases:
+- 裁判官分限法
+---
+
+# 裁判官分限法
+
+## Metadata
+- Law ID: `322AC0000000127`
+- Law No: 昭和二十二年法律第百二十七号
+- Promulgation Date: 19471029

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000113
+id: JPLAW:415AC0000000113
+law_no: 平成十五年法律第百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000113
+promulgation_date: '20030716'
+tags:
+- 独立行政法人国立高等専門学校機構法
+tier: 0
+title: 独立行政法人国立高等専門学校機構法
+law_id: 415AC0000000113
+official_title: 独立行政法人国立高等専門学校機構法
+aliases:
+- 独立行政法人国立高等専門学校機構法
+---
+
+# 独立行政法人国立高等専門学校機構法
+
+## Metadata
+- Law ID: `415AC0000000113`
+- Law No: 平成十五年法律第百十三号
+- Promulgation Date: 20030716

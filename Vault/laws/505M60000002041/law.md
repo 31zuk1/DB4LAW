@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505M60000002041
+id: JPLAW:505M60000002041
+law_no: 令和五年内閣府令第四十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/505M60000002041
+promulgation_date: '20230401'
+tags:
+- こども家庭庁の所掌に属する補助金等交付規則
+tier: 0
+title: こども家庭庁の所掌に属する補助金等交付規則
+law_id: 505M60000002041
+official_title: こども家庭庁の所掌に属する補助金等交付規則
+aliases:
+- こども家庭庁の所掌に属する補助金等交付規則
+---
+
+# こども家庭庁の所掌に属する補助金等交付規則
+
+## Metadata
+- Law ID: `505M60000002041`
+- Law No: 令和五年内閣府令第四十一号
+- Promulgation Date: 20230401

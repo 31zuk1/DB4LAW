@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336AC0000000150
+id: JPLAW:336AC0000000150
+law_no: 昭和三十六年法律第百五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/336AC0000000150
+promulgation_date: '19610617'
+tags:
+- 公共用地の取得に関する特別措置法
+tier: 0
+title: 公共用地の取得に関する特別措置法
+law_id: 336AC0000000150
+official_title: 公共用地の取得に関する特別措置法
+aliases:
+- 公共用地の取得に関する特別措置法
+---
+
+# 公共用地の取得に関する特別措置法
+
+## Metadata
+- Law ID: `336AC0000000150`
+- Law No: 昭和三十六年法律第百五十号
+- Promulgation Date: 19610617

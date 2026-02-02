@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419CO0000000124
+id: JPLAW:419CO0000000124
+law_no: 平成十九年政令第百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/419CO0000000124
+promulgation_date: '20070331'
+tags:
+- 特別会計に関する法律施行令
+tier: 0
+title: 特別会計に関する法律施行令
+law_id: 419CO0000000124
+official_title: 特別会計に関する法律施行令
+aliases:
+- 特別会計に関する法律施行令
+---
+
+# 特別会計に関する法律施行令
+
+## Metadata
+- Law ID: `419CO0000000124`
+- Law No: 平成十九年政令第百二十四号
+- Promulgation Date: 20070331

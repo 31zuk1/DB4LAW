@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503AC0000000057
+id: JPLAW:503AC0000000057
+law_no: 令和三年法律第五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/503AC0000000057
+promulgation_date: '20210604'
+tags:
+- 教育職員等による児童生徒性暴力等の防止等に関する法律
+tier: 0
+title: 教育職員等による児童生徒性暴力等の防止等に関する法律
+law_id: 503AC0000000057
+official_title: 教育職員等による児童生徒性暴力等の防止等に関する法律
+aliases:
+- 教育職員等による児童生徒性暴力等の防止等に関する法律
+---
+
+# 教育職員等による児童生徒性暴力等の防止等に関する法律
+
+## Metadata
+- Law ID: `503AC0000000057`
+- Law No: 令和三年法律第五十七号
+- Promulgation Date: 20210604

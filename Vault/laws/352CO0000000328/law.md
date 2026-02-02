@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352CO0000000328
+id: JPLAW:352CO0000000328
+law_no: 昭和五十二年政令第三百二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/352CO0000000328
+promulgation_date: '19771223'
+tags:
+- 水産加工業施設改良資金融通臨時措置法施行令
+tier: 0
+title: 水産加工業施設改良資金融通臨時措置法施行令
+law_id: 352CO0000000328
+official_title: 水産加工業施設改良資金融通臨時措置法施行令
+aliases:
+- 水産加工業施設改良資金融通臨時措置法施行令
+---
+
+# 水産加工業施設改良資金融通臨時措置法施行令
+
+## Metadata
+- Law ID: `352CO0000000328`
+- Law No: 昭和五十二年政令第三百二十八号
+- Promulgation Date: 19771223

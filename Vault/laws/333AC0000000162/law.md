@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC0000000162
+id: JPLAW:333AC0000000162
+law_no: 昭和三十三年法律第百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC0000000162
+promulgation_date: '19580521'
+tags:
+- 放射線障害防止の技術的基準に関する法律
+tier: 0
+title: 放射線障害防止の技術的基準に関する法律
+law_id: 333AC0000000162
+official_title: 放射線障害防止の技術的基準に関する法律
+aliases:
+- 放射線障害防止の技術的基準に関する法律
+---
+
+# 放射線障害防止の技術的基準に関する法律
+
+## Metadata
+- Law ID: `333AC0000000162`
+- Law No: 昭和三十三年法律第百六十二号
+- Promulgation Date: 19580521

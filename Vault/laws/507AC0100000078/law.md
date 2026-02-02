@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507AC0100000078
+id: JPLAW:507AC0100000078
+law_no: 令和七年法律第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/507AC0100000078
+promulgation_date: '20250625'
+tags:
+- 手話に関する施策の推進に関する法律
+tier: 0
+title: 手話に関する施策の推進に関する法律
+law_id: 507AC0100000078
+official_title: 手話に関する施策の推進に関する法律
+aliases:
+- 手話に関する施策の推進に関する法律
+---
+
+# 手話に関する施策の推進に関する法律
+
+## Metadata
+- Law ID: `507AC0100000078`
+- Law No: 令和七年法律第七十八号
+- Promulgation Date: 20250625

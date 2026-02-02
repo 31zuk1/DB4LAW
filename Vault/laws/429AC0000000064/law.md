@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 429AC0000000064
+id: JPLAW:429AC0000000064
+law_no: 平成二十九年法律第六十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/429AC0000000064
+promulgation_date: '20170616'
+tags:
+- 電子委任状の普及の促進に関する法律
+tier: 0
+title: 電子委任状の普及の促進に関する法律
+law_id: 429AC0000000064
+official_title: 電子委任状の普及の促進に関する法律
+aliases:
+- 電子委任状の普及の促進に関する法律
+---
+
+# 電子委任状の普及の促進に関する法律
+
+## Metadata
+- Law ID: `429AC0000000064`
+- Law No: 平成二十九年法律第六十四号
+- Promulgation Date: 20170616

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345M50000002029
+id: JPLAW:345M50000002029
+law_no: 昭和四十五年総理府令第二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/345M50000002029
+promulgation_date: '19700814'
+tags:
+- 昭和四十五年国富調査のための地方公共団体資産調査規則
+tier: 0
+title: 昭和四十五年国富調査のための地方公共団体資産調査規則
+law_id: 345M50000002029
+official_title: 昭和四十五年国富調査のための地方公共団体資産調査規則
+aliases:
+- 昭和四十五年国富調査のための地方公共団体資産調査規則
+---
+
+# 昭和四十五年国富調査のための地方公共団体資産調査規則
+
+## Metadata
+- Law ID: `345M50000002029`
+- Law No: 昭和四十五年総理府令第二十九号
+- Promulgation Date: 19700814

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414M60400000016
+id: JPLAW:414M60400000016
+law_no: 平成十四年国家公安委員会規則第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/414M60400000016
+promulgation_date: '20020517'
+tags:
+- 警察官等特殊銃使用及び取扱い規範
+tier: 0
+title: 警察官等特殊銃使用及び取扱い規範
+law_id: 414M60400000016
+official_title: 警察官等特殊銃使用及び取扱い規範
+aliases:
+- 警察官等特殊銃使用及び取扱い規範
+---
+
+# 警察官等特殊銃使用及び取扱い規範
+
+## Metadata
+- Law ID: `414M60400000016`
+- Law No: 平成十四年国家公安委員会規則第十六号
+- Promulgation Date: 20020517

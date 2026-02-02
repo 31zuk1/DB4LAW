@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 321M30000040092
+id: JPLAW:321M30000040092
+law_no: 昭和二十一年大蔵省令第九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/321M30000040092
+promulgation_date: '19460815'
+tags:
+- 金融機関経理応急措置法施行規則
+tier: 0
+title: 金融機関経理応急措置法施行規則
+law_id: 321M30000040092
+official_title: 金融機関経理応急措置法施行規則
+aliases:
+- 金融機関経理応急措置法施行規則
+---
+
+# 金融機関経理応急措置法施行規則
+
+## Metadata
+- Law ID: `321M30000040092`
+- Law No: 昭和二十一年大蔵省令第九十二号
+- Promulgation Date: 19460815

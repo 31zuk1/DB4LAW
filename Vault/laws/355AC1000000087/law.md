@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 355AC1000000087
+id: JPLAW:355AC1000000087
+law_no: 昭和五十五年法律第八十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/355AC1000000087
+promulgation_date: '19801125'
+tags:
+- 自転車の安全利用の促進及び自転車等の駐車対策の総合的推進に関する法律
+tier: 0
+title: 自転車の安全利用の促進及び自転車等の駐車対策の総合的推進に関する法律
+law_id: 355AC1000000087
+official_title: 自転車の安全利用の促進及び自転車等の駐車対策の総合的推進に関する法律
+aliases:
+- 自転車の安全利用の促進及び自転車等の駐車対策の総合的推進に関する法律
+---
+
+# 自転車の安全利用の促進及び自転車等の駐車対策の総合的推進に関する法律
+
+## Metadata
+- Law ID: `355AC1000000087`
+- Law No: 昭和五十五年法律第八十七号
+- Promulgation Date: 19801125

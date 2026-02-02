@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414CO0000000199
+id: JPLAW:414CO0000000199
+law_no: 平成十四年政令第百九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/414CO0000000199
+promulgation_date: '20020605'
+tags:
+- 独立行政法人等の保有する情報の公開に関する法律施行令
+tier: 0
+title: 独立行政法人等の保有する情報の公開に関する法律施行令
+law_id: 414CO0000000199
+official_title: 独立行政法人等の保有する情報の公開に関する法律施行令
+aliases:
+- 独立行政法人等の保有する情報の公開に関する法律施行令
+---
+
+# 独立行政法人等の保有する情報の公開に関する法律施行令
+
+## Metadata
+- Law ID: `414CO0000000199`
+- Law No: 平成十四年政令第百九十九号
+- Promulgation Date: 20020605

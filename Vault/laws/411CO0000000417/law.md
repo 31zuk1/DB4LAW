@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411CO0000000417
+id: JPLAW:411CO0000000417
+law_no: 平成十一年政令第四百十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/411CO0000000417
+promulgation_date: '19991222'
+tags:
+- 家畜保健衛生所法施行令
+tier: 0
+title: 家畜保健衛生所法施行令
+law_id: 411CO0000000417
+official_title: 家畜保健衛生所法施行令
+aliases:
+- 家畜保健衛生所法施行令
+---
+
+# 家畜保健衛生所法施行令
+
+## Metadata
+- Law ID: `411CO0000000417`
+- Law No: 平成十一年政令第四百十七号
+- Promulgation Date: 19991222

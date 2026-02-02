@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 215AC0000000062
+id: JPLAW:215AC0000000062
+law_no: 大正十五年法律第六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/215AC0000000062
+promulgation_date: '19260424'
+tags:
+- 民事訴訟法中改正法律施行法
+tier: 0
+title: 民事訴訟法中改正法律施行法
+law_id: 215AC0000000062
+official_title: 民事訴訟法中改正法律施行法
+aliases:
+- 民事訴訟法中改正法律施行法
+---
+
+# 民事訴訟法中改正法律施行法
+
+## Metadata
+- Law ID: `215AC0000000062`
+- Law No: 大正十五年法律第六十二号
+- Promulgation Date: 19260424

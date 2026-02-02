@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 133AC0000000065
+id: JPLAW:133AC0000000065
+law_no: 明治三十三年法律第六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/133AC0000000065
+promulgation_date: '19000316'
+tags:
+- 鉄道営業法
+tier: 0
+title: 鉄道営業法
+law_id: 133AC0000000065
+official_title: 鉄道営業法
+aliases:
+- 鉄道営業法
+---
+
+# 鉄道営業法
+
+## Metadata
+- Law ID: `133AC0000000065`
+- Law No: 明治三十三年法律第六十五号
+- Promulgation Date: 19000316

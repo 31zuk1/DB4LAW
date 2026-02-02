@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406AC0000000005
+id: JPLAW:406AC0000000005
+law_no: 平成六年法律第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/406AC0000000005
+promulgation_date: '19940204'
+tags:
+- 政党助成法
+tier: 0
+title: 政党助成法
+law_id: 406AC0000000005
+official_title: 政党助成法
+aliases:
+- 政党助成法
+---
+
+# 政党助成法
+
+## Metadata
+- Law ID: `406AC0000000005`
+- Law No: 平成六年法律第五号
+- Promulgation Date: 19940204

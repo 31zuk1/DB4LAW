@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000236
+id: JPLAW:328AC0000000236
+law_no: 昭和二十八年法律第二百三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000236
+promulgation_date: '19530818'
+tags:
+- 国の援助等を必要とする帰国者に関する領事官の職務等に関する法律
+tier: 0
+title: 国の援助等を必要とする帰国者に関する領事官の職務等に関する法律
+law_id: 328AC0000000236
+official_title: 国の援助等を必要とする帰国者に関する領事官の職務等に関する法律
+aliases:
+- 国の援助等を必要とする帰国者に関する領事官の職務等に関する法律
+---
+
+# 国の援助等を必要とする帰国者に関する領事官の職務等に関する法律
+
+## Metadata
+- Law ID: `328AC0000000236`
+- Law No: 昭和二十八年法律第二百三十六号
+- Promulgation Date: 19530818

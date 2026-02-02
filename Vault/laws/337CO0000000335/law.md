@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337CO0000000335
+id: JPLAW:337CO0000000335
+law_no: 昭和三十七年政令第三百三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/337CO0000000335
+promulgation_date: '19620824'
+tags:
+- 建築物用地下水の採取の規制に関する法律施行令
+tier: 0
+title: 建築物用地下水の採取の規制に関する法律施行令
+law_id: 337CO0000000335
+official_title: 建築物用地下水の採取の規制に関する法律施行令
+aliases:
+- 建築物用地下水の採取の規制に関する法律施行令
+---
+
+# 建築物用地下水の採取の規制に関する法律施行令
+
+## Metadata
+- Law ID: `337CO0000000335`
+- Law No: 昭和三十七年政令第三百三十五号
+- Promulgation Date: 19620824

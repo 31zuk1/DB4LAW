@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000034
+id: JPLAW:322AC0000000034
+law_no: 昭和二十二年法律第三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000034
+promulgation_date: '19470331'
+tags:
+- 財政法
+tier: 0
+title: 財政法
+law_id: 322AC0000000034
+official_title: 財政法
+aliases:
+- 財政法
+---
+
+# 財政法
+
+## Metadata
+- Law ID: `322AC0000000034`
+- Law No: 昭和二十二年法律第三十四号
+- Promulgation Date: 19470331

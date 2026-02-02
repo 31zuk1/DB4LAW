@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000199
+id: JPLAW:411AC0000000199
+law_no: 平成十一年法律第百九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000199
+promulgation_date: '19991222'
+tags:
+- 国立研究開発法人水産研究・教育機構法
+tier: 0
+title: 国立研究開発法人水産研究・教育機構法
+law_id: 411AC0000000199
+official_title: 国立研究開発法人水産研究・教育機構法
+aliases:
+- 国立研究開発法人水産研究・教育機構法
+---
+
+# 国立研究開発法人水産研究・教育機構法
+
+## Metadata
+- Law ID: `411AC0000000199`
+- Law No: 平成十一年法律第百九十九号
+- Promulgation Date: 19991222

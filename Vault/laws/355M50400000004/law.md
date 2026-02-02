@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 355M50400000004
+id: JPLAW:355M50400000004
+law_no: 昭和五十五年国家公安委員会規則第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/355M50400000004
+promulgation_date: '19800920'
+tags:
+- 国際捜査共助等に関する法律に関する書式例
+tier: 0
+title: 国際捜査共助等に関する法律に関する書式例
+law_id: 355M50400000004
+official_title: 国際捜査共助等に関する法律に関する書式例
+aliases:
+- 国際捜査共助等に関する法律に関する書式例
+---
+
+# 国際捜査共助等に関する法律に関する書式例
+
+## Metadata
+- Law ID: `355M50400000004`
+- Law No: 昭和五十五年国家公安委員会規則第四号
+- Promulgation Date: 19800920

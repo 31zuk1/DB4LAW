@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342AC0000000023
+id: JPLAW:342AC0000000023
+law_no: 昭和四十二年法律第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/342AC0000000023
+promulgation_date: '19670531'
+tags:
+- 印紙税法
+tier: 0
+title: 印紙税法
+law_id: 342AC0000000023
+official_title: 印紙税法
+aliases:
+- 印紙税法
+---
+
+# 印紙税法
+
+## Metadata
+- Law ID: `342AC0000000023`
+- Law No: 昭和四十二年法律第二十三号
+- Promulgation Date: 19670531

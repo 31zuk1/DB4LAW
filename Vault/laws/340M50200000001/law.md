@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50200000001
+id: JPLAW:340M50200000001
+law_no: 昭和四十年公正取引委員会規則第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50200000001
+promulgation_date: '19650415'
+tags:
+- 公正取引委員会事務総局組織規程
+tier: 0
+title: 公正取引委員会事務総局組織規程
+law_id: 340M50200000001
+official_title: 公正取引委員会事務総局組織規程
+aliases:
+- 公正取引委員会事務総局組織規程
+---
+
+# 公正取引委員会事務総局組織規程
+
+## Metadata
+- Law ID: `340M50200000001`
+- Law No: 昭和四十年公正取引委員会規則第一号
+- Promulgation Date: 19650415

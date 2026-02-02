@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503CO0000000006
+id: JPLAW:503CO0000000006
+law_no: 令和三年政令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/503CO0000000006
+promulgation_date: '20210122'
+tags:
+- 福島復興再生特別措置法による不動産登記に関する政令
+tier: 0
+title: 福島復興再生特別措置法による不動産登記に関する政令
+law_id: 503CO0000000006
+official_title: 福島復興再生特別措置法による不動産登記に関する政令
+aliases:
+- 福島復興再生特別措置法による不動産登記に関する政令
+---
+
+# 福島復興再生特別措置法による不動産登記に関する政令
+
+## Metadata
+- Law ID: `503CO0000000006`
+- Law No: 令和三年政令第六号
+- Promulgation Date: 20210122

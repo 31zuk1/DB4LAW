@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000800008
+id: JPLAW:327M50000800008
+law_no: 昭和二十七年運輸省令第八号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000800008
+promulgation_date: '19520216'
+tags:
+- 運輸審議会一般規則
+tier: 0
+title: 運輸審議会一般規則
+law_id: 327M50000800008
+official_title: 運輸審議会一般規則
+aliases:
+- 運輸審議会一般規則
+---
+
+# 運輸審議会一般規則
+
+## Metadata
+- Law ID: `327M50000800008`
+- Law No: 昭和二十七年運輸省令第八号
+- Promulgation Date: 19520216

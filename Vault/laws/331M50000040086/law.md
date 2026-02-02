@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331M50000040086
+id: JPLAW:331M50000040086
+law_no: 昭和三十一年大蔵省令第八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/331M50000040086
+promulgation_date: '19561229'
+tags:
+- 債権管理事務取扱規則
+tier: 0
+title: 債権管理事務取扱規則
+law_id: 331M50000040086
+official_title: 債権管理事務取扱規則
+aliases:
+- 債権管理事務取扱規則
+---
+
+# 債権管理事務取扱規則
+
+## Metadata
+- Law ID: `331M50000040086`
+- Law No: 昭和三十一年大蔵省令第八十六号
+- Promulgation Date: 19561229

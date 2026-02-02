@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421AC0000000048
+id: JPLAW:421AC0000000048
+law_no: 平成二十一年法律第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/421AC0000000048
+promulgation_date: '20090605'
+tags:
+- 消費者庁及び消費者委員会設置法
+tier: 0
+title: 消費者庁及び消費者委員会設置法
+law_id: 421AC0000000048
+official_title: 消費者庁及び消費者委員会設置法
+aliases:
+- 消費者庁及び消費者委員会設置法
+---
+
+# 消費者庁及び消費者委員会設置法
+
+## Metadata
+- Law ID: `421AC0000000048`
+- Law No: 平成二十一年法律第四十八号
+- Promulgation Date: 20090605

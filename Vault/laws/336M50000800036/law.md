@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336M50000800036
+id: JPLAW:336M50000800036
+law_no: 昭和三十六年運輸省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/336M50000800036
+promulgation_date: '19610628'
+tags:
+- 港湾関係補助金等交付規則
+tier: 0
+title: 港湾関係補助金等交付規則
+law_id: 336M50000800036
+official_title: 港湾関係補助金等交付規則
+aliases:
+- 港湾関係補助金等交付規則
+---
+
+# 港湾関係補助金等交付規則
+
+## Metadata
+- Law ID: `336M50000800036`
+- Law No: 昭和三十六年運輸省令第三十六号
+- Promulgation Date: 19610628

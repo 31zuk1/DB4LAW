@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 503CO0000000207
+id: JPLAW:503CO0000000207
+law_no: 令和三年政令第二百七号
+links:
+  egov: https://laws.e-gov.go.jp/law/503CO0000000207
+promulgation_date: '20210716'
+tags:
+- 特定複合観光施設区域整備法関係手数料令
+tier: 0
+title: 特定複合観光施設区域整備法関係手数料令
+law_id: 503CO0000000207
+official_title: 特定複合観光施設区域整備法関係手数料令
+aliases:
+- 特定複合観光施設区域整備法関係手数料令
+---
+
+# 特定複合観光施設区域整備法関係手数料令
+
+## Metadata
+- Law ID: `503CO0000000207`
+- Law No: 令和三年政令第二百七号
+- Promulgation Date: 20210716

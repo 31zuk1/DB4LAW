@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000040
+id: JPLAW:328CO0000000040
+law_no: 昭和二十八年政令第四十号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000040
+promulgation_date: '19530324'
+tags:
+- 農山漁村電気導入促進法施行令
+tier: 0
+title: 農山漁村電気導入促進法施行令
+law_id: 328CO0000000040
+official_title: 農山漁村電気導入促進法施行令
+aliases:
+- 農山漁村電気導入促進法施行令
+---
+
+# 農山漁村電気導入促進法施行令
+
+## Metadata
+- Law ID: `328CO0000000040`
+- Law No: 昭和二十八年政令第四十号
+- Promulgation Date: 19530324

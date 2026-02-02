@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346M50000800061
+id: JPLAW:346M50000800061
+law_no: 昭和四十六年運輸省令第六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/346M50000800061
+promulgation_date: '19711110'
+tags:
+- 旅行業法施行規則
+tier: 0
+title: 旅行業法施行規則
+law_id: 346M50000800061
+official_title: 旅行業法施行規則
+aliases:
+- 旅行業法施行規則
+---
+
+# 旅行業法施行規則
+
+## Metadata
+- Law ID: `346M50000800061`
+- Law No: 昭和四十六年運輸省令第六十一号
+- Promulgation Date: 19711110

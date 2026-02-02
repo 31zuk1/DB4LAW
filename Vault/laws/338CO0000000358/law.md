@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338CO0000000358
+id: JPLAW:338CO0000000358
+law_no: 昭和三十八年政令第三百五十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/338CO0000000358
+promulgation_date: '19631029'
+tags:
+- 戦傷病者特別援護法施行令
+tier: 0
+title: 戦傷病者特別援護法施行令
+law_id: 338CO0000000358
+official_title: 戦傷病者特別援護法施行令
+aliases:
+- 戦傷病者特別援護法施行令
+---
+
+# 戦傷病者特別援護法施行令
+
+## Metadata
+- Law ID: `338CO0000000358`
+- Law No: 昭和三十八年政令第三百五十八号
+- Promulgation Date: 19631029

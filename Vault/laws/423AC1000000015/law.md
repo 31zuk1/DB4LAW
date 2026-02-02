@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423AC1000000015
+id: JPLAW:423AC1000000015
+law_no: 平成二十三年法律第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/423AC1000000015
+promulgation_date: '20110401'
+tags:
+- 海外の美術品等の我が国における公開の促進に関する法律
+tier: 0
+title: 海外の美術品等の我が国における公開の促進に関する法律
+law_id: 423AC1000000015
+official_title: 海外の美術品等の我が国における公開の促進に関する法律
+aliases:
+- 海外の美術品等の我が国における公開の促進に関する法律
+---
+
+# 海外の美術品等の我が国における公開の促進に関する法律
+
+## Metadata
+- Law ID: `423AC1000000015`
+- Law No: 平成二十三年法律第十五号
+- Promulgation Date: 20110401

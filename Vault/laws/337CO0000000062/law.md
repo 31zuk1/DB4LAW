@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337CO0000000062
+id: JPLAW:337CO0000000062
+law_no: 昭和三十七年政令第六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/337CO0000000062
+promulgation_date: '19620323'
+tags:
+- 特殊海事損害の賠償の請求に関する特別措置法施行令
+tier: 0
+title: 特殊海事損害の賠償の請求に関する特別措置法施行令
+law_id: 337CO0000000062
+official_title: 特殊海事損害の賠償の請求に関する特別措置法施行令
+aliases:
+- 特殊海事損害の賠償の請求に関する特別措置法施行令
+---
+
+# 特殊海事損害の賠償の請求に関する特別措置法施行令
+
+## Metadata
+- Law ID: `337CO0000000062`
+- Law No: 昭和三十七年政令第六十二号
+- Promulgation Date: 19620323

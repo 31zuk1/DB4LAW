@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421R00000001003
+id: JPLAW:421R00000001003
+law_no: 平成二十一年会計検査院規則第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/421R00000001003
+promulgation_date: '20090401'
+tags:
+- 会計検査院退職手当審査会規則
+tier: 0
+title: 会計検査院退職手当審査会規則
+law_id: 421R00000001003
+official_title: 会計検査院退職手当審査会規則
+aliases:
+- 会計検査院退職手当審査会規則
+---
+
+# 会計検査院退職手当審査会規則
+
+## Metadata
+- Law ID: `421R00000001003`
+- Law No: 平成二十一年会計検査院規則第三号
+- Promulgation Date: 20090401

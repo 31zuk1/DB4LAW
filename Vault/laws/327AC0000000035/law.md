@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327AC0000000035
+id: JPLAW:327AC0000000035
+law_no: 昭和二十七年法律第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/327AC0000000035
+promulgation_date: '19520331'
+tags:
+- 海外からの日本国民の集団的引揚輸送のための航海命令に関する法律
+tier: 0
+title: 海外からの日本国民の集団的引揚輸送のための航海命令に関する法律
+law_id: 327AC0000000035
+official_title: 海外からの日本国民の集団的引揚輸送のための航海命令に関する法律
+aliases:
+- 海外からの日本国民の集団的引揚輸送のための航海命令に関する法律
+---
+
+# 海外からの日本国民の集団的引揚輸送のための航海命令に関する法律
+
+## Metadata
+- Law ID: `327AC0000000035`
+- Law No: 昭和二十七年法律第三十五号
+- Promulgation Date: 19520331

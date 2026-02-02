@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419CO0000000330
+id: JPLAW:419CO0000000330
+law_no: 平成十九年政令第三百三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/419CO0000000330
+promulgation_date: '20071107'
+tags:
+- 利息制限法施行令
+tier: 0
+title: 利息制限法施行令
+law_id: 419CO0000000330
+official_title: 利息制限法施行令
+aliases:
+- 利息制限法施行令
+---
+
+# 利息制限法施行令
+
+## Metadata
+- Law ID: `419CO0000000330`
+- Law No: 平成十九年政令第三百三十号
+- Promulgation Date: 20071107

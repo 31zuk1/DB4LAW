@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359M50000002024
+id: JPLAW:359M50000002024
+law_no: 昭和五十九年総理府令第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/359M50000002024
+promulgation_date: '19840427'
+tags:
+- 国勢調査の調査区の設定の基準等に関する省令
+tier: 0
+title: 国勢調査の調査区の設定の基準等に関する省令
+law_id: 359M50000002024
+official_title: 国勢調査の調査区の設定の基準等に関する省令
+aliases:
+- 国勢調査の調査区の設定の基準等に関する省令
+---
+
+# 国勢調査の調査区の設定の基準等に関する省令
+
+## Metadata
+- Law ID: `359M50000002024`
+- Law No: 昭和五十九年総理府令第二十四号
+- Promulgation Date: 19840427

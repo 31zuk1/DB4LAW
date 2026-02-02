@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000002011
+id: JPLAW:326M50000002011
+law_no: 昭和二十六年総理府令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000002011
+promulgation_date: '19510331'
+tags:
+- ガス事業生産動態統計調査規則
+tier: 0
+title: ガス事業生産動態統計調査規則
+law_id: 326M50000002011
+official_title: ガス事業生産動態統計調査規則
+aliases:
+- ガス事業生産動態統計調査規則
+---
+
+# ガス事業生産動態統計調査規則
+
+## Metadata
+- Law ID: `326M50000002011`
+- Law No: 昭和二十六年総理府令第十一号
+- Promulgation Date: 19510331

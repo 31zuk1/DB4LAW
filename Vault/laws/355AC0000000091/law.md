@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 355AC0000000091
+id: JPLAW:355AC0000000091
+law_no: 昭和五十五年法律第九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/355AC0000000091
+promulgation_date: '19801128'
+tags:
+- こどもの国協会の解散及び事業の承継に関する法律
+tier: 0
+title: こどもの国協会の解散及び事業の承継に関する法律
+law_id: 355AC0000000091
+official_title: こどもの国協会の解散及び事業の承継に関する法律
+aliases:
+- こどもの国協会の解散及び事業の承継に関する法律
+---
+
+# こどもの国協会の解散及び事業の承継に関する法律
+
+## Metadata
+- Law ID: `355AC0000000091`
+- Law No: 昭和五十五年法律第九十一号
+- Promulgation Date: 19801128

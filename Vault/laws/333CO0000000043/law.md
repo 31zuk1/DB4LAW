@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333CO0000000043
+id: JPLAW:333CO0000000043
+law_no: 昭和三十三年政令第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/333CO0000000043
+promulgation_date: '19580328'
+tags:
+- 中小企業等協同組合法施行令
+tier: 0
+title: 中小企業等協同組合法施行令
+law_id: 333CO0000000043
+official_title: 中小企業等協同組合法施行令
+aliases:
+- 中小企業等協同組合法施行令
+---
+
+# 中小企業等協同組合法施行令
+
+## Metadata
+- Law ID: `333CO0000000043`
+- Law No: 昭和三十三年政令第四十三号
+- Promulgation Date: 19580328

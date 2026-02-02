@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346CO0000000345
+id: JPLAW:346CO0000000345
+law_no: 昭和四十六年政令第三百四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/346CO0000000345
+promulgation_date: '19711122'
+tags:
+- 積立式宅地建物販売業法施行令
+tier: 0
+title: 積立式宅地建物販売業法施行令
+law_id: 346CO0000000345
+official_title: 積立式宅地建物販売業法施行令
+aliases:
+- 積立式宅地建物販売業法施行令
+---
+
+# 積立式宅地建物販売業法施行令
+
+## Metadata
+- Law ID: `346CO0000000345`
+- Law No: 昭和四十六年政令第三百四十五号
+- Promulgation Date: 19711122

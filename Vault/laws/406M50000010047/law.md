@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50000010047
+id: JPLAW:406M50000010047
+law_no: 平成六年法務省令第四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50000010047
+promulgation_date: '19940921'
+tags:
+- 法務省聴聞規則
+tier: 0
+title: 法務省聴聞規則
+law_id: 406M50000010047
+official_title: 法務省聴聞規則
+aliases:
+- 法務省聴聞規則
+---
+
+# 法務省聴聞規則
+
+## Metadata
+- Law ID: `406M50000010047`
+- Law No: 平成六年法務省令第四十七号
+- Promulgation Date: 19940921

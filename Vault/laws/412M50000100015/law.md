@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50000100015
+id: JPLAW:412M50000100015
+law_no: 平成十二年厚生省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50000100015
+promulgation_date: '20000223'
+tags:
+- 水道施設の技術的基準を定める省令
+tier: 0
+title: 水道施設の技術的基準を定める省令
+law_id: 412M50000100015
+official_title: 水道施設の技術的基準を定める省令
+aliases:
+- 水道施設の技術的基準を定める省令
+---
+
+# 水道施設の技術的基準を定める省令
+
+## Metadata
+- Law ID: `412M50000100015`
+- Law No: 平成十二年厚生省令第十五号
+- Promulgation Date: 20000223

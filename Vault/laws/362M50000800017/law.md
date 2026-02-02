@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 362M50000800017
+id: JPLAW:362M50000800017
+law_no: 昭和六十二年運輸省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/362M50000800017
+promulgation_date: '19870302'
+tags:
+- 専用鉄道の施設の技術上の基準を定める省令
+tier: 0
+title: 専用鉄道の施設の技術上の基準を定める省令
+law_id: 362M50000800017
+official_title: 専用鉄道の施設の技術上の基準を定める省令
+aliases:
+- 専用鉄道の施設の技術上の基準を定める省令
+---
+
+# 専用鉄道の施設の技術上の基準を定める省令
+
+## Metadata
+- Law ID: `362M50000800017`
+- Law No: 昭和六十二年運輸省令第十七号
+- Promulgation Date: 19870302

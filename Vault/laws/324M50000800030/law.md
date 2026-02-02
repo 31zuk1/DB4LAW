@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M50000800030
+id: JPLAW:324M50000800030
+law_no: 昭和二十四年運輸省令第三十号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M50000800030
+promulgation_date: '19490625'
+tags:
+- 航路標識法施行規則
+tier: 0
+title: 航路標識法施行規則
+law_id: 324M50000800030
+official_title: 航路標識法施行規則
+aliases:
+- 航路標識法施行規則
+---
+
+# 航路標識法施行規則
+
+## Metadata
+- Law ID: `324M50000800030`
+- Law No: 昭和二十四年運輸省令第三十号
+- Promulgation Date: 19490625

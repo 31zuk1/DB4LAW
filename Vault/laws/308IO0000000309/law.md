@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 308IO0000000309
+id: JPLAW:308IO0000000309
+law_no: 昭和八年勅令第三百九号
+links:
+  egov: https://laws.e-gov.go.jp/law/308IO0000000309
+promulgation_date: '19331129'
+tags:
+- 農業用動産抵当権実行令
+tier: 0
+title: 農業用動産抵当権実行令
+law_id: 308IO0000000309
+official_title: 農業用動産抵当権実行令
+aliases:
+- 農業用動産抵当権実行令
+---
+
+# 農業用動産抵当権実行令
+
+## Metadata
+- Law ID: `308IO0000000309`
+- Law No: 昭和八年勅令第三百九号
+- Promulgation Date: 19331129

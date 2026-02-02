@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338M50000008028
+id: JPLAW:338M50000008028
+law_no: 昭和三十八年自治省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/338M50000008028
+promulgation_date: '19630930'
+tags:
+- 日本消防検定協会の財務及び会計に関する省令
+tier: 0
+title: 日本消防検定協会の財務及び会計に関する省令
+law_id: 338M50000008028
+official_title: 日本消防検定協会の財務及び会計に関する省令
+aliases:
+- 日本消防検定協会の財務及び会計に関する省令
+---
+
+# 日本消防検定協会の財務及び会計に関する省令
+
+## Metadata
+- Law ID: `338M50000008028`
+- Law No: 昭和三十八年自治省令第二十八号
+- Promulgation Date: 19630930

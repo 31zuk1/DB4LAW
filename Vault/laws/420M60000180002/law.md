@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420M60000180002
+id: JPLAW:420M60000180002
+law_no: 平成二十年文部科学省・厚生労働省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/420M60000180002
+promulgation_date: '20080324'
+tags:
+- 社会福祉士介護福祉士学校指定規則
+tier: 0
+title: 社会福祉士介護福祉士学校指定規則
+law_id: 420M60000180002
+official_title: 社会福祉士介護福祉士学校指定規則
+aliases:
+- 社会福祉士介護福祉士学校指定規則
+---
+
+# 社会福祉士介護福祉士学校指定規則
+
+## Metadata
+- Law ID: `420M60000180002`
+- Law No: 平成二十年文部科学省・厚生労働省令第二号
+- Promulgation Date: 20080324

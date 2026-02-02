@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000002011
+id: JPLAW:416M60000002011
+law_no: 平成十六年内閣府令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000002011
+promulgation_date: '20040316'
+tags:
+- 公認会計士・監査審査会事務局組織規則
+tier: 0
+title: 公認会計士・監査審査会事務局組織規則
+law_id: 416M60000002011
+official_title: 公認会計士・監査審査会事務局組織規則
+aliases:
+- 公認会計士・監査審査会事務局組織規則
+---
+
+# 公認会計士・監査審査会事務局組織規則
+
+## Metadata
+- Law ID: `416M60000002011`
+- Law No: 平成十六年内閣府令第十一号
+- Promulgation Date: 20040316

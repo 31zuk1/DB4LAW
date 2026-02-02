@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403M50000100044
+id: JPLAW:403M50000100044
+law_no: 平成三年厚生省令第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/403M50000100044
+promulgation_date: '19910814'
+tags:
+- 救急救命士法施行規則
+tier: 0
+title: 救急救命士法施行規則
+law_id: 403M50000100044
+official_title: 救急救命士法施行規則
+aliases:
+- 救急救命士法施行規則
+---
+
+# 救急救命士法施行規則
+
+## Metadata
+- Law ID: `403M50000100044`
+- Law No: 平成三年厚生省令第四十四号
+- Promulgation Date: 19910814

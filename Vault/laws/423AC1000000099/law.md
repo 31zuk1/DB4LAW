@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 423AC1000000099
+id: JPLAW:423AC1000000099
+law_no: 平成二十三年法律第九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/423AC1000000099
+promulgation_date: '20110818'
+tags:
+- 東日本大震災により生じた災害廃棄物の処理に関する特別措置法
+tier: 0
+title: 東日本大震災により生じた災害廃棄物の処理に関する特別措置法
+law_id: 423AC1000000099
+official_title: 東日本大震災により生じた災害廃棄物の処理に関する特別措置法
+aliases:
+- 東日本大震災により生じた災害廃棄物の処理に関する特別措置法
+---
+
+# 東日本大震災により生じた災害廃棄物の処理に関する特別措置法
+
+## Metadata
+- Law ID: `423AC1000000099`
+- Law No: 平成二十三年法律第九十九号
+- Promulgation Date: 20110818

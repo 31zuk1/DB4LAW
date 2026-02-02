@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 422M60000002004
+id: JPLAW:422M60000002004
+law_no: 平成二十二年内閣府令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/422M60000002004
+promulgation_date: '20100301'
+tags:
+- 資金移動業者に関する内閣府令
+tier: 0
+title: 資金移動業者に関する内閣府令
+law_id: 422M60000002004
+official_title: 資金移動業者に関する内閣府令
+aliases:
+- 資金移動業者に関する内閣府令
+---
+
+# 資金移動業者に関する内閣府令
+
+## Metadata
+- Law ID: `422M60000002004`
+- Law No: 平成二十二年内閣府令第四号
+- Promulgation Date: 20100301

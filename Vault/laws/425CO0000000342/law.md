@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425CO0000000342
+id: JPLAW:425CO0000000342
+law_no: 平成二十五年政令第三百四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/425CO0000000342
+promulgation_date: '20131213'
+tags:
+- 国家戦略特別区域諮問会議令
+tier: 0
+title: 国家戦略特別区域諮問会議令
+law_id: 425CO0000000342
+official_title: 国家戦略特別区域諮問会議令
+aliases:
+- 国家戦略特別区域諮問会議令
+---
+
+# 国家戦略特別区域諮問会議令
+
+## Metadata
+- Law ID: `425CO0000000342`
+- Law No: 平成二十五年政令第三百四十二号
+- Promulgation Date: 20131213

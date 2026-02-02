@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000127
+id: JPLAW:414AC0000000127
+law_no: 平成十四年法律第百二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000127
+promulgation_date: '20021204'
+tags:
+- 独立行政法人農業者年金基金法
+tier: 0
+title: 独立行政法人農業者年金基金法
+law_id: 414AC0000000127
+official_title: 独立行政法人農業者年金基金法
+aliases:
+- 独立行政法人農業者年金基金法
+---
+
+# 独立行政法人農業者年金基金法
+
+## Metadata
+- Law ID: `414AC0000000127`
+- Law No: 平成十四年法律第百二十七号
+- Promulgation Date: 20021204

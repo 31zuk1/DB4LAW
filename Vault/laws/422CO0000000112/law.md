@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 422CO0000000112
+id: JPLAW:422CO0000000112
+law_no: 平成二十二年政令第百十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/422CO0000000112
+promulgation_date: '20100401'
+tags:
+- 高等学校等就学支援金の支給に関する法律施行令
+tier: 0
+title: 高等学校等就学支援金の支給に関する法律施行令
+law_id: 422CO0000000112
+official_title: 高等学校等就学支援金の支給に関する法律施行令
+aliases:
+- 高等学校等就学支援金の支給に関する法律施行令
+---
+
+# 高等学校等就学支援金の支給に関する法律施行令
+
+## Metadata
+- Law ID: `422CO0000000112`
+- Law No: 平成二十二年政令第百十二号
+- Promulgation Date: 20100401

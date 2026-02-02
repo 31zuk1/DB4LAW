@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347CO0000000057
+id: JPLAW:347CO0000000057
+law_no: 昭和四十七年政令第五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/347CO0000000057
+promulgation_date: '19720331'
+tags:
+- 航空機燃料税法施行令
+tier: 0
+title: 航空機燃料税法施行令
+law_id: 347CO0000000057
+official_title: 航空機燃料税法施行令
+aliases:
+- 航空機燃料税法施行令
+---
+
+# 航空機燃料税法施行令
+
+## Metadata
+- Law ID: `347CO0000000057`
+- Law No: 昭和四十七年政令第五十七号
+- Promulgation Date: 19720331

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408AC1000000101
+id: JPLAW:408AC1000000101
+law_no: 平成八年法律第百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/408AC1000000101
+promulgation_date: '19960621'
+tags:
+- まぐろ資源の保存及び管理の強化に関する特別措置法
+tier: 0
+title: まぐろ資源の保存及び管理の強化に関する特別措置法
+law_id: 408AC1000000101
+official_title: まぐろ資源の保存及び管理の強化に関する特別措置法
+aliases:
+- まぐろ資源の保存及び管理の強化に関する特別措置法
+---
+
+# まぐろ資源の保存及び管理の強化に関する特別措置法
+
+## Metadata
+- Law ID: `408AC1000000101`
+- Law No: 平成八年法律第百一号
+- Promulgation Date: 19960621

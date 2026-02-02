@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000026
+id: JPLAW:407CO0000000026
+law_no: 平成七年政令第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000026
+promulgation_date: '19950217'
+tags:
+- 原子爆弾被爆者に対する援護に関する法律施行令
+tier: 0
+title: 原子爆弾被爆者に対する援護に関する法律施行令
+law_id: 407CO0000000026
+official_title: 原子爆弾被爆者に対する援護に関する法律施行令
+aliases:
+- 原子爆弾被爆者に対する援護に関する法律施行令
+---
+
+# 原子爆弾被爆者に対する援護に関する法律施行令
+
+## Metadata
+- Law ID: `407CO0000000026`
+- Law No: 平成七年政令第二十六号
+- Promulgation Date: 19950217

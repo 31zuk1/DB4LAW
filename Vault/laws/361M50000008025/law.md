@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361M50000008025
+id: JPLAW:361M50000008025
+law_no: 昭和六十一年自治省令第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/361M50000008025
+promulgation_date: '19861015'
+tags:
+- 消防用吸管の技術上の規格を定める省令
+tier: 0
+title: 消防用吸管の技術上の規格を定める省令
+law_id: 361M50000008025
+official_title: 消防用吸管の技術上の規格を定める省令
+aliases:
+- 消防用吸管の技術上の規格を定める省令
+---
+
+# 消防用吸管の技術上の規格を定める省令
+
+## Metadata
+- Law ID: `361M50000008025`
+- Law No: 昭和六十一年自治省令第二十五号
+- Promulgation Date: 19861015

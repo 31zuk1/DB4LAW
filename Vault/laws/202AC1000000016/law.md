@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 202AC1000000016
+id: JPLAW:202AC1000000016
+law_no: 大正二年法律第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/202AC1000000016
+promulgation_date: '19130409'
+tags:
+- 運河法
+tier: 0
+title: 運河法
+law_id: 202AC1000000016
+official_title: 運河法
+aliases:
+- 運河法
+---
+
+# 運河法
+
+## Metadata
+- Law ID: `202AC1000000016`
+- Law No: 大正二年法律第十六号
+- Promulgation Date: 19130409

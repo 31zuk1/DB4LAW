@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 341M50000002002
+id: JPLAW:341M50000002002
+law_no: 昭和四十一年総理府令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/341M50000002002
+promulgation_date: '19660210'
+tags:
+- 人事記録の記載事項等に関する内閣官房令
+tier: 0
+title: 人事記録の記載事項等に関する内閣官房令
+law_id: 341M50000002002
+official_title: 人事記録の記載事項等に関する内閣官房令
+aliases:
+- 人事記録の記載事項等に関する内閣官房令
+---
+
+# 人事記録の記載事項等に関する内閣官房令
+
+## Metadata
+- Law ID: `341M50000002002`
+- Law No: 昭和四十一年総理府令第二号
+- Promulgation Date: 19660210

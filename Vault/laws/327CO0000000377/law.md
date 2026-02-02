@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327CO0000000377
+id: JPLAW:327CO0000000377
+law_no: 昭和二十七年政令第三百七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/327CO0000000377
+promulgation_date: '19520830'
+tags:
+- 宮内庁組織令
+tier: 0
+title: 宮内庁組織令
+law_id: 327CO0000000377
+official_title: 宮内庁組織令
+aliases:
+- 宮内庁組織令
+---
+
+# 宮内庁組織令
+
+## Metadata
+- Law ID: `327CO0000000377`
+- Law No: 昭和二十七年政令第三百七十七号
+- Promulgation Date: 19520830

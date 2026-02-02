@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340CO0000000157
+id: JPLAW:340CO0000000157
+law_no: 昭和四十年政令第百五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/340CO0000000157
+promulgation_date: '19650514'
+tags:
+- 近畿圏の近郊整備区域及び都市開発区域の整備及び開発に関する法律施行令
+tier: 0
+title: 近畿圏の近郊整備区域及び都市開発区域の整備及び開発に関する法律施行令
+law_id: 340CO0000000157
+official_title: 近畿圏の近郊整備区域及び都市開発区域の整備及び開発に関する法律施行令
+aliases:
+- 近畿圏の近郊整備区域及び都市開発区域の整備及び開発に関する法律施行令
+---
+
+# 近畿圏の近郊整備区域及び都市開発区域の整備及び開発に関する法律施行令
+
+## Metadata
+- Law ID: `340CO0000000157`
+- Law No: 昭和四十年政令第百五十七号
+- Promulgation Date: 19650514

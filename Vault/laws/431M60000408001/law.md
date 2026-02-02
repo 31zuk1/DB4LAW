@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 431M60000408001
+id: JPLAW:431M60000408001
+law_no: 平成三十一年総務省・経済産業省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/431M60000408001
+promulgation_date: '20190401'
+tags:
+- 経済構造実態調査規則
+tier: 0
+title: 経済構造実態調査規則
+law_id: 431M60000408001
+official_title: 経済構造実態調査規則
+aliases:
+- 経済構造実態調査規則
+---
+
+# 経済構造実態調査規則
+
+## Metadata
+- Law ID: `431M60000408001`
+- Law No: 平成三十一年総務省・経済産業省令第一号
+- Promulgation Date: 20190401

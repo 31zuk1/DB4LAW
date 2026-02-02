@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000800081
+id: JPLAW:326M50000800081
+law_no: 昭和二十六年運輸省令第八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000800081
+promulgation_date: '19510830'
+tags:
+- 海事代理士試験規程
+tier: 0
+title: 海事代理士試験規程
+law_id: 326M50000800081
+official_title: 海事代理士試験規程
+aliases:
+- 海事代理士試験規程
+---
+
+# 海事代理士試験規程
+
+## Metadata
+- Law ID: `326M50000800081`
+- Law No: 昭和二十六年運輸省令第八十一号
+- Promulgation Date: 19510830

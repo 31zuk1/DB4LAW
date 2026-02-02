@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000078
+id: JPLAW:325CO0000000078
+law_no: 昭和二十五年政令第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000078
+promulgation_date: '19500405'
+tags:
+- 身体障害者福祉法施行令
+tier: 0
+title: 身体障害者福祉法施行令
+law_id: 325CO0000000078
+official_title: 身体障害者福祉法施行令
+aliases:
+- 身体障害者福祉法施行令
+---
+
+# 身体障害者福祉法施行令
+
+## Metadata
+- Law ID: `325CO0000000078`
+- Law No: 昭和二十五年政令第七十八号
+- Promulgation Date: 19500405

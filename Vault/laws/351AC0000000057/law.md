@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351AC0000000057
+id: JPLAW:351AC0000000057
+law_no: 昭和五十一年法律第五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/351AC0000000057
+promulgation_date: '19760604'
+tags:
+- 特定商取引に関する法律
+tier: 0
+title: 特定商取引に関する法律
+law_id: 351AC0000000057
+official_title: 特定商取引に関する法律
+aliases:
+- 特定商取引に関する法律
+---
+
+# 特定商取引に関する法律
+
+## Metadata
+- Law ID: `351AC0000000057`
+- Law No: 昭和五十一年法律第五十七号
+- Promulgation Date: 19760604

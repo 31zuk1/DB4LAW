@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507CO0000000039
+id: JPLAW:507CO0000000039
+law_no: 令和七年政令第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/507CO0000000039
+promulgation_date: '20250221'
+tags:
+- 食料供給困難事態対策法施行令
+tier: 0
+title: 食料供給困難事態対策法施行令
+law_id: 507CO0000000039
+official_title: 食料供給困難事態対策法施行令
+aliases:
+- 食料供給困難事態対策法施行令
+---
+
+# 食料供給困難事態対策法施行令
+
+## Metadata
+- Law ID: `507CO0000000039`
+- Law No: 令和七年政令第三十九号
+- Promulgation Date: 20250221

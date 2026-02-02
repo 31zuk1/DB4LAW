@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 347M50000800053
+id: JPLAW:347M50000800053
+law_no: 昭和四十七年運輸省令第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/347M50000800053
+promulgation_date: '19720812'
+tags:
+- 軽自動車検査協会の財務及び会計に関する省令
+tier: 0
+title: 軽自動車検査協会の財務及び会計に関する省令
+law_id: 347M50000800053
+official_title: 軽自動車検査協会の財務及び会計に関する省令
+aliases:
+- 軽自動車検査協会の財務及び会計に関する省令
+---
+
+# 軽自動車検査協会の財務及び会計に関する省令
+
+## Metadata
+- Law ID: `347M50000800053`
+- Law No: 昭和四十七年運輸省令第五十三号
+- Promulgation Date: 19720812

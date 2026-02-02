@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507M60002000006
+id: JPLAW:507M60002000006
+law_no: 令和七年防衛省令第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/507M60002000006
+promulgation_date: '20250321'
+tags:
+- 統合作戦司令部組織規則
+tier: 0
+title: 統合作戦司令部組織規則
+law_id: 507M60002000006
+official_title: 統合作戦司令部組織規則
+aliases:
+- 統合作戦司令部組織規則
+---
+
+# 統合作戦司令部組織規則
+
+## Metadata
+- Law ID: `507M60002000006`
+- Law No: 令和七年防衛省令第六号
+- Promulgation Date: 20250321

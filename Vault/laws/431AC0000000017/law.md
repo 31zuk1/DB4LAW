@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 431AC0000000017
+id: JPLAW:431AC0000000017
+law_no: 平成三十一年法律第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/431AC0000000017
+promulgation_date: '20190426'
+tags:
+- 農業用ため池の管理及び保全に関する法律
+tier: 0
+title: 農業用ため池の管理及び保全に関する法律
+law_id: 431AC0000000017
+official_title: 農業用ため池の管理及び保全に関する法律
+aliases:
+- 農業用ため池の管理及び保全に関する法律
+---
+
+# 農業用ため池の管理及び保全に関する法律
+
+## Metadata
+- Law ID: `431AC0000000017`
+- Law No: 平成三十一年法律第十七号
+- Promulgation Date: 20190426

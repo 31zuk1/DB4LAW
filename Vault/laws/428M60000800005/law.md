@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428M60000800005
+id: JPLAW:428M60000800005
+law_no: 平成二十八年国土交通省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/428M60000800005
+promulgation_date: '20160129'
+tags:
+- 建築物のエネルギー消費性能の向上等に関する法律施行規則
+tier: 0
+title: 建築物のエネルギー消費性能の向上等に関する法律施行規則
+law_id: 428M60000800005
+official_title: 建築物のエネルギー消費性能の向上等に関する法律施行規則
+aliases:
+- 建築物のエネルギー消費性能の向上等に関する法律施行規則
+---
+
+# 建築物のエネルギー消費性能の向上等に関する法律施行規則
+
+## Metadata
+- Law ID: `428M60000800005`
+- Law No: 平成二十八年国土交通省令第五号
+- Promulgation Date: 20160129

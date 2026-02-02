@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC1000000282
+id: JPLAW:323AC1000000282
+law_no: 昭和二十三年法律第二百八十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC1000000282
+promulgation_date: '19481229'
+tags:
+- 道路の修繕に関する法律
+tier: 0
+title: 道路の修繕に関する法律
+law_id: 323AC1000000282
+official_title: 道路の修繕に関する法律
+aliases:
+- 道路の修繕に関する法律
+---
+
+# 道路の修繕に関する法律
+
+## Metadata
+- Law ID: `323AC1000000282`
+- Law No: 昭和二十三年法律第二百八十二号
+- Promulgation Date: 19481229

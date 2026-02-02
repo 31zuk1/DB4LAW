@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345M50000002043
+id: JPLAW:345M50000002043
+law_no: 昭和四十五年総理府令第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/345M50000002043
+promulgation_date: '19701110'
+tags:
+- 昭和四十五年国富調査のための家計資産調査規則
+tier: 0
+title: 昭和四十五年国富調査のための家計資産調査規則
+law_id: 345M50000002043
+official_title: 昭和四十五年国富調査のための家計資産調査規則
+aliases:
+- 昭和四十五年国富調査のための家計資産調査規則
+---
+
+# 昭和四十五年国富調査のための家計資産調査規則
+
+## Metadata
+- Law ID: `345M50000002043`
+- Law No: 昭和四十五年総理府令第四十三号
+- Promulgation Date: 19701110

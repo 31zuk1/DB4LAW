@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M50000100037
+id: JPLAW:324M50000100037
+law_no: 昭和二十四年厚生省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M50000100037
+promulgation_date: '19491019'
+tags:
+- 死体解剖保存法施行規則
+tier: 0
+title: 死体解剖保存法施行規則
+law_id: 324M50000100037
+official_title: 死体解剖保存法施行規則
+aliases:
+- 死体解剖保存法施行規則
+---
+
+# 死体解剖保存法施行規則
+
+## Metadata
+- Law ID: `324M50000100037`
+- Law No: 昭和二十四年厚生省令第三十七号
+- Promulgation Date: 19491019

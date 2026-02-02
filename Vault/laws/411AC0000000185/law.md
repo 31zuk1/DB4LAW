@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 411AC0000000185
+id: JPLAW:411AC0000000185
+law_no: 平成十一年法律第百八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/411AC0000000185
+promulgation_date: '19991222'
+tags:
+- 独立行政法人家畜改良センター法
+tier: 0
+title: 独立行政法人家畜改良センター法
+law_id: 411AC0000000185
+official_title: 独立行政法人家畜改良センター法
+aliases:
+- 独立行政法人家畜改良センター法
+---
+
+# 独立行政法人家畜改良センター法
+
+## Metadata
+- Law ID: `411AC0000000185`
+- Law No: 平成十一年法律第百八十五号
+- Promulgation Date: 19991222

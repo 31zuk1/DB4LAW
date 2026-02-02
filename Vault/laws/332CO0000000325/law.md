@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332CO0000000325
+id: JPLAW:332CO0000000325
+law_no: 昭和三十二年政令第三百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/332CO0000000325
+promulgation_date: '19571121'
+tags:
+- 核燃料物質、核原料物質、原子炉及び放射線の定義に関する政令
+tier: 0
+title: 核燃料物質、核原料物質、原子炉及び放射線の定義に関する政令
+law_id: 332CO0000000325
+official_title: 核燃料物質、核原料物質、原子炉及び放射線の定義に関する政令
+aliases:
+- 核燃料物質、核原料物質、原子炉及び放射線の定義に関する政令
+---
+
+# 核燃料物質、核原料物質、原子炉及び放射線の定義に関する政令
+
+## Metadata
+- Law ID: `332CO0000000325`
+- Law No: 昭和三十二年政令第三百二十五号
+- Promulgation Date: 19571121

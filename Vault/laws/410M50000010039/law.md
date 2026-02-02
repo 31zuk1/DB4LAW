@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000010039
+id: JPLAW:410M50000010039
+law_no: 平成十年法務省令第三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000010039
+promulgation_date: '19980828'
+tags:
+- 動産・債権譲渡登記規則
+tier: 0
+title: 動産・債権譲渡登記規則
+law_id: 410M50000010039
+official_title: 動産・債権譲渡登記規則
+aliases:
+- 動産・債権譲渡登記規則
+---
+
+# 動産・債権譲渡登記規則
+
+## Metadata
+- Law ID: `410M50000010039`
+- Law No: 平成十年法務省令第三十九号
+- Promulgation Date: 19980828

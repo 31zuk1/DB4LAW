@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC0000000053
+id: JPLAW:326AC0000000053
+law_no: 昭和二十六年法律第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC0000000053
+promulgation_date: '19510330'
+tags:
+- 裁判所職員定員法
+tier: 0
+title: 裁判所職員定員法
+law_id: 326AC0000000053
+official_title: 裁判所職員定員法
+aliases:
+- 裁判所職員定員法
+---
+
+# 裁判所職員定員法
+
+## Metadata
+- Law ID: `326AC0000000053`
+- Law No: 昭和二十六年法律第五十三号
+- Promulgation Date: 19510330

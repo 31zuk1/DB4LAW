@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338M50000100046
+id: JPLAW:338M50000100046
+law_no: 昭和三十八年厚生省令第四十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/338M50000100046
+promulgation_date: '19631101'
+tags:
+- 戦傷病者特別援護法施行規則
+tier: 0
+title: 戦傷病者特別援護法施行規則
+law_id: 338M50000100046
+official_title: 戦傷病者特別援護法施行規則
+aliases:
+- 戦傷病者特別援護法施行規則
+---
+
+# 戦傷病者特別援護法施行規則
+
+## Metadata
+- Law ID: `338M50000100046`
+- Law No: 昭和三十八年厚生省令第四十六号
+- Promulgation Date: 19631101

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337M50000008020
+id: JPLAW:337M50000008020
+law_no: 昭和三十七年自治省令第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/337M50000008020
+promulgation_date: '19620908'
+tags:
+- 地方公務員等共済組合法施行規則
+tier: 0
+title: 地方公務員等共済組合法施行規則
+law_id: 337M50000008020
+official_title: 地方公務員等共済組合法施行規則
+aliases:
+- 地方公務員等共済組合法施行規則
+---
+
+# 地方公務員等共済組合法施行規則
+
+## Metadata
+- Law ID: `337M50000008020`
+- Law No: 昭和三十七年自治省令第二十号
+- Promulgation Date: 19620908

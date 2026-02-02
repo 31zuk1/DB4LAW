@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335AC0000000153
+id: JPLAW:335AC0000000153
+law_no: 昭和三十五年法律第百五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/335AC0000000153
+promulgation_date: '19601222'
+tags:
+- 国際開発協会への加盟に伴う措置に関する法律
+tier: 0
+title: 国際開発協会への加盟に伴う措置に関する法律
+law_id: 335AC0000000153
+official_title: 国際開発協会への加盟に伴う措置に関する法律
+aliases:
+- 国際開発協会への加盟に伴う措置に関する法律
+---
+
+# 国際開発協会への加盟に伴う措置に関する法律
+
+## Metadata
+- Law ID: `335AC0000000153`
+- Law No: 昭和三十五年法律第百五十三号
+- Promulgation Date: 19601222

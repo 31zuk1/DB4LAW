@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338CO0000000183
+id: JPLAW:338CO0000000183
+law_no: 昭和三十八年政令第百八十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/338CO0000000183
+promulgation_date: '19630603'
+tags:
+- 森林組合合併助成法施行令
+tier: 0
+title: 森林組合合併助成法施行令
+law_id: 338CO0000000183
+official_title: 森林組合合併助成法施行令
+aliases:
+- 森林組合合併助成法施行令
+---
+
+# 森林組合合併助成法施行令
+
+## Metadata
+- Law ID: `338CO0000000183`
+- Law No: 昭和三十八年政令第百八十三号
+- Promulgation Date: 19630603

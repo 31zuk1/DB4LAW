@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415CO0000000477
+id: JPLAW:415CO0000000477
+law_no: 平成十五年政令第四百七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/415CO0000000477
+promulgation_date: '20031203'
+tags:
+- 検察官・公証人特別任用等審査会令
+tier: 0
+title: 検察官・公証人特別任用等審査会令
+law_id: 415CO0000000477
+official_title: 検察官・公証人特別任用等審査会令
+aliases:
+- 検察官・公証人特別任用等審査会令
+---
+
+# 検察官・公証人特別任用等審査会令
+
+## Metadata
+- Law ID: `415CO0000000477`
+- Law No: 平成十五年政令第四百七十七号
+- Promulgation Date: 20031203

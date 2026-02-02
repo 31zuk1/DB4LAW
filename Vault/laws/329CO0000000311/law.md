@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329CO0000000311
+id: JPLAW:329CO0000000311
+law_no: 昭和二十九年政令第三百十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/329CO0000000311
+promulgation_date: '19541216'
+tags:
+- 理科教育振興法施行令
+tier: 0
+title: 理科教育振興法施行令
+law_id: 329CO0000000311
+official_title: 理科教育振興法施行令
+aliases:
+- 理科教育振興法施行令
+---
+
+# 理科教育振興法施行令
+
+## Metadata
+- Law ID: `329CO0000000311`
+- Law No: 昭和二十九年政令第三百十一号
+- Promulgation Date: 19541216

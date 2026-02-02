@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 212IO0000000369
+id: JPLAW:212IO0000000369
+law_no: 大正十二年勅令第三百六十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/212IO0000000369
+promulgation_date: '19230822'
+tags:
+- 恩給給与規則
+tier: 0
+title: 恩給給与規則
+law_id: 212IO0000000369
+official_title: 恩給給与規則
+aliases:
+- 恩給給与規則
+---
+
+# 恩給給与規則
+
+## Metadata
+- Law ID: `212IO0000000369`
+- Law No: 大正十二年勅令第三百六十九号
+- Promulgation Date: 19230822

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M50000040011
+id: JPLAW:328M50000040011
+law_no: 昭和二十八年大蔵省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M50000040011
+promulgation_date: '19530306'
+tags:
+- 酒税の保全及び酒類業組合等に関する法律施行規則
+tier: 0
+title: 酒税の保全及び酒類業組合等に関する法律施行規則
+law_id: 328M50000040011
+official_title: 酒税の保全及び酒類業組合等に関する法律施行規則
+aliases:
+- 酒税の保全及び酒類業組合等に関する法律施行規則
+---
+
+# 酒税の保全及び酒類業組合等に関する法律施行規則
+
+## Metadata
+- Law ID: `328M50000040011`
+- Law No: 昭和二十八年大蔵省令第十一号
+- Promulgation Date: 19530306

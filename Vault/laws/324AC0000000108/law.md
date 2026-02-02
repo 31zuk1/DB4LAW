@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000108
+id: JPLAW:324AC0000000108
+law_no: 昭和二十四年法律第百八号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000108
+promulgation_date: '19490528'
+tags:
+- 古物営業法
+tier: 0
+title: 古物営業法
+law_id: 324AC0000000108
+official_title: 古物営業法
+aliases:
+- 古物営業法
+---
+
+# 古物営業法
+
+## Metadata
+- Law ID: `324AC0000000108`
+- Law No: 昭和二十四年法律第百八号
+- Promulgation Date: 19490528

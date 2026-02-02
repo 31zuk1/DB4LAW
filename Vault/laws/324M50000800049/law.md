@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M50000800049
+id: JPLAW:324M50000800049
+law_no: 昭和二十四年運輸省令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M50000800049
+promulgation_date: '19490831'
+tags:
+- 海上運送法施行規則
+tier: 0
+title: 海上運送法施行規則
+law_id: 324M50000800049
+official_title: 海上運送法施行規則
+aliases:
+- 海上運送法施行規則
+---
+
+# 海上運送法施行規則
+
+## Metadata
+- Law ID: `324M50000800049`
+- Law No: 昭和二十四年運輸省令第四十九号
+- Promulgation Date: 19490831

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414CO0000000389
+id: JPLAW:414CO0000000389
+law_no: 平成十四年政令第三百八十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/414CO0000000389
+promulgation_date: '20021220'
+tags:
+- 使用済自動車の再資源化等に関する法律施行令
+tier: 0
+title: 使用済自動車の再資源化等に関する法律施行令
+law_id: 414CO0000000389
+official_title: 使用済自動車の再資源化等に関する法律施行令
+aliases:
+- 使用済自動車の再資源化等に関する法律施行令
+---
+
+# 使用済自動車の再資源化等に関する法律施行令
+
+## Metadata
+- Law ID: `414CO0000000389`
+- Law No: 平成十四年政令第三百八十九号
+- Promulgation Date: 20021220

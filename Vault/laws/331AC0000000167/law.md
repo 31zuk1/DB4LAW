@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 331AC0000000167
+id: JPLAW:331AC0000000167
+law_no: 昭和三十一年法律第百六十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/331AC0000000167
+promulgation_date: '19560702'
+tags:
+- 国際金融公社への加盟に伴う措置に関する法律
+tier: 0
+title: 国際金融公社への加盟に伴う措置に関する法律
+law_id: 331AC0000000167
+official_title: 国際金融公社への加盟に伴う措置に関する法律
+aliases:
+- 国際金融公社への加盟に伴う措置に関する法律
+---
+
+# 国際金融公社への加盟に伴う措置に関する法律
+
+## Metadata
+- Law ID: `331AC0000000167`
+- Law No: 昭和三十一年法律第百六十七号
+- Promulgation Date: 19560702

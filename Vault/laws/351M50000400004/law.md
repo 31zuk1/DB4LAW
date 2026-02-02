@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351M50000400004
+id: JPLAW:351M50000400004
+law_no: 昭和五十一年通商産業省令第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/351M50000400004
+promulgation_date: '19760217'
+tags:
+- 特定設備検査規則
+tier: 0
+title: 特定設備検査規則
+law_id: 351M50000400004
+official_title: 特定設備検査規則
+aliases:
+- 特定設備検査規則
+---
+
+# 特定設備検査規則
+
+## Metadata
+- Law ID: `351M50000400004`
+- Law No: 昭和五十一年通商産業省令第四号
+- Promulgation Date: 19760217

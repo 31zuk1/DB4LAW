@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000105
+id: JPLAW:413CO0000000105
+law_no: 平成十三年政令第百五号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000105
+promulgation_date: '20010330'
+tags:
+- 原子力発電施設等立地地域の振興に関する特別措置法施行令
+tier: 0
+title: 原子力発電施設等立地地域の振興に関する特別措置法施行令
+law_id: 413CO0000000105
+official_title: 原子力発電施設等立地地域の振興に関する特別措置法施行令
+aliases:
+- 原子力発電施設等立地地域の振興に関する特別措置法施行令
+---
+
+# 原子力発電施設等立地地域の振興に関する特別措置法施行令
+
+## Metadata
+- Law ID: `413CO0000000105`
+- Law No: 平成十三年政令第百五号
+- Promulgation Date: 20010330

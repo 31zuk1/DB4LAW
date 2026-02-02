@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 322AC0000000020
+id: JPLAW:322AC0000000020
+law_no: 昭和二十二年法律第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/322AC0000000020
+promulgation_date: '19470328'
+tags:
+- 恩赦法
+tier: 0
+title: 恩赦法
+law_id: 322AC0000000020
+official_title: 恩赦法
+aliases:
+- 恩赦法
+---
+
+# 恩赦法
+
+## Metadata
+- Law ID: `322AC0000000020`
+- Law No: 昭和二十二年法律第二十号
+- Promulgation Date: 19470328

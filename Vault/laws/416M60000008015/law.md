@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416M60000008015
+id: JPLAW:416M60000008015
+law_no: 平成十六年総務省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/416M60000008015
+promulgation_date: '20040126'
+tags:
+- 端末機器の技術基準適合認定等に関する規則
+tier: 0
+title: 端末機器の技術基準適合認定等に関する規則
+law_id: 416M60000008015
+official_title: 端末機器の技術基準適合認定等に関する規則
+aliases:
+- 端末機器の技術基準適合認定等に関する規則
+---
+
+# 端末機器の技術基準適合認定等に関する規則
+
+## Metadata
+- Law ID: `416M60000008015`
+- Law No: 平成十六年総務省令第十五号
+- Promulgation Date: 20040126

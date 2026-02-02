@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333CO0000000216
+id: JPLAW:333CO0000000216
+law_no: 昭和三十三年政令第二百十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/333CO0000000216
+promulgation_date: '19580711'
+tags:
+- 台風常襲地帯の指定基準に関する政令
+tier: 0
+title: 台風常襲地帯の指定基準に関する政令
+law_id: 333CO0000000216
+official_title: 台風常襲地帯の指定基準に関する政令
+aliases:
+- 台風常襲地帯の指定基準に関する政令
+---
+
+# 台風常襲地帯の指定基準に関する政令
+
+## Metadata
+- Law ID: `333CO0000000216`
+- Law No: 昭和三十三年政令第二百十六号
+- Promulgation Date: 19580711

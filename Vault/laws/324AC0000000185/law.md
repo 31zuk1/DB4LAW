@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000185
+id: JPLAW:324AC0000000185
+law_no: 昭和二十四年法律第百八十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000185
+promulgation_date: '19490601'
+tags:
+- 産業標準化法
+tier: 0
+title: 産業標準化法
+law_id: 324AC0000000185
+official_title: 産業標準化法
+aliases:
+- 産業標準化法
+---
+
+# 産業標準化法
+
+## Metadata
+- Law ID: `324AC0000000185`
+- Law No: 昭和二十四年法律第百八十五号
+- Promulgation Date: 19490601

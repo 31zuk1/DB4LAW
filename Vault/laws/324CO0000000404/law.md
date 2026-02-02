@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324CO0000000404
+id: JPLAW:324CO0000000404
+law_no: 昭和二十四年政令第四百四号
+links:
+  egov: https://laws.e-gov.go.jp/law/324CO0000000404
+promulgation_date: '19491226'
+tags:
+- 国際観光事業の助成に関する法律第一条の法人を指定する政令
+tier: 0
+title: 国際観光事業の助成に関する法律第一条の法人を指定する政令
+law_id: 324CO0000000404
+official_title: 国際観光事業の助成に関する法律第一条の法人を指定する政令
+aliases:
+- 国際観光事業の助成に関する法律第一条の法人を指定する政令
+---
+
+# 国際観光事業の助成に関する法律第一条の法人を指定する政令
+
+## Metadata
+- Law ID: `324CO0000000404`
+- Law No: 昭和二十四年政令第四百四号
+- Promulgation Date: 19491226

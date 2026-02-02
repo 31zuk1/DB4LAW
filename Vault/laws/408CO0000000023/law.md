@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 408CO0000000023
+id: JPLAW:408CO0000000023
+law_no: 平成八年政令第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/408CO0000000023
+promulgation_date: '19960221'
+tags:
+- 覚醒剤原料を指定する政令
+tier: 0
+title: 覚醒剤原料を指定する政令
+law_id: 408CO0000000023
+official_title: 覚醒剤原料を指定する政令
+aliases:
+- 覚醒剤原料を指定する政令
+---
+
+# 覚醒剤原料を指定する政令
+
+## Metadata
+- Law ID: `408CO0000000023`
+- Law No: 平成八年政令第二十三号
+- Promulgation Date: 19960221

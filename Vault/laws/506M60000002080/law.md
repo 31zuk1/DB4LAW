@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506M60000002080
+id: JPLAW:506M60000002080
+law_no: 令和六年内閣府令第八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/506M60000002080
+promulgation_date: '20240917'
+tags:
+- 官報の発行に関する内閣府令
+tier: 0
+title: 官報の発行に関する内閣府令
+law_id: 506M60000002080
+official_title: 官報の発行に関する内閣府令
+aliases:
+- 官報の発行に関する内閣府令
+---
+
+# 官報の発行に関する内閣府令
+
+## Metadata
+- Law ID: `506M60000002080`
+- Law No: 令和六年内閣府令第八十号
+- Promulgation Date: 20240917

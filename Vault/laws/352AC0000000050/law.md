@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 352AC0000000050
+id: JPLAW:352AC0000000050
+law_no: 昭和五十二年法律第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/352AC0000000050
+promulgation_date: '19770528'
+tags:
+- 昭和五十二年度の公債の発行の特例に関する法律
+tier: 0
+title: 昭和五十二年度の公債の発行の特例に関する法律
+law_id: 352AC0000000050
+official_title: 昭和五十二年度の公債の発行の特例に関する法律
+aliases:
+- 昭和五十二年度の公債の発行の特例に関する法律
+---
+
+# 昭和五十二年度の公債の発行の特例に関する法律
+
+## Metadata
+- Law ID: `352AC0000000050`
+- Law No: 昭和五十二年法律第五十号
+- Promulgation Date: 19770528

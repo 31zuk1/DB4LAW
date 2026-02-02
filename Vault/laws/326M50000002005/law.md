@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000002005
+id: JPLAW:326M50000002005
+law_no: 昭和二十六年総理府令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000002005
+promulgation_date: '19510228'
+tags:
+- 行政書士法施行規則
+tier: 0
+title: 行政書士法施行規則
+law_id: 326M50000002005
+official_title: 行政書士法施行規則
+aliases:
+- 行政書士法施行規則
+---
+
+# 行政書士法施行規則
+
+## Metadata
+- Law ID: `326M50000002005`
+- Law No: 昭和二十六年総理府令第五号
+- Promulgation Date: 19510228

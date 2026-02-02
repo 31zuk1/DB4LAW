@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC1000000097
+id: JPLAW:418AC1000000097
+law_no: 平成十八年法律第九十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC1000000097
+promulgation_date: '20060623'
+tags:
+- 海外の文化遺産の保護に係る国際的な協力の推進に関する法律
+tier: 0
+title: 海外の文化遺産の保護に係る国際的な協力の推進に関する法律
+law_id: 418AC1000000097
+official_title: 海外の文化遺産の保護に係る国際的な協力の推進に関する法律
+aliases:
+- 海外の文化遺産の保護に係る国際的な協力の推進に関する法律
+---
+
+# 海外の文化遺産の保護に係る国際的な協力の推進に関する法律
+
+## Metadata
+- Law ID: `418AC1000000097`
+- Law No: 平成十八年法律第九十七号
+- Promulgation Date: 20060623

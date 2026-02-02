@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC0000000078
+id: JPLAW:418AC0000000078
+law_no: 平成十八年法律第七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC0000000078
+promulgation_date: '20060621'
+tags:
+- 法の適用に関する通則法
+tier: 0
+title: 法の適用に関する通則法
+law_id: 418AC0000000078
+official_title: 法の適用に関する通則法
+aliases:
+- 法の適用に関する通則法
+---
+
+# 法の適用に関する通則法
+
+## Metadata
+- Law ID: `418AC0000000078`
+- Law No: 平成十八年法律第七十八号
+- Promulgation Date: 20060621

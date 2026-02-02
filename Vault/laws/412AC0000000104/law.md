@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC0000000104
+id: JPLAW:412AC0000000104
+law_no: 平成十二年法律第百四号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC0000000104
+promulgation_date: '20000531'
+tags:
+- 建設工事に係る資材の再資源化等に関する法律
+tier: 0
+title: 建設工事に係る資材の再資源化等に関する法律
+law_id: 412AC0000000104
+official_title: 建設工事に係る資材の再資源化等に関する法律
+aliases:
+- 建設工事に係る資材の再資源化等に関する法律
+---
+
+# 建設工事に係る資材の再資源化等に関する法律
+
+## Metadata
+- Law ID: `412AC0000000104`
+- Law No: 平成十二年法律第百四号
+- Promulgation Date: 20000531

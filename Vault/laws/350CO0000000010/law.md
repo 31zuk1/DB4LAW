@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 350CO0000000010
+id: JPLAW:350CO0000000010
+law_no: 昭和五十年政令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/350CO0000000010
+promulgation_date: '19750124'
+tags:
+- 空港周辺整備債券令
+tier: 0
+title: 空港周辺整備債券令
+law_id: 350CO0000000010
+official_title: 空港周辺整備債券令
+aliases:
+- 空港周辺整備債券令
+---
+
+# 空港周辺整備債券令
+
+## Metadata
+- Law ID: `350CO0000000010`
+- Law No: 昭和五十年政令第十号
+- Promulgation Date: 19750124

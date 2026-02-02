@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333M50000400086
+id: JPLAW:333M50000400086
+law_no: 昭和三十三年通商産業省令第八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/333M50000400086
+promulgation_date: '19580804'
+tags:
+- 水洗炭業に関する法律施行規則
+tier: 0
+title: 水洗炭業に関する法律施行規則
+law_id: 333M50000400086
+official_title: 水洗炭業に関する法律施行規則
+aliases:
+- 水洗炭業に関する法律施行規則
+---
+
+# 水洗炭業に関する法律施行規則
+
+## Metadata
+- Law ID: `333M50000400086`
+- Law No: 昭和三十三年通商産業省令第八十六号
+- Promulgation Date: 19580804

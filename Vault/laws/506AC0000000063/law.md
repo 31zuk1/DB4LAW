@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 506AC0000000063
+id: JPLAW:506AC0000000063
+law_no: 令和六年法律第六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/506AC0000000063
+promulgation_date: '20240621'
+tags:
+- 農業の生産性の向上のためのスマート農業技術の活用の促進に関する法律
+tier: 0
+title: 農業の生産性の向上のためのスマート農業技術の活用の促進に関する法律
+law_id: 506AC0000000063
+official_title: 農業の生産性の向上のためのスマート農業技術の活用の促進に関する法律
+aliases:
+- 農業の生産性の向上のためのスマート農業技術の活用の促進に関する法律
+---
+
+# 農業の生産性の向上のためのスマート農業技術の活用の促進に関する法律
+
+## Metadata
+- Law ID: `506AC0000000063`
+- Law No: 令和六年法律第六十三号
+- Promulgation Date: 20240621

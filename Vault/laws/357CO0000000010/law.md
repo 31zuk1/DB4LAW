@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 357CO0000000010
+id: JPLAW:357CO0000000010
+law_no: 昭和五十七年政令第十号
+links:
+  egov: https://laws.e-gov.go.jp/law/357CO0000000010
+promulgation_date: '19820126'
+tags:
+- 船舶のトン数の測度に関する法律附則第五条第三項の経過措置を定める政令
+tier: 0
+title: 船舶のトン数の測度に関する法律附則第五条第三項の経過措置を定める政令
+law_id: 357CO0000000010
+official_title: 船舶のトン数の測度に関する法律附則第五条第三項の経過措置を定める政令
+aliases:
+- 船舶のトン数の測度に関する法律附則第五条第三項の経過措置を定める政令
+---
+
+# 船舶のトン数の測度に関する法律附則第五条第三項の経過措置を定める政令
+
+## Metadata
+- Law ID: `357CO0000000010`
+- Law No: 昭和五十七年政令第十号
+- Promulgation Date: 19820126

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410AC0100000066
+id: JPLAW:410AC0100000066
+law_no: 平成十年法律第六十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/410AC0100000066
+promulgation_date: '19980522'
+tags:
+- 被災者生活再建支援法
+tier: 0
+title: 被災者生活再建支援法
+law_id: 410AC0100000066
+official_title: 被災者生活再建支援法
+aliases:
+- 被災者生活再建支援法
+---
+
+# 被災者生活再建支援法
+
+## Metadata
+- Law ID: `410AC0100000066`
+- Law No: 平成十年法律第六十六号
+- Promulgation Date: 19980522

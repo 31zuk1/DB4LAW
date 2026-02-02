@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 343AC1000000089
+id: JPLAW:343AC1000000089
+law_no: 昭和四十三年法律第八十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/343AC1000000089
+promulgation_date: '19680603'
+tags:
+- 社会保険労務士法
+tier: 0
+title: 社会保険労務士法
+law_id: 343AC1000000089
+official_title: 社会保険労務士法
+aliases:
+- 社会保険労務士法
+---
+
+# 社会保険労務士法
+
+## Metadata
+- Law ID: `343AC1000000089`
+- Law No: 昭和四十三年法律第八十九号
+- Promulgation Date: 19680603

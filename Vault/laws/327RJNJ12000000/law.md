@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327RJNJ12000000
+id: JPLAW:327RJNJ12000000
+law_no: 昭和二十七年人事院規則一二―〇
+links:
+  egov: https://laws.e-gov.go.jp/law/327RJNJ12000000
+promulgation_date: '19520523'
+tags:
+- 人事院規則一二―〇（職員の懲戒）
+tier: 0
+title: 人事院規則一二―〇（職員の懲戒）
+law_id: 327RJNJ12000000
+official_title: 人事院規則一二―〇（職員の懲戒）
+aliases:
+- 人事院規則一二―〇（職員の懲戒）
+---
+
+# 人事院規則一二―〇（職員の懲戒）
+
+## Metadata
+- Law ID: `327RJNJ12000000`
+- Law No: 昭和二十七年人事院規則一二―〇
+- Promulgation Date: 19520523

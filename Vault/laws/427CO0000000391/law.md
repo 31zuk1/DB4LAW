@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427CO0000000391
+id: JPLAW:427CO0000000391
+law_no: 平成二十七年政令第三百九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/427CO0000000391
+promulgation_date: '20151126'
+tags:
+- 行政不服審査法施行令
+tier: 0
+title: 行政不服審査法施行令
+law_id: 427CO0000000391
+official_title: 行政不服審査法施行令
+aliases:
+- 行政不服審査法施行令
+---
+
+# 行政不服審査法施行令
+
+## Metadata
+- Law ID: `427CO0000000391`
+- Law No: 平成二十七年政令第三百九十一号
+- Promulgation Date: 20151126

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 323AC0000000027
+id: JPLAW:323AC0000000027
+law_no: 昭和二十三年法律第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/323AC0000000027
+promulgation_date: '19480414'
+tags:
+- 財政法第三条の特例に関する法律
+tier: 0
+title: 財政法第三条の特例に関する法律
+law_id: 323AC0000000027
+official_title: 財政法第三条の特例に関する法律
+aliases:
+- 財政法第三条の特例に関する法律
+---
+
+# 財政法第三条の特例に関する法律
+
+## Metadata
+- Law ID: `323AC0000000027`
+- Law No: 昭和二十三年法律第二十七号
+- Promulgation Date: 19480414

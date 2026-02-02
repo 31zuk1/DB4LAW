@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430AC0000000061
+id: JPLAW:430AC0000000061
+law_no: 平成三十年法律第六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/430AC0000000061
+promulgation_date: '20180620'
+tags:
+- 船舶の再資源化解体の適正な実施に関する法律
+tier: 0
+title: 船舶の再資源化解体の適正な実施に関する法律
+law_id: 430AC0000000061
+official_title: 船舶の再資源化解体の適正な実施に関する法律
+aliases:
+- 船舶の再資源化解体の適正な実施に関する法律
+---
+
+# 船舶の再資源化解体の適正な実施に関する法律
+
+## Metadata
+- Law ID: `430AC0000000061`
+- Law No: 平成三十年法律第六十一号
+- Promulgation Date: 20180620

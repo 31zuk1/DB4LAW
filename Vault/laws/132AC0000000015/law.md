@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 132AC0000000015
+id: JPLAW:132AC0000000015
+law_no: 明治三十二年法律第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/132AC0000000015
+promulgation_date: '18990208'
+tags:
+- 供託法
+tier: 0
+title: 供託法
+law_id: 132AC0000000015
+official_title: 供託法
+aliases:
+- 供託法
+---
+
+# 供託法
+
+## Metadata
+- Law ID: `132AC0000000015`
+- Law No: 明治三十二年法律第十五号
+- Promulgation Date: 18990208

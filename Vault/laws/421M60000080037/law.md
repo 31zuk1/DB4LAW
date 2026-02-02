@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421M60000080037
+id: JPLAW:421M60000080037
+law_no: 平成二十一年文部科学省令第三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/421M60000080037
+promulgation_date: '20091224'
+tags:
+- 原子力損害賠償補償契約に関する法律施行規則
+tier: 0
+title: 原子力損害賠償補償契約に関する法律施行規則
+law_id: 421M60000080037
+official_title: 原子力損害賠償補償契約に関する法律施行規則
+aliases:
+- 原子力損害賠償補償契約に関する法律施行規則
+---
+
+# 原子力損害賠償補償契約に関する法律施行規則
+
+## Metadata
+- Law ID: `421M60000080037`
+- Law No: 平成二十一年文部科学省令第三十七号
+- Promulgation Date: 20091224

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50080000012
+id: JPLAW:325M50080000012
+law_no: 昭和二十五年電波監理委員会規則第十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50080000012
+promulgation_date: '19500911'
+tags:
+- 無線局（基幹放送局を除く。）の開設の根本的基準
+tier: 0
+title: 無線局（基幹放送局を除く。）の開設の根本的基準
+law_id: 325M50080000012
+official_title: 無線局（基幹放送局を除く。）の開設の根本的基準
+aliases:
+- 無線局（基幹放送局を除く。）の開設の根本的基準
+---
+
+# 無線局（基幹放送局を除く。）の開設の根本的基準
+
+## Metadata
+- Law ID: `325M50080000012`
+- Law No: 昭和二十五年電波監理委員会規則第十二号
+- Promulgation Date: 19500911

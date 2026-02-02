@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 336M50000100051
+id: JPLAW:336M50000100051
+law_no: 昭和三十六年厚生省令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/336M50000100051
+promulgation_date: '19611207'
+tags:
+- 児童扶養手当法施行規則
+tier: 0
+title: 児童扶養手当法施行規則
+law_id: 336M50000100051
+official_title: 児童扶養手当法施行規則
+aliases:
+- 児童扶養手当法施行規則
+---
+
+# 児童扶養手当法施行規則
+
+## Metadata
+- Law ID: `336M50000100051`
+- Law No: 昭和三十六年厚生省令第五十一号
+- Promulgation Date: 19611207

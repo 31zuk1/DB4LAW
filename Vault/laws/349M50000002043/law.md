@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349M50000002043
+id: JPLAW:349M50000002043
+law_no: 昭和四十九年総理府令第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/349M50000002043
+promulgation_date: '19740627'
+tags:
+- 防衛施設周辺の生活環境の整備等に関する法律施行規則
+tier: 0
+title: 防衛施設周辺の生活環境の整備等に関する法律施行規則
+law_id: 349M50000002043
+official_title: 防衛施設周辺の生活環境の整備等に関する法律施行規則
+aliases:
+- 防衛施設周辺の生活環境の整備等に関する法律施行規則
+---
+
+# 防衛施設周辺の生活環境の整備等に関する法律施行規則
+
+## Metadata
+- Law ID: `349M50000002043`
+- Law No: 昭和四十九年総理府令第四十三号
+- Promulgation Date: 19740627

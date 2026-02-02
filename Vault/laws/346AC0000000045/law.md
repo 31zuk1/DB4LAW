@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346AC0000000045
+id: JPLAW:346AC0000000045
+law_no: 昭和四十六年法律第四十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/346AC0000000045
+promulgation_date: '19710415'
+tags:
+- 国際協力銀行法による貸付金の利息の特例等に関する法律
+tier: 0
+title: 国際協力銀行法による貸付金の利息の特例等に関する法律
+law_id: 346AC0000000045
+official_title: 国際協力銀行法による貸付金の利息の特例等に関する法律
+aliases:
+- 国際協力銀行法による貸付金の利息の特例等に関する法律
+---
+
+# 国際協力銀行法による貸付金の利息の特例等に関する法律
+
+## Metadata
+- Law ID: `346AC0000000045`
+- Law No: 昭和四十六年法律第四十五号
+- Promulgation Date: 19710415

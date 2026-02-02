@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417CO0000000342
+id: JPLAW:417CO0000000342
+law_no: 平成十七年政令第三百四十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/417CO0000000342
+promulgation_date: '20051116'
+tags:
+- 郵政民営化法施行令
+tier: 0
+title: 郵政民営化法施行令
+law_id: 417CO0000000342
+official_title: 郵政民営化法施行令
+aliases:
+- 郵政民営化法施行令
+---
+
+# 郵政民営化法施行令
+
+## Metadata
+- Law ID: `417CO0000000342`
+- Law No: 平成十七年政令第三百四十二号
+- Promulgation Date: 20051116

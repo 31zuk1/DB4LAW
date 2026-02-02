@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427CO0000000198
+id: JPLAW:427CO0000000198
+law_no: 平成二十七年政令第百九十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/427CO0000000198
+promulgation_date: '20150410'
+tags:
+- 環境省国立研究開発法人審議会令
+tier: 0
+title: 環境省国立研究開発法人審議会令
+law_id: 427CO0000000198
+official_title: 環境省国立研究開発法人審議会令
+aliases:
+- 環境省国立研究開発法人審議会令
+---
+
+# 環境省国立研究開発法人審議会令
+
+## Metadata
+- Law ID: `427CO0000000198`
+- Law No: 平成二十七年政令第百九十八号
+- Promulgation Date: 20150410

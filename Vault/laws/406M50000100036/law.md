@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50000100036
+id: JPLAW:406M50000100036
+law_no: 平成六年厚生省令第三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50000100036
+promulgation_date: '19940428'
+tags:
+- 水道原水水質保全事業の実施の促進に関する法律施行規則
+tier: 0
+title: 水道原水水質保全事業の実施の促進に関する法律施行規則
+law_id: 406M50000100036
+official_title: 水道原水水質保全事業の実施の促進に関する法律施行規則
+aliases:
+- 水道原水水質保全事業の実施の促進に関する法律施行規則
+---
+
+# 水道原水水質保全事業の実施の促進に関する法律施行規則
+
+## Metadata
+- Law ID: `406M50000100036`
+- Law No: 平成六年厚生省令第三十六号
+- Promulgation Date: 19940428

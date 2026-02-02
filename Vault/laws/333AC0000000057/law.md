@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC0000000057
+id: JPLAW:333AC0000000057
+law_no: 昭和三十三年法律第五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC0000000057
+promulgation_date: '19580415'
+tags:
+- 分収林特別措置法
+tier: 0
+title: 分収林特別措置法
+law_id: 333AC0000000057
+official_title: 分収林特別措置法
+aliases:
+- 分収林特別措置法
+---
+
+# 分収林特別措置法
+
+## Metadata
+- Law ID: `333AC0000000057`
+- Law No: 昭和三十三年法律第五十七号
+- Promulgation Date: 19580415

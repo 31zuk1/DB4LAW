@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407AC0000000043
+id: JPLAW:407AC0000000043
+law_no: 平成七年法律第四十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/407AC0000000043
+promulgation_date: '19950324'
+tags:
+- 被災区分所有建物の再建等に関する特別措置法
+tier: 0
+title: 被災区分所有建物の再建等に関する特別措置法
+law_id: 407AC0000000043
+official_title: 被災区分所有建物の再建等に関する特別措置法
+aliases:
+- 被災区分所有建物の再建等に関する特別措置法
+---
+
+# 被災区分所有建物の再建等に関する特別措置法
+
+## Metadata
+- Law ID: `407AC0000000043`
+- Law No: 平成七年法律第四十三号
+- Promulgation Date: 19950324

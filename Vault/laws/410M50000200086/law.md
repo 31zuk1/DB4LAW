@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000200086
+id: JPLAW:410M50000200086
+law_no: 平成十年農林水産省令第八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000200086
+promulgation_date: '19981211'
+tags:
+- 品種登録規則
+tier: 0
+title: 品種登録規則
+law_id: 410M50000200086
+official_title: 品種登録規則
+aliases:
+- 品種登録規則
+---
+
+# 品種登録規則
+
+## Metadata
+- Law ID: `410M50000200086`
+- Law No: 平成十年農林水産省令第八十六号
+- Promulgation Date: 19981211

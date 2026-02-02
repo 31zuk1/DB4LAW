@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000442001
+id: JPLAW:415M60000442001
+law_no: 平成十五年内閣府・財務省・経済産業省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000442001
+promulgation_date: '20030502'
+tags:
+- 株式会社産業再生機構法施行規則
+tier: 0
+title: 株式会社産業再生機構法施行規則
+law_id: 415M60000442001
+official_title: 株式会社産業再生機構法施行規則
+aliases:
+- 株式会社産業再生機構法施行規則
+---
+
+# 株式会社産業再生機構法施行規則
+
+## Metadata
+- Law ID: `415M60000442001`
+- Law No: 平成十五年内閣府・財務省・経済産業省令第一号
+- Promulgation Date: 20030502

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M50000080028
+id: JPLAW:324M50000080028
+law_no: 昭和二十四年文部省令第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M50000080028
+promulgation_date: '19490723'
+tags:
+- 文部科学省著作教科書出版資格審査申請書規則
+tier: 0
+title: 文部科学省著作教科書出版資格審査申請書規則
+law_id: 324M50000080028
+official_title: 文部科学省著作教科書出版資格審査申請書規則
+aliases:
+- 文部科学省著作教科書出版資格審査申請書規則
+---
+
+# 文部科学省著作教科書出版資格審査申請書規則
+
+## Metadata
+- Law ID: `324M50000080028`
+- Law No: 昭和二十四年文部省令第二十八号
+- Promulgation Date: 19490723

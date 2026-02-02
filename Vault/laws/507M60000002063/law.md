@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507M60000002063
+id: JPLAW:507M60000002063
+law_no: 令和七年内閣府令第六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/507M60000002063
+promulgation_date: '20250627'
+tags:
+- 公益信託に関する法律施行規則
+tier: 0
+title: 公益信託に関する法律施行規則
+law_id: 507M60000002063
+official_title: 公益信託に関する法律施行規則
+aliases:
+- 公益信託に関する法律施行規則
+---
+
+# 公益信託に関する法律施行規則
+
+## Metadata
+- Law ID: `507M60000002063`
+- Law No: 令和七年内閣府令第六十三号
+- Promulgation Date: 20250627

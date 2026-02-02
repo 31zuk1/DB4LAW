@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000002068
+id: JPLAW:410M50000002068
+law_no: 平成十年総理府令第六十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000002068
+promulgation_date: '19981106'
+tags:
+- 被災者生活再建支援法施行規則
+tier: 0
+title: 被災者生活再建支援法施行規則
+law_id: 410M50000002068
+official_title: 被災者生活再建支援法施行規則
+aliases:
+- 被災者生活再建支援法施行規則
+---
+
+# 被災者生活再建支援法施行規則
+
+## Metadata
+- Law ID: `410M50000002068`
+- Law No: 平成十年総理府令第六十八号
+- Promulgation Date: 19981106

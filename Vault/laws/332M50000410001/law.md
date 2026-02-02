@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000410001
+id: JPLAW:332M50000410001
+law_no: 昭和三十二年法務省・通商産業省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000410001
+promulgation_date: '19570202'
+tags:
+- 鉱害賠償供託金配当令施行規則
+tier: 0
+title: 鉱害賠償供託金配当令施行規則
+law_id: 332M50000410001
+official_title: 鉱害賠償供託金配当令施行規則
+aliases:
+- 鉱害賠償供託金配当令施行規則
+---
+
+# 鉱害賠償供託金配当令施行規則
+
+## Metadata
+- Law ID: `332M50000410001`
+- Law No: 昭和三十二年法務省・通商産業省令第一号
+- Promulgation Date: 19570202

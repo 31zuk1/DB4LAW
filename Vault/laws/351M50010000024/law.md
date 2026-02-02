@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 351M50010000024
+id: JPLAW:351M50010000024
+law_no: 昭和五十一年農林省令第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/351M50010000024
+promulgation_date: '19760601'
+tags:
+- 漁業経営の改善及び再建整備に関する特別措置法施行規則
+tier: 0
+title: 漁業経営の改善及び再建整備に関する特別措置法施行規則
+law_id: 351M50010000024
+official_title: 漁業経営の改善及び再建整備に関する特別措置法施行規則
+aliases:
+- 漁業経営の改善及び再建整備に関する特別措置法施行規則
+---
+
+# 漁業経営の改善及び再建整備に関する特別措置法施行規則
+
+## Metadata
+- Law ID: `351M50010000024`
+- Law No: 昭和五十一年農林省令第二十四号
+- Promulgation Date: 19760601

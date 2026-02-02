@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 353M50000002051
+id: JPLAW:353M50000002051
+law_no: 昭和五十三年総理府令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/353M50000002051
+promulgation_date: '19781228'
+tags:
+- 原子炉主任技術者試験の実施細目等に関する規則
+tier: 0
+title: 原子炉主任技術者試験の実施細目等に関する規則
+law_id: 353M50000002051
+official_title: 原子炉主任技術者試験の実施細目等に関する規則
+aliases:
+- 原子炉主任技術者試験の実施細目等に関する規則
+---
+
+# 原子炉主任技術者試験の実施細目等に関する規則
+
+## Metadata
+- Law ID: `353M50000002051`
+- Law No: 昭和五十三年総理府令第五十一号
+- Promulgation Date: 19781228

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC1000000137
+id: JPLAW:325AC1000000137
+law_no: 昭和二十五年法律第百三十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC1000000137
+promulgation_date: '19500502'
+tags:
+- 漁港及び漁場の整備等に関する法律
+tier: 0
+title: 漁港及び漁場の整備等に関する法律
+law_id: 325AC1000000137
+official_title: 漁港及び漁場の整備等に関する法律
+aliases:
+- 漁港及び漁場の整備等に関する法律
+---
+
+# 漁港及び漁場の整備等に関する法律
+
+## Metadata
+- Law ID: `325AC1000000137`
+- Law No: 昭和二十五年法律第百三十七号
+- Promulgation Date: 19500502

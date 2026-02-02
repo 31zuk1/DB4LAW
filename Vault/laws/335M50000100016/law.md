@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 335M50000100016
+id: JPLAW:335M50000100016
+law_no: 昭和三十五年厚生省令第十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/335M50000100016
+promulgation_date: '19600509'
+tags:
+- 知的障害者福祉法施行規則
+tier: 0
+title: 知的障害者福祉法施行規則
+law_id: 335M50000100016
+official_title: 知的障害者福祉法施行規則
+aliases:
+- 知的障害者福祉法施行規則
+---
+
+# 知的障害者福祉法施行規則
+
+## Metadata
+- Law ID: `335M50000100016`
+- Law No: 昭和三十五年厚生省令第十六号
+- Promulgation Date: 19600509

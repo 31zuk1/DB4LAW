@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000400015
+id: JPLAW:329M50000400015
+law_no: 昭和二十九年通商産業省令第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000400015
+promulgation_date: '19540401'
+tags:
+- ガス事業会計規則
+tier: 0
+title: ガス事業会計規則
+law_id: 329M50000400015
+official_title: ガス事業会計規則
+aliases:
+- ガス事業会計規則
+---
+
+# ガス事業会計規則
+
+## Metadata
+- Law ID: `329M50000400015`
+- Law No: 昭和二十九年通商産業省令第十五号
+- Promulgation Date: 19540401

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC1000000166
+id: JPLAW:326AC1000000166
+law_no: 昭和二十六年法律第百六十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC1000000166
+promulgation_date: '19510531'
+tags:
+- 家畜伝染病予防法
+tier: 0
+title: 家畜伝染病予防法
+law_id: 326AC1000000166
+official_title: 家畜伝染病予防法
+aliases:
+- 家畜伝染病予防法
+---
+
+# 家畜伝染病予防法
+
+## Metadata
+- Law ID: `326AC1000000166`
+- Law No: 昭和二十六年法律第百六十六号
+- Promulgation Date: 19510531

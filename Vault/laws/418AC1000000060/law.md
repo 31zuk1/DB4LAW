@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC1000000060
+id: JPLAW:418AC1000000060
+law_no: 平成十八年法律第六十号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC1000000060
+promulgation_date: '20060608'
+tags:
+- 探偵業の業務の適正化に関する法律
+tier: 0
+title: 探偵業の業務の適正化に関する法律
+law_id: 418AC1000000060
+official_title: 探偵業の業務の適正化に関する法律
+aliases:
+- 探偵業の業務の適正化に関する法律
+---
+
+# 探偵業の業務の適正化に関する法律
+
+## Metadata
+- Law ID: `418AC1000000060`
+- Law No: 平成十八年法律第六十号
+- Promulgation Date: 20060608

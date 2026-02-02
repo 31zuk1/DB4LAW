@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407M50400000004
+id: JPLAW:407M50400000004
+law_no: 平成七年国家公安委員会規則第四号
+links:
+  egov: https://laws.e-gov.go.jp/law/407M50400000004
+promulgation_date: '19950501'
+tags:
+- 特定物質の運搬の届出等に関する規則
+tier: 0
+title: 特定物質の運搬の届出等に関する規則
+law_id: 407M50400000004
+official_title: 特定物質の運搬の届出等に関する規則
+aliases:
+- 特定物質の運搬の届出等に関する規則
+---
+
+# 特定物質の運搬の届出等に関する規則
+
+## Metadata
+- Law ID: `407M50400000004`
+- Law No: 平成七年国家公安委員会規則第四号
+- Promulgation Date: 19950501

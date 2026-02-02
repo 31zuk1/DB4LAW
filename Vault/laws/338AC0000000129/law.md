@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338AC0000000129
+id: JPLAW:338AC0000000129
+law_no: 昭和三十八年法律第百二十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/338AC0000000129
+promulgation_date: '19630710'
+tags:
+- 近畿圏整備法
+tier: 0
+title: 近畿圏整備法
+law_id: 338AC0000000129
+official_title: 近畿圏整備法
+aliases:
+- 近畿圏整備法
+---
+
+# 近畿圏整備法
+
+## Metadata
+- Law ID: `338AC0000000129`
+- Law No: 昭和三十八年法律第百二十九号
+- Promulgation Date: 19630710

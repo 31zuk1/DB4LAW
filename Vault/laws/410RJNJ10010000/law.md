@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410RJNJ10010000
+id: JPLAW:410RJNJ10010000
+law_no: 平成十年人事院規則一〇―一〇
+links:
+  egov: https://laws.e-gov.go.jp/law/410RJNJ10010000
+promulgation_date: '19981113'
+tags:
+- 人事院規則一〇―一〇（セクシュアル・ハラスメントの防止等）
+tier: 0
+title: 人事院規則一〇―一〇（セクシュアル・ハラスメントの防止等）
+law_id: 410RJNJ10010000
+official_title: 人事院規則一〇―一〇（セクシュアル・ハラスメントの防止等）
+aliases:
+- 人事院規則一〇―一〇（セクシュアル・ハラスメントの防止等）
+---
+
+# 人事院規則一〇―一〇（セクシュアル・ハラスメントの防止等）
+
+## Metadata
+- Law ID: `410RJNJ10010000`
+- Law No: 平成十年人事院規則一〇―一〇
+- Promulgation Date: 19981113

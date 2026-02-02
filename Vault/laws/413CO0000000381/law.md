@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000381
+id: JPLAW:413CO0000000381
+law_no: 平成十三年政令第三百八十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000381
+promulgation_date: '20011130'
+tags:
+- 小型船舶登録令
+tier: 0
+title: 小型船舶登録令
+law_id: 413CO0000000381
+official_title: 小型船舶登録令
+aliases:
+- 小型船舶登録令
+---
+
+# 小型船舶登録令
+
+## Metadata
+- Law ID: `413CO0000000381`
+- Law No: 平成十三年政令第三百八十一号
+- Promulgation Date: 20011130

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000100099
+id: JPLAW:410M50000100099
+law_no: 平成十年厚生省令第九十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000100099
+promulgation_date: '19981228'
+tags:
+- 感染症の予防及び感染症の患者に対する医療に関する法律施行規則
+tier: 0
+title: 感染症の予防及び感染症の患者に対する医療に関する法律施行規則
+law_id: 410M50000100099
+official_title: 感染症の予防及び感染症の患者に対する医療に関する法律施行規則
+aliases:
+- 感染症の予防及び感染症の患者に対する医療に関する法律施行規則
+---
+
+# 感染症の予防及び感染症の患者に対する医療に関する法律施行規則
+
+## Metadata
+- Law ID: `410M50000100099`
+- Law No: 平成十年厚生省令第九十九号
+- Promulgation Date: 19981228

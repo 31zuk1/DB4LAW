@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 430CO0000000308
+id: JPLAW:430CO0000000308
+law_no: 平成三十年政令第三百八号
+links:
+  egov: https://laws.e-gov.go.jp/law/430CO0000000308
+promulgation_date: '20181109'
+tags:
+- 所有者不明土地の利用の円滑化等に関する特別措置法施行令
+tier: 0
+title: 所有者不明土地の利用の円滑化等に関する特別措置法施行令
+law_id: 430CO0000000308
+official_title: 所有者不明土地の利用の円滑化等に関する特別措置法施行令
+aliases:
+- 所有者不明土地の利用の円滑化等に関する特別措置法施行令
+---
+
+# 所有者不明土地の利用の円滑化等に関する特別措置法施行令
+
+## Metadata
+- Law ID: `430CO0000000308`
+- Law No: 平成三十年政令第三百八号
+- Promulgation Date: 20181109

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 141AC0000000053
+id: JPLAW:141AC0000000053
+law_no: 明治四十一年法律第五十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/141AC0000000053
+promulgation_date: '19080414'
+tags:
+- 公証人法
+tier: 0
+title: 公証人法
+law_id: 141AC0000000053
+official_title: 公証人法
+aliases:
+- 公証人法
+---
+
+# 公証人法
+
+## Metadata
+- Law ID: `141AC0000000053`
+- Law No: 明治四十一年法律第五十三号
+- Promulgation Date: 19080414

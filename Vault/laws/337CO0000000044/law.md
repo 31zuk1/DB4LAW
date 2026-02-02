@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 337CO0000000044
+id: JPLAW:337CO0000000044
+law_no: 昭和三十七年政令第四十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/337CO0000000044
+promulgation_date: '19620306'
+tags:
+- 原子力損害の賠償に関する法律施行令
+tier: 0
+title: 原子力損害の賠償に関する法律施行令
+law_id: 337CO0000000044
+official_title: 原子力損害の賠償に関する法律施行令
+aliases:
+- 原子力損害の賠償に関する法律施行令
+---
+
+# 原子力損害の賠償に関する法律施行令
+
+## Metadata
+- Law ID: `337CO0000000044`
+- Law No: 昭和三十七年政令第四十四号
+- Promulgation Date: 19620306

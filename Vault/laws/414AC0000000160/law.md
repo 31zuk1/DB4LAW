@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000160
+id: JPLAW:414AC0000000160
+law_no: 平成十四年法律第百六十号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000160
+promulgation_date: '20021213'
+tags:
+- 国立研究開発法人理化学研究所法
+tier: 0
+title: 国立研究開発法人理化学研究所法
+law_id: 414AC0000000160
+official_title: 国立研究開発法人理化学研究所法
+aliases:
+- 国立研究開発法人理化学研究所法
+---
+
+# 国立研究開発法人理化学研究所法
+
+## Metadata
+- Law ID: `414AC0000000160`
+- Law No: 平成十四年法律第百六十号
+- Promulgation Date: 20021213

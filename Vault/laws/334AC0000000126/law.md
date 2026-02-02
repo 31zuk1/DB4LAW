@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334AC0000000126
+id: JPLAW:334AC0000000126
+law_no: 昭和三十四年法律第百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/334AC0000000126
+promulgation_date: '19590413'
+tags:
+- 意匠法施行法
+tier: 0
+title: 意匠法施行法
+law_id: 334AC0000000126
+official_title: 意匠法施行法
+aliases:
+- 意匠法施行法
+---
+
+# 意匠法施行法
+
+## Metadata
+- Law ID: `334AC0000000126`
+- Law No: 昭和三十四年法律第百二十六号
+- Promulgation Date: 19590413

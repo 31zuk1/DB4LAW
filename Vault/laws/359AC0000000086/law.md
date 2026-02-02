@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 359AC0000000086
+id: JPLAW:359AC0000000086
+law_no: 昭和五十九年法律第八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/359AC0000000086
+promulgation_date: '19841225'
+tags:
+- 電気通信事業法
+tier: 0
+title: 電気通信事業法
+law_id: 359AC0000000086
+official_title: 電気通信事業法
+aliases:
+- 電気通信事業法
+---
+
+# 電気通信事業法
+
+## Metadata
+- Law ID: `359AC0000000086`
+- Law No: 昭和五十九年法律第八十六号
+- Promulgation Date: 19841225

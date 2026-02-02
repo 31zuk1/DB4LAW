@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345M50000008011
+id: JPLAW:345M50000008011
+law_no: 昭和四十五年自治省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/345M50000008011
+promulgation_date: '19700430'
+tags:
+- 公営競技納付金の納付に関する規則
+tier: 0
+title: 公営競技納付金の納付に関する規則
+law_id: 345M50000008011
+official_title: 公営競技納付金の納付に関する規則
+aliases:
+- 公営競技納付金の納付に関する規則
+---
+
+# 公営競技納付金の納付に関する規則
+
+## Metadata
+- Law ID: `345M50000008011`
+- Law No: 昭和四十五年自治省令第十一号
+- Promulgation Date: 19700430

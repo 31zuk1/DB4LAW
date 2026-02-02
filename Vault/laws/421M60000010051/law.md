@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 421M60000010051
+id: JPLAW:421M60000010051
+law_no: 平成二十一年法務省令第五十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/421M60000010051
+promulgation_date: '20091225'
+tags:
+- 出入国管理及び難民認定法第二十条の二第二項の基準を定める省令
+tier: 0
+title: 出入国管理及び難民認定法第二十条の二第二項の基準を定める省令
+law_id: 421M60000010051
+official_title: 出入国管理及び難民認定法第二十条の二第二項の基準を定める省令
+aliases:
+- 出入国管理及び難民認定法第二十条の二第二項の基準を定める省令
+---
+
+# 出入国管理及び難民認定法第二十条の二第二項の基準を定める省令
+
+## Metadata
+- Law ID: `421M60000010051`
+- Law No: 平成二十一年法務省令第五十一号
+- Promulgation Date: 20091225

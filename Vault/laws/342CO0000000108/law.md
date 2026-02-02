@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 342CO0000000108
+id: JPLAW:342CO0000000108
+law_no: 昭和四十二年政令第百八号
+links:
+  egov: https://laws.e-gov.go.jp/law/342CO0000000108
+promulgation_date: '19670531'
+tags:
+- 印紙税法施行令
+tier: 0
+title: 印紙税法施行令
+law_id: 342CO0000000108
+official_title: 印紙税法施行令
+aliases:
+- 印紙税法施行令
+---
+
+# 印紙税法施行令
+
+## Metadata
+- Law ID: `342CO0000000108`
+- Law No: 昭和四十二年政令第百八号
+- Promulgation Date: 19670531

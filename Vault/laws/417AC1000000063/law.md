@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417AC1000000063
+id: JPLAW:417AC1000000063
+law_no: 平成十七年法律第六十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/417AC1000000063
+promulgation_date: '20050617'
+tags:
+- 食育基本法
+tier: 0
+title: 食育基本法
+law_id: 417AC1000000063
+official_title: 食育基本法
+aliases:
+- 食育基本法
+---
+
+# 食育基本法
+
+## Metadata
+- Law ID: `417AC1000000063`
+- Law No: 平成十七年法律第六十三号
+- Promulgation Date: 20050617

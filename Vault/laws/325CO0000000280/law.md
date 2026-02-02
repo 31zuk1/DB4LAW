@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000280
+id: JPLAW:325CO0000000280
+law_no: 昭和二十五年政令第二百八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000280
+promulgation_date: '19500831'
+tags:
+- 商品先物取引法施行令
+tier: 0
+title: 商品先物取引法施行令
+law_id: 325CO0000000280
+official_title: 商品先物取引法施行令
+aliases:
+- 商品先物取引法施行令
+---
+
+# 商品先物取引法施行令
+
+## Metadata
+- Law ID: `325CO0000000280`
+- Law No: 昭和二十五年政令第二百八十号
+- Promulgation Date: 19500831

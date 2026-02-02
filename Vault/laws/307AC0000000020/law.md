@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 307AC0000000020
+id: JPLAW:307AC0000000020
+law_no: 昭和七年法律第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/307AC0000000020
+promulgation_date: '19320715'
+tags:
+- 手形法
+tier: 0
+title: 手形法
+law_id: 307AC0000000020
+official_title: 手形法
+aliases:
+- 手形法
+---
+
+# 手形法
+
+## Metadata
+- Law ID: `307AC0000000020`
+- Law No: 昭和七年法律第二十号
+- Promulgation Date: 19320715

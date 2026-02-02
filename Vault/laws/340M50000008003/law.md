@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 340M50000008003
+id: JPLAW:340M50000008003
+law_no: 昭和四十年自治省令第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/340M50000008003
+promulgation_date: '19650112'
+tags:
+- 金属製避難はしごの技術上の規格を定める省令
+tier: 0
+title: 金属製避難はしごの技術上の規格を定める省令
+law_id: 340M50000008003
+official_title: 金属製避難はしごの技術上の規格を定める省令
+aliases:
+- 金属製避難はしごの技術上の規格を定める省令
+---
+
+# 金属製避難はしごの技術上の規格を定める省令
+
+## Metadata
+- Law ID: `340M50000008003`
+- Law No: 昭和四十年自治省令第三号
+- Promulgation Date: 19650112

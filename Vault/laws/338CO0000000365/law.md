@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338CO0000000365
+id: JPLAW:338CO0000000365
+law_no: 昭和三十八年政令第三百六十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/338CO0000000365
+promulgation_date: '19631115'
+tags:
+- 新住宅市街地開発法施行令
+tier: 0
+title: 新住宅市街地開発法施行令
+law_id: 338CO0000000365
+official_title: 新住宅市街地開発法施行令
+aliases:
+- 新住宅市街地開発法施行令
+---
+
+# 新住宅市街地開発法施行令
+
+## Metadata
+- Law ID: `338CO0000000365`
+- Law No: 昭和三十八年政令第三百六十五号
+- Promulgation Date: 19631115

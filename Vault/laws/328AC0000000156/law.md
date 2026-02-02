@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328AC0000000156
+id: JPLAW:328AC0000000156
+law_no: 昭和二十八年法律第百五十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/328AC0000000156
+promulgation_date: '19530801'
+tags:
+- 元南西諸島官公署職員等の身分、恩給等の特別措置に関する法律
+tier: 0
+title: 元南西諸島官公署職員等の身分、恩給等の特別措置に関する法律
+law_id: 328AC0000000156
+official_title: 元南西諸島官公署職員等の身分、恩給等の特別措置に関する法律
+aliases:
+- 元南西諸島官公署職員等の身分、恩給等の特別措置に関する法律
+---
+
+# 元南西諸島官公署職員等の身分、恩給等の特別措置に関する法律
+
+## Metadata
+- Law ID: `328AC0000000156`
+- Law No: 昭和二十八年法律第百五十六号
+- Promulgation Date: 19530801

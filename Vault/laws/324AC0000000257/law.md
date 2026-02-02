@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000257
+id: JPLAW:324AC0000000257
+law_no: 昭和二十四年法律第二百五十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000257
+promulgation_date: '19491212'
+tags:
+- 旧軍関係債権の処理に関する法律
+tier: 0
+title: 旧軍関係債権の処理に関する法律
+law_id: 324AC0000000257
+official_title: 旧軍関係債権の処理に関する法律
+aliases:
+- 旧軍関係債権の処理に関する法律
+---
+
+# 旧軍関係債権の処理に関する法律
+
+## Metadata
+- Law ID: `324AC0000000257`
+- Law No: 昭和二十四年法律第二百五十七号
+- Promulgation Date: 19491212

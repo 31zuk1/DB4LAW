@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415AC0000000110
+id: JPLAW:415AC0000000110
+law_no: 平成十五年法律第百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/415AC0000000110
+promulgation_date: '20030716'
+tags:
+- 心神喪失等の状態で重大な他害行為を行った者の医療及び観察等に関する法律
+tier: 0
+title: 心神喪失等の状態で重大な他害行為を行った者の医療及び観察等に関する法律
+law_id: 415AC0000000110
+official_title: 心神喪失等の状態で重大な他害行為を行った者の医療及び観察等に関する法律
+aliases:
+- 心神喪失等の状態で重大な他害行為を行った者の医療及び観察等に関する法律
+---
+
+# 心神喪失等の状態で重大な他害行為を行った者の医療及び観察等に関する法律
+
+## Metadata
+- Law ID: `415AC0000000110`
+- Law No: 平成十五年法律第百十号
+- Promulgation Date: 20030716

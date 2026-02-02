@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333AC0000000006
+id: JPLAW:333AC0000000006
+law_no: 昭和三十三年法律第六号
+links:
+  egov: https://laws.e-gov.go.jp/law/333AC0000000006
+promulgation_date: '19580310'
+tags:
+- 銃砲刀剣類所持等取締法
+tier: 0
+title: 銃砲刀剣類所持等取締法
+law_id: 333AC0000000006
+official_title: 銃砲刀剣類所持等取締法
+aliases:
+- 銃砲刀剣類所持等取締法
+---
+
+# 銃砲刀剣類所持等取締法
+
+## Metadata
+- Law ID: `333AC0000000006`
+- Law No: 昭和三十三年法律第六号
+- Promulgation Date: 19580310

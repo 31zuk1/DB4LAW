@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 214AC0000000009
+id: JPLAW:214AC0000000009
+law_no: 大正十四年法律第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/214AC0000000009
+promulgation_date: '19250328'
+tags:
+- 漁業財団抵当法
+tier: 0
+title: 漁業財団抵当法
+law_id: 214AC0000000009
+official_title: 漁業財団抵当法
+aliases:
+- 漁業財団抵当法
+---
+
+# 漁業財団抵当法
+
+## Metadata
+- Law ID: `214AC0000000009`
+- Law No: 大正十四年法律第九号
+- Promulgation Date: 19250328

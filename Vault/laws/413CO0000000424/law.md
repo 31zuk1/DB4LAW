@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000424
+id: JPLAW:413CO0000000424
+law_no: 平成十三年政令第四百二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000424
+promulgation_date: '20011221'
+tags:
+- 確定給付企業年金法施行令
+tier: 0
+title: 確定給付企業年金法施行令
+law_id: 413CO0000000424
+official_title: 確定給付企業年金法施行令
+aliases:
+- 確定給付企業年金法施行令
+---
+
+# 確定給付企業年金法施行令
+
+## Metadata
+- Law ID: `413CO0000000424`
+- Law No: 平成十三年政令第四百二十四号
+- Promulgation Date: 20011221

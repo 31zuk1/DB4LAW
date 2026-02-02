@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 427M60000080017
+id: JPLAW:427M60000080017
+law_no: 平成二十七年文部科学省令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/427M60000080017
+promulgation_date: '20150331'
+tags:
+- 国立研究開発法人宇宙航空研究開発機構の人事管理に関する省令
+tier: 0
+title: 国立研究開発法人宇宙航空研究開発機構の人事管理に関する省令
+law_id: 427M60000080017
+official_title: 国立研究開発法人宇宙航空研究開発機構の人事管理に関する省令
+aliases:
+- 国立研究開発法人宇宙航空研究開発機構の人事管理に関する省令
+---
+
+# 国立研究開発法人宇宙航空研究開発機構の人事管理に関する省令
+
+## Metadata
+- Law ID: `427M60000080017`
+- Law No: 平成二十七年文部科学省令第十七号
+- Promulgation Date: 20150331

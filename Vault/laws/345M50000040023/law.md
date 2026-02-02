@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 345M50000040023
+id: JPLAW:345M50000040023
+law_no: 昭和四十五年大蔵省令第二十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/345M50000040023
+promulgation_date: '19700417'
+tags:
+- 国際復興開発銀行への加盟に伴う国債の発行等に関する省令
+tier: 0
+title: 国際復興開発銀行への加盟に伴う国債の発行等に関する省令
+law_id: 345M50000040023
+official_title: 国際復興開発銀行への加盟に伴う国債の発行等に関する省令
+aliases:
+- 国際復興開発銀行への加盟に伴う国債の発行等に関する省令
+---
+
+# 国際復興開発銀行への加盟に伴う国債の発行等に関する省令
+
+## Metadata
+- Law ID: `345M50000040023`
+- Law No: 昭和四十五年大蔵省令第二十三号
+- Promulgation Date: 19700417

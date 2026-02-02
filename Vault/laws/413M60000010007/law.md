@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413M60000010007
+id: JPLAW:413M60000010007
+law_no: 平成十三年法務省令第七号
+links:
+  egov: https://laws.e-gov.go.jp/law/413M60000010007
+promulgation_date: '20010106'
+tags:
+- 法務総合研究所組織規則
+tier: 0
+title: 法務総合研究所組織規則
+law_id: 413M60000010007
+official_title: 法務総合研究所組織規則
+aliases:
+- 法務総合研究所組織規則
+---
+
+# 法務総合研究所組織規則
+
+## Metadata
+- Law ID: `413M60000010007`
+- Law No: 平成十三年法務省令第七号
+- Promulgation Date: 20010106

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412M50400000003
+id: JPLAW:412M50400000003
+law_no: 平成十二年国家公安委員会規則第三号
+links:
+  egov: https://laws.e-gov.go.jp/law/412M50400000003
+promulgation_date: '20000125'
+tags:
+- 警察教養規則
+tier: 0
+title: 警察教養規則
+law_id: 412M50400000003
+official_title: 警察教養規則
+aliases:
+- 警察教養規則
+---
+
+# 警察教養規則
+
+## Metadata
+- Law ID: `412M50400000003`
+- Law No: 平成十二年国家公安委員会規則第三号
+- Promulgation Date: 20000125

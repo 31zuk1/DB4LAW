@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403M50000100009
+id: JPLAW:403M50000100009
+law_no: 平成三年厚生省令第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/403M50000100009
+promulgation_date: '19910227'
+tags:
+- 国民年金基金及び国民年金基金連合会の財務及び会計に関する省令
+tier: 0
+title: 国民年金基金及び国民年金基金連合会の財務及び会計に関する省令
+law_id: 403M50000100009
+official_title: 国民年金基金及び国民年金基金連合会の財務及び会計に関する省令
+aliases:
+- 国民年金基金及び国民年金基金連合会の財務及び会計に関する省令
+---
+
+# 国民年金基金及び国民年金基金連合会の財務及び会計に関する省令
+
+## Metadata
+- Law ID: `403M50000100009`
+- Law No: 平成三年厚生省令第九号
+- Promulgation Date: 19910227

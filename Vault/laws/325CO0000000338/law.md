@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325CO0000000338
+id: JPLAW:325CO0000000338
+law_no: 昭和二十五年政令第三百三十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/325CO0000000338
+promulgation_date: '19501116'
+tags:
+- 建築基準法施行令
+tier: 0
+title: 建築基準法施行令
+law_id: 325CO0000000338
+official_title: 建築基準法施行令
+aliases:
+- 建築基準法施行令
+---
+
+# 建築基準法施行令
+
+## Metadata
+- Law ID: `325CO0000000338`
+- Law No: 昭和二十五年政令第三百三十八号
+- Promulgation Date: 19501116

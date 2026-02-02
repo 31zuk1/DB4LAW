@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 212IO0000000439
+id: JPLAW:212IO0000000439
+law_no: 大正十二年勅令第四百三十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/212IO0000000439
+promulgation_date: '19231009'
+tags:
+- 恩給金額分担及国庫納金収入等取扱規則
+tier: 0
+title: 恩給金額分担及国庫納金収入等取扱規則
+law_id: 212IO0000000439
+official_title: 恩給金額分担及国庫納金収入等取扱規則
+aliases:
+- 恩給金額分担及国庫納金収入等取扱規則
+---
+
+# 恩給金額分担及国庫納金収入等取扱規則
+
+## Metadata
+- Law ID: `212IO0000000439`
+- Law No: 大正十二年勅令第四百三十九号
+- Promulgation Date: 19231009

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50001000024
+id: JPLAW:327M50001000024
+law_no: 昭和二十七年郵政省令第二十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50001000024
+promulgation_date: '19520903'
+tags:
+- 電波監理審議会規則
+tier: 0
+title: 電波監理審議会規則
+law_id: 327M50001000024
+official_title: 電波監理審議会規則
+aliases:
+- 電波監理審議会規則
+---
+
+# 電波監理審議会規則
+
+## Metadata
+- Law ID: `327M50001000024`
+- Law No: 昭和二十七年郵政省令第二十四号
+- Promulgation Date: 19520903

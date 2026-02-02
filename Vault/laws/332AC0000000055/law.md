@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332AC0000000055
+id: JPLAW:332AC0000000055
+law_no: 昭和三十二年法律第五十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/332AC0000000055
+promulgation_date: '19570406'
+tags:
+- 揮発油税法
+tier: 0
+title: 揮発油税法
+law_id: 332AC0000000055
+official_title: 揮発油税法
+aliases:
+- 揮発油税法
+---
+
+# 揮発油税法
+
+## Metadata
+- Law ID: `332AC0000000055`
+- Law No: 昭和三十二年法律第五十五号
+- Promulgation Date: 19570406

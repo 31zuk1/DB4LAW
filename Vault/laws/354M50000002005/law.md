@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354M50000002005
+id: JPLAW:354M50000002005
+law_no: 昭和五十四年総理府令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/354M50000002005
+promulgation_date: '19790209'
+tags:
+- 水俣病の認定業務の促進に関する臨時措置法施行規則
+tier: 0
+title: 水俣病の認定業務の促進に関する臨時措置法施行規則
+law_id: 354M50000002005
+official_title: 水俣病の認定業務の促進に関する臨時措置法施行規則
+aliases:
+- 水俣病の認定業務の促進に関する臨時措置法施行規則
+---
+
+# 水俣病の認定業務の促進に関する臨時措置法施行規則
+
+## Metadata
+- Law ID: `354M50000002005`
+- Law No: 昭和五十四年総理府令第五号
+- Promulgation Date: 19790209

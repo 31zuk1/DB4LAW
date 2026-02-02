@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 338M50004000025
+id: JPLAW:338M50004000025
+law_no: 昭和三十八年建設省令第二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/338M50004000025
+promulgation_date: '19631228'
+tags:
+- 新住宅市街地開発法施行規則
+tier: 0
+title: 新住宅市街地開発法施行規則
+law_id: 338M50004000025
+official_title: 新住宅市街地開発法施行規則
+aliases:
+- 新住宅市街地開発法施行規則
+---
+
+# 新住宅市街地開発法施行規則
+
+## Metadata
+- Law ID: `338M50004000025`
+- Law No: 昭和三十八年建設省令第二十五号
+- Promulgation Date: 19631228

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 422M60000002005
+id: JPLAW:422M60000002005
+law_no: 平成二十二年内閣府令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/422M60000002005
+promulgation_date: '20100301'
+tags:
+- 資金清算機関に関する内閣府令
+tier: 0
+title: 資金清算機関に関する内閣府令
+law_id: 422M60000002005
+official_title: 資金清算機関に関する内閣府令
+aliases:
+- 資金清算機関に関する内閣府令
+---
+
+# 資金清算機関に関する内閣府令
+
+## Metadata
+- Law ID: `422M60000002005`
+- Law No: 平成二十二年内閣府令第五号
+- Promulgation Date: 20100301

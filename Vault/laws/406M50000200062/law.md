@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50000200062
+id: JPLAW:406M50000200062
+law_no: 平成六年農林水産省令第六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50000200062
+promulgation_date: '19940930'
+tags:
+- 農林水産省聴聞手続規則
+tier: 0
+title: 農林水産省聴聞手続規則
+law_id: 406M50000200062
+official_title: 農林水産省聴聞手続規則
+aliases:
+- 農林水産省聴聞手続規則
+---
+
+# 農林水産省聴聞手続規則
+
+## Metadata
+- Law ID: `406M50000200062`
+- Law No: 平成六年農林水産省令第六十二号
+- Promulgation Date: 19940930

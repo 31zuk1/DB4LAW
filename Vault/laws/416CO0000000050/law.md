@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000050
+id: JPLAW:416CO0000000050
+law_no: 平成十六年政令第五十号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000050
+promulgation_date: '20040319'
+tags:
+- 成田国際空港株式会社法施行令
+tier: 0
+title: 成田国際空港株式会社法施行令
+law_id: 416CO0000000050
+official_title: 成田国際空港株式会社法施行令
+aliases:
+- 成田国際空港株式会社法施行令
+---
+
+# 成田国際空港株式会社法施行令
+
+## Metadata
+- Law ID: `416CO0000000050`
+- Law No: 平成十六年政令第五十号
+- Promulgation Date: 20040319

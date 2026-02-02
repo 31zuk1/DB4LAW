@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414AC0000000122
+id: JPLAW:414AC0000000122
+law_no: 平成十四年法律第百二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/414AC0000000122
+promulgation_date: '20021204'
+tags:
+- 知的財産基本法
+tier: 0
+title: 知的財産基本法
+law_id: 414AC0000000122
+official_title: 知的財産基本法
+aliases:
+- 知的財産基本法
+---
+
+# 知的財産基本法
+
+## Metadata
+- Law ID: `414AC0000000122`
+- Law No: 平成十四年法律第百二十二号
+- Promulgation Date: 20021204

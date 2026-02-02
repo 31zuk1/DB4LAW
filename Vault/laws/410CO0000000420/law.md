@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410CO0000000420
+id: JPLAW:410CO0000000420
+law_no: 平成十年政令第四百二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/410CO0000000420
+promulgation_date: '19981228'
+tags:
+- 感染症の予防及び感染症の患者に対する医療に関する法律施行令
+tier: 0
+title: 感染症の予防及び感染症の患者に対する医療に関する法律施行令
+law_id: 410CO0000000420
+official_title: 感染症の予防及び感染症の患者に対する医療に関する法律施行令
+aliases:
+- 感染症の予防及び感染症の患者に対する医療に関する法律施行令
+---
+
+# 感染症の予防及び感染症の患者に対する医療に関する法律施行令
+
+## Metadata
+- Law ID: `410CO0000000420`
+- Law No: 平成十年政令第四百二十号
+- Promulgation Date: 19981228

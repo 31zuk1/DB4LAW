@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50000100019
+id: JPLAW:402M50000100019
+law_no: 平成二年厚生省令第十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50000100019
+promulgation_date: '19900329'
+tags:
+- あん摩マツサージ指圧師、はり師、きゆう師等に関する法律施行規則
+tier: 0
+title: あん摩マツサージ指圧師、はり師、きゆう師等に関する法律施行規則
+law_id: 402M50000100019
+official_title: あん摩マツサージ指圧師、はり師、きゆう師等に関する法律施行規則
+aliases:
+- あん摩マツサージ指圧師、はり師、きゆう師等に関する法律施行規則
+---
+
+# あん摩マツサージ指圧師、はり師、きゆう師等に関する法律施行規則
+
+## Metadata
+- Law ID: `402M50000100019`
+- Law No: 平成二年厚生省令第十九号
+- Promulgation Date: 19900329

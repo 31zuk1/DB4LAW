@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 333CO0000000227
+id: JPLAW:333CO0000000227
+law_no: 昭和三十三年政令第二百二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/333CO0000000227
+promulgation_date: '19580722'
+tags:
+- 証人等の被害についての給付に関する法律施行令
+tier: 0
+title: 証人等の被害についての給付に関する法律施行令
+law_id: 333CO0000000227
+official_title: 証人等の被害についての給付に関する法律施行令
+aliases:
+- 証人等の被害についての給付に関する法律施行令
+---
+
+# 証人等の被害についての給付に関する法律施行令
+
+## Metadata
+- Law ID: `333CO0000000227`
+- Law No: 昭和三十三年政令第二百二十七号
+- Promulgation Date: 19580722

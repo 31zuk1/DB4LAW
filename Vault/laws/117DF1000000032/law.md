@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 117DF1000000032
+id: JPLAW:117DF1000000032
+law_no: 明治十七年太政官布告第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/117DF1000000032
+promulgation_date: '18841227'
+tags:
+- 明治十七年太政官布告第三十二号（爆発物取締罰則）
+tier: 0
+title: 明治十七年太政官布告第三十二号（爆発物取締罰則）
+law_id: 117DF1000000032
+official_title: 明治十七年太政官布告第三十二号（爆発物取締罰則）
+aliases:
+- 明治十七年太政官布告第三十二号（爆発物取締罰則）
+---
+
+# 明治十七年太政官布告第三十二号（爆発物取締罰則）
+
+## Metadata
+- Law ID: `117DF1000000032`
+- Law No: 明治十七年太政官布告第三十二号
+- Promulgation Date: 18841227

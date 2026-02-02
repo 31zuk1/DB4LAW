@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406M50000080002
+id: JPLAW:406M50000080002
+law_no: 平成六年文部省令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/406M50000080002
+promulgation_date: '19940228'
+tags:
+- オリンピック競技大会及びパラリンピック競技大会優秀者顕彰規程
+tier: 0
+title: オリンピック競技大会及びパラリンピック競技大会優秀者顕彰規程
+law_id: 406M50000080002
+official_title: オリンピック競技大会及びパラリンピック競技大会優秀者顕彰規程
+aliases:
+- オリンピック競技大会及びパラリンピック競技大会優秀者顕彰規程
+---
+
+# オリンピック競技大会及びパラリンピック競技大会優秀者顕彰規程
+
+## Metadata
+- Law ID: `406M50000080002`
+- Law No: 平成六年文部省令第二号
+- Promulgation Date: 19940228

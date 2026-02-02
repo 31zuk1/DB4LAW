@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 407CO0000000295
+id: JPLAW:407CO0000000295
+law_no: 平成七年政令第二百九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/407CO0000000295
+promulgation_date: '19950714'
+tags:
+- 地震防災対策特別措置法施行令
+tier: 0
+title: 地震防災対策特別措置法施行令
+law_id: 407CO0000000295
+official_title: 地震防災対策特別措置法施行令
+aliases:
+- 地震防災対策特別措置法施行令
+---
+
+# 地震防災対策特別措置法施行令
+
+## Metadata
+- Law ID: `407CO0000000295`
+- Law No: 平成七年政令第二百九十五号
+- Promulgation Date: 19950714

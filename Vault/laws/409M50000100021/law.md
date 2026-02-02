@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 409M50000100021
+id: JPLAW:409M50000100021
+law_no: 平成九年厚生省令第二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/409M50000100021
+promulgation_date: '19970326'
+tags:
+- 医薬品の安全性に関する非臨床試験の実施の基準に関する省令
+tier: 0
+title: 医薬品の安全性に関する非臨床試験の実施の基準に関する省令
+law_id: 409M50000100021
+official_title: 医薬品の安全性に関する非臨床試験の実施の基準に関する省令
+aliases:
+- 医薬品の安全性に関する非臨床試験の実施の基準に関する省令
+---
+
+# 医薬品の安全性に関する非臨床試験の実施の基準に関する省令
+
+## Metadata
+- Law ID: `409M50000100021`
+- Law No: 平成九年厚生省令第二十一号
+- Promulgation Date: 19970326

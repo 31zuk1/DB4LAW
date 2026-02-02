@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000147
+id: JPLAW:324AC0000000147
+law_no: 昭和二十四年法律第百四十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000147
+promulgation_date: '19490531'
+tags:
+- 教育職員免許法
+tier: 0
+title: 教育職員免許法
+law_id: 324AC0000000147
+official_title: 教育職員免許法
+aliases:
+- 教育職員免許法
+---
+
+# 教育職員免許法
+
+## Metadata
+- Law ID: `324AC0000000147`
+- Law No: 昭和二十四年法律第百四十七号
+- Promulgation Date: 19490531

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 428AC1000000112
+id: JPLAW:428AC1000000112
+law_no: 平成二十八年法律第百十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/428AC1000000112
+promulgation_date: '20161216'
+tags:
+- 無電柱化の推進に関する法律
+tier: 0
+title: 無電柱化の推進に関する法律
+law_id: 428AC1000000112
+official_title: 無電柱化の推進に関する法律
+aliases:
+- 無電柱化の推進に関する法律
+---
+
+# 無電柱化の推進に関する法律
+
+## Metadata
+- Law ID: `428AC1000000112`
+- Law No: 平成二十八年法律第百十二号
+- Promulgation Date: 20161216

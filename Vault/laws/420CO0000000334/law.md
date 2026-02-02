@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 420CO0000000334
+id: JPLAW:420CO0000000334
+law_no: 平成二十年政令第三百三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/420CO0000000334
+promulgation_date: '20081031'
+tags:
+- 統計法施行令
+tier: 0
+title: 統計法施行令
+law_id: 420CO0000000334
+official_title: 統計法施行令
+aliases:
+- 統計法施行令
+---
+
+# 統計法施行令
+
+## Metadata
+- Law ID: `420CO0000000334`
+- Law No: 平成二十年政令第三百三十四号
+- Promulgation Date: 20081031

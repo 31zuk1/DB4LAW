@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501M60000900005
+id: JPLAW:501M60000900005
+law_no: 令和元年厚生労働省・国土交通省令第五号
+links:
+  egov: https://laws.e-gov.go.jp/law/501M60000900005
+promulgation_date: '20191227'
+tags:
+- 厚生労働省・国土交通省関係地域再生法施行規則
+tier: 0
+title: 厚生労働省・国土交通省関係地域再生法施行規則
+law_id: 501M60000900005
+official_title: 厚生労働省・国土交通省関係地域再生法施行規則
+aliases:
+- 厚生労働省・国土交通省関係地域再生法施行規則
+---
+
+# 厚生労働省・国土交通省関係地域再生法施行規則
+
+## Metadata
+- Law ID: `501M60000900005`
+- Law No: 令和元年厚生労働省・国土交通省令第五号
+- Promulgation Date: 20191227

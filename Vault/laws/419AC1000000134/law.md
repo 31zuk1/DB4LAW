@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419AC1000000134
+id: JPLAW:419AC1000000134
+law_no: 平成十九年法律第百三十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/419AC1000000134
+promulgation_date: '20071221'
+tags:
+- 鳥獣による農林水産業等に係る被害の防止のための特別措置に関する法律
+tier: 0
+title: 鳥獣による農林水産業等に係る被害の防止のための特別措置に関する法律
+law_id: 419AC1000000134
+official_title: 鳥獣による農林水産業等に係る被害の防止のための特別措置に関する法律
+aliases:
+- 鳥獣による農林水産業等に係る被害の防止のための特別措置に関する法律
+---
+
+# 鳥獣による農林水産業等に係る被害の防止のための特別措置に関する法律
+
+## Metadata
+- Law ID: `419AC1000000134`
+- Law No: 平成十九年法律第百三十四号
+- Promulgation Date: 20071221

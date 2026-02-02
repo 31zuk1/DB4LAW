@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M50000400077
+id: JPLAW:324M50000400077
+law_no: 昭和二十四年通商産業省令第七十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M50000400077
+promulgation_date: '19491229'
+tags:
+- 輸入貿易管理規則
+tier: 0
+title: 輸入貿易管理規則
+law_id: 324M50000400077
+official_title: 輸入貿易管理規則
+aliases:
+- 輸入貿易管理規則
+---
+
+# 輸入貿易管理規則
+
+## Metadata
+- Law ID: `324M50000400077`
+- Law No: 昭和二十四年通商産業省令第七十七号
+- Promulgation Date: 19491229

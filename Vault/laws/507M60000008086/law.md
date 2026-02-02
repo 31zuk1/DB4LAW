@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 507M60000008086
+id: JPLAW:507M60000008086
+law_no: 令和七年総務省令第八十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/507M60000008086
+promulgation_date: '20250825'
+tags:
+- 無線局の免許記録等の閲覧に係る通知事項を定める省令
+tier: 0
+title: 無線局の免許記録等の閲覧に係る通知事項を定める省令
+law_id: 507M60000008086
+official_title: 無線局の免許記録等の閲覧に係る通知事項を定める省令
+aliases:
+- 無線局の免許記録等の閲覧に係る通知事項を定める省令
+---
+
+# 無線局の免許記録等の閲覧に係る通知事項を定める省令
+
+## Metadata
+- Law ID: `507M60000008086`
+- Law No: 令和七年総務省令第八十六号
+- Promulgation Date: 20250825

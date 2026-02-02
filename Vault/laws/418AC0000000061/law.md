@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418AC0000000061
+id: JPLAW:418AC0000000061
+law_no: 平成十八年法律第六十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/418AC0000000061
+promulgation_date: '20060608'
+tags:
+- 住生活基本法
+tier: 0
+title: 住生活基本法
+law_id: 418AC0000000061
+official_title: 住生活基本法
+aliases:
+- 住生活基本法
+---
+
+# 住生活基本法
+
+## Metadata
+- Law ID: `418AC0000000061`
+- Law No: 平成十八年法律第六十一号
+- Promulgation Date: 20060608

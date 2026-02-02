@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405AC0100000080
+id: JPLAW:405AC0100000080
+law_no: 平成五年法律第八十号
+links:
+  egov: https://laws.e-gov.go.jp/law/405AC0100000080
+promulgation_date: '19931110'
+tags:
+- 民間海外援助事業の推進のための物品の譲与に関する法律
+tier: 0
+title: 民間海外援助事業の推進のための物品の譲与に関する法律
+law_id: 405AC0100000080
+official_title: 民間海外援助事業の推進のための物品の譲与に関する法律
+aliases:
+- 民間海外援助事業の推進のための物品の譲与に関する法律
+---
+
+# 民間海外援助事業の推進のための物品の譲与に関する法律
+
+## Metadata
+- Law ID: `405AC0100000080`
+- Law No: 平成五年法律第八十号
+- Promulgation Date: 19931110

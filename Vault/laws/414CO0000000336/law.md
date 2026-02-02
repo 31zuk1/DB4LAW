@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 414CO0000000336
+id: JPLAW:414CO0000000336
+law_no: 平成十四年政令第三百三十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/414CO0000000336
+promulgation_date: '20021113'
+tags:
+- 土壌汚染対策法施行令
+tier: 0
+title: 土壌汚染対策法施行令
+law_id: 414CO0000000336
+official_title: 土壌汚染対策法施行令
+aliases:
+- 土壌汚染対策法施行令
+---
+
+# 土壌汚染対策法施行令
+
+## Metadata
+- Law ID: `414CO0000000336`
+- Law No: 平成十四年政令第三百三十六号
+- Promulgation Date: 20021113

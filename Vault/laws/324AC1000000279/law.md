@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC1000000279
+id: JPLAW:324AC1000000279
+law_no: 昭和二十四年法律第二百七十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC1000000279
+promulgation_date: '19491224'
+tags:
+- 国際観光ホテル整備法
+tier: 0
+title: 国際観光ホテル整備法
+law_id: 324AC1000000279
+official_title: 国際観光ホテル整備法
+aliases:
+- 国際観光ホテル整備法
+---
+
+# 国際観光ホテル整備法
+
+## Metadata
+- Law ID: `324AC1000000279`
+- Law No: 昭和二十四年法律第二百七十九号
+- Promulgation Date: 19491224

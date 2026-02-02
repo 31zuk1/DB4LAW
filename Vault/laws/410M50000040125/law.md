@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 410M50000040125
+id: JPLAW:410M50000040125
+law_no: 平成十年大蔵省令第百二十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/410M50000040125
+promulgation_date: '19981104'
+tags:
+- 投資者保護基金に関する命令
+tier: 0
+title: 投資者保護基金に関する命令
+law_id: 410M50000040125
+official_title: 投資者保護基金に関する命令
+aliases:
+- 投資者保護基金に関する命令
+---
+
+# 投資者保護基金に関する命令
+
+## Metadata
+- Law ID: `410M50000040125`
+- Law No: 平成十年大蔵省令第百二十五号
+- Promulgation Date: 19981104

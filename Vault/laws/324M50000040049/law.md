@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324M50000040049
+id: JPLAW:324M50000040049
+law_no: 昭和二十四年大蔵省令第四十九号
+links:
+  egov: https://laws.e-gov.go.jp/law/324M50000040049
+promulgation_date: '19490601'
+tags:
+- 調査査察部等の所掌事務の範囲を定める省令
+tier: 0
+title: 調査査察部等の所掌事務の範囲を定める省令
+law_id: 324M50000040049
+official_title: 調査査察部等の所掌事務の範囲を定める省令
+aliases:
+- 調査査察部等の所掌事務の範囲を定める省令
+---
+
+# 調査査察部等の所掌事務の範囲を定める省令
+
+## Metadata
+- Law ID: `324M50000040049`
+- Law No: 昭和二十四年大蔵省令第四十九号
+- Promulgation Date: 19490601

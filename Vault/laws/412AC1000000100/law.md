@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 412AC1000000100
+id: JPLAW:412AC1000000100
+law_no: 平成十二年法律第百号
+links:
+  egov: https://laws.e-gov.go.jp/law/412AC1000000100
+promulgation_date: '20000531'
+tags:
+- 国等による環境物品等の調達の推進等に関する法律
+tier: 0
+title: 国等による環境物品等の調達の推進等に関する法律
+law_id: 412AC1000000100
+official_title: 国等による環境物品等の調達の推進等に関する法律
+aliases:
+- 国等による環境物品等の調達の推進等に関する法律
+---
+
+# 国等による環境物品等の調達の推進等に関する法律
+
+## Metadata
+- Law ID: `412AC1000000100`
+- Law No: 平成十二年法律第百号
+- Promulgation Date: 20000531

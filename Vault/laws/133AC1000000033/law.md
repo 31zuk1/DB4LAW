@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 133AC1000000033
+id: JPLAW:133AC1000000033
+law_no: 明治三十三年法律第三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/133AC1000000033
+promulgation_date: '19000307'
+tags:
+- 二十歳未満ノ者ノ喫煙ノ禁止ニ関スル法律
+tier: 0
+title: 二十歳未満ノ者ノ喫煙ノ禁止ニ関スル法律
+law_id: 133AC1000000033
+official_title: 二十歳未満ノ者ノ喫煙ノ禁止ニ関スル法律
+aliases:
+- 二十歳未満ノ者ノ喫煙ノ禁止ニ関スル法律
+---
+
+# 二十歳未満ノ者ノ喫煙ノ禁止ニ関スル法律
+
+## Metadata
+- Law ID: `133AC1000000033`
+- Law No: 明治三十三年法律第三十三号
+- Promulgation Date: 19000307

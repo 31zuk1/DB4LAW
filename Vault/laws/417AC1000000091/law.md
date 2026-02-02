@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 417AC1000000091
+id: JPLAW:417AC1000000091
+law_no: 平成十七年法律第九十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/417AC1000000091
+promulgation_date: '20050729'
+tags:
+- 文字・活字文化振興法
+tier: 0
+title: 文字・活字文化振興法
+law_id: 417AC1000000091
+official_title: 文字・活字文化振興法
+aliases:
+- 文字・活字文化振興法
+---
+
+# 文字・活字文化振興法
+
+## Metadata
+- Law ID: `417AC1000000091`
+- Law No: 平成十七年法律第九十一号
+- Promulgation Date: 20050729

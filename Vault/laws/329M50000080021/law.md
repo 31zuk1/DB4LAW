@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 329M50000080021
+id: JPLAW:329M50000080021
+law_no: 昭和二十九年文部省令第二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/329M50000080021
+promulgation_date: '19540806'
+tags:
+- 学校図書館司書教諭講習規程
+tier: 0
+title: 学校図書館司書教諭講習規程
+law_id: 329M50000080021
+official_title: 学校図書館司書教諭講習規程
+aliases:
+- 学校図書館司書教諭講習規程
+---
+
+# 学校図書館司書教諭講習規程
+
+## Metadata
+- Law ID: `329M50000080021`
+- Law No: 昭和二十九年文部省令第二十一号
+- Promulgation Date: 19540806

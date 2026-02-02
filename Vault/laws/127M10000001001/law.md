@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 127M10000001001
+id: JPLAW:127M10000001001
+law_no: 明治二十七年閣令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/127M10000001001
+promulgation_date: '18940106'
+tags:
+- 褒章条例取扱手続
+tier: 0
+title: 褒章条例取扱手続
+law_id: 127M10000001001
+official_title: 褒章条例取扱手続
+aliases:
+- 褒章条例取扱手続
+---
+
+# 褒章条例取扱手続
+
+## Metadata
+- Law ID: `127M10000001001`
+- Law No: 明治二十七年閣令第一号
+- Promulgation Date: 18940106

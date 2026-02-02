@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419M60002000011
+id: JPLAW:419M60002000011
+law_no: 平成十九年防衛省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/419M60002000011
+promulgation_date: '20070829'
+tags:
+- 駐留軍等の再編の円滑な実施に関する特別措置法施行規則
+tier: 0
+title: 駐留軍等の再編の円滑な実施に関する特別措置法施行規則
+law_id: 419M60002000011
+official_title: 駐留軍等の再編の円滑な実施に関する特別措置法施行規則
+aliases:
+- 駐留軍等の再編の円滑な実施に関する特別措置法施行規則
+---
+
+# 駐留軍等の再編の円滑な実施に関する特別措置法施行規則
+
+## Metadata
+- Law ID: `419M60002000011`
+- Law No: 平成十九年防衛省令第十一号
+- Promulgation Date: 20070829

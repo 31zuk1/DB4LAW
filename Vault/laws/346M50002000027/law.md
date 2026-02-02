@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346M50002000027
+id: JPLAW:346M50002000027
+law_no: 昭和四十六年労働省令第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/346M50002000027
+promulgation_date: '19711101'
+tags:
+- 勤労者財産形成促進法施行規則
+tier: 0
+title: 勤労者財産形成促進法施行規則
+law_id: 346M50002000027
+official_title: 勤労者財産形成促進法施行規則
+aliases:
+- 勤労者財産形成促進法施行規則
+---
+
+# 勤労者財産形成促進法施行規則
+
+## Metadata
+- Law ID: `346M50002000027`
+- Law No: 昭和四十六年労働省令第二十七号
+- Promulgation Date: 19711101

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 404AC0000000015
+id: JPLAW:404AC0000000015
+law_no: 平成四年法律第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/404AC0000000015
+promulgation_date: '19920331'
+tags:
+- 法人特別税法
+tier: 0
+title: 法人特別税法
+law_id: 404AC0000000015
+official_title: 法人特別税法
+aliases:
+- 法人特別税法
+---
+
+# 法人特別税法
+
+## Metadata
+- Law ID: `404AC0000000015`
+- Law No: 平成四年法律第十五号
+- Promulgation Date: 19920331

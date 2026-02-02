@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 501AC0000000015
+id: JPLAW:501AC0000000015
+law_no: 令和元年法律第十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/501AC0000000015
+promulgation_date: '20190524'
+tags:
+- 表題部所有者不明土地の登記及び管理の適正化に関する法律
+tier: 0
+title: 表題部所有者不明土地の登記及び管理の適正化に関する法律
+law_id: 501AC0000000015
+official_title: 表題部所有者不明土地の登記及び管理の適正化に関する法律
+aliases:
+- 表題部所有者不明土地の登記及び管理の適正化に関する法律
+---
+
+# 表題部所有者不明土地の登記及び管理の適正化に関する法律
+
+## Metadata
+- Law ID: `501AC0000000015`
+- Law No: 令和元年法律第十五号
+- Promulgation Date: 20190524

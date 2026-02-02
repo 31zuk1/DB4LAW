@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 327M50000800001
+id: JPLAW:327M50000800001
+law_no: 昭和二十七年運輸省令第一号
+links:
+  egov: https://laws.e-gov.go.jp/law/327M50000800001
+promulgation_date: '19520108'
+tags:
+- 中小企業等協同組合法等による倉荷証券発行許可等に関する省令
+tier: 0
+title: 中小企業等協同組合法等による倉荷証券発行許可等に関する省令
+law_id: 327M50000800001
+official_title: 中小企業等協同組合法等による倉荷証券発行許可等に関する省令
+aliases:
+- 中小企業等協同組合法等による倉荷証券発行許可等に関する省令
+---
+
+# 中小企業等協同組合法等による倉荷証券発行許可等に関する省令
+
+## Metadata
+- Law ID: `327M50000800001`
+- Law No: 昭和二十七年運輸省令第一号
+- Promulgation Date: 19520108

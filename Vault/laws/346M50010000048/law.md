@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 346M50010000048
+id: JPLAW:346M50010000048
+law_no: 昭和四十六年農林省令第四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/346M50010000048
+promulgation_date: '19710624'
+tags:
+- 海洋水産資源開発促進法施行規則
+tier: 0
+title: 海洋水産資源開発促進法施行規則
+law_id: 346M50010000048
+official_title: 海洋水産資源開発促進法施行規則
+aliases:
+- 海洋水産資源開発促進法施行規則
+---
+
+# 海洋水産資源開発促進法施行規則
+
+## Metadata
+- Law ID: `346M50010000048`
+- Law No: 昭和四十六年農林省令第四十八号
+- Promulgation Date: 19710624

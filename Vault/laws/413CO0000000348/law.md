@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 413CO0000000348
+id: JPLAW:413CO0000000348
+law_no: 平成十三年政令第三百四十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/413CO0000000348
+promulgation_date: '20011107'
+tags:
+- コソヴォ国際平和協力隊の設置等に関する政令
+tier: 0
+title: コソヴォ国際平和協力隊の設置等に関する政令
+law_id: 413CO0000000348
+official_title: コソヴォ国際平和協力隊の設置等に関する政令
+aliases:
+- コソヴォ国際平和協力隊の設置等に関する政令
+---
+
+# コソヴォ国際平和協力隊の設置等に関する政令
+
+## Metadata
+- Law ID: `413CO0000000348`
+- Law No: 平成十三年政令第三百四十八号
+- Promulgation Date: 20011107

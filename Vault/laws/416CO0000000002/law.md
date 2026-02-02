@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000002
+id: JPLAW:416CO0000000002
+law_no: 平成十六年政令第二号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000002
+promulgation_date: '20040107'
+tags:
+- 独立行政法人日本学生支援機構法施行令
+tier: 0
+title: 独立行政法人日本学生支援機構法施行令
+law_id: 416CO0000000002
+official_title: 独立行政法人日本学生支援機構法施行令
+aliases:
+- 独立行政法人日本学生支援機構法施行令
+---
+
+# 独立行政法人日本学生支援機構法施行令
+
+## Metadata
+- Law ID: `416CO0000000002`
+- Law No: 平成十六年政令第二号
+- Promulgation Date: 20040107

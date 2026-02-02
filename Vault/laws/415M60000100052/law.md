@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 415M60000100052
+id: JPLAW:415M60000100052
+law_no: 平成十五年厚生労働省令第五十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/415M60000100052
+promulgation_date: '20030326'
+tags:
+- 既認定者等に交付する児童扶養手当証書の様式を定める内閣府令
+tier: 0
+title: 既認定者等に交付する児童扶養手当証書の様式を定める内閣府令
+law_id: 415M60000100052
+official_title: 既認定者等に交付する児童扶養手当証書の様式を定める内閣府令
+aliases:
+- 既認定者等に交付する児童扶養手当証書の様式を定める内閣府令
+---
+
+# 既認定者等に交付する児童扶養手当証書の様式を定める内閣府令
+
+## Metadata
+- Law ID: `415M60000100052`
+- Law No: 平成十五年厚生労働省令第五十二号
+- Promulgation Date: 20030326

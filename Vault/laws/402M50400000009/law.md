@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402M50400000009
+id: JPLAW:402M50400000009
+law_no: 平成二年国家公安委員会規則第九号
+links:
+  egov: https://laws.e-gov.go.jp/law/402M50400000009
+promulgation_date: '19901106'
+tags:
+- 被疑者写真の管理及び運用に関する規則
+tier: 0
+title: 被疑者写真の管理及び運用に関する規則
+law_id: 402M50400000009
+official_title: 被疑者写真の管理及び運用に関する規則
+aliases:
+- 被疑者写真の管理及び運用に関する規則
+---
+
+# 被疑者写真の管理及び運用に関する規則
+
+## Metadata
+- Law ID: `402M50400000009`
+- Law No: 平成二年国家公安委員会規則第九号
+- Promulgation Date: 19901106

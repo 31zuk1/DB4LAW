@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326M50000040020
+id: JPLAW:326M50000040020
+law_no: 昭和二十六年大蔵省令第二十号
+links:
+  egov: https://laws.e-gov.go.jp/law/326M50000040020
+promulgation_date: '19510331'
+tags:
+- 小切手振出等事務取扱規程
+tier: 0
+title: 小切手振出等事務取扱規程
+law_id: 326M50000040020
+official_title: 小切手振出等事務取扱規程
+aliases:
+- 小切手振出等事務取扱規程
+---
+
+# 小切手振出等事務取扱規程
+
+## Metadata
+- Law ID: `326M50000040020`
+- Law No: 昭和二十六年大蔵省令第二十号
+- Promulgation Date: 19510331

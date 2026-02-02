@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403RJNJ09093000
+id: JPLAW:403RJNJ09093000
+law_no: 平成三年人事院規則九―九三
+links:
+  egov: https://laws.e-gov.go.jp/law/403RJNJ09093000
+promulgation_date: '19911224'
+tags:
+- 人事院規則九―九三（管理職員特別勤務手当）
+tier: 0
+title: 人事院規則九―九三（管理職員特別勤務手当）
+law_id: 403RJNJ09093000
+official_title: 人事院規則九―九三（管理職員特別勤務手当）
+aliases:
+- 人事院規則九―九三（管理職員特別勤務手当）
+---
+
+# 人事院規則九―九三（管理職員特別勤務手当）
+
+## Metadata
+- Law ID: `403RJNJ09093000`
+- Law No: 平成三年人事院規則九―九三
+- Promulgation Date: 19911224

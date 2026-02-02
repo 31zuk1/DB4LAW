@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 418CO0000000162
+id: JPLAW:418CO0000000162
+law_no: 平成十八年政令第百六十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/418CO0000000162
+promulgation_date: '20060331'
+tags:
+- 独立行政法人国立美術館法施行令
+tier: 0
+title: 独立行政法人国立美術館法施行令
+law_id: 418CO0000000162
+official_title: 独立行政法人国立美術館法施行令
+aliases:
+- 独立行政法人国立美術館法施行令
+---
+
+# 独立行政法人国立美術館法施行令
+
+## Metadata
+- Law ID: `418CO0000000162`
+- Law No: 平成十八年政令第百六十二号
+- Promulgation Date: 20060331

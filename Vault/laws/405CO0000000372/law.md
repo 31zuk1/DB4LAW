@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 405CO0000000372
+id: JPLAW:405CO0000000372
+law_no: 平成五年政令第三百七十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/405CO0000000372
+promulgation_date: '19931119'
+tags:
+- 中央環境審議会令
+tier: 0
+title: 中央環境審議会令
+law_id: 405CO0000000372
+official_title: 中央環境審議会令
+aliases:
+- 中央環境審議会令
+---
+
+# 中央環境審議会令
+
+## Metadata
+- Law ID: `405CO0000000372`
+- Law No: 平成五年政令第三百七十二号
+- Promulgation Date: 19931119

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50000100021
+id: JPLAW:325M50000100021
+law_no: 昭和二十五年厚生省令第二十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50000100021
+promulgation_date: '19500520'
+tags:
+- 生活保護法施行規則
+tier: 0
+title: 生活保護法施行規則
+law_id: 325M50000100021
+official_title: 生活保護法施行規則
+aliases:
+- 生活保護法施行規則
+---
+
+# 生活保護法施行規則
+
+## Metadata
+- Law ID: `325M50000100021`
+- Law No: 昭和二十五年厚生省令第二十一号
+- Promulgation Date: 19500520

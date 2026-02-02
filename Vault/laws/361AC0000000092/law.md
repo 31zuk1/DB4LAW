@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361AC0000000092
+id: JPLAW:361AC0000000092
+law_no: 昭和六十一年法律第九十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/361AC0000000092
+promulgation_date: '19861204'
+tags:
+- 鉄道事業法
+tier: 0
+title: 鉄道事業法
+law_id: 361AC0000000092
+official_title: 鉄道事業法
+aliases:
+- 鉄道事業法
+---
+
+# 鉄道事業法
+
+## Metadata
+- Law ID: `361AC0000000092`
+- Law No: 昭和六十一年法律第九十二号
+- Promulgation Date: 19861204

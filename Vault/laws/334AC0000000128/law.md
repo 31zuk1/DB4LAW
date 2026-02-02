@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 334AC0000000128
+id: JPLAW:334AC0000000128
+law_no: 昭和三十四年法律第百二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/334AC0000000128
+promulgation_date: '19590413'
+tags:
+- 商標法施行法
+tier: 0
+title: 商標法施行法
+law_id: 334AC0000000128
+official_title: 商標法施行法
+aliases:
+- 商標法施行法
+---
+
+# 商標法施行法
+
+## Metadata
+- Law ID: `334AC0000000128`
+- Law No: 昭和三十四年法律第百二十八号
+- Promulgation Date: 19590413

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 403CO0000000226
+id: JPLAW:403CO0000000226
+law_no: 平成三年政令第二百二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/403CO0000000226
+promulgation_date: '19910628'
+tags:
+- 歯科衛生士法施行令
+tier: 0
+title: 歯科衛生士法施行令
+law_id: 403CO0000000226
+official_title: 歯科衛生士法施行令
+aliases:
+- 歯科衛生士法施行令
+---
+
+# 歯科衛生士法施行令
+
+## Metadata
+- Law ID: `403CO0000000226`
+- Law No: 平成三年政令第二百二十六号
+- Promulgation Date: 19910628

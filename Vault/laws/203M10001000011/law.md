@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 203M10001000011
+id: JPLAW:203M10001000011
+law_no: 大正三年逓信省令第十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/203M10001000011
+promulgation_date: '19140506'
+tags:
+- 発電水力調査図表類交付規則
+tier: 0
+title: 発電水力調査図表類交付規則
+law_id: 203M10001000011
+official_title: 発電水力調査図表類交付規則
+aliases:
+- 発電水力調査図表類交付規則
+---
+
+# 発電水力調査図表類交付規則
+
+## Metadata
+- Law ID: `203M10001000011`
+- Law No: 大正三年逓信省令第十一号
+- Promulgation Date: 19140506

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425CO0000000122
+id: JPLAW:425CO0000000122
+law_no: 平成二十五年政令第百二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/425CO0000000122
+promulgation_date: '20130412'
+tags:
+- 新型インフルエンザ等対策特別措置法施行令
+tier: 0
+title: 新型インフルエンザ等対策特別措置法施行令
+law_id: 425CO0000000122
+official_title: 新型インフルエンザ等対策特別措置法施行令
+aliases:
+- 新型インフルエンザ等対策特別措置法施行令
+---
+
+# 新型インフルエンザ等対策特別措置法施行令
+
+## Metadata
+- Law ID: `425CO0000000122`
+- Law No: 平成二十五年政令第百二十二号
+- Promulgation Date: 20130412

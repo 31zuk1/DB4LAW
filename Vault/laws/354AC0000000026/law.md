@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 354AC0000000026
+id: JPLAW:354AC0000000026
+law_no: 昭和五十四年法律第二十六号
+links:
+  egov: https://laws.e-gov.go.jp/law/354AC0000000026
+promulgation_date: '19790502'
+tags:
+- 昭和五十四年度の公債の発行の特例に関する法律
+tier: 0
+title: 昭和五十四年度の公債の発行の特例に関する法律
+law_id: 354AC0000000026
+official_title: 昭和五十四年度の公債の発行の特例に関する法律
+aliases:
+- 昭和五十四年度の公債の発行の特例に関する法律
+---
+
+# 昭和五十四年度の公債の発行の特例に関する法律
+
+## Metadata
+- Law ID: `354AC0000000026`
+- Law No: 昭和五十四年法律第二十六号
+- Promulgation Date: 19790502

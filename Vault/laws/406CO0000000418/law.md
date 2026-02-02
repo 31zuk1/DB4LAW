@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 406CO0000000418
+id: JPLAW:406CO0000000418
+law_no: 平成六年政令第四百十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/406CO0000000418
+promulgation_date: '19941228'
+tags:
+- 報復関税等に関する政令
+tier: 0
+title: 報復関税等に関する政令
+law_id: 406CO0000000418
+official_title: 報復関税等に関する政令
+aliases:
+- 報復関税等に関する政令
+---
+
+# 報復関税等に関する政令
+
+## Metadata
+- Law ID: `406CO0000000418`
+- Law No: 平成六年政令第四百十八号
+- Promulgation Date: 19941228

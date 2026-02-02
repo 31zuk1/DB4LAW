@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 326AC1000000313
+id: JPLAW:326AC1000000313
+law_no: 昭和二十六年法律第三百十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/326AC1000000313
+promulgation_date: '19511217'
+tags:
+- 水産資源保護法
+tier: 0
+title: 水産資源保護法
+law_id: 326AC1000000313
+official_title: 水産資源保護法
+aliases:
+- 水産資源保護法
+---
+
+# 水産資源保護法
+
+## Metadata
+- Law ID: `326AC1000000313`
+- Law No: 昭和二十六年法律第三百十三号
+- Promulgation Date: 19511217

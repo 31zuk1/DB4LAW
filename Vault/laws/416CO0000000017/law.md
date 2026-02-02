@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 416CO0000000017
+id: JPLAW:416CO0000000017
+law_no: 平成十六年政令第十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/416CO0000000017
+promulgation_date: '20040204'
+tags:
+- 弁護士法第五条の二第三項の手数料の額を定める政令
+tier: 0
+title: 弁護士法第五条の二第三項の手数料の額を定める政令
+law_id: 416CO0000000017
+official_title: 弁護士法第五条の二第三項の手数料の額を定める政令
+aliases:
+- 弁護士法第五条の二第三項の手数料の額を定める政令
+---
+
+# 弁護士法第五条の二第三項の手数料の額を定める政令
+
+## Metadata
+- Law ID: `416CO0000000017`
+- Law No: 平成十六年政令第十七号
+- Promulgation Date: 20040204

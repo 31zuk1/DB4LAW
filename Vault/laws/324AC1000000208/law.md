@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC1000000208
+id: JPLAW:324AC1000000208
+law_no: 昭和二十四年法律第二百八号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC1000000208
+promulgation_date: '19490610'
+tags:
+- 家畜商法
+tier: 0
+title: 家畜商法
+law_id: 324AC1000000208
+official_title: 家畜商法
+aliases:
+- 家畜商法
+---
+
+# 家畜商法
+
+## Metadata
+- Law ID: `324AC1000000208`
+- Law No: 昭和二十四年法律第二百八号
+- Promulgation Date: 19490610

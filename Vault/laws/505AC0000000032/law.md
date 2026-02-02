@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 505AC0000000032
+id: JPLAW:505AC0000000032
+law_no: 令和五年法律第三十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/505AC0000000032
+promulgation_date: '20230519'
+tags:
+- 脱炭素成長型経済構造への円滑な移行の推進に関する法律
+tier: 0
+title: 脱炭素成長型経済構造への円滑な移行の推進に関する法律
+law_id: 505AC0000000032
+official_title: 脱炭素成長型経済構造への円滑な移行の推進に関する法律
+aliases:
+- 脱炭素成長型経済構造への円滑な移行の推進に関する法律
+---
+
+# 脱炭素成長型経済構造への円滑な移行の推進に関する法律
+
+## Metadata
+- Law ID: `505AC0000000032`
+- Law No: 令和五年法律第三十二号
+- Promulgation Date: 20230519

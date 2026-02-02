@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324CO0000000310
+id: JPLAW:324CO0000000310
+law_no: 昭和二十四年政令第三百十号
+links:
+  egov: https://laws.e-gov.go.jp/law/324CO0000000310
+promulgation_date: '19490818'
+tags:
+- 連合国財産である株式の回復に関する政令
+tier: 0
+title: 連合国財産である株式の回復に関する政令
+law_id: 324CO0000000310
+official_title: 連合国財産である株式の回復に関する政令
+aliases:
+- 連合国財産である株式の回復に関する政令
+---
+
+# 連合国財産である株式の回復に関する政令
+
+## Metadata
+- Law ID: `324CO0000000310`
+- Law No: 昭和二十四年政令第三百十号
+- Promulgation Date: 19490818

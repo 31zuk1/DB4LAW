@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 419RJNJ25000000
+id: JPLAW:419RJNJ25000000
+law_no: 平成十九年人事院規則二五―〇
+links:
+  egov: https://laws.e-gov.go.jp/law/419RJNJ25000000
+promulgation_date: '20070720'
+tags:
+- 人事院規則二五―〇（職員の自己啓発等休業）
+tier: 0
+title: 人事院規則二五―〇（職員の自己啓発等休業）
+law_id: 419RJNJ25000000
+official_title: 人事院規則二五―〇（職員の自己啓発等休業）
+aliases:
+- 人事院規則二五―〇（職員の自己啓発等休業）
+---
+
+# 人事院規則二五―〇（職員の自己啓発等休業）
+
+## Metadata
+- Law ID: `419RJNJ25000000`
+- Law No: 平成十九年人事院規則二五―〇
+- Promulgation Date: 20070720

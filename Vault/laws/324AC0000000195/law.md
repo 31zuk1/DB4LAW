@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 324AC0000000195
+id: JPLAW:324AC0000000195
+law_no: 昭和二十四年法律第百九十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/324AC0000000195
+promulgation_date: '19490606'
+tags:
+- 土地改良法
+tier: 0
+title: 土地改良法
+law_id: 324AC0000000195
+official_title: 土地改良法
+aliases:
+- 土地改良法
+---
+
+# 土地改良法
+
+## Metadata
+- Law ID: `324AC0000000195`
+- Law No: 昭和二十四年法律第百九十五号
+- Promulgation Date: 19490606

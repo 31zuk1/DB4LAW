@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 361AC0000000028
+id: JPLAW:361AC0000000028
+law_no: 昭和六十一年法律第二十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/361AC0000000028
+promulgation_date: '19860422'
+tags:
+- 国際花と緑の博覧会の準備及び運営のために必要な特別措置に関する法律
+tier: 0
+title: 国際花と緑の博覧会の準備及び運営のために必要な特別措置に関する法律
+law_id: 361AC0000000028
+official_title: 国際花と緑の博覧会の準備及び運営のために必要な特別措置に関する法律
+aliases:
+- 国際花と緑の博覧会の準備及び運営のために必要な特別措置に関する法律
+---
+
+# 国際花と緑の博覧会の準備及び運営のために必要な特別措置に関する法律
+
+## Metadata
+- Law ID: `361AC0000000028`
+- Law No: 昭和六十一年法律第二十八号
+- Promulgation Date: 19860422

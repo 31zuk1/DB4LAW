@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 402AC0000000071
+id: JPLAW:402AC0000000071
+law_no: 平成二年法律第七十一号
+links:
+  egov: https://laws.e-gov.go.jp/law/402AC0000000071
+promulgation_date: '19900629'
+tags:
+- 生涯学習の振興のための施策の推進体制等の整備に関する法律
+tier: 0
+title: 生涯学習の振興のための施策の推進体制等の整備に関する法律
+law_id: 402AC0000000071
+official_title: 生涯学習の振興のための施策の推進体制等の整備に関する法律
+aliases:
+- 生涯学習の振興のための施策の推進体制等の整備に関する法律
+---
+
+# 生涯学習の振興のための施策の推進体制等の整備に関する法律
+
+## Metadata
+- Law ID: `402AC0000000071`
+- Law No: 平成二年法律第七十一号
+- Promulgation Date: 19900629

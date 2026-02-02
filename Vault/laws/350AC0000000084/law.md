@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 350AC0000000084
+id: JPLAW:350AC0000000084
+law_no: 昭和五十年法律第八十四号
+links:
+  egov: https://laws.e-gov.go.jp/law/350AC0000000084
+promulgation_date: '19751217'
+tags:
+- 石油コンビナート等災害防止法
+tier: 0
+title: 石油コンビナート等災害防止法
+law_id: 350AC0000000084
+official_title: 石油コンビナート等災害防止法
+aliases:
+- 石油コンビナート等災害防止法
+---
+
+# 石油コンビナート等災害防止法
+
+## Metadata
+- Law ID: `350AC0000000084`
+- Law No: 昭和五十年法律第八十四号
+- Promulgation Date: 19751217

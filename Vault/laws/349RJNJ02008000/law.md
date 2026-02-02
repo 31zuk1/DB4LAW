@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349RJNJ02008000
+id: JPLAW:349RJNJ02008000
+law_no: 昭和四十九年人事院規則二―八
+links:
+  egov: https://laws.e-gov.go.jp/law/349RJNJ02008000
+promulgation_date: '19740411'
+tags:
+- 人事院規則二―八（人事院の顧問及び参与）
+tier: 0
+title: 人事院規則二―八（人事院の顧問及び参与）
+law_id: 349RJNJ02008000
+official_title: 人事院規則二―八（人事院の顧問及び参与）
+aliases:
+- 人事院規則二―八（人事院の顧問及び参与）
+---
+
+# 人事院規則二―八（人事院の顧問及び参与）
+
+## Metadata
+- Law ID: `349RJNJ02008000`
+- Law No: 昭和四十九年人事院規則二―八
+- Promulgation Date: 19740411

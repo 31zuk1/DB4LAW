@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325M50000040100
+id: JPLAW:325M50000040100
+law_no: 昭和二十五年大蔵省令第百号
+links:
+  egov: https://laws.e-gov.go.jp/law/325M50000040100
+promulgation_date: '19501011'
+tags:
+- 外国政府の不動産に関する権利の取得に関する省令
+tier: 0
+title: 外国政府の不動産に関する権利の取得に関する省令
+law_id: 325M50000040100
+official_title: 外国政府の不動産に関する権利の取得に関する省令
+aliases:
+- 外国政府の不動産に関する権利の取得に関する省令
+---
+
+# 外国政府の不動産に関する権利の取得に関する省令
+
+## Metadata
+- Law ID: `325M50000040100`
+- Law No: 昭和二十五年大蔵省令第百号
+- Promulgation Date: 19501011

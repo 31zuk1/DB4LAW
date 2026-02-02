@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 425M60080000027
+id: JPLAW:425M60080000027
+law_no: 平成二十五年原子力規制委員会規則第二十七号
+links:
+  egov: https://laws.e-gov.go.jp/law/425M60080000027
+promulgation_date: '20131206'
+tags:
+- 再処理施設の位置、構造及び設備の基準に関する規則
+tier: 0
+title: 再処理施設の位置、構造及び設備の基準に関する規則
+law_id: 425M60080000027
+official_title: 再処理施設の位置、構造及び設備の基準に関する規則
+aliases:
+- 再処理施設の位置、構造及び設備の基準に関する規則
+---
+
+# 再処理施設の位置、構造及び設備の基準に関する規則
+
+## Metadata
+- Law ID: `425M60080000027`
+- Law No: 平成二十五年原子力規制委員会規則第二十七号
+- Promulgation Date: 20131206

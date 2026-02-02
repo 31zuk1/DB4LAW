@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328M50000002035
+id: JPLAW:328M50000002035
+law_no: 昭和二十八年総理府令第三十五号
+links:
+  egov: https://laws.e-gov.go.jp/law/328M50000002035
+promulgation_date: '19530718'
+tags:
+- 水基本調査作業規程準則
+tier: 0
+title: 水基本調査作業規程準則
+law_id: 328M50000002035
+official_title: 水基本調査作業規程準則
+aliases:
+- 水基本調査作業規程準則
+---
+
+# 水基本調査作業規程準則
+
+## Metadata
+- Law ID: `328M50000002035`
+- Law No: 昭和二十八年総理府令第三十五号
+- Promulgation Date: 19530718

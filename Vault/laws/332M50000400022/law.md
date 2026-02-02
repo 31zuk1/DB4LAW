@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 332M50000400022
+id: JPLAW:332M50000400022
+law_no: 昭和三十二年通商産業省令第二十二号
+links:
+  egov: https://laws.e-gov.go.jp/law/332M50000400022
+promulgation_date: '19570629'
+tags:
+- 工業用水法施行規則
+tier: 0
+title: 工業用水法施行規則
+law_id: 332M50000400022
+official_title: 工業用水法施行規則
+aliases:
+- 工業用水法施行規則
+---
+
+# 工業用水法施行規則
+
+## Metadata
+- Law ID: `332M50000400022`
+- Law No: 昭和三十二年通商産業省令第二十二号
+- Promulgation Date: 19570629

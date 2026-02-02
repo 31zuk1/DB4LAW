@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 328CO0000000233
+id: JPLAW:328CO0000000233
+law_no: 昭和二十八年政令第二百三十三号
+links:
+  egov: https://laws.e-gov.go.jp/law/328CO0000000233
+promulgation_date: '19530831'
+tags:
+- クリーニング業法施行令
+tier: 0
+title: クリーニング業法施行令
+law_id: 328CO0000000233
+official_title: クリーニング業法施行令
+aliases:
+- クリーニング業法施行令
+---
+
+# クリーニング業法施行令
+
+## Metadata
+- Law ID: `328CO0000000233`
+- Law No: 昭和二十八年政令第二百三十三号
+- Promulgation Date: 19530831

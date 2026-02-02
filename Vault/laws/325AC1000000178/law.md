@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 325AC1000000178
+id: JPLAW:325AC1000000178
+law_no: 昭和二十五年法律第百七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/325AC1000000178
+promulgation_date: '19500513'
+tags:
+- 漁船法
+tier: 0
+title: 漁船法
+law_id: 325AC1000000178
+official_title: 漁船法
+aliases:
+- 漁船法
+---
+
+# 漁船法
+
+## Metadata
+- Law ID: `325AC1000000178`
+- Law No: 昭和二十五年法律第百七十八号
+- Promulgation Date: 19500513

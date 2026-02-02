@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 349CO0000000101
+id: JPLAW:349CO0000000101
+law_no: 昭和四十九年政令第百一号
+links:
+  egov: https://laws.e-gov.go.jp/law/349CO0000000101
+promulgation_date: '19740405'
+tags:
+- 化学物質審議会令
+tier: 0
+title: 化学物質審議会令
+law_id: 349CO0000000101
+official_title: 化学物質審議会令
+aliases:
+- 化学物質審議会令
+---
+
+# 化学物質審議会令
+
+## Metadata
+- Law ID: `349CO0000000101`
+- Law No: 昭和四十九年政令第百一号
+- Promulgation Date: 19740405

@@ -1,0 +1,26 @@
+---
+as_of: '2025-01-01'
+domain: []
+egov_class: []
+egov_law_id: 426CO0000000178
+id: JPLAW:426CO0000000178
+law_no: 平成二十六年政令第百七十八号
+links:
+  egov: https://laws.e-gov.go.jp/law/426CO0000000178
+promulgation_date: '20140501'
+tags:
+- 国家戦略特別区域を定める政令
+tier: 0
+title: 国家戦略特別区域を定める政令
+law_id: 426CO0000000178
+official_title: 国家戦略特別区域を定める政令
+aliases:
+- 国家戦略特別区域を定める政令
+---
+
+# 国家戦略特別区域を定める政令
+
+## Metadata
+- Law ID: `426CO0000000178`
+- Law No: 平成二十六年政令第百七十八号
+- Promulgation Date: 20140501
