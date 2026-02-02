@@ -28,6 +28,9 @@ def resolve_link(link: str, source_file: Path, vault_root: Path) -> Optional[Pat
     # Handle absolute paths (starting with /)
     if link.startswith('/'):
         target = vault_root / link[1:]
+    # Handle paths that start with known top-level directories (absolute from vault root)
+    elif link.startswith('laws/') or link.startswith('_index/') or link.startswith('reports/'):
+        target = vault_root / link
     else:
         # Relative to source file's directory
         target = source_file.parent / link
