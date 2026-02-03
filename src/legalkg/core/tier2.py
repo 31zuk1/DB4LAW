@@ -109,8 +109,8 @@ EXTERNAL_LAW_PATTERNS: Tuple[str, ...] = (
     '犯罪捜査のための通信傍受に関する法律',
     '国際捜査共助等に関する法律', '逃亡犯罪人引渡法',
     '犯罪による収益の移転防止に関する法律',
-    # 民事系（民事訴訟法はクロスリンク対象のため除外）
-    '民事執行法', '民事保全法', '商法', '会社法',
+    # 民事系（民事訴訟法、会社法はクロスリンク対象のため除外）
+    '民事執行法', '民事保全法', '商法',
     '破産法', '不動産登記法', '戸籍法', '家事事件手続法',
     '借地借家法', '建物の区分所有等に関する法律',
     '商業登記法', '外国法人の登記及び夫婦財産契約の登記に関する法律',
@@ -119,11 +119,11 @@ EXTERNAL_LAW_PATTERNS: Tuple[str, ...] = (
     '民事調停法', '労働審判法',
     # 土地・不動産系
     '土地収用法', '都市計画法', '土地基本法', '鉄道抵当法',
-    # 行政系
+    # 行政系（行政事件訴訟法はクロスリンク対象のため除外）
     '地方自治法', '自然公園法', '農地法', '住民基本台帳法',
     '行政手続における特定の個人を識別するための番号の利用等に関する法律',
     '行政代執行法', '特定非営利活動促進法', '出入国管理及び難民認定法',
-    '行政事件訴訟法', '国家賠償法', '行政手続法',
+    '国家賠償法', '行政手続法',
     # 金融・経済系
     '信託法', '電子記録債権法', '金融商品取引法', '保険業法',
     '信用金庫法', '労働金庫法', '資産の流動化に関する法律',
@@ -249,14 +249,22 @@ def clear_vault_caches() -> None:
     _VAULT_LAW_DIRS_CACHE = None
 
 
-def set_vault_root(vault_root: Path) -> None:
+def set_vault_root(vault_root: Optional[Path]) -> None:
     """
     Vault ルートパスを設定
 
+    Vault パスが変更された場合、キャッシュを自動的にクリアする。
+
     Args:
-        vault_root: Vault ディレクトリへのパス
+        vault_root: Vault ディレクトリへのパス（None で無効化）
     """
-    global _VAULT_ROOT
+    global _VAULT_ROOT, _LAW_ID_CACHE, _VAULT_LAW_DIRS_CACHE
+
+    # パスが変更された場合のみキャッシュをクリア
+    if _VAULT_ROOT != vault_root:
+        _LAW_ID_CACHE = {}
+        _VAULT_LAW_DIRS_CACHE = None
+
     _VAULT_ROOT = vault_root
 
 
@@ -291,7 +299,6 @@ def resolve_law_id_from_vault(law_name: str, vault_root: Optional[Path] = None) 
     canonical_name = CROSS_LINKABLE_LAWS.get(law_name, law_name)
 
     # 方法1: _index/laws.json から検索（高速）
-    import json
     index_path = root / "_index" / "laws.json"
     if index_path.exists():
         try:
@@ -307,7 +314,8 @@ def resolve_law_id_from_vault(law_name: str, vault_root: Optional[Path] = None) 
                         law_id = law.get('law_id')
                         _LAW_ID_CACHE[law_name] = law_id
                         return law_id
-        except Exception:
+        except (json.JSONDecodeError, OSError, KeyError, TypeError):
+            # インデックスファイルが破損/欠損している場合はフォールバック
             pass
 
     # 方法2: 全ディレクトリを検索（フォールバック）
@@ -341,7 +349,20 @@ def resolve_law_id_from_vault(law_name: str, vault_root: Optional[Path] = None) 
 
 
 def clear_law_id_cache() -> None:
-    """法令ID キャッシュをクリア（テスト用）"""
+    """
+    法令ID キャッシュをクリア（テスト用）
+
+    .. deprecated::
+        `clear_vault_caches()` を使用してください。
+        この関数は `_LAW_ID_CACHE` のみをクリアし、
+        `_VAULT_LAW_DIRS_CACHE` はクリアしません。
+    """
+    import warnings
+    warnings.warn(
+        "clear_law_id_cache() is deprecated. Use clear_vault_caches() instead.",
+        DeprecationWarning,
+        stacklevel=2
+    )
     global _LAW_ID_CACHE
     _LAW_ID_CACHE = {}
 
@@ -1523,7 +1544,8 @@ class EdgeExtractor:
             WikiLinks に変換されたテキスト
         """
         # law_name から law_id を解決（パス生成に必要）
-        source_law_id = resolve_law_id_from_vault(law_name, self.vault_root) or ""
+        # Vault がない場合や法令が見つからない場合は law_name をフォールバック
+        source_law_id = resolve_law_id_from_vault(law_name, self.vault_root) or law_name
 
         replaced_text, _ = self.replace_refs_with_edges(
             text=text,

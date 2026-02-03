@@ -2,9 +2,9 @@
 Test for parent hierarchy in Tier1 article generation.
 
 木構造の正本として、条文の parent は直上階層を指す:
-1. 節が存在 → [[laws/{法令}/節/{章名}{節名}]]
-2. 章のみ存在 → [[laws/{法令}/章/{章名}]]
-3. 章/節なし → [[laws/{法令}/{法令}]]（孤立条文）
+1. 節が存在 → [[laws/{law_id}/節/{章名}{節名}]]
+2. 章のみ存在 → [[laws/{law_id}/章/{章名}]]
+3. 章/節なし → [[laws/{law_id}/{title}_law.md|{law_name}]]（孤立条文）
 """
 import pytest
 from legalkg.core.tier1 import Tier1Builder
@@ -27,8 +27,8 @@ class TestResolveParent:
             "section_num": 6,
             "section_title": "第六款　定款の変更",
         }
-        parent = builder._resolve_parent("会社法", context, "main")
-        assert parent == "[[laws/会社法/節/第1章第6節]]"
+        parent = builder._resolve_parent("417AC0000000086", "会社法", context, "main")
+        assert parent == "[[laws/417AC0000000086/節/第1章第6節.md]]"
 
     def test_article_with_chapter_only_parent_is_chapter(self, builder):
         """節がない条文の parent は章を指す"""
@@ -38,20 +38,20 @@ class TestResolveParent:
             "section_num": None,
             "section_title": None,
         }
-        parent = builder._resolve_parent("刑法", context, "main")
-        assert parent == "[[laws/刑法/章/第26章]]"
+        parent = builder._resolve_parent("140AC0000000045", "刑法", context, "main")
+        assert parent == "[[laws/140AC0000000045/章/第26章.md]]"
 
     def test_article_without_structure_parent_is_law(self, builder):
         """章/節がない条文の parent は法令を指す"""
         context = None
-        parent = builder._resolve_parent("テスト法", context, "main")
-        assert parent == "[[laws/テスト法/テスト法]]"
+        parent = builder._resolve_parent("TEST001", "テスト法", context, "main")
+        assert "[[laws/TEST001/テスト法_law.md|テスト法]]" == parent
 
     def test_article_with_empty_context_parent_is_law(self, builder):
         """空の context でも法令を指す"""
         context = {}
-        parent = builder._resolve_parent("テスト法", context, "main")
-        assert parent == "[[laws/テスト法/テスト法]]"
+        parent = builder._resolve_parent("TEST001", "テスト法", context, "main")
+        assert "[[laws/TEST001/テスト法_law.md|テスト法]]" == parent
 
     def test_supplement_parent_is_always_law(self, builder):
         """附則の parent は常に法令を指す（階層構造がないため）"""
@@ -61,16 +61,13 @@ class TestResolveParent:
             "section_num": 1,
             "section_title": "第一節",
         }
-        parent = builder._resolve_parent("刑法", context, "suppl")
-        assert parent == "[[laws/刑法/刑法]]"
+        parent = builder._resolve_parent("140AC0000000045", "刑法", context, "suppl")
+        assert "[[laws/140AC0000000045/刑法_law.md|刑法]]" == parent
 
     def test_parent_with_no_law_name_returns_none(self, builder):
         """law_name が空の場合は None を返す"""
         context = {"chapter_num": 1}
-        parent = builder._resolve_parent("", context, "main")
-        assert parent is None
-
-        parent = builder._resolve_parent(None, context, "main")
+        parent = builder._resolve_parent("TEST001", "", context, "main")
         assert parent is None
 
     def test_chapter_with_branch_number(self, builder):
@@ -80,8 +77,8 @@ class TestResolveParent:
             "chapter_title": "第二章の二　社債管理補助者",
             "section_num": None,
         }
-        parent = builder._resolve_parent("会社法", context, "main")
-        assert parent == "[[laws/会社法/章/第2章の2]]"
+        parent = builder._resolve_parent("417AC0000000086", "会社法", context, "main")
+        assert parent == "[[laws/417AC0000000086/章/第2章の2.md]]"
 
     def test_section_with_branch_number(self, builder):
         """枝番号付き節の parent パス"""
@@ -91,8 +88,8 @@ class TestResolveParent:
             "section_num": 12,  # e-Gov encoding for 第1節の2
             "section_title": "第一節の二",
         }
-        parent = builder._resolve_parent("テスト法", context, "main")
-        assert parent == "[[laws/テスト法/節/第1章第1節の2]]"
+        parent = builder._resolve_parent("TEST001", "テスト法", context, "main")
+        assert parent == "[[laws/TEST001/節/第1章第1節の2.md]]"
 
 
 class TestBuildFrontmatterParent:
@@ -121,7 +118,7 @@ class TestBuildFrontmatterParent:
             amend_law_num=None,
             context=context,
         )
-        assert fm["parent"] == "[[laws/刑法/章/第26章]]"
+        assert fm["parent"] == "[[laws/140AC0000000045/章/第26章.md]]"
 
     def test_main_article_with_section_has_section_parent(self, builder):
         """本則条文で節がある場合は節を parent に"""
@@ -142,7 +139,7 @@ class TestBuildFrontmatterParent:
             amend_law_num=None,
             context=context,
         )
-        assert fm["parent"] == "[[laws/会社法/節/第1章第1節]]"
+        assert fm["parent"] == "[[laws/417AC0000000086/節/第1章第1節.md]]"
 
     def test_supplement_has_law_parent(self, builder):
         """附則条文は法令を parent に"""
@@ -158,7 +155,7 @@ class TestBuildFrontmatterParent:
             amend_law_num=None,
             context=context,
         )
-        assert fm["parent"] == "[[laws/刑法/刑法]]"
+        assert fm["parent"] == "[[laws/140AC0000000045/刑法_law.md|刑法]]"
 
     def test_amendment_fragment_has_law_parent(self, builder):
         """改正法断片は法令を parent に"""
@@ -174,7 +171,7 @@ class TestBuildFrontmatterParent:
             amend_law_num="令和五年法律第二八号",
             context=context,
         )
-        assert fm["parent"] == "[[laws/刑法/刑法]]"
+        assert fm["parent"] == "[[laws/140AC0000000045/刑法_law.md|刑法]]"
 
     def test_parent_is_always_string_not_list(self, builder):
         """parent は常に文字列（リストではない）"""
@@ -198,13 +195,13 @@ class TestChapterSectionParent:
     """章/節ノードの parent テスト（既存動作の確認）"""
 
     def test_chapter_parent_is_law(self):
-        """章ノードの parent は法令（tier1.py 行927で設定）"""
+        """章ノードの parent は法令（tier1.py で設定）"""
         # これは既存の動作を確認するテスト
-        # 章ノード生成時に parent = [[laws/{law_name}/{law_name}]] となることを確認
+        # 章ノード生成時に parent = [[laws/{law_id}/{title}_law.md|{law_name}]] となることを確認
         pass  # 実際のファイル生成テストは統合テストで実施
 
     def test_section_parent_is_chapter(self):
-        """節ノードの parent は章（tier1.py 行995で設定）"""
+        """節ノードの parent は章（tier1.py で設定）"""
         # これは既存の動作を確認するテスト
-        # 節ノード生成時に parent = [[laws/{law_name}/章/{chapter_name}]] となることを確認
+        # 節ノード生成時に parent = [[laws/{law_id}/章/{chapter_name}]] となることを確認
         pass  # 実際のファイル生成テストは統合テストで実施

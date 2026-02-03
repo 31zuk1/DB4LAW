@@ -31,7 +31,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 from legalkg.core.tier2 import (
     EdgeExtractor,
     set_vault_root,
-    clear_law_id_cache,
+    clear_vault_caches,
     resolve_law_id_from_vault,
 )
 
@@ -45,32 +45,38 @@ def extractor():
 @pytest.fixture
 def vault_fixture(tmp_path):
     """
-    テスト用の最小 Vault を作成
+    テスト用の最小 Vault を作成（law_id ベース構造）
 
     構造:
-    - laws/刑法/刑法.md (egov_law_id: 140AC0000000045)
-    - laws/民法/民法.md (egov_law_id: 129AC0000000089)
+    - laws/140AC0000000045/刑法_law.md
+    - laws/140AC0000000045/本文/ (空ディレクトリ)
+    - laws/129AC0000000089/民法_law.md
+    - laws/129AC0000000089/本文/ (空ディレクトリ)
     """
     laws_dir = tmp_path / "laws"
 
-    # 刑法
-    keiho_dir = laws_dir / "刑法"
+    # 刑法 (law_id: 140AC0000000045)
+    keiho_dir = laws_dir / "140AC0000000045"
     keiho_dir.mkdir(parents=True)
-    keiho_md = keiho_dir / "刑法.md"
+    (keiho_dir / "本文").mkdir()  # 本文ディレクトリも作成
+    keiho_md = keiho_dir / "刑法_law.md"
     keiho_md.write_text("""---
 egov_law_id: '140AC0000000045'
+law_id: '140AC0000000045'
 id: JPLAW:140AC0000000045
 title: 刑法
 ---
 # 刑法
 """, encoding='utf-8')
 
-    # 民法
-    minpo_dir = laws_dir / "民法"
+    # 民法 (law_id: 129AC0000000089)
+    minpo_dir = laws_dir / "129AC0000000089"
     minpo_dir.mkdir(parents=True)
-    minpo_md = minpo_dir / "民法.md"
+    (minpo_dir / "本文").mkdir()  # 本文ディレクトリも作成
+    minpo_md = minpo_dir / "民法_law.md"
     minpo_md.write_text("""---
 egov_law_id: '129AC0000000089'
+law_id: '129AC0000000089'
 id: JPLAW:129AC0000000089
 title: 民法
 ---
@@ -78,13 +84,13 @@ title: 民法
 """, encoding='utf-8')
 
     # キャッシュをクリアしてから Vault root を設定
-    clear_law_id_cache()
+    clear_vault_caches()
     set_vault_root(tmp_path)
 
     yield tmp_path
 
     # クリーンアップ
-    clear_law_id_cache()
+    clear_vault_caches()
 
 
 class TestExternalLawIgnore:
@@ -157,7 +163,7 @@ class TestCrossLinkConsistency:
 
         入力: 「刑法第百九十九条」（現在法: 民法）
         期待:
-        - replace_refs: laws/刑法/本文/第199条.md へのリンク
+        - replace_refs: laws/140AC0000000045/本文/第199条.md へのリンク
         - edges: target は 刑法の law_id（140AC0000000045）を使用
         """
         extractor_with_vault = EdgeExtractor(vault_root=vault_fixture)
@@ -176,7 +182,7 @@ class TestCrossLinkConsistency:
         )
 
         # 刑法へのWikiLinkが生成されている
-        assert "[[laws/刑法/本文/第199条.md|第百九十九条]]" in replaced
+        assert "[[laws/140AC0000000045/本文/第199条.md|第百九十九条]]" in replaced
 
         # エッジも刑法の law_id を使用
         assert len(edges) == 1
@@ -190,11 +196,11 @@ class TestCrossLinkConsistency:
 
         入力: 「刑法第百九十九条」（現在法: 民法、Vault なし）
         期待:
-        - replace_refs: laws/刑法/本文/第199条.md へのリンク（生成する）
+        - replace_refs: laws/刑法/本文/第199条.md へのリンク（法令名ベース、law_id 解決不可）
         - edges: 0件（law_id 解決不可）
         """
         # グローバルキャッシュをクリアしてテスト
-        clear_law_id_cache()
+        clear_vault_caches()
         set_vault_root(None)
 
         # Vault root を設定しない extractor
@@ -213,7 +219,7 @@ class TestCrossLinkConsistency:
             is_amendment_fragment=False
         )
 
-        # WikiLinkは生成される
+        # WikiLinkは生成される（Vault なしの場合は日本語名ベース）
         assert "[[laws/刑法/本文/第199条.md|第百九十九条]]" in replaced
 
         # エッジは生成されない（law_id 解決不可）
@@ -248,8 +254,8 @@ class TestScopeContinuation:
         )
 
         # 両方とも刑法へリンク
-        assert "[[laws/刑法/本文/第199条.md|第百九十九条]]" in replaced
-        assert "[[laws/刑法/本文/第200条.md|第二百条]]" in replaced
+        assert "[[laws/140AC0000000045/本文/第199条.md|第百九十九条]]" in replaced
+        assert "[[laws/140AC0000000045/本文/第200条.md|第二百条]]" in replaced
 
         # エッジも両方とも刑法
         assert len(edges) == 2
@@ -305,7 +311,7 @@ class TestScopeReset:
         )
 
         # 第五条は刑法へ
-        assert "[[laws/刑法/本文/第5条.md|第五条]]" in replaced
+        assert "[[laws/140AC0000000045/本文/第5条.md|第五条]]" in replaced
 
         # 第六条は「同法」直後のため、リンク化されない
         # 注: 「同法」は EXTERNAL_LAW_PATTERNS に含まれる
@@ -325,14 +331,14 @@ class TestReplaceRefsCompatibility:
         自法令への内部参照が正しくリンク化される
 
         入力: 「第七条」（現在法: 民法）
-        期待: laws/民法/本文/第7条.md へのリンク
+        期待: laws/129AC0000000089/本文/第7条.md へのリンク
         """
         text = "前条の規定は、第七条に準用する。"
         law_name = "民法"
 
         replaced = extractor.replace_refs(text, law_name)
 
-        assert "[[laws/民法/本文/第7条.md|第七条]]" in replaced
+        assert "[[laws/129AC0000000089/本文/第7条.md|第七条]]" in replaced
 
     def test_internal_reference_with_sub_number(self, extractor):
         """
@@ -350,7 +356,7 @@ class TestReplaceRefsCompatibility:
         replaced = extractor.replace_refs(text, law_name)
 
         # 「第十九条の二」が完全にマッチし、第19条の2.md にリンク
-        assert "[[laws/民法/本文/第19条の2.md|第十九条の二]]" in replaced
+        assert "[[laws/129AC0000000089/本文/第19条の2.md|第十九条の二]]" in replaced
         assert "の規定により" in replaced
 
     def test_replace_refs_same_as_replace_refs_with_edges(self, extractor):
@@ -431,7 +437,7 @@ class TestAmendmentFragment:
         )
 
         # リンク化されている
-        assert "[[laws/民法/本文/第10条.md|第十条]]" in replaced
+        assert "[[laws/129AC0000000089/本文/第10条.md|第十条]]" in replaced
 
         # エッジも生成されている
         assert len(edges) == 1

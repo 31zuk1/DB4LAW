@@ -218,13 +218,21 @@ def update_law_file_with_links(law_dir: Path) -> bool:
     Update the parent law file with links to all articles.
 
     Args:
-        law_dir: Path to the law directory
+        law_dir: Path to the law directory (law_id based: e.g., 140AC0000000045/)
 
     Returns:
         True if update was successful, False otherwise
     """
-    law_name = law_dir.name
-    law_file = law_dir / f"{law_name}.md"
+    # 法令ファイルを検索（*_law.md 形式）
+    law_files = list(law_dir.glob("*_law.md"))
+    if not law_files:
+        # フォールバック: 旧形式（{law_name}.md）
+        law_name = law_dir.name
+        law_file = law_dir / f"{law_name}.md"
+        if not law_file.exists():
+            return False
+    else:
+        law_file = law_files[0]  # 最初の _law.md ファイルを使用
 
     if not law_file.exists():
         return False

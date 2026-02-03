@@ -4,7 +4,13 @@ Test for Phase 1: 本法/この法律/当該法 参照（内部参照）
 優先順位: 法令番号付き参照 > 本法系 > 明示法令名 > 同法
 """
 import pytest
-from legalkg.core.tier2 import EdgeExtractor, has_self_law_prefix, SELF_LAW_PREFIXES_SORTED
+from legalkg.core.tier2 import (
+    EdgeExtractor,
+    has_self_law_prefix,
+    SELF_LAW_PREFIXES_SORTED,
+    clear_vault_caches,
+    set_vault_root,
+)
 
 
 class TestHasSelfLawPrefix:
@@ -182,6 +188,14 @@ title: テスト法
 
 class TestSelfLawDoesNotInterfereWithOtherPatterns:
     """本法参照が他のパターンに干渉しないことを確認"""
+
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        """キャッシュをクリアして Vault なしでテスト"""
+        clear_vault_caches()
+        set_vault_root(None)
+        yield
+        clear_vault_caches()
 
     @pytest.fixture
     def extractor(self):

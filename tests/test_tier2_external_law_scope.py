@@ -7,7 +7,7 @@
 外部法令参照の処理方針:
 1. 対象法令がVaultに存在する場合:
    - その法令の条文ノードへ正しくリンク + edge生成
-   - 例: 民法（...）第93条 → [[laws/民法/本文/第93条.md|第九十三条]]
+   - 例: 民法（...）第93条 → [[laws/129AC0000000089/本文/第93条.md|第九十三条]]
 
 2. 対象法令がVaultに存在しない場合:
    - リンク化はしないが、external edge を生成
@@ -19,6 +19,7 @@ from pathlib import Path
 from legalkg.core.tier2 import (
     EdgeExtractor,
     set_vault_root,
+    clear_vault_caches,
     extract_external_law_with_num,
 )
 
@@ -114,6 +115,7 @@ class TestExternalEdgeFormat:
     """
 
     def setup_method(self):
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -263,6 +265,7 @@ class TestExternalLawExternalEdge:
 
     def setup_method(self):
         # Vault root を設定（実際のVaultパスを使用）
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -332,6 +335,7 @@ class TestExternalLawInVault:
 
     def setup_method(self):
         # Vault root を設定（実際のVaultパスを使用）
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -341,13 +345,13 @@ class TestExternalLawInVault:
         Vaultに存在する法令（民法）への参照は法令番号付きでもリンク化される
 
         入力: 民法（明治二十九年法律第八十九号）第九十三条
-        期待: [[laws/民法/本文/第93条.md|第九十三条]] へリンク
+        期待: [[laws/129AC0000000089/本文/第93条.md|第九十三条]] へリンク
         """
         text = "民法（明治二十九年法律第八十九号）第九十三条の規定を準用する"
         result = self.extractor.replace_refs(text, "会社法")
 
         # 民法へのクロスリンクが生成される
-        assert "[[laws/民法/本文/第93条.md|第九十三条]]" in result
+        assert "[[laws/129AC0000000089/本文/第93条.md|第九十三条]]" in result
         # 会社法へのリンクはない
         assert "[[laws/会社法" not in result
 
@@ -364,7 +368,7 @@ class TestExternalLawInVault:
         )
 
         # クロスリンクが生成される
-        assert "[[laws/民法/本文/第93条.md|第九十三条]]" in result
+        assert "[[laws/129AC0000000089/本文/第93条.md|第九十三条]]" in result
 
         # 通常の edge が生成される（external ではない）
         assert len(edges) == 1
@@ -400,11 +404,11 @@ class TestCrossLinkScopeReset:
         result = self.extractor.replace_refs(text, "会社法")
 
         # 第九十三条 は民法へリンク
-        assert "[[laws/民法/本文/第93条.md|第九十三条]]" in result
+        assert "[[laws/129AC0000000089/本文/第93条.md|第九十三条]]" in result
         # 第七百七十四条の四 は会社法へリンク（スコープリセット後）
-        assert "[[laws/会社法/本文/第774条の4.md|第七百七十四条の四]]" in result
+        assert "[[laws/417AC0000000086/本文/第774条の4.md|第七百七十四条の四]]" in result
         # 民法第774条の4 への誤リンクがないこと
-        assert "[[laws/民法/本文/第774条の4.md" not in result
+        assert "[[laws/129AC0000000089/本文/第774条の4.md" not in result
 
     def test_scope_continues_within_enumeration(self):
         """
@@ -416,8 +420,8 @@ class TestCrossLinkScopeReset:
         text = "民法第九十三条第一項及び第九十四条第一項の規定"
         result = self.extractor.replace_refs(text, "会社法")
 
-        assert "[[laws/民法/本文/第93条.md|第九十三条]]" in result
-        assert "[[laws/民法/本文/第94条.md|第九十四条]]" in result
+        assert "[[laws/129AC0000000089/本文/第93条.md|第九十三条]]" in result
+        assert "[[laws/129AC0000000089/本文/第94条.md|第九十四条]]" in result
 
 
 class TestSelfLawReference:
@@ -435,7 +439,7 @@ class TestSelfLawReference:
         text = "第九百五十五条第一項の規定に違反し"
         result = self.extractor.replace_refs(text, "会社法")
 
-        assert "[[laws/会社法/本文/第955条.md|第九百五十五条]]" in result
+        assert "[[laws/417AC0000000086/本文/第955条.md|第九百五十五条]]" in result
 
     def test_no_mistaken_crosslink_for_high_article_number(self):
         """
@@ -449,7 +453,7 @@ class TestSelfLawReference:
 
         # 「民法の」だけではスコープが発生しない（「民法第N条」パターンがない）
         # 第774条の4 は会社法へリンク
-        assert "[[laws/会社法/本文/第774条の4.md|第七百七十四条の四]]" in result
+        assert "[[laws/417AC0000000086/本文/第774条の4.md|第七百七十四条の四]]" in result
 
     def test_self_law_with_law_number_not_crosslinked(self):
         """
@@ -461,7 +465,7 @@ class TestSelfLawReference:
         result = self.extractor.replace_refs(text, "会社法")
 
         # 会社法自身へリンク
-        assert "[[laws/会社法/本文/第955条.md|第九百五十五条]]" in result
+        assert "[[laws/417AC0000000086/本文/第955条.md|第九百五十五条]]" in result
 
 
 if __name__ == "__main__":

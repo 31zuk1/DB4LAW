@@ -423,8 +423,10 @@ class Tier1Builder:
             writer = EdgeWriter(edge_schema)
             writer.write_jsonl(all_edges, law_dir / "edges.jsonl")
 
-        # 構造ノード生成（generate_structure が ON の場合）
-        if generate_structure and aggregator:
+        # 構造ノード生成（aggregator があれば生成）
+        # Note: v2 スキーマ + extract_edges の場合も aggregator が生成されるため、
+        # generate_structure フラグに関係なく構造ノードを生成する
+        if aggregator:
             self._generate_structure_nodes(law_dir, law_id, law_name, aggregator)
 
         # tier 更新

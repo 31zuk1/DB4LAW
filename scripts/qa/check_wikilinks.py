@@ -288,8 +288,12 @@ def check_wikilinks(
         if any(part.startswith('.') for part in md_file.parts):
             continue
 
-        scanned_files += 1
+        # reports/ ディレクトリ配下をスキップ（分析用ドキュメントのため）
         source_relative = str(md_file.relative_to(vault_root))
+        if source_relative.startswith('reports/'):
+            continue
+
+        scanned_files += 1
 
         links = extract_wikilinks_from_file(md_file, vault_root)
 

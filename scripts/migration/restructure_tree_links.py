@@ -44,6 +44,46 @@ class ChangeRecord:
     error_message: Optional[str] = None
 
 
+def find_law_file(law_dir: Path) -> Optional[Path]:
+    """
+    法令ディレクトリから法令ファイルを検索
+
+    Args:
+        law_dir: 法令ディレクトリ（law_id ベース）
+
+    Returns:
+        法令ファイルへのパス（見つからなければ None）
+    """
+    # 新形式: *_law.md
+    law_files = list(law_dir.glob("*_law.md"))
+    if law_files:
+        return law_files[0]
+
+    # 旧形式: {law_name}.md（ディレクトリ名が法令名の場合）
+    old_format = law_dir / f"{law_dir.name}.md"
+    if old_format.exists():
+        return old_format
+
+    return None
+
+
+def get_law_name_from_file(law_file: Path) -> str:
+    """
+    法令ファイルから法令名を取得
+
+    Args:
+        law_file: 法令ファイル
+
+    Returns:
+        法令名
+    """
+    # ファイル名から推測: 刑法_law.md → 刑法
+    stem = law_file.stem
+    if stem.endswith("_law"):
+        return stem[:-4]
+    return stem
+
+
 def chapter_sort_key(filename: str) -> tuple:
     """
     章ファイル名のソートキーを生成
@@ -141,13 +181,36 @@ def rebuild_law_node_body(law_name: str, law_dir: Path) -> str:
     # 附則セクション
     suppl_dir = law_dir / "附則"
     if suppl_dir.exists():
-        lines.append("")
-        lines.append("### 附則")
-        lines.append("")
-        # 附則は改正法サブディレクトリごとにグループ化
-        for subdir in sorted(suppl_dir.iterdir()):
-            if subdir.is_dir():
-                lines.append(f"- {subdir.name}/")
+        # 直接の附則ファイル（.md）
+        direct_files = sorted([f for f in suppl_dir.iterdir() if f.is_file() and f.suffix == ".md"])
+        # 附則サブディレクトリ（改正法など）
+        suppl_subdirs = sorted([d for d in suppl_dir.iterdir() if d.is_dir()])
+
+        if direct_files or suppl_subdirs:
+            lines.append("")
+            lines.append("### 附則")
+            lines.append("")
+
+            # 直接ファイルへのリンク
+            for f in direct_files:
+                display_name = f.stem
+                lines.append(f"- [[附則/{f.name}|{display_name}]]")
+
+            # サブディレクトリへのリンク（全ファイルをリスト）
+            for subdir in suppl_subdirs:
+                subdir_files = sorted([f for f in subdir.iterdir() if f.is_file() and f.suffix == ".md"])
+                if subdir_files:
+                    display_name = subdir.name
+                    file_count = len(subdir_files)
+                    if file_count == 1:
+                        # 1ファイルのみ: そのままリンク
+                        lines.append(f"- [[附則/{subdir.name}/{subdir_files[0].name}|{display_name}]]")
+                    else:
+                        # 複数ファイル: ディレクトリ名をヘッダーとして全条文をリスト
+                        lines.append(f"- {display_name} ({file_count}条)")
+                        for f in subdir_files:
+                            article_display = f.stem  # ファイル名から.md除去
+                            lines.append(f"  - [[附則/{subdir.name}/{f.name}|{article_display}]]")
 
     return "\n".join(lines) + "\n"
 
@@ -161,6 +224,7 @@ def rebuild_chapter_node_body(
 ) -> str:
     """章ノードの本文を再構築（節へのリンクのみ、節がなければ条文）"""
     sections = get_sections_for_chapter(law_dir, chapter_num)
+    law_id = law_dir.name  # law_id ベースのパスを使用
 
     lines = [
         f"# {chapter_title}",
@@ -173,7 +237,7 @@ def rebuild_chapter_node_body(
         lines.append("")
         for sec in sections:
             sec_name = sec.replace(".md", "")
-            lines.append(f"- [[laws/{law_name}/節/{sec}|{sec_name}]]")
+            lines.append(f"- [[laws/{law_id}/節/{sec}|{sec_name}]]")
     else:
         # 節がない場合は条文へのリンクを維持
         # frontmatterのarticle_numsを利用
@@ -191,30 +255,31 @@ def rebuild_chapter_node_body(
                 else:
                     article_name = f"第{art_num}条"
                     filename = f"第{art_num}条.md"
-                lines.append(f"- [[laws/{law_name}/本文/{filename}|{article_name}]]")
+                lines.append(f"- [[laws/{law_id}/本文/{filename}|{article_name}]]")
 
     return "\n".join(lines) + "\n"
 
 
 def process_law_node(
     law_dir: Path,
-    law_name: str,
     dry_run: bool,
 ) -> ChangeRecord:
     """法令ノードを処理"""
-    law_file = law_dir / f"{law_name}.md"
-    rel_path = str(law_file.relative_to(law_dir.parent.parent))
+    law_file = find_law_file(law_dir)
 
-    if not law_file.exists():
+    if not law_file:
         return ChangeRecord(
-            file_path=rel_path,
+            file_path=f"laws/{law_dir.name}/*.md",
             node_type="law",
             old_link_count=0,
             new_link_count=0,
             removed_links=0,
             status="skipped",
-            error_message="File not found",
+            error_message="Law file not found",
         )
+
+    law_name = get_law_name_from_file(law_file)
+    rel_path = str(law_file.relative_to(law_dir.parent.parent))
 
     try:
         doc = read_markdown_file(law_file)
@@ -404,15 +469,21 @@ def main():
     total_removed = 0
 
     for law_dir in law_dirs:
-        law_name = law_dir.name
-        print(f"Processing {law_name}...")
+        # 法令ファイルを検索して法令名を取得
+        law_file = find_law_file(law_dir)
+        if law_file:
+            law_name = get_law_name_from_file(law_file)
+        else:
+            law_name = law_dir.name  # フォールバック
+
+        print(f"Processing {law_name} ({law_dir.name})...")
 
         # 1. 法令ノードを処理
-        record = process_law_node(law_dir, law_name, dry_run)
+        record = process_law_node(law_dir, dry_run)
         records.append(record)
         if record.status == "changed":
             total_removed += record.removed_links
-            print(f"  {law_name}.md: {record.old_link_count} → {record.new_link_count} links")
+            print(f"  {law_file.name if law_file else 'N/A'}: {record.old_link_count} → {record.new_link_count} links")
 
         # 2. 章ノードを処理
         chapter_dir = law_dir / "章"

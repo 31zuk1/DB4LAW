@@ -17,7 +17,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 import pytest
-from legalkg.core.tier2 import EdgeExtractor, set_vault_root
+from legalkg.core.tier2 import EdgeExtractor, set_vault_root, clear_vault_caches
 
 
 class TestAmendmentFragmentCrossLinkScopeBug:
@@ -32,6 +32,7 @@ class TestAmendmentFragmentCrossLinkScopeBug:
     """
 
     def setup_method(self):
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -48,12 +49,12 @@ class TestAmendmentFragmentCrossLinkScopeBug:
         result = self.extractor.replace_refs(text, "民事訴訟法", is_amendment_fragment=True)
 
         # 「刑事訴訟法第344条」は刑事訴訟法へリンクされる
-        assert "[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]" in result
+        assert "[[laws/323AC0000000131/本文/第344条.md|第三百四十四条]]" in result
 
         # 「第二条」は裸参照なのでリンク化されない
-        assert "[[laws/刑事訴訟法/本文/第2条.md|第二条]]" not in result
+        assert "[[laws/323AC0000000131/本文/第2条.md|第二条]]" not in result
         # 刑法へもリンクされない
-        assert "[[laws/刑法/本文/第2条.md|第二条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第2条.md|第二条]]" not in result
 
     def test_multiple_bare_refs_not_linked(self):
         """
@@ -79,6 +80,7 @@ class TestExternalLawInvalidatesScopeBug:
     """
 
     def setup_method(self):
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -95,7 +97,7 @@ class TestExternalLawInvalidatesScopeBug:
         result = self.extractor.replace_refs(text, "民事訴訟法", is_amendment_fragment=True)
 
         # 刑法へリンクされてはならない
-        assert "[[laws/刑法/本文/第72条.md" not in result
+        assert "[[laws/140AC0000000045/本文/第72条.md" not in result
         # 出入国管理及び難民認定法はVaultに存在しないのでリンクなし
         assert "[[laws/出入国管理及び難民認定法" not in result
         # 第72条はプレーンテキストのまま
@@ -113,10 +115,10 @@ class TestExternalLawInvalidatesScopeBug:
         result = self.extractor.replace_refs(text, "民事訴訟法", is_amendment_fragment=True)
 
         # 「刑法第97条」は刑法へリンクされる
-        assert "[[laws/刑法/本文/第97条.md|第九十七条]]" in result
+        assert "[[laws/140AC0000000045/本文/第97条.md|第九十七条]]" in result
 
         # 「第72条」は刑法へリンクされてはならない
-        assert "[[laws/刑法/本文/第72条.md" not in result
+        assert "[[laws/140AC0000000045/本文/第72条.md" not in result
 
 
 class TestUndefinedLawNameBug:
@@ -132,6 +134,7 @@ class TestUndefinedLawNameBug:
     """
 
     def setup_method(self):
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -151,9 +154,9 @@ class TestUndefinedLawNameBug:
         result = self.extractor.replace_refs(text, "民事訴訟法", is_amendment_fragment=True)
 
         # 「第11条」は刑事訴訟法へリンクされてはならない
-        assert "[[laws/刑事訴訟法/本文/第11条.md|第十一条]]" not in result
+        assert "[[laws/323AC0000000131/本文/第11条.md|第十一条]]" not in result
         # 刑法へもリンクされてはならない
-        assert "[[laws/刑法/本文/第11条.md|第十一条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第11条.md|第十一条]]" not in result
 
         # 「少年鑑別所法第132条」もリンク化しない（Vault非存在）
         assert "[[" not in result
@@ -163,7 +166,7 @@ class TestSupplementPrefixBug:
     """
     バグ4: 「附則第N条」が本文へリンクされる
 
-    問題: 「附則第36条」が「[[laws/刑事訴訟法/本文/第36条.md|第三十六条]]」
+    問題: 「附則第36条」が「[[laws/323AC0000000131/本文/第36条.md|第三十六条]]」
     にリンクされてしまう。
 
     正しい動作: 「附則」プレフィックスがある参照は附則条文への参照であり、
@@ -172,6 +175,7 @@ class TestSupplementPrefixBug:
     """
 
     def setup_method(self):
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -188,10 +192,10 @@ class TestSupplementPrefixBug:
         result = self.extractor.replace_refs(text, "民事訴訟法", is_amendment_fragment=True)
 
         # 本文へのリンクは生成されない
-        assert "[[laws/民事訴訟法/本文/第36条.md" not in result
-        assert "[[laws/民事訴訟法/本文/第40条.md" not in result
-        assert "[[laws/刑事訴訟法/本文/第36条.md" not in result
-        assert "[[laws/刑事訴訟法/本文/第40条.md" not in result
+        assert "[[laws/408AC0000000109/本文/第36条.md" not in result
+        assert "[[laws/408AC0000000109/本文/第40条.md" not in result
+        assert "[[laws/323AC0000000131/本文/第36条.md" not in result
+        assert "[[laws/323AC0000000131/本文/第40条.md" not in result
 
     def test_fuzoku_ref_with_law_name_also_not_linked(self):
         """
@@ -201,7 +205,7 @@ class TestSupplementPrefixBug:
         result = self.extractor.replace_refs(text, "民事訴訟法", is_amendment_fragment=True)
 
         # 本文へのリンクは生成されない
-        assert "[[laws/民法/本文/第5条.md" not in result
+        assert "[[laws/129AC0000000089/本文/第5条.md" not in result
 
     def test_fuzoku_compound_pattern(self):
         """
@@ -225,8 +229,8 @@ class TestSupplementPrefixBug:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # 本文へのリンクは生成されない
-        assert "[[laws/刑法/本文/第9条.md" not in result
-        assert "[[laws/刑法/本文/第10条.md" not in result
+        assert "[[laws/140AC0000000045/本文/第9条.md" not in result
+        assert "[[laws/140AC0000000045/本文/第10条.md" not in result
         assert "[[" not in result
 
     def test_fuzoku_enumeration_with_wikilink(self):
@@ -251,6 +255,7 @@ class TestCombinedScenario:
     """
 
     def setup_method(self):
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -275,24 +280,24 @@ class TestCombinedScenario:
         result = self.extractor.replace_refs(text, "民事訴訟法", is_amendment_fragment=True)
 
         # 正しくリンク化される参照
-        assert "[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]" in result
-        assert "[[laws/刑法/本文/第97条.md|第九十七条]]" in result
-        assert "[[laws/刑法/本文/第98条.md|第九十八条]]" in result
+        assert "[[laws/323AC0000000131/本文/第344条.md|第三百四十四条]]" in result
+        assert "[[laws/140AC0000000045/本文/第97条.md|第九十七条]]" in result
+        assert "[[laws/140AC0000000045/本文/第98条.md|第九十八条]]" in result
 
         # リンク化されてはならない参照
         # 「第二条」は改正法自身の条文なのでリンク化しない
-        assert "[[laws/刑事訴訟法/本文/第2条.md|第二条]]" not in result
-        assert "[[laws/刑法/本文/第2条.md|第二条]]" not in result
+        assert "[[laws/323AC0000000131/本文/第2条.md|第二条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第2条.md|第二条]]" not in result
 
         # 「第三条」は改正法自身の条文なのでリンク化しない
-        assert "[[laws/民事訴訟法/本文/第3条.md|第三条]]" not in result
-        assert "[[laws/刑法/本文/第3条.md|第三条]]" not in result
+        assert "[[laws/408AC0000000109/本文/第3条.md|第三条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第3条.md|第三条]]" not in result
 
         # 「出入国管理及び難民認定法第72条」は外部法なのでリンク化しない
-        assert "[[laws/刑法/本文/第72条.md|第七十二条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第72条.md|第七十二条]]" not in result
 
         # 「附則第36条」は附則参照なのでリンク化しない
-        assert "[[laws/民事訴訟法/本文/第36条.md" not in result
+        assert "[[laws/408AC0000000109/本文/第36条.md" not in result
 
     def test_kaisei_mae_ato_pattern(self):
         """
@@ -306,7 +311,7 @@ class TestCombinedScenario:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # 「刑法第13条」は刑法へリンクされる（改正前刑法は刑法への参照）
-        assert "[[laws/刑法/本文/第13条.md|第十三条]]" in result
+        assert "[[laws/140AC0000000045/本文/第13条.md|第十三条]]" in result
 
     def test_kaisei_ato_pattern(self):
         """
@@ -316,7 +321,7 @@ class TestCombinedScenario:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # 「民法第100条」は民法へリンクされる
-        assert "[[laws/民法/本文/第100条.md|第百条]]" in result
+        assert "[[laws/129AC0000000089/本文/第100条.md|第百条]]" in result
 
     def test_shin_kaishaho_enumeration(self):
         """
@@ -329,9 +334,9 @@ class TestCombinedScenario:
         result = self.extractor.replace_refs(text, "会社法", is_amendment_fragment=True)
 
         # 「第244条」は会社法へリンク
-        assert "[[laws/会社法/本文/第244条.md|第二百四十四条]]" in result
+        assert "[[laws/417AC0000000086/本文/第244条.md|第二百四十四条]]" in result
         # 列挙された「第244条の2」も会社法へリンク
-        assert "[[laws/会社法/本文/第244条の2.md|第二百四十四条の二]]" in result
+        assert "[[laws/417AC0000000086/本文/第244条の2.md|第二百四十四条の二]]" in result
 
     def test_shin_kaishaho_multiple_enumeration(self):
         """
@@ -343,10 +348,10 @@ class TestCombinedScenario:
         result = self.extractor.replace_refs(text, "会社法", is_amendment_fragment=True)
 
         # すべて会社法へリンク
-        assert "[[laws/会社法/本文/第244条.md|第二百四十四条]]" in result
-        assert "[[laws/会社法/本文/第244条の2.md|第二百四十四条の二]]" in result
-        assert "[[laws/会社法/本文/第282条.md|第二百八十二条]]" in result
-        assert "[[laws/会社法/本文/第286条の2.md|第二百八十六条の二]]" in result
+        assert "[[laws/417AC0000000086/本文/第244条.md|第二百四十四条]]" in result
+        assert "[[laws/417AC0000000086/本文/第244条の2.md|第二百四十四条の二]]" in result
+        assert "[[laws/417AC0000000086/本文/第282条.md|第二百八十二条]]" in result
+        assert "[[laws/417AC0000000086/本文/第286条の2.md|第二百八十六条の二]]" in result
 
 
 class TestAmendmentLawSelfReference:
@@ -361,6 +366,7 @@ class TestAmendmentLawSelfReference:
     """
 
     def setup_method(self):
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -377,11 +383,11 @@ class TestAmendmentLawSelfReference:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # 「第一条」は改正法自身の条文なのでリンク化されない
-        assert "[[laws/刑法/本文/第1条.md|第一条]]" not in result
-        assert "[[laws/刑事訴訟法/本文/第1条.md|第一条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第1条.md|第一条]]" not in result
+        assert "[[laws/323AC0000000131/本文/第1条.md|第一条]]" not in result
 
         # 「刑事訴訟法第三百四十四条」は正しくリンク化される
-        assert "[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]" in result
+        assert "[[laws/323AC0000000131/本文/第344条.md|第三百四十四条]]" in result
 
     def test_multiple_naka_pattern_not_linked(self):
         """
@@ -394,13 +400,13 @@ class TestAmendmentLawSelfReference:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # すべての「第N条中」パターンはリンク化されない
-        assert "[[laws/刑法/本文/第1条.md|第一条]]" not in result
-        assert "[[laws/刑法/本文/第2条.md|第二条]]" not in result
-        assert "[[laws/刑法/本文/第3条.md|第三条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第1条.md|第一条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第2条.md|第二条]]" not in result
+        assert "[[laws/140AC0000000045/本文/第3条.md|第三条]]" not in result
 
         # クロスリンク可能な「刑事訴訟法第344条」「刑法第97条」はリンク化される
-        assert "[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]" in result
-        assert "[[laws/刑法/本文/第97条.md|第九十七条]]" in result
+        assert "[[laws/323AC0000000131/本文/第344条.md|第三百四十四条]]" in result
+        assert "[[laws/140AC0000000045/本文/第97条.md|第九十七条]]" in result
 
         # Vaultに存在しない法令（出入国管理及び難民認定法）はリンク化されない
         assert "[[laws/出入国管理及び難民認定法" not in result
@@ -413,7 +419,7 @@ class TestAmendmentLawSelfReference:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # 「刑事訴訟法第一条」は刑事訴訟法へリンク化される
-        assert "[[laws/刑事訴訟法/本文/第1条.md|第一条]]" in result
+        assert "[[laws/323AC0000000131/本文/第1条.md|第一条]]" in result
 
 
 class TestSupplementEnumerationScopeLeak:
@@ -430,6 +436,7 @@ class TestSupplementEnumerationScopeLeak:
     """
 
     def setup_method(self):
+        clear_vault_caches()
         vault_root = Path(__file__).parent.parent / "Vault"
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
@@ -461,8 +468,8 @@ class TestSupplementEnumerationScopeLeak:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # 附則列挙内なので外部法令へリンクされない
-        assert "[[laws/刑事訴訟法/本文/第8条.md" not in result
-        assert "[[laws/刑法/本文/第8条.md" not in result
+        assert "[[laws/323AC0000000131/本文/第8条.md" not in result
+        assert "[[laws/140AC0000000045/本文/第8条.md" not in result
         assert "[[" not in result
 
     def test_fuzoku_enumeration_complex_pattern(self):
@@ -493,11 +500,11 @@ class TestSupplementEnumerationScopeLeak:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # 「刑事訴訟法第344条」はリンク化される
-        assert "[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]" in result
+        assert "[[laws/323AC0000000131/本文/第344条.md|第三百四十四条]]" in result
 
         # 附則列挙内はリンク化されない
-        assert "[[laws/刑法/本文/第5条.md" not in result
-        assert "[[laws/刑法/本文/第6条.md" not in result
+        assert "[[laws/140AC0000000045/本文/第5条.md" not in result
+        assert "[[laws/140AC0000000045/本文/第6条.md" not in result
 
     def test_fuzoku_enumeration_scope_reset_by_new_external(self):
         """
@@ -511,10 +518,10 @@ class TestSupplementEnumerationScopeLeak:
         result = self.extractor.replace_refs(text, "刑事訴訟法", is_amendment_fragment=True)
 
         # 附則参照はリンク化されない
-        assert "[[laws/刑事訴訟法/本文/第5条.md" not in result
+        assert "[[laws/323AC0000000131/本文/第5条.md" not in result
 
         # 明示的な「刑法第33条」はリンク化される
-        assert "[[laws/刑法/本文/第33条.md|第三十三条]]" in result
+        assert "[[laws/140AC0000000045/本文/第33条.md|第三十三条]]" in result
 
     def test_real_r5_l28_pattern(self):
         """
@@ -531,8 +538,8 @@ class TestSupplementEnumerationScopeLeak:
         result = self.extractor.replace_refs(text, "刑法", is_amendment_fragment=True)
 
         # 附則列挙内の「第八条」が刑事訴訟法へリンクされていないこと
-        assert "[[laws/刑事訴訟法/本文/第8条.md" not in result
-        assert "[[laws/刑法/本文/第8条.md" not in result
+        assert "[[laws/323AC0000000131/本文/第8条.md" not in result
+        assert "[[laws/140AC0000000045/本文/第8条.md" not in result
 
         # 附則列挙内のすべての参照がリンク化されていないこと
         assert "[[" not in result
