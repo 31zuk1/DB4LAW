@@ -3,7 +3,7 @@
 Execute law directory migration based on manifest.
 
 Renames law directories from Japanese names to law_id format,
-renames representative md to law.md, and updates frontmatter.
+renames representative md to {title[:20]}_law.md, and updates frontmatter.
 """
 
 import hashlib
@@ -14,6 +14,28 @@ from pathlib import Path
 from typing import Optional
 
 import yaml
+
+
+def sanitize_filename(title: str, max_chars: int = 20) -> str:
+    """
+    Sanitize title for use in filename.
+    - Take first max_chars characters
+    - Replace problematic characters
+    """
+    # Take first N characters
+    truncated = title[:max_chars]
+
+    # Replace characters that are problematic in filenames
+    # Keep most Japanese characters, but replace: / \ : * ? " < > |
+    sanitized = re.sub(r'[/\\:*?"<>|]', '_', truncated)
+
+    return sanitized
+
+
+def generate_law_filename(title: str) -> str:
+    """Generate law filename from title: {first 20 chars}_law.md"""
+    sanitized = sanitize_filename(title, max_chars=20)
+    return f"{sanitized}_law.md"
 
 
 def parse_frontmatter(content: str) -> tuple[Optional[dict], str, str]:
@@ -137,7 +159,7 @@ def rename_long_files(law_dir: Path, max_bytes: int = 120) -> list[dict]:
 def find_representative_md(law_dir: Path) -> Optional[Path]:
     """
     Find the representative markdown file for a law directory.
-    Priority: folder name match > law.md > single md > largest md
+    Priority: *_law.md > folder name match > single md > largest md
     """
     md_files = list(law_dir.glob('*.md'))
     if not md_files:
@@ -145,10 +167,10 @@ def find_representative_md(law_dir: Path) -> Optional[Path]:
 
     dir_name = law_dir.name
 
-    # Priority 0: law.md (already migrated)
-    law_md = law_dir / 'law.md'
-    if law_md.exists():
-        return law_md
+    # Priority 0: *_law.md pattern (already migrated to new format)
+    for md in md_files:
+        if md.name.endswith('_law.md'):
+            return md
 
     # Priority 1: File matching directory name
     for md in md_files:
@@ -182,10 +204,14 @@ def migrate_law_directory(
     rep_md_path = find_representative_md(old_path) if old_path.exists() else None
     representative_md = rep_md_path.name if rep_md_path else f"{old_name}.md"
 
+    # Generate new law filename: {title[:20]}_law.md
+    target_law_filename = generate_law_filename(official_title)
+
     result = {
         'law_id': law_id,
         'old_path': record['old_path'],
         'new_path': record['new_path'],
+        'target_law_filename': target_law_filename,
         'status': 'pending',
         'actions': [],
         'errors': []
@@ -196,17 +222,17 @@ def migrate_law_directory(
         result['status'] = 'already_migrated'
         result['actions'].append('Directory already uses law_id')
 
-        # Still need to ensure law.md exists
-        law_md = old_path / 'law.md'
-        if not law_md.exists():
+        # Still need to ensure {title}_law.md exists
+        target_law_md = old_path / target_law_filename
+        if not target_law_md.exists():
             # Find representative md and rename
             rep_md = old_path / representative_md
             if rep_md.exists() and not dry_run:
                 content = rep_md.read_text(encoding='utf-8')
                 content = update_frontmatter(content, law_id, official_title, old_name)
-                law_md.write_text(content, encoding='utf-8')
+                target_law_md.write_text(content, encoding='utf-8')
                 rep_md.unlink()
-                result['actions'].append(f'Renamed {representative_md} -> law.md')
+                result['actions'].append(f'Renamed {representative_md} -> {target_law_filename}')
         return result
 
     if not old_path.exists():
@@ -222,7 +248,7 @@ def migrate_law_directory(
     if dry_run:
         result['status'] = 'dry_run'
         result['actions'].append(f'Would rename: {old_path.name} -> {law_id}')
-        result['actions'].append(f'Would rename: {representative_md} -> law.md')
+        result['actions'].append(f'Would rename: {representative_md} -> {target_law_filename}')
         return result
 
     try:
@@ -240,11 +266,11 @@ def migrate_law_directory(
             rep_md_path.write_text(content, encoding='utf-8')
             result['actions'].append('Updated frontmatter')
 
-            # Step 3: Rename representative md to law.md
-            law_md_path = old_path / 'law.md'
-            if rep_md_path != law_md_path:
-                rep_md_path.rename(law_md_path)
-                result['actions'].append(f'Renamed {representative_md} -> law.md')
+            # Step 3: Rename representative md to {title}_law.md
+            target_law_path = old_path / target_law_filename
+            if rep_md_path != target_law_path:
+                rep_md_path.rename(target_law_path)
+                result['actions'].append(f'Renamed {representative_md} -> {target_law_filename}')
         else:
             result['errors'].append(f'Representative md not found: {representative_md}')
 

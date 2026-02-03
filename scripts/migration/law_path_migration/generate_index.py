@@ -29,6 +29,18 @@ def parse_frontmatter(content: str) -> Optional[dict]:
         return None
 
 
+def find_law_file(law_dir: Path) -> Optional[Path]:
+    """
+    Find the law file in a directory.
+    Looks for *_law.md pattern.
+    """
+    # Find *_law.md files
+    law_files = list(law_dir.glob('*_law.md'))
+    if law_files:
+        return law_files[0]
+    return None
+
+
 def scan_migrated_laws(vault_root: Path) -> list[dict]:
     """
     Scan migrated law directories and collect index information.
@@ -44,9 +56,9 @@ def scan_migrated_laws(vault_root: Path) -> list[dict]:
         if law_dir.name.startswith('.') or law_dir.name == '_index':
             continue
 
-        law_md = law_dir / 'law.md'
-        if not law_md.exists():
-            print(f"WARNING: No law.md in {law_dir}")
+        law_md = find_law_file(law_dir)
+        if not law_md:
+            print(f"WARNING: No *_law.md in {law_dir}")
             continue
 
         try:
@@ -85,7 +97,7 @@ def scan_migrated_laws(vault_root: Path) -> list[dict]:
             'law_id': law_id,
             'official_title': official_title,
             'aliases': aliases,
-            'path': f"laws/{law_id}/law.md",
+            'path': f"laws/{law_id}/{law_md.name}",
             'tier': tier,
             'law_no': law_no,
             'promulgation_date': promulgation_date,
