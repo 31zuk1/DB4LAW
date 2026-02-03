@@ -429,6 +429,9 @@
 {"source": "JPLAW:408AC0000000109#suppl#3", "target": "external:不正競争防止法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#3", "target": "JPLAW:408AC0000000109#main#269_2", "type": "refs", "relation": "internal", "evidence": "第二百六十九条の二", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#3", "target": "JPLAW:408AC0000000109#main#310_2", "type": "refs", "relation": "internal", "evidence": "第三百十条の二", "confidence": 0.9}
+{"source": "JPLAW:408AC0000000109#suppl#3", "target": "JPLAW:334AC0000000121#main#182_2", "type": "refs", "relation": "internal", "evidence": "第百八十二条の二", "confidence": 0.9}
+{"source": "JPLAW:408AC0000000109#suppl#3", "target": "JPLAW:334AC0000000121#main#178", "type": "refs", "relation": "internal", "evidence": "第百七十八条", "confidence": 0.9}
+{"source": "JPLAW:408AC0000000109#suppl#3", "target": "JPLAW:334AC0000000121#main#182_2", "type": "refs", "relation": "internal", "evidence": "第百八十二条の二", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#4", "target": "JPLAW:408AC0000000109#main#368", "type": "refs", "relation": "internal", "evidence": "第三百六十八条", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#11", "target": "JPLAW:408AC0000000109#main#125", "type": "refs", "relation": "internal", "evidence": "第百二十五条", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#4", "target": "JPLAW:408AC0000000109#main#11", "type": "refs", "relation": "internal", "evidence": "第十一条", "confidence": 0.9}
@@ -442,6 +445,8 @@
 {"source": "JPLAW:408AC0000000109#suppl#1", "target": "external:附則第四十五条中総務省設置法#main#3", "type": "refs", "relation": "external", "evidence": "第三条", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#35", "target": "JPLAW:408AC0000000109#main#104", "type": "refs", "relation": "internal", "evidence": "第百四条", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#35", "target": "JPLAW:408AC0000000109#main#104", "type": "refs", "relation": "internal", "evidence": "第百四条", "confidence": 0.9}
+{"source": "JPLAW:408AC0000000109#suppl#1", "target": "JPLAW:416AC0000000123#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
+{"source": "JPLAW:408AC0000000109#suppl#1", "target": "JPLAW:416AC0000000123#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#1", "target": "external:附則第六十条中商業登記法#main#52", "type": "refs", "relation": "external", "evidence": "第五十二条", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#1", "target": "external:附則第七十一条中民事保全法#main#50", "type": "refs", "relation": "external", "evidence": "第五十条", "confidence": 0.9}
 {"source": "JPLAW:408AC0000000109#suppl#1", "target": "JPLAW:408AC0000000109#main#87", "type": "refs", "relation": "internal", "evidence": "第八十七条", "confidence": 0.9}

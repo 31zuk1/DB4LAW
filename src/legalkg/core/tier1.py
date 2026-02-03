@@ -676,7 +676,7 @@ class Tier1Builder:
         fm = {
             "id": node_id,
             "type": node_type,
-            "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
+            "parent": self._make_law_link(law_id, law_name) if law_name else None,
             "law_id": law_id,
             "law_name": law_name,
             "part": part_type,
@@ -785,8 +785,30 @@ class Tier1Builder:
         content = f"- {title_text} {text}\n"
         return content, edges
 
+    def _make_law_link(self, law_id: str, law_name: str) -> str:
+        """
+        法令ファイルへの wikilink を生成する。
+
+        ディレクトリ名は law_id、ファイル名は {title[:20]}_law.md 形式。
+
+        Args:
+            law_id: 法令ID
+            law_name: 法令名（表示名およびファイル名の先頭部分）
+
+        Returns:
+            wikilink 文字列
+        """
+        import re
+        # Generate filename: first 20 chars of law_name + _law.md
+        truncated = law_name[:20]
+        # Sanitize for filename
+        sanitized = re.sub(r'[/\\:*?"<>|]', '_', truncated)
+        filename = f"{sanitized}_law.md"
+        return f"[[laws/{law_id}/{filename}|{law_name}]]"
+
     def _resolve_parent(
         self,
+        law_id: str,
         law_name: str,
         context: Optional[Dict[str, Any]],
         part_type: str
@@ -795,13 +817,14 @@ class Tier1Builder:
         条文の直上階層を解決して parent wikilink を返す。
 
         木構造の正本として、条文は以下の優先順位で直上階層を指す:
-        1. 節が存在 → [[laws/{法令}/節/{章名}{節名}]]
-        2. 章のみ存在 → [[laws/{法令}/章/{章名}]]
-        3. 章/節なし → [[laws/{法令}/{法令}]]（孤立条文）
+        1. 節が存在 → [[laws/{law_id}/節/{章名}{節名}]]
+        2. 章のみ存在 → [[laws/{law_id}/章/{章名}]]
+        3. 章/節なし → 法令ファイル直接（孤立条文）
 
         附則の場合は常に法令直下を指す（階層構造がないため）。
 
         Args:
+            law_id: 法令ID
             law_name: 法令名
             context: 構造コンテキスト（chapter_num, section_num 等）
             part_type: "main" または "suppl"
@@ -814,7 +837,7 @@ class Tier1Builder:
 
         # 附則は常に法令直下
         if part_type == "suppl":
-            return f"[[laws/{law_name}/{law_name}]]"
+            return self._make_law_link(law_id, law_name)
 
         # 節が存在する場合
         if context and context.get("section_num") is not None:
@@ -824,17 +847,17 @@ class Tier1Builder:
             section_title = context.get("section_title")
             chapter_name = self._format_chapter_name(chapter_num, chapter_title)
             section_name = self._format_section_name(section_num, section_title)
-            return f"[[laws/{law_name}/節/{chapter_name}{section_name}]]"
+            return f"[[laws/{law_id}/節/{chapter_name}{section_name}.md]]"
 
         # 章のみ存在する場合
         if context and context.get("chapter_num") is not None:
             chapter_num = context.get("chapter_num")
             chapter_title = context.get("chapter_title")
             chapter_name = self._format_chapter_name(chapter_num, chapter_title)
-            return f"[[laws/{law_name}/章/{chapter_name}]]"
+            return f"[[laws/{law_id}/章/{chapter_name}.md]]"
 
         # 孤立条文（章/節なし）
-        return f"[[laws/{law_name}/{law_name}]]"
+        return self._make_law_link(law_id, law_name)
 
     def _build_frontmatter(
         self,
@@ -861,7 +884,7 @@ class Tier1Builder:
             node_type = "article"
 
         # parent を直上階層に解決
-        parent = self._resolve_parent(law_name, context, part_type)
+        parent = self._resolve_parent(law_id, law_name, context, part_type)
 
         fm = {
             "id": node_id,
@@ -973,7 +996,7 @@ class Tier1Builder:
         fm: Dict[str, Any] = {
             "id": node_id,
             "type": "chapter",
-            "parent": f"[[laws/{law_name}/{law_name}]]" if law_name else None,
+            "parent": self._make_law_link(law_id, law_name) if law_name else None,
             "law_id": law_id,
             "law_name": law_name,
             "chapter_num": chapter_num,
@@ -1003,7 +1026,7 @@ class Tier1Builder:
                     section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
                     link_text = f"{section_name}{section_title_part}"
                     # Vault root からのフルパス
-                    link_path = f"laws/{law_name}/節/{chapter_name}{section_name}.md"
+                    link_path = f"laws/{law_id}/節/{chapter_name}{section_name}.md"
                     content += f"- [[{link_path}|{link_text}]]\n"
             content += "\n"
 
@@ -1014,7 +1037,7 @@ class Tier1Builder:
             jp_name = self._format_article_name(article_num)
             heading_part = f" {heading}" if heading else ""
             # Vault root からのフルパス
-            link_path = f"laws/{law_name}/本文/{jp_name}.md"
+            link_path = f"laws/{law_id}/本文/{jp_name}.md"
             content += f"- [[{link_path}|{jp_name}{heading_part}]]\n"
 
         self._write_markdown(file_path, fm, content)
@@ -1041,7 +1064,7 @@ class Tier1Builder:
         fm: Dict[str, Any] = {
             "id": node_id,
             "type": "section",
-            "parent": f"[[laws/{law_name}/章/{chapter_name}]]" if law_name else None,
+            "parent": f"[[laws/{law_id}/章/{chapter_name}.md]]" if law_name else None,
             "law_id": law_id,
             "law_name": law_name,
             "chapter_num": chapter_num,
@@ -1070,7 +1093,7 @@ class Tier1Builder:
         for article_num in section_agg.article_nums:
             jp_name = self._format_article_name(article_num)
             # Vault root からのフルパス
-            link_path = f"laws/{law_name}/本文/{jp_name}.md"
+            link_path = f"laws/{law_id}/本文/{jp_name}.md"
             content += f"- [[{link_path}|{jp_name}]]\n"
 
         self._write_markdown(file_path, fm, content)

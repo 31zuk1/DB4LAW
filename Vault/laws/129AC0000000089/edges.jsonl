@@ -185,7 +185,8 @@
 {"source": "JPLAW:129AC0000000089#main#592", "target": "JPLAW:129AC0000000089#main#402", "type": "refs", "relation": "internal", "evidence": "第四百二条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#main#595", "target": "JPLAW:129AC0000000089#main#583", "type": "refs", "relation": "internal", "evidence": "第五百八十三条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#main#596", "target": "JPLAW:129AC0000000089#main#551", "type": "refs", "relation": "internal", "evidence": "第五百五十一条", "confidence": 0.9}
-{"source": "JPLAW:129AC0000000089#main#605_2", "target": "external:借地借家法#main#10", "type": "refs", "relation": "external", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:129AC0000000089#main#605_2", "target": "JPLAW:403AC0000000090#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:129AC0000000089#main#605_2", "target": "JPLAW:403AC0000000090#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#main#605_2", "target": "JPLAW:129AC0000000089#main#608", "type": "refs", "relation": "internal", "evidence": "第六百八条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#main#605_2", "target": "JPLAW:129AC0000000089#main#622_2", "type": "refs", "relation": "internal", "evidence": "第六百二十二条の二", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#main#605_4", "target": "JPLAW:129AC0000000089#main#605_2", "type": "refs", "relation": "internal", "evidence": "第六百五条の二", "confidence": 0.9}
@@ -604,7 +605,8 @@
 {"source": "JPLAW:129AC0000000089#suppl#2", "target": "JPLAW:129AC0000000089#main#240", "type": "refs", "relation": "internal", "evidence": "第二百四十条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#2", "target": "JPLAW:129AC0000000089#main#11", "type": "refs", "relation": "internal", "evidence": "第十一条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#2", "target": "JPLAW:129AC0000000089#main#13", "type": "refs", "relation": "internal", "evidence": "第十三条", "confidence": 0.9}
-{"source": "JPLAW:129AC0000000089#suppl#3", "target": "external:破産法#main#61", "type": "refs", "relation": "external", "evidence": "第六十一条", "confidence": 0.9}
+{"source": "JPLAW:129AC0000000089#suppl#3", "target": "JPLAW:416AC0000000075#main#61", "type": "refs", "relation": "internal", "evidence": "第六十一条", "confidence": 0.9}
+{"source": "JPLAW:129AC0000000089#suppl#3", "target": "JPLAW:416AC0000000075#main#61", "type": "refs", "relation": "internal", "evidence": "第六十一条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#2", "target": "JPLAW:129AC0000000089#main#3_2", "type": "refs", "relation": "internal", "evidence": "第三条の二", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#4", "target": "JPLAW:129AC0000000089#main#86", "type": "refs", "relation": "internal", "evidence": "第八十六条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#2", "target": "JPLAW:129AC0000000089#main#4", "type": "refs", "relation": "internal", "evidence": "第四条", "confidence": 0.9}
@@ -638,6 +640,8 @@
 {"source": "JPLAW:129AC0000000089#suppl#10", "target": "JPLAW:129AC0000000089#main#1041", "type": "refs", "relation": "internal", "evidence": "第千四十一条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#10", "target": "JPLAW:129AC0000000089#main#1028", "type": "refs", "relation": "internal", "evidence": "第千二十八条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#10", "target": "JPLAW:129AC0000000089#main#1036", "type": "refs", "relation": "internal", "evidence": "第千三十六条", "confidence": 0.9}
+{"source": "JPLAW:129AC0000000089#suppl#1", "target": "JPLAW:416AC0000000123#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
+{"source": "JPLAW:129AC0000000089#suppl#1", "target": "JPLAW:416AC0000000123#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#2", "target": "JPLAW:129AC0000000089#main#918", "type": "refs", "relation": "internal", "evidence": "第九百十八条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#2", "target": "JPLAW:129AC0000000089#main#926", "type": "refs", "relation": "internal", "evidence": "第九百二十六条", "confidence": 0.9}
 {"source": "JPLAW:129AC0000000089#suppl#2", "target": "JPLAW:129AC0000000089#main#936", "type": "refs", "relation": "internal", "evidence": "第九百三十六条", "confidence": 0.9}

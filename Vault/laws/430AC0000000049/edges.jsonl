@@ -167,6 +167,8 @@
 {"source": "JPLAW:430AC0000000049#main#62", "target": "JPLAW:430AC0000000049#main#26", "type": "refs", "relation": "internal", "evidence": "第二十六条", "confidence": 0.9}
 {"source": "JPLAW:430AC0000000049#main#62", "target": "JPLAW:430AC0000000049#main#39", "type": "refs", "relation": "internal", "evidence": "第三十九条", "confidence": 0.9}
 {"source": "JPLAW:430AC0000000049#main#62", "target": "JPLAW:430AC0000000049#main#20", "type": "refs", "relation": "internal", "evidence": "第二十条", "confidence": 0.9}
+{"source": "JPLAW:430AC0000000049#suppl#1", "target": "JPLAW:416AC0000000123#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
+{"source": "JPLAW:430AC0000000049#suppl#1", "target": "JPLAW:416AC0000000123#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
 {"source": "JPLAW:430AC0000000049#suppl#2", "target": "JPLAW:430AC0000000049#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
 {"source": "JPLAW:430AC0000000049#suppl#2", "target": "JPLAW:430AC0000000049#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
 {"source": "JPLAW:430AC0000000049#suppl#2", "target": "JPLAW:430AC0000000049#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}

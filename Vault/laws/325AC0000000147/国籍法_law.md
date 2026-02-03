@@ -1,21 +1,21 @@
 ---
+aliases:
+- 国籍法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 325AC0000000147
 id: JPLAW:325AC0000000147
+law_id: 325AC0000000147
 law_no: 昭和二十五年法律第百四十七号
 links:
   egov: https://laws.e-gov.go.jp/law/325AC0000000147
+official_title: 国籍法
 promulgation_date: '19500504'
 tags:
 - 国籍法
-tier: 0
+tier: 2
 title: 国籍法
-law_id: 325AC0000000147
-official_title: 国籍法
-aliases:
-- 国籍法
 ---
 
 # 国籍法

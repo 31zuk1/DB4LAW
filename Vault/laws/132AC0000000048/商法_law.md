@@ -1,21 +1,21 @@
 ---
+aliases:
+- 商法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 132AC0000000048
 id: JPLAW:132AC0000000048
+law_id: 132AC0000000048
 law_no: 明治三十二年法律第四十八号
 links:
   egov: https://laws.e-gov.go.jp/law/132AC0000000048
+official_title: 商法
 promulgation_date: '18990309'
 tags:
 - 商法
-tier: 0
+tier: 2
 title: 商法
-law_id: 132AC0000000048
-official_title: 商法
-aliases:
-- 商法
 ---
 
 # 商法

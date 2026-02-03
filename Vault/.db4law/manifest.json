@@ -1,8 +1,8 @@
 {
-  "generator_repo_commit": "b6824d9c378f2cc9a1cf7b5be7a1138c17cd18db",
+  "generator_repo_commit": "0afc36127bf0ded8f44868f798ca1b82b424f7be",
   "generator_repo_dirty": true,
-  "build_timestamp": "2026-01-29T03:14:58.297846Z",
-  "targets_hash": "09be1b3ca8cb8a04af4aa158b1ccde974f7908f7afc45921cb5c8d0b1843b690",
+  "build_timestamp": "2026-02-03T00:35:13.714923Z",
+  "targets_hash": "992c6de69bacbd154a280f919b4313db8f9fe9313e1ecf305ce34aa5defba5c8",
   "targets_path": "targets.yaml",
   "edge_schema": "v2",
   "extract_edges": true,

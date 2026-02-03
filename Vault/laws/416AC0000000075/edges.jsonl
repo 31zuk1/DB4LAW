@@ -1,0 +1,1152 @@
+{"source": "JPLAW:416AC0000000075#main#2", "target": "JPLAW:416AC0000000075#main#30", "type": "refs", "relation": "internal", "evidence": "第三十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#2", "target": "JPLAW:416AC0000000075#main#97", "type": "refs", "relation": "internal", "evidence": "第九十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#2", "target": "JPLAW:416AC0000000075#main#65", "type": "refs", "relation": "internal", "evidence": "第六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#2", "target": "external:信託法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#2", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#5", "target": "JPLAW:417AC0000000086#main#879", "type": "refs", "relation": "internal", "evidence": "第八百七十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#5", "target": "JPLAW:416AC0000000075#main#83", "type": "refs", "relation": "internal", "evidence": "第八十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#5", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#5", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#5", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#5", "target": "JPLAW:417AC0000000086#main#444", "type": "refs", "relation": "internal", "evidence": "第四百四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#7", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#7", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#7", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#7", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#7", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#7", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#7", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#24", "type": "refs", "relation": "internal", "evidence": "第二十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#25", "type": "refs", "relation": "internal", "evidence": "第二十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#28", "type": "refs", "relation": "internal", "evidence": "第二十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#171", "type": "refs", "relation": "internal", "evidence": "第百七十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#24", "type": "refs", "relation": "internal", "evidence": "第二十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#25", "type": "refs", "relation": "internal", "evidence": "第二十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#28", "type": "refs", "relation": "internal", "evidence": "第二十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#11", "target": "JPLAW:416AC0000000075#main#171", "type": "refs", "relation": "internal", "evidence": "第百七十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#36", "type": "refs", "relation": "internal", "evidence": "第三十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#78", "type": "refs", "relation": "internal", "evidence": "第七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#93", "type": "refs", "relation": "internal", "evidence": "第九十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#84", "type": "refs", "relation": "internal", "evidence": "第八十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#93", "type": "refs", "relation": "internal", "evidence": "第九十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#157", "type": "refs", "relation": "internal", "evidence": "第百五十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#36", "type": "refs", "relation": "internal", "evidence": "第三十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#78", "type": "refs", "relation": "internal", "evidence": "第七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#93", "type": "refs", "relation": "internal", "evidence": "第九十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#84", "type": "refs", "relation": "internal", "evidence": "第八十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#93", "type": "refs", "relation": "internal", "evidence": "第九十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#12", "target": "JPLAW:416AC0000000075#main#157", "type": "refs", "relation": "internal", "evidence": "第百五十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#15", "target": "JPLAW:416AC0000000075#main#30", "type": "refs", "relation": "internal", "evidence": "第三十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#19", "target": "external:保険業法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#19", "target": "JPLAW:416AC0000000075#main#150", "type": "refs", "relation": "internal", "evidence": "第百五十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#19", "target": "external:保険業法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#19", "target": "JPLAW:416AC0000000075#main#150", "type": "refs", "relation": "internal", "evidence": "第百五十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#263", "type": "refs", "relation": "internal", "evidence": "第二百六十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#264", "type": "refs", "relation": "internal", "evidence": "第二百六十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#103", "type": "refs", "relation": "internal", "evidence": "第百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#253", "type": "refs", "relation": "internal", "evidence": "第二百五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#11", "type": "refs", "relation": "internal", "evidence": "第十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#263", "type": "refs", "relation": "internal", "evidence": "第二百六十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#264", "type": "refs", "relation": "internal", "evidence": "第二百六十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#103", "type": "refs", "relation": "internal", "evidence": "第百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#253", "type": "refs", "relation": "internal", "evidence": "第二百五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#11", "type": "refs", "relation": "internal", "evidence": "第十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#24", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#25", "target": "JPLAW:416AC0000000075#main#28", "type": "refs", "relation": "internal", "evidence": "第二十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#25", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#25", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#27", "target": "JPLAW:416AC0000000075#main#25", "type": "refs", "relation": "internal", "evidence": "第二十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#27", "target": "JPLAW:416AC0000000075#main#25", "type": "refs", "relation": "internal", "evidence": "第二十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#27", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#28", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#29", "target": "JPLAW:416AC0000000075#main#24", "type": "refs", "relation": "internal", "evidence": "第二十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#29", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#29", "target": "JPLAW:416AC0000000075#main#171", "type": "refs", "relation": "internal", "evidence": "第百七十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#30", "target": "JPLAW:416AC0000000075#main#23", "type": "refs", "relation": "internal", "evidence": "第二十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#30", "target": "JPLAW:416AC0000000075#main#23", "type": "refs", "relation": "internal", "evidence": "第二十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#136", "type": "refs", "relation": "internal", "evidence": "第百三十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#158", "type": "refs", "relation": "internal", "evidence": "第百五十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#116", "type": "refs", "relation": "internal", "evidence": "第百十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#136", "type": "refs", "relation": "internal", "evidence": "第百三十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#158", "type": "refs", "relation": "internal", "evidence": "第百五十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#116", "type": "refs", "relation": "internal", "evidence": "第百十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#33", "type": "refs", "relation": "internal", "evidence": "第三十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#139", "type": "refs", "relation": "internal", "evidence": "第百三十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#112", "type": "refs", "relation": "internal", "evidence": "第百十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#31", "target": "JPLAW:416AC0000000075#main#114", "type": "refs", "relation": "internal", "evidence": "第百十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#204", "type": "refs", "relation": "internal", "evidence": "第二百四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#204", "type": "refs", "relation": "internal", "evidence": "第二百四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#139", "type": "refs", "relation": "internal", "evidence": "第百三十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#78", "type": "refs", "relation": "internal", "evidence": "第七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#136", "type": "refs", "relation": "internal", "evidence": "第百三十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#78", "type": "refs", "relation": "internal", "evidence": "第七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#32", "target": "JPLAW:416AC0000000075#main#136", "type": "refs", "relation": "internal", "evidence": "第百三十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#33", "target": "JPLAW:416AC0000000075#main#24", "type": "refs", "relation": "internal", "evidence": "第二十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#33", "target": "JPLAW:416AC0000000075#main#28", "type": "refs", "relation": "internal", "evidence": "第二十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#33", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#34", "target": "external:民事執行法#main#131", "type": "refs", "relation": "external", "evidence": "第百三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#34", "target": "external:民事執行法#main#131", "type": "refs", "relation": "external", "evidence": "第百三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#34", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#40", "target": "JPLAW:416AC0000000075#main#144", "type": "refs", "relation": "internal", "evidence": "第百四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#42", "target": "JPLAW:416AC0000000075#main#249", "type": "refs", "relation": "internal", "evidence": "第二百四十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#42", "target": "JPLAW:416AC0000000075#main#249", "type": "refs", "relation": "internal", "evidence": "第二百四十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#45", "target": "JPLAW:129AC0000000089#main#423", "type": "refs", "relation": "internal", "evidence": "第四百二十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#45", "target": "JPLAW:129AC0000000089#main#423_7", "type": "refs", "relation": "internal", "evidence": "第四百二十三条の七", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#45", "target": "JPLAW:129AC0000000089#main#424", "type": "refs", "relation": "internal", "evidence": "第四百二十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#46", "target": "JPLAW:416AC0000000075#main#44", "type": "refs", "relation": "internal", "evidence": "第四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#49", "target": "JPLAW:416AC0000000123#main#105", "type": "refs", "relation": "internal", "evidence": "第百五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#51", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#53", "target": "JPLAW:129AC0000000089#main#631", "type": "refs", "relation": "internal", "evidence": "第六百三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#56", "target": "JPLAW:416AC0000000075#main#53", "type": "refs", "relation": "internal", "evidence": "第五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#57", "target": "JPLAW:129AC0000000089#main#655", "type": "refs", "relation": "internal", "evidence": "第六百五十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#58", "target": "JPLAW:416AC0000000075#main#54", "type": "refs", "relation": "internal", "evidence": "第五十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#60", "target": "JPLAW:416AC0000000075#main#51", "type": "refs", "relation": "internal", "evidence": "第五十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#61", "target": "JPLAW:129AC0000000089#main#758", "type": "refs", "relation": "internal", "evidence": "第七百五十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#61", "target": "JPLAW:129AC0000000089#main#759", "type": "refs", "relation": "internal", "evidence": "第七百五十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#62", "target": "JPLAW:416AC0000000075#main#64", "type": "refs", "relation": "internal", "evidence": "第六十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#62", "target": "JPLAW:416AC0000000075#main#78", "type": "refs", "relation": "internal", "evidence": "第七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#63", "target": "JPLAW:416AC0000000075#main#53", "type": "refs", "relation": "internal", "evidence": "第五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#67", "target": "JPLAW:416AC0000000075#main#103", "type": "refs", "relation": "internal", "evidence": "第百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#68", "target": "JPLAW:416AC0000000075#main#103", "type": "refs", "relation": "internal", "evidence": "第百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#68", "target": "JPLAW:416AC0000000075#main#99", "type": "refs", "relation": "internal", "evidence": "第九十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#73", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#73", "target": "JPLAW:416AC0000000075#main#67", "type": "refs", "relation": "internal", "evidence": "第六十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#2", "type": "refs", "relation": "internal", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#238", "type": "refs", "relation": "internal", "evidence": "第二百三十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#243", "type": "refs", "relation": "internal", "evidence": "第二百四十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#244", "type": "refs", "relation": "internal", "evidence": "第二百四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#53", "type": "refs", "relation": "internal", "evidence": "第五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "external:仲裁法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#2", "type": "refs", "relation": "internal", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#238", "type": "refs", "relation": "internal", "evidence": "第二百三十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#243", "type": "refs", "relation": "internal", "evidence": "第二百四十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#244", "type": "refs", "relation": "internal", "evidence": "第二百四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "JPLAW:416AC0000000075#main#53", "type": "refs", "relation": "internal", "evidence": "第五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#78", "target": "external:仲裁法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#81", "target": "JPLAW:416AC0000000075#main#2", "type": "refs", "relation": "internal", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#81", "target": "JPLAW:416AC0000000075#main#118", "type": "refs", "relation": "internal", "evidence": "第百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#83", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#83", "target": "JPLAW:417AC0000000086#main#2", "type": "refs", "relation": "internal", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#83", "target": "JPLAW:417AC0000000086#main#2", "type": "refs", "relation": "internal", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#88", "target": "JPLAW:416AC0000000075#main#135", "type": "refs", "relation": "internal", "evidence": "第百三十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#91", "target": "JPLAW:416AC0000000075#main#148", "type": "refs", "relation": "internal", "evidence": "第百四十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#91", "target": "JPLAW:416AC0000000075#main#152", "type": "refs", "relation": "internal", "evidence": "第百五十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#91", "target": "JPLAW:416AC0000000075#main#33", "type": "refs", "relation": "internal", "evidence": "第三十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#92", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#93", "target": "JPLAW:416AC0000000075#main#78", "type": "refs", "relation": "internal", "evidence": "第七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#47", "type": "refs", "relation": "internal", "evidence": "第四十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#50", "type": "refs", "relation": "internal", "evidence": "第五十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#51", "type": "refs", "relation": "internal", "evidence": "第五十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#74", "type": "refs", "relation": "internal", "evidence": "第七十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#75", "type": "refs", "relation": "internal", "evidence": "第七十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#76", "type": "refs", "relation": "internal", "evidence": "第七十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#79", "type": "refs", "relation": "internal", "evidence": "第七十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#80", "type": "refs", "relation": "internal", "evidence": "第八十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#82", "type": "refs", "relation": "internal", "evidence": "第八十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#85", "type": "refs", "relation": "internal", "evidence": "第八十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#87", "type": "refs", "relation": "internal", "evidence": "第八十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#90", "type": "refs", "relation": "internal", "evidence": "第九十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#87", "type": "refs", "relation": "internal", "evidence": "第八十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#51", "type": "refs", "relation": "internal", "evidence": "第五十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#92", "type": "refs", "relation": "internal", "evidence": "第九十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#90", "type": "refs", "relation": "internal", "evidence": "第九十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#44", "type": "refs", "relation": "internal", "evidence": "第四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#44", "type": "refs", "relation": "internal", "evidence": "第四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#44", "type": "refs", "relation": "internal", "evidence": "第四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#96", "target": "JPLAW:416AC0000000075#main#44", "type": "refs", "relation": "internal", "evidence": "第四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "external:国税通則法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "external:地方税法#main#1", "type": "refs", "relation": "external", "evidence": "第一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#54", "type": "refs", "relation": "internal", "evidence": "第五十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#58", "type": "refs", "relation": "internal", "evidence": "第五十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#57", "type": "refs", "relation": "internal", "evidence": "第五十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#59", "type": "refs", "relation": "internal", "evidence": "第五十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#60", "type": "refs", "relation": "internal", "evidence": "第六十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#168", "type": "refs", "relation": "internal", "evidence": "第百六十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "external:国税通則法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "external:地方税法#main#1", "type": "refs", "relation": "external", "evidence": "第一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#54", "type": "refs", "relation": "internal", "evidence": "第五十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#58", "type": "refs", "relation": "internal", "evidence": "第五十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#57", "type": "refs", "relation": "internal", "evidence": "第五十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#59", "type": "refs", "relation": "internal", "evidence": "第五十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#60", "type": "refs", "relation": "internal", "evidence": "第六十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#97", "target": "JPLAW:416AC0000000075#main#168", "type": "refs", "relation": "internal", "evidence": "第百六十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#99", "target": "JPLAW:416AC0000000075#main#97", "type": "refs", "relation": "internal", "evidence": "第九十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#99", "target": "JPLAW:416AC0000000075#main#97", "type": "refs", "relation": "internal", "evidence": "第九十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#101", "target": "JPLAW:416AC0000000075#main#195", "type": "refs", "relation": "internal", "evidence": "第百九十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#101", "target": "JPLAW:416AC0000000075#main#204", "type": "refs", "relation": "internal", "evidence": "第二百四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#101", "target": "JPLAW:416AC0000000075#main#208", "type": "refs", "relation": "internal", "evidence": "第二百八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#101", "target": "JPLAW:416AC0000000075#main#209", "type": "refs", "relation": "internal", "evidence": "第二百九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#103", "target": "JPLAW:416AC0000000075#main#11", "type": "refs", "relation": "internal", "evidence": "第十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#103", "target": "JPLAW:416AC0000000075#main#134", "type": "refs", "relation": "internal", "evidence": "第百三十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#108", "target": "JPLAW:416AC0000000075#main#65", "type": "refs", "relation": "internal", "evidence": "第六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#111", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#111", "target": "JPLAW:416AC0000000075#main#108", "type": "refs", "relation": "internal", "evidence": "第百八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#112", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#113", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#114", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#115", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#116", "target": "JPLAW:416AC0000000075#main#121", "type": "refs", "relation": "internal", "evidence": "第百二十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#116", "target": "JPLAW:416AC0000000075#main#119", "type": "refs", "relation": "internal", "evidence": "第百十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#116", "target": "JPLAW:416AC0000000075#main#118", "type": "refs", "relation": "internal", "evidence": "第百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#116", "target": "JPLAW:416AC0000000075#main#122", "type": "refs", "relation": "internal", "evidence": "第百二十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#117", "target": "JPLAW:416AC0000000075#main#108", "type": "refs", "relation": "internal", "evidence": "第百八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#117", "target": "JPLAW:416AC0000000075#main#108", "type": "refs", "relation": "internal", "evidence": "第百八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#118", "target": "JPLAW:416AC0000000075#main#2", "type": "refs", "relation": "internal", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#119", "target": "JPLAW:416AC0000000075#main#117", "type": "refs", "relation": "internal", "evidence": "第百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#119", "target": "JPLAW:416AC0000000075#main#112", "type": "refs", "relation": "internal", "evidence": "第百十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#119", "target": "JPLAW:416AC0000000075#main#117", "type": "refs", "relation": "internal", "evidence": "第百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#119", "target": "JPLAW:416AC0000000075#main#117", "type": "refs", "relation": "internal", "evidence": "第百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#121", "target": "JPLAW:416AC0000000075#main#117", "type": "refs", "relation": "internal", "evidence": "第百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#121", "target": "JPLAW:416AC0000000075#main#118", "type": "refs", "relation": "internal", "evidence": "第百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#122", "target": "JPLAW:416AC0000000075#main#117", "type": "refs", "relation": "internal", "evidence": "第百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#122", "target": "JPLAW:416AC0000000075#main#119", "type": "refs", "relation": "internal", "evidence": "第百十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#122", "target": "JPLAW:416AC0000000075#main#118", "type": "refs", "relation": "internal", "evidence": "第百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#122", "target": "JPLAW:416AC0000000075#main#120", "type": "refs", "relation": "internal", "evidence": "第百二十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#124", "target": "JPLAW:416AC0000000075#main#117", "type": "refs", "relation": "internal", "evidence": "第百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#125", "target": "JPLAW:416AC0000000075#main#127", "type": "refs", "relation": "internal", "evidence": "第百二十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#125", "target": "JPLAW:416AC0000000075#main#127", "type": "refs", "relation": "internal", "evidence": "第百二十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#125", "target": "JPLAW:416AC0000000075#main#129", "type": "refs", "relation": "internal", "evidence": "第百二十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#125", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#126", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#126", "target": "JPLAW:416AC0000000075#main#7", "type": "refs", "relation": "internal", "evidence": "第七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#126", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#126", "target": "JPLAW:408AC0000000109#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#127", "target": "JPLAW:416AC0000000075#main#125", "type": "refs", "relation": "internal", "evidence": "第百二十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#128", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#129", "target": "JPLAW:416AC0000000075#main#125", "type": "refs", "relation": "internal", "evidence": "第百二十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#129", "target": "JPLAW:416AC0000000075#main#126", "type": "refs", "relation": "internal", "evidence": "第百二十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#129", "target": "JPLAW:416AC0000000075#main#126", "type": "refs", "relation": "internal", "evidence": "第百二十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#129", "target": "JPLAW:416AC0000000075#main#125", "type": "refs", "relation": "internal", "evidence": "第百二十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#129", "target": "JPLAW:416AC0000000075#main#118", "type": "refs", "relation": "internal", "evidence": "第百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#129", "target": "JPLAW:416AC0000000075#main#119", "type": "refs", "relation": "internal", "evidence": "第百十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#129", "target": "JPLAW:416AC0000000075#main#121", "type": "refs", "relation": "internal", "evidence": "第百二十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#129", "target": "JPLAW:416AC0000000075#main#122", "type": "refs", "relation": "internal", "evidence": "第百二十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#130", "target": "JPLAW:416AC0000000075#main#126", "type": "refs", "relation": "internal", "evidence": "第百二十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#131", "target": "JPLAW:416AC0000000075#main#126", "type": "refs", "relation": "internal", "evidence": "第百二十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#133", "target": "JPLAW:416AC0000000075#main#126", "type": "refs", "relation": "internal", "evidence": "第百二十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#133", "target": "JPLAW:416AC0000000075#main#127", "type": "refs", "relation": "internal", "evidence": "第百二十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#133", "target": "JPLAW:416AC0000000075#main#129", "type": "refs", "relation": "internal", "evidence": "第百二十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#133", "target": "JPLAW:416AC0000000075#main#44", "type": "refs", "relation": "internal", "evidence": "第四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#133", "target": "JPLAW:416AC0000000075#main#127", "type": "refs", "relation": "internal", "evidence": "第百二十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#133", "target": "JPLAW:416AC0000000075#main#129", "type": "refs", "relation": "internal", "evidence": "第百二十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#133", "target": "JPLAW:416AC0000000075#main#44", "type": "refs", "relation": "internal", "evidence": "第四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#134", "target": "JPLAW:416AC0000000075#main#115", "type": "refs", "relation": "internal", "evidence": "第百十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#134", "target": "JPLAW:416AC0000000075#main#114", "type": "refs", "relation": "internal", "evidence": "第百十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#134", "target": "JPLAW:416AC0000000075#main#124", "type": "refs", "relation": "internal", "evidence": "第百二十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#134", "target": "JPLAW:416AC0000000075#main#114", "type": "refs", "relation": "internal", "evidence": "第百十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#134", "target": "JPLAW:416AC0000000075#main#128", "type": "refs", "relation": "internal", "evidence": "第百二十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#134", "target": "JPLAW:416AC0000000075#main#130", "type": "refs", "relation": "internal", "evidence": "第百三十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#134", "target": "JPLAW:416AC0000000075#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#135", "target": "JPLAW:416AC0000000075#main#144", "type": "refs", "relation": "internal", "evidence": "第百四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#135", "target": "JPLAW:416AC0000000075#main#144", "type": "refs", "relation": "internal", "evidence": "第百四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#136", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#136", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#136", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#139", "target": "JPLAW:416AC0000000075#main#135", "type": "refs", "relation": "internal", "evidence": "第百三十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#139", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#140", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#140", "target": "JPLAW:416AC0000000075#main#114", "type": "refs", "relation": "internal", "evidence": "第百十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#140", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#140", "target": "JPLAW:416AC0000000075#main#114", "type": "refs", "relation": "internal", "evidence": "第百十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#141", "target": "JPLAW:416AC0000000075#main#139", "type": "refs", "relation": "internal", "evidence": "第百三十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#142", "target": "JPLAW:416AC0000000075#main#101", "type": "refs", "relation": "internal", "evidence": "第百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#142", "target": "JPLAW:416AC0000000075#main#109", "type": "refs", "relation": "internal", "evidence": "第百九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#146", "target": "JPLAW:416AC0000000075#main#153", "type": "refs", "relation": "internal", "evidence": "第百五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#146", "target": "JPLAW:416AC0000000075#main#157", "type": "refs", "relation": "internal", "evidence": "第百五十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#146", "target": "JPLAW:416AC0000000075#main#12", "type": "refs", "relation": "internal", "evidence": "第十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#147", "target": "JPLAW:416AC0000000075#main#157", "type": "refs", "relation": "internal", "evidence": "第百五十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#147", "target": "JPLAW:416AC0000000075#main#157", "type": "refs", "relation": "internal", "evidence": "第百五十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#148", "target": "JPLAW:416AC0000000075#main#97", "type": "refs", "relation": "internal", "evidence": "第九十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#148", "target": "JPLAW:416AC0000000075#main#53", "type": "refs", "relation": "internal", "evidence": "第五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#148", "target": "JPLAW:416AC0000000075#main#53", "type": "refs", "relation": "internal", "evidence": "第五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#148", "target": "JPLAW:416AC0000000075#main#97", "type": "refs", "relation": "internal", "evidence": "第九十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#148", "target": "JPLAW:416AC0000000075#main#53", "type": "refs", "relation": "internal", "evidence": "第五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#148", "target": "JPLAW:416AC0000000075#main#53", "type": "refs", "relation": "internal", "evidence": "第五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#148", "target": "JPLAW:416AC0000000075#main#103", "type": "refs", "relation": "internal", "evidence": "第百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#148", "target": "JPLAW:416AC0000000075#main#99", "type": "refs", "relation": "internal", "evidence": "第九十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#150", "target": "external:担保付社債信託法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#150", "target": "external:二条第一項に規定する信託契約の受託会社同項に規定する社債医療法#main#54_5", "type": "refs", "relation": "external", "evidence": "第五十四条の五", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#150", "target": "external:担保付社債信託法#main#2", "type": "refs", "relation": "external", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#150", "target": "external:医療法#main#54_5", "type": "refs", "relation": "external", "evidence": "第五十四条の五", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#152", "target": "JPLAW:416AC0000000075#main#148", "type": "refs", "relation": "internal", "evidence": "第百四十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#156", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#157", "target": "JPLAW:416AC0000000075#main#177", "type": "refs", "relation": "internal", "evidence": "第百七十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#157", "target": "JPLAW:416AC0000000075#main#178", "type": "refs", "relation": "internal", "evidence": "第百七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#157", "target": "JPLAW:416AC0000000075#main#177", "type": "refs", "relation": "internal", "evidence": "第百七十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#157", "target": "JPLAW:416AC0000000075#main#178", "type": "refs", "relation": "internal", "evidence": "第百七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#166", "target": "JPLAW:416AC0000000075#main#160", "type": "refs", "relation": "internal", "evidence": "第百六十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#167", "target": "JPLAW:416AC0000000075#main#160", "type": "refs", "relation": "internal", "evidence": "第百六十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#168", "target": "JPLAW:416AC0000000075#main#160", "type": "refs", "relation": "internal", "evidence": "第百六十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#168", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#168", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#168", "target": "JPLAW:416AC0000000075#main#160", "type": "refs", "relation": "internal", "evidence": "第百六十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#168", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#169", "target": "JPLAW:416AC0000000075#main#162", "type": "refs", "relation": "internal", "evidence": "第百六十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170", "target": "JPLAW:416AC0000000075#main#167", "type": "refs", "relation": "internal", "evidence": "第百六十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_2", "target": "JPLAW:416AC0000000075#main#160", "type": "refs", "relation": "internal", "evidence": "第百六十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_2", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_2", "target": "JPLAW:416AC0000000075#main#168", "type": "refs", "relation": "internal", "evidence": "第百六十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_2", "target": "JPLAW:416AC0000000075#main#168", "type": "refs", "relation": "internal", "evidence": "第百六十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_2", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_2", "target": "JPLAW:416AC0000000075#main#167", "type": "refs", "relation": "internal", "evidence": "第百六十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_2", "target": "JPLAW:416AC0000000075#main#168", "type": "refs", "relation": "internal", "evidence": "第百六十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_3", "target": "JPLAW:416AC0000000075#main#162", "type": "refs", "relation": "internal", "evidence": "第百六十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#170_3", "target": "JPLAW:416AC0000000075#main#169", "type": "refs", "relation": "internal", "evidence": "第百六十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#171", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#171", "target": "JPLAW:416AC0000000075#main#33", "type": "refs", "relation": "internal", "evidence": "第三十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#172", "target": "external:民事保全法#main#18", "type": "refs", "relation": "external", "evidence": "第十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#174", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#175", "target": "JPLAW:408AC0000000109#main#259", "type": "refs", "relation": "internal", "evidence": "第二百五十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#175", "target": "JPLAW:416AC0000000075#main#44", "type": "refs", "relation": "internal", "evidence": "第四十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#177", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#177", "target": "JPLAW:416AC0000000075#main#33", "type": "refs", "relation": "internal", "evidence": "第三十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#179", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#180", "target": "JPLAW:408AC0000000109#main#259", "type": "refs", "relation": "internal", "evidence": "第二百五十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#182", "target": "JPLAW:417AC0000000086#main#663", "type": "refs", "relation": "internal", "evidence": "第六百六十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#184", "target": "JPLAW:416AC0000000075#main#78", "type": "refs", "relation": "internal", "evidence": "第七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#185", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#186", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#187", "target": "JPLAW:416AC0000000075#main#190", "type": "refs", "relation": "internal", "evidence": "第百九十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#187", "target": "JPLAW:416AC0000000075#main#189", "type": "refs", "relation": "internal", "evidence": "第百八十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#187", "target": "JPLAW:416AC0000000075#main#189", "type": "refs", "relation": "internal", "evidence": "第百八十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#188", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#187", "type": "refs", "relation": "internal", "evidence": "第百八十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#189", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#190", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#190", "target": "JPLAW:416AC0000000075#main#188", "type": "refs", "relation": "internal", "evidence": "第百八十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#190", "target": "JPLAW:416AC0000000075#main#186", "type": "refs", "relation": "internal", "evidence": "第百八十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#190", "target": "JPLAW:416AC0000000075#main#188", "type": "refs", "relation": "internal", "evidence": "第百八十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#190", "target": "JPLAW:416AC0000000075#main#188", "type": "refs", "relation": "internal", "evidence": "第百八十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#194", "target": "JPLAW:416AC0000000075#main#98", "type": "refs", "relation": "internal", "evidence": "第九十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#195", "target": "JPLAW:416AC0000000075#main#217", "type": "refs", "relation": "internal", "evidence": "第二百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#196", "target": "JPLAW:416AC0000000075#main#98", "type": "refs", "relation": "internal", "evidence": "第九十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#196", "target": "JPLAW:416AC0000000075#main#108", "type": "refs", "relation": "internal", "evidence": "第百八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#198", "target": "JPLAW:416AC0000000075#main#129", "type": "refs", "relation": "internal", "evidence": "第百二十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#198", "target": "JPLAW:416AC0000000075#main#127", "type": "refs", "relation": "internal", "evidence": "第百二十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#198", "target": "JPLAW:416AC0000000075#main#65", "type": "refs", "relation": "internal", "evidence": "第六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#198", "target": "JPLAW:416AC0000000075#main#196", "type": "refs", "relation": "internal", "evidence": "第百九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#200", "target": "JPLAW:416AC0000000075#main#11", "type": "refs", "relation": "internal", "evidence": "第十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#201", "target": "JPLAW:416AC0000000075#main#70", "type": "refs", "relation": "internal", "evidence": "第七十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#201", "target": "JPLAW:416AC0000000075#main#198", "type": "refs", "relation": "internal", "evidence": "第百九十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#201", "target": "JPLAW:416AC0000000075#main#69", "type": "refs", "relation": "internal", "evidence": "第六十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#201", "target": "JPLAW:416AC0000000075#main#101", "type": "refs", "relation": "internal", "evidence": "第百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#201", "target": "JPLAW:416AC0000000075#main#109", "type": "refs", "relation": "internal", "evidence": "第百九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#201", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#201", "target": "JPLAW:416AC0000000075#main#113", "type": "refs", "relation": "internal", "evidence": "第百十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#202", "target": "JPLAW:416AC0000000075#main#127", "type": "refs", "relation": "internal", "evidence": "第百二十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#202", "target": "JPLAW:416AC0000000075#main#129", "type": "refs", "relation": "internal", "evidence": "第百二十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#202", "target": "JPLAW:416AC0000000075#main#127", "type": "refs", "relation": "internal", "evidence": "第百二十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#202", "target": "JPLAW:416AC0000000075#main#129", "type": "refs", "relation": "internal", "evidence": "第百二十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#203", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#204", "target": "JPLAW:416AC0000000075#main#195", "type": "refs", "relation": "internal", "evidence": "第百九十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#204", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#204", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#204", "target": "JPLAW:416AC0000000075#main#196", "type": "refs", "relation": "internal", "evidence": "第百九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#195", "type": "refs", "relation": "internal", "evidence": "第百九十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#197", "type": "refs", "relation": "internal", "evidence": "第百九十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#200", "type": "refs", "relation": "internal", "evidence": "第二百条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#196", "type": "refs", "relation": "internal", "evidence": "第百九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#204", "type": "refs", "relation": "internal", "evidence": "第二百四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#198", "type": "refs", "relation": "internal", "evidence": "第百九十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#204", "type": "refs", "relation": "internal", "evidence": "第二百四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#202", "type": "refs", "relation": "internal", "evidence": "第二百二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#203", "type": "refs", "relation": "internal", "evidence": "第二百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#205", "target": "JPLAW:416AC0000000075#main#200", "type": "refs", "relation": "internal", "evidence": "第二百条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#206", "target": "JPLAW:416AC0000000075#main#204", "type": "refs", "relation": "internal", "evidence": "第二百四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#207", "target": "JPLAW:416AC0000000075#main#204", "type": "refs", "relation": "internal", "evidence": "第二百四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#207", "target": "JPLAW:416AC0000000075#main#209", "type": "refs", "relation": "internal", "evidence": "第二百九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#208", "target": "JPLAW:416AC0000000075#main#195", "type": "refs", "relation": "internal", "evidence": "第百九十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#208", "target": "JPLAW:416AC0000000075#main#196", "type": "refs", "relation": "internal", "evidence": "第百九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#208", "target": "JPLAW:416AC0000000075#main#203", "type": "refs", "relation": "internal", "evidence": "第二百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#208", "target": "JPLAW:416AC0000000075#main#196", "type": "refs", "relation": "internal", "evidence": "第百九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#208", "target": "JPLAW:416AC0000000075#main#203", "type": "refs", "relation": "internal", "evidence": "第二百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#208", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#196", "type": "refs", "relation": "internal", "evidence": "第百九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#197", "type": "refs", "relation": "internal", "evidence": "第百九十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#198", "type": "refs", "relation": "internal", "evidence": "第百九十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#199", "type": "refs", "relation": "internal", "evidence": "第百九十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#200", "type": "refs", "relation": "internal", "evidence": "第二百条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#203", "type": "refs", "relation": "internal", "evidence": "第二百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#196", "type": "refs", "relation": "internal", "evidence": "第百九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#199", "type": "refs", "relation": "internal", "evidence": "第百九十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#200", "type": "refs", "relation": "internal", "evidence": "第二百条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#210", "type": "refs", "relation": "internal", "evidence": "第二百十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#203", "type": "refs", "relation": "internal", "evidence": "第二百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#209", "target": "JPLAW:416AC0000000075#main#211", "type": "refs", "relation": "internal", "evidence": "第二百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#210", "target": "JPLAW:416AC0000000075#main#198", "type": "refs", "relation": "internal", "evidence": "第百九十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#211", "target": "JPLAW:416AC0000000075#main#209", "type": "refs", "relation": "internal", "evidence": "第二百九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#211", "target": "JPLAW:416AC0000000075#main#200", "type": "refs", "relation": "internal", "evidence": "第二百条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#213", "target": "JPLAW:416AC0000000075#main#209", "type": "refs", "relation": "internal", "evidence": "第二百九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#213", "target": "JPLAW:416AC0000000075#main#198", "type": "refs", "relation": "internal", "evidence": "第百九十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#213", "target": "JPLAW:416AC0000000075#main#210", "type": "refs", "relation": "internal", "evidence": "第二百十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#202", "type": "refs", "relation": "internal", "evidence": "第二百二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#211", "type": "refs", "relation": "internal", "evidence": "第二百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#202", "type": "refs", "relation": "internal", "evidence": "第二百二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#210", "type": "refs", "relation": "internal", "evidence": "第二百十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#212", "type": "refs", "relation": "internal", "evidence": "第二百十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#113", "type": "refs", "relation": "internal", "evidence": "第百十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#202", "type": "refs", "relation": "internal", "evidence": "第二百二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#211", "type": "refs", "relation": "internal", "evidence": "第二百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#202", "type": "refs", "relation": "internal", "evidence": "第二百二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#210", "type": "refs", "relation": "internal", "evidence": "第二百十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#212", "type": "refs", "relation": "internal", "evidence": "第二百十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#113", "type": "refs", "relation": "internal", "evidence": "第百十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#202", "type": "refs", "relation": "internal", "evidence": "第二百二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#198", "type": "refs", "relation": "internal", "evidence": "第百九十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#214", "target": "JPLAW:416AC0000000075#main#111", "type": "refs", "relation": "internal", "evidence": "第百十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#205", "type": "refs", "relation": "internal", "evidence": "第二百五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#200", "type": "refs", "relation": "internal", "evidence": "第二百条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#208", "type": "refs", "relation": "internal", "evidence": "第二百八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#202", "type": "refs", "relation": "internal", "evidence": "第二百二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#203", "type": "refs", "relation": "internal", "evidence": "第二百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#202", "type": "refs", "relation": "internal", "evidence": "第二百二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#203", "type": "refs", "relation": "internal", "evidence": "第二百三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#215", "target": "JPLAW:416AC0000000075#main#201", "type": "refs", "relation": "internal", "evidence": "第二百一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#216", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#216", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#217", "target": "JPLAW:416AC0000000075#main#135", "type": "refs", "relation": "internal", "evidence": "第百三十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#217", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#220", "target": "JPLAW:416AC0000000075#main#88", "type": "refs", "relation": "internal", "evidence": "第八十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#220", "target": "JPLAW:416AC0000000075#main#89", "type": "refs", "relation": "internal", "evidence": "第八十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#217", "type": "refs", "relation": "internal", "evidence": "第二百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#218", "type": "refs", "relation": "internal", "evidence": "第二百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#121", "type": "refs", "relation": "internal", "evidence": "第百二十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#118", "type": "refs", "relation": "internal", "evidence": "第百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#119", "type": "refs", "relation": "internal", "evidence": "第百十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#121", "type": "refs", "relation": "internal", "evidence": "第百二十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#122", "type": "refs", "relation": "internal", "evidence": "第百二十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#122", "type": "refs", "relation": "internal", "evidence": "第百二十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#221", "target": "JPLAW:416AC0000000075#main#123", "type": "refs", "relation": "internal", "evidence": "第百二十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#222", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#222", "target": "JPLAW:416AC0000000075#main#7", "type": "refs", "relation": "internal", "evidence": "第七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#222", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#222", "target": "JPLAW:416AC0000000075#main#7", "type": "refs", "relation": "internal", "evidence": "第七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#223", "target": "JPLAW:416AC0000000075#main#30", "type": "refs", "relation": "internal", "evidence": "第三十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#225", "target": "JPLAW:129AC0000000089#main#941", "type": "refs", "relation": "internal", "evidence": "第九百四十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#230", "target": "JPLAW:416AC0000000075#main#37", "type": "refs", "relation": "internal", "evidence": "第三十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#230", "target": "JPLAW:416AC0000000075#main#38", "type": "refs", "relation": "internal", "evidence": "第三十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#235", "target": "JPLAW:416AC0000000075#main#167", "type": "refs", "relation": "internal", "evidence": "第百六十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#237", "target": "JPLAW:416AC0000000075#main#218", "type": "refs", "relation": "internal", "evidence": "第二百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#240", "target": "JPLAW:416AC0000000075#main#225", "type": "refs", "relation": "internal", "evidence": "第二百二十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#240", "target": "JPLAW:416AC0000000075#main#238", "type": "refs", "relation": "internal", "evidence": "第二百三十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#242", "target": "JPLAW:416AC0000000075#main#238", "type": "refs", "relation": "internal", "evidence": "第二百三十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#242", "target": "JPLAW:416AC0000000075#main#240", "type": "refs", "relation": "internal", "evidence": "第二百四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244", "target": "JPLAW:129AC0000000089#main#987", "type": "refs", "relation": "internal", "evidence": "第九百八十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_2", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_2", "target": "JPLAW:416AC0000000075#main#7", "type": "refs", "relation": "internal", "evidence": "第七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_2", "target": "JPLAW:416AC0000000075#main#5", "type": "refs", "relation": "internal", "evidence": "第五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_2", "target": "JPLAW:416AC0000000075#main#7", "type": "refs", "relation": "internal", "evidence": "第七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_3", "target": "JPLAW:416AC0000000075#main#15", "type": "refs", "relation": "internal", "evidence": "第十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_4", "target": "JPLAW:416AC0000000075#main#244_7", "type": "refs", "relation": "internal", "evidence": "第二百四十四条の七", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_6", "target": "JPLAW:416AC0000000075#main#37", "type": "refs", "relation": "internal", "evidence": "第三十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_6", "target": "JPLAW:416AC0000000075#main#38", "type": "refs", "relation": "internal", "evidence": "第三十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_6", "target": "JPLAW:416AC0000000075#main#41", "type": "refs", "relation": "internal", "evidence": "第四十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_10", "target": "JPLAW:416AC0000000075#main#161", "type": "refs", "relation": "internal", "evidence": "第百六十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_10", "target": "JPLAW:416AC0000000075#main#162", "type": "refs", "relation": "internal", "evidence": "第百六十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_10", "target": "JPLAW:416AC0000000075#main#168", "type": "refs", "relation": "internal", "evidence": "第百六十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_10", "target": "JPLAW:416AC0000000075#main#170_2", "type": "refs", "relation": "internal", "evidence": "第百七十条の二", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_11", "target": "JPLAW:416AC0000000075#main#177", "type": "refs", "relation": "internal", "evidence": "第百七十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_11", "target": "JPLAW:416AC0000000075#main#178", "type": "refs", "relation": "internal", "evidence": "第百七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_11", "target": "JPLAW:416AC0000000075#main#181", "type": "refs", "relation": "internal", "evidence": "第百八十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_12", "target": "JPLAW:416AC0000000075#main#91", "type": "refs", "relation": "internal", "evidence": "第九十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_12", "target": "JPLAW:416AC0000000075#main#148", "type": "refs", "relation": "internal", "evidence": "第百四十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_12", "target": "JPLAW:416AC0000000075#main#152", "type": "refs", "relation": "internal", "evidence": "第百五十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_12", "target": "JPLAW:416AC0000000075#main#93", "type": "refs", "relation": "internal", "evidence": "第九十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_12", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#244_13", "target": "JPLAW:416AC0000000075#main#218", "type": "refs", "relation": "internal", "evidence": "第二百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#246", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#248", "target": "JPLAW:416AC0000000075#main#20", "type": "refs", "relation": "internal", "evidence": "第二十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#248", "target": "JPLAW:416AC0000000075#main#218", "type": "refs", "relation": "internal", "evidence": "第二百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#248", "target": "JPLAW:416AC0000000075#main#218", "type": "refs", "relation": "internal", "evidence": "第二百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#248", "target": "JPLAW:416AC0000000075#main#218", "type": "refs", "relation": "internal", "evidence": "第二百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#249", "target": "JPLAW:416AC0000000075#main#216", "type": "refs", "relation": "internal", "evidence": "第二百十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#249", "target": "JPLAW:416AC0000000075#main#217", "type": "refs", "relation": "internal", "evidence": "第二百十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#249", "target": "JPLAW:416AC0000000075#main#220", "type": "refs", "relation": "internal", "evidence": "第二百二十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#249", "target": "JPLAW:416AC0000000075#main#253", "type": "refs", "relation": "internal", "evidence": "第二百五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#249", "target": "JPLAW:416AC0000000075#main#253", "type": "refs", "relation": "internal", "evidence": "第二百五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#250", "target": "JPLAW:416AC0000000075#main#252", "type": "refs", "relation": "internal", "evidence": "第二百五十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#251", "target": "JPLAW:416AC0000000075#main#253", "type": "refs", "relation": "internal", "evidence": "第二百五十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#251", "target": "JPLAW:416AC0000000075#main#254", "type": "refs", "relation": "internal", "evidence": "第二百五十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#248", "type": "refs", "relation": "internal", "evidence": "第二百四十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "external:許可の決定が確定したこと当該免責許可の決定の確定の日民事再生法#main#239", "type": "refs", "relation": "external", "evidence": "第二百三十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#235", "type": "refs", "relation": "internal", "evidence": "第二百三十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#41", "type": "refs", "relation": "internal", "evidence": "第四十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#250", "type": "refs", "relation": "internal", "evidence": "第二百五十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#248", "type": "refs", "relation": "internal", "evidence": "第二百四十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#41", "type": "refs", "relation": "internal", "evidence": "第四十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#250", "type": "refs", "relation": "internal", "evidence": "第二百五十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#252", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#253", "target": "JPLAW:129AC0000000089#main#752", "type": "refs", "relation": "internal", "evidence": "第七百五十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#253", "target": "JPLAW:129AC0000000089#main#760", "type": "refs", "relation": "internal", "evidence": "第七百六十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#253", "target": "JPLAW:129AC0000000089#main#766", "type": "refs", "relation": "internal", "evidence": "第七百六十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#253", "target": "JPLAW:129AC0000000089#main#771", "type": "refs", "relation": "internal", "evidence": "第七百七十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#253", "target": "JPLAW:129AC0000000089#main#788", "type": "refs", "relation": "internal", "evidence": "第七百八十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#253", "target": "JPLAW:129AC0000000089#main#877", "type": "refs", "relation": "internal", "evidence": "第八百七十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#253", "target": "JPLAW:129AC0000000089#main#880", "type": "refs", "relation": "internal", "evidence": "第八百八十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#253", "target": "JPLAW:416AC0000000075#main#11", "type": "refs", "relation": "internal", "evidence": "第十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#254", "target": "JPLAW:416AC0000000075#main#265", "type": "refs", "relation": "internal", "evidence": "第二百六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#254", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#254", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#255", "target": "JPLAW:416AC0000000075#main#218", "type": "refs", "relation": "internal", "evidence": "第二百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#255", "target": "JPLAW:416AC0000000075#main#265", "type": "refs", "relation": "internal", "evidence": "第二百六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#255", "target": "JPLAW:416AC0000000075#main#218", "type": "refs", "relation": "internal", "evidence": "第二百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#255", "target": "JPLAW:416AC0000000075#main#265", "type": "refs", "relation": "internal", "evidence": "第二百六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#256", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#256", "target": "JPLAW:416AC0000000075#main#10", "type": "refs", "relation": "internal", "evidence": "第十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#257", "target": "JPLAW:416AC0000000075#main#76", "type": "refs", "relation": "internal", "evidence": "第七十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#257", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#257", "target": "JPLAW:416AC0000000075#main#76", "type": "refs", "relation": "internal", "evidence": "第七十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#257", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#257", "target": "JPLAW:416AC0000000075#main#76", "type": "refs", "relation": "internal", "evidence": "第七十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#258", "target": "JPLAW:416AC0000000075#main#34", "type": "refs", "relation": "internal", "evidence": "第三十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#259", "target": "JPLAW:416AC0000000075#main#28", "type": "refs", "relation": "internal", "evidence": "第二十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#259", "target": "JPLAW:416AC0000000075#main#33", "type": "refs", "relation": "internal", "evidence": "第三十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#259", "target": "JPLAW:416AC0000000075#main#171", "type": "refs", "relation": "internal", "evidence": "第百七十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#259", "target": "JPLAW:416AC0000000075#main#177", "type": "refs", "relation": "internal", "evidence": "第百七十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#259", "target": "JPLAW:416AC0000000075#main#28", "type": "refs", "relation": "internal", "evidence": "第二十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#259", "target": "JPLAW:416AC0000000075#main#33", "type": "refs", "relation": "internal", "evidence": "第三十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#259", "target": "JPLAW:416AC0000000075#main#171", "type": "refs", "relation": "internal", "evidence": "第百七十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#259", "target": "JPLAW:416AC0000000075#main#177", "type": "refs", "relation": "internal", "evidence": "第百七十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#261", "target": "JPLAW:416AC0000000075#main#257", "type": "refs", "relation": "internal", "evidence": "第二百五十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#262", "target": "JPLAW:416AC0000000075#main#258", "type": "refs", "relation": "internal", "evidence": "第二百五十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#264", "target": "JPLAW:416AC0000000075#main#32", "type": "refs", "relation": "internal", "evidence": "第三十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#264", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#264", "target": "JPLAW:416AC0000000075#main#118", "type": "refs", "relation": "internal", "evidence": "第百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#264", "target": "JPLAW:416AC0000000075#main#121", "type": "refs", "relation": "internal", "evidence": "第百二十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#264", "target": "JPLAW:416AC0000000075#main#118", "type": "refs", "relation": "internal", "evidence": "第百十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#264", "target": "JPLAW:416AC0000000075#main#121", "type": "refs", "relation": "internal", "evidence": "第百二十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#264", "target": "JPLAW:416AC0000000075#main#31", "type": "refs", "relation": "internal", "evidence": "第三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#230", "type": "refs", "relation": "internal", "evidence": "第二百三十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#244_6", "type": "refs", "relation": "internal", "evidence": "第二百四十四条の六", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#230", "type": "refs", "relation": "internal", "evidence": "第二百三十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#244_6", "type": "refs", "relation": "internal", "evidence": "第二百四十四条の六", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#230", "type": "refs", "relation": "internal", "evidence": "第二百三十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#244_6", "type": "refs", "relation": "internal", "evidence": "第二百四十四条の六", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#40", "type": "refs", "relation": "internal", "evidence": "第四十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#83", "type": "refs", "relation": "internal", "evidence": "第八十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#230", "type": "refs", "relation": "internal", "evidence": "第二百三十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#83", "type": "refs", "relation": "internal", "evidence": "第八十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#83", "type": "refs", "relation": "internal", "evidence": "第八十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#96", "type": "refs", "relation": "internal", "evidence": "第九十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#268", "target": "JPLAW:416AC0000000075#main#83", "type": "refs", "relation": "internal", "evidence": "第八十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#269", "target": "JPLAW:416AC0000000075#main#41", "type": "refs", "relation": "internal", "evidence": "第四十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#269", "target": "JPLAW:416AC0000000075#main#244_6", "type": "refs", "relation": "internal", "evidence": "第二百四十四条の六", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#270", "target": "JPLAW:416AC0000000075#main#155", "type": "refs", "relation": "internal", "evidence": "第百五十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#273", "target": "JPLAW:416AC0000000075#main#139", "type": "refs", "relation": "internal", "evidence": "第百三十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:416AC0000000075#main#265", "type": "refs", "relation": "internal", "evidence": "第二百六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:416AC0000000075#main#266", "type": "refs", "relation": "internal", "evidence": "第二百六十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:416AC0000000075#main#270", "type": "refs", "relation": "internal", "evidence": "第二百七十条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:416AC0000000075#main#272", "type": "refs", "relation": "internal", "evidence": "第二百七十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:416AC0000000075#main#274", "type": "refs", "relation": "internal", "evidence": "第二百七十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:140AC0000000045#main#2", "type": "refs", "relation": "internal", "evidence": "第二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:416AC0000000075#main#267", "type": "refs", "relation": "internal", "evidence": "第二百六十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:416AC0000000075#main#273", "type": "refs", "relation": "internal", "evidence": "第二百七十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:140AC0000000045#main#4", "type": "refs", "relation": "internal", "evidence": "第四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#276", "target": "JPLAW:416AC0000000075#main#273", "type": "refs", "relation": "internal", "evidence": "第二百七十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#277", "target": "JPLAW:416AC0000000075#main#265", "type": "refs", "relation": "internal", "evidence": "第二百六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#277", "target": "JPLAW:416AC0000000075#main#266", "type": "refs", "relation": "internal", "evidence": "第二百六十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#277", "target": "JPLAW:416AC0000000075#main#268", "type": "refs", "relation": "internal", "evidence": "第二百六十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#277", "target": "JPLAW:416AC0000000075#main#269", "type": "refs", "relation": "internal", "evidence": "第二百六十九条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#277", "target": "JPLAW:416AC0000000075#main#272", "type": "refs", "relation": "internal", "evidence": "第二百七十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#277", "target": "JPLAW:416AC0000000075#main#274", "type": "refs", "relation": "internal", "evidence": "第二百七十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#main#277", "target": "JPLAW:416AC0000000075#main#275", "type": "refs", "relation": "internal", "evidence": "第二百七十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#4", "target": "JPLAW:416AC0000000075#main#171", "type": "refs", "relation": "internal", "evidence": "第百七十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#4", "target": "JPLAW:416AC0000000075#main#175", "type": "refs", "relation": "internal", "evidence": "第百七十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#4", "target": "JPLAW:416AC0000000075#main#234", "type": "refs", "relation": "internal", "evidence": "第二百三十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#4", "target": "JPLAW:416AC0000000075#main#236", "type": "refs", "relation": "internal", "evidence": "第二百三十六条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#5", "target": "JPLAW:416AC0000000075#main#71", "type": "refs", "relation": "internal", "evidence": "第七十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#5", "target": "JPLAW:416AC0000000075#main#72", "type": "refs", "relation": "internal", "evidence": "第七十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#6", "target": "JPLAW:416AC0000000075#main#374", "type": "refs", "relation": "internal", "evidence": "第三百七十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#7", "target": "JPLAW:416AC0000000075#main#254", "type": "refs", "relation": "internal", "evidence": "第二百五十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#7", "target": "JPLAW:416AC0000000075#main#255", "type": "refs", "relation": "internal", "evidence": "第二百五十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#7", "target": "JPLAW:416AC0000000075#main#374", "type": "refs", "relation": "internal", "evidence": "第三百七十四条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#7", "target": "JPLAW:416AC0000000075#main#265", "type": "refs", "relation": "internal", "evidence": "第二百六十五条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "external:株式会社地域経済活性化支援機構法#main#23", "type": "refs", "relation": "external", "evidence": "第二十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "external:株式会社東日本大震災事業者再生支援機構法#main#17", "type": "refs", "relation": "external", "evidence": "第十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "external:株式会社地域経済活性化支援機構法#main#23", "type": "refs", "relation": "external", "evidence": "第二十三条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "external:株式会社東日本大震災事業者再生支援機構法#main#17", "type": "refs", "relation": "external", "evidence": "第十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "JPLAW:416AC0000000123#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "JPLAW:416AC0000000123#main#131", "type": "refs", "relation": "internal", "evidence": "第百三十一条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "external:附則第六十条中商業登記法#main#52", "type": "refs", "relation": "external", "evidence": "第五十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "JPLAW:408AC0000000109#main#87", "type": "refs", "relation": "internal", "evidence": "第八十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "external:附則第六十条中商業登記法#main#52", "type": "refs", "relation": "external", "evidence": "第五十二条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#1", "target": "JPLAW:408AC0000000109#main#87", "type": "refs", "relation": "internal", "evidence": "第八十七条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#suppl#20", "target": "JPLAW:416AC0000000075#main#78", "type": "refs", "relation": "internal", "evidence": "第七十八条", "confidence": 0.9}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#1", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#2", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#3", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#4", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#5", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#6", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#7", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#8", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#9", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#10", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#11", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#12", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#13", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#1", "target": "JPLAW:416AC0000000075#main#14", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#15", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#16", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#17", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#18", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#19", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#20", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#21", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#22", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#23", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#24", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#25", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#26", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#27", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#28", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#29", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#30", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#31", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#32", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#33", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#34", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#35", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#36", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#37", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#38", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#39", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#40", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#41", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#42", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#43", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#44", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#45", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#46", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#47", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#48", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#49", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#50", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#51", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#52", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#53", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#54", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#55", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#56", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#57", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#58", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#59", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#60", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#61", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#62", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#63", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#64", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#65", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#66", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#67", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#68", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#69", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#70", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#71", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#72", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2", "target": "JPLAW:416AC0000000075#main#73", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#74", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#75", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#76", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#77", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#78", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#79", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#80", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#81", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#82", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#83", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#84", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#85", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#86", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#87", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#88", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#89", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#90", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#91", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#92", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#93", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#94", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#95", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3", "target": "JPLAW:416AC0000000075#main#96", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#97", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#98", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#99", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#100", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#101", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#102", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#103", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#104", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#105", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#106", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#107", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#108", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#109", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#110", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#111", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#112", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#113", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#114", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#115", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#116", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#117", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#118", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#119", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#120", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#121", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#122", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#123", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#124", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#125", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#126", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#127", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#128", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#129", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#130", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#131", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#132", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#133", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#134", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#135", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#136", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#137", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#138", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#139", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#140", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#141", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#142", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#143", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#144", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#145", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#146", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4", "target": "JPLAW:416AC0000000075#main#147", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#5", "target": "JPLAW:416AC0000000075#main#148", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#5", "target": "JPLAW:416AC0000000075#main#149", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#5", "target": "JPLAW:416AC0000000075#main#150", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#5", "target": "JPLAW:416AC0000000075#main#151", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#5", "target": "JPLAW:416AC0000000075#main#152", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#153", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#154", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#155", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#156", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#157", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#158", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#159", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#160", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#161", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#162", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#163", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#164", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#165", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#166", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#167", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#168", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#169", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#170", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#170_2", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#170_3", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#171", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#172", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#173", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#174", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#175", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#176", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#177", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#178", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#179", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#180", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#181", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#182", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6", "target": "JPLAW:416AC0000000075#main#183", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#184", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#185", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#186", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#187", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#188", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#189", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#190", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#191", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7", "target": "JPLAW:416AC0000000075#main#192", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#193", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#194", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#195", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#196", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#197", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#198", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#199", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#200", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#201", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#202", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#203", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#204", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#205", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#206", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#207", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#208", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#209", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#210", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#211", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#212", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#213", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#214", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8", "target": "JPLAW:416AC0000000075#main#215", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#9", "target": "JPLAW:416AC0000000075#main#216", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#9", "target": "JPLAW:416AC0000000075#main#217", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#9", "target": "JPLAW:416AC0000000075#main#218", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#9", "target": "JPLAW:416AC0000000075#main#219", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#9", "target": "JPLAW:416AC0000000075#main#220", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#9", "target": "JPLAW:416AC0000000075#main#221", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#222", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#223", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#224", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#225", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#226", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#227", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#228", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#229", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#230", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#231", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#232", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#233", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#234", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#235", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#236", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#237", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#238", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#239", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#240", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#241", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#242", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#243", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10", "target": "JPLAW:416AC0000000075#main#244", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_2", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_3", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_4", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_5", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_6", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_7", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_8", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_9", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_10", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_11", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_12", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#102", "target": "JPLAW:416AC0000000075#main#244_13", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#11", "target": "JPLAW:416AC0000000075#main#245", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#11", "target": "JPLAW:416AC0000000075#main#246", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#11", "target": "JPLAW:416AC0000000075#main#247", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#248", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#249", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#250", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#251", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#252", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#253", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#254", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#255", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12", "target": "JPLAW:416AC0000000075#main#256", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#13", "target": "JPLAW:416AC0000000075#main#257", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#13", "target": "JPLAW:416AC0000000075#main#258", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#13", "target": "JPLAW:416AC0000000075#main#259", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#13", "target": "JPLAW:416AC0000000075#main#260", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#13", "target": "JPLAW:416AC0000000075#main#261", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#13", "target": "JPLAW:416AC0000000075#main#262", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#13", "target": "JPLAW:416AC0000000075#main#263", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#13", "target": "JPLAW:416AC0000000075#main#264", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#265", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#266", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#267", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#268", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#269", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#270", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#271", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#272", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#273", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#274", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#275", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#276", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#14", "target": "JPLAW:416AC0000000075#main#277", "type": "contains", "relation": "chapter_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#15", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#16", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#17", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#18", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#19", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#20", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#21", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#22", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#23", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#24", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#25", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#26", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#27", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#28", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#29", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#34", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#35", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#36", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#37", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#38", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#39", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#40", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#41", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#42", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#43", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#44", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#45", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#1", "target": "JPLAW:416AC0000000075#main#46", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#30", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#31", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#32", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#33", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#47", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#48", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#49", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#50", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#51", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#52", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#53", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#54", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#55", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#56", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#57", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#58", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#59", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#60", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#2", "target": "JPLAW:416AC0000000075#main#61", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#3", "target": "JPLAW:416AC0000000075#main#62", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#3", "target": "JPLAW:416AC0000000075#main#63", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#3", "target": "JPLAW:416AC0000000075#main#64", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#4", "target": "JPLAW:416AC0000000075#main#65", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#4", "target": "JPLAW:416AC0000000075#main#66", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#5", "target": "JPLAW:416AC0000000075#main#67", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#5", "target": "JPLAW:416AC0000000075#main#68", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#5", "target": "JPLAW:416AC0000000075#main#69", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#5", "target": "JPLAW:416AC0000000075#main#70", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#5", "target": "JPLAW:416AC0000000075#main#71", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#5", "target": "JPLAW:416AC0000000075#main#72", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#2#section#5", "target": "JPLAW:416AC0000000075#main#73", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#1", "target": "JPLAW:416AC0000000075#main#74", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#1", "target": "JPLAW:416AC0000000075#main#75", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#1", "target": "JPLAW:416AC0000000075#main#76", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#1", "target": "JPLAW:416AC0000000075#main#77", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#78", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#79", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#80", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#81", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#82", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#83", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#84", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#85", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#86", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#87", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#88", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#89", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#90", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#91", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#92", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#93", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#94", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#95", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#3#section#2", "target": "JPLAW:416AC0000000075#main#96", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#97", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#98", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#99", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#100", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#101", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#102", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#103", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#104", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#105", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#106", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#107", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#108", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#109", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#110", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#115", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#116", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#135", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#136", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#137", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#138", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#139", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#140", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#141", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#142", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#1", "target": "JPLAW:416AC0000000075#main#143", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#111", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#112", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#113", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#114", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#117", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#118", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#119", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#120", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#144", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#145", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#146", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#2", "target": "JPLAW:416AC0000000075#main#147", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#3", "target": "JPLAW:416AC0000000075#main#121", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#3", "target": "JPLAW:416AC0000000075#main#122", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#3", "target": "JPLAW:416AC0000000075#main#123", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#124", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#125", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#126", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#127", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#128", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#129", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#130", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#131", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#132", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#4", "target": "JPLAW:416AC0000000075#main#133", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#4#section#5", "target": "JPLAW:416AC0000000075#main#134", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#1", "target": "JPLAW:416AC0000000075#main#153", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#1", "target": "JPLAW:416AC0000000075#main#154", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#1", "target": "JPLAW:416AC0000000075#main#155", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#1", "target": "JPLAW:416AC0000000075#main#156", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#1", "target": "JPLAW:416AC0000000075#main#157", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#1", "target": "JPLAW:416AC0000000075#main#158", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#1", "target": "JPLAW:416AC0000000075#main#159", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#160", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#161", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#162", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#163", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#164", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#165", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#166", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#167", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#168", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#169", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#170", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#170_2", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#170_3", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#171", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#172", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#173", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#174", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#175", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#2", "target": "JPLAW:416AC0000000075#main#176", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#3", "target": "JPLAW:416AC0000000075#main#177", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#3", "target": "JPLAW:416AC0000000075#main#178", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#3", "target": "JPLAW:416AC0000000075#main#179", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#3", "target": "JPLAW:416AC0000000075#main#180", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#3", "target": "JPLAW:416AC0000000075#main#181", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#3", "target": "JPLAW:416AC0000000075#main#182", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#6#section#3", "target": "JPLAW:416AC0000000075#main#183", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#1", "target": "JPLAW:416AC0000000075#main#184", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#1", "target": "JPLAW:416AC0000000075#main#185", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#2", "target": "JPLAW:416AC0000000075#main#186", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#2", "target": "JPLAW:416AC0000000075#main#187", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#2", "target": "JPLAW:416AC0000000075#main#188", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#2", "target": "JPLAW:416AC0000000075#main#189", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#2", "target": "JPLAW:416AC0000000075#main#190", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#2", "target": "JPLAW:416AC0000000075#main#191", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#7#section#3", "target": "JPLAW:416AC0000000075#main#192", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#1", "target": "JPLAW:416AC0000000075#main#193", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#1", "target": "JPLAW:416AC0000000075#main#194", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#195", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#196", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#197", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#198", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#199", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#200", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#201", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#202", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#2", "target": "JPLAW:416AC0000000075#main#203", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#3", "target": "JPLAW:416AC0000000075#main#204", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#3", "target": "JPLAW:416AC0000000075#main#205", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#3", "target": "JPLAW:416AC0000000075#main#206", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#3", "target": "JPLAW:416AC0000000075#main#207", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#4", "target": "JPLAW:416AC0000000075#main#208", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#5", "target": "JPLAW:416AC0000000075#main#209", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#5", "target": "JPLAW:416AC0000000075#main#210", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#5", "target": "JPLAW:416AC0000000075#main#211", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#5", "target": "JPLAW:416AC0000000075#main#212", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#5", "target": "JPLAW:416AC0000000075#main#213", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#5", "target": "JPLAW:416AC0000000075#main#214", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#8#section#6", "target": "JPLAW:416AC0000000075#main#215", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#222", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#223", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#224", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#225", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#226", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#227", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#228", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#229", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#230", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#231", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#232", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#233", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#234", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#235", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#236", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#1", "target": "JPLAW:416AC0000000075#main#237", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#2", "target": "JPLAW:416AC0000000075#main#238", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#2", "target": "JPLAW:416AC0000000075#main#239", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#2", "target": "JPLAW:416AC0000000075#main#240", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#2", "target": "JPLAW:416AC0000000075#main#241", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#2", "target": "JPLAW:416AC0000000075#main#242", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#3", "target": "JPLAW:416AC0000000075#main#243", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#10#section#3", "target": "JPLAW:416AC0000000075#main#244", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#1", "target": "JPLAW:416AC0000000075#main#248", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#1", "target": "JPLAW:416AC0000000075#main#249", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#1", "target": "JPLAW:416AC0000000075#main#250", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#1", "target": "JPLAW:416AC0000000075#main#251", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#1", "target": "JPLAW:416AC0000000075#main#252", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#1", "target": "JPLAW:416AC0000000075#main#253", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#1", "target": "JPLAW:416AC0000000075#main#254", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#2", "target": "JPLAW:416AC0000000075#main#255", "type": "contains", "relation": "section_contains_article"}
+{"source": "JPLAW:416AC0000000075#chapter#12#section#2", "target": "JPLAW:416AC0000000075#main#256", "type": "contains", "relation": "section_contains_article"}

@@ -42,24 +42,19 @@ def get_law_node_file(law_dir: Path) -> Optional[Path]:
 
 def find_law_dir_by_id(laws_root: Path, law_id: str) -> Optional[Path]:
     """
-    Find the law directory given the logic that we use LawName as dir name.
-    Since we don't store ID->Name map, we might need to search?
-    OR, we assume the caller knows the mapping?
-    
-    Processing in Tier1 usually starts with ID.
-    We need a way to find the folder from ID.
-    
-    Option 1: Search all folders (Slow?) - 8000 folders.
-    Option 2: Tier1 should pre-load ID->Name map from Tier0 source or cache?
-              But Tier0 source comes from API list.
-    Option 3: We grep 'id: JPLAW:X' ?
-    
-    Better approach for optimization:
-    - Tier0 generates an index file (id_to_path.json).
-    - Tier1 reads it.
-    
-    For now, let's just implement a brute-force search helper or require Name from caller.
+    Find the law directory by law_id.
+
+    After migration, directory structure is: laws/{law_id}/
+    So we can directly check if laws/{law_id}/ exists.
+
+    Falls back to index.json lookup for legacy compatibility.
     """
+    # Primary: Direct lookup by law_id (post-migration structure)
+    direct_path = laws_root / law_id
+    if direct_path.exists() and direct_path.is_dir():
+        return direct_path
+
+    # Fallback: Legacy index.json lookup
     import json
     index_path = laws_root / "index.json"
     if index_path.exists():
@@ -70,9 +65,5 @@ def find_law_dir_by_id(laws_root: Path, law_id: str) -> Optional[Path]:
                     return laws_root / index[law_id]
         except Exception:
             pass
-            
-    # Fallback if index not found or id not in index
-    # Brute force search? Or just fail?
-    # Tier 1 should run after Tier 0, so index SHOULD exist.
-    # If not, maybe we can't find it easily.
+
     return None

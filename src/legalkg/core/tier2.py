@@ -264,7 +264,8 @@ def resolve_law_id_from_vault(law_name: str, vault_root: Optional[Path] = None) 
     """
     法令名から egov_law_id を解決
 
-    Vault/laws/<法令名>/<法令名>.md の frontmatter から egov_law_id を取得。
+    移行後の構造: Vault/laws/<law_id>/<title>_law.md
+    法令名からlaw_idを見つけるため、_index/laws.json または全ディレクトリを検索。
     結果はキャッシュされる。
 
     Args:
@@ -286,26 +287,57 @@ def resolve_law_id_from_vault(law_name: str, vault_root: Optional[Path] = None) 
         _LAW_ID_CACHE[law_name] = None
         return None
 
-    # 法令ディレクトリから CROSS_LINKABLE_LAWS のマッピングを使用してフォルダ名を取得
-    folder_name = CROSS_LINKABLE_LAWS.get(law_name, law_name)
+    # 法令ディレクトリから CROSS_LINKABLE_LAWS のマッピングを使用して法令名を取得
+    canonical_name = CROSS_LINKABLE_LAWS.get(law_name, law_name)
 
-    # 法令 md ファイルを探す
-    law_dir = root / "laws" / folder_name
-    law_md = law_dir / f"{folder_name}.md"
+    # 方法1: _index/laws.json から検索（高速）
+    import json
+    index_path = root / "_index" / "laws.json"
+    if index_path.exists():
+        try:
+            with open(index_path, 'r', encoding='utf-8') as f:
+                index = json.load(f)
+                for law in index.get('laws', []):
+                    if law.get('official_title') == canonical_name:
+                        law_id = law.get('law_id')
+                        _LAW_ID_CACHE[law_name] = law_id
+                        return law_id
+                    # aliases もチェック
+                    if canonical_name in law.get('aliases', []):
+                        law_id = law.get('law_id')
+                        _LAW_ID_CACHE[law_name] = law_id
+                        return law_id
+        except Exception:
+            pass
 
-    if not law_md.exists():
-        _LAW_ID_CACHE[law_name] = None
-        return None
+    # 方法2: 全ディレクトリを検索（フォールバック）
+    laws_dir = root / "laws"
+    if laws_dir.exists():
+        for law_dir in laws_dir.iterdir():
+            if not law_dir.is_dir():
+                continue
+            # *_law.md ファイルを探す
+            law_files = list(law_dir.glob('*_law.md'))
+            if not law_files:
+                continue
+            law_md = law_files[0]
+            doc = read_markdown_file(law_md)
+            if doc is None:
+                continue
+            # 法令名を確認
+            title = doc.metadata.get('title') or doc.metadata.get('official_title')
+            if title == canonical_name:
+                law_id = doc.metadata.get('egov_law_id') or doc.metadata.get('law_id') or law_dir.name
+                _LAW_ID_CACHE[law_name] = law_id
+                return law_id
+            # aliases もチェック
+            if canonical_name in doc.metadata.get('aliases', []):
+                law_id = doc.metadata.get('egov_law_id') or doc.metadata.get('law_id') or law_dir.name
+                _LAW_ID_CACHE[law_name] = law_id
+                return law_id
 
-    # frontmatter から egov_law_id を取得
-    doc = read_markdown_file(law_md)
-    if doc is None:
-        _LAW_ID_CACHE[law_name] = None
-        return None
-
-    law_id = doc.metadata.get('egov_law_id')
-    _LAW_ID_CACHE[law_name] = law_id
-    return law_id
+    _LAW_ID_CACHE[law_name] = None
+    return None
 
 
 def clear_law_id_cache() -> None:
@@ -318,9 +350,8 @@ def law_exists_in_vault(law_name: str, vault_root: Optional[Path] = None) -> boo
     """
     法令が Vault に存在するかどうかを判定
 
-    キャッシュを活用した2段階チェック:
-    1. キャッシュで法令ディレクトリの存在を確認（O(1)）
-    2. 本文ディレクトリの存在を確認（条文が存在することを保証）
+    移行後の構造: Vault/laws/<law_id>/本文/
+    法令名から law_id を解決し、本文ディレクトリの存在を確認。
 
     Args:
         law_name: 法令名（例: '弁護士法'）
@@ -336,17 +367,13 @@ def law_exists_in_vault(law_name: str, vault_root: Optional[Path] = None) -> boo
     if root is None:
         return False
 
-    # 1. キャッシュでクイックチェック（存在しない場合は即座に False）
-    vault_laws = get_vault_law_dirs(root)
-    if law_name not in vault_laws:
-        # CROSS_LINKABLE_LAWS のエイリアスもチェック
-        resolved_name = CROSS_LINKABLE_LAWS.get(law_name)
-        if resolved_name is None or resolved_name not in vault_laws:
-            return False
-        law_name = resolved_name
+    # 1. law_name から law_id を解決
+    law_id = resolve_law_id_from_vault(law_name, root)
+    if not law_id:
+        return False
 
     # 2. 本文ディレクトリが存在するかチェック（条文の存在を保証）
-    honbun_dir = root / "laws" / law_name / "本文"
+    honbun_dir = root / "laws" / law_id / "本文"
     return honbun_dir.exists()
 
 
@@ -1432,14 +1459,10 @@ class EdgeExtractor:
                 target_filename = f"第{article_num}条.md"
                 target_key = article_num
 
-            # クロスリンク先が見つかった場合はそちらを使用
-            target_law_folder = cross_link_target if cross_link_target else law_name
-            link_path = f"laws/{target_law_folder}/本文/{target_filename}"
-
             # =====================================================================
-            # エッジ生成
+            # エッジ生成 + パス解決
             # =====================================================================
-            # target の law_id を解決
+            # target の law_id を解決（パスとエッジ両方で使用）
             if cross_link_target:
                 # クロスリンク: target law の law_id を Vault から解決
                 target_law_id = resolve_law_id_from_vault(
@@ -1448,13 +1471,19 @@ class EdgeExtractor:
                 )
                 if target_law_id:
                     target_node_id = f"JPLAW:{target_law_id}#main#{target_key}"
+                    path_law_id = target_law_id
                 else:
                     # law_id が解決できない場合はエッジを生成しない（安全側）
-                    # ただしWikiLinkは生成する（Vaultには存在するので）
                     target_node_id = None
+                    # パスはlaw_nameにフォールバック（理想的ではないが互換性のため）
+                    path_law_id = cross_link_target
             else:
                 # 自法令への参照
                 target_node_id = f"JPLAW:{source_law_id}#main#{target_key}"
+                path_law_id = source_law_id
+
+            # WikiLinkパスを生成（law_idベース）
+            link_path = f"laws/{path_law_id}/本文/{target_filename}"
 
             # エッジ追加（自己参照は除外）
             if target_node_id and target_node_id != source_node_id:
@@ -1493,12 +1522,13 @@ class EdgeExtractor:
         Returns:
             WikiLinks に変換されたテキスト
         """
-        # 互換性維持: law_id と source_node_id がない場合は空文字列を渡す
-        # この場合エッジは生成されないが、置換結果は同一
+        # law_name から law_id を解決（パス生成に必要）
+        source_law_id = resolve_law_id_from_vault(law_name, self.vault_root) or ""
+
         replaced_text, _ = self.replace_refs_with_edges(
             text=text,
             law_name=law_name,
-            source_law_id="",
+            source_law_id=source_law_id,
             source_node_id="",
             is_amendment_fragment=is_amendment_fragment
         )

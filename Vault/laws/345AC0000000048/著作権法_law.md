@@ -1,21 +1,21 @@
 ---
+aliases:
+- 著作権法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 345AC0000000048
 id: JPLAW:345AC0000000048
+law_id: 345AC0000000048
 law_no: 昭和四十五年法律第四十八号
 links:
   egov: https://laws.e-gov.go.jp/law/345AC0000000048
+official_title: 著作権法
 promulgation_date: '19700506'
 tags:
 - 著作権法
-tier: 0
+tier: 2
 title: 著作権法
-law_id: 345AC0000000048
-official_title: 著作権法
-aliases:
-- 著作権法
 ---
 
 # 著作権法

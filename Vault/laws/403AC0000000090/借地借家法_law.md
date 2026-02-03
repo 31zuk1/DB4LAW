@@ -1,21 +1,21 @@
 ---
+aliases:
+- 借地借家法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 403AC0000000090
 id: JPLAW:403AC0000000090
+law_id: 403AC0000000090
 law_no: 平成三年法律第九十号
 links:
   egov: https://laws.e-gov.go.jp/law/403AC0000000090
+official_title: 借地借家法
 promulgation_date: '19911004'
 tags:
 - 借地借家法
-tier: 0
+tier: 2
 title: 借地借家法
-law_id: 403AC0000000090
-official_title: 借地借家法
-aliases:
-- 借地借家法
 ---
 
 # 借地借家法

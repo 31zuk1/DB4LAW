@@ -1,21 +1,21 @@
 ---
+aliases:
+- 特許法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 334AC0000000121
 id: JPLAW:334AC0000000121
+law_id: 334AC0000000121
 law_no: 昭和三十四年法律第百二十一号
 links:
   egov: https://laws.e-gov.go.jp/law/334AC0000000121
+official_title: 特許法
 promulgation_date: '19590413'
 tags:
 - 特許法
-tier: 0
+tier: 2
 title: 特許法
-law_id: 334AC0000000121
-official_title: 特許法
-aliases:
-- 特許法
 ---
 
 # 特許法

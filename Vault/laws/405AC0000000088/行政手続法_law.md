@@ -1,21 +1,21 @@
 ---
+aliases:
+- 行政手続法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 405AC0000000088
 id: JPLAW:405AC0000000088
+law_id: 405AC0000000088
 law_no: 平成五年法律第八十八号
 links:
   egov: https://laws.e-gov.go.jp/law/405AC0000000088
+official_title: 行政手続法
 promulgation_date: '19931112'
 tags:
 - 行政手続法
-tier: 0
+tier: 2
 title: 行政手続法
-law_id: 405AC0000000088
-official_title: 行政手続法
-aliases:
-- 行政手続法
 ---
 
 # 行政手続法

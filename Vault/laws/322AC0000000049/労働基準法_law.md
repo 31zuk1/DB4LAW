@@ -1,21 +1,21 @@
 ---
+aliases:
+- 労働基準法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 322AC0000000049
 id: JPLAW:322AC0000000049
+law_id: 322AC0000000049
 law_no: 昭和二十二年法律第四十九号
 links:
   egov: https://laws.e-gov.go.jp/law/322AC0000000049
+official_title: 労働基準法
 promulgation_date: '19470407'
 tags:
 - 労働基準法
-tier: 0
+tier: 2
 title: 労働基準法
-law_id: 322AC0000000049
-official_title: 労働基準法
-aliases:
-- 労働基準法
 ---
 
 # 労働基準法
