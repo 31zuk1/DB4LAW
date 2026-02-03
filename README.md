@@ -1,172 +1,135 @@
 # DB4LAW
 
-日本の法令をObsidian Vault形式のナレッジグラフに変換するツール。
+**日本法令ナレッジグラフ生成ツール**
 
-e-Gov法令APIから法令XMLを取得し、条文単位のMarkdownノードに分解、条文間の参照関係をObsidian WikiLinksとして自動抽出する。
+[![CI](https://github.com/your-repo/db4law/actions/workflows/ci.yml/badge.svg)](https://github.com/your-repo/db4law/actions)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 概要
+e-Gov法令APIから取得した法令XMLを、条文単位のMarkdownノードに分解し、条文間の参照関係をObsidian WikiLinksとして自動抽出するツール。
+
+## 特徴
+
+- **条文単位のノード化**: 各条文を独立したMarkdownファイルとして管理
+- **参照の自動リンク化**: 「第十九条」→ `[[laws/.../本文/第19条.md|第十九条]]`
+- **法令間クロスリンク**: 処理済み法令間の相互参照を自動検出
+- **Obsidian連携**: Breadcrumbs/Dataview対応メタデータを自動付与
+- **参照グラフ出力**: edges.jsonlによる機械可読な参照関係
+
+## クイックスタート
+
+```bash
+# セットアップ
+pip install -e .
+
+# 法令を処理
+python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges
+
+# WikiLink整合性チェック
+python scripts/qa/check_wikilinks.py --vault ./Vault
+```
+
+## 処理済み法令
+
+| 法令名 | 法令ID | 本則 | 附則 |
+|--------|--------|------|------|
+| 日本国憲法 | 321CONSTITUTION | 103 | - |
+| 刑法 | 140AC0000000045 | 301 | 68 |
+| 民法 | 129AC0000000089 | 1,167 | 221 |
+| 刑事訴訟法 | 323AC0000000131 | 715 | 121 |
+| 民事訴訟法 | 408AC0000000109 | 453 | 92 |
+| 会社法 | 417AC0000000086 | 1,078 | 31 |
+| 行政事件訴訟法 | 337AC0000000139 | 51 | 36 |
+| 労働基準法 | 322AC0000000049 | 136 | 57 |
+| 商法 | 132AC0000000048 | 851 | 65 |
+| 破産法 | 416AC0000000075 | 280 | 27 |
+| 不動産登記法 | 416AC0000000123 | 164 | 21 |
+| 行政手続法 | 405AC0000000088 | 46 | 15 |
+| 著作権法 | 345AC0000000048 | 124 | 65 |
+| 特許法 | 334AC0000000121 | 204 | 70 |
+| 借地借家法 | 403AC0000000090 | 54 | 9 |
+| 消費者契約法 | 412AC0000000061 | 51 | 22 |
+| 所有者不明土地法 | 430AC0000000049 | 63 | 14 |
+| 国籍法 | 325AC0000000147 | 20 | 10 |
+
+## 出力構造
 
 ```
-Vault/laws/刑法/
-├── 刑法.md                    # 親ノード（全条文へのリンク）
+Vault/laws/{law_id}/
+├── {法令名}_law.md           # 親ノード（構造リンク）
 ├── 本文/                      # 本則条文
 │   ├── 第1条.md
 │   ├── 第199条.md
 │   └── ...
 ├── 章/                        # 章ノード
 │   ├── 第1章.md
+│   ├── 第6章の2.md           # 枝番号章
 │   └── ...
 ├── 節/                        # 節ノード（存在する法令のみ）
-│   └── ...
+│   └── 第1章第1節.md
 ├── 附則/
-│   └── 改正法/
-│       ├── R5_L28/           # 令和5年法律第28号
-│       │   ├── 附則第1条.md
-│       │   └── ...
-│       └── H7_L91/
-└── edges.jsonl               # 参照グラフ（JSONL形式）
+│   ├── 制定時附則.md         # 直接附則
+│   └── 令和五年.../          # 改正法断片
+│       ├── ..._第1条.md
+│       └── ...
+└── edges.jsonl               # 参照グラフ
 ```
 
-## 処理済み法令
+## 参照解決
 
-| 法令名 | 本則 | 附則 | 参照エッジ |
-|--------|------|------|-----------|
-| 刑法 | 301 | 68 | 713 |
-| 民法 | 1,167 | 221 | 1,982 |
-| 日本国憲法 | 103 | - | 1 |
-| 刑事訴訟法 | 715 | 121 | 2,766 |
-| 民事訴訟法 | 453 | 92 | 1,019 |
-| 会社法 | 1,078 | 31 | 10,000+ |
-| 行政事件訴訟法 | 51 | 36 | 500+ |
-| 所有者不明土地法 | 63 | 14 | 415 |
+### 優先順位
 
-## 主な機能
+1. **法令番号付き参照**: `弁護士法（昭和二十四年法律第二百五号）第三十条` → 弁護士法へ
+2. **本法系参照**: `本法第十条`, `この法律第五条` → 自法令へ
+3. **明示法令名**: `刑法第百九十九条` → 指定法令へ
+4. **列挙スコープ**: `民法第749条、第771条` → スコープ継続
 
-### 条文間参照の自動リンク化
+### 変換例
 
 ```markdown
-# 変換前
+# 入力
 第十九条の規定により...
 
-# 変換後
-[[laws/刑法/本文/第19条.md|第十九条]]の規定により...
+# 出力
+[[laws/140AC0000000045/本文/第19条.md|第十九条]]の規定により...
 ```
 
-### 参照解決の優先順位
+### クロスリンク対象法令
 
-参照は以下の優先順位で解決される：
+以下の法令間で相互参照を自動リンク化:
 
-1. **法令番号付き参照** - `弁護士法（昭和二十四年法律第二百五号）第三十条` → 弁護士法へ
-2. **本法系参照** - `本法第十条`, `この法律第五条`, `当該法第三条` → 自法令へ
-3. **明示法令名** - `刑法第百九十九条`, `会社法第一条` → 指定法令へ
-4. **同法スコープ** - `民法第749条、第771条` → 列挙はスコープ継続
+| 法令 | エイリアス |
+|------|-----------|
+| 刑法 | 旧刑法, 新刑法, 改正前の刑法, 改正後の刑法 |
+| 民法 | 旧民法, 新民法, 改正前の民法, 改正後の民法 |
+| 日本国憲法 | 憲法 |
+| 刑事訴訟法 | 新刑事訴訟法, 旧刑事訴訟法 |
+| 民事訴訟法 | 新民事訴訟法, 旧民事訴訟法 |
+| 会社法 | 新会社法, 旧会社法 |
+| 行政事件訴訟法 | 新行政事件訴訟法, 旧行政事件訴訟法 |
+| 所有者不明土地法 | - |
 
-### 本法/この法律/当該法 参照
+## ノードメタデータ
 
-自己参照パターンを正しく解釈：
-
-```markdown
-# 本法参照
-本法第十条の規定 → [[laws/テスト法/本文/第10条.md|第十条]]
-
-# 列挙対応
-本法第一条、第二条、第三条 → すべて自法令にリンク
-```
-
-### クロスリンク（法令間参照）
-
-処理済み法令間の参照を自動でクロスリンク化：
-
-```markdown
-# 刑法附則内の参照
-刑事訴訟法[[laws/刑事訴訟法/本文/第344条.md|第三百四十四条]]に一項を加える...
-```
-
-- 長い法令名を優先マッチ（「刑事訴訟法」を「刑法」より先に検出）
-- 文末の法令名を直近参照として優先（同一文内に複数法令がある場合）
-
-### Vault実在ベースリンク
-
-EXTERNAL_LAW_PATTERNSに含まれる法令でも、Vaultに存在すればリンク化：
-
-```markdown
-# 会社法がVaultに存在する場合
-会社法第一条 → [[laws/会社法/本文/第1条.md|第一条]]
-
-# 少年法がVaultに存在しない場合
-少年法第一条 → 少年法第一条（リンク化しない）
-```
-
-### 親法スコープ判定
-
-「民法第749条、第771条及び第788条」のような列挙パターンを正しく検出：
-
-- 同一文内で法律名（民法/新民法/旧民法等）が出現した後の「第N条」をリンク化
-- 照応語（同法、同条、その、当該等）でスコープをリセット
-- 段落区切りでスコープをリセット
-
-### 外部法参照の除外
-
-60以上の外部法パターンを認識し、誤リンクを防止：
-
-```python
-# tier2.py EXTERNAL_LAW_PATTERNS
-'民事執行法', '土地収用法', '公証人法', '少年法', ...
-```
-
-クロスリンク対象法令は `CROSS_LINKABLE_LAWS`（エイリアス辞書）で管理：
-
-```python
-# tier2.py CROSS_LINKABLE_LAWS
-'刑法': '刑法',
-'旧刑法': '刑法',      # エイリアス
-'憲法': '日本国憲法',  # 正規化
-```
-
-### 改正法断片モデル
-
-e-Gov統合条文では改正法が親法の附則に断片として分散格納される。
-これを識別し、適切なメタデータを付与：
+### Frontmatter構造
 
 ```yaml
-suppl_kind: amendment
-amendment_law_id: R5_L28
-amend_law:
-  num: 令和五年五月一七日法律第二八号
-  normalized_id: R5_L28
-  scope: partial
-  parent_law_id: 140AC0000000045
-  parent_law_name: 刑法
-```
-
-改正法断片内の裸の「第N条」は改正法自身を指すためリンク化しない（方式B）。
-
-### 構造ノード（章・節）
-
-章・節の構造ノードを自動生成：
-
-```yaml
-# 章/第2章の2.md
 ---
-type: chapter
-chapter_num: 22
-chapter_title: 第二章の二　社債管理補助者
-article_ids: [...]
----
-```
-
-### Obsidian Breadcrumbs / Dataview 対応
-
-階層ナビゲーションとデータ検索用のメタデータを自動付与：
-
-```yaml
-type: article                      # ノード種別（フィルタリング用）
-parent: '[[laws/刑法/章/第26章]]'  # 直上階層へのリンク
+id: JPLAW:140AC0000000045#main#199
+type: article
+parent: '[[laws/140AC0000000045/刑法_law.md|刑法]]'
+law_id: 140AC0000000045
+law_name: 刑法
+part: main
+article_num: '199'
+heading: （殺人）
+chapter_num: 26
 tags:
-  - 刑法                           # 法令名タグ
+  - 刑法
+---
 ```
 
-**ノード種別 (`type`):**
+### ノード種別 (`type`)
 
 | 値 | 対象 |
 |----|------|
@@ -177,147 +140,55 @@ tags:
 | `supplement` | 附則 |
 | `amendment_fragment` | 改正法断片 |
 
-**Dataview クエリ例:**
+### Dataviewクエリ例
 
 ```dataview
 TABLE article_num, heading
-FROM "laws/刑法"
+FROM "laws/140AC0000000045"
 WHERE type = "article"
 SORT article_num ASC
 ```
 
-### エッジスキーマ
+## コマンドリファレンス
 
-参照グラフは `edges.jsonl` に出力：
+### build-tier1
 
-```json
-{"source": "JPLAW:...", "target": "JPLAW:...", "type": "refs", "relation": "internal"}
-{"source": "JPLAW:...#chapter#1", "target": "JPLAW:...#main#1", "type": "contains", "relation": "chapter_contains_article"}
-```
-
-### 削除条文の範囲ノード
-
-削除された条文範囲は範囲ノードとして管理：
-
-```
-第38:84条.md  # 旧第38条〜第84条（削除）
-第71条への参照 → 第38:84条.md にリダイレクト
-```
-
-## セットアップ
+法令の取得・分解・参照抽出を実行。
 
 ```bash
-# Python 3.11以上
-pip install -r requirements.txt
-# または
-pip install -e .
+python -m legalkg build-tier1 \
+  --vault ./Vault \
+  --targets targets.yaml \
+  --extract-edges \
+  --generate-structure-nodes
 ```
 
-## 使い方
+| オプション | 説明 |
+|-----------|------|
+| `--vault` | Vaultルートディレクトリ（必須） |
+| `--targets` | 対象法令リストYAML（必須） |
+| `--extract-edges` | 参照グラフを出力 |
+| `--generate-structure-nodes` | 章・節ノードを生成 |
+| `--edge-schema` | v2（標準）または v1（互換） |
 
-### 1. 対象法令の指定
+### マイグレーションスクリプト
 
-`targets.yaml` を編集：
+| スクリプト | 用途 |
+|-----------|------|
+| `restructure_tree_links.py` | 木構造リンク再構築（Graph毛玉化防止） |
+| `fix_chapter_filenames.py` | 章ファイル名の枝番号修正 |
+| `normalize_frontmatter.py` | Breadcrumbs/Dataview用メタデータ追加 |
+| `fix_amendment_fragment_links.py` | 改正法断片リンク修正 |
 
-```yaml
-targets:
-  - 321CONSTITUTION        # 日本国憲法
-  - 140AC0000000045       # 刑法
-  - 129AC0000000089       # 民法
-```
-
-### 2. 条文抽出と参照リンク化
+### QAスクリプト
 
 ```bash
-python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges
+# WikiLink整合性チェック
+python scripts/qa/check_wikilinks.py --vault ./Vault
+
+# Vault監査
+python scripts/qa/audit_vault.py --vault ./Vault --targets targets.yaml
 ```
-
-### 3. 日本語パスへ移行
-
-```bash
-python scripts/migration/migrate_to_japanese.py --law 刑法 --dry-run
-python scripts/migration/migrate_to_japanese.py --law 刑法 --apply
-```
-
-### 4. 親ファイルにリンク追加
-
-```bash
-python scripts/migration/add_parent_links.py --law 刑法
-```
-
-### 5. Breadcrumbs/Dataview用メタデータ追加
-
-```bash
-# dry-run（変更確認）
-python scripts/migration/normalize_frontmatter.py --dry-run --law 刑法
-
-# 適用
-python scripts/migration/normalize_frontmatter.py --apply --law 刑法
-```
-
-### 6. WikiLink整合性チェック
-
-```bash
-python scripts/qa/check_wikilinks.py --vault ./Vault --only-prefix laws/
-```
-
-空リンク（参照先が存在しないWikiLink）を検出。削除条文など仕様上許容するパターンは `link_check_ignore.txt` で除外。
-
-### 7. Vault監査
-
-```bash
-# レポート生成のみ
-python scripts/qa/audit_vault.py --vault ./Vault --targets targets.yaml --report-only
-
-# 安全な自動修正を適用
-python scripts/qa/audit_vault.py --vault ./Vault --targets targets.yaml --fix-safe
-```
-
-監査項目：
-- Provenance検証（manifest.jsonとの整合性）
-- メタデータスキーマ検証
-- 範囲ノード（削除条文）の整合性
-- WikiLink整合性
-- 既知の回帰パターン検出（スコープ漏れ等）
-
-## CI/CD
-
-GitHub Actions による自動テスト・監査：
-
-```yaml
-# .github/workflows/ci.yml
-jobs:
-  test:    # pytest 実行
-  audit:   # Vault監査・WikiLinkチェック
-```
-
-### CI が検出するもの
-
-| チェック | 失敗条件 |
-|----------|----------|
-| pytest | テスト失敗 |
-| Critical issues | メタデータ欠損等の重大問題 |
-| Scope leak | 附則列挙スコープ漏れ |
-| Broken links | 3件を超える空リンク |
-
-## Provenance（来歴追跡）
-
-Vaultのビルド情報を `Vault/.db4law/manifest.json` に記録：
-
-```json
-{
-  "generator_repo_commit": "abc123...",
-  "build_timestamp": "2026-01-29T03:14:58Z",
-  "targets_hash": "sha256:...",
-  "edge_schema": "v2",
-  "extract_edges": true
-}
-```
-
-これにより：
-- Vaultが特定のコードバージョンで生成されたことを検証
-- 再生成が必要かどうかを判定
-- 監査証跡を維持
 
 ## アーキテクチャ
 
@@ -325,9 +196,9 @@ Vaultのビルド情報を `Vault/.db4law/manifest.json` に記録：
 
 | Tier | 処理内容 | 出力 |
 |------|---------|------|
-| Tier 0 | e-Gov APIから法令一覧取得 | `{法令名}.md` |
-| Tier 1 | XML解析、条文・構造ノード分解 | `本文/第N条.md`, `章/`, `節/`, `附則/...` |
-| Tier 2 | 参照抽出、WikiLink化 | `edges.jsonl` |
+| Tier 0 | e-Gov APIから法令一覧取得 | 法令メタデータ |
+| Tier 1 | XML解析、条文・構造ノード分解 | Markdownファイル |
+| Tier 2 | 参照抽出、WikiLink化 | edges.jsonl |
 
 ### ノードID体系
 
@@ -336,30 +207,14 @@ JPLAW:{LAW_ID}                    # 法令
 JPLAW:{LAW_ID}#main#199           # 本則条文
 JPLAW:{LAW_ID}#suppl#1            # 附則条文
 JPLAW:{LAW_ID}#chapter#1          # 章
-JPLAW:{LAW_ID}#section#1          # 節
+JPLAW:{LAW_ID}#chapter#1#section#1 # 節
 ```
 
-### 条文ファイル形式
+### エッジスキーマ（v2）
 
-```yaml
----
-id: JPLAW:140AC0000000045#main#199
-type: article
-parent: '[[laws/刑法/章/第26章]]'
-law_id: 140AC0000000045
-law_name: 刑法
-part: main
-article_num: '199'
-heading: （殺人）
-chapter_num: 26
-chapter_title: 第二十六章　殺人の罪
-tags:
-  - 刑法
----
-
-# 第百九十九条 （殺人）
-
-人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。
+```json
+{"source": "JPLAW:...", "target": "JPLAW:...", "type": "refs", "relation": "internal"}
+{"source": "JPLAW:...#chapter#1", "target": "JPLAW:...#main#1", "type": "contains"}
 ```
 
 ## プロジェクト構成
@@ -367,55 +222,62 @@ tags:
 ```
 DB4LAW/
 ├── src/legalkg/
-│   ├── cli.py                # Typer CLI
-│   ├── client/               # e-Gov/NDL APIクライアント
+│   ├── cli.py                    # Typer CLI
 │   ├── core/
-│   │   ├── tier0.py          # 法令一覧取得
-│   │   ├── tier1.py          # 条文・構造ノード抽出
-│   │   ├── tier2.py          # 参照抽出・リンク化
-│   │   ├── edge_schema.py    # Edge schema v1/v2
-│   │   └── provenance.py     # ビルド来歴追跡
+│   │   ├── tier0.py              # 法令一覧取得
+│   │   ├── tier1.py              # 条文・構造ノード抽出
+│   │   ├── tier2.py              # 参照抽出・リンク化
+│   │   └── edge_schema.py        # Edge schema
 │   └── utils/
 │       ├── article_formatter.py  # 条文番号変換
 │       ├── markdown.py           # YAML frontmatter処理
-│       ├── numerals.py           # 漢数字変換
 │       └── patterns.py           # WikiLink正規表現
 ├── scripts/
-│   ├── migration/
-│   │   ├── migrate_to_japanese.py    # 日本語パス移行
-│   │   ├── fix_id_collision.py       # 外部法参照修正
-│   │   ├── add_parent_links.py       # 親ファイルリンク追加
-│   │   ├── unlink_amendment_refs.py  # 改正法断片のリンク解除
-│   │   ├── normalize_frontmatter.py  # Breadcrumbs/Dataview用メタデータ追加
-│   │   ├── fix_frontmatter.py        # YAML frontmatter修復
-│   │   └── _artifacts/               # 生成CSV/JSONL
-│   └── qa/
-│       ├── audit_vault.py            # Vault監査スクリプト
-│       ├── check_wikilinks.py        # WikiLink整合性チェック
-│       └── link_check_ignore.txt     # 除外パターン
-├── .github/workflows/
-│   └── ci.yml                # CI/CD設定
-├── tests/                    # pytest テスト（178件）
-├── Vault/
-│   ├── laws/                 # 出力Vault
-│   ├── .db4law/manifest.json # ビルド来歴
-│   └── reports/              # 監査レポート
-├── targets.yaml              # 対象法令リスト
-├── requirements.txt          # 依存関係（開発用）
-└── requirements-ci.txt       # 依存関係（CI用）
+│   ├── migration/                # マイグレーションスクリプト
+│   └── qa/                       # 品質保証スクリプト
+├── tests/                        # pytest（174件）
+├── Vault/                        # 出力Vault
+├── targets.yaml                  # 対象法令リスト
+└── CLAUDE.md                     # Claude Code用ガイド
 ```
 
-## テスト
+## 開発
+
+### セットアップ
 
 ```bash
-# 全テスト実行（178件）
-pytest
+# 開発用インストール
+pip install -e .
 
-# 特定テストファイル
-pytest tests/test_tier2_vault_based.py -v
-pytest tests/test_tier2_self_law_reference.py -v
-pytest tests/test_tier2_amendment_fragment_bugs.py -v
+# または
+pip install -r requirements.txt
 ```
+
+### テスト
+
+```bash
+# 全テスト実行
+PYTHONPATH=./src pytest
+
+# 特定テスト
+PYTHONPATH=./src pytest tests/test_tier2_vault_based.py -v
+```
+
+### 主要テストファイル
+
+| ファイル | テスト内容 |
+|---------|----------|
+| `test_tier2_self_law_reference.py` | 本法/この法律参照 |
+| `test_tier2_vault_based.py` | Vault実在ベースリンク |
+| `test_tier2_amendment.py` | 改正法断片処理 |
+| `test_tier2_external_law_scope.py` | 外部法令スコープ |
+| `test_tier1_structure_nodes.py` | 構造ノード生成 |
+
+## 制限事項
+
+- **改正法断片**: e-Gov統合条文では改正法が親法附則に分散格納される。改正法自身の条文へのリンクは生成不可（改正法Vaultが存在しないため）
+- **削除条文**: 後の改正で削除された条文への歴史的参照は空リンクとなる（除外パターンで許容）
+- **未施行条文**: 施行日前の改正で追加される条文への参照は空リンクとなる
 
 ## データソース
 
@@ -424,4 +286,9 @@ pytest tests/test_tier2_amendment_fragment_bugs.py -v
 
 ## ライセンス
 
-MIT
+MIT License
+
+## 関連ドキュメント
+
+- [CLAUDE.md](./CLAUDE.md) - Claude Code用開発ガイド
+- [docs/AMENDMENT_VAULT_DESIGN.md](./docs/AMENDMENT_VAULT_DESIGN.md) - 改正法Vault設計
