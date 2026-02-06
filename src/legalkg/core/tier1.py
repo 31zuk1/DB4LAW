@@ -299,6 +299,8 @@ class Tier1Builder:
         self.client = EGovClient()
         self.laws_dir = self.vault_root / "laws"
         self.targets = self._load_targets(targets_path)
+        # Whether current law processing will generate structure nodes (編/章/節).
+        self._structure_nodes_enabled = False
 
     def _load_targets(self, path: Path) -> List[str]:
         if not path.exists():
@@ -405,6 +407,7 @@ class Tier1Builder:
         # v2 では --generate-structure なしでも包含エッジ生成のために集計が必要
         need_aggregator = generate_structure or (extract_edges and edge_schema == EdgeSchema.V2)
         aggregator = StructureAggregator() if need_aggregator else None
+        self._structure_nodes_enabled = bool(aggregator)
 
         # ディレクトリ作成
         honbun_dir = law_dir / "本文"
@@ -907,6 +910,10 @@ class Tier1Builder:
 
         # 附則は常に法令直下
         if part_type == "suppl":
+            return self._make_law_link(law_id, law_name)
+
+        # 構造ノードを生成しない場合は、章/節/編への parent を作らない。
+        if not self._structure_nodes_enabled:
             return self._make_law_link(law_id, law_name)
 
         # コンテキストから編・章・節情報を取得
