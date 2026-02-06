@@ -1,26 +1,35 @@
 ---
+aliases:
+- 行政機関の保有する情報の公開に関する法律
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 411AC0000000042
 id: JPLAW:411AC0000000042
+law_id: 411AC0000000042
 law_no: 平成十一年法律第四十二号
 links:
   egov: https://laws.e-gov.go.jp/law/411AC0000000042
+official_title: 行政機関の保有する情報の公開に関する法律
 promulgation_date: '19990514'
 tags:
 - 行政機関の保有する情報の公開に関する法律
-tier: 0
+tier: 1
 title: 行政機関の保有する情報の公開に関する法律
-law_id: 411AC0000000042
-official_title: 行政機関の保有する情報の公開に関する法律
-aliases:
-- 行政機関の保有する情報の公開に関する法律
 ---
 
 # 行政機関の保有する情報の公開に関する法律
 
-## Metadata
-- Law ID: `411AC0000000042`
-- Law No: 平成十一年法律第四十二号
-- Promulgation Date: 19990514
+## 構造
+
+
+### 章（4章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

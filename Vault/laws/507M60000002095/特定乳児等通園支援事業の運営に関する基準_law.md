@@ -1,26 +1,25 @@
 ---
+aliases:
+- 特定乳児等通園支援事業の運営に関する基準
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 507M60000002095
 id: JPLAW:507M60000002095
+law_id: 507M60000002095
 law_no: 令和七年内閣府令第九十五号
 links:
   egov: https://laws.e-gov.go.jp/law/507M60000002095
+official_title: 特定乳児等通園支援事業の運営に関する基準
 promulgation_date: '20251113'
 tags:
 - 特定乳児等通園支援事業の運営に関する基準
-tier: 0
+tier: 1
 title: 特定乳児等通園支援事業の運営に関する基準
-law_id: 507M60000002095
-official_title: 特定乳児等通園支援事業の運営に関する基準
-aliases:
-- 特定乳児等通園支援事業の運営に関する基準
 ---
 
 # 特定乳児等通園支援事業の運営に関する基準
 
-## Metadata
-- Law ID: `507M60000002095`
-- Law No: 令和七年内閣府令第九十五号
-- Promulgation Date: 20251113
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

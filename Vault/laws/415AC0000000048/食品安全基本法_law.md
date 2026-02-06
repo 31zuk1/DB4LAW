@@ -1,26 +1,40 @@
 ---
+aliases:
+- 食品安全基本法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 415AC0000000048
 id: JPLAW:415AC0000000048
+law_id: 415AC0000000048
 law_no: 平成十五年法律第四十八号
 links:
   egov: https://laws.e-gov.go.jp/law/415AC0000000048
+official_title: 食品安全基本法
 promulgation_date: '20030523'
 tags:
 - 食品安全基本法
-tier: 0
+tier: 1
 title: 食品安全基本法
-law_id: 415AC0000000048
-official_title: 食品安全基本法
-aliases:
-- 食品安全基本法
 ---
 
 # 食品安全基本法
 
-## Metadata
-- Law ID: `415AC0000000048`
-- Law No: 平成十五年法律第四十八号
-- Promulgation Date: 20030523
+## 構造
+
+
+### 章（3章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+
+### 現行附則
+
+- [[附則/平成一八年六月二日法律第五〇号.md|平成一八年六月二日法律第五〇号]]
+
+### 制定時附則（全3条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+- [[附則/制定時附則/第2条.md|第2条]]
+- [[附則/制定時附則/第8条.md|第8条]]

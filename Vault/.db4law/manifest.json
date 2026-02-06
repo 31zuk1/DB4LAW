@@ -1,11 +1,11 @@
 {
-  "generator_repo_commit": "0afc36127bf0ded8f44868f798ca1b82b424f7be",
-  "generator_repo_dirty": true,
-  "build_timestamp": "2026-02-03T00:35:13.714923Z",
-  "targets_hash": "992c6de69bacbd154a280f919b4313db8f9fe9313e1ecf305ce34aa5defba5c8",
+  "generator_repo_commit": "unknown",
+  "generator_repo_dirty": false,
+  "build_timestamp": "2026-02-05T23:11:11.184001Z",
+  "targets_hash": "d066aafa2de36d2ca0600147e4c97b03ae4fde96635dfcdc02fe3bdcde4d834e",
   "targets_path": "targets.yaml",
   "edge_schema": "v2",
-  "extract_edges": true,
-  "generate_structure": false,
+  "extract_edges": false,
+  "generate_structure": true,
   "manifest_schema_version": "1.0"
 }

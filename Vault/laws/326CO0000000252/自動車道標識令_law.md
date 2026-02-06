@@ -1,26 +1,35 @@
 ---
+aliases:
+- 自動車道標識令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 326CO0000000252
 id: JPLAW:326CO0000000252
+law_id: 326CO0000000252
 law_no: 昭和二十六年政令第二百五十二号
 links:
   egov: https://laws.e-gov.go.jp/law/326CO0000000252
+official_title: 自動車道標識令
 promulgation_date: '19510630'
 tags:
 - 自動車道標識令
-tier: 0
+tier: 1
 title: 自動車道標識令
-law_id: 326CO0000000252
-official_title: 自動車道標識令
-aliases:
-- 自動車道標識令
 ---
 
 # 自動車道標識令
 
-## Metadata
-- Law ID: `326CO0000000252`
-- Law No: 昭和二十六年政令第二百五十二号
-- Promulgation Date: 19510630
+## 本則（5条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+
+### 現行附則
+
+- [[附則/昭和四〇年九月二二日政令第三〇九号.md|昭和四〇年九月二二日政令第三〇九号]]
+- [[附則/平成七年一月二〇日政令第七号.md|平成七年一月二〇日政令第七号]]
+- [[附則/制定時附則.md|制定時附則]]

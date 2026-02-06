@@ -1,26 +1,35 @@
 ---
+aliases:
+- 人事院規則九―九七（超過勤務手当）
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 422RJNJ09097001
 id: JPLAW:422RJNJ09097001
+law_id: 422RJNJ09097001
 law_no: 平成二十二年人事院規則九―九七―一
 links:
   egov: https://laws.e-gov.go.jp/law/422RJNJ09097001
+official_title: 人事院規則九―九七（超過勤務手当）
 promulgation_date: '20100201'
 tags:
 - 人事院規則九―九七（超過勤務手当）
-tier: 0
+tier: 1
 title: 人事院規則九―九七（超過勤務手当）
-law_id: 422RJNJ09097001
-official_title: 人事院規則九―九七（超過勤務手当）
-aliases:
-- 人事院規則九―九七（超過勤務手当）
 ---
 
 # 人事院規則九―九七（超過勤務手当）
 
-## Metadata
-- Law ID: `422RJNJ09097001`
-- Law No: 平成二十二年人事院規則九―九七―一
-- Promulgation Date: 20100201
+## 本則（3条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/平成二三年二月一日人事院規則九_九七_二.md|平成二三年二月一日人事院規則九_九七_二]]
+
+### 制定時附則（全1条）
+
+- [[附則/制定時附則/第1条.md|第1条]]

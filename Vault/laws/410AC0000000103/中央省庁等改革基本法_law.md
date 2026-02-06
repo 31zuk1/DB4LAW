@@ -1,26 +1,38 @@
 ---
+aliases:
+- 中央省庁等改革基本法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 410AC0000000103
 id: JPLAW:410AC0000000103
+law_id: 410AC0000000103
 law_no: 平成十年法律第百三号
 links:
   egov: https://laws.e-gov.go.jp/law/410AC0000000103
+official_title: 中央省庁等改革基本法
 promulgation_date: '19980612'
 tags:
 - 中央省庁等改革基本法
-tier: 0
+tier: 1
 title: 中央省庁等改革基本法
-law_id: 410AC0000000103
-official_title: 中央省庁等改革基本法
-aliases:
-- 中央省庁等改革基本法
 ---
 
 # 中央省庁等改革基本法
 
-## Metadata
-- Law ID: `410AC0000000103`
-- Law No: 平成十年法律第百三号
-- Promulgation Date: 19980612
+## 構造
+
+
+### 章（6章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+
+### 現行附則
+
+- [[附則/平成一一年七月一六日法律第八八号.md|平成一一年七月一六日法律第八八号]]
+- [[附則/制定時附則.md|制定時附則]]

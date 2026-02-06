@@ -1,26 +1,30 @@
 ---
+aliases:
+- 刑事訴訟法第百九十四条に基く懲戒処分に関する法律
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 329AC0000000064
 id: JPLAW:329AC0000000064
+law_id: 329AC0000000064
 law_no: 昭和二十九年法律第六十四号
 links:
   egov: https://laws.e-gov.go.jp/law/329AC0000000064
+official_title: 刑事訴訟法第百九十四条に基く懲戒処分に関する法律
 promulgation_date: '19540406'
 tags:
 - 刑事訴訟法第百九十四条に基く懲戒処分に関する法律
-tier: 0
+tier: 1
 title: 刑事訴訟法第百九十四条に基く懲戒処分に関する法律
-law_id: 329AC0000000064
-official_title: 刑事訴訟法第百九十四条に基く懲戒処分に関する法律
-aliases:
-- 刑事訴訟法第百九十四条に基く懲戒処分に関する法律
 ---
 
 # 刑事訴訟法第百九十四条に基く懲戒処分に関する法律
 
-## Metadata
-- Law ID: `329AC0000000064`
-- Law No: 昭和二十九年法律第六十四号
-- Promulgation Date: 19540406
+## 本則（2条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

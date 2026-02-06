@@ -1,26 +1,39 @@
 ---
+aliases:
+- 通関業法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 342AC0000000122
 id: JPLAW:342AC0000000122
+law_id: 342AC0000000122
 law_no: 昭和四十二年法律第百二十二号
 links:
   egov: https://laws.e-gov.go.jp/law/342AC0000000122
+official_title: 通関業法
 promulgation_date: '19670801'
 tags:
 - 通関業法
-tier: 0
+tier: 1
 title: 通関業法
-law_id: 342AC0000000122
-official_title: 通関業法
-aliases:
-- 通関業法
 ---
 
 # 通関業法
 
-## Metadata
-- Law ID: `342AC0000000122`
-- Law No: 昭和四十二年法律第百二十二号
-- Promulgation Date: 19670801
+## 構造
+
+
+### 章（6章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+
+### 現行附則
+
+- [[附則/昭和五九年五月一日法律第二三号.md|昭和五九年五月一日法律第二三号]]
+- [[附則/令和四年六月一七日法律第六八号.md|令和四年六月一七日法律第六八号]]
+- [[附則/制定時附則.md|制定時附則]]

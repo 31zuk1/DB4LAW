@@ -1,26 +1,33 @@
 ---
+aliases:
+- 罰金等臨時措置法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 323AC0000000251
 id: JPLAW:323AC0000000251
+law_id: 323AC0000000251
 law_no: 昭和二十三年法律第二百五十一号
 links:
   egov: https://laws.e-gov.go.jp/law/323AC0000000251
+official_title: 罰金等臨時措置法
 promulgation_date: '19481218'
 tags:
 - 罰金等臨時措置法
-tier: 0
+tier: 1
 title: 罰金等臨時措置法
-law_id: 323AC0000000251
-official_title: 罰金等臨時措置法
-aliases:
-- 罰金等臨時措置法
 ---
 
 # 罰金等臨時措置法
 
-## Metadata
-- Law ID: `323AC0000000251`
-- Law No: 昭和二十三年法律第二百五十一号
-- Promulgation Date: 19481218
+## 本則（3条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/平成三年四月一七日法律第三一号.md|平成三年四月一七日法律第三一号]]
+- [[附則/昭和四七年六月一二日法律第六一号.md|昭和四七年六月一二日法律第六一号]]
+- [[附則/制定時附則.md|制定時附則]]

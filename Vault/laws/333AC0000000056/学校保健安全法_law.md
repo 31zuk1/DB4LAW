@@ -1,26 +1,37 @@
 ---
+aliases:
+- 学校保健安全法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 333AC0000000056
 id: JPLAW:333AC0000000056
+law_id: 333AC0000000056
 law_no: 昭和三十三年法律第五十六号
 links:
   egov: https://laws.e-gov.go.jp/law/333AC0000000056
+official_title: 学校保健安全法
 promulgation_date: '19580410'
 tags:
 - 学校保健安全法
-tier: 0
+tier: 1
 title: 学校保健安全法
-law_id: 333AC0000000056
-official_title: 学校保健安全法
-aliases:
-- 学校保健安全法
 ---
 
 # 学校保健安全法
 
-## Metadata
-- Law ID: `333AC0000000056`
-- Law No: 昭和三十三年法律第五十六号
-- Promulgation Date: 19580410
+## 構造
+
+
+### 章（4章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+
+### 現行附則
+
+- [[附則/昭和五三年三月三一日法律第一四号.md|昭和五三年三月三一日法律第一四号]]
+- [[附則/平成一七年三月三一日法律第二三号.md|平成一七年三月三一日法律第二三号]]
+- [[附則/制定時附則.md|制定時附則]]

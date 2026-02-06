@@ -1,26 +1,22 @@
 ---
+aliases:
+- 明治三十一年勅令第九十号（閏年ニ関スル件）
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 131IO0000000090
 id: JPLAW:131IO0000000090
+law_id: 131IO0000000090
 law_no: 明治三十一年勅令第九十号
 links:
   egov: https://laws.e-gov.go.jp/law/131IO0000000090
+official_title: 明治三十一年勅令第九十号（閏年ニ関スル件）
 promulgation_date: '18980511'
 tags:
 - 明治三十一年勅令第九十号（閏年ニ関スル件）
-tier: 0
+tier: 2
 title: 明治三十一年勅令第九十号（閏年ニ関スル件）
-law_id: 131IO0000000090
-official_title: 明治三十一年勅令第九十号（閏年ニ関スル件）
-aliases:
-- 明治三十一年勅令第九十号（閏年ニ関スル件）
 ---
 
 # 明治三十一年勅令第九十号（閏年ニ関スル件）
 
-## Metadata
-- Law ID: `131IO0000000090`
-- Law No: 明治三十一年勅令第九十号
-- Promulgation Date: 18980511

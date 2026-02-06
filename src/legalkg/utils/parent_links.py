@@ -4,52 +4,64 @@ Utility functions for generating parent law file links.
 
 import re
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Tuple, Optional
+from .markdown import read_markdown_file
 
 
-def extract_article_sort_key(filename: str) -> Tuple[int, int, int]:
+def extract_article_sort_key(filename: str) -> Tuple[int, ...]:
     """
     Extract sort key from article filename.
 
-    Examples:
-        第1条.md -> (1, 0, 0)
-        第1条の2.md -> (1, 2, 0)
-        第100条.md -> (100, 0, 0)
-        第638:640条.md -> (638, 0, 640)  # Range format
-        init_0_第1条.md -> (1, 0, 0)  # With prefix
+    Supports complex article numbering patterns:
+        第1条.md -> (1, 0, 0, 0)
+        第1条の2.md -> (1, 2, 0, 0)
+        第100条.md -> (100, 0, 0, 0)
+        第638:640条.md -> (638, 0, 0, 640)  # Range format
+        init_0_第1条.md -> (1, 0, 0, 0)  # With prefix
+        第105の2の8条.md -> (105, 2, 8, 0)  # Complex nested format
+        第184の12の2条.md -> (184, 12, 2, 0)  # Complex nested format
     """
     name = filename.replace('.md', '')
+
+    # Complex nested format: 第NのMのK条 (e.g., 第105の2の8条)
+    match = re.match(r'第(\d+)(?:の(\d+))?(?:の(\d+))?(?:の(\d+))?条$', name)
+    if match:
+        main_num = int(match.group(1))
+        sub1 = int(match.group(2)) if match.group(2) else 0
+        sub2 = int(match.group(3)) if match.group(3) else 0
+        sub3 = int(match.group(4)) if match.group(4) else 0
+        return (main_num, sub1, sub2, sub3)
 
     # Prefix format: {prefix}_第N条 or {prefix}_第N条のM
     match = re.match(r'.+_第(\d+)条(?:の(\d+))?$', name)
     if match:
         main_num = int(match.group(1))
         sub_num = int(match.group(2)) if match.group(2) else 0
-        return (main_num, sub_num, 0)
+        return (main_num, sub_num, 0, 0)
 
     # Range format: 第N:M条
     match = re.match(r'第(\d+):(\d+)条', name)
     if match:
         start_num = int(match.group(1))
         end_num = int(match.group(2))
-        return (start_num, 0, end_num)
+        return (start_num, 0, 0, end_num)
 
-    # 第N条 format
+    # Standard format: 第N条 or 第N条のM
     match = re.match(r'第(\d+)条(?:の(\d+))?', name)
     if match:
         main_num = int(match.group(1))
         sub_num = int(match.group(2)) if match.group(2) else 0
-        return (main_num, sub_num, 0)
+        return (main_num, sub_num, 0, 0)
 
     # 附則第N条 format
     match = re.match(r'附則第(\d+)条(?:の(\d+))?', name)
     if match:
         main_num = int(match.group(1))
         sub_num = int(match.group(2)) if match.group(2) else 0
-        return (main_num, sub_num, 0)
+        return (main_num, sub_num, 0, 0)
 
     # Others (附則.md etc.)
-    return (0, 0, 0)
+    return (0, 0, 0, 0)
 
 
 def extract_display_name_from_init_file(filename: str) -> str:
@@ -102,31 +114,96 @@ def normalize_suppl_dirname(dirname: str) -> str:
     return dirname
 
 
+def _get_law_file_name(law_dir: Path) -> Optional[str]:
+    """Get the _law.md filename for a law directory."""
+    law_files = list(law_dir.glob("*_law.md"))
+    if law_files:
+        return law_files[0].name
+    return None
+
+
+def _is_direct_child_of_law(article_path: Path, law_file_name: str) -> bool:
+    """
+    Check if an article's parent points to the law file (not chapter/section).
+
+    Returns True if the article is a direct child of the law node.
+    """
+    try:
+        doc = read_markdown_file(article_path)
+        parent = doc.metadata.get("parent", "")
+        # parent format: [[laws/{law_id}/{law_file_name}|{display}]]
+        # or: [[laws/{law_id}/章/第N章.md]] for chapter children
+        if law_file_name and law_file_name in parent:
+            return True
+        # Also check for _law.md pattern
+        if "_law.md" in parent:
+            return True
+        return False
+    except Exception:
+        return False
+
+
 def generate_links_for_law(law_dir: Path) -> str:
     """
     Generate markdown links content for a law directory.
+
+    Only includes articles that are direct children of the law node
+    (i.e., articles whose parent points to _law.md, not to chapter/section).
+    This creates a proper tree structure where each node only shows
+    its immediate children.
 
     Args:
         law_dir: Path to the law directory (e.g., Vault/laws/刑法)
 
     Returns:
-        Markdown string with links to all articles
+        Markdown string with links to direct child articles only
     """
     main_dir = law_dir / "本文"
+    chapter_dir = law_dir / "章"
     suppl_dir = law_dir / "附則"
+    law_file_name = _get_law_file_name(law_dir)
 
     lines: List[str] = []
 
-    # Main text links
+    # Chapter links - if chapters exist, show them as direct children
+    if chapter_dir.exists():
+        chapter_files = list(chapter_dir.glob('第*.md'))
+        if chapter_files:
+            # Sort chapters by number
+            def chapter_sort_key(f):
+                name = f.stem
+                match = re.match(r'第(\d+)章(?:の(\d+))?', name)
+                if match:
+                    main = int(match.group(1))
+                    sub = int(match.group(2)) if match.group(2) else 0
+                    return (main, sub)
+                return (999, 0)
+
+            chapter_files.sort(key=chapter_sort_key)
+            lines.append(f"\n## 構造\n")
+            lines.append(f"\n### 章（{len(chapter_files)}章）\n")
+
+            for f in chapter_files:
+                display_name = f.stem
+                lines.append(f"- [[章/{f.name}|{display_name}]]")
+
+    # Main text links - only direct children of law node (when no chapters)
     if main_dir.exists():
         article_files = list(main_dir.glob('第*.md'))
         article_files.sort(key=lambda f: extract_article_sort_key(f.name))
 
-        lines.append(f"\n## 本則（全{len(article_files)}条）\n")
+        # Filter to only include articles that are direct children of the law
+        direct_children = [
+            f for f in article_files
+            if _is_direct_child_of_law(f, law_file_name or "")
+        ]
 
-        for f in article_files:
-            display_name = f.stem  # Remove .md
-            lines.append(f"- [[本文/{f.name}|{display_name}]]")
+        if direct_children:
+            lines.append(f"\n## 本則（{len(direct_children)}条）\n")
+
+            for f in direct_children:
+                display_name = f.stem  # Remove .md
+                lines.append(f"- [[本文/{f.name}|{display_name}]]")
 
     # Supplementary provision links
     if suppl_dir.exists():
@@ -240,8 +317,18 @@ def update_law_file_with_links(law_dir: Path) -> bool:
     content = law_file.read_text(encoding='utf-8')
 
     # Find existing links section start position
+    # Include old format markers (## 構造, ### 章) to prevent duplication
     existing_links_start = None
-    for marker in ['## 本則', '## 附則']:
+    markers = [
+        '## 本則',      # New format: main text section
+        '## 附則',      # New format: supplementary section
+        '## 構造',      # Old format: structure section
+        '## Metadata',  # Some files have Metadata section
+        '### 章',       # Old format: chapter list
+        '### 現行附則', # Old format: current supplementary
+        '\n#\n',        # Lone heading (bug remnant)
+    ]
+    for marker in markers:
         pos = content.find(marker)
         if pos != -1:
             if existing_links_start is None or pos < existing_links_start:

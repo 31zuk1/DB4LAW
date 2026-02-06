@@ -1,26 +1,40 @@
 ---
+aliases:
+- 消費者安全法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 421AC0000000050
 id: JPLAW:421AC0000000050
+law_id: 421AC0000000050
 law_no: 平成二十一年法律第五十号
 links:
   egov: https://laws.e-gov.go.jp/law/421AC0000000050
+official_title: 消費者安全法
 promulgation_date: '20090605'
 tags:
 - 消費者安全法
-tier: 0
+tier: 1
 title: 消費者安全法
-law_id: 421AC0000000050
-official_title: 消費者安全法
-aliases:
-- 消費者安全法
 ---
 
 # 消費者安全法
 
-## Metadata
-- Law ID: `421AC0000000050`
-- Law No: 平成二十一年法律第五十号
-- Promulgation Date: 20090605
+## 構造
+
+
+### 章（8章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+- [[章/第7章.md|第7章]]
+- [[章/第8章.md|第8章]]
+
+### 現行附則
+
+- [[附則/令和四年六月一七日法律第六八号.md|令和四年六月一七日法律第六八号]]
+- [[附則/制定時附則.md|制定時附則]]

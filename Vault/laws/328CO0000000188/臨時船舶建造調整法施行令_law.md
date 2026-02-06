@@ -1,26 +1,32 @@
 ---
+aliases:
+- 臨時船舶建造調整法施行令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 328CO0000000188
 id: JPLAW:328CO0000000188
+law_id: 328CO0000000188
 law_no: 昭和二十八年政令第百八十八号
 links:
   egov: https://laws.e-gov.go.jp/law/328CO0000000188
+official_title: 臨時船舶建造調整法施行令
 promulgation_date: '19530813'
 tags:
 - 臨時船舶建造調整法施行令
-tier: 0
+tier: 1
 title: 臨時船舶建造調整法施行令
-law_id: 328CO0000000188
-official_title: 臨時船舶建造調整法施行令
-aliases:
-- 臨時船舶建造調整法施行令
 ---
 
 # 臨時船舶建造調整法施行令
 
-## Metadata
-- Law ID: `328CO0000000188`
-- Law No: 昭和二十八年政令第百八十八号
-- Promulgation Date: 19530813
+## 本則（2条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+
+### 現行附則
+
+- [[附則/昭和五四年五月二日政令第一二九号.md|昭和五四年五月二日政令第一二九号]]
+- [[附則/平成一二年六月七日政令第三一二号.md|平成一二年六月七日政令第三一二号]]
+- [[附則/制定時附則.md|制定時附則]]

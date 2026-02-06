@@ -1,26 +1,42 @@
 ---
+aliases:
+- 遺失物法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 418AC0000000073
 id: JPLAW:418AC0000000073
+law_id: 418AC0000000073
 law_no: 平成十八年法律第七十三号
 links:
   egov: https://laws.e-gov.go.jp/law/418AC0000000073
+official_title: 遺失物法
 promulgation_date: '20060615'
 tags:
 - 遺失物法
-tier: 0
+tier: 1
 title: 遺失物法
-law_id: 418AC0000000073
-official_title: 遺失物法
-aliases:
-- 遺失物法
 ---
 
 # 遺失物法
 
-## Metadata
-- Law ID: `418AC0000000073`
-- Law No: 平成十八年法律第七十三号
-- Promulgation Date: 20060615
+## 構造
+
+
+### 章（6章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+
+### 現行附則
+
+- [[附則/令和四年六月一七日法律第六八号.md|令和四年六月一七日法律第六八号]]
+
+### 制定時附則（全2条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+- [[附則/制定時附則/第2条.md|第2条]]

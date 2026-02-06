@@ -1,26 +1,33 @@
 ---
+aliases:
+- 特定商品の販売に係る計量に関する政令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 405CO0000000249
 id: JPLAW:405CO0000000249
+law_id: 405CO0000000249
 law_no: 平成五年政令第二百四十九号
 links:
   egov: https://laws.e-gov.go.jp/law/405CO0000000249
+official_title: 特定商品の販売に係る計量に関する政令
 promulgation_date: '19930709'
 tags:
 - 特定商品の販売に係る計量に関する政令
-tier: 0
+tier: 1
 title: 特定商品の販売に係る計量に関する政令
-law_id: 405CO0000000249
-official_title: 特定商品の販売に係る計量に関する政令
-aliases:
-- 特定商品の販売に係る計量に関する政令
 ---
 
 # 特定商品の販売に係る計量に関する政令
 
-## Metadata
-- Law ID: `405CO0000000249`
-- Law No: 平成五年政令第二百四十九号
-- Promulgation Date: 19930709
+## 本則（5条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

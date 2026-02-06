@@ -1,26 +1,37 @@
 ---
+aliases:
+- 発達障害者支援法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 416AC1000000167
 id: JPLAW:416AC1000000167
+law_id: 416AC1000000167
 law_no: 平成十六年法律第百六十七号
 links:
   egov: https://laws.e-gov.go.jp/law/416AC1000000167
+official_title: 発達障害者支援法
 promulgation_date: '20041210'
 tags:
 - 発達障害者支援法
-tier: 0
+tier: 1
 title: 発達障害者支援法
-law_id: 416AC1000000167
-official_title: 発達障害者支援法
-aliases:
-- 発達障害者支援法
 ---
 
 # 発達障害者支援法
 
-## Metadata
-- Law ID: `416AC1000000167`
-- Law No: 平成十六年法律第百六十七号
-- Promulgation Date: 20041210
+## 構造
+
+
+### 章（4章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+
+### 現行附則
+
+- [[附則/平成二八年六月三日法律第六四号.md|平成二八年六月三日法律第六四号]]
+- [[附則/制定時附則.md|制定時附則]]
+- [[附則/平成二四年八月二二日法律第六七号.md|平成二四年八月二二日法律第六七号]]

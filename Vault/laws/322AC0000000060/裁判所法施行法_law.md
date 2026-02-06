@@ -1,26 +1,36 @@
 ---
+aliases:
+- 裁判所法施行法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 322AC0000000060
 id: JPLAW:322AC0000000060
+law_id: 322AC0000000060
 law_no: 昭和二十二年法律第六十号
 links:
   egov: https://laws.e-gov.go.jp/law/322AC0000000060
+official_title: 裁判所法施行法
 promulgation_date: '19470416'
 tags:
 - 裁判所法施行法
-tier: 0
+tier: 1
 title: 裁判所法施行法
-law_id: 322AC0000000060
-official_title: 裁判所法施行法
-aliases:
-- 裁判所法施行法
 ---
 
 # 裁判所法施行法
 
-## Metadata
-- Law ID: `322AC0000000060`
-- Law No: 昭和二十二年法律第六十号
-- Promulgation Date: 19470416
+## 本則（7条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第7条.md|第7条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]
+- [[附則/昭和二二年一〇月二九日法律第一二六号.md|昭和二二年一〇月二九日法律第一二六号]]

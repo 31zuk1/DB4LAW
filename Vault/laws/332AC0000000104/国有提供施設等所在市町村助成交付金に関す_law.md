@@ -1,26 +1,26 @@
 ---
+aliases:
+- 国有提供施設等所在市町村助成交付金に関する法律
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 332AC0000000104
 id: JPLAW:332AC0000000104
+law_id: 332AC0000000104
 law_no: 昭和三十二年法律第百四号
 links:
   egov: https://laws.e-gov.go.jp/law/332AC0000000104
+official_title: 国有提供施設等所在市町村助成交付金に関する法律
 promulgation_date: '19570516'
 tags:
 - 国有提供施設等所在市町村助成交付金に関する法律
-tier: 0
+tier: 1
 title: 国有提供施設等所在市町村助成交付金に関する法律
-law_id: 332AC0000000104
-official_title: 国有提供施設等所在市町村助成交付金に関する法律
-aliases:
-- 国有提供施設等所在市町村助成交付金に関する法律
 ---
 
 # 国有提供施設等所在市町村助成交付金に関する法律
 
-## Metadata
-- Law ID: `332AC0000000104`
-- Law No: 昭和三十二年法律第百四号
-- Promulgation Date: 19570516
+### 現行附則
+
+- [[附則/昭和三四年三月二六日法律第四一号.md|昭和三四年三月二六日法律第四一号]]
+- [[附則/制定時附則.md|制定時附則]]

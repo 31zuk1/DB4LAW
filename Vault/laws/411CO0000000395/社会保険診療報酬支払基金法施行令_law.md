@@ -1,26 +1,27 @@
 ---
+aliases:
+- 社会保険診療報酬支払基金法施行令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 411CO0000000395
 id: JPLAW:411CO0000000395
+law_id: 411CO0000000395
 law_no: 平成十一年政令第三百九十五号
 links:
   egov: https://laws.e-gov.go.jp/law/411CO0000000395
+official_title: 社会保険診療報酬支払基金法施行令
 promulgation_date: '19991208'
 tags:
 - 社会保険診療報酬支払基金法施行令
-tier: 0
+tier: 1
 title: 社会保険診療報酬支払基金法施行令
-law_id: 411CO0000000395
-official_title: 社会保険診療報酬支払基金法施行令
-aliases:
-- 社会保険診療報酬支払基金法施行令
 ---
 
 # 社会保険診療報酬支払基金法施行令
 
-## Metadata
-- Law ID: `411CO0000000395`
-- Law No: 平成十一年政令第三百九十五号
-- Promulgation Date: 19991208
+### 現行附則
+
+- [[附則/平成一二年六月七日政令第三〇九号.md|平成一二年六月七日政令第三〇九号]]
+- [[附則/平成一五年九月一〇日政令第四〇四号.md|平成一五年九月一〇日政令第四〇四号]]
+- [[附則/制定時附則.md|制定時附則]]

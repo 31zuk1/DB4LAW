@@ -1,26 +1,32 @@
 ---
+aliases:
+- 外国裁判所ノ嘱託ニ因ル共助法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 138AC0000000063
 id: JPLAW:138AC0000000063
+law_id: 138AC0000000063
 law_no: 明治三十八年法律第六十三号
 links:
   egov: https://laws.e-gov.go.jp/law/138AC0000000063
+official_title: 外国裁判所ノ嘱託ニ因ル共助法
 promulgation_date: '19050313'
 tags:
 - 外国裁判所ノ嘱託ニ因ル共助法
-tier: 0
+tier: 2
 title: 外国裁判所ノ嘱託ニ因ル共助法
-law_id: 138AC0000000063
-official_title: 外国裁判所ノ嘱託ニ因ル共助法
-aliases:
-- 外国裁判所ノ嘱託ニ因ル共助法
 ---
 
 # 外国裁判所ノ嘱託ニ因ル共助法
 
-## Metadata
-- Law ID: `138AC0000000063`
-- Law No: 明治三十八年法律第六十三号
-- Promulgation Date: 19050313
+## 本則（4条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第1条の2.md|第1条の2]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/昭和一三年三月二二日法律第一七号.md|昭和一三年三月二二日法律第一七号]]

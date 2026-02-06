@@ -1,26 +1,27 @@
 ---
+aliases:
+- 官民の人材交流の範囲を定める政令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 420CO0000000392
 id: JPLAW:420CO0000000392
+law_id: 420CO0000000392
 law_no: 平成二十年政令第三百九十二号
 links:
   egov: https://laws.e-gov.go.jp/law/420CO0000000392
+official_title: 官民の人材交流の範囲を定める政令
 promulgation_date: '20081225'
 tags:
 - 官民の人材交流の範囲を定める政令
-tier: 0
+tier: 1
 title: 官民の人材交流の範囲を定める政令
-law_id: 420CO0000000392
-official_title: 官民の人材交流の範囲を定める政令
-aliases:
-- 官民の人材交流の範囲を定める政令
 ---
 
 # 官民の人材交流の範囲を定める政令
 
-## Metadata
-- Law ID: `420CO0000000392`
-- Law No: 平成二十年政令第三百九十二号
-- Promulgation Date: 20081225
+### 現行附則
+
+- [[附則/平成二七年三月一八日政令第七四号.md|平成二七年三月一八日政令第七四号]]
+- [[附則/平成三一年一月一七日政令第四号.md|平成三一年一月一七日政令第四号]]
+- [[附則/制定時附則.md|制定時附則]]

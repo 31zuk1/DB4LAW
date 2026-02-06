@@ -1,26 +1,29 @@
 ---
+aliases:
+- 財政法、会計法等の財政関係法律の一部を改正する等の法律
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 327AC0000000004
 id: JPLAW:327AC0000000004
+law_id: 327AC0000000004
 law_no: 昭和二十七年法律第四号
 links:
   egov: https://laws.e-gov.go.jp/law/327AC0000000004
+official_title: 財政法、会計法等の財政関係法律の一部を改正する等の法律
 promulgation_date: '19520305'
 tags:
 - 財政法、会計法等の財政関係法律の一部を改正する等の法律
-tier: 0
+tier: 1
 title: 財政法、会計法等の財政関係法律の一部を改正する等の法律
-law_id: 327AC0000000004
-official_title: 財政法、会計法等の財政関係法律の一部を改正する等の法律
-aliases:
-- 財政法、会計法等の財政関係法律の一部を改正する等の法律
 ---
 
 # 財政法、会計法等の財政関係法律の一部を改正する等の法律
 
-## Metadata
-- Law ID: `327AC0000000004`
-- Law No: 昭和二十七年法律第四号
-- Promulgation Date: 19520305
+## 本則（1条）
+
+- [[本文/第6条.md|第6条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

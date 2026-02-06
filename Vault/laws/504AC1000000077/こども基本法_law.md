@@ -1,26 +1,40 @@
 ---
+aliases:
+- こども基本法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 504AC1000000077
 id: JPLAW:504AC1000000077
+law_id: 504AC1000000077
 law_no: 令和四年法律第七十七号
 links:
   egov: https://laws.e-gov.go.jp/law/504AC1000000077
+official_title: こども基本法
 promulgation_date: '20220622'
 tags:
 - こども基本法
-tier: 0
+tier: 1
 title: こども基本法
-law_id: 504AC1000000077
-official_title: こども基本法
-aliases:
-- こども基本法
 ---
 
 # こども基本法
 
-## Metadata
-- Law ID: `504AC1000000077`
-- Law No: 令和四年法律第七十七号
-- Promulgation Date: 20220622
+### 制定時附則（全2条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+- [[附則/制定時附則/第2条.md|第2条]]
+
+## 構造
+
+
+### 章（3章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+
+### 制定時附則（全2条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+- [[附則/制定時附則/第2条.md|第2条]]

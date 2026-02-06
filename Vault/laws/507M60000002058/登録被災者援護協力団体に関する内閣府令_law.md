@@ -1,26 +1,33 @@
 ---
+aliases:
+- 登録被災者援護協力団体に関する内閣府令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 507M60000002058
 id: JPLAW:507M60000002058
+law_id: 507M60000002058
 law_no: 令和七年内閣府令第五十八号
 links:
   egov: https://laws.e-gov.go.jp/law/507M60000002058
+official_title: 登録被災者援護協力団体に関する内閣府令
 promulgation_date: '20250624'
 tags:
 - 登録被災者援護協力団体に関する内閣府令
-tier: 0
+tier: 1
 title: 登録被災者援護協力団体に関する内閣府令
-law_id: 507M60000002058
-official_title: 登録被災者援護協力団体に関する内閣府令
-aliases:
-- 登録被災者援護協力団体に関する内閣府令
 ---
 
 # 登録被災者援護協力団体に関する内閣府令
 
-## Metadata
-- Law ID: `507M60000002058`
-- Law No: 令和七年内閣府令第五十八号
-- Promulgation Date: 20250624
+## 構造
+
+
+### 章（2章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

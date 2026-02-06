@@ -1,26 +1,39 @@
 ---
+aliases:
+- 医療法人会計基準
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 428M60000100095
 id: JPLAW:428M60000100095
+law_id: 428M60000100095
 law_no: 平成二十八年厚生労働省令第九十五号
 links:
   egov: https://laws.e-gov.go.jp/law/428M60000100095
+official_title: 医療法人会計基準
 promulgation_date: '20161001'
 tags:
 - 医療法人会計基準
-tier: 0
+tier: 1
 title: 医療法人会計基準
-law_id: 428M60000100095
-official_title: 医療法人会計基準
-aliases:
-- 医療法人会計基準
 ---
 
 # 医療法人会計基準
 
-## Metadata
-- Law ID: `428M60000100095`
-- Law No: 平成二十八年厚生労働省令第九十五号
-- Promulgation Date: 20161001
+### 制定時附則（全1条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+
+## 構造
+
+
+### 章（4章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+
+### 制定時附則（全1条）
+
+- [[附則/制定時附則/第1条.md|第1条]]

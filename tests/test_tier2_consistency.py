@@ -127,12 +127,15 @@ class TestExternalLawIgnore:
 
     def test_external_law_scope_continuation(self, extractor):
         """
-        外部法令スコープ内の連続参照もエッジ化しない
+        外部法令スコープ内の連続参照は外部法令にリンクされる
 
         入力: 「土地収用法第八十四条、第八十五条」（現在法: 民法）
         期待:
-        - 両方ともリンク化しない
-        - edges: 0件
+        - 第八十五条は土地収用法（Vault内に存在）にリンク
+        - edges: 1件（土地収用法第85条へ）
+
+        注: 2026-02 以降の設計変更により、外部法令スコープ内の裸参照は
+        外部法令にリンクされるようになった（全法令がVaultに存在するため）
         """
         text = "土地収用法第八十四条、第八十五条の規定を準用する。"
         law_name = "民法"
@@ -147,11 +150,14 @@ class TestExternalLawIgnore:
             is_amendment_fragment=False
         )
 
-        # リンク化されていない
-        assert "[[" not in replaced
+        # 第八十五条が土地収用法にリンクされている
+        assert "[[" in replaced
+        assert "第八十五条" in replaced
 
-        # エッジも0件
-        assert len(edges) == 0
+        # エッジ1件（土地収用法第85条へ）
+        assert len(edges) == 1
+        # 土地収用法の law_id (326AC0100000219) または external: プレフィックス
+        assert "土地収用法" in edges[0]["to"] or "326AC0100000219" in edges[0]["to"]
 
 
 class TestCrossLinkConsistency:

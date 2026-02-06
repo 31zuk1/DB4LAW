@@ -1,26 +1,30 @@
 ---
+aliases:
+- 公共企業体労働関係法の施行に関する法律
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 324AC0000000083
 id: JPLAW:324AC0000000083
+law_id: 324AC0000000083
 law_no: 昭和二十四年法律第八十三号
 links:
   egov: https://laws.e-gov.go.jp/law/324AC0000000083
+official_title: 公共企業体労働関係法の施行に関する法律
 promulgation_date: '19490519'
 tags:
 - 公共企業体労働関係法の施行に関する法律
-tier: 0
+tier: 1
 title: 公共企業体労働関係法の施行に関する法律
-law_id: 324AC0000000083
-official_title: 公共企業体労働関係法の施行に関する法律
-aliases:
-- 公共企業体労働関係法の施行に関する法律
 ---
 
 # 公共企業体労働関係法の施行に関する法律
 
-## Metadata
-- Law ID: `324AC0000000083`
-- Law No: 昭和二十四年法律第八十三号
-- Promulgation Date: 19490519
+## 本則（1条）
+
+- [[本文/第1条.md|第1条]]
+
+### 現行附則
+
+- [[附則/昭和二四年六月一日法律第一七四号.md|昭和二四年六月一日法律第一七四号]]
+- [[附則/制定時附則.md|制定時附則]]

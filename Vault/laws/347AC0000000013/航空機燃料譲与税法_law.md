@@ -1,26 +1,37 @@
 ---
+aliases:
+- 航空機燃料譲与税法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 347AC0000000013
 id: JPLAW:347AC0000000013
+law_id: 347AC0000000013
 law_no: 昭和四十七年法律第十三号
 links:
   egov: https://laws.e-gov.go.jp/law/347AC0000000013
+official_title: 航空機燃料譲与税法
 promulgation_date: '19720401'
 tags:
 - 航空機燃料譲与税法
-tier: 0
+tier: 1
 title: 航空機燃料譲与税法
-law_id: 347AC0000000013
-official_title: 航空機燃料譲与税法
-aliases:
-- 航空機燃料譲与税法
 ---
 
 # 航空機燃料譲与税法
 
-## Metadata
-- Law ID: `347AC0000000013`
-- Law No: 昭和四十七年法律第十三号
-- Promulgation Date: 19720401
+## 本則（9条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第2条の2.md|第2条の2]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第6条の2.md|第6条の2]]
+- [[本文/第7条.md|第7条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

@@ -1,26 +1,33 @@
 ---
+aliases:
+- 国立公文書館法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 411AC0100000079
 id: JPLAW:411AC0100000079
+law_id: 411AC0100000079
 law_no: 平成十一年法律第七十九号
 links:
   egov: https://laws.e-gov.go.jp/law/411AC0100000079
+official_title: 国立公文書館法
 promulgation_date: '19990623'
 tags:
 - 国立公文書館法
-tier: 0
+tier: 1
 title: 国立公文書館法
-law_id: 411AC0100000079
-official_title: 国立公文書館法
-aliases:
-- 国立公文書館法
 ---
 
 # 国立公文書館法
 
-## Metadata
-- Law ID: `411AC0100000079`
-- Law No: 平成十一年法律第七十九号
-- Promulgation Date: 19990623
+## 構造
+
+
+### 章（2章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

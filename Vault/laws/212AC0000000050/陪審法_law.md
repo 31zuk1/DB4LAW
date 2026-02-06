@@ -1,26 +1,39 @@
 ---
+aliases:
+- 陪審法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 212AC0000000050
 id: JPLAW:212AC0000000050
+law_id: 212AC0000000050
 law_no: 大正十二年法律第五十号
 links:
   egov: https://laws.e-gov.go.jp/law/212AC0000000050
+official_title: 陪審法
 promulgation_date: '19230418'
 tags:
 - 陪審法
-tier: 0
+tier: 1
 title: 陪審法
-law_id: 212AC0000000050
-official_title: 陪審法
-aliases:
-- 陪審法
 ---
 
 # 陪審法
 
-## Metadata
-- Law ID: `212AC0000000050`
-- Law No: 大正十二年法律第五十号
-- Promulgation Date: 19230418
+## 構造
+
+
+### 章（6章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+
+### 現行附則
+
+- [[附則/昭和四年四月四日法律第五一号.md|昭和四年四月四日法律第五一号]]
+- [[附則/昭和一六年三月一二日法律第六二号.md|昭和一六年三月一二日法律第六二号]]
+- [[附則/制定時附則.md|制定時附則]]

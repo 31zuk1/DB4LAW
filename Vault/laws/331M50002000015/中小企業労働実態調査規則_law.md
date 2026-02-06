@@ -1,26 +1,35 @@
 ---
+aliases:
+- 中小企業労働実態調査規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 331M50002000015
 id: JPLAW:331M50002000015
+law_id: 331M50002000015
 law_no: 昭和三十一年労働省令第十五号
 links:
   egov: https://laws.e-gov.go.jp/law/331M50002000015
+official_title: 中小企業労働実態調査規則
 promulgation_date: '19560625'
 tags:
 - 中小企業労働実態調査規則
-tier: 0
+tier: 1
 title: 中小企業労働実態調査規則
-law_id: 331M50002000015
-official_title: 中小企業労働実態調査規則
-aliases:
-- 中小企業労働実態調査規則
 ---
 
 # 中小企業労働実態調査規則
 
-## Metadata
-- Law ID: `331M50002000015`
-- Law No: 昭和三十一年労働省令第十五号
-- Promulgation Date: 19560625
+## 本則（7条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第14条.md|第14条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

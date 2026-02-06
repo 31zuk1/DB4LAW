@@ -1,26 +1,38 @@
 ---
+aliases:
+- 悪臭防止法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 346AC0000000091
 id: JPLAW:346AC0000000091
+law_id: 346AC0000000091
 law_no: 昭和四十六年法律第九十一号
 links:
   egov: https://laws.e-gov.go.jp/law/346AC0000000091
+official_title: 悪臭防止法
 promulgation_date: '19710601'
 tags:
 - 悪臭防止法
-tier: 0
+tier: 1
 title: 悪臭防止法
-law_id: 346AC0000000091
-official_title: 悪臭防止法
-aliases:
-- 悪臭防止法
 ---
 
 # 悪臭防止法
 
-## Metadata
-- Law ID: `346AC0000000091`
-- Law No: 昭和四十六年法律第九十一号
-- Promulgation Date: 19710601
+## 構造
+
+
+### 章（5章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+
+### 現行附則
+
+- [[附則/平成一八年六月二日法律第五〇号.md|平成一八年六月二日法律第五〇号]]
+- [[附則/令和四年六月一七日法律第六八号.md|令和四年六月一七日法律第六八号]]
+- [[附則/制定時附則.md|制定時附則]]

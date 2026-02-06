@@ -1,26 +1,35 @@
 ---
+aliases:
+- アレルギー疾患対策推進協議会令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 427CO0000000401
 id: JPLAW:427CO0000000401
+law_id: 427CO0000000401
 law_no: 平成二十七年政令第四百一号
 links:
   egov: https://laws.e-gov.go.jp/law/427CO0000000401
+official_title: アレルギー疾患対策推進協議会令
 promulgation_date: '20151202'
 tags:
 - アレルギー疾患対策推進協議会令
-tier: 0
+tier: 1
 title: アレルギー疾患対策推進協議会令
-law_id: 427CO0000000401
-official_title: アレルギー疾患対策推進協議会令
-aliases:
-- アレルギー疾患対策推進協議会令
 ---
 
 # アレルギー疾患対策推進協議会令
 
-## Metadata
-- Law ID: `427CO0000000401`
-- Law No: 平成二十七年政令第四百一号
-- Promulgation Date: 20151202
+## 本則（7条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第7条.md|第7条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

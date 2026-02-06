@@ -1,26 +1,38 @@
 ---
+aliases:
+- 中部圏開発整備法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 341AC1000000102
 id: JPLAW:341AC1000000102
+law_id: 341AC1000000102
 law_no: 昭和四十一年法律第百二号
 links:
   egov: https://laws.e-gov.go.jp/law/341AC1000000102
+official_title: 中部圏開発整備法
 promulgation_date: '19660701'
 tags:
 - 中部圏開発整備法
-tier: 0
+tier: 1
 title: 中部圏開発整備法
-law_id: 341AC1000000102
-official_title: 中部圏開発整備法
-aliases:
-- 中部圏開発整備法
 ---
 
 # 中部圏開発整備法
 
-## Metadata
-- Law ID: `341AC1000000102`
-- Law No: 昭和四十一年法律第百二号
-- Promulgation Date: 19660701
+## 構造
+
+
+### 章（6章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+
+### 現行附則
+
+- [[附則/昭和五三年五月二三日法律第五五号.md|昭和五三年五月二三日法律第五五号]]
+- [[附則/制定時附則.md|制定時附則]]

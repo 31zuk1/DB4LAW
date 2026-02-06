@@ -1,26 +1,41 @@
 ---
+aliases:
+- 公益通報者保護法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 416AC0000000122
 id: JPLAW:416AC0000000122
+law_id: 416AC0000000122
 law_no: 平成十六年法律第百二十二号
 links:
   egov: https://laws.e-gov.go.jp/law/416AC0000000122
+official_title: 公益通報者保護法
 promulgation_date: '20040618'
 tags:
 - 公益通報者保護法
-tier: 0
+tier: 1
 title: 公益通報者保護法
-law_id: 416AC0000000122
-official_title: 公益通報者保護法
-aliases:
-- 公益通報者保護法
 ---
 
 # 公益通報者保護法
 
-## Metadata
-- Law ID: `416AC0000000122`
-- Law No: 平成十六年法律第百二十二号
-- Promulgation Date: 20040618
+## 構造
+
+
+### 章（5章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+
+### 現行附則
+
+- [[附則/平成一八年六月一四日法律第六六号.md|平成一八年六月一四日法律第六六号]]
+
+### 制定時附則（全2条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+- [[附則/制定時附則/第2条.md|第2条]]

@@ -1,26 +1,29 @@
 ---
+aliases:
+- 大正四年勅令第百五十四号（大礼記念章制定ノ件）
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 204IO0000000154
 id: JPLAW:204IO0000000154
+law_id: 204IO0000000154
 law_no: 大正四年勅令第百五十四号
 links:
   egov: https://laws.e-gov.go.jp/law/204IO0000000154
+official_title: 大正四年勅令第百五十四号（大礼記念章制定ノ件）
 promulgation_date: '19150812'
 tags:
 - 大正四年勅令第百五十四号（大礼記念章制定ノ件）
-tier: 0
+tier: 2
 title: 大正四年勅令第百五十四号（大礼記念章制定ノ件）
-law_id: 204IO0000000154
-official_title: 大正四年勅令第百五十四号（大礼記念章制定ノ件）
-aliases:
-- 大正四年勅令第百五十四号（大礼記念章制定ノ件）
 ---
 
 # 大正四年勅令第百五十四号（大礼記念章制定ノ件）
 
-## Metadata
-- Law ID: `204IO0000000154`
-- Law No: 大正四年勅令第百五十四号
-- Promulgation Date: 19150812
+## 本則（5条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]

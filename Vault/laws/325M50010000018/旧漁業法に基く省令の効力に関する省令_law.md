@@ -1,26 +1,30 @@
 ---
+aliases:
+- 旧漁業法に基く省令の効力に関する省令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 325M50010000018
 id: JPLAW:325M50010000018
+law_id: 325M50010000018
 law_no: 昭和二十五年農林省令第十八号
 links:
   egov: https://laws.e-gov.go.jp/law/325M50010000018
+official_title: 旧漁業法に基く省令の効力に関する省令
 promulgation_date: '19500314'
 tags:
 - 旧漁業法に基く省令の効力に関する省令
-tier: 0
+tier: 1
 title: 旧漁業法に基く省令の効力に関する省令
-law_id: 325M50010000018
-official_title: 旧漁業法に基く省令の効力に関する省令
-aliases:
-- 旧漁業法に基く省令の効力に関する省令
 ---
 
 # 旧漁業法に基く省令の効力に関する省令
 
-## Metadata
-- Law ID: `325M50010000018`
-- Law No: 昭和二十五年農林省令第十八号
-- Promulgation Date: 19500314
+## 本則（2条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

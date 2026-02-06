@@ -1,26 +1,33 @@
 ---
+aliases:
+- 査察使に関する省令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 327M50000020021
 id: JPLAW:327M50000020021
+law_id: 327M50000020021
 law_no: 昭和二十七年外務省令第二十一号
 links:
   egov: https://laws.e-gov.go.jp/law/327M50000020021
+official_title: 査察使に関する省令
 promulgation_date: '19520816'
 tags:
 - 査察使に関する省令
-tier: 0
+tier: 1
 title: 査察使に関する省令
-law_id: 327M50000020021
-official_title: 査察使に関する省令
-aliases:
-- 査察使に関する省令
 ---
 
 # 査察使に関する省令
 
-## Metadata
-- Law ID: `327M50000020021`
-- Law No: 昭和二十七年外務省令第二十一号
-- Promulgation Date: 19520816
+## 本則（4条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+
+### 現行附則
+
+- [[附則/平成一二年一一月二八日外務省令第一一号.md|平成一二年一一月二八日外務省令第一一号]]
+- [[附則/制定時附則.md|制定時附則]]

@@ -1,26 +1,31 @@
 ---
+aliases:
+- 日本たばこ産業株式会社法施行令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 360CO0000000022
 id: JPLAW:360CO0000000022
+law_id: 360CO0000000022
 law_no: 昭和六十年政令第二十二号
 links:
   egov: https://laws.e-gov.go.jp/law/360CO0000000022
+official_title: 日本たばこ産業株式会社法施行令
 promulgation_date: '19850305'
 tags:
 - 日本たばこ産業株式会社法施行令
-tier: 0
+tier: 1
 title: 日本たばこ産業株式会社法施行令
-law_id: 360CO0000000022
-official_title: 日本たばこ産業株式会社法施行令
-aliases:
-- 日本たばこ産業株式会社法施行令
 ---
 
 # 日本たばこ産業株式会社法施行令
 
-## Metadata
-- Law ID: `360CO0000000022`
-- Law No: 昭和六十年政令第二十二号
-- Promulgation Date: 19850305
+## 本則（3条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

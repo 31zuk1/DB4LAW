@@ -1,26 +1,25 @@
 ---
+aliases:
+- 計量法附則第三条の計量単位等を定める政令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 404CO0000000358
 id: JPLAW:404CO0000000358
+law_id: 404CO0000000358
 law_no: 平成四年政令第三百五十八号
 links:
   egov: https://laws.e-gov.go.jp/law/404CO0000000358
+official_title: 計量法附則第三条の計量単位等を定める政令
 promulgation_date: '19921118'
 tags:
 - 計量法附則第三条の計量単位等を定める政令
-tier: 0
+tier: 1
 title: 計量法附則第三条の計量単位等を定める政令
-law_id: 404CO0000000358
-official_title: 計量法附則第三条の計量単位等を定める政令
-aliases:
-- 計量法附則第三条の計量単位等を定める政令
 ---
 
 # 計量法附則第三条の計量単位等を定める政令
 
-## Metadata
-- Law ID: `404CO0000000358`
-- Law No: 平成四年政令第三百五十八号
-- Promulgation Date: 19921118
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

@@ -1,26 +1,34 @@
 ---
+aliases:
+- 特定複合観光施設区域の整備の推進に関する法律
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 428AC1000000115
 id: JPLAW:428AC1000000115
+law_id: 428AC1000000115
 law_no: 平成二十八年法律第百十五号
 links:
   egov: https://laws.e-gov.go.jp/law/428AC1000000115
+official_title: 特定複合観光施設区域の整備の推進に関する法律
 promulgation_date: '20161226'
 tags:
 - 特定複合観光施設区域の整備の推進に関する法律
-tier: 0
+tier: 1
 title: 特定複合観光施設区域の整備の推進に関する法律
-law_id: 428AC1000000115
-official_title: 特定複合観光施設区域の整備の推進に関する法律
-aliases:
-- 特定複合観光施設区域の整備の推進に関する法律
 ---
 
 # 特定複合観光施設区域の整備の推進に関する法律
 
-## Metadata
-- Law ID: `428AC1000000115`
-- Law No: 平成二十八年法律第百十五号
-- Promulgation Date: 20161226
+## 構造
+
+
+### 章（3章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

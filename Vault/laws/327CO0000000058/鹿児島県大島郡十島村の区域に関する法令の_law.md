@@ -1,26 +1,25 @@
 ---
+aliases:
+- 鹿児島県大島郡十島村の区域に関する法令の適用に関する政令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 327CO0000000058
 id: JPLAW:327CO0000000058
+law_id: 327CO0000000058
 law_no: 昭和二十七年政令第五十八号
 links:
   egov: https://laws.e-gov.go.jp/law/327CO0000000058
+official_title: 鹿児島県大島郡十島村の区域に関する法令の適用に関する政令
 promulgation_date: '19520331'
 tags:
 - 鹿児島県大島郡十島村の区域に関する法令の適用に関する政令
-tier: 0
+tier: 1
 title: 鹿児島県大島郡十島村の区域に関する法令の適用に関する政令
-law_id: 327CO0000000058
-official_title: 鹿児島県大島郡十島村の区域に関する法令の適用に関する政令
-aliases:
-- 鹿児島県大島郡十島村の区域に関する法令の適用に関する政令
 ---
 
 # 鹿児島県大島郡十島村の区域に関する法令の適用に関する政令
 
-## Metadata
-- Law ID: `327CO0000000058`
-- Law No: 昭和二十七年政令第五十八号
-- Promulgation Date: 19520331
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

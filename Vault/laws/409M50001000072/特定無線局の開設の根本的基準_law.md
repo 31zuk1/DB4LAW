@@ -1,26 +1,32 @@
 ---
+aliases:
+- 特定無線局の開設の根本的基準
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 409M50001000072
 id: JPLAW:409M50001000072
+law_id: 409M50001000072
 law_no: 平成九年郵政省令第七十二号
 links:
   egov: https://laws.e-gov.go.jp/law/409M50001000072
+official_title: 特定無線局の開設の根本的基準
 promulgation_date: '19970925'
 tags:
 - 特定無線局の開設の根本的基準
-tier: 0
+tier: 1
 title: 特定無線局の開設の根本的基準
-law_id: 409M50001000072
-official_title: 特定無線局の開設の根本的基準
-aliases:
-- 特定無線局の開設の根本的基準
 ---
 
 # 特定無線局の開設の根本的基準
 
-## Metadata
-- Law ID: `409M50001000072`
-- Law No: 平成九年郵政省令第七十二号
-- Promulgation Date: 19970925
+## 本則（3条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]
+- [[附則/平成二三年三月一日総務省令第一三号.md|平成二三年三月一日総務省令第一三号]]

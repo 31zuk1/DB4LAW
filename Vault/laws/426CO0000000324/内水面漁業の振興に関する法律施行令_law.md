@@ -1,26 +1,32 @@
 ---
+aliases:
+- 内水面漁業の振興に関する法律施行令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 426CO0000000324
 id: JPLAW:426CO0000000324
+law_id: 426CO0000000324
 law_no: 平成二十六年政令第三百二十四号
 links:
   egov: https://laws.e-gov.go.jp/law/426CO0000000324
+official_title: 内水面漁業の振興に関する法律施行令
 promulgation_date: '20141001'
 tags:
 - 内水面漁業の振興に関する法律施行令
-tier: 0
+tier: 1
 title: 内水面漁業の振興に関する法律施行令
-law_id: 426CO0000000324
-official_title: 内水面漁業の振興に関する法律施行令
-aliases:
-- 内水面漁業の振興に関する法律施行令
 ---
 
 # 内水面漁業の振興に関する法律施行令
 
-## Metadata
-- Law ID: `426CO0000000324`
-- Law No: 平成二十六年政令第三百二十四号
-- Promulgation Date: 20141001
+## 本則（3条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/令和五年二月一日政令第二〇号.md|令和五年二月一日政令第二〇号]]
+- [[附則/制定時附則.md|制定時附則]]

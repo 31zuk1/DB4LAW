@@ -1,26 +1,35 @@
 ---
+aliases:
+- 鉱業抵当登記規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 417M60000010024
 id: JPLAW:417M60000010024
+law_id: 417M60000010024
 law_no: 平成十七年法務省令第二十四号
 links:
   egov: https://laws.e-gov.go.jp/law/417M60000010024
+official_title: 鉱業抵当登記規則
 promulgation_date: '20050228'
 tags:
 - 鉱業抵当登記規則
-tier: 0
+tier: 1
 title: 鉱業抵当登記規則
-law_id: 417M60000010024
-official_title: 鉱業抵当登記規則
-aliases:
-- 鉱業抵当登記規則
 ---
 
 # 鉱業抵当登記規則
 
-## Metadata
-- Law ID: `417M60000010024`
-- Law No: 平成十七年法務省令第二十四号
-- Promulgation Date: 20050228
+## 本則（6条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+
+### 制定時附則（全2条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+- [[附則/制定時附則/第2条.md|第2条]]

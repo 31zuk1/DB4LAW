@@ -1,26 +1,35 @@
 ---
+aliases:
+- 特別とん譲与税法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 332AC0000000077
 id: JPLAW:332AC0000000077
+law_id: 332AC0000000077
 law_no: 昭和三十二年法律第七十七号
 links:
   egov: https://laws.e-gov.go.jp/law/332AC0000000077
+official_title: 特別とん譲与税法
 promulgation_date: '19570424'
 tags:
 - 特別とん譲与税法
-tier: 0
+tier: 1
 title: 特別とん譲与税法
-law_id: 332AC0000000077
-official_title: 特別とん譲与税法
-aliases:
-- 特別とん譲与税法
 ---
 
 # 特別とん譲与税法
 
-## Metadata
-- Law ID: `332AC0000000077`
-- Law No: 昭和三十二年法律第七十七号
-- Promulgation Date: 19570424
+## 本則（7条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第4条の2.md|第4条の2]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

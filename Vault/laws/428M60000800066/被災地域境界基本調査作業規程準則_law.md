@@ -1,26 +1,35 @@
 ---
+aliases:
+- 被災地域境界基本調査作業規程準則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 428M60000800066
 id: JPLAW:428M60000800066
+law_id: 428M60000800066
 law_no: 平成二十八年国土交通省令第六十六号
 links:
   egov: https://laws.e-gov.go.jp/law/428M60000800066
+official_title: 被災地域境界基本調査作業規程準則
 promulgation_date: '20160923'
 tags:
 - 被災地域境界基本調査作業規程準則
-tier: 0
+tier: 1
 title: 被災地域境界基本調査作業規程準則
-law_id: 428M60000800066
-official_title: 被災地域境界基本調査作業規程準則
-aliases:
-- 被災地域境界基本調査作業規程準則
 ---
 
 # 被災地域境界基本調査作業規程準則
 
-## Metadata
-- Law ID: `428M60000800066`
-- Law No: 平成二十八年国土交通省令第六十六号
-- Promulgation Date: 20160923
+## 構造
+
+
+### 章（4章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

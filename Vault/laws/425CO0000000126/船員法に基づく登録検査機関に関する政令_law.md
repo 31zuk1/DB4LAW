@@ -1,26 +1,30 @@
 ---
+aliases:
+- 船員法に基づく登録検査機関に関する政令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 425CO0000000126
 id: JPLAW:425CO0000000126
+law_id: 425CO0000000126
 law_no: 平成二十五年政令第百二十六号
 links:
   egov: https://laws.e-gov.go.jp/law/425CO0000000126
+official_title: 船員法に基づく登録検査機関に関する政令
 promulgation_date: '20130426'
 tags:
 - 船員法に基づく登録検査機関に関する政令
-tier: 0
+tier: 1
 title: 船員法に基づく登録検査機関に関する政令
-law_id: 425CO0000000126
-official_title: 船員法に基づく登録検査機関に関する政令
-aliases:
-- 船員法に基づく登録検査機関に関する政令
 ---
 
 # 船員法に基づく登録検査機関に関する政令
 
-## Metadata
-- Law ID: `425CO0000000126`
-- Law No: 平成二十五年政令第百二十六号
-- Promulgation Date: 20130426
+## 本則（2条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

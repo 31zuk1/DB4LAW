@@ -1,26 +1,34 @@
 ---
+aliases:
+- 一般自動車道構造設備規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 328M50004800001
 id: JPLAW:328M50004800001
+law_id: 328M50004800001
 law_no: 昭和二十八年運輸省・建設省令第一号
 links:
   egov: https://laws.e-gov.go.jp/law/328M50004800001
+official_title: 一般自動車道構造設備規則
 promulgation_date: '19530421'
 tags:
 - 一般自動車道構造設備規則
-tier: 0
+tier: 1
 title: 一般自動車道構造設備規則
-law_id: 328M50004800001
-official_title: 一般自動車道構造設備規則
-aliases:
-- 一般自動車道構造設備規則
 ---
 
 # 一般自動車道構造設備規則
 
-## Metadata
-- Law ID: `328M50004800001`
-- Law No: 昭和二十八年運輸省・建設省令第一号
-- Promulgation Date: 19530421
+## 構造
+
+
+### 章（2章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]
+- [[附則/平成一二年一二月二八日運輸省_建設省令第一八号.md|平成一二年一二月二八日運輸省_建設省令第一八号]]

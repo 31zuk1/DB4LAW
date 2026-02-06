@@ -1,26 +1,32 @@
 ---
+aliases:
+- 管区機動隊の編成等に関する規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 345M50400000003
 id: JPLAW:345M50400000003
+law_id: 345M50400000003
 law_no: 昭和四十五年国家公安委員会規則第三号
 links:
   egov: https://laws.e-gov.go.jp/law/345M50400000003
+official_title: 管区機動隊の編成等に関する規則
 promulgation_date: '19700422'
 tags:
 - 管区機動隊の編成等に関する規則
-tier: 0
+tier: 1
 title: 管区機動隊の編成等に関する規則
-law_id: 345M50400000003
-official_title: 管区機動隊の編成等に関する規則
-aliases:
-- 管区機動隊の編成等に関する規則
 ---
 
 # 管区機動隊の編成等に関する規則
 
-## Metadata
-- Law ID: `345M50400000003`
-- Law No: 昭和四十五年国家公安委員会規則第三号
-- Promulgation Date: 19700422
+## 本則（4条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

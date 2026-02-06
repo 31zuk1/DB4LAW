@@ -1,26 +1,33 @@
 ---
+aliases:
+- 金管理法施行令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 328CO0000000148
 id: JPLAW:328CO0000000148
+law_id: 328CO0000000148
 law_no: 昭和二十八年政令第百四十八号
 links:
   egov: https://laws.e-gov.go.jp/law/328CO0000000148
+official_title: 金管理法施行令
 promulgation_date: '19530801'
 tags:
 - 金管理法施行令
-tier: 0
+tier: 1
 title: 金管理法施行令
-law_id: 328CO0000000148
-official_title: 金管理法施行令
-aliases:
-- 金管理法施行令
 ---
 
 # 金管理法施行令
 
-## Metadata
-- Law ID: `328CO0000000148`
-- Law No: 昭和二十八年政令第百四十八号
-- Promulgation Date: 19530801
+## 本則（3条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/昭和二九年九月六日政令第二六五号.md|昭和二九年九月六日政令第二六五号]]
+- [[附則/昭和三〇年四月二八日政令第六六号.md|昭和三〇年四月二八日政令第六六号]]
+- [[附則/制定時附則.md|制定時附則]]

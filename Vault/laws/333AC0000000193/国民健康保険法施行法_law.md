@@ -1,26 +1,41 @@
 ---
+aliases:
+- 国民健康保険法施行法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 333AC0000000193
 id: JPLAW:333AC0000000193
+law_id: 333AC0000000193
 law_no: 昭和三十三年法律第百九十三号
 links:
   egov: https://laws.e-gov.go.jp/law/333AC0000000193
+official_title: 国民健康保険法施行法
 promulgation_date: '19581227'
 tags:
 - 国民健康保険法施行法
-tier: 0
+tier: 1
 title: 国民健康保険法施行法
-law_id: 333AC0000000193
-official_title: 国民健康保険法施行法
-aliases:
-- 国民健康保険法施行法
 ---
 
 # 国民健康保険法施行法
 
-## Metadata
-- Law ID: `333AC0000000193`
-- Law No: 昭和三十三年法律第百九十三号
-- Promulgation Date: 19581227
+## 構造
+
+
+### 章（10章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+- [[章/第7章.md|第7章]]
+- [[章/第8章.md|第8章]]
+- [[章/第9章.md|第9章]]
+- [[章/第11章.md|第11章]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

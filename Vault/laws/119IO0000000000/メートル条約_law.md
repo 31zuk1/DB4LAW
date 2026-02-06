@@ -1,26 +1,38 @@
 ---
+aliases:
+- メートル条約
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 119IO0000000000
 id: JPLAW:119IO0000000000
+law_id: 119IO0000000000
 law_no: 明治十九年勅令
 links:
   egov: https://laws.e-gov.go.jp/law/119IO0000000000
+official_title: メートル条約
 promulgation_date: '18860420'
 tags:
 - メートル条約
-tier: 0
+tier: 2
 title: メートル条約
-law_id: 119IO0000000000
-official_title: メートル条約
-aliases:
-- メートル条約
 ---
 
 # メートル条約
 
-## Metadata
-- Law ID: `119IO0000000000`
-- Law No: 明治十九年勅令
-- Promulgation Date: 18860420
+## 本則（14条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第7条.md|第7条]]
+- [[本文/第8条.md|第8条]]
+- [[本文/第9条.md|第9条]]
+- [[本文/第10条.md|第10条]]
+- [[本文/第11条.md|第11条]]
+- [[本文/第12条.md|第12条]]
+- [[本文/第13条.md|第13条]]
+- [[本文/第14条.md|第14条]]

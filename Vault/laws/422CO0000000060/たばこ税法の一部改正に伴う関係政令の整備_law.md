@@ -1,26 +1,29 @@
 ---
+aliases:
+- たばこ税法の一部改正に伴う関係政令の整備に関する政令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 422CO0000000060
 id: JPLAW:422CO0000000060
+law_id: 422CO0000000060
 law_no: 平成二十二年政令第六十号
 links:
   egov: https://laws.e-gov.go.jp/law/422CO0000000060
+official_title: たばこ税法の一部改正に伴う関係政令の整備に関する政令
 promulgation_date: '20100331'
 tags:
 - たばこ税法の一部改正に伴う関係政令の整備に関する政令
-tier: 0
+tier: 1
 title: たばこ税法の一部改正に伴う関係政令の整備に関する政令
-law_id: 422CO0000000060
-official_title: たばこ税法の一部改正に伴う関係政令の整備に関する政令
-aliases:
-- たばこ税法の一部改正に伴う関係政令の整備に関する政令
 ---
 
 # たばこ税法の一部改正に伴う関係政令の整備に関する政令
 
-## Metadata
-- Law ID: `422CO0000000060`
-- Law No: 平成二十二年政令第六十号
-- Promulgation Date: 20100331
+## 本則（1条）
+
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

@@ -1,26 +1,33 @@
 ---
+aliases:
+- 日本銀行保管貴金属等取扱規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 334M50000040044
 id: JPLAW:334M50000040044
+law_id: 334M50000040044
 law_no: 昭和三十四年大蔵省令第四十四号
 links:
   egov: https://laws.e-gov.go.jp/law/334M50000040044
+official_title: 日本銀行保管貴金属等取扱規則
 promulgation_date: '19590530'
 tags:
 - 日本銀行保管貴金属等取扱規則
-tier: 0
+tier: 1
 title: 日本銀行保管貴金属等取扱規則
-law_id: 334M50000040044
-official_title: 日本銀行保管貴金属等取扱規則
-aliases:
-- 日本銀行保管貴金属等取扱規則
 ---
 
 # 日本銀行保管貴金属等取扱規則
 
-## Metadata
-- Law ID: `334M50000040044`
-- Law No: 昭和三十四年大蔵省令第四十四号
-- Promulgation Date: 19590530
+## 本則（5条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

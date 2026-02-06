@@ -1,26 +1,33 @@
 ---
+aliases:
+- 石油需給適正化法施行令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 349CO0000000015
 id: JPLAW:349CO0000000015
+law_id: 349CO0000000015
 law_no: 昭和四十九年政令第十五号
 links:
   egov: https://laws.e-gov.go.jp/law/349CO0000000015
+official_title: 石油需給適正化法施行令
 promulgation_date: '19740123'
 tags:
 - 石油需給適正化法施行令
-tier: 0
+tier: 1
 title: 石油需給適正化法施行令
-law_id: 349CO0000000015
-official_title: 石油需給適正化法施行令
-aliases:
-- 石油需給適正化法施行令
 ---
 
 # 石油需給適正化法施行令
 
-## Metadata
-- Law ID: `349CO0000000015`
-- Law No: 昭和四十九年政令第十五号
-- Promulgation Date: 19740123
+## 本則（3条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/昭和四九年四月二四日政令第一三八号.md|昭和四九年四月二四日政令第一三八号]]
+- [[附則/昭和四九年三月二七日政令第六五号.md|昭和四九年三月二七日政令第六五号]]
+- [[附則/制定時附則.md|制定時附則]]

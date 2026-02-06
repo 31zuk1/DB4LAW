@@ -1,26 +1,33 @@
 ---
+aliases:
+- 法人特別税法施行規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 404M50000040015
 id: JPLAW:404M50000040015
+law_id: 404M50000040015
 law_no: 平成四年大蔵省令第十五号
 links:
   egov: https://laws.e-gov.go.jp/law/404M50000040015
+official_title: 法人特別税法施行規則
 promulgation_date: '19920331'
 tags:
 - 法人特別税法施行規則
-tier: 0
+tier: 1
 title: 法人特別税法施行規則
-law_id: 404M50000040015
-official_title: 法人特別税法施行規則
-aliases:
-- 法人特別税法施行規則
 ---
 
 # 法人特別税法施行規則
 
-## Metadata
-- Law ID: `404M50000040015`
-- Law No: 平成四年大蔵省令第十五号
-- Promulgation Date: 19920331
+## 本則（4条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+
+### 現行附則
+
+- [[附則/平成一二年八月二一日大蔵省令第六九号.md|平成一二年八月二一日大蔵省令第六九号]]
+- [[附則/制定時附則.md|制定時附則]]

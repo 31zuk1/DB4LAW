@@ -1,26 +1,22 @@
 ---
+aliases:
+- 海底電信線保護万国連合条約ノ説明書
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 120IO0000000001
 id: JPLAW:120IO0000000001
+law_id: 120IO0000000001
 law_no: 明治二十年勅令
 links:
   egov: https://laws.e-gov.go.jp/law/120IO0000000001
+official_title: 海底電信線保護万国連合条約ノ説明書
 promulgation_date: '18871222'
 tags:
 - 海底電信線保護万国連合条約ノ説明書
-tier: 0
+tier: 2
 title: 海底電信線保護万国連合条約ノ説明書
-law_id: 120IO0000000001
-official_title: 海底電信線保護万国連合条約ノ説明書
-aliases:
-- 海底電信線保護万国連合条約ノ説明書
 ---
 
 # 海底電信線保護万国連合条約ノ説明書
 
-## Metadata
-- Law ID: `120IO0000000001`
-- Law No: 明治二十年勅令
-- Promulgation Date: 18871222

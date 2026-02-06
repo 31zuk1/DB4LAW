@@ -1,26 +1,39 @@
 ---
+aliases:
+- 振動規制法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 351AC0000000064
 id: JPLAW:351AC0000000064
+law_id: 351AC0000000064
 law_no: 昭和五十一年法律第六十四号
 links:
   egov: https://laws.e-gov.go.jp/law/351AC0000000064
+official_title: 振動規制法
 promulgation_date: '19760610'
 tags:
 - 振動規制法
-tier: 0
+tier: 1
 title: 振動規制法
-law_id: 351AC0000000064
-official_title: 振動規制法
-aliases:
-- 振動規制法
 ---
 
 # 振動規制法
 
-## Metadata
-- Law ID: `351AC0000000064`
-- Law No: 昭和五十一年法律第六十四号
-- Promulgation Date: 19760610
+## 構造
+
+
+### 章（6章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+
+### 現行附則
+
+- [[附則/令和四年六月一七日法律第六八号.md|令和四年六月一七日法律第六八号]]
+- [[附則/平成一二年五月三一日法律第九一号.md|平成一二年五月三一日法律第九一号]]
+- [[附則/制定時附則.md|制定時附則]]

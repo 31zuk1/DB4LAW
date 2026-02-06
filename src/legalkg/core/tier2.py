@@ -614,6 +614,118 @@ def has_external_law_in_context(text: str, match_position: int) -> bool:
     return False
 
 
+def find_external_law_in_context(text: str, match_position: int) -> Optional[str]:
+    """
+    同一文脈内に出現している外部法令名を返す
+
+    has_external_law_in_context と同じロジックだが、真偽値ではなく
+    外部法令名を返す。裸参照を外部法令にリンクする際に使用。
+
+    「同法」照応語の追跡:
+    - 「同法」は照応語（前文脈の法令を指す代名詞）
+    - 「同法」が文脈内にある場合、その前に言及された法令を追跡して返す
+    - 例: 「土地収用法第七十条...同法第八十二条」
+      → 「同法」より前の「土地収用法」を返す
+
+    Args:
+        text: 全体テキスト
+        match_position: マッチ位置
+
+    Returns:
+        外部法令名（見つかった場合）、なければ None
+    """
+    # 現在位置より前のコンテキスト窓を取得
+    context_start = max(0, match_position - CONTEXT_WINDOW_EXTERNAL_LAW)
+    before_text = text[context_start:match_position]
+
+    # WikiLinkを表示テキストに置換
+    context_cleaned = strip_wikilinks(before_text)
+
+    # Phase 1: 通常の外部法令名を検索（「同法」以外）
+    for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+        # 「同法」は照応語なので Phase 1 では除外
+        if ext_law == '同法':
+            continue
+
+        pos = context_cleaned.rfind(ext_law)
+        if pos >= 0:
+            # 法令名出現位置から現在位置までのテキストを取得
+            between = context_cleaned[pos:]
+
+            # 括弧内・引用符内の句点は除外して文の区切りをチェック
+            between_no_paren = re.sub(r'（[^）]*）', '', between)
+            between_no_quote = re.sub(r'「[^」]*」', '', between_no_paren)
+
+            # 文の区切り（。）がなければ同一文内
+            if '。' not in between_no_quote:
+                return ext_law
+
+    # Phase 2: 「同法」照応語の追跡（文ベース + 前文遡及検索）
+    # 「同法」が文脈内にある場合、その前に言及された法令を返す
+    #
+    # 「同法」は前の文で言及された法令を指すことが多いため、
+    # 同一文内で見つからない場合は前の文まで遡って検索する。
+    #
+    # 例: 「土地収用法第六章...の規定は...準用する。この場合において、同法第七十条...第八十二条」
+    #     → 「土地収用法」は前の文にあるが、「同法」が指すのは「土地収用法」
+
+    # 現在位置より前の全テキストを取得
+    full_before_text = text[:match_position]
+
+    # WikiLinkを表示テキストに置換
+    full_before_cleaned = strip_wikilinks(full_before_text)
+
+    # 最後の句点（。）を探す（文の開始位置）
+    last_period = full_before_cleaned.rfind('。')
+    sentence_start = last_period + 1 if last_period >= 0 else 0
+
+    # 現在の文（句点から現在位置まで）を取得
+    current_sentence = full_before_cleaned[sentence_start:]
+
+    # 「同法」が現在の文内にあるかチェック
+    douhou_pos = current_sentence.rfind('同法')
+    if douhou_pos >= 0:
+        # まず「同法」より前（同一文内）で法令名を検索
+        before_douhou = current_sentence[:douhou_pos]
+        before_douhou_clean = re.sub(r'（[^）]*）', '', before_douhou)
+
+        # 外部法令名を長い順に検索（同一文内）
+        for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+            if ext_law == '同法':
+                continue
+            if ext_law in before_douhou_clean:
+                return ext_law
+
+        # CROSS_LINKABLE_LAWS も検索（同一文内）
+        for cross_law in CROSS_LINKABLE_LAWS_SORTED:
+            if cross_law in before_douhou_clean:
+                return CROSS_LINKABLE_LAWS[cross_law]
+
+        # 同一文内で見つからない場合、前の文まで遡って検索
+        # 「同法」は直前の文で言及された法令を指すことが多い
+        if sentence_start > 0:
+            # 前の文を取得（前の句点から現在の句点まで）
+            prev_text = full_before_cleaned[:sentence_start]
+            # 括弧内を除去
+            prev_text_clean = re.sub(r'（[^）]*）', '', prev_text)
+
+            # 外部法令名を長い順に検索（前の文内）
+            for ext_law in EXTERNAL_LAW_PATTERNS_SORTED:
+                if ext_law == '同法':
+                    continue
+                pos = prev_text_clean.rfind(ext_law)
+                if pos >= 0:
+                    return ext_law
+
+            # CROSS_LINKABLE_LAWS も検索（前の文内）
+            for cross_law in CROSS_LINKABLE_LAWS_SORTED:
+                pos = prev_text_clean.rfind(cross_law)
+                if pos >= 0:
+                    return CROSS_LINKABLE_LAWS[cross_law]
+
+    return None
+
+
 def is_in_supplement_enumeration(context: str) -> bool:
     """
     コンテキストが附則列挙スコープ内かどうかをチェック
@@ -1427,20 +1539,19 @@ class EdgeExtractor:
                 if cross_link_target:
                     cross_link_law_name = cross_link_target  # フォルダ名=法令名
 
-            # 2b. 直近に見つからない場合、文スコープ内の外部法令をチェック
-            # 「外部法第1条、第2条」のような連続参照に対応
-            # 注: 自法令への法令番号付き参照（is_self_law_with_num）または本法参照（is_self_law_reference）はスキップ
-            if cross_link_target is None and not is_self_law_with_num and not is_self_law_reference:
-                if has_external_law_scope(text, match_start):
-                    return original_text  # リンク化せず、エッジも生成しない
+            # 2b. 外部法参照の抑制を無効化（全法令がVaultに存在するため）
+            # 以前: 外部法令スコープ内の裸参照はリンク化しなかった
+            # 現在: 全法令がtargets.yamlに含まれるため、全てリンク化する
+            # if cross_link_target is None and not is_self_law_with_num and not is_self_law_reference:
+            #     if has_external_law_scope(text, match_start):
+            #         return original_text  # リンク化せず、エッジも生成しない
 
-            # 2c. 同一文脈内に外部法令名が出現している場合は裸の参照をリンク化しない
-            # 「土地収用法...準用する第八十四条」のようなケースに対応
-            # クロスリンク先が明示されている場合はスキップ（そちらを優先）
-            # 注: 自法令への法令番号付き参照（is_self_law_with_num）または本法参照（is_self_law_reference）はスキップ
-            if cross_link_target is None and not is_self_law_with_num and not is_self_law_reference:
-                if has_external_law_in_context(text, match_start):
-                    return original_text  # リンク化せず、エッジも生成しない
+            # 2c. 外部法参照の抑制を無効化（全法令がVaultに存在するため）
+            # 以前: 文脈内に外部法令名がある場合は裸参照をリンク化しなかった
+            # 現在: 全法令がtargets.yamlに含まれるため、全てリンク化する
+            # if cross_link_target is None and not is_self_law_with_num and not is_self_law_reference:
+            #     if has_external_law_in_context(text, match_start):
+            #         return original_text  # リンク化せず、エッジも生成しない
 
             # 3. 改正法断片モード: 裸の第N条（法律名なし）はリンク化しない
             #
@@ -1499,9 +1610,22 @@ class EdgeExtractor:
                     # パスはlaw_nameにフォールバック（理想的ではないが互換性のため）
                     path_law_id = cross_link_target
             else:
-                # 自法令への参照
-                target_node_id = f"JPLAW:{source_law_id}#main#{target_key}"
-                path_law_id = source_law_id
+                # 外部法令スコープ内かチェック
+                external_law = find_external_law_in_context(text, match_start)
+                if external_law:
+                    # 外部法令への参照 - Vaultに存在するか確認
+                    target_law_id = resolve_law_id_from_vault(external_law, self.vault_root)
+                    if target_law_id:
+                        target_node_id = f"JPLAW:{target_law_id}#main#{target_key}"
+                        path_law_id = target_law_id
+                    else:
+                        # Vaultに存在しない場合は external: プレフィックスでエッジ生成
+                        target_node_id = f"external:{external_law}#main#{target_key}"
+                        path_law_id = external_law
+                else:
+                    # 自法令への参照
+                    target_node_id = f"JPLAW:{source_law_id}#main#{target_key}"
+                    path_law_id = source_law_id
 
             # WikiLinkパスを生成（law_idベース）
             link_path = f"laws/{path_law_id}/本文/{target_filename}"

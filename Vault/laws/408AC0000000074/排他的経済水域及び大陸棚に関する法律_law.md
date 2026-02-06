@@ -1,26 +1,32 @@
 ---
+aliases:
+- 排他的経済水域及び大陸棚に関する法律
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 408AC0000000074
 id: JPLAW:408AC0000000074
+law_id: 408AC0000000074
 law_no: 平成八年法律第七十四号
 links:
   egov: https://laws.e-gov.go.jp/law/408AC0000000074
+official_title: 排他的経済水域及び大陸棚に関する法律
 promulgation_date: '19960614'
 tags:
 - 排他的経済水域及び大陸棚に関する法律
-tier: 0
+tier: 1
 title: 排他的経済水域及び大陸棚に関する法律
-law_id: 408AC0000000074
-official_title: 排他的経済水域及び大陸棚に関する法律
-aliases:
-- 排他的経済水域及び大陸棚に関する法律
 ---
 
 # 排他的経済水域及び大陸棚に関する法律
 
-## Metadata
-- Law ID: `408AC0000000074`
-- Law No: 平成八年法律第七十四号
-- Promulgation Date: 19960614
+## 本則（4条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+
+### 制定時附則（全1条）
+
+- [[附則/制定時附則/第1条.md|第1条]]

@@ -1,26 +1,34 @@
 ---
+aliases:
+- 内航海運業報告規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 417M60000800002
 id: JPLAW:417M60000800002
+law_id: 417M60000800002
 law_no: 平成十七年国土交通省令第二号
 links:
   egov: https://laws.e-gov.go.jp/law/417M60000800002
+official_title: 内航海運業報告規則
 promulgation_date: '20050120'
 tags:
 - 内航海運業報告規則
-tier: 0
+tier: 1
 title: 内航海運業報告規則
-law_id: 417M60000800002
-official_title: 内航海運業報告規則
-aliases:
-- 内航海運業報告規則
 ---
 
 # 内航海運業報告規則
 
-## Metadata
-- Law ID: `417M60000800002`
-- Law No: 平成十七年国土交通省令第二号
-- Promulgation Date: 20050120
+## 本則（5条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+
+### 現行附則
+
+- [[附則/令和元年六月二八日国土交通省令第二〇号.md|令和元年六月二八日国土交通省令第二〇号]]
+- [[附則/制定時附則.md|制定時附則]]

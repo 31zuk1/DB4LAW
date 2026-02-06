@@ -1,26 +1,27 @@
 ---
+aliases:
+- 人事院規則一四―七（政治的行為）
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 324RJNJ14007000
 id: JPLAW:324RJNJ14007000
+law_id: 324RJNJ14007000
 law_no: 昭和二十四年人事院規則一四―七
 links:
   egov: https://laws.e-gov.go.jp/law/324RJNJ14007000
+official_title: 人事院規則一四―七（政治的行為）
 promulgation_date: '19490919'
 tags:
 - 人事院規則一四―七（政治的行為）
-tier: 0
+tier: 1
 title: 人事院規則一四―七（政治的行為）
-law_id: 324RJNJ14007000
-official_title: 人事院規則一四―七（政治的行為）
-aliases:
-- 人事院規則一四―七（政治的行為）
 ---
 
 # 人事院規則一四―七（政治的行為）
 
-## Metadata
-- Law ID: `324RJNJ14007000`
-- Law No: 昭和二十四年人事院規則一四―七
-- Promulgation Date: 19490919
+### 現行附則
+
+- [[附則/平成一五年一月一四日人事院規則一_三七.md|平成一五年一月一四日人事院規則一_三七]]
+- [[附則/平成一二年一二月二七日人事院規則一_三三.md|平成一二年一二月二七日人事院規則一_三三]]
+- [[附則/平成一一年一〇月二五日人事院規則一_二六.md|平成一一年一〇月二五日人事院規則一_二六]]

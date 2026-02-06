@@ -1,26 +1,26 @@
 ---
+aliases:
+- 船舶安全法第三十二条の漁船の範囲を定める政令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 349CO0000000258
 id: JPLAW:349CO0000000258
+law_id: 349CO0000000258
 law_no: 昭和四十九年政令第二百五十八号
 links:
   egov: https://laws.e-gov.go.jp/law/349CO0000000258
+official_title: 船舶安全法第三十二条の漁船の範囲を定める政令
 promulgation_date: '19740701'
 tags:
 - 船舶安全法第三十二条の漁船の範囲を定める政令
-tier: 0
+tier: 1
 title: 船舶安全法第三十二条の漁船の範囲を定める政令
-law_id: 349CO0000000258
-official_title: 船舶安全法第三十二条の漁船の範囲を定める政令
-aliases:
-- 船舶安全法第三十二条の漁船の範囲を定める政令
 ---
 
 # 船舶安全法第三十二条の漁船の範囲を定める政令
 
-## Metadata
-- Law ID: `349CO0000000258`
-- Law No: 昭和四十九年政令第二百五十八号
-- Promulgation Date: 19740701
+### 現行附則
+
+- [[附則/昭和五三年六月二〇日政令第二四七号.md|昭和五三年六月二〇日政令第二四七号]]
+- [[附則/制定時附則.md|制定時附則]]

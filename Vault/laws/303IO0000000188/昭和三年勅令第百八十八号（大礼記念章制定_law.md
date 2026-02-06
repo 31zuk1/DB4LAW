@@ -1,26 +1,29 @@
 ---
+aliases:
+- 昭和三年勅令第百八十八号（大礼記念章制定ノ件）
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 303IO0000000188
 id: JPLAW:303IO0000000188
+law_id: 303IO0000000188
 law_no: 昭和三年勅令第百八十八号
 links:
   egov: https://laws.e-gov.go.jp/law/303IO0000000188
+official_title: 昭和三年勅令第百八十八号（大礼記念章制定ノ件）
 promulgation_date: '19280801'
 tags:
 - 昭和三年勅令第百八十八号（大礼記念章制定ノ件）
-tier: 0
+tier: 1
 title: 昭和三年勅令第百八十八号（大礼記念章制定ノ件）
-law_id: 303IO0000000188
-official_title: 昭和三年勅令第百八十八号（大礼記念章制定ノ件）
-aliases:
-- 昭和三年勅令第百八十八号（大礼記念章制定ノ件）
 ---
 
 # 昭和三年勅令第百八十八号（大礼記念章制定ノ件）
 
-## Metadata
-- Law ID: `303IO0000000188`
-- Law No: 昭和三年勅令第百八十八号
-- Promulgation Date: 19280801
+## 本則（5条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]

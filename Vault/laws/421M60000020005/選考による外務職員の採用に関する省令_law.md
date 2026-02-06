@@ -1,26 +1,32 @@
 ---
+aliases:
+- 選考による外務職員の採用に関する省令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 421M60000020005
 id: JPLAW:421M60000020005
+law_id: 421M60000020005
 law_no: 平成二十一年外務省令第五号
 links:
   egov: https://laws.e-gov.go.jp/law/421M60000020005
+official_title: 選考による外務職員の採用に関する省令
 promulgation_date: '20090318'
 tags:
 - 選考による外務職員の採用に関する省令
-tier: 0
+tier: 1
 title: 選考による外務職員の採用に関する省令
-law_id: 421M60000020005
-official_title: 選考による外務職員の採用に関する省令
-aliases:
-- 選考による外務職員の採用に関する省令
 ---
 
 # 選考による外務職員の採用に関する省令
 
-## Metadata
-- Law ID: `421M60000020005`
-- Law No: 平成二十一年外務省令第五号
-- Promulgation Date: 20090318
+## 本則（4条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

@@ -1,26 +1,36 @@
 ---
+aliases:
+- 国有林野の活用に関する法律
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 346AC0000000108
 id: JPLAW:346AC0000000108
+law_id: 346AC0000000108
 law_no: 昭和四十六年法律第百八号
 links:
   egov: https://laws.e-gov.go.jp/law/346AC0000000108
+official_title: 国有林野の活用に関する法律
 promulgation_date: '19710610'
 tags:
 - 国有林野の活用に関する法律
-tier: 0
+tier: 1
 title: 国有林野の活用に関する法律
-law_id: 346AC0000000108
-official_title: 国有林野の活用に関する法律
-aliases:
-- 国有林野の活用に関する法律
 ---
 
 # 国有林野の活用に関する法律
 
-## Metadata
-- Law ID: `346AC0000000108`
-- Law No: 昭和四十六年法律第百八号
-- Promulgation Date: 19710610
+## 本則（8条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第7条.md|第7条]]
+- [[本文/第8条.md|第8条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

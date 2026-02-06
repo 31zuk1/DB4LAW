@@ -1,26 +1,42 @@
 ---
+aliases:
+- 石油石炭税法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 353AC0000000025
 id: JPLAW:353AC0000000025
+law_id: 353AC0000000025
 law_no: 昭和五十三年法律第二十五号
 links:
   egov: https://laws.e-gov.go.jp/law/353AC0000000025
+official_title: 石油石炭税法
 promulgation_date: '19780418'
 tags:
 - 石油石炭税法
-tier: 0
+tier: 1
 title: 石油石炭税法
-law_id: 353AC0000000025
-official_title: 石油石炭税法
-aliases:
-- 石油石炭税法
 ---
 
 # 石油石炭税法
 
-## Metadata
-- Law ID: `353AC0000000025`
-- Law No: 昭和五十三年法律第二十五号
-- Promulgation Date: 19780418
+## 構造
+
+
+### 章（6章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+- [[章/第5章.md|第5章]]
+- [[章/第6章.md|第6章]]
+
+### 現行附則
+
+- [[附則/令和四年六月一七日法律第六八号.md|令和四年六月一七日法律第六八号]]
+
+### 制定時附則（全2条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+- [[附則/制定時附則/第2条.md|第2条]]

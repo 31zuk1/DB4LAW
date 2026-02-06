@@ -1,26 +1,35 @@
 ---
+aliases:
+- 公文書館法
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 362AC0100000115
 id: JPLAW:362AC0100000115
+law_id: 362AC0100000115
 law_no: 昭和六十二年法律第百十五号
 links:
   egov: https://laws.e-gov.go.jp/law/362AC0100000115
+official_title: 公文書館法
 promulgation_date: '19871215'
 tags:
 - 公文書館法
-tier: 0
+tier: 1
 title: 公文書館法
-law_id: 362AC0100000115
-official_title: 公文書館法
-aliases:
-- 公文書館法
 ---
 
 # 公文書館法
 
-## Metadata
-- Law ID: `362AC0100000115`
-- Law No: 昭和六十二年法律第百十五号
-- Promulgation Date: 19871215
+## 本則（7条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第7条.md|第7条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

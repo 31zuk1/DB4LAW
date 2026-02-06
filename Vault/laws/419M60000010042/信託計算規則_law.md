@@ -1,26 +1,35 @@
 ---
+aliases:
+- 信託計算規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 419M60000010042
 id: JPLAW:419M60000010042
+law_id: 419M60000010042
 law_no: 平成十九年法務省令第四十二号
 links:
   egov: https://laws.e-gov.go.jp/law/419M60000010042
+official_title: 信託計算規則
 promulgation_date: '20070704'
 tags:
 - 信託計算規則
-tier: 0
+tier: 1
 title: 信託計算規則
-law_id: 419M60000010042
-official_title: 信託計算規則
-aliases:
-- 信託計算規則
 ---
 
 # 信託計算規則
 
-## Metadata
-- Law ID: `419M60000010042`
-- Law No: 平成十九年法務省令第四十二号
-- Promulgation Date: 20070704
+## 構造
+
+
+### 章（4章）
+
+- [[章/第1章.md|第1章]]
+- [[章/第2章.md|第2章]]
+- [[章/第3章.md|第3章]]
+- [[章/第4章.md|第4章]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

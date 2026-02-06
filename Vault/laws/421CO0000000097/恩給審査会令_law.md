@@ -1,26 +1,37 @@
 ---
+aliases:
+- 恩給審査会令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 421CO0000000097
 id: JPLAW:421CO0000000097
+law_id: 421CO0000000097
 law_no: 平成二十一年政令第九十七号
 links:
   egov: https://laws.e-gov.go.jp/law/421CO0000000097
+official_title: 恩給審査会令
 promulgation_date: '20090331'
 tags:
 - 恩給審査会令
-tier: 0
+tier: 1
 title: 恩給審査会令
-law_id: 421CO0000000097
-official_title: 恩給審査会令
-aliases:
-- 恩給審査会令
 ---
 
 # 恩給審査会令
 
-## Metadata
-- Law ID: `421CO0000000097`
-- Law No: 平成二十一年政令第九十七号
-- Promulgation Date: 20090331
+## 本則（7条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第7条.md|第7条]]
+
+### 制定時附則（全3条）
+
+- [[附則/制定時附則/第1条.md|第1条]]
+- [[附則/制定時附則/第2条.md|第2条]]
+- [[附則/制定時附則/第3条.md|第3条]]

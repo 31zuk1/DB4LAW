@@ -1,26 +1,33 @@
 ---
+aliases:
+- 内閣広報室に内閣副広報官等を置く規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 412RPMD08210001
 id: JPLAW:412RPMD08210001
+law_id: 412RPMD08210001
 law_no: 平成十二年八月二十一日内閣総理大臣決定
 links:
   egov: https://laws.e-gov.go.jp/law/412RPMD08210001
+official_title: 内閣広報室に内閣副広報官等を置く規則
 promulgation_date: '20000821'
 tags:
 - 内閣広報室に内閣副広報官等を置く規則
-tier: 0
+tier: 1
 title: 内閣広報室に内閣副広報官等を置く規則
-law_id: 412RPMD08210001
-official_title: 内閣広報室に内閣副広報官等を置く規則
-aliases:
-- 内閣広報室に内閣副広報官等を置く規則
 ---
 
 # 内閣広報室に内閣副広報官等を置く規則
 
-## Metadata
-- Law ID: `412RPMD08210001`
-- Law No: 平成十二年八月二十一日内閣総理大臣決定
-- Promulgation Date: 20000821
+## 本則（3条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+
+### 現行附則
+
+- [[附則/平成一七年四月一日.md|平成一七年四月一日]]
+- [[附則/平成二三年三月三一日.md|平成二三年三月三一日]]
+- [[附則/制定時附則.md|制定時附則]]

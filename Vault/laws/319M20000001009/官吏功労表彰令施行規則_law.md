@@ -1,26 +1,35 @@
 ---
+aliases:
+- 官吏功労表彰令施行規則
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 319M20000001009
 id: JPLAW:319M20000001009
+law_id: 319M20000001009
 law_no: 昭和十九年閣令第九号
 links:
   egov: https://laws.e-gov.go.jp/law/319M20000001009
+official_title: 官吏功労表彰令施行規則
 promulgation_date: '19440215'
 tags:
 - 官吏功労表彰令施行規則
-tier: 0
+tier: 1
 title: 官吏功労表彰令施行規則
-law_id: 319M20000001009
-official_title: 官吏功労表彰令施行規則
-aliases:
-- 官吏功労表彰令施行規則
 ---
 
 # 官吏功労表彰令施行規則
 
-## Metadata
-- Law ID: `319M20000001009`
-- Law No: 昭和十九年閣令第九号
-- Promulgation Date: 19440215
+## 本則（7条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+- [[本文/第7条.md|第7条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]

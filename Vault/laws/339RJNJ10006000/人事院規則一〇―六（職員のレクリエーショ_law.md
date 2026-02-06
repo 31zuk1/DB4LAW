@@ -1,26 +1,29 @@
 ---
+aliases:
+- 人事院規則一〇―六（職員のレクリエーションの根本基準）
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 339RJNJ10006000
 id: JPLAW:339RJNJ10006000
+law_id: 339RJNJ10006000
 law_no: 昭和三十九年人事院規則一〇―六
 links:
   egov: https://laws.e-gov.go.jp/law/339RJNJ10006000
+official_title: 人事院規則一〇―六（職員のレクリエーションの根本基準）
 promulgation_date: '19640401'
 tags:
 - 人事院規則一〇―六（職員のレクリエーションの根本基準）
-tier: 0
+tier: 1
 title: 人事院規則一〇―六（職員のレクリエーションの根本基準）
-law_id: 339RJNJ10006000
-official_title: 人事院規則一〇―六（職員のレクリエーションの根本基準）
-aliases:
-- 人事院規則一〇―六（職員のレクリエーションの根本基準）
 ---
 
 # 人事院規則一〇―六（職員のレクリエーションの根本基準）
 
-## Metadata
-- Law ID: `339RJNJ10006000`
-- Law No: 昭和三十九年人事院規則一〇―六
-- Promulgation Date: 19640401
+## 本則（5条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]

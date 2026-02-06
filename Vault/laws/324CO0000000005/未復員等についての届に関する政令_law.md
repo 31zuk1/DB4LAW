@@ -1,26 +1,34 @@
 ---
+aliases:
+- 未復員等についての届に関する政令
 as_of: '2025-01-01'
 domain: []
 egov_class: []
 egov_law_id: 324CO0000000005
 id: JPLAW:324CO0000000005
+law_id: 324CO0000000005
 law_no: 昭和二十四年政令第五号
 links:
   egov: https://laws.e-gov.go.jp/law/324CO0000000005
+official_title: 未復員等についての届に関する政令
 promulgation_date: '19490112'
 tags:
 - 未復員等についての届に関する政令
-tier: 0
+tier: 1
 title: 未復員等についての届に関する政令
-law_id: 324CO0000000005
-official_title: 未復員等についての届に関する政令
-aliases:
-- 未復員等についての届に関する政令
 ---
 
 # 未復員等についての届に関する政令
 
-## Metadata
-- Law ID: `324CO0000000005`
-- Law No: 昭和二十四年政令第五号
-- Promulgation Date: 19490112
+## 本則（6条）
+
+- [[本文/第1条.md|第1条]]
+- [[本文/第2条.md|第2条]]
+- [[本文/第3条.md|第3条]]
+- [[本文/第4条.md|第4条]]
+- [[本文/第5条.md|第5条]]
+- [[本文/第6条.md|第6条]]
+
+### 現行附則
+
+- [[附則/制定時附則.md|制定時附則]]
