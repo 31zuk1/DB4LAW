@@ -77,15 +77,16 @@ class TestVaultBasedLinking:
     def extractor(self):
         return EdgeExtractor(vault_root=Path('./Vault'))
 
-    def test_vault_existing_law_in_external_patterns_linked(self, extractor):
-        """EXTERNAL_LAW_PATTERNS に含まれるが Vault に存在する法令はリンク化"""
-        # 商法は EXTERNAL_LAW_PATTERNS に含まれているが、Vault に存在する
+    def test_vault_existing_law_in_external_patterns_suppressed(self, extractor):
+        """EXTERNAL_LAW_PATTERNS かつ許可リスト外の法令は抑制される"""
+        # 商法は EXTERNAL_LAW_PATTERNS に含まれているが、CROSS_LINKABLE_LAWS にはない
         assert '商法' in EXTERNAL_LAW_PATTERNS
+        assert '商法' not in CROSS_LINKABLE_LAWS
         text = "商法第一条の規定"
         result = extractor.replace_refs(text, "テスト法")
-        # law_id ベースのパス
-        shoho_id = resolve_law_id_from_vault('商法', Path('./Vault'))
-        assert f"[[laws/{shoho_id}/本文/第1条.md|第一条]]" in result
+        # 許可リスト外 → プレーンテキスト
+        assert "|第一条]]" not in result
+        assert "第一条" in result
 
     def test_vault_existing_law_enumeration_linked(self, extractor):
         """Vault に存在する法令の列挙もリンク化"""
@@ -96,13 +97,14 @@ class TestVaultBasedLinking:
         assert f"[[laws/{kaishaho_id}/本文/第2条.md|第二条]]" in result
         assert f"[[laws/{kaishaho_id}/本文/第3条.md|第三条]]" in result
 
-    def test_vault_nonexisting_law_not_linked(self, extractor):
-        """Vault に存在しない法令はリンク化しない"""
-        # 少年法は EXTERNAL_LAW_PATTERNS に含まれているが、Vault に存在しない
+    def test_external_law_patterns_not_linked(self, extractor):
+        """EXTERNAL_LAW_PATTERNS かつ許可リスト外の法令はリンク化しない"""
+        # 少年法は EXTERNAL_LAW_PATTERNS に含まれ、CROSS_LINKABLE_LAWS にはない
         assert '少年法' in EXTERNAL_LAW_PATTERNS
+        assert '少年法' not in CROSS_LINKABLE_LAWS
         text = "少年法第一条の規定"
         result = extractor.replace_refs(text, "テスト法")
-        assert "[[" not in result
+        assert "|第一条]]" not in result
         assert "第一条" in result
 
 
@@ -179,8 +181,8 @@ class TestVaultBasedEdges:
         assert edge["from"] == "JPLAW:TEST001#main#1"
         assert kaishaho_id in edge["to"]
 
-    def test_vault_nonexisting_law_no_edge(self, extractor):
-        """Vault に存在しない法令への参照はエッジを生成しない"""
+    def test_external_law_patterns_no_edge(self, extractor):
+        """EXTERNAL_LAW_PATTERNS かつ許可リスト外の法令はエッジも生成しない"""
         text = "少年法第一条の規定"
         replaced, edges = extractor.replace_refs_with_edges(
             text=text,
@@ -190,7 +192,7 @@ class TestVaultBasedEdges:
         )
 
         # リンクもエッジも生成されない
-        assert "[[" not in replaced
+        assert "|第一条]]" not in replaced
         assert len(edges) == 0
 
 
@@ -218,12 +220,11 @@ class TestMixedReferences:
         assert f"[[laws/{keiho_id}/本文/第199条.md|第百九十九条]]" in result
         assert f"[[laws/{kaishaho_id}/本文/第1条.md|第一条]]" in result
 
-    def test_vault_and_nonvault_laws(self, extractor):
-        """Vault 存在法令と非存在法令の混在"""
+    def test_allowlisted_and_non_allowlisted_laws(self, extractor):
+        """許可リスト内法令と許可リスト外法令の混在"""
         text = "会社法第一条及び少年法第二条の規定"
         result = extractor.replace_refs(text, "テスト法")
-        # 会社法はリンク化（law_id ベース）、少年法はリンク化しない
+        # 会社法はリンク化（CROSS_LINKABLE_LAWS）、少年法は抑制
         kaishaho_id = resolve_law_id_from_vault('会社法', Path('./Vault'))
         assert f"[[laws/{kaishaho_id}/本文/第1条.md|第一条]]" in result
-        assert "少年法第二条" in result
-        assert "[[laws/少年法" not in result
+        assert "|第二条]]" not in result

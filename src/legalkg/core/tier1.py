@@ -1,8 +1,8 @@
 """
 Tier1 Builder - v2 Native Implementation
 
-e-Gov API v2 の JSON を直接 traverse して条文ノードを生成。
-BeautifulSoup / XML 依存を完全廃止。
+e-Gov API v2 の JSON ツリー（tag/attr/children 形式）を直接 traverse して条文ノードを生成。
+JSON は法令XMLのツリー構造を模倣した形式で提供される。
 """
 from pathlib import Path
 from typing import List, Dict, Any, Optional
@@ -116,8 +116,17 @@ def get_text(node: Dict[str, Any]) -> str:
 
 
 # =============================================================================
-# Structure Helpers (Chapter/Section)
+# Structure Helpers (Part/Chapter/Section)
 # =============================================================================
+
+def get_part_title(node: Dict[str, Any]) -> Optional[str]:
+    """Part ノードから PartTitle のテキストを取得（なければ None）"""
+    title_node = find_child(node, "PartTitle")
+    if title_node:
+        text = get_text(title_node).strip()
+        return text if text else None
+    return None
+
 
 def get_chapter_title(node: Dict[str, Any]) -> Optional[str]:
     """Chapter ノードから ChapterTitle のテキストを取得（なければ None）"""
@@ -156,11 +165,31 @@ def has_proviso_walk(node: Any) -> bool:
 # Structure Aggregators (Phase A-2)
 # =============================================================================
 
+class PartAgg:
+    """編の集計データ"""
+    def __init__(self, part_num: int, part_title: Optional[str] = None):
+        self.part_num = part_num
+        self.part_title = part_title
+        self.chapter_keys: set = set()  # この編に属する章キー (part_num, chapter_num)
+
+    @property
+    def chapter_count(self) -> int:
+        return len(self.chapter_keys)
+
+
 class ChapterAgg:
     """章の集計データ"""
-    def __init__(self, chapter_num: int, chapter_title: Optional[str] = None):
+    def __init__(
+        self,
+        chapter_num: int,
+        chapter_title: Optional[str] = None,
+        part_num: Optional[int] = None,
+        part_title: Optional[str] = None
+    ):
         self.chapter_num = chapter_num
         self.chapter_title = chapter_title
+        self.part_num = part_num  # 編番号（ない場合は None）
+        self.part_title = part_title
         self.article_ids: List[str] = []
         self.article_nums: List[str] = []
         self.section_nums: set = set()  # この章に属する節番号
@@ -177,21 +206,30 @@ class SectionAgg:
         chapter_num: int,
         section_num: int,
         chapter_title: Optional[str] = None,
-        section_title: Optional[str] = None
+        section_title: Optional[str] = None,
+        part_num: Optional[int] = None,
+        part_title: Optional[str] = None
     ):
         self.chapter_num = chapter_num
         self.section_num = section_num
         self.chapter_title = chapter_title
         self.section_title = section_title
+        self.part_num = part_num  # 編番号（ない場合は None）
+        self.part_title = part_title
         self.article_ids: List[str] = []
         self.article_nums: List[str] = []
 
 
 class StructureAggregator:
-    """章/節 → 条文の集計器"""
+    """編/章/節 → 条文の集計器"""
     def __init__(self):
-        self.chapters: Dict[int, ChapterAgg] = {}
-        self.sections: Dict[tuple, SectionAgg] = {}  # (chapter_num, section_num) -> SectionAgg
+        # 編の集計: part_num -> PartAgg
+        self.parts: Dict[int, PartAgg] = {}
+        # 章の集計: (part_num, chapter_num) -> ChapterAgg
+        # part_num は None の場合あり（編を持たない法令）
+        self.chapters: Dict[tuple, ChapterAgg] = {}
+        # 節の集計: (part_num, chapter_num, section_num) -> SectionAgg
+        self.sections: Dict[tuple, SectionAgg] = {}
         # 条文の見出し情報を保持（wikilink 生成用）
         self.article_headings: Dict[str, str] = {}  # article_num -> heading
 
@@ -203,6 +241,8 @@ class StructureAggregator:
         heading: str
     ):
         """条文を集計に追加"""
+        part_num = context.get("part_num")
+        part_title = context.get("part_title")
         chapter_num = context.get("chapter_num")
         section_num = context.get("section_num")
         chapter_title = context.get("chapter_title")
@@ -211,25 +251,40 @@ class StructureAggregator:
         # 見出し情報を保持
         self.article_headings[article_num] = heading
 
+        # 編を追加（存在する場合）
+        if part_num is not None:
+            if part_num not in self.parts:
+                self.parts[part_num] = PartAgg(part_num, part_title)
+
         if chapter_num is not None:
+            # 章キー: (part_num, chapter_num) - part_num は None 可
+            chapter_key = (part_num, chapter_num)
+
             # 章に追加
-            if chapter_num not in self.chapters:
-                self.chapters[chapter_num] = ChapterAgg(chapter_num, chapter_title)
-            chapter_agg = self.chapters[chapter_num]
+            if chapter_key not in self.chapters:
+                self.chapters[chapter_key] = ChapterAgg(
+                    chapter_num, chapter_title, part_num, part_title
+                )
+            chapter_agg = self.chapters[chapter_key]
             chapter_agg.article_ids.append(node_id)
             chapter_agg.article_nums.append(article_num)
+
+            # 編に章を登録
+            if part_num is not None:
+                self.parts[part_num].chapter_keys.add(chapter_key)
 
             if section_num is not None:
                 # 節を章に登録
                 chapter_agg.section_nums.add(section_num)
 
-                # 節に追加
-                key = (chapter_num, section_num)
-                if key not in self.sections:
-                    self.sections[key] = SectionAgg(
-                        chapter_num, section_num, chapter_title, section_title
+                # 節キー: (part_num, chapter_num, section_num)
+                section_key = (part_num, chapter_num, section_num)
+                if section_key not in self.sections:
+                    self.sections[section_key] = SectionAgg(
+                        chapter_num, section_num, chapter_title, section_title,
+                        part_num, part_title
                     )
-                section_agg = self.sections[key]
+                section_agg = self.sections[section_key]
                 section_agg.article_ids.append(node_id)
                 section_agg.article_nums.append(article_num)
 
@@ -473,8 +528,10 @@ class Tier1Builder:
                 )
             return
 
-        # Walk ベースで Chapter/Section コンテキストを追跡
+        # Walk ベースで Part/Chapter/Section コンテキストを追跡
         initial_context = {
+            "part_num": None,
+            "part_title": None,
             "chapter_num": None,
             "chapter_title": None,
             "section_num": None,
@@ -505,13 +562,24 @@ class Tier1Builder:
     ):
         """
         ツリーを walk して Article を処理（O(N) の走査）。
-        Chapter/Section を通過するたびにコンテキストを更新。
+        Part/Chapter/Section を通過するたびにコンテキストを更新。
         aggregator があれば条文情報を集計。
         """
         tag = node_tag(node)
 
-        if tag == "Chapter":
-            # Chapter コンテキストを更新（Section はリセット）
+        if tag == "Part":
+            # Part コンテキストを更新（Chapter/Section はリセット）
+            new_context = context.copy()
+            new_context["part_num"] = parse_int(node_attr(node, "Num"))
+            new_context["part_title"] = get_part_title(node)
+            new_context["chapter_num"] = None
+            new_context["chapter_title"] = None
+            new_context["section_num"] = None
+            new_context["section_title"] = None
+            context = new_context
+
+        elif tag == "Chapter":
+            # Chapter コンテキストを更新（Section はリセット、Part は維持）
             new_context = context.copy()
             new_context["chapter_num"] = parse_int(node_attr(node, "Num"))
             new_context["chapter_title"] = get_chapter_title(node)
@@ -841,24 +909,34 @@ class Tier1Builder:
         if part_type == "suppl":
             return self._make_law_link(law_id, law_name)
 
+        # コンテキストから編・章・節情報を取得
+        part_num = context.get("part_num") if context else None
+        chapter_num = context.get("chapter_num") if context else None
+        section_num = context.get("section_num") if context else None
+        chapter_title = context.get("chapter_title") if context else None
+        section_title = context.get("section_title") if context else None
+
         # 節が存在する場合
-        if context and context.get("section_num") is not None:
-            chapter_num = context.get("chapter_num")
-            section_num = context.get("section_num")
-            chapter_title = context.get("chapter_title")
-            section_title = context.get("section_title")
-            chapter_name = self._format_chapter_name(chapter_num, chapter_title)
-            section_name = self._format_section_name(section_num, section_title)
-            return f"[[laws/{law_id}/節/{chapter_name}{section_name}.md]]"
+        if section_num is not None and chapter_num is not None:
+            section_file_name = self._format_section_file_name(
+                part_num, chapter_num, section_num,
+                chapter_title, section_title
+            )
+            return f"[[laws/{law_id}/節/{section_file_name}.md]]"
 
         # 章のみ存在する場合
-        if context and context.get("chapter_num") is not None:
-            chapter_num = context.get("chapter_num")
-            chapter_title = context.get("chapter_title")
-            chapter_name = self._format_chapter_name(chapter_num, chapter_title)
-            return f"[[laws/{law_id}/章/{chapter_name}.md]]"
+        if chapter_num is not None:
+            chapter_file_name = self._format_chapter_file_name(
+                part_num, chapter_num, chapter_title
+            )
+            return f"[[laws/{law_id}/章/{chapter_file_name}.md]]"
 
-        # 孤立条文（章/節なし）
+        # 編のみ存在する場合（章なし）
+        if part_num is not None:
+            part_name = self._format_part_name(part_num)
+            return f"[[laws/{law_id}/編/{part_name}.md]]"
+
+        # 孤立条文（編/章/節なし）
         return self._make_law_link(law_id, law_name)
 
     def _build_frontmatter(
@@ -902,6 +980,10 @@ class Tier1Builder:
 
         # Phase A: 構造コンテキスト（省略主義: None でなければ出力）
         if context:
+            if context.get("part_num") is not None:
+                fm["part_num"] = context["part_num"]
+            if context.get("part_title") is not None:
+                fm["part_title"] = context["part_title"]
             if context.get("chapter_num") is not None:
                 fm["chapter_num"] = context["chapter_num"]
             if context.get("chapter_title") is not None:
@@ -952,30 +1034,111 @@ class Tier1Builder:
         law_name: str,
         aggregator: StructureAggregator
     ):
-        """章/節の構造ノードファイルを生成"""
-        if not aggregator.chapters:
+        """編/章/節の構造ノードファイルを生成"""
+        if not aggregator.chapters and not aggregator.parts:
             return
 
         # ディレクトリ作成
+        part_dir = law_dir / "編"
         chapter_dir = law_dir / "章"
         section_dir = law_dir / "節"
-        chapter_dir.mkdir(exist_ok=True)
+
+        # 編がある場合のみ編ディレクトリを作成
+        if aggregator.parts:
+            part_dir.mkdir(exist_ok=True)
+
+        # 章がある場合のみ章ディレクトリを作成
+        if aggregator.chapters:
+            chapter_dir.mkdir(exist_ok=True)
 
         # 節がある場合のみ節ディレクトリを作成
         if aggregator.sections:
             section_dir.mkdir(exist_ok=True)
 
-        # 章ノード生成
-        for chapter_num, chapter_agg in sorted(aggregator.chapters.items()):
+        # 編ノード生成
+        for part_num, part_agg in sorted(aggregator.parts.items()):
+            self._write_part_node(
+                part_dir, law_id, law_name, part_agg, aggregator
+            )
+
+        # 章ノード生成（キーは (part_num, chapter_num) タプル）
+        for chapter_key, chapter_agg in sorted(aggregator.chapters.items()):
             self._write_chapter_node(
                 chapter_dir, law_id, law_name, chapter_agg, aggregator
             )
 
-        # 節ノード生成
-        for (chapter_num, section_num), section_agg in sorted(aggregator.sections.items()):
+        # 節ノード生成（キーは (part_num, chapter_num, section_num) タプル）
+        for section_key, section_agg in sorted(aggregator.sections.items()):
             self._write_section_node(
-                section_dir, law_id, law_name, section_agg
+                section_dir, law_id, law_name, section_agg, aggregator
             )
+
+    def _format_part_name(self, part_num: int) -> str:
+        """編番号を可読ファイル名形式に変換: 1 -> 第1編"""
+        return f"第{part_num}編"
+
+    def _write_part_node(
+        self,
+        part_dir: Path,
+        law_id: str,
+        law_name: str,
+        part_agg: PartAgg,
+        aggregator: StructureAggregator
+    ):
+        """編ノードファイルを生成"""
+        part_num = part_agg.part_num
+        part_name = self._format_part_name(part_num)
+        file_name = f"{part_name}.md"
+        file_path = part_dir / file_name
+
+        node_id = f"JPLAW:{law_id}#part#{part_num}"
+
+        # Frontmatter 構築
+        fm: Dict[str, Any] = {
+            "id": node_id,
+            "type": "part",
+            "parent": self._make_law_link(law_id, law_name) if law_name else None,
+            "law_id": law_id,
+            "law_name": law_name,
+            "part_num": part_num,
+        }
+
+        if part_agg.part_title:
+            fm["part_title"] = part_agg.part_title
+
+        fm["chapter_count"] = part_agg.chapter_count
+        fm["tags"] = [law_name] if law_name else []
+
+        # 本文生成
+        title_part = f" {part_agg.part_title}" if part_agg.part_title else ""
+        content = f"# {part_name}{title_part}\n\n"
+
+        # 章リスト
+        content += "## この編の章\n\n"
+        for chapter_key in sorted(part_agg.chapter_keys):
+            chapter_agg = aggregator.chapters.get(chapter_key)
+            if chapter_agg:
+                chapter_file_name = self._format_chapter_file_name(
+                    part_num, chapter_agg.chapter_num, chapter_agg.chapter_title
+                )
+                chapter_display = self._format_chapter_name(chapter_agg.chapter_num, chapter_agg.chapter_title)
+                title_part = f" {chapter_agg.chapter_title}" if chapter_agg.chapter_title else ""
+                link_path = f"laws/{law_id}/章/{chapter_file_name}.md"
+                content += f"- [[{link_path}|{chapter_display}{title_part}]]\n"
+
+        self._write_markdown(file_path, fm, content)
+
+    def _format_chapter_file_name(
+        self,
+        part_num: Optional[int],
+        chapter_num: int,
+        chapter_title: Optional[str] = None
+    ) -> str:
+        """章のファイル名を生成（編番号を含む場合あり）"""
+        chapter_name = self._format_chapter_name(chapter_num, chapter_title)
+        if part_num is not None:
+            return f"第{part_num}編{chapter_name}"
+        return chapter_name
 
     def _write_chapter_node(
         self,
@@ -986,23 +1149,44 @@ class Tier1Builder:
         aggregator: StructureAggregator
     ):
         """章ノードファイルを生成"""
+        part_num = chapter_agg.part_num
         chapter_num = chapter_agg.chapter_num
         chapter_title = chapter_agg.chapter_title
-        chapter_name = self._format_chapter_name(chapter_num, chapter_title)
-        file_name = f"{chapter_name}.md"
+
+        # ファイル名（編がある場合は編番号を含む）
+        file_base = self._format_chapter_file_name(part_num, chapter_num, chapter_title)
+        file_name = f"{file_base}.md"
         file_path = chapter_dir / file_name
 
-        node_id = f"JPLAW:{law_id}#chapter#{chapter_num}"
+        # ID生成（編がある場合は編を含む）
+        if part_num is not None:
+            node_id = f"JPLAW:{law_id}#part#{part_num}#chapter#{chapter_num}"
+        else:
+            node_id = f"JPLAW:{law_id}#chapter#{chapter_num}"
+
+        # 親リンク生成（編がある場合は編へ、ない場合は法令へ）
+        if part_num is not None:
+            part_name = self._format_part_name(part_num)
+            parent_link = f"[[laws/{law_id}/編/{part_name}.md|{part_name}]]"
+        else:
+            parent_link = self._make_law_link(law_id, law_name) if law_name else None
 
         # Frontmatter 構築
         fm: Dict[str, Any] = {
             "id": node_id,
             "type": "chapter",
-            "parent": self._make_law_link(law_id, law_name) if law_name else None,
+            "parent": parent_link,
             "law_id": law_id,
             "law_name": law_name,
-            "chapter_num": chapter_num,
         }
+
+        # 編情報（存在する場合）
+        if part_num is not None:
+            fm["part_num"] = part_num
+            if chapter_agg.part_title:
+                fm["part_title"] = chapter_agg.part_title
+
+        fm["chapter_num"] = chapter_num
 
         # 省略主義: chapter_title があれば出力
         if chapter_agg.chapter_title:
@@ -1014,6 +1198,7 @@ class Tier1Builder:
         fm["tags"] = [law_name] if law_name else []
 
         # 本文生成
+        chapter_name = self._format_chapter_name(chapter_num, chapter_title)
         title_part = f" {chapter_agg.chapter_title}" if chapter_agg.chapter_title else ""
         content = f"# {chapter_name}{title_part}\n\n"
 
@@ -1021,14 +1206,17 @@ class Tier1Builder:
         if chapter_agg.section_count > 0:
             content += "## この章の節\n\n"
             for section_num in sorted(chapter_agg.section_nums):
-                key = (chapter_num, section_num)
-                section_agg = aggregator.sections.get(key)
+                section_key = (part_num, chapter_num, section_num)
+                section_agg = aggregator.sections.get(section_key)
                 if section_agg:
+                    section_file_name = self._format_section_file_name(
+                        part_num, chapter_num, section_num,
+                        chapter_title, section_agg.section_title
+                    )
                     section_name = self._format_section_name(section_num, section_agg.section_title)
                     section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
                     link_text = f"{section_name}{section_title_part}"
-                    # Vault root からのフルパス
-                    link_path = f"laws/{law_id}/節/{chapter_name}{section_name}.md"
+                    link_path = f"laws/{law_id}/節/{section_file_name}.md"
                     content += f"- [[{link_path}|{link_text}]]\n"
             content += "\n"
 
@@ -1038,39 +1226,75 @@ class Tier1Builder:
             heading = aggregator.article_headings.get(article_num, "")
             jp_name = self._format_article_name(article_num)
             heading_part = f" {heading}" if heading else ""
-            # Vault root からのフルパス
             link_path = f"laws/{law_id}/本文/{jp_name}.md"
             content += f"- [[{link_path}|{jp_name}{heading_part}]]\n"
 
         self._write_markdown(file_path, fm, content)
+
+    def _format_section_file_name(
+        self,
+        part_num: Optional[int],
+        chapter_num: int,
+        section_num: int,
+        chapter_title: Optional[str] = None,
+        section_title: Optional[str] = None
+    ) -> str:
+        """節のファイル名を生成（編番号を含む場合あり）"""
+        chapter_name = self._format_chapter_name(chapter_num, chapter_title)
+        section_name = self._format_section_name(section_num, section_title)
+        if part_num is not None:
+            return f"第{part_num}編{chapter_name}{section_name}"
+        return f"{chapter_name}{section_name}"
 
     def _write_section_node(
         self,
         section_dir: Path,
         law_id: str,
         law_name: str,
-        section_agg: SectionAgg
+        section_agg: SectionAgg,
+        aggregator: StructureAggregator
     ):
         """節ノードファイルを生成"""
+        part_num = section_agg.part_num
         chapter_num = section_agg.chapter_num
         section_num = section_agg.section_num
         chapter_title = section_agg.chapter_title
-        chapter_name = self._format_chapter_name(chapter_num, chapter_title)
-        section_name = self._format_section_name(section_num, section_agg.section_title)
-        file_name = f"{chapter_name}{section_name}.md"
+
+        # ファイル名（編がある場合は編番号を含む）
+        file_base = self._format_section_file_name(
+            part_num, chapter_num, section_num,
+            chapter_title, section_agg.section_title
+        )
+        file_name = f"{file_base}.md"
         file_path = section_dir / file_name
 
-        node_id = f"JPLAW:{law_id}#chapter#{chapter_num}#section#{section_num}"
+        # ID生成（編がある場合は編を含む）
+        if part_num is not None:
+            node_id = f"JPLAW:{law_id}#part#{part_num}#chapter#{chapter_num}#section#{section_num}"
+        else:
+            node_id = f"JPLAW:{law_id}#chapter#{chapter_num}#section#{section_num}"
+
+        # 親リンク生成（章へ）
+        chapter_file_name = self._format_chapter_file_name(part_num, chapter_num, chapter_title)
+        chapter_display = self._format_chapter_name(chapter_num, chapter_title)
+        parent_link = f"[[laws/{law_id}/章/{chapter_file_name}.md|{chapter_display}]]"
 
         # Frontmatter 構築
         fm: Dict[str, Any] = {
             "id": node_id,
             "type": "section",
-            "parent": f"[[laws/{law_id}/章/{chapter_name}.md]]" if law_name else None,
+            "parent": parent_link,
             "law_id": law_id,
             "law_name": law_name,
-            "chapter_num": chapter_num,
         }
+
+        # 編情報（存在する場合）
+        if part_num is not None:
+            fm["part_num"] = part_num
+            if section_agg.part_title:
+                fm["part_title"] = section_agg.part_title
+
+        fm["chapter_num"] = chapter_num
 
         # 省略主義: title があれば出力
         if section_agg.chapter_title:
@@ -1086,6 +1310,8 @@ class Tier1Builder:
         fm["tags"] = [law_name] if law_name else []
 
         # 本文生成
+        chapter_name = self._format_chapter_name(chapter_num, chapter_title)
+        section_name = self._format_section_name(section_num, section_agg.section_title)
         chapter_title_part = f" {section_agg.chapter_title}" if section_agg.chapter_title else ""
         section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
         content = f"# {chapter_name}{chapter_title_part} {section_name}{section_title_part}\n\n"
@@ -1094,7 +1320,6 @@ class Tier1Builder:
         content += "## この節の条文\n\n"
         for article_num in section_agg.article_nums:
             jp_name = self._format_article_name(article_num)
-            # Vault root からのフルパス
             link_path = f"laws/{law_id}/本文/{jp_name}.md"
             content += f"- [[{link_path}|{jp_name}]]\n"
 

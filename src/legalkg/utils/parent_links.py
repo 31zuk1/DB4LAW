@@ -159,25 +159,54 @@ def generate_links_for_law(law_dir: Path) -> str:
         Markdown string with links to direct child articles only
     """
     main_dir = law_dir / "本文"
+    part_dir = law_dir / "編"
     chapter_dir = law_dir / "章"
     suppl_dir = law_dir / "附則"
     law_file_name = _get_law_file_name(law_dir)
 
     lines: List[str] = []
 
-    # Chapter links - if chapters exist, show them as direct children
-    if chapter_dir.exists():
+    # Part links - if parts exist, show them as direct children
+    if part_dir.exists():
+        part_files = list(part_dir.glob('第*編.md'))
+        if part_files:
+            # Sort parts by number
+            def part_sort_key(f):
+                name = f.stem
+                match = re.match(r'第(\d+)編', name)
+                if match:
+                    return int(match.group(1))
+                return 999
+
+            part_files.sort(key=part_sort_key)
+            lines.append(f"\n## 構造\n")
+            lines.append(f"\n### 編（{len(part_files)}編）\n")
+
+            for f in part_files:
+                display_name = f.stem
+                lines.append(f"- [[編/{f.name}|{display_name}]]")
+
+    # Chapter links - if chapters exist and no parts, show them as direct children
+    elif chapter_dir.exists():
         chapter_files = list(chapter_dir.glob('第*.md'))
         if chapter_files:
             # Sort chapters by number
             def chapter_sort_key(f):
                 name = f.stem
+                # 編番号がある場合: 第1編第4章 -> (1, 4, 0)
+                match = re.match(r'第(\d+)編第(\d+)章(?:の(\d+))?', name)
+                if match:
+                    part = int(match.group(1))
+                    chapter = int(match.group(2))
+                    sub = int(match.group(3)) if match.group(3) else 0
+                    return (part, chapter, sub)
+                # 編番号がない場合: 第4章 -> (0, 4, 0)
                 match = re.match(r'第(\d+)章(?:の(\d+))?', name)
                 if match:
-                    main = int(match.group(1))
+                    chapter = int(match.group(1))
                     sub = int(match.group(2)) if match.group(2) else 0
-                    return (main, sub)
-                return (999, 0)
+                    return (0, chapter, sub)
+                return (999, 999, 0)
 
             chapter_files.sort(key=chapter_sort_key)
             lines.append(f"\n## 構造\n")

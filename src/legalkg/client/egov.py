@@ -2,7 +2,7 @@
 e-Gov API Client - v2 Native Implementation
 
 v2 API の JSON を SSOT として直接返却する設計。
-XML 変換は廃止。
+JSON は法令XMLのツリー構造を模倣した形式（tag/attr/children）で提供される。
 """
 from .base import BaseClient
 from ..config import EGOV_API_V2_BASE_URL

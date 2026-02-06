@@ -84,7 +84,7 @@ python scripts/debug/debug_regex.py
 1. **Tier 0** (`src/legalkg/core/tier0.py`): Fetches law list from e-Gov API
    - Output: `Vault/laws/{LAW_ID}/{title}.md` with YAML frontmatter
 
-2. **Tier 1** (`src/legalkg/core/tier1.py`): Parses XML and extracts individual articles
+2. **Tier 1** (`src/legalkg/core/tier1.py`): Parses JSON tree (tag/attr/children format) and extracts individual articles
    - Raw output: `articles/main/Article_{N}.md` and `articles/suppl/...`
    - After migration: `本文/第N条.md` and `附則/改正法/{KEY}/附則第N条.md`
    - Structure nodes: `章/第N章.md`, `節/第N節.md`
@@ -165,7 +165,7 @@ python scripts/migration/normalize_frontmatter.py --apply
 
 ### Amendment Law Fragment Model
 
-e-Gov の統合条文 XML では、整備法・一括改正法は独立法令として取得できず、
+e-Gov の統合条文データ（JSON形式）では、整備法・一括改正法は独立法令として取得できず、
 各親法の `SupplProvision(AmendLawNum=...)` に断片として分散格納される。
 
 **改正法断片の識別:**

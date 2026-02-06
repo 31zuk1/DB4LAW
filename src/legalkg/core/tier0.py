@@ -69,8 +69,8 @@ class Tier0Builder:
         law_name = law_data.get("LawName")
         promulgation_date = law_data.get("PromulgationDate")
         
-        # e-Gov List XML doesn't seem to have per-law Category easily accessible
-        # We will use empty list for now, or map from LawNo if possible.
+        # e-Gov List API のレスポンスには法令ごとの Category が含まれていない
+        # 現状は空リストを使用し、将来的に LawNo からマッピングする可能性あり
         egov_classes = []
 
         domains = self._map_domains(law_id, egov_classes)

@@ -173,9 +173,29 @@ def generate_containment_edges_from_aggregator(
     edges: List[Dict[str, Any]] = []
     seen_pairs: set = set()  # (source, target) で重複チェック
 
+    # 編→章（編がある場合）
+    for part_num, part_agg in aggregator.parts.items():
+        part_id = f"JPLAW:{law_id}#part#{part_num}"
+        for chapter_key in part_agg.chapter_keys:
+            p_num, ch_num = chapter_key
+            chapter_id = f"JPLAW:{law_id}#part#{p_num}#chapter#{ch_num}"
+            pair = (part_id, chapter_id)
+            if pair not in seen_pairs:
+                seen_pairs.add(pair)
+                edges.append({
+                    "source": part_id,
+                    "target": chapter_id,
+                    "type": "contains",
+                    "relation": "part_contains_chapter"
+                })
+
     # 章→条文
-    for chapter_num, chapter_agg in aggregator.chapters.items():
-        chapter_id = f"JPLAW:{law_id}#chapter#{chapter_num}"
+    for chapter_key, chapter_agg in aggregator.chapters.items():
+        part_num, chapter_num = chapter_key
+        if part_num is not None:
+            chapter_id = f"JPLAW:{law_id}#part#{part_num}#chapter#{chapter_num}"
+        else:
+            chapter_id = f"JPLAW:{law_id}#chapter#{chapter_num}"
         for article_id in chapter_agg.article_ids:
             pair = (chapter_id, article_id)
             if pair not in seen_pairs:
@@ -183,8 +203,12 @@ def generate_containment_edges_from_aggregator(
                 edges.append(create_chapter_containment_edge(chapter_id, article_id))
 
     # 節→条文
-    for (chapter_num, section_num), section_agg in aggregator.sections.items():
-        section_id = f"JPLAW:{law_id}#chapter#{chapter_num}#section#{section_num}"
+    for section_key, section_agg in aggregator.sections.items():
+        part_num, chapter_num, section_num = section_key
+        if part_num is not None:
+            section_id = f"JPLAW:{law_id}#part#{part_num}#chapter#{chapter_num}#section#{section_num}"
+        else:
+            section_id = f"JPLAW:{law_id}#chapter#{chapter_num}#section#{section_num}"
         for article_id in section_agg.article_ids:
             pair = (section_id, article_id)
             if pair not in seen_pairs:

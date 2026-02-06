@@ -109,9 +109,10 @@ class TestExtractExternalLawWithNum:
 
 class TestExternalEdgeFormat:
     """
-    external edge のフォーマット仕様固定テスト
+    許可リスト外の法令番号付き外部法参照のテスト
 
-    to = "external:<law_name>#main#<article_id>" の形式を保証する。
+    設計原則: クロスリンク生成は CROSS_LINKABLE_LAWS のみ。
+    農業協同組合法、弁護士法等は許可リスト外 → プレーンテキスト、エッジなし。
     """
 
     def setup_method(self):
@@ -122,62 +123,58 @@ class TestExternalEdgeFormat:
 
     def test_article_id_simple(self):
         """
-        条番号のみ: 第97条 → 97
+        許可リスト外の法令番号付き参照 → プレーンテキスト
         """
         text = "農業協同組合法（昭和二十二年法律第百三十二号）第九十七条において"
-        _, edges = self.extractor.replace_refs_with_edges(
+        replaced, edges = self.extractor.replace_refs_with_edges(
             text=text,
             law_name="会社法",
             source_law_id="417AC0000000086",
             source_node_id="JPLAW:417AC0000000086#main#943"
         )
 
-        assert len(edges) == 1
-        assert edges[0]["to"] == "external:農業協同組合法#main#97"
+        assert len(edges) == 0
+        assert "|第九十七条]]" not in replaced
 
     def test_article_id_with_branch(self):
         """
-        条番号 + 枝番: 第97条の4 → 97_4
+        許可リスト外の法令番号付き参照（枝番）→ プレーンテキスト
         """
         text = "農業協同組合法（昭和二十二年法律第百三十二号）第九十七条の四において"
-        _, edges = self.extractor.replace_refs_with_edges(
+        replaced, edges = self.extractor.replace_refs_with_edges(
             text=text,
             law_name="会社法",
             source_law_id="417AC0000000086",
             source_node_id="JPLAW:417AC0000000086#main#943"
         )
 
-        assert len(edges) == 1
-        assert edges[0]["to"] == "external:農業協同組合法#main#97_4"
+        assert len(edges) == 0
+        assert "|第九十七条の四]]" not in replaced
 
     def test_943_pattern_law_name_clean(self):
         """
-        会社法第943条パターン: law_name に前置テキストが混ざらない
-
-        入力: この節の規定若しくは農業協同組合法（...）第九十七条の四
-        期待: to = "external:農業協同組合法#main#97_4"
-              NOT "external:この節の規定若しくは農業協同組合法#main#97_4"
+        会社法第943条パターン: 許可リスト外 → プレーンテキスト
         """
         text = "この節の規定若しくは農業協同組合法（昭和二十二年法律第百三十二号）第九十七条の四第五項において"
-        _, edges = self.extractor.replace_refs_with_edges(
+        replaced, edges = self.extractor.replace_refs_with_edges(
             text=text,
             law_name="会社法",
             source_law_id="417AC0000000086",
             source_node_id="JPLAW:417AC0000000086#main#943"
         )
 
-        assert len(edges) == 1
-        edge = edges[0]
-        # law_name は純粋な "農業協同組合法" であること
-        assert edge["to"] == "external:農業協同組合法#main#97_4"
-        assert "この節の規定若しくは" not in edge["to"]
+        assert len(edges) == 0
+        assert "|第九十七条の四]]" not in replaced
 
     def test_edge_required_fields(self):
         """
-        external edge の必須フィールドを確認
+        許可リスト内の法令番号付き参照は正しいエッジを生成する
+
+        弁護士法は許可リスト外だが、民法は許可リスト内。
+        民法（法令番号）第N条 → JPLAW: 形式のエッジが生成される。
         """
-        text = "弁護士法（昭和二十四年法律第二百五号）第三十条の二十八において"
-        _, edges = self.extractor.replace_refs_with_edges(
+        text = "民法（明治二十九年法律第八十九号）第九十三条において"
+        replaced, edges = self.extractor.replace_refs_with_edges(
             text=text,
             law_name="会社法",
             source_law_id="417AC0000000086",
@@ -194,13 +191,12 @@ class TestExternalEdgeFormat:
         assert "evidence" in edge
         assert "confidence" in edge
         assert "source" in edge
-        assert "kind" in edge
 
         # 値の検証
         assert edge["from"] == "JPLAW:417AC0000000086#main#943"
-        assert edge["to"].startswith("external:")
+        assert edge["to"].startswith("JPLAW:")
+        assert "129AC0000000089" in edge["to"]  # 民法の law_id
         assert edge["type"] == "refers_to"
-        assert edge["kind"] == "external_ref"
 
 
 class TestExternalLawWithLawNumber:
@@ -270,12 +266,12 @@ class TestExternalLawExternalEdge:
         set_vault_root(vault_root)
         self.extractor = EdgeExtractor(vault_root=vault_root)
 
-    def test_external_edge_generated_for_non_vault_law(self):
+    def test_non_allowlisted_law_suppressed(self):
         """
-        Vaultに存在しない法令への参照で external edge が生成される
+        許可リスト外の法令番号付き参照はプレーンテキスト
 
         入力: 弁護士法（昭和二十四年法律第二百五号）第三十条の二十八
-        期待: to = "external:弁護士法#main#30_28" の edge が生成される
+        期待: プレーンテキスト、エッジなし
         """
         text = "弁護士法（昭和二十四年法律第二百五号）第三十条の二十八第六項において"
         result, edges = self.extractor.replace_refs_with_edges(
@@ -286,19 +282,13 @@ class TestExternalLawExternalEdge:
         )
 
         # リンク化されない
-        assert "[[" not in result
+        assert "|第三十条の二十八]]" not in result
+        # エッジなし
+        assert len(edges) == 0
 
-        # external edge が生成される
-        assert len(edges) == 1
-        edge = edges[0]
-        assert edge["to"] == "external:弁護士法#main#30_28"
-        assert edge["type"] == "refers_to"
-        assert edge["kind"] == "external_ref"
-        assert "第三十条の二十八" in edge["evidence"]
-
-    def test_external_edge_multiple_laws(self):
+    def test_multiple_non_allowlisted_laws_suppressed(self):
         """
-        複数の外部法令参照で複数の external edge が生成される
+        複数の許可リスト外の法令番号付き参照はすべてプレーンテキスト
         """
         text = (
             "弁護士法（昭和二十四年法律第二百五号）第三十条の二十八第六項、"
@@ -311,18 +301,11 @@ class TestExternalLawExternalEdge:
             source_node_id="JPLAW:417AC0000000086#main#943"
         )
 
-        # 2つの external edge が生成される
-        assert len(edges) == 2
-
-        # 弁護士法への参照
-        bengoshi_edge = [e for e in edges if "弁護士法" in e["to"]][0]
-        assert bengoshi_edge["to"] == "external:弁護士法#main#30_28"
-        assert bengoshi_edge["kind"] == "external_ref"
-
-        # 司法書士法への参照
-        shihoshoshi_edge = [e for e in edges if "司法書士法" in e["to"]][0]
-        assert shihoshoshi_edge["to"] == "external:司法書士法#main#45_2"
-        assert shihoshoshi_edge["kind"] == "external_ref"
+        # エッジなし
+        assert len(edges) == 0
+        # リンク化されない
+        assert "|第三十条の二十八]]" not in result
+        assert "|第四十五条の二]]" not in result
 
 
 class TestExternalLawInVault:
