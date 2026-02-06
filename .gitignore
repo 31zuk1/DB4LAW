@@ -54,3 +54,4 @@ Vault/.obsidian/graph.json
 Vault/.obsidian/cache/
 report.json
 /Vault/reports/*.json
+/Vault/reports/
