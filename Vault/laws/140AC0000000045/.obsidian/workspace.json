@@ -4,35 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "616829cf252886ac",
+        "id": "64c2ec87bf2db5bc",
         "type": "tabs",
         "children": [
           {
-            "id": "56747a86b9268a8c",
+            "id": "305f35985b895d7d",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "グラフビュー"
-            }
-          },
-          {
-            "id": "ec8eb186f9bd2cf5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "編/第2編.md",
-                "mode": "source",
-                "source": false
-              },
               "icon": "lucide-file",
-              "title": "第2編"
+              "title": "新規タブ"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "編/第2編.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "第2編へのバックリンク"
+              "title": "バックリンク"
             }
           },
           {
@@ -124,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "編/第2編.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "第2編からのアウトゴーイングリンク"
+              "title": "アウトゴーイングリンク"
             }
           },
           {
@@ -167,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "編/第2編.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "第2編のアウトライン"
+              "title": "アウトライン"
             }
           }
         ]
@@ -194,11 +176,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "ec8eb186f9bd2cf5",
+  "active": "33261ed130c79c25",
   "lastOpenFiles": [
+    "刑法_law.md",
+    "編/第2編.md",
     "編/第1編.md",
     "laws/140AC0000000045/刑法_law.md",
-    "刑法_law.md",
     "laws/140AC0000000045",
     "laws"
   ]
