@@ -1,37 +1,66 @@
 {
   "main": {
-    "id": "d81dab1ce10aa92b",
+    "id": "af192ed617a6cf30",
     "type": "split",
     "children": [
       {
-        "id": "64c2ec87bf2db5bc",
+        "id": "9498754fc949d698",
         "type": "tabs",
         "children": [
           {
-            "id": "305f35985b895d7d",
+            "id": "96aa5c65c6ae934d",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
+              "icon": "lucide-git-fork",
+              "title": "グラフビュー"
+            }
+          },
+          {
+            "id": "31beb4ee0b9525e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "laws/129AC0000000089/民法_law.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "民法_law"
+            }
+          },
+          {
+            "id": "685401c83980ed50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "laws/129AC0000000089/本文/第271条.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第271条"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "36e69af055975328",
+    "id": "aefe03e19e5f2621",
     "type": "split",
     "children": [
       {
-        "id": "294c9d0e383315e4",
+        "id": "024b1757d0ed669e",
         "type": "tabs",
         "children": [
           {
-            "id": "33261ed130c79c25",
+            "id": "85248091a765d1c0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +73,7 @@
             }
           },
           {
-            "id": "9fc022a228cc556d",
+            "id": "cb74ff99fc6090af",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +90,7 @@
             }
           },
           {
-            "id": "a85ff04658ad0584",
+            "id": "88ebbec6c235b951",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +106,20 @@
     "width": 300
   },
   "right": {
-    "id": "42cd7896b6cdfcd1",
+    "id": "9ca32825af819c18",
     "type": "split",
     "children": [
       {
-        "id": "11bce46f8aee87e9",
+        "id": "f773f20bee930427",
         "type": "tabs",
         "children": [
           {
-            "id": "8d2765b2179bee6e",
+            "id": "c0aee4fb8a2572f4",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "laws/129AC0000000089/民法_law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +129,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "バックリンク"
+              "title": "民法_lawへのバックリンク"
             }
           },
           {
-            "id": "0d926c66b792ac40",
+            "id": "0c2b7b24527e0989",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "laws/129AC0000000089/民法_law.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "アウトゴーイングリンク"
+              "title": "民法_lawからのアウトゴーイングリンク"
             }
           },
           {
-            "id": "dc3c254c12ff133f",
+            "id": "8ce2ab97ccbb3b09",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +162,7 @@
             }
           },
           {
-            "id": "7085d3551fc3e0d4",
+            "id": "9c1cd7293b7e72f4",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,17 +176,18 @@
             }
           },
           {
-            "id": "fb37dd5920e839b1",
+            "id": "47af1ff4f1c57b68",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "laws/129AC0000000089/民法_law.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "アウトライン"
+              "title": "民法_lawのアウトライン"
             }
           }
         ]
@@ -176,13 +208,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "33261ed130c79c25",
+  "active": "31beb4ee0b9525e3",
   "lastOpenFiles": [
-    "刑法_law.md",
-    "編/第2編.md",
-    "編/第1編.md",
-    "laws/140AC0000000045/刑法_law.md",
-    "laws/140AC0000000045",
-    "laws"
+    "laws/129AC0000000089/本文/第271条.md"
   ]
 }

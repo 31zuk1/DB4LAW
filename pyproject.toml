@@ -18,6 +18,7 @@ dependencies = [
 
 [project.scripts]
 legalkg = "legalkg.cli:app"
+db4law-proj = "legalkg.projection_cli:app"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

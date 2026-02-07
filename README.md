@@ -19,14 +19,14 @@ e-Gov法令APIから取得した法令XMLを、条文単位のMarkdownノード�
 ## クイックスタート
 
 ```bash
-# セットアップ
-pip install -e .
+# セットアップ（Python 3.11+）
+uv sync
 
 # 法令を処理
-python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges
+uv run python -m legalkg build-tier1 --vault ./Vault --targets targets.yaml --extract-edges
 
 # WikiLink整合性チェック
-python scripts/qa/check_wikilinks.py --vault ./Vault
+uv run python scripts/qa/check_wikilinks.py --vault ./Vault
 ```
 
 ## 処理済み法令
@@ -190,6 +190,33 @@ python scripts/qa/check_wikilinks.py --vault ./Vault
 python scripts/qa/audit_vault.py --vault ./Vault --targets targets.yaml
 ```
 
+### 投影Vaultランチャー
+
+巨大な `Vault/` を直接開かずに、選択法令だけの軽量Vaultを作る:
+
+```bash
+# 例: 刑法と民法のみの投影Vaultを作成
+uv run db4law-proj create --laws 140AC0000000045,129AC0000000089
+
+# 投影セッションのリンク健全性を診断
+uv run db4law-proj doctor --session-id <session_id>
+
+# Obsidianで投影Vaultを開く
+uv run db4law-proj open --session-id <session_id>
+
+# source law配下の誤配置 .obsidian を検査/除去
+uv run db4law-proj clean-markers --session-id <session_id>
+uv run db4law-proj clean-markers --session-id <session_id> --apply
+```
+
+詳細: `docs/projection_vault.md`
+
+#### 投影Vault起動トラブルシュート
+
+- `db4law-proj: command not found` の場合は `uv run db4law-proj ...` を使う。
+- `Vault not found` が出る場合は、まず `uv sync --reinstall-package legalkg` 後に再実行する。
+- 法令ディレクトリ配下に `.obsidian` があると誤ったVaultが開くことがあるため、`clean-markers` で除去する。
+
 ## アーキテクチャ
 
 ### 3層データモデル
@@ -246,10 +273,13 @@ DB4LAW/
 ### セットアップ
 
 ```bash
-# 開発用インストール
+# 推奨
+uv sync
+
+# 既存運用
 pip install -e .
 
-# または
+# 最小構成
 pip install -r requirements.txt
 ```
 
@@ -292,3 +322,4 @@ MIT License
 
 - [CLAUDE.md](./CLAUDE.md) - Claude Code用開発ガイド
 - [docs/AMENDMENT_VAULT_DESIGN.md](./docs/AMENDMENT_VAULT_DESIGN.md) - 改正法Vault設計
+- [docs/projection_vault.md](./docs/projection_vault.md) - 投影Vaultランチャー運用
