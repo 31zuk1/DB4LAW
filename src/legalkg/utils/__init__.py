@@ -25,6 +25,12 @@ from .markdown import (
     validate_required_fields,
     MarkdownBatchProcessor,
 )
+from .structure_titles import (
+    extract_structure_subtitle,
+    format_part_name,
+    format_chapter_name,
+    format_section_name,
+)
 
 __all__ = [
     # numerals
@@ -49,4 +55,9 @@ __all__ = [
     'get_metadata_field',
     'validate_required_fields',
     'MarkdownBatchProcessor',
+    # structure_titles
+    'extract_structure_subtitle',
+    'format_part_name',
+    'format_chapter_name',
+    'format_section_name',
 ]

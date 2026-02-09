@@ -177,8 +177,17 @@ python -m legalkg build-tier1 \
 |-----------|------|
 | `restructure_tree_links.py` | 木構造リンク再構築（Graph毛玉化防止） |
 | `fix_chapter_filenames.py` | 章ファイル名の枝番号修正 |
+| `fix_structure_headings.py` | 編/章/節見出しの重複除去（生成ロジック準拠） |
 | `normalize_frontmatter.py` | Breadcrumbs/Dataview用メタデータ追加 |
 | `fix_amendment_fragment_links.py` | 改正法断片リンク修正 |
+
+```bash
+# 既存Vaultの編/章/節見出しを再生成なしで補正（dry-run）
+uv run python scripts/migration/fix_structure_headings.py --vault ./Vault
+
+# 実適用
+uv run python scripts/migration/fix_structure_headings.py --vault ./Vault --apply
+```
 
 ### QAスクリプト
 

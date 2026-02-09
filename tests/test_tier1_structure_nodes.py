@@ -206,6 +206,24 @@ class TestTier1BuilderFormatArticleName:
         assert builder._format_article_name("1_2_3") == "第1の2の3条"
 
 
+class TestTier1BuilderDisplayTitle:
+    """構造見出し表示の補助処理テスト"""
+
+    @pytest.fixture
+    def builder(self, tmp_path):
+        targets_file = tmp_path / "targets.yaml"
+        targets_file.write_text("targets: []")
+        return Tier1Builder(tmp_path, targets_file)
+
+    def test_extract_structure_subtitle(self, builder):
+        assert builder._extract_structure_subtitle("第一編　総則", "編") == "総則"
+        assert builder._extract_structure_subtitle("第一章　通則", "章") == "通則"
+        assert builder._extract_structure_subtitle("第二章の二　社債管理補助者", "章") == "社債管理補助者"
+        assert builder._extract_structure_subtitle("第1節 通則", "節") == "通則"
+        assert builder._extract_structure_subtitle("第一章", "章") is None
+        assert builder._extract_structure_subtitle("通則", "章") == "通則"
+
+
 class TestStructureNodeGeneration:
     """構造ノード生成の統合テスト"""
 
@@ -346,3 +364,44 @@ tier: 0
 
         # chapter_title キーが存在しない
         assert "chapter_title" not in fm
+
+    def test_structure_headings_prefer_arabic_and_no_duplication(self, tmp_path):
+        """見出しはアラビア数字寄せで、第一章/第一節の重複を出さない"""
+        vault = tmp_path / "Vault"
+        laws_dir = vault / "laws" / "テスト法"
+        (laws_dir / "本文").mkdir(parents=True)
+
+        targets_file = tmp_path / "targets.yaml"
+        targets_file.write_text("targets: []")
+        builder = Tier1Builder(vault, targets_file)
+
+        agg = StructureAggregator()
+        context = {
+            "part_num": 1,
+            "part_title": "第一編　総則",
+            "chapter_num": 1,
+            "chapter_title": "第一章　通則",
+            "section_num": 1,
+            "section_title": "第一節　定義",
+        }
+        agg.add_article(context, "JPLAW:999#main#1", "1", "（趣旨）")
+
+        builder._generate_structure_nodes(laws_dir, "999TEST", "テスト法", agg)
+
+        part_body = (laws_dir / "編" / "第1編.md").read_text().split("---", 2)[2]
+        chapter_body = (laws_dir / "章" / "第1編第1章.md").read_text().split("---", 2)[2]
+        section_body = (laws_dir / "節" / "第1編第1章第1節.md").read_text().split("---", 2)[2]
+
+        assert "# 第1編 総則" in part_body
+        assert "[[laws/999TEST/章/第1編第1章.md|第1章 通則]]" in part_body
+        assert "第1編 第一編" not in part_body
+        assert "第1章 第一章" not in part_body
+
+        assert "# 第1章 通則" in chapter_body
+        assert "[[laws/999TEST/節/第1編第1章第1節.md|第1節 定義]]" in chapter_body
+        assert "第1章 第一章" not in chapter_body
+        assert "第1節 第一節" not in chapter_body
+
+        assert "# 第1章 通則 第1節 定義" in section_body
+        assert "第1章 第一章" not in section_body
+        assert "第1節 第一節" not in section_body

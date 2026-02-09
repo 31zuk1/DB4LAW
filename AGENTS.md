@@ -15,6 +15,9 @@
 - QA:
   - `uv run python scripts/qa/check_wikilinks.py --vault ./Vault`
   - `PYTHONPATH=src pytest -q`
+- 見出し補正（再生成なし）:
+  - `uv run python scripts/migration/fix_structure_headings.py --vault ./Vault`
+  - `uv run python scripts/migration/fix_structure_headings.py --vault ./Vault --apply`
 
 ## Projection Vault (`db4law-proj`)
 

@@ -13,6 +13,12 @@ import yaml
 import json
 
 from ..utils.parent_links import update_law_file_with_links
+from ..utils.structure_titles import (
+    extract_structure_subtitle,
+    format_part_name,
+    format_chapter_name,
+    format_section_name,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -1082,7 +1088,11 @@ class Tier1Builder:
 
     def _format_part_name(self, part_num: int) -> str:
         """編番号を可読ファイル名形式に変換: 1 -> 第1編"""
-        return f"第{part_num}編"
+        return format_part_name(part_num)
+
+    def _extract_structure_subtitle(self, title: Optional[str], unit: str) -> Optional[str]:
+        """編/章/節タイトルから先頭の番号表記を除去して副題を返す。"""
+        return extract_structure_subtitle(title, unit)
 
     def _write_part_node(
         self,
@@ -1117,7 +1127,8 @@ class Tier1Builder:
         fm["tags"] = [law_name] if law_name else []
 
         # 本文生成
-        title_part = f" {part_agg.part_title}" if part_agg.part_title else ""
+        part_subtitle = self._extract_structure_subtitle(part_agg.part_title, "編")
+        title_part = f" {part_subtitle}" if part_subtitle else ""
         content = f"# {part_name}{title_part}\n\n"
 
         # 章リスト
@@ -1129,7 +1140,8 @@ class Tier1Builder:
                     part_num, chapter_agg.chapter_num, chapter_agg.chapter_title
                 )
                 chapter_display = self._format_chapter_name(chapter_agg.chapter_num, chapter_agg.chapter_title)
-                title_part = f" {chapter_agg.chapter_title}" if chapter_agg.chapter_title else ""
+                chapter_subtitle = self._extract_structure_subtitle(chapter_agg.chapter_title, "章")
+                title_part = f" {chapter_subtitle}" if chapter_subtitle else ""
                 link_path = f"laws/{law_id}/章/{chapter_file_name}.md"
                 content += f"- [[{link_path}|{chapter_display}{title_part}]]\n"
 
@@ -1206,7 +1218,8 @@ class Tier1Builder:
 
         # 本文生成
         chapter_name = self._format_chapter_name(chapter_num, chapter_title)
-        title_part = f" {chapter_agg.chapter_title}" if chapter_agg.chapter_title else ""
+        chapter_subtitle = self._extract_structure_subtitle(chapter_agg.chapter_title, "章")
+        title_part = f" {chapter_subtitle}" if chapter_subtitle else ""
         content = f"# {chapter_name}{title_part}\n\n"
 
         # 節リスト（存在する場合のみ）
@@ -1221,7 +1234,8 @@ class Tier1Builder:
                         chapter_title, section_agg.section_title
                     )
                     section_name = self._format_section_name(section_num, section_agg.section_title)
-                    section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
+                    section_subtitle = self._extract_structure_subtitle(section_agg.section_title, "節")
+                    section_title_part = f" {section_subtitle}" if section_subtitle else ""
                     link_text = f"{section_name}{section_title_part}"
                     link_path = f"laws/{law_id}/節/{section_file_name}.md"
                     content += f"- [[{link_path}|{link_text}]]\n"
@@ -1319,8 +1333,10 @@ class Tier1Builder:
         # 本文生成
         chapter_name = self._format_chapter_name(chapter_num, chapter_title)
         section_name = self._format_section_name(section_num, section_agg.section_title)
-        chapter_title_part = f" {section_agg.chapter_title}" if section_agg.chapter_title else ""
-        section_title_part = f" {section_agg.section_title}" if section_agg.section_title else ""
+        chapter_subtitle = self._extract_structure_subtitle(section_agg.chapter_title, "章")
+        section_subtitle = self._extract_structure_subtitle(section_agg.section_title, "節")
+        chapter_title_part = f" {chapter_subtitle}" if chapter_subtitle else ""
+        section_title_part = f" {section_subtitle}" if section_subtitle else ""
         content = f"# {chapter_name}{chapter_title_part} {section_name}{section_title_part}\n\n"
 
         # 条文リスト
@@ -1344,18 +1360,7 @@ class Tier1Builder:
 
         判定: chapter_title に「章の」パターンがあれば枝番号として処理
         """
-        # chapter_title から枝番号かどうかを判定
-        if chapter_title and "章の" in chapter_title:
-            # 枝番号: 22 → 第2章の2, 42 → 第4章の2
-            main_num = chapter_num // 10
-            sub_num = chapter_num % 10
-            return f"第{main_num}章の{sub_num}"
-        # 従来のロジック（num >= 100 で枝番号判定）も維持
-        if chapter_num >= 100 and chapter_num % 10 != 0:
-            main_num = chapter_num // 10
-            sub_num = chapter_num % 10
-            return f"第{main_num}章の{sub_num}"
-        return f"第{chapter_num}章"
+        return format_chapter_name(chapter_num, chapter_title)
 
     def _format_section_name(self, section_num: int, section_title: Optional[str] = None) -> str:
         """
@@ -1368,13 +1373,7 @@ class Tier1Builder:
 
         判定: section_title に「節の」パターンがあれば枝番号として処理
         """
-        # section_title から枝番号かどうかを判定
-        if section_title and "節の" in section_title:
-            # 枝番号: 12 → 第1節の2, 42 → 第4節の2
-            main_num = section_num // 10
-            sub_num = section_num % 10
-            return f"第{main_num}節の{sub_num}"
-        return f"第{section_num}節"
+        return format_section_name(section_num, section_title)
 
     def _format_article_name(self, article_num: str) -> str:
         """条番号を日本語ファイル名形式に変換（例: '1_2' -> '第1条の2'）"""

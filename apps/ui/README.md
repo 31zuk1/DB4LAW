@@ -9,9 +9,10 @@ Obsidian 互換として以下を扱います。
 ## 主な機能
 
 - 3カラム UI
-- 左: 検索ボックス + 最近開いたドキュメント
+- 左: 検索ボックス + Vault/インデックス状態
 - 中央: 検索結果一覧
-- 右: Markdown プレビュー + frontmatter + outgoing/incoming + 近傍グラフ
+- 右: ブラウザライクなタブ + Markdown プレビュー + frontmatter + outgoing/incoming + 近傍グラフ
+- 開いているタブは `.md` パス付きで表示
 - グラフ深さ（1-4）を切替可能
 - プレビュー内 wikilink 遷移
 - プレビュー内の相対Markdownリンク（`編/章/節/条/附則`）遷移
@@ -65,6 +66,9 @@ npm run dev
 ```
 
 ブラウザで `http://localhost:3000` を開きます。
+
+`npm run dev` は起動前に `.next` をクリアし、`apps/ui` の `next dev` 二重起動を防止します。
+既存の `apps/ui` dev サーバーがあれば自動停止してから起動します。
 
 ## ビルドと起動
 

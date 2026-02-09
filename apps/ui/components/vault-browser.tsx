@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import ReactMarkdown from "react-markdown";
 import rehypeSlug from "rehype-slug";
@@ -66,8 +66,8 @@ interface PreparedMarkdown {
 
 type LinkTab = "outgoing" | "incoming" | "graph";
 
-const RECENT_STORAGE_KEY = "db4law-ui-recent";
 const PAGE_SIZE = 120;
+const LAW_INDEX_CANDIDATES = ["laws_index", "law_index", "law-index"];
 
 export function VaultBrowser(): JSX.Element {
   const [query, setQuery] = useState("");
@@ -76,14 +76,15 @@ export function VaultBrowser(): JSX.Element {
   const [visibleLimit, setVisibleLimit] = useState(PAGE_SIZE);
   const [status, setStatus] = useState<VaultStatus | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [openDocTabs, setOpenDocTabs] = useState<string[]>([]);
   const [doc, setDoc] = useState<DocumentDetail | null>(null);
   const [isLoadingSearch, setIsLoadingSearch] = useState(false);
   const [isLoadingDoc, setIsLoadingDoc] = useState(false);
   const [searchError, setSearchError] = useState<string | null>(null);
   const [docError, setDocError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<LinkTab>("outgoing");
-  const [recentIds, setRecentIds] = useState<string[]>([]);
   const [knownTitles, setKnownTitles] = useState<Record<string, string>>({});
+  const [knownPaths, setKnownPaths] = useState<Record<string, string>>({});
   const [incomingByDocId, setIncomingByDocId] = useState<
     Record<string, IncomingLink[]>
   >({});
@@ -95,16 +96,45 @@ export function VaultBrowser(): JSX.Element {
   const [graphData, setGraphData] = useState<GraphPayload | null>(null);
   const [graphLoading, setGraphLoading] = useState(false);
   const [graphError, setGraphError] = useState<string | null>(null);
+  const [graphExpanded, setGraphExpanded] = useState(false);
   const [candidatePopup, setCandidatePopup] = useState<{
     label: string;
     options: LinkCandidate[];
   } | null>(null);
   const [pendingAnchor, setPendingAnchor] = useState<string | null>(null);
+  const [lawIndexId, setLawIndexId] = useState<string | null>(null);
+  const [lawIndexLoading, setLawIndexLoading] = useState(false);
+  const [lawIndexError, setLawIndexError] = useState<string | null>(null);
+  const searchRequestSeqRef = useRef(0);
+  const searchAbortRef = useRef<AbortController | null>(null);
 
-  const pushRecent = useCallback((id: string) => {
-    setRecentIds((previous) => {
-      const next = [id, ...previous.filter((item) => item !== id)].slice(0, 20);
-      localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(next));
+  const openDocument = useCallback((id: string) => {
+    setOpenDocTabs((previous) => {
+      if (previous.includes(id)) {
+        return previous;
+      }
+      return [...previous, id].slice(-24);
+    });
+    setSelectedId(id);
+  }, []);
+
+  const closeDocumentTab = useCallback((id: string) => {
+    setOpenDocTabs((previous) => {
+      const index = previous.indexOf(id);
+      if (index < 0) {
+        return previous;
+      }
+
+      const next = previous.filter((item) => item !== id);
+      setSelectedId((current) => {
+        if (current !== id) {
+          return current;
+        }
+        if (next.length === 0) {
+          return null;
+        }
+        return next[Math.max(0, index - 1)] || next[0];
+      });
       return next;
     });
   }, []);
@@ -114,12 +144,19 @@ export function VaultBrowser(): JSX.Element {
     limit: number,
     retries = 2,
   ) {
+    const requestSeq = searchRequestSeqRef.current + 1;
+    searchRequestSeqRef.current = requestSeq;
+    searchAbortRef.current?.abort();
+    const controller = new AbortController();
+    searchAbortRef.current = controller;
+
     setSearchError(null);
     setIsLoadingSearch(true);
 
     try {
       const response = await fetch(
         `/api/search?q=${encodeURIComponent(input)}&limit=${limit}`,
+        { signal: controller.signal },
       );
       const data = (await response.json()) as SearchResponse;
 
@@ -127,38 +164,69 @@ export function VaultBrowser(): JSX.Element {
         throw new Error(data.error || "Search failed");
       }
 
-      setResults(data.results);
+      if (requestSeq !== searchRequestSeqRef.current) {
+        return;
+      }
+
+      const filteredResults = data.results.filter(
+        (item) => !isSearchHiddenId(item.id),
+      );
+      setResults(filteredResults);
       setTotalResults(
-        typeof data.total === "number" ? data.total : data.results.length,
+        typeof data.total === "number"
+          ? Math.max(filteredResults.length, data.total)
+          : filteredResults.length,
       );
 
       setKnownTitles((previous) => {
         const next = { ...previous };
-        for (const result of data.results) {
+        for (const result of filteredResults) {
           next[result.id] = result.title;
         }
         return next;
       });
 
-      if (data.results.length > 0) {
-        setSelectedId((previous) =>
-          previous && data.results.some((result) => result.id === previous)
-            ? previous
-            : data.results[0].id,
-        );
+      setKnownPaths((previous) => {
+        const next = { ...previous };
+        for (const result of filteredResults) {
+          next[result.id] = result.relPath || `${result.id}.md`;
+        }
+        return next;
+      });
+
+      if (filteredResults.length > 0) {
+        setSelectedId((previous) => previous || filteredResults[0].id);
       }
     } catch (error) {
+      if (
+        controller.signal.aborted ||
+        (error instanceof DOMException && error.name === "AbortError")
+      ) {
+        return;
+      }
+
+      if (requestSeq !== searchRequestSeqRef.current) {
+        return;
+      }
+
       setResults([]);
       setTotalResults(0);
       setSearchError(error instanceof Error ? error.message : "Search failed");
 
       if (retries > 0) {
         window.setTimeout(() => {
-          void runSearchImpl(input, limit, retries - 1);
+          if (requestSeq === searchRequestSeqRef.current) {
+            void runSearchImpl(input, limit, retries - 1);
+          }
         }, 1200);
       }
     } finally {
-      setIsLoadingSearch(false);
+      if (
+        requestSeq === searchRequestSeqRef.current &&
+        !controller.signal.aborted
+      ) {
+        setIsLoadingSearch(false);
+      }
     }
   }, []);
 
@@ -202,18 +270,6 @@ export function VaultBrowser(): JSX.Element {
 
     void fetchStatus(4);
 
-    try {
-      const raw = localStorage.getItem(RECENT_STORAGE_KEY);
-      if (raw) {
-        const parsed = JSON.parse(raw) as string[];
-        if (Array.isArray(parsed)) {
-          setRecentIds(parsed.slice(0, 20));
-        }
-      }
-    } catch {
-      // ignore malformed storage
-    }
-
     return () => {
       canceled = true;
       for (const timer of timers) {
@@ -229,6 +285,12 @@ export function VaultBrowser(): JSX.Element {
 
     return () => clearTimeout(timeout);
   }, [query, runSearch, visibleLimit]);
+
+  useEffect(() => {
+    return () => {
+      searchAbortRef.current?.abort();
+    };
+  }, []);
 
   useEffect(() => {
     if (!selectedId) {
@@ -251,7 +313,10 @@ export function VaultBrowser(): JSX.Element {
           ...previous,
           [data.doc.id]: data.doc.title,
         }));
-        pushRecent(data.doc.id);
+        setKnownPaths((previous) => ({
+          ...previous,
+          [data.doc.id]: data.doc.relPath || `${data.doc.id}.md`,
+        }));
         setIncomingError(null);
         setGraphError(null);
       })
@@ -264,7 +329,19 @@ export function VaultBrowser(): JSX.Element {
       .finally(() => {
         setIsLoadingDoc(false);
       });
-  }, [pushRecent, selectedId]);
+  }, [selectedId]);
+
+  useEffect(() => {
+    if (!selectedId) {
+      return;
+    }
+    setOpenDocTabs((previous) => {
+      if (previous.includes(selectedId)) {
+        return previous;
+      }
+      return [...previous, selectedId].slice(-24);
+    });
+  }, [selectedId]);
 
   useEffect(() => {
     if (!doc) {
@@ -302,6 +379,13 @@ export function VaultBrowser(): JSX.Element {
           const next = { ...previous };
           for (const link of data.incoming) {
             next[link.id] = link.title;
+          }
+          return next;
+        });
+        setKnownPaths((previous) => {
+          const next = { ...previous };
+          for (const link of data.incoming) {
+            next[link.id] = link.relPath || `${link.id}.md`;
           }
           return next;
         });
@@ -359,6 +443,25 @@ export function VaultBrowser(): JSX.Element {
   }, [activeTab, doc, graphDepth]);
 
   useEffect(() => {
+    setGraphExpanded(false);
+  }, [doc?.id]);
+
+  useEffect(() => {
+    if (!graphExpanded) {
+      return;
+    }
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setGraphExpanded(false);
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [graphExpanded]);
+
+  useEffect(() => {
     if (!pendingAnchor || !doc) {
       return;
     }
@@ -398,10 +501,74 @@ export function VaultBrowser(): JSX.Element {
     return incomingByDocId[doc.id] || [];
   }, [doc, incomingByDocId]);
 
-  const recentItems = useMemo(
-    () => recentIds.map((id) => ({ id, title: knownTitles[id] || id })),
-    [knownTitles, recentIds],
+  const tabItems = useMemo(
+    () =>
+      openDocTabs.map((id) => ({
+        id,
+        title: knownTitles[id] || pathLikeTitle(id),
+        path: knownPaths[id] || `${id}.md`,
+      })),
+    [knownPaths, knownTitles, openDocTabs],
   );
+
+  const activeTabMeta = useMemo(
+    () => tabItems.find((item) => item.id === selectedId) || null,
+    [selectedId, tabItems],
+  );
+
+  const resolveLawIndexDocumentId = useCallback(async (): Promise<
+    string | null
+  > => {
+    if (lawIndexId) {
+      return lawIndexId;
+    }
+
+    for (const candidate of LAW_INDEX_CANDIDATES) {
+      try {
+        const response = await fetch(
+          `/api/doc?id=${encodeURIComponent(candidate)}`,
+        );
+        const data = (await response.json()) as DocumentResponse;
+
+        if (!response.ok || data.error || !data.doc) {
+          continue;
+        }
+
+        setLawIndexId(data.doc.id);
+        setKnownTitles((previous) => ({
+          ...previous,
+          [data.doc.id]: data.doc.title,
+        }));
+        setKnownPaths((previous) => ({
+          ...previous,
+          [data.doc.id]: data.doc.relPath || `${data.doc.id}.md`,
+        }));
+        return data.doc.id;
+      } catch {
+        // try next candidate
+      }
+    }
+
+    return null;
+  }, [lawIndexId]);
+
+  const openLawIndex = useCallback(async () => {
+    setLawIndexError(null);
+    setLawIndexLoading(true);
+
+    try {
+      const resolved = await resolveLawIndexDocumentId();
+      if (!resolved) {
+        setLawIndexError("laws.index が見つかりません。");
+        return;
+      }
+
+      openDocument(resolved);
+      setActiveTab("outgoing");
+    } finally {
+      setLawIndexLoading(false);
+    }
+  }, [openDocument, resolveLawIndexDocumentId]);
 
   const onLinkClick = useCallback(
     (href: string | undefined) => {
@@ -422,7 +589,7 @@ export function VaultBrowser(): JSX.Element {
           return;
         }
 
-        setSelectedId(nextId);
+        openDocument(nextId);
         setActiveTab("outgoing");
         if (nextAnchor) {
           setPendingAnchor(nextAnchor);
@@ -441,7 +608,7 @@ export function VaultBrowser(): JSX.Element {
         }
       }
     },
-    [doc?.id, preparedMarkdown],
+    [doc?.id, openDocument, preparedMarkdown],
   );
 
   const isIncomingLoading = !!doc && loadingIncomingFor === doc.id;
@@ -450,8 +617,10 @@ export function VaultBrowser(): JSX.Element {
   return (
     <main className="app-shell">
       <section className="panel panel-left">
-        <h1>DB4LAW Vault Reader</h1>
-        <p className="panel-caption">Read-only Obsidian-compatible viewer</p>
+        <div className="brand-block">
+          <h1>DB4LAW Vault Reader</h1>
+          <p className="panel-caption">Read-only Obsidian-compatible viewer</p>
+        </div>
 
         <label htmlFor="search-box" className="search-label">
           Search
@@ -482,21 +651,29 @@ export function VaultBrowser(): JSX.Element {
           </div>
         </div>
 
-        <div className="recent-block">
-          <h2>Recent Opened</h2>
-          {recentItems.length === 0 ? (
-            <p className="small muted">No recent items.</p>
-          ) : (
-            <ul>
-              {recentItems.map((item) => (
-                <li key={item.id}>
-                  <button type="button" onClick={() => setSelectedId(item.id)}>
-                    {item.title}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+        <div className="panel-note">
+          <div className="small muted">
+            Open tabs: {openDocTabs.length.toLocaleString()}
+          </div>
+          <div className="small muted">
+            検索結果や本文リンクを開くと、右側にタブとして保持されます。
+          </div>
+        </div>
+
+        <div className="left-panel-footer">
+          <button
+            type="button"
+            className="left-action-btn"
+            onClick={() => void openLawIndex()}
+            disabled={lawIndexLoading}
+          >
+            {lawIndexLoading
+              ? "laws.index を読み込み中..."
+              : "laws.index を表示"}
+          </button>
+          {lawIndexError ? (
+            <div className="small muted">{lawIndexError}</div>
+          ) : null}
         </div>
       </section>
 
@@ -516,7 +693,7 @@ export function VaultBrowser(): JSX.Element {
               <button
                 type="button"
                 className={`result-item ${selectedId === result.id ? "selected" : ""}`}
-                onClick={() => setSelectedId(result.id)}
+                onClick={() => openDocument(result.id)}
               >
                 <strong>{result.title}</strong>
                 <span className="mono">{result.id}</span>
@@ -539,6 +716,57 @@ export function VaultBrowser(): JSX.Element {
       </section>
 
       <section className="panel panel-right">
+        <div className="browser-chrome">
+          <div
+            className="doc-tabs-scroll"
+            role="tablist"
+            aria-label="Open documents"
+          >
+            {tabItems.map((item) => (
+              <div
+                key={item.id}
+                className={`doc-tab ${selectedId === item.id ? "active" : ""}`}
+              >
+                <button
+                  type="button"
+                  className="doc-tab-hit"
+                  onClick={() => openDocument(item.id)}
+                  role="tab"
+                  aria-selected={selectedId === item.id}
+                  title={item.path}
+                >
+                  <span className="doc-tab-title">{item.title}</span>
+                  <span className="doc-tab-path mono">{item.path}</span>
+                </button>
+                <button
+                  type="button"
+                  className="doc-tab-close"
+                  onClick={() => closeDocumentTab(item.id)}
+                  aria-label={`Close ${item.title}`}
+                >
+                  ×
+                </button>
+              </div>
+            ))}
+            {tabItems.length === 0 ? (
+              <div className="doc-tab-empty">
+                Open documents appear here as tabs.
+              </div>
+            ) : null}
+          </div>
+
+          <div className="browser-location">
+            <span
+              className="browser-location-path mono"
+              title={doc?.relPath || activeTabMeta?.path || ""}
+            >
+              {doc?.relPath ||
+                activeTabMeta?.path ||
+                "Select a document to view its path"}
+            </span>
+          </div>
+        </div>
+
         {isLoadingDoc ? <p>Loading preview...</p> : null}
         {docError ? <p className="error-box">{docError}</p> : null}
 
@@ -553,7 +781,11 @@ export function VaultBrowser(): JSX.Element {
 
             <details open>
               <summary>Frontmatter</summary>
-              <FrontmatterPanel frontmatter={doc.frontmatter} />
+              <FrontmatterPanel
+                frontmatter={doc.frontmatter}
+                currentDocId={doc.id}
+                onNavigate={onLinkClick}
+              />
             </details>
 
             <article className="markdown-view">
@@ -623,7 +855,7 @@ export function VaultBrowser(): JSX.Element {
                     {link.resolvedId ? (
                       <button
                         type="button"
-                        onClick={() => setSelectedId(link.resolvedId!)}
+                        onClick={() => openDocument(link.resolvedId!)}
                       >
                         {link.display} → {link.resolvedTitle || link.resolvedId}
                       </button>
@@ -660,7 +892,7 @@ export function VaultBrowser(): JSX.Element {
                     <li key={link.id}>
                       <button
                         type="button"
-                        onClick={() => setSelectedId(link.id)}
+                        onClick={() => openDocument(link.id)}
                       >
                         {link.title}
                       </button>
@@ -690,6 +922,15 @@ export function VaultBrowser(): JSX.Element {
                     <option value={3}>3</option>
                     <option value={4}>4</option>
                   </select>
+                  <button
+                    type="button"
+                    className={
+                      graphExpanded ? "graph-expand active" : "graph-expand"
+                    }
+                    onClick={() => setGraphExpanded((current) => !current)}
+                  >
+                    {graphExpanded ? "Shrink" : "Expand"}
+                  </button>
                 </div>
                 {graphLoading ? (
                   <p className="small muted">Loading graph...</p>
@@ -699,7 +940,9 @@ export function VaultBrowser(): JSX.Element {
                   <GraphView
                     graph={graphData}
                     rootTitle={doc.title}
-                    onSelect={(id) => setSelectedId(id)}
+                    expanded={graphExpanded}
+                    onClose={() => setGraphExpanded(false)}
+                    onSelect={(id) => openDocument(id)}
                   />
                 ) : null}
               </>
@@ -724,7 +967,7 @@ export function VaultBrowser(): JSX.Element {
                   <button
                     type="button"
                     onClick={() => {
-                      setSelectedId(candidate.id);
+                      openDocument(candidate.id);
                       setCandidatePopup(null);
                     }}
                   >
@@ -744,6 +987,30 @@ export function VaultBrowser(): JSX.Element {
   );
 }
 
+function pathLikeTitle(id: string): string {
+  const parts = id.split("/");
+  return parts[parts.length - 1] || id;
+}
+
+function isSearchHiddenId(id: string): boolean {
+  const normalized = id
+    .trim()
+    .replace(/\\/g, "/")
+    .replace(/\.md$/i, "")
+    .replace(/^\/+/, "")
+    .toLowerCase();
+
+  if (!normalized) {
+    return false;
+  }
+
+  return (
+    normalized === "laws_index" ||
+    normalized === "law_index" ||
+    normalized === "law-index"
+  );
+}
+
 function renderFrontmatterHint(frontmatter: Record<string, unknown>): string {
   const interestingKeys = ["law_id", "article_id", "abbr", "alias"];
   const tokens: string[] = [];
@@ -760,8 +1027,10 @@ function renderFrontmatterHint(frontmatter: Record<string, unknown>): string {
 
 function FrontmatterPanel(props: {
   frontmatter: Record<string, unknown>;
+  currentDocId: string;
+  onNavigate: (href: string) => void;
 }): JSX.Element {
-  const { frontmatter } = props;
+  const { frontmatter, currentDocId, onNavigate } = props;
   const entries = Object.entries(frontmatter);
 
   if (entries.length === 0) {
@@ -774,7 +1043,7 @@ function FrontmatterPanel(props: {
         <div className="frontmatter-row" key={key}>
           <div className="frontmatter-key">{key}</div>
           <div className="frontmatter-value">
-            {renderFrontmatterValue(key, value)}
+            {renderFrontmatterValue(key, value, currentDocId, onNavigate)}
           </div>
         </div>
       ))}
@@ -782,7 +1051,12 @@ function FrontmatterPanel(props: {
   );
 }
 
-function renderFrontmatterValue(key: string, value: unknown): JSX.Element {
+function renderFrontmatterValue(
+  key: string,
+  value: unknown,
+  currentDocId: string,
+  onNavigate: (href: string) => void,
+): JSX.Element {
   if (value == null) {
     return <span className="frontmatter-empty">-</span>;
   }
@@ -806,6 +1080,26 @@ function renderFrontmatterValue(key: string, value: unknown): JSX.Element {
         </a>
       );
     }
+
+    const wiki = parseFrontmatterWikiLink(value);
+    if (wiki) {
+      const wikiHref = toInternalNavigationHref(
+        `${wiki.target}${wiki.anchor ? `#${wiki.anchor}` : ""}`,
+        currentDocId,
+      );
+      if (wikiHref) {
+        return (
+          <button
+            type="button"
+            className="frontmatter-link-button"
+            onClick={() => onNavigate(wikiHref)}
+          >
+            {wiki.display}
+          </button>
+        );
+      }
+    }
+
     return <span>{value}</span>;
   }
 
@@ -838,7 +1132,9 @@ function renderFrontmatterValue(key: string, value: unknown): JSX.Element {
     return (
       <div className="frontmatter-list">
         {value.map((item, index) => (
-          <div key={`${key}-${index}`}>{renderFrontmatterValue(key, item)}</div>
+          <div key={`${key}-${index}`}>
+            {renderFrontmatterValue(key, item, currentDocId, onNavigate)}
+          </div>
         ))}
       </div>
     );
@@ -855,7 +1151,12 @@ function renderFrontmatterValue(key: string, value: unknown): JSX.Element {
         {entries.map(([nestedKey, nestedValue]) => (
           <div key={`${key}-${nestedKey}`}>
             <span className="frontmatter-subkey">{nestedKey}: </span>
-            {renderFrontmatterValue(nestedKey, nestedValue)}
+            {renderFrontmatterValue(
+              nestedKey,
+              nestedValue,
+              currentDocId,
+              onNavigate,
+            )}
           </div>
         ))}
       </div>
@@ -893,6 +1194,41 @@ function toExternalUrl(key: string, value: string): string | null {
   }
 
   return null;
+}
+
+function parseFrontmatterWikiLink(
+  input: string,
+): { target: string; display: string; anchor: string | null } | null {
+  const trimmed = input.trim();
+  const match = trimmed.match(/^\[\[([\s\S]+?)\]\]$/);
+  if (!match) {
+    return null;
+  }
+
+  const inner = match[1].trim();
+  if (!inner) {
+    return null;
+  }
+
+  const pipeIndex = inner.indexOf("|");
+  const rawTarget = pipeIndex >= 0 ? inner.slice(0, pipeIndex) : inner;
+  const alias = pipeIndex >= 0 ? inner.slice(pipeIndex + 1).trim() : "";
+
+  const hashIndex = rawTarget.indexOf("#");
+  const target = (hashIndex >= 0 ? rawTarget.slice(0, hashIndex) : rawTarget)
+    .trim()
+    .replace(/\.md$/i, "");
+  const anchor = hashIndex >= 0 ? rawTarget.slice(hashIndex + 1).trim() : "";
+
+  if (!target) {
+    return null;
+  }
+
+  return {
+    target,
+    display: alias || target,
+    anchor: anchor || null,
+  };
 }
 
 function convertWikiLinksToMarkdown(doc: DocumentDetail): PreparedMarkdown {
@@ -1033,13 +1369,15 @@ function safeDecodeURIComponent(value: string): string {
 interface GraphViewProps {
   graph: GraphPayload;
   rootTitle: string;
+  expanded: boolean;
+  onClose: () => void;
   onSelect: (id: string) => void;
 }
 
 function GraphView(props: GraphViewProps): JSX.Element {
-  const { graph, rootTitle, onSelect } = props;
-  const width = 860;
-  const height = 360;
+  const { graph, rootTitle, expanded, onClose, onSelect } = props;
+  const width = expanded ? 1520 : 860;
+  const height = expanded ? 920 : 360;
   const cx = width / 2;
   const cy = height / 2;
 
@@ -1056,6 +1394,13 @@ function GraphView(props: GraphViewProps): JSX.Element {
       byDepth.set(node.depth, bucket);
     }
 
+    const maxDepth = Math.max(...graph.nodes.map((node) => node.depth), 1);
+    const minDim = Math.min(width, height);
+    const minRadius = Math.max(56, minDim * 0.16);
+    const maxRadius = Math.max(minRadius + 48, minDim * 0.46);
+    const radiusStep =
+      maxDepth > 0 ? (maxRadius - minRadius) / Math.max(maxDepth, 1) : 0;
+
     for (const [depth, nodes] of byDepth.entries()) {
       nodes.sort((a, b) => a.title.localeCompare(b.title, "ja"));
       if (depth === 0) {
@@ -1071,7 +1416,7 @@ function GraphView(props: GraphViewProps): JSX.Element {
         continue;
       }
 
-      const radius = 56 + depth * 66;
+      const radius = minRadius + depth * radiusStep;
       for (let index = 0; index < nodes.length; index += 1) {
         const node = nodes[index];
         const angle =
@@ -1086,10 +1431,20 @@ function GraphView(props: GraphViewProps): JSX.Element {
     }
 
     return points;
-  }, [cx, cy, graph.nodes]);
+  }, [cx, cy, graph.nodes, height, width]);
 
   return (
-    <div className="graph-shell">
+    <div className={`graph-shell ${expanded ? "expanded" : ""}`}>
+      {expanded ? (
+        <button
+          type="button"
+          className="graph-close"
+          onClick={onClose}
+          aria-label="Close graph view"
+        >
+          ×
+        </button>
+      ) : null}
       <svg className="graph-svg" viewBox={`0 0 ${width} ${height}`}>
         <g>
           {graph.edges.map((edge, index) => {

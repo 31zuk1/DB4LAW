@@ -50,6 +50,7 @@ uv run db4law-proj clean-markers --session-id <session_id> --apply
 - If source law directories contain `.obsidian`, Obsidian may open the wrong vault.
 - `open` auto-registers projection roots into Obsidian's vault registry (`obsidian.json`) before launch.
 - `doctor` reports missing links to laws that are not included in the session.
+- Source `編/章/節` 見出しの重複を解消したい場合は、投影前に `uv run python scripts/migration/fix_structure_headings.py --vault ./Vault --apply` を実行する。
 
 ## Troubleshooting
 
