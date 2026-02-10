@@ -54,6 +54,11 @@ interface GraphResponse {
   error?: string;
 }
 
+interface GlobalGraphResponse {
+  graph: GraphPayload;
+  error?: string;
+}
+
 interface StatusResponse {
   status: VaultStatus;
   error?: string;
@@ -65,6 +70,8 @@ interface PreparedMarkdown {
 }
 
 type LinkTab = "outgoing" | "incoming" | "graph";
+type GraphLayoutMode = "cloud" | "mindmap";
+type SearchSortMode = "relevance" | "title_asc" | "title_desc";
 
 const PAGE_SIZE = 120;
 const LAW_INDEX_CANDIDATES = ["laws_index", "law_index", "law-index"];
@@ -74,6 +81,9 @@ export function VaultBrowser(): JSX.Element {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [totalResults, setTotalResults] = useState(0);
   const [visibleLimit, setVisibleLimit] = useState(PAGE_SIZE);
+  const [searchSortMode, setSearchSortMode] =
+    useState<SearchSortMode>("relevance");
+  const [searchSortOpen, setSearchSortOpen] = useState(false);
   const [status, setStatus] = useState<VaultStatus | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [openDocTabs, setOpenDocTabs] = useState<string[]>([]);
@@ -93,10 +103,19 @@ export function VaultBrowser(): JSX.Element {
     null,
   );
   const [graphDepth, setGraphDepth] = useState(1);
+  const [graphMode, setGraphMode] = useState<GraphLayoutMode>("mindmap");
   const [graphData, setGraphData] = useState<GraphPayload | null>(null);
   const [graphLoading, setGraphLoading] = useState(false);
   const [graphError, setGraphError] = useState<string | null>(null);
   const [graphExpanded, setGraphExpanded] = useState(false);
+  const [globalGraphOpen, setGlobalGraphOpen] = useState(false);
+  const [globalGraphNodeLimit, setGlobalGraphNodeLimit] = useState(360);
+  const [globalGraphData, setGlobalGraphData] = useState<GraphPayload | null>(
+    null,
+  );
+  const [globalGraphLoading, setGlobalGraphLoading] = useState(false);
+  const [globalGraphError, setGlobalGraphError] = useState<string | null>(null);
+  const [globalGraphExpanded, setGlobalGraphExpanded] = useState(false);
   const [candidatePopup, setCandidatePopup] = useState<{
     label: string;
     options: LinkCandidate[];
@@ -107,8 +126,11 @@ export function VaultBrowser(): JSX.Element {
   const [lawIndexError, setLawIndexError] = useState<string | null>(null);
   const searchRequestSeqRef = useRef(0);
   const searchAbortRef = useRef<AbortController | null>(null);
+  const searchSortPanelRef = useRef<HTMLDivElement | null>(null);
 
   const openDocument = useCallback((id: string) => {
+    setGlobalGraphOpen(false);
+    setGlobalGraphExpanded(false);
     setOpenDocTabs((previous) => {
       if (previous.includes(id)) {
         return previous;
@@ -293,6 +315,36 @@ export function VaultBrowser(): JSX.Element {
   }, []);
 
   useEffect(() => {
+    if (!searchSortOpen) {
+      return;
+    }
+
+    const onPointerDown = (event: PointerEvent) => {
+      if (!searchSortPanelRef.current) {
+        return;
+      }
+      const target = event.target;
+      if (target instanceof Node && !searchSortPanelRef.current.contains(target)) {
+        setSearchSortOpen(false);
+      }
+    };
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSearchSortOpen(false);
+      }
+    };
+
+    window.addEventListener("pointerdown", onPointerDown);
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      window.removeEventListener("pointerdown", onPointerDown);
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [searchSortOpen]);
+
+  useEffect(() => {
     if (!selectedId) {
       setDoc(null);
       return;
@@ -447,19 +499,26 @@ export function VaultBrowser(): JSX.Element {
   }, [doc?.id]);
 
   useEffect(() => {
-    if (!graphExpanded) {
+    if (!globalGraphOpen) {
+      setGlobalGraphExpanded(false);
+    }
+  }, [globalGraphOpen]);
+
+  useEffect(() => {
+    if (!graphExpanded && !globalGraphExpanded) {
       return;
     }
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setGraphExpanded(false);
+        setGlobalGraphExpanded(false);
       }
     };
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [graphExpanded]);
+  }, [globalGraphExpanded, graphExpanded]);
 
   useEffect(() => {
     if (!pendingAnchor || !doc) {
@@ -498,8 +557,15 @@ export function VaultBrowser(): JSX.Element {
     if (!doc) {
       return [];
     }
-    return incomingByDocId[doc.id] || [];
+    return (incomingByDocId[doc.id] || []).filter(
+      (link) => !isSearchHiddenId(link.id),
+    );
   }, [doc, incomingByDocId]);
+
+  const sortedResults = useMemo(
+    () => sortSearchResults(results, query, searchSortMode),
+    [query, results, searchSortMode],
+  );
 
   const tabItems = useMemo(
     () =>
@@ -570,6 +636,51 @@ export function VaultBrowser(): JSX.Element {
     }
   }, [openDocument, resolveLawIndexDocumentId]);
 
+  const loadGlobalGraph = useCallback(
+    async (nodeLimit: number) => {
+      setGlobalGraphLoading(true);
+      setGlobalGraphError(null);
+
+      try {
+        const response = await fetch(
+          `/api/graph/global?node_limit=${Math.min(
+            Math.max(nodeLimit, 120),
+            900,
+          )}`,
+        );
+        const data = (await response.json()) as GlobalGraphResponse;
+
+        if (!response.ok || data.error || !data.graph) {
+          throw new Error(data.error || "Failed to load global graph");
+        }
+
+        setGlobalGraphData(data.graph);
+      } catch (error) {
+        setGlobalGraphData(null);
+        setGlobalGraphError(
+          error instanceof Error
+            ? error.message
+            : "Failed to load global graph",
+        );
+      } finally {
+        setGlobalGraphLoading(false);
+      }
+    },
+    [setGlobalGraphData],
+  );
+
+  const openGlobalGraph = useCallback(() => {
+    setGlobalGraphOpen(true);
+    if (!globalGraphData && !globalGraphLoading) {
+      void loadGlobalGraph(globalGraphNodeLimit);
+    }
+  }, [
+    globalGraphData,
+    globalGraphLoading,
+    globalGraphNodeLimit,
+    loadGlobalGraph,
+  ]);
+
   const onLinkClick = useCallback(
     (href: string | undefined) => {
       if (!href) {
@@ -612,51 +723,39 @@ export function VaultBrowser(): JSX.Element {
   );
 
   const isIncomingLoading = !!doc && loadingIncomingFor === doc.id;
-  const hasMoreResults = results.length < totalResults;
+  const hasMoreResults = sortedResults.length < totalResults;
 
   return (
     <main className="app-shell">
       <section className="panel panel-left">
-        <div className="brand-block">
-          <h1>DB4LAW Vault Reader</h1>
-          <p className="panel-caption">Read-only Obsidian-compatible viewer</p>
-        </div>
+        <div className="left-panel-main">
+          <div className="brand-block">
+            <h1>DB4LAW Vault Reader</h1>
+            <p className="panel-caption">Read-only Obsidian-compatible viewer</p>
+          </div>
 
-        <label htmlFor="search-box" className="search-label">
-          Search
-        </label>
-        <input
-          id="search-box"
-          className="search-box"
-          value={query}
-          onChange={(event) => {
-            setQuery(event.target.value);
-            setVisibleLimit(PAGE_SIZE);
-          }}
-          placeholder="法令名 / law_id / article_id / キーワード"
-        />
+          <div className="status-block">
+            <div>
+              Documents:{" "}
+              {status?.totalDocs != null
+                ? status.totalDocs.toLocaleString()
+                : "indexing..."}
+            </div>
+            <div className="mono small">
+              Vault: {status?.vaultPath || "loading"}
+            </div>
+            <div className="small muted">
+              {status?.indexing ? "Indexing in background" : "Index ready"}
+            </div>
+          </div>
 
-        <div className="status-block">
-          <div>
-            Documents:{" "}
-            {status?.totalDocs != null
-              ? status.totalDocs.toLocaleString()
-              : "indexing..."}
-          </div>
-          <div className="mono small">
-            Vault: {status?.vaultPath || "loading"}
-          </div>
-          <div className="small muted">
-            {status?.indexing ? "Indexing in background" : "Index ready"}
-          </div>
-        </div>
-
-        <div className="panel-note">
-          <div className="small muted">
-            Open tabs: {openDocTabs.length.toLocaleString()}
-          </div>
-          <div className="small muted">
-            検索結果や本文リンクを開くと、右側にタブとして保持されます。
+          <div className="panel-note">
+            <div className="small muted">
+              Open tabs: {openDocTabs.length.toLocaleString()}
+            </div>
+            <div className="small muted">
+              検索結果や本文リンクを開くと、右側にタブとして保持されます。
+            </div>
           </div>
         </div>
 
@@ -674,21 +773,92 @@ export function VaultBrowser(): JSX.Element {
           {lawIndexError ? (
             <div className="small muted">{lawIndexError}</div>
           ) : null}
+
+          <button
+            type="button"
+            className="left-action-btn"
+            onClick={openGlobalGraph}
+            disabled={globalGraphLoading && !globalGraphOpen}
+          >
+            {globalGraphLoading && !globalGraphOpen
+              ? "グローバルグラフを準備中..."
+              : "グローバルグラフを開く"}
+          </button>
+          {globalGraphError && !globalGraphOpen ? (
+            <div className="small muted">{globalGraphError}</div>
+          ) : null}
         </div>
       </section>
 
       <section className="panel panel-center">
+        <div className="search-row" ref={searchSortPanelRef}>
+          <div className="search-tab">
+            <label htmlFor="result-search-box" className="search-label">
+              Search
+            </label>
+            <input
+              id="result-search-box"
+              className="search-box"
+              value={query}
+              onChange={(event) => {
+                setQuery(event.target.value);
+                setVisibleLimit(PAGE_SIZE);
+              }}
+              placeholder="法令名 / law_id / article_id / キーワード"
+            />
+          </div>
+          <button
+            type="button"
+            className={`search-adjust-btn ${searchSortOpen ? "active" : ""}`}
+            onClick={() => setSearchSortOpen((current) => !current)}
+          >
+            調整
+          </button>
+          {searchSortOpen ? (
+            <div className="search-adjust-panel">
+              <div className="search-adjust-title">検索結果の並び順</div>
+              <label className="search-adjust-option">
+                <input
+                  type="radio"
+                  name="search-sort"
+                  checked={searchSortMode === "relevance"}
+                  onChange={() => setSearchSortMode("relevance")}
+                />
+                関連度順 (一致回数が多い順)
+              </label>
+              <label className="search-adjust-option">
+                <input
+                  type="radio"
+                  name="search-sort"
+                  checked={searchSortMode === "title_asc"}
+                  onChange={() => setSearchSortMode("title_asc")}
+                />
+                名前順 (昇順)
+              </label>
+              <label className="search-adjust-option">
+                <input
+                  type="radio"
+                  name="search-sort"
+                  checked={searchSortMode === "title_desc"}
+                  onChange={() => setSearchSortMode("title_desc")}
+                />
+                名前順 (降順)
+              </label>
+            </div>
+          ) : null}
+        </div>
+
         <header className="panel-header">
           <h2>Results</h2>
           <span className="small muted">
             {isLoadingSearch
               ? "Searching..."
-              : `${results.length.toLocaleString()} shown / ${totalResults.toLocaleString()} total`}
+              : `${sortedResults.length.toLocaleString()} shown / ${totalResults.toLocaleString()} total`}
           </span>
         </header>
         {searchError ? <p className="error-box">{searchError}</p> : null}
         <ul className="result-list">
-          {results.map((result) => (
+          {sortedResults.map((result) => (
             <li key={result.id}>
               <button
                 type="button"
@@ -767,188 +937,311 @@ export function VaultBrowser(): JSX.Element {
           </div>
         </div>
 
-        {isLoadingDoc ? <p>Loading preview...</p> : null}
-        {docError ? <p className="error-box">{docError}</p> : null}
-
-        {!isLoadingDoc && !doc && !docError ? <p>Select a document.</p> : null}
-
-        {doc ? (
+        {globalGraphOpen ? (
           <>
-            <header className="doc-header">
-              <h2>{doc.title}</h2>
-              <div className="mono small">{doc.relPath}</div>
+            <header className="global-graph-header">
+              <h2>Global Graph View</h2>
+              <div className="global-graph-actions">
+                <button
+                  type="button"
+                  className="graph-expand"
+                  onClick={() => setGlobalGraphOpen(false)}
+                >
+                  Close
+                </button>
+              </div>
             </header>
 
-            <details open>
-              <summary>Frontmatter</summary>
-              <FrontmatterPanel
-                frontmatter={doc.frontmatter}
-                currentDocId={doc.id}
-                onNavigate={onLinkClick}
-              />
-            </details>
-
-            <article className="markdown-view">
-              <ReactMarkdown
-                remarkPlugins={[remarkGfm]}
-                rehypePlugins={[rehypeSlug]}
-                urlTransform={(url) => url}
-                components={{
-                  a: ({ href, children }) => {
-                    const internalHref = doc
-                      ? toInternalNavigationHref(href, doc.id)
-                      : null;
-
-                    if (internalHref) {
-                      return (
-                        <button
-                          type="button"
-                          className="markdown-link"
-                          onClick={() => onLinkClick(internalHref)}
-                        >
-                          {children}
-                        </button>
-                      );
-                    }
-
-                    return (
-                      <a href={href} target="_blank" rel="noreferrer">
-                        {children}
-                      </a>
-                    );
-                  },
-                }}
+            <div className="graph-toolbar">
+              <div
+                className="graph-mode-switch"
+                role="tablist"
+                aria-label="Global graph mode"
               >
-                {preparedMarkdown?.markdown || doc.markdown}
-              </ReactMarkdown>
-            </article>
-
-            <div className="link-tabs">
+                <button
+                  type="button"
+                  className={graphMode === "cloud" ? "active" : ""}
+                  onClick={() => setGraphMode("cloud")}
+                >
+                  Node Cloud
+                </button>
+                <button
+                  type="button"
+                  className={graphMode === "mindmap" ? "active" : ""}
+                  onClick={() => setGraphMode("mindmap")}
+                >
+                  Mindmap
+                </button>
+              </div>
+              <label htmlFor="global-graph-limit">Nodes</label>
+              <select
+                id="global-graph-limit"
+                value={globalGraphNodeLimit}
+                onChange={(event) =>
+                  setGlobalGraphNodeLimit(Number(event.target.value))
+                }
+              >
+                <option value={180}>180</option>
+                <option value={260}>260</option>
+                <option value={360}>360</option>
+                <option value={520}>520</option>
+              </select>
               <button
                 type="button"
-                className={activeTab === "outgoing" ? "active" : ""}
-                onClick={() => setActiveTab("outgoing")}
+                className="graph-expand"
+                onClick={() => void loadGlobalGraph(globalGraphNodeLimit)}
               >
-                Outgoing ({doc.outgoing.length})
+                Reload
               </button>
               <button
                 type="button"
-                className={activeTab === "incoming" ? "active" : ""}
-                onClick={() => setActiveTab("incoming")}
+                className={
+                  globalGraphExpanded ? "graph-expand active" : "graph-expand"
+                }
+                onClick={() => setGlobalGraphExpanded((current) => !current)}
               >
-                Incoming (
-                {incomingByDocId[doc.id] ? incomingLinks.length : "..."})
-              </button>
-              <button
-                type="button"
-                className={activeTab === "graph" ? "active" : ""}
-                onClick={() => setActiveTab("graph")}
-              >
-                Graph
+                {globalGraphExpanded ? "Shrink" : "Expand"}
               </button>
             </div>
 
-            {activeTab === "outgoing" ? (
-              <ul className="link-list">
-                {doc.outgoing.map((link, index) => (
-                  <li key={`${link.raw}-${index}`}>
-                    {link.resolvedId ? (
-                      <button
-                        type="button"
-                        onClick={() => openDocument(link.resolvedId!)}
-                      >
-                        {link.display} → {link.resolvedTitle || link.resolvedId}
-                      </button>
-                    ) : link.candidates && link.candidates.length > 0 ? (
-                      <button
-                        type="button"
-                        onClick={() =>
-                          setCandidatePopup({
-                            label: link.display,
-                            options: link.candidates!,
-                          })
+            {globalGraphLoading ? (
+              <p className="small muted">Loading global graph...</p>
+            ) : null}
+            {globalGraphError ? (
+              <p className="error-box">{globalGraphError}</p>
+            ) : null}
+            {globalGraphData ? (
+              <GraphView
+                graph={globalGraphData}
+                rootTitle="Global Vault"
+                mode={graphMode}
+                expanded={globalGraphExpanded}
+                onClose={() => setGlobalGraphExpanded(false)}
+                onSelect={(id) => {
+                  if (isVirtualGlobalGraphNodeId(id)) {
+                    return;
+                  }
+                  openDocument(id);
+                }}
+              />
+            ) : null}
+          </>
+        ) : (
+          <>
+            {isLoadingDoc ? <p>Loading preview...</p> : null}
+            {docError ? <p className="error-box">{docError}</p> : null}
+
+            {!isLoadingDoc && !doc && !docError ? (
+              <p>Select a document.</p>
+            ) : null}
+
+            {doc ? (
+              <>
+                <header className="doc-header">
+                  <h2>{doc.title}</h2>
+                  <div className="mono small">{doc.relPath}</div>
+                </header>
+
+                <details open>
+                  <summary>Frontmatter</summary>
+                  <FrontmatterPanel
+                    frontmatter={doc.frontmatter}
+                    currentDocId={doc.id}
+                    onNavigate={onLinkClick}
+                  />
+                </details>
+
+                <article className="markdown-view">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    rehypePlugins={[rehypeSlug]}
+                    urlTransform={(url) => url}
+                    components={{
+                      a: ({ href, children }) => {
+                        const internalHref = doc
+                          ? toInternalNavigationHref(href, doc.id)
+                          : null;
+
+                        if (internalHref) {
+                          return (
+                            <button
+                              type="button"
+                              className="markdown-link"
+                              onClick={() => onLinkClick(internalHref)}
+                            >
+                              {children}
+                            </button>
+                          );
                         }
-                      >
-                        {link.display} (ambiguous: {link.candidates.length})
-                      </button>
-                    ) : (
-                      <span className="muted">{link.display} (unresolved)</span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            ) : null}
 
-            {activeTab === "incoming" ? (
-              <>
-                {isIncomingLoading ? (
-                  <p className="small muted">Loading incoming...</p>
-                ) : null}
-                {incomingError ? (
-                  <p className="error-box">{incomingError}</p>
-                ) : null}
-                <ul className="link-list">
-                  {incomingLinks.map((link) => (
-                    <li key={link.id}>
-                      <button
-                        type="button"
-                        onClick={() => openDocument(link.id)}
-                      >
-                        {link.title}
-                      </button>
-                      <span className="mono small">{link.id}</span>
-                    </li>
-                  ))}
-                  {!isIncomingLoading && incomingLinks.length === 0 ? (
-                    <li className="small muted">No incoming links detected.</li>
-                  ) : null}
-                </ul>
-              </>
-            ) : null}
-
-            {activeTab === "graph" ? (
-              <>
-                <div className="graph-toolbar">
-                  <label htmlFor="graph-depth">Depth</label>
-                  <select
-                    id="graph-depth"
-                    value={graphDepth}
-                    onChange={(event) =>
-                      setGraphDepth(Number(event.target.value))
-                    }
+                        return (
+                          <a href={href} target="_blank" rel="noreferrer">
+                            {children}
+                          </a>
+                        );
+                      },
+                    }}
                   >
-                    <option value={1}>1</option>
-                    <option value={2}>2</option>
-                    <option value={3}>3</option>
-                    <option value={4}>4</option>
-                  </select>
+                    {preparedMarkdown?.markdown || doc.markdown}
+                  </ReactMarkdown>
+                </article>
+
+                <div className="link-tabs">
                   <button
                     type="button"
-                    className={
-                      graphExpanded ? "graph-expand active" : "graph-expand"
-                    }
-                    onClick={() => setGraphExpanded((current) => !current)}
+                    className={activeTab === "outgoing" ? "active" : ""}
+                    onClick={() => setActiveTab("outgoing")}
                   >
-                    {graphExpanded ? "Shrink" : "Expand"}
+                    Outgoing ({doc.outgoing.length})
+                  </button>
+                  <button
+                    type="button"
+                    className={activeTab === "incoming" ? "active" : ""}
+                    onClick={() => setActiveTab("incoming")}
+                  >
+                    Incoming (
+                    {incomingByDocId[doc.id] ? incomingLinks.length : "..."})
+                  </button>
+                  <button
+                    type="button"
+                    className={activeTab === "graph" ? "active" : ""}
+                    onClick={() => setActiveTab("graph")}
+                  >
+                    Graph
                   </button>
                 </div>
-                {graphLoading ? (
-                  <p className="small muted">Loading graph...</p>
+
+                {activeTab === "outgoing" ? (
+                  <ul className="link-list">
+                    {doc.outgoing.map((link, index) => (
+                      <li key={`${link.raw}-${index}`}>
+                        {link.resolvedId ? (
+                          <button
+                            type="button"
+                            onClick={() => openDocument(link.resolvedId!)}
+                          >
+                            {link.display} →{" "}
+                            {link.resolvedTitle || link.resolvedId}
+                          </button>
+                        ) : link.candidates && link.candidates.length > 0 ? (
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setCandidatePopup({
+                                label: link.display,
+                                options: link.candidates!,
+                              })
+                            }
+                          >
+                            {link.display} (ambiguous: {link.candidates.length})
+                          </button>
+                        ) : (
+                          <span className="muted">
+                            {link.display} (unresolved)
+                          </span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
                 ) : null}
-                {graphError ? <p className="error-box">{graphError}</p> : null}
-                {graphData ? (
-                  <GraphView
-                    graph={graphData}
-                    rootTitle={doc.title}
-                    expanded={graphExpanded}
-                    onClose={() => setGraphExpanded(false)}
-                    onSelect={(id) => openDocument(id)}
-                  />
+
+                {activeTab === "incoming" ? (
+                  <>
+                    {isIncomingLoading ? (
+                      <p className="small muted">Loading incoming...</p>
+                    ) : null}
+                    {incomingError ? (
+                      <p className="error-box">{incomingError}</p>
+                    ) : null}
+                    <ul className="link-list">
+                      {incomingLinks.map((link) => (
+                        <li key={link.id}>
+                          <button
+                            type="button"
+                            onClick={() => openDocument(link.id)}
+                          >
+                            {link.title}
+                          </button>
+                          <span className="mono small">{link.id}</span>
+                        </li>
+                      ))}
+                      {!isIncomingLoading && incomingLinks.length === 0 ? (
+                        <li className="small muted">
+                          No incoming links detected.
+                        </li>
+                      ) : null}
+                    </ul>
+                  </>
+                ) : null}
+
+                {activeTab === "graph" ? (
+                  <>
+                    <div className="graph-toolbar">
+                      <div
+                        className="graph-mode-switch"
+                        role="tablist"
+                        aria-label="Graph mode"
+                      >
+                        <button
+                          type="button"
+                          className={graphMode === "cloud" ? "active" : ""}
+                          onClick={() => setGraphMode("cloud")}
+                        >
+                          Node Cloud
+                        </button>
+                        <button
+                          type="button"
+                          className={graphMode === "mindmap" ? "active" : ""}
+                          onClick={() => setGraphMode("mindmap")}
+                        >
+                          Mindmap
+                        </button>
+                      </div>
+                      <label htmlFor="graph-depth">Depth</label>
+                      <select
+                        id="graph-depth"
+                        value={graphDepth}
+                        onChange={(event) =>
+                          setGraphDepth(Number(event.target.value))
+                        }
+                      >
+                        <option value={1}>1</option>
+                        <option value={2}>2</option>
+                        <option value={3}>3</option>
+                        <option value={4}>4</option>
+                      </select>
+                      <button
+                        type="button"
+                        className={
+                          graphExpanded ? "graph-expand active" : "graph-expand"
+                        }
+                        onClick={() => setGraphExpanded((current) => !current)}
+                      >
+                        {graphExpanded ? "Shrink" : "Expand"}
+                      </button>
+                    </div>
+                    {graphLoading ? (
+                      <p className="small muted">Loading graph...</p>
+                    ) : null}
+                    {graphError ? (
+                      <p className="error-box">{graphError}</p>
+                    ) : null}
+                    {graphData ? (
+                      <GraphView
+                        graph={graphData}
+                        rootTitle={doc.title}
+                        mode={graphMode}
+                        expanded={graphExpanded}
+                        onClose={() => setGraphExpanded(false)}
+                        onSelect={(id) => openDocument(id)}
+                      />
+                    ) : null}
+                  </>
                 ) : null}
               </>
             ) : null}
           </>
-        ) : null}
+        )}
       </section>
 
       {candidatePopup ? (
@@ -1011,6 +1304,11 @@ function isSearchHiddenId(id: string): boolean {
   );
 }
 
+function isVirtualGlobalGraphNodeId(id: string): boolean {
+  const normalized = id.trim();
+  return normalized.startsWith("__global__/");
+}
+
 function renderFrontmatterHint(frontmatter: Record<string, unknown>): string {
   const interestingKeys = ["law_id", "article_id", "abbr", "alias"];
   const tokens: string[] = [];
@@ -1023,6 +1321,109 @@ function renderFrontmatterHint(frontmatter: Record<string, unknown>): string {
   }
 
   return tokens.join(" / ");
+}
+
+function sortSearchResults(
+  results: SearchResult[],
+  query: string,
+  sortMode: SearchSortMode,
+): SearchResult[] {
+  const sorted = [...results];
+
+  if (sortMode === "title_asc" || sortMode === "title_desc") {
+    const direction = sortMode === "title_asc" ? 1 : -1;
+    sorted.sort((a, b) => {
+      const titleCompare = a.title.localeCompare(b.title, "ja");
+      if (titleCompare !== 0) {
+        return titleCompare * direction;
+      }
+      return a.id.localeCompare(b.id, "ja") * direction;
+    });
+    return sorted;
+  }
+
+  const scoreById = new Map<string, number>();
+  for (const result of sorted) {
+    scoreById.set(result.id, searchRelevanceScore(result, query));
+  }
+
+  sorted.sort((a, b) => {
+    const scoreDiff = (scoreById.get(b.id) || 0) - (scoreById.get(a.id) || 0);
+    if (scoreDiff !== 0) {
+      return scoreDiff;
+    }
+    const titleCompare = a.title.localeCompare(b.title, "ja");
+    if (titleCompare !== 0) {
+      return titleCompare;
+    }
+    return a.id.localeCompare(b.id, "ja");
+  });
+
+  return sorted;
+}
+
+function searchRelevanceScore(result: SearchResult, query: string): number {
+  const normalizedQuery = query.trim().toLowerCase();
+  if (!normalizedQuery) {
+    return 0;
+  }
+
+  const text = [
+    result.title,
+    result.id,
+    result.relPath,
+    flattenFrontmatterValue(result.frontmatter),
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return countOccurrences(text, normalizedQuery);
+}
+
+function flattenFrontmatterValue(value: unknown): string {
+  if (value == null) {
+    return "";
+  }
+
+  if (
+    typeof value === "string" ||
+    typeof value === "number" ||
+    typeof value === "boolean"
+  ) {
+    return String(value);
+  }
+
+  if (Array.isArray(value)) {
+    return value.map((item) => flattenFrontmatterValue(item)).join(" ");
+  }
+
+  if (typeof value === "object") {
+    return Object.entries(value as Record<string, unknown>)
+      .map(([key, nestedValue]) =>
+        `${key} ${flattenFrontmatterValue(nestedValue)}`.trim(),
+      )
+      .join(" ");
+  }
+
+  return "";
+}
+
+function countOccurrences(haystack: string, needle: string): number {
+  if (!needle) {
+    return 0;
+  }
+
+  let index = 0;
+  let count = 0;
+  while (index < haystack.length) {
+    const hit = haystack.indexOf(needle, index);
+    if (hit < 0) {
+      break;
+    }
+    count += 1;
+    index = hit + needle.length;
+  }
+  return count;
 }
 
 function FrontmatterPanel(props: {
@@ -1369,69 +1770,39 @@ function safeDecodeURIComponent(value: string): string {
 interface GraphViewProps {
   graph: GraphPayload;
   rootTitle: string;
+  mode: GraphLayoutMode;
   expanded: boolean;
   onClose: () => void;
   onSelect: (id: string) => void;
 }
 
+interface GraphPoint {
+  id: string;
+  x: number;
+  y: number;
+  depth: number;
+  title: string;
+}
+
+interface GraphLayoutResult {
+  points: Map<string, GraphPoint>;
+  treeEdgeKeys: Set<string>;
+  maxDepth: number;
+}
+
 function GraphView(props: GraphViewProps): JSX.Element {
-  const { graph, rootTitle, expanded, onClose, onSelect } = props;
+  const { graph, rootTitle, mode, expanded, onClose, onSelect } = props;
   const width = expanded ? 1520 : 860;
   const height = expanded ? 920 : 360;
-  const cx = width / 2;
-  const cy = height / 2;
 
   const layout = useMemo(() => {
-    const points = new Map<
-      string,
-      { x: number; y: number; depth: number; title: string }
-    >();
-    const byDepth = new Map<number, GraphNodePayload[]>();
-
-    for (const node of graph.nodes) {
-      const bucket = byDepth.get(node.depth) || [];
-      bucket.push(node);
-      byDepth.set(node.depth, bucket);
+    if (mode === "mindmap") {
+      return buildMindmapLayout(graph, width, height);
     }
-
-    const maxDepth = Math.max(...graph.nodes.map((node) => node.depth), 1);
-    const minDim = Math.min(width, height);
-    const minRadius = Math.max(56, minDim * 0.16);
-    const maxRadius = Math.max(minRadius + 48, minDim * 0.46);
-    const radiusStep =
-      maxDepth > 0 ? (maxRadius - minRadius) / Math.max(maxDepth, 1) : 0;
-
-    for (const [depth, nodes] of byDepth.entries()) {
-      nodes.sort((a, b) => a.title.localeCompare(b.title, "ja"));
-      if (depth === 0) {
-        const root = nodes[0];
-        if (root) {
-          points.set(root.id, {
-            x: cx,
-            y: cy,
-            depth,
-            title: root.title,
-          });
-        }
-        continue;
-      }
-
-      const radius = minRadius + depth * radiusStep;
-      for (let index = 0; index < nodes.length; index += 1) {
-        const node = nodes[index];
-        const angle =
-          (Math.PI * 2 * index) / Math.max(nodes.length, 1) - Math.PI / 2;
-        points.set(node.id, {
-          x: cx + Math.cos(angle) * radius,
-          y: cy + Math.sin(angle) * radius,
-          depth,
-          title: node.title,
-        });
-      }
-    }
-
-    return points;
-  }, [cx, cy, graph.nodes, height, width]);
+    return buildCloudLayout(graph, width, height);
+  }, [graph, height, mode, width]);
+  const labelMaxLen = mode === "mindmap" ? 26 : 18;
+  const layerCount = Math.max(layout.maxDepth + 1, 1);
 
   return (
     <div className={`graph-shell ${expanded ? "expanded" : ""}`}>
@@ -1447,12 +1818,76 @@ function GraphView(props: GraphViewProps): JSX.Element {
       ) : null}
       <svg className="graph-svg" viewBox={`0 0 ${width} ${height}`}>
         <g>
+          {Array.from({ length: layerCount }).map((_, depth) => {
+            if (mode === "mindmap") {
+              const x = graphLayerX(depth, layout.maxDepth, width, 34);
+              return (
+                <g key={`guide-col-${depth}`}>
+                  <line
+                    x1={x}
+                    y1={10}
+                    x2={x}
+                    y2={height - 10}
+                    className="graph-layer-line"
+                  />
+                  <text x={x + 4} y={20} className="graph-layer-label">
+                    L{depth}
+                  </text>
+                </g>
+              );
+            }
+
+            const y = graphLayerY(depth, layout.maxDepth, height, 24);
+            return (
+              <g key={`guide-row-${depth}`}>
+                <line
+                  x1={10}
+                  y1={y}
+                  x2={width - 10}
+                  y2={y}
+                  className="graph-layer-line"
+                />
+                <text x={12} y={y - 4} className="graph-layer-label">
+                  L{depth}
+                </text>
+              </g>
+            );
+          })}
+        </g>
+        <g>
           {graph.edges.map((edge, index) => {
-            const from = layout.get(edge.from);
-            const to = layout.get(edge.to);
+            const from = layout.points.get(edge.from);
+            const to = layout.points.get(edge.to);
             if (!from || !to) {
               return null;
             }
+
+            const edgeKey = toUndirectedEdgeKey(edge.from, edge.to);
+            const isTreeEdge =
+              mode === "mindmap" ? layout.treeEdgeKeys.has(edgeKey) : true;
+
+            const stroke = edge.kind === "incoming" ? "#4f6f8f" : "#0d7a5f";
+            const strokeOpacity =
+              mode === "mindmap" ? (isTreeEdge ? "0.58" : "0.23") : "0.42";
+            const strokeWidth =
+              mode === "mindmap" ? (isTreeEdge ? "1.7" : "1.1") : "1.35";
+            const dashArray =
+              mode === "mindmap" && !isTreeEdge ? "3 3" : undefined;
+
+            if (mode === "mindmap") {
+              return (
+                <path
+                  key={`${edge.from}-${edge.to}-${index}`}
+                  d={buildCurvePath(from, to)}
+                  fill="none"
+                  stroke={stroke}
+                  strokeOpacity={strokeOpacity}
+                  strokeWidth={strokeWidth}
+                  strokeDasharray={dashArray}
+                />
+              );
+            }
+
             return (
               <line
                 key={`${edge.from}-${edge.to}-${index}`}
@@ -1460,45 +1895,45 @@ function GraphView(props: GraphViewProps): JSX.Element {
                 y1={from.y}
                 x2={to.x}
                 y2={to.y}
-                stroke={edge.kind === "incoming" ? "#4f6f8f" : "#0d7a5f"}
-                strokeOpacity="0.45"
-                strokeWidth="1.4"
+                stroke={stroke}
+                strokeOpacity={strokeOpacity}
+                strokeWidth={strokeWidth}
               />
             );
           })}
 
           {graph.nodes.map((node) => {
-            const point = layout.get(node.id);
+            const point = layout.points.get(node.id);
             if (!point) {
               return null;
             }
 
-            const fill =
-              node.depth === 0
-                ? "#0d5b7a"
-                : node.depth === 1
-                  ? "#4ab393"
-                  : node.depth === 2
-                    ? "#7d9fbf"
-                    : "#bfa36f";
+            const isRoot = node.id === graph.rootId;
+            const fill = graphNodeColor(node.depth);
+            const radius = isRoot ? 7 : 6;
+            const labelRight = point.x < width - 120;
+            const label =
+              node.title || (isRoot ? rootTitle : pathLikeTitle(node.id));
 
             return (
               <g key={node.id}>
                 <circle
                   cx={point.x}
                   cy={point.y}
-                  r={node.depth === 0 ? 12 : 8}
+                  r={radius}
                   fill={fill}
                   className="graph-node"
+                  stroke={isRoot ? "#102233" : "#f8fbff"}
+                  strokeWidth={isRoot ? "2.2" : "1.2"}
                   onClick={() => onSelect(node.id)}
                 />
                 <text
-                  x={point.x + (point.x >= cx ? 11 : -11)}
+                  x={point.x + (labelRight ? radius + 4 : -(radius + 4))}
                   y={point.y + 4}
-                  textAnchor={point.x >= cx ? "start" : "end"}
+                  textAnchor={labelRight ? "start" : "end"}
                   className="graph-label"
                 >
-                  {truncateLabel(node.depth === 0 ? rootTitle : node.title, 18)}
+                  {truncateLabel(label, labelMaxLen)}
                 </text>
               </g>
             );
@@ -1506,9 +1941,9 @@ function GraphView(props: GraphViewProps): JSX.Element {
         </g>
       </svg>
       <p className="small muted">
-        Depth adjustable graph. Click node to navigate. nodes:{" "}
-        {graph.nodes.length.toLocaleString()} / edges:{" "}
-        {graph.edges.length.toLocaleString()}
+        {mode === "mindmap" ? "Mindmap layer view" : "Node cloud layer view"}.
+        Click node to navigate. nodes: {graph.nodes.length.toLocaleString()} /
+        edges: {graph.edges.length.toLocaleString()}
       </p>
     </div>
   );
@@ -1519,4 +1954,374 @@ function truncateLabel(value: string, maxLen: number): string {
     return value;
   }
   return `${value.slice(0, maxLen - 1)}...`;
+}
+
+function graphNodeColor(depth: number): string {
+  if (depth <= 0) {
+    return "#0d5b7a";
+  }
+  if (depth === 1) {
+    return "#44ad8e";
+  }
+  if (depth === 2) {
+    return "#7b9cba";
+  }
+  return "#b79662";
+}
+
+function buildCloudLayout(
+  graph: GraphPayload,
+  width: number,
+  height: number,
+): GraphLayoutResult {
+  interface SimNode extends GraphNodePayload {
+    x: number;
+    y: number;
+    vx: number;
+    vy: number;
+  }
+
+  const maxDepth = Math.max(...graph.nodes.map((node) => node.depth), 0);
+  const padding = 24;
+  const usableWidth = Math.max(10, width - padding * 2);
+  const usableHeight = Math.max(10, height - padding * 2);
+  const layerCount = Math.max(maxDepth + 1, 1);
+  const layerHeight = usableHeight / layerCount;
+
+  const simNodes: SimNode[] = [...graph.nodes]
+    .sort((a, b) => a.id.localeCompare(b.id, "ja"))
+    .map((node) => {
+      const seedX = seededUnit(node.id, 17);
+      const seedY = seededUnit(node.id, 43);
+      const baseY = graphLayerY(node.depth, maxDepth, height, padding);
+
+      return {
+        ...node,
+        x: clampNumber(padding + seedX * usableWidth, padding, width - padding),
+        y: clampNumber(
+          baseY + (seedY - 0.5) * layerHeight * 0.7,
+          padding,
+          height - padding,
+        ),
+        vx: 0,
+        vy: 0,
+      };
+    });
+
+  const nodeById = new Map(simNodes.map((node) => [node.id, node]));
+  const edges: Array<{ from: SimNode; to: SimNode }> = [];
+  for (const edge of graph.edges) {
+    const from = nodeById.get(edge.from);
+    const to = nodeById.get(edge.to);
+    if (!from || !to || from.id === to.id) {
+      continue;
+    }
+    edges.push({ from, to });
+  }
+
+  const iterations = Math.min(120, 40 + simNodes.length);
+  for (let iter = 0; iter < iterations; iter += 1) {
+    for (let i = 0; i < simNodes.length; i += 1) {
+      const a = simNodes[i];
+      for (let j = i + 1; j < simNodes.length; j += 1) {
+        const b = simNodes[j];
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const distSq = dx * dx + dy * dy + 0.01;
+        const dist = Math.sqrt(distSq);
+        const force = 2200 / distSq;
+        const fx = (dx / dist) * force;
+        const fy = (dy / dist) * force;
+        a.vx -= fx;
+        a.vy -= fy;
+        b.vx += fx;
+        b.vy += fy;
+      }
+    }
+
+    for (const edge of edges) {
+      const dx = edge.to.x - edge.from.x;
+      const dy = edge.to.y - edge.from.y;
+      const dist = Math.sqrt(dx * dx + dy * dy) + 0.001;
+      const target = 58 + Math.abs(edge.to.depth - edge.from.depth) * 16;
+      const spring = (dist - target) * 0.016;
+      const fx = (dx / dist) * spring;
+      const fy = (dy / dist) * spring;
+      edge.from.vx += fx;
+      edge.from.vy += fy;
+      edge.to.vx -= fx;
+      edge.to.vy -= fy;
+    }
+
+    for (const node of simNodes) {
+      const targetY = graphLayerY(node.depth, maxDepth, height, padding);
+      node.vy += (targetY - node.y) * 0.035;
+      node.vx += (width / 2 - node.x) * 0.0018;
+
+      node.vx *= 0.86;
+      node.vy *= 0.86;
+
+      node.x = clampNumber(node.x + node.vx, padding, width - padding);
+      node.y = clampNumber(node.y + node.vy, padding, height - padding);
+    }
+  }
+
+  const points = new Map<string, GraphPoint>();
+  for (const node of simNodes) {
+    points.set(node.id, {
+      id: node.id,
+      x: node.x,
+      y: node.y,
+      depth: node.depth,
+      title: node.title,
+    });
+  }
+
+  return {
+    points,
+    treeEdgeKeys: new Set<string>(),
+    maxDepth,
+  };
+}
+
+function buildMindmapLayout(
+  graph: GraphPayload,
+  width: number,
+  height: number,
+): GraphLayoutResult {
+  const nodes = [...graph.nodes].sort((a, b) => compareGraphNodeMeta(a, b));
+  const nodeById = new Map(nodes.map((node) => [node.id, node]));
+  const maxDepth = Math.max(...nodes.map((node) => node.depth), 0);
+  const adjacency = new Map<string, Set<string>>();
+  const preferred = new Map<string, Set<string>>();
+  const children = new Map<string, string[]>();
+
+  for (const node of nodes) {
+    adjacency.set(node.id, new Set<string>());
+    preferred.set(node.id, new Set<string>());
+    children.set(node.id, []);
+  }
+
+  for (const edge of graph.edges) {
+    if (!nodeById.has(edge.from) || !nodeById.has(edge.to)) {
+      continue;
+    }
+
+    adjacency.get(edge.from)?.add(edge.to);
+    adjacency.get(edge.to)?.add(edge.from);
+
+    const fromNode = nodeById.get(edge.from)!;
+    const toNode = nodeById.get(edge.to)!;
+    let parentId = edge.from;
+    let childId = edge.to;
+
+    if (fromNode.depth > toNode.depth) {
+      parentId = edge.to;
+      childId = edge.from;
+    } else if (fromNode.depth === toNode.depth && edge.kind === "incoming") {
+      parentId = edge.to;
+      childId = edge.from;
+    }
+
+    preferred.get(parentId)?.add(childId);
+  }
+
+  const visited = new Set<string>();
+  const treeEdgeKeys = new Set<string>();
+  const seeds = [graph.rootId, ...nodes.map((node) => node.id)];
+
+  for (const seed of seeds) {
+    if (visited.has(seed) || !nodeById.has(seed)) {
+      continue;
+    }
+
+    if (seed !== graph.rootId && nodeById.has(graph.rootId)) {
+      const rootChildren = children.get(graph.rootId);
+      if (rootChildren && !rootChildren.includes(seed)) {
+        rootChildren.push(seed);
+        treeEdgeKeys.add(toUndirectedEdgeKey(graph.rootId, seed));
+      }
+    }
+
+    const queue: string[] = [seed];
+    visited.add(seed);
+
+    while (queue.length > 0) {
+      const current = queue.shift();
+      if (!current) {
+        continue;
+      }
+
+      const prioritized = Array.from(preferred.get(current) || []);
+      const adjacent = Array.from(adjacency.get(current) || []);
+      const nextCandidates = uniqueOrdered([...prioritized, ...adjacent])
+        .filter((next) => next !== current && !visited.has(next))
+        .sort((a, b) => compareGraphNodeIds(a, b, nodeById));
+
+      for (const next of nextCandidates) {
+        const bucket = children.get(current);
+        if (bucket) {
+          bucket.push(next);
+        }
+        treeEdgeKeys.add(toUndirectedEdgeKey(current, next));
+        visited.add(next);
+        queue.push(next);
+      }
+    }
+  }
+
+  for (const bucket of children.values()) {
+    bucket.sort((a, b) => compareGraphNodeIds(a, b, nodeById));
+  }
+
+  const paddingX = 34;
+  const paddingY = 16;
+  const usableHeight = Math.max(10, height - paddingY * 2);
+  const rowStep = usableHeight / Math.max(nodes.length, 1);
+  let rowCursor = 0;
+  const yById = new Map<string, number>();
+  const evaluating = new Set<string>();
+
+  const placeY = (id: string): number => {
+    const cached = yById.get(id);
+    if (cached != null) {
+      return cached;
+    }
+    if (evaluating.has(id)) {
+      const fallback = paddingY + (rowCursor + 0.5) * rowStep;
+      rowCursor += 1;
+      yById.set(id, fallback);
+      return fallback;
+    }
+
+    evaluating.add(id);
+    const kids = children.get(id) || [];
+    if (kids.length === 0) {
+      const y = paddingY + (rowCursor + 0.5) * rowStep;
+      rowCursor += 1;
+      yById.set(id, y);
+      evaluating.delete(id);
+      return y;
+    }
+
+    const avgY =
+      kids
+        .map((childId) => placeY(childId))
+        .reduce((sum, value) => sum + value, 0) / kids.length;
+    yById.set(id, avgY);
+    evaluating.delete(id);
+    return avgY;
+  };
+
+  placeY(graph.rootId);
+  for (const node of nodes) {
+    placeY(node.id);
+  }
+
+  const points = new Map<string, GraphPoint>();
+  for (const node of nodes) {
+    points.set(node.id, {
+      id: node.id,
+      x: graphLayerX(node.depth, maxDepth, width, paddingX),
+      y: clampNumber(
+        yById.get(node.id) ?? height / 2,
+        paddingY,
+        height - paddingY,
+      ),
+      depth: node.depth,
+      title: node.title,
+    });
+  }
+
+  return {
+    points,
+    treeEdgeKeys,
+    maxDepth,
+  };
+}
+
+function graphLayerX(
+  depth: number,
+  maxDepth: number,
+  width: number,
+  padding: number,
+): number {
+  const usableWidth = Math.max(10, width - padding * 2);
+  const layerCount = Math.max(maxDepth + 1, 1);
+  const layerWidth = usableWidth / layerCount;
+  return padding + layerWidth * (depth + 0.5);
+}
+
+function graphLayerY(
+  depth: number,
+  maxDepth: number,
+  height: number,
+  padding: number,
+): number {
+  const usableHeight = Math.max(10, height - padding * 2);
+  const layerCount = Math.max(maxDepth + 1, 1);
+  const layerHeight = usableHeight / layerCount;
+  return padding + layerHeight * (depth + 0.5);
+}
+
+function seededUnit(input: string, salt: number): number {
+  let hash = (2166136261 ^ salt) >>> 0;
+  for (let index = 0; index < input.length; index += 1) {
+    hash ^= input.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0) / 4294967295;
+}
+
+function clampNumber(value: number, min: number, max: number): number {
+  return Math.max(min, Math.min(max, value));
+}
+
+function compareGraphNodeMeta(
+  a: GraphNodePayload,
+  b: GraphNodePayload,
+): number {
+  if (a.depth !== b.depth) {
+    return a.depth - b.depth;
+  }
+  return a.title.localeCompare(b.title, "ja");
+}
+
+function compareGraphNodeIds(
+  aId: string,
+  bId: string,
+  nodeById: Map<string, GraphNodePayload>,
+): number {
+  const a = nodeById.get(aId);
+  const b = nodeById.get(bId);
+  if (a && b) {
+    return compareGraphNodeMeta(a, b);
+  }
+  return aId.localeCompare(bId, "ja");
+}
+
+function uniqueOrdered(values: string[]): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const value of values) {
+    if (!value || seen.has(value)) {
+      continue;
+    }
+    seen.add(value);
+    out.push(value);
+  }
+  return out;
+}
+
+function toUndirectedEdgeKey(a: string, b: string): string {
+  return a < b ? `${a}::${b}` : `${b}::${a}`;
+}
+
+function buildCurvePath(from: GraphPoint, to: GraphPoint): string {
+  const dx = to.x - from.x;
+  const dir = dx >= 0 ? 1 : -1;
+  const bend = Math.max(18, Math.abs(dx) * 0.36);
+  const c1x = from.x + bend * dir;
+  const c2x = to.x - bend * dir;
+  return `M ${from.x} ${from.y} C ${c1x} ${from.y}, ${c2x} ${to.y}, ${to.x} ${to.y}`;
 }

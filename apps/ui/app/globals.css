@@ -52,8 +52,8 @@ input {
 .app-shell {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: minmax(250px, 300px) minmax(280px, 420px) minmax(
-      420px,
+  grid-template-columns: minmax(172px, 212px) minmax(296px, 384px) minmax(
+      0,
       1fr
     );
   gap: 16px;
@@ -76,6 +76,31 @@ input {
   flex-direction: column;
   gap: 12px;
   min-width: 0;
+  position: sticky;
+  top: 16px;
+  align-self: start;
+  height: calc(100vh - 32px);
+  overflow: hidden;
+}
+
+.panel-left h1 {
+  font-size: clamp(1.72rem, 2vw, 1.95rem);
+}
+
+.panel-center {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.left-panel-main {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  align-content: start;
+  gap: 12px;
 }
 
 .panel-right {
@@ -83,6 +108,7 @@ input {
   align-content: start;
   gap: 12px;
   min-width: 0;
+  padding: 12px;
 }
 
 .panel h1,
@@ -120,6 +146,36 @@ input {
   margin-bottom: 8px;
 }
 
+.search-row {
+  position: sticky;
+  top: -2px;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding-bottom: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 250, 254, 0.98) 0%,
+    rgba(247, 250, 254, 0.95) 80%,
+    rgba(247, 250, 254, 0) 100%
+  );
+}
+
+.search-tab {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-control);
+  padding: 8px 10px 10px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(14, 33, 46, 0.07);
+}
+
+.search-tab .search-label {
+  margin-bottom: 6px;
+}
+
 .search-box {
   width: 100%;
   border: 1px solid var(--panel-border);
@@ -133,6 +189,57 @@ input {
 .search-box:focus {
   outline: 2px solid var(--accent-soft);
   border-color: var(--accent);
+}
+
+.search-adjust-btn {
+  flex: 0 0 auto;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-control);
+  background: #fff;
+  padding: 11px 12px;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  min-width: 66px;
+}
+
+.search-adjust-btn.active {
+  background: var(--accent-soft);
+  border-color: rgba(15, 108, 141, 0.45);
+  color: #07384b;
+}
+
+.search-adjust-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% - 1px);
+  z-index: 12;
+  width: min(300px, 82vw);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 14px 34px rgba(14, 33, 46, 0.16);
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.search-adjust-title {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.search-adjust-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: var(--text-main);
+}
+
+.search-adjust-option input {
+  margin: 0;
 }
 
 .status-block {
@@ -165,9 +272,18 @@ input {
 }
 
 .left-panel-footer {
-  margin-top: auto;
+  margin-top: 0;
   display: grid;
   gap: 6px;
+  flex: 0 0 auto;
+  padding-top: 8px;
+  border-top: 1px solid rgba(27, 48, 70, 0.12);
+  background: linear-gradient(
+    180deg,
+    rgba(247, 250, 254, 0.6) 0%,
+    rgba(247, 250, 254, 0.9) 30%,
+    rgba(247, 250, 254, 1) 100%
+  );
 }
 
 .left-action-btn {
@@ -265,6 +381,21 @@ input {
   margin-top: 2px;
   margin-bottom: 8px;
   min-width: 0;
+}
+
+.global-graph-header {
+  margin-top: 2px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.global-graph-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .browser-chrome {
@@ -536,6 +667,28 @@ input {
   gap: 10px;
 }
 
+.graph-mode-switch {
+  display: inline-flex;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.graph-mode-switch button {
+  border: none;
+  background: transparent;
+  padding: 6px 10px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #35515f;
+}
+
+.graph-mode-switch button.active {
+  background: var(--accent-soft);
+  color: #093d52;
+}
+
 .graph-toolbar select {
   border: 1px solid var(--panel-border);
   border-radius: 10px;
@@ -614,11 +767,16 @@ input {
   font-family: var(--ui);
 }
 
-.graph-center-label {
-  fill: #1d2830;
-  font-size: 12px;
-  font-weight: 600;
-  font-family: var(--ui);
+.graph-layer-line {
+  stroke: rgba(58, 87, 103, 0.22);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.graph-layer-label {
+  fill: rgba(56, 81, 98, 0.8);
+  font-size: 10px;
+  font-family: var(--mono);
 }
 
 .candidate-overlay {
@@ -680,7 +838,7 @@ input {
 
 @media (max-width: 1200px) {
   .app-shell {
-    grid-template-columns: minmax(220px, 280px) minmax(260px, 360px) minmax(
+    grid-template-columns: minmax(164px, 196px) minmax(260px, 344px) minmax(
         0,
         1fr
       );
@@ -690,6 +848,26 @@ input {
 @media (max-width: 980px) {
   .app-shell {
     grid-template-columns: 1fr;
+  }
+
+  .panel-left {
+    position: static;
+    height: auto;
+    overflow: auto;
+  }
+
+  .panel-left h1 {
+    font-size: 2.02rem;
+  }
+
+  .left-panel-main {
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .search-row {
+    position: static;
+    background: transparent;
   }
 
   .markdown-view {
