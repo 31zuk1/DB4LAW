@@ -1,6 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+} from "react";
 
 import ReactMarkdown from "react-markdown";
 import rehypeSlug from "rehype-slug";
@@ -73,6 +80,15 @@ type LinkTab = "outgoing" | "incoming" | "graph";
 type GraphLayoutMode = "cloud" | "mindmap";
 type SearchSortMode = "relevance" | "title_asc" | "title_desc";
 
+interface SideOutgoingLinkItem {
+  key: string;
+  label: string;
+  subtitle: string;
+  targetId: string | null;
+  targetTitle: string | null;
+  candidates: LinkCandidate[];
+}
+
 const PAGE_SIZE = 120;
 const LAW_INDEX_CANDIDATES = ["laws_index", "law_index", "law-index"];
 
@@ -84,6 +100,10 @@ export function VaultBrowser(): JSX.Element {
   const [searchSortMode, setSearchSortMode] =
     useState<SearchSortMode>("relevance");
   const [searchSortOpen, setSearchSortOpen] = useState(false);
+  const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
+  const [linkSortMode, setLinkSortMode] = useState<SearchSortMode>("relevance");
+  const [viewerSplitRatio, setViewerSplitRatio] = useState(0.76);
+  const [isViewerSplitResizing, setIsViewerSplitResizing] = useState(false);
   const [status, setStatus] = useState<VaultStatus | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [openDocTabs, setOpenDocTabs] = useState<string[]>([]);
@@ -127,6 +147,13 @@ export function VaultBrowser(): JSX.Element {
   const searchRequestSeqRef = useRef(0);
   const searchAbortRef = useRef<AbortController | null>(null);
   const searchSortPanelRef = useRef<HTMLDivElement | null>(null);
+  const commandSearchInputRef = useRef<HTMLInputElement | null>(null);
+  const viewerSplitRef = useRef<HTMLDivElement | null>(null);
+  const viewerSplitDragRef = useRef<{
+    startX: number;
+    startRatio: number;
+    containerWidth: number;
+  } | null>(null);
 
   const openDocument = useCallback((id: string) => {
     setGlobalGraphOpen(false);
@@ -160,6 +187,36 @@ export function VaultBrowser(): JSX.Element {
       return next;
     });
   }, []);
+
+  const closeCommandPalette = useCallback(() => {
+    setCommandPaletteOpen(false);
+    setSearchSortOpen(false);
+  }, []);
+
+  const openCommandPalette = useCallback(() => {
+    setCommandPaletteOpen(true);
+  }, []);
+
+  const beginViewerSplitResize = useCallback(
+    (clientX: number) => {
+      if (!viewerSplitRef.current) {
+        return;
+      }
+
+      const rect = viewerSplitRef.current.getBoundingClientRect();
+      if (rect.width < 80) {
+        return;
+      }
+
+      viewerSplitDragRef.current = {
+        startX: clientX,
+        startRatio: viewerSplitRatio,
+        containerWidth: rect.width,
+      };
+      setIsViewerSplitResizing(true);
+    },
+    [viewerSplitRatio],
+  );
 
   const runSearch = useCallback(async function runSearchImpl(
     input: string,
@@ -216,9 +273,6 @@ export function VaultBrowser(): JSX.Element {
         return next;
       });
 
-      if (filteredResults.length > 0) {
-        setSelectedId((previous) => previous || filteredResults[0].id);
-      }
     } catch (error) {
       if (
         controller.signal.aborted ||
@@ -345,6 +399,75 @@ export function VaultBrowser(): JSX.Element {
   }, [searchSortOpen]);
 
   useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      const key = event.key.toLowerCase();
+      if ((event.metaKey || event.ctrlKey) && key === "k") {
+        event.preventDefault();
+        setCommandPaletteOpen(true);
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
+
+  useEffect(() => {
+    if (!commandPaletteOpen) {
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      commandSearchInputRef.current?.focus();
+      commandSearchInputRef.current?.select();
+    }, 12);
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeCommandPalette();
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [closeCommandPalette, commandPaletteOpen]);
+
+  useEffect(() => {
+    if (!isViewerSplitResizing) {
+      return;
+    }
+
+    const onPointerMove = (event: PointerEvent) => {
+      const drag = viewerSplitDragRef.current;
+      if (!drag) {
+        return;
+      }
+
+      const deltaRatio = (event.clientX - drag.startX) / drag.containerWidth;
+      setViewerSplitRatio(clampNumber(drag.startRatio + deltaRatio, 0.45, 0.88));
+    };
+
+    const stopDragging = () => {
+      setIsViewerSplitResizing(false);
+      viewerSplitDragRef.current = null;
+      document.body.classList.remove("viewer-split-resizing");
+    };
+
+    window.addEventListener("pointermove", onPointerMove);
+    window.addEventListener("pointerup", stopDragging);
+    document.body.classList.add("viewer-split-resizing");
+
+    return () => {
+      window.removeEventListener("pointermove", onPointerMove);
+      window.removeEventListener("pointerup", stopDragging);
+      document.body.classList.remove("viewer-split-resizing");
+    };
+  }, [isViewerSplitResizing]);
+
+  useEffect(() => {
     if (!selectedId) {
       setDoc(null);
       return;
@@ -400,10 +523,6 @@ export function VaultBrowser(): JSX.Element {
       return;
     }
 
-    if (activeTab !== "incoming") {
-      return;
-    }
-
     if (incomingByDocId[doc.id]) {
       return;
     }
@@ -452,7 +571,7 @@ export function VaultBrowser(): JSX.Element {
           current === doc.id ? null : current,
         );
       });
-  }, [activeTab, doc, incomingByDocId, loadingIncomingFor]);
+  }, [doc, incomingByDocId, loadingIncomingFor]);
 
   useEffect(() => {
     if (!doc || activeTab !== "graph") {
@@ -561,6 +680,52 @@ export function VaultBrowser(): JSX.Element {
       (link) => !isSearchHiddenId(link.id),
     );
   }, [doc, incomingByDocId]);
+
+  const sortedOutgoingLinks = useMemo(() => {
+    if (!doc) {
+      return [] as SideOutgoingLinkItem[];
+    }
+
+    const items = doc.outgoing.map((link, index) => ({
+      key: `${link.raw}-${index}`,
+      label: link.display,
+      subtitle: link.resolvedId || link.target || link.raw,
+      targetId: link.resolvedId || null,
+      targetTitle: link.resolvedTitle || null,
+      candidates: link.candidates || [],
+    }));
+
+    return sortGenericItems(
+      items,
+      linkSortMode,
+      query,
+      (item) => item.targetTitle || item.label,
+      (item) => `${item.label} ${item.subtitle} ${item.targetTitle || ""}`.trim(),
+    );
+  }, [doc, linkSortMode, query]);
+
+  const sortedIncomingLinks = useMemo(() => {
+    const items = incomingLinks.map((link) => ({
+      ...link,
+      subtitle: link.relPath || link.id,
+    }));
+
+    return sortGenericItems(
+      items,
+      linkSortMode,
+      query,
+      (item) => item.title,
+      (item) => `${item.title} ${item.id} ${item.subtitle}`.trim(),
+    );
+  }, [incomingLinks, linkSortMode, query]);
+
+  const viewerSplitStyle = useMemo(
+    () =>
+      ({
+        "--viewer-main-width": `${(viewerSplitRatio * 100).toFixed(1)}%`,
+      }) as CSSProperties,
+    [viewerSplitRatio],
+  );
 
   const sortedResults = useMemo(
     () => sortSearchResults(results, query, searchSortMode),
@@ -727,165 +892,117 @@ export function VaultBrowser(): JSX.Element {
 
   return (
     <main className="app-shell">
-      <section className="panel panel-left">
-        <div className="left-panel-main">
-          <div className="brand-block">
-            <h1>DB4LAW Vault Reader</h1>
-            <p className="panel-caption">Read-only Obsidian-compatible viewer</p>
-          </div>
-
-          <div className="status-block">
-            <div>
-              Documents:{" "}
-              {status?.totalDocs != null
-                ? status.totalDocs.toLocaleString()
-                : "indexing..."}
-            </div>
-            <div className="mono small">
-              Vault: {status?.vaultPath || "loading"}
-            </div>
-            <div className="small muted">
-              {status?.indexing ? "Indexing in background" : "Index ready"}
-            </div>
-          </div>
-
-          <div className="panel-note">
-            <div className="small muted">
-              Open tabs: {openDocTabs.length.toLocaleString()}
-            </div>
-            <div className="small muted">
-              検索結果や本文リンクを開くと、右側にタブとして保持されます。
-            </div>
-          </div>
-        </div>
-
-        <div className="left-panel-footer">
+      <section className="panel panel-left" aria-label="Sidebar tools">
+        <div className="rail-group">
           <button
             type="button"
-            className="left-action-btn"
+            className={`rail-btn ${commandPaletteOpen ? "active" : ""}`}
+            title="検索 (Cmd/Ctrl+K)"
+            onClick={openCommandPalette}
+          >
+            <IconSearchFile />
+          </button>
+          <button
+            type="button"
+            className={`rail-btn ${globalGraphOpen ? "active" : ""}`}
+            title={
+              globalGraphOpen ? "グローバルグラフを閉じる" : "グローバルグラフを開く"
+            }
+            onClick={() => {
+              if (globalGraphOpen) {
+                setGlobalGraphOpen(false);
+                setGlobalGraphExpanded(false);
+                return;
+              }
+              openGlobalGraph();
+            }}
+            disabled={globalGraphLoading && !globalGraphOpen}
+          >
+            <IconGraphNodes />
+          </button>
+          <button
+            type="button"
+            className="rail-btn"
+            title={
+              lawIndexLoading
+                ? "laws.index を読み込み中..."
+                : "laws.index を表示"
+            }
             onClick={() => void openLawIndex()}
             disabled={lawIndexLoading}
           >
-            {lawIndexLoading
-              ? "laws.index を読み込み中..."
-              : "laws.index を表示"}
+            <IconListDoc />
           </button>
-          {lawIndexError ? (
-            <div className="small muted">{lawIndexError}</div>
-          ) : null}
-
-          <button
-            type="button"
-            className="left-action-btn"
-            onClick={openGlobalGraph}
-            disabled={globalGraphLoading && !globalGraphOpen}
-          >
-            {globalGraphLoading && !globalGraphOpen
-              ? "グローバルグラフを準備中..."
-              : "グローバルグラフを開く"}
-          </button>
-          {globalGraphError && !globalGraphOpen ? (
-            <div className="small muted">{globalGraphError}</div>
-          ) : null}
-        </div>
-      </section>
-
-      <section className="panel panel-center">
-        <div className="search-row" ref={searchSortPanelRef}>
-          <div className="search-tab">
-            <label htmlFor="result-search-box" className="search-label">
-              Search
-            </label>
-            <input
-              id="result-search-box"
-              className="search-box"
-              value={query}
-              onChange={(event) => {
-                setQuery(event.target.value);
-                setVisibleLimit(PAGE_SIZE);
-              }}
-              placeholder="法令名 / law_id / article_id / キーワード"
-            />
-          </div>
-          <button
-            type="button"
-            className={`search-adjust-btn ${searchSortOpen ? "active" : ""}`}
-            onClick={() => setSearchSortOpen((current) => !current)}
-          >
-            調整
-          </button>
-          {searchSortOpen ? (
-            <div className="search-adjust-panel">
-              <div className="search-adjust-title">検索結果の並び順</div>
-              <label className="search-adjust-option">
-                <input
-                  type="radio"
-                  name="search-sort"
-                  checked={searchSortMode === "relevance"}
-                  onChange={() => setSearchSortMode("relevance")}
-                />
-                関連度順 (一致回数が多い順)
-              </label>
-              <label className="search-adjust-option">
-                <input
-                  type="radio"
-                  name="search-sort"
-                  checked={searchSortMode === "title_asc"}
-                  onChange={() => setSearchSortMode("title_asc")}
-                />
-                名前順 (昇順)
-              </label>
-              <label className="search-adjust-option">
-                <input
-                  type="radio"
-                  name="search-sort"
-                  checked={searchSortMode === "title_desc"}
-                  onChange={() => setSearchSortMode("title_desc")}
-                />
-                名前順 (降順)
-              </label>
-            </div>
-          ) : null}
         </div>
 
-        <header className="panel-header">
-          <h2>Results</h2>
-          <span className="small muted">
-            {isLoadingSearch
-              ? "Searching..."
-              : `${sortedResults.length.toLocaleString()} shown / ${totalResults.toLocaleString()} total`}
-          </span>
-        </header>
-        {searchError ? <p className="error-box">{searchError}</p> : null}
-        <ul className="result-list">
-          {sortedResults.map((result) => (
-            <li key={result.id}>
-              <button
-                type="button"
-                className={`result-item ${selectedId === result.id ? "selected" : ""}`}
-                onClick={() => openDocument(result.id)}
-              >
-                <strong>{result.title}</strong>
-                <span className="mono">{result.id}</span>
-                <span className="small muted">
-                  {renderFrontmatterHint(result.frontmatter)}
-                </span>
-              </button>
-            </li>
-          ))}
-        </ul>
-        {hasMoreResults ? (
+        <div className="rail-divider" />
+
+        <div className="rail-group">
           <button
             type="button"
-            className="load-more"
-            onClick={() => setVisibleLimit((previous) => previous + PAGE_SIZE)}
+            className={`rail-btn ${activeTab === "outgoing" ? "active" : ""}`}
+            title="Outgoing"
+            onClick={() => setActiveTab("outgoing")}
+            disabled={!doc}
           >
-            Load more
+            <IconArrowOut />
           </button>
-        ) : null}
+          <button
+            type="button"
+            className={`rail-btn ${activeTab === "incoming" ? "active" : ""}`}
+            title="Incoming"
+            onClick={() => setActiveTab("incoming")}
+            disabled={!doc}
+          >
+            <IconArrowIn />
+          </button>
+          <button
+            type="button"
+            className={`rail-btn ${activeTab === "graph" ? "active" : ""}`}
+            title="Doc Graph"
+            onClick={() => setActiveTab("graph")}
+            disabled={!doc}
+          >
+            <IconNodeView />
+          </button>
+        </div>
+
+        <div className="rail-spacer" />
+
+        <div className="rail-group">
+          <button
+            type="button"
+            className={`rail-btn ${searchSortOpen ? "active" : ""}`}
+            title="検索結果の並び順を調整"
+            onClick={() => {
+              setCommandPaletteOpen(true);
+              setSearchSortOpen((current) => !current);
+            }}
+          >
+            <IconTune />
+          </button>
+        </div>
       </section>
 
       <section className="panel panel-right">
+        <div className="viewer-meta">
+          <span className="viewer-meta-item">
+            Documents:{" "}
+            {status?.totalDocs != null
+              ? status.totalDocs.toLocaleString()
+              : "indexing..."}
+          </span>
+          <span className="viewer-meta-item">
+            {status?.indexing ? "Indexing in background" : "Index ready"}
+          </span>
+          <span
+            className="viewer-meta-item mono"
+            title={status?.vaultPath || "loading"}
+          >
+            {status?.vaultPath || "loading"}
+          </span>
+        </div>
+
         <div className="browser-chrome">
           <div
             className="doc-tabs-scroll"
@@ -1028,6 +1145,38 @@ export function VaultBrowser(): JSX.Element {
           </>
         ) : (
           <>
+            <div className="viewer-toolbar">
+              <div className="viewer-tools">
+                <button
+                  type="button"
+                  className={`viewer-tool-btn ${activeTab === "graph" ? "" : "active"}`}
+                  onClick={() =>
+                    setActiveTab((current) =>
+                      current === "graph" ? "outgoing" : current,
+                    )
+                  }
+                  title="リンクパネル"
+                  disabled={!doc}
+                >
+                  <IconLinksPanel />
+                </button>
+                <button
+                  type="button"
+                  className={`viewer-tool-btn ${activeTab === "graph" ? "active" : ""}`}
+                  onClick={() => setActiveTab("graph")}
+                  title="ローカルグラフ"
+                  disabled={!doc}
+                >
+                  <IconLocalGraph />
+                </button>
+              </div>
+              <span className="small muted">
+                {doc
+                  ? `Right panel: ${activeTab === "graph" ? "Local graph" : "Linked mentions"}`
+                  : "ドキュメントを開くと、右側にリンクとローカルグラフを表示します。"}
+              </span>
+            </div>
+
             {isLoadingDoc ? <p>Loading preview...</p> : null}
             {docError ? <p className="error-box">{docError}</p> : null}
 
@@ -1036,213 +1185,393 @@ export function VaultBrowser(): JSX.Element {
             ) : null}
 
             {doc ? (
-              <>
-                <header className="doc-header">
-                  <h2>{doc.title}</h2>
-                  <div className="mono small">{doc.relPath}</div>
-                </header>
+              <div
+                ref={viewerSplitRef}
+                className={`viewer-split ${isViewerSplitResizing ? "resizing" : ""}`}
+                style={viewerSplitStyle}
+              >
+                <div className="viewer-main-pane">
+                  <header className="doc-header">
+                    <h2>{doc.title}</h2>
+                    <div className="mono small">{doc.relPath}</div>
+                  </header>
 
-                <details open>
-                  <summary>Frontmatter</summary>
-                  <FrontmatterPanel
-                    frontmatter={doc.frontmatter}
-                    currentDocId={doc.id}
-                    onNavigate={onLinkClick}
-                  />
-                </details>
+                  <details open>
+                    <summary>Frontmatter</summary>
+                    <FrontmatterPanel
+                      frontmatter={doc.frontmatter}
+                      currentDocId={doc.id}
+                      onNavigate={onLinkClick}
+                    />
+                  </details>
 
-                <article className="markdown-view">
-                  <ReactMarkdown
-                    remarkPlugins={[remarkGfm]}
-                    rehypePlugins={[rehypeSlug]}
-                    urlTransform={(url) => url}
-                    components={{
-                      a: ({ href, children }) => {
-                        const internalHref = doc
-                          ? toInternalNavigationHref(href, doc.id)
-                          : null;
+                  <article className="markdown-view">
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      rehypePlugins={[rehypeSlug]}
+                      urlTransform={(url) => url}
+                      components={{
+                        a: ({ href, children }) => {
+                          const internalHref = doc
+                            ? toInternalNavigationHref(href, doc.id)
+                            : null;
 
-                        if (internalHref) {
+                          if (internalHref) {
+                            return (
+                              <button
+                                type="button"
+                                className="markdown-link"
+                                onClick={() => onLinkClick(internalHref)}
+                              >
+                                {children}
+                              </button>
+                            );
+                          }
+
                           return (
-                            <button
-                              type="button"
-                              className="markdown-link"
-                              onClick={() => onLinkClick(internalHref)}
-                            >
+                            <a href={href} target="_blank" rel="noreferrer">
                               {children}
-                            </button>
+                            </a>
                           );
-                        }
-
-                        return (
-                          <a href={href} target="_blank" rel="noreferrer">
-                            {children}
-                          </a>
-                        );
-                      },
-                    }}
-                  >
-                    {preparedMarkdown?.markdown || doc.markdown}
-                  </ReactMarkdown>
-                </article>
-
-                <div className="link-tabs">
-                  <button
-                    type="button"
-                    className={activeTab === "outgoing" ? "active" : ""}
-                    onClick={() => setActiveTab("outgoing")}
-                  >
-                    Outgoing ({doc.outgoing.length})
-                  </button>
-                  <button
-                    type="button"
-                    className={activeTab === "incoming" ? "active" : ""}
-                    onClick={() => setActiveTab("incoming")}
-                  >
-                    Incoming (
-                    {incomingByDocId[doc.id] ? incomingLinks.length : "..."})
-                  </button>
-                  <button
-                    type="button"
-                    className={activeTab === "graph" ? "active" : ""}
-                    onClick={() => setActiveTab("graph")}
-                  >
-                    Graph
-                  </button>
+                        },
+                      }}
+                    >
+                      {preparedMarkdown?.markdown || doc.markdown}
+                    </ReactMarkdown>
+                  </article>
                 </div>
 
-                {activeTab === "outgoing" ? (
-                  <ul className="link-list">
-                    {doc.outgoing.map((link, index) => (
-                      <li key={`${link.raw}-${index}`}>
-                        {link.resolvedId ? (
-                          <button
-                            type="button"
-                            onClick={() => openDocument(link.resolvedId!)}
-                          >
-                            {link.display} →{" "}
-                            {link.resolvedTitle || link.resolvedId}
-                          </button>
-                        ) : link.candidates && link.candidates.length > 0 ? (
-                          <button
-                            type="button"
-                            onClick={() =>
-                              setCandidatePopup({
-                                label: link.display,
-                                options: link.candidates!,
-                              })
-                            }
-                          >
-                            {link.display} (ambiguous: {link.candidates.length})
-                          </button>
-                        ) : (
-                          <span className="muted">
-                            {link.display} (unresolved)
-                          </span>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
+                <div
+                  className="viewer-splitter"
+                  role="separator"
+                  aria-orientation="vertical"
+                  aria-label="Resize right panel"
+                  onPointerDown={(event) => {
+                    event.preventDefault();
+                    beginViewerSplitResize(event.clientX);
+                  }}
+                />
 
-                {activeTab === "incoming" ? (
-                  <>
-                    {isIncomingLoading ? (
-                      <p className="small muted">Loading incoming...</p>
-                    ) : null}
-                    {incomingError ? (
-                      <p className="error-box">{incomingError}</p>
-                    ) : null}
-                    <ul className="link-list">
-                      {incomingLinks.map((link) => (
-                        <li key={link.id}>
-                          <button
-                            type="button"
-                            onClick={() => openDocument(link.id)}
-                          >
-                            {link.title}
-                          </button>
-                          <span className="mono small">{link.id}</span>
-                        </li>
-                      ))}
-                      {!isIncomingLoading && incomingLinks.length === 0 ? (
-                        <li className="small muted">
-                          No incoming links detected.
-                        </li>
-                      ) : null}
-                    </ul>
-                  </>
-                ) : null}
-
-                {activeTab === "graph" ? (
-                  <>
-                    <div className="graph-toolbar">
-                      <div
-                        className="graph-mode-switch"
-                        role="tablist"
-                        aria-label="Graph mode"
-                      >
+                <aside className="viewer-side-pane">
+                  {activeTab === "graph" ? (
+                    <>
+                      <header className="side-panel-header">
+                        <h3>Local Graph</h3>
                         <button
                           type="button"
-                          className={graphMode === "cloud" ? "active" : ""}
-                          onClick={() => setGraphMode("cloud")}
+                          className="viewer-tool-btn"
+                          onClick={() => setActiveTab("outgoing")}
+                          title="リンクパネルへ戻る"
                         >
-                          Node Cloud
+                          <IconLinksPanel />
                         </button>
+                      </header>
+                      <div className="graph-toolbar side-graph-toolbar">
+                        <div
+                          className="graph-mode-switch"
+                          role="tablist"
+                          aria-label="Graph mode"
+                        >
+                          <button
+                            type="button"
+                            className={graphMode === "cloud" ? "active" : ""}
+                            onClick={() => setGraphMode("cloud")}
+                          >
+                            Node
+                          </button>
+                          <button
+                            type="button"
+                            className={graphMode === "mindmap" ? "active" : ""}
+                            onClick={() => setGraphMode("mindmap")}
+                          >
+                            Mind
+                          </button>
+                        </div>
+                        <label htmlFor="graph-depth">Depth</label>
+                        <select
+                          id="graph-depth"
+                          value={graphDepth}
+                          onChange={(event) =>
+                            setGraphDepth(Number(event.target.value))
+                          }
+                        >
+                          <option value={1}>1</option>
+                          <option value={2}>2</option>
+                          <option value={3}>3</option>
+                          <option value={4}>4</option>
+                        </select>
                         <button
                           type="button"
-                          className={graphMode === "mindmap" ? "active" : ""}
-                          onClick={() => setGraphMode("mindmap")}
+                          className={
+                            graphExpanded ? "graph-expand active" : "graph-expand"
+                          }
+                          onClick={() => setGraphExpanded((current) => !current)}
                         >
-                          Mindmap
+                          {graphExpanded ? "Shrink" : "Expand"}
                         </button>
                       </div>
-                      <label htmlFor="graph-depth">Depth</label>
-                      <select
-                        id="graph-depth"
-                        value={graphDepth}
-                        onChange={(event) =>
-                          setGraphDepth(Number(event.target.value))
-                        }
+                      {graphLoading ? (
+                        <p className="small muted">Loading graph...</p>
+                      ) : null}
+                      {graphError ? <p className="error-box">{graphError}</p> : null}
+                      {graphData ? (
+                        <GraphView
+                          graph={graphData}
+                          rootTitle={doc.title}
+                          mode={graphMode}
+                          expanded={graphExpanded}
+                          onClose={() => setGraphExpanded(false)}
+                          onSelect={(id) => openDocument(id)}
+                        />
+                      ) : (
+                        !graphLoading && (
+                          <p className="small muted">No graph data.</p>
+                        )
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      <header className="side-panel-header">
+                        <h3>Linked Mentions</h3>
+                        <div className="side-panel-controls">
+                          <label htmlFor="link-sort-mode">Sort</label>
+                          <select
+                            id="link-sort-mode"
+                            value={linkSortMode}
+                            onChange={(event) =>
+                              setLinkSortMode(event.target.value as SearchSortMode)
+                            }
+                          >
+                            <option value="relevance">関連度順</option>
+                            <option value="title_asc">名前順 (昇順)</option>
+                            <option value="title_desc">名前順 (降順)</option>
+                          </select>
+                        </div>
+                      </header>
+
+                      {isIncomingLoading ? (
+                        <p className="small muted">Loading incoming...</p>
+                      ) : null}
+                      {incomingError ? <p className="error-box">{incomingError}</p> : null}
+
+                      <section
+                        className={`side-link-group ${activeTab === "outgoing" ? "active" : ""}`}
                       >
-                        <option value={1}>1</option>
-                        <option value={2}>2</option>
-                        <option value={3}>3</option>
-                        <option value={4}>4</option>
-                      </select>
-                      <button
-                        type="button"
-                        className={
-                          graphExpanded ? "graph-expand active" : "graph-expand"
-                        }
-                        onClick={() => setGraphExpanded((current) => !current)}
+                        <button
+                          type="button"
+                          className="side-link-heading"
+                          onClick={() => setActiveTab("outgoing")}
+                        >
+                          Outgoing ({sortedOutgoingLinks.length})
+                        </button>
+                        <ul className="side-link-list">
+                          {sortedOutgoingLinks.map((item) => (
+                            <li key={item.key} className="side-link-item">
+                              {item.targetId ? (
+                                <button
+                                  type="button"
+                                  onClick={() => openDocument(item.targetId!)}
+                                >
+                                  {item.label} →{" "}
+                                  {item.targetTitle || pathLikeTitle(item.targetId)}
+                                </button>
+                              ) : item.candidates.length > 0 ? (
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    setCandidatePopup({
+                                      label: item.label,
+                                      options: item.candidates,
+                                    })
+                                  }
+                                >
+                                  {item.label} (ambiguous: {item.candidates.length})
+                                </button>
+                              ) : (
+                                <span className="side-link-unresolved">
+                                  {item.label} (unresolved)
+                                </span>
+                              )}
+                              <span className="mono small side-link-meta">
+                                {item.subtitle}
+                              </span>
+                            </li>
+                          ))}
+                          {sortedOutgoingLinks.length === 0 ? (
+                            <li className="small muted side-link-empty">
+                              No outgoing links detected.
+                            </li>
+                          ) : null}
+                        </ul>
+                      </section>
+
+                      <section
+                        className={`side-link-group ${activeTab === "incoming" ? "active" : ""}`}
                       >
-                        {graphExpanded ? "Shrink" : "Expand"}
-                      </button>
-                    </div>
-                    {graphLoading ? (
-                      <p className="small muted">Loading graph...</p>
-                    ) : null}
-                    {graphError ? (
-                      <p className="error-box">{graphError}</p>
-                    ) : null}
-                    {graphData ? (
-                      <GraphView
-                        graph={graphData}
-                        rootTitle={doc.title}
-                        mode={graphMode}
-                        expanded={graphExpanded}
-                        onClose={() => setGraphExpanded(false)}
-                        onSelect={(id) => openDocument(id)}
-                      />
-                    ) : null}
-                  </>
-                ) : null}
-              </>
+                        <button
+                          type="button"
+                          className="side-link-heading"
+                          onClick={() => setActiveTab("incoming")}
+                        >
+                          Incoming ({sortedIncomingLinks.length})
+                        </button>
+                        <ul className="side-link-list">
+                          {sortedIncomingLinks.map((link) => (
+                            <li key={link.id} className="side-link-item">
+                              <button
+                                type="button"
+                                onClick={() => openDocument(link.id)}
+                              >
+                                {link.title}
+                              </button>
+                              <span className="mono small side-link-meta">
+                                {link.subtitle}
+                              </span>
+                            </li>
+                          ))}
+                          {!isIncomingLoading && sortedIncomingLinks.length === 0 ? (
+                            <li className="small muted side-link-empty">
+                              No incoming links detected.
+                            </li>
+                          ) : null}
+                        </ul>
+                      </section>
+                    </>
+                  )}
+                </aside>
+              </div>
             ) : null}
           </>
         )}
       </section>
+
+      {commandPaletteOpen ? (
+        <div className="command-overlay" onClick={closeCommandPalette}>
+          <div
+            className="command-modal"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="command-input-wrap" ref={searchSortPanelRef}>
+              <input
+                ref={commandSearchInputRef}
+                id="command-search-box"
+                className="command-input"
+                value={query}
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  setVisibleLimit(PAGE_SIZE);
+                }}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" && sortedResults[0]) {
+                    openDocument(sortedResults[0].id);
+                    setActiveTab("outgoing");
+                    closeCommandPalette();
+                  }
+                }}
+                placeholder="ファイル名 / law_id / article_id / キーワード"
+                autoComplete="off"
+                spellCheck={false}
+              />
+              <button
+                type="button"
+                className={`command-adjust-btn ${searchSortOpen ? "active" : ""}`}
+                onClick={() => setSearchSortOpen((current) => !current)}
+              >
+                調整
+              </button>
+              <button
+                type="button"
+                className="command-close-btn"
+                onClick={closeCommandPalette}
+                aria-label="Close search"
+              >
+                ×
+              </button>
+              {searchSortOpen ? (
+                <div className="search-adjust-panel command-adjust-panel">
+                  <div className="search-adjust-title">検索結果の並び順</div>
+                  <label className="search-adjust-option">
+                    <input
+                      type="radio"
+                      name="search-sort"
+                      checked={searchSortMode === "relevance"}
+                      onChange={() => setSearchSortMode("relevance")}
+                    />
+                    関連度順 (一致回数が多い順)
+                  </label>
+                  <label className="search-adjust-option">
+                    <input
+                      type="radio"
+                      name="search-sort"
+                      checked={searchSortMode === "title_asc"}
+                      onChange={() => setSearchSortMode("title_asc")}
+                    />
+                    名前順 (昇順)
+                  </label>
+                  <label className="search-adjust-option">
+                    <input
+                      type="radio"
+                      name="search-sort"
+                      checked={searchSortMode === "title_desc"}
+                      onChange={() => setSearchSortMode("title_desc")}
+                    />
+                    名前順 (降順)
+                  </label>
+                </div>
+              ) : null}
+            </div>
+
+            <div className="command-meta">
+              <span>
+                {isLoadingSearch
+                  ? "Searching..."
+                  : `${sortedResults.length.toLocaleString()} shown / ${totalResults.toLocaleString()} total`}
+              </span>
+              <span>Enterで先頭項目を開く / Escで閉じる</span>
+            </div>
+
+            {searchError ? <p className="error-box">{searchError}</p> : null}
+            <ul className="command-list">
+              {sortedResults.map((result) => (
+                <li key={result.id}>
+                  <button
+                    type="button"
+                    className={`command-item ${selectedId === result.id ? "active" : ""}`}
+                    onClick={() => {
+                      openDocument(result.id);
+                      setActiveTab("outgoing");
+                      closeCommandPalette();
+                    }}
+                  >
+                    <span className="command-item-title">{result.title}</span>
+                    <span className="command-item-path mono">
+                      {result.relPath || `${result.id}.md`}
+                    </span>
+                    <span className="command-item-meta small muted">
+                      {renderFrontmatterHint(result.frontmatter) || result.id}
+                    </span>
+                  </button>
+                </li>
+              ))}
+              {!isLoadingSearch && sortedResults.length === 0 ? (
+                <li className="small muted command-empty">No results.</li>
+              ) : null}
+            </ul>
+
+            {hasMoreResults ? (
+              <button
+                type="button"
+                className="load-more command-load-more"
+                onClick={() =>
+                  setVisibleLimit((previous) => previous + PAGE_SIZE)
+                }
+              >
+                さらに読み込む
+              </button>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
 
       {candidatePopup ? (
         <div
@@ -1321,6 +1650,131 @@ function renderFrontmatterHint(frontmatter: Record<string, unknown>): string {
   }
 
   return tokens.join(" / ");
+}
+
+function sortGenericItems<T>(
+  items: T[],
+  sortMode: SearchSortMode,
+  query: string,
+  getTitle: (item: T) => string,
+  getSearchBlob: (item: T) => string,
+): T[] {
+  const out = [...items];
+  const normalizedQuery = query.trim().toLowerCase();
+
+  if (sortMode === "title_asc" || sortMode === "title_desc") {
+    const direction = sortMode === "title_asc" ? 1 : -1;
+    out.sort(
+      (a, b) => getTitle(a).localeCompare(getTitle(b), "ja") * direction,
+    );
+    return out;
+  }
+
+  out.sort((a, b) => {
+    const scoreA = normalizedQuery
+      ? countOccurrences(getSearchBlob(a).toLowerCase(), normalizedQuery)
+      : 0;
+    const scoreB = normalizedQuery
+      ? countOccurrences(getSearchBlob(b).toLowerCase(), normalizedQuery)
+      : 0;
+
+    if (scoreA !== scoreB) {
+      return scoreB - scoreA;
+    }
+    return getTitle(a).localeCompare(getTitle(b), "ja");
+  });
+
+  return out;
+}
+
+function IconSearchFile(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 3h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+      <path d="M14 3v5h5" />
+      <circle cx="11" cy="13" r="3.1" />
+      <path d="m13.6 15.6 2.2 2.2" />
+    </svg>
+  );
+}
+
+function IconGraphNodes(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="6" cy="6" r="2.2" />
+      <circle cx="18" cy="6" r="2.2" />
+      <circle cx="12" cy="18" r="2.2" />
+      <path d="M8 7.2l2.5 7.2M16 7.2l-2.5 7.2M8.2 6h7.6" />
+    </svg>
+  );
+}
+
+function IconListDoc(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 3h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+      <path d="M14 3v5h5M8 12h8M8 16h8M8 8h3" />
+    </svg>
+  );
+}
+
+function IconArrowOut(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8 16h8M13 11l5 5-5 5" />
+    </svg>
+  );
+}
+
+function IconArrowIn(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M16 8H8M11 13l-5-5 5-5" />
+    </svg>
+  );
+}
+
+function IconNodeView(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="4" y="4" width="6" height="6" rx="1.2" />
+      <rect x="14" y="4" width="6" height="6" rx="1.2" />
+      <rect x="4" y="14" width="6" height="6" rx="1.2" />
+      <rect x="14" y="14" width="6" height="6" rx="1.2" />
+      <path d="M10 7h4M7 10v4M17 10v4M10 17h4" />
+    </svg>
+  );
+}
+
+function IconTune(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 7h8M14 7h6M9 7v10M4 17h5M11 17h9M15 7v10" />
+      <circle cx="9" cy="7" r="1.8" />
+      <circle cx="15" cy="17" r="1.8" />
+    </svg>
+  );
+}
+
+function IconLinksPanel(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M10 13.8 13.7 10.2" />
+      <path d="M8.2 16a3.5 3.5 0 0 1 0-5l2-2a3.5 3.5 0 1 1 5 5l-.7.7" />
+      <path d="M15.8 8a3.5 3.5 0 0 1 0 5l-2 2a3.5 3.5 0 1 1-5-5l.7-.7" />
+    </svg>
+  );
+}
+
+function IconLocalGraph(): JSX.Element {
+  return (
+    <svg className="rail-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="6" cy="7" r="2" />
+      <circle cx="17.5" cy="5.5" r="2" />
+      <circle cx="12" cy="18" r="2.2" />
+      <path d="M8 7.3 15.4 5.8M7.2 8.7l3.7 7.2M16.8 7l-3.6 8" />
+    </svg>
+  );
 }
 
 function sortSearchResults(

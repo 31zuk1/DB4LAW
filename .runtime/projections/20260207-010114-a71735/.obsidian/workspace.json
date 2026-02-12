@@ -18,6 +18,20 @@
             }
           },
           {
+            "id": "aa163bb8715d3e4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "laws/140AC0000000045/本文/第81条.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第81条"
+            }
+          },
+          {
             "id": "31beb4ee0b9525e3",
             "type": "leaf",
             "state": {
@@ -25,7 +39,17 @@
               "state": {
                 "file": "laws/129AC0000000089/附則/昭和五四年一二月二〇日法律第六八号/昭和五四年一二月二〇日法律第六八号_第1条.md",
                 "mode": "preview",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "昭和五四年一二月二〇日法律第六八号_第1条"
@@ -197,8 +221,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9ca32825af819c18",
@@ -214,7 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "laws/129AC0000000089/附則/平成一一年七月一六日法律第八七号/平成一一年七月一六日法律第八七号_第161条.md",
+                "file": "laws/140AC0000000045/本文/第81条.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +247,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "平成一一年七月一六日法律第八七号_第161条へのバックリンク"
+              "title": "第81条へのバックリンク"
             }
           },
           {
@@ -276,21 +299,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "laws/129AC0000000089/附則/平成一一年七月一六日法律第八七号/平成一一年七月一六日法律第八七号_第161条.md",
+                "file": "laws/140AC0000000045/本文/第81条.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "平成一一年七月一六日法律第八七号_第161条のアウトライン"
+              "title": "第81条のアウトライン"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 388.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -303,8 +326,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "31beb4ee0b9525e3",
+  "active": "aa163bb8715d3e4a",
   "lastOpenFiles": [
+    "laws/140AC0000000045/編/第1編.md",
+    "laws/129AC0000000089/附則/昭和五四年一二月二〇日法律第六八号/昭和五四年一二月二〇日法律第六八号_第1条.md",
     "laws/129AC0000000089/附則/平成一一年七月一六日法律第八七号/平成一一年七月一六日法律第八七号_第161条.md",
     "laws/129AC0000000089/附則/平成一一年七月一六日法律第八七号/平成一一年七月一六日法律第八七号_第164条.md",
     "laws/129AC0000000089/附則/平成一一年七月一六日法律第八七号/平成一一年七月一六日法律第八七号_第160条.md",
@@ -312,7 +337,6 @@
     "laws/129AC0000000089/附則/昭和五四年一二月二〇日法律第六八号/昭和五四年一二月二〇日法律第六八号_第4条.md",
     "laws/129AC0000000089/附則/昭和五四年一二月二〇日法律第六八号/昭和五四年一二月二〇日法律第六八号_第3条.md",
     "laws/129AC0000000089/附則/昭和五四年一二月二〇日法律第六八号/昭和五四年一二月二〇日法律第六八号_第2条.md",
-    "laws/129AC0000000089/附則/昭和五四年一二月二〇日法律第六八号/昭和五四年一二月二〇日法律第六八号_第1条.md",
     "laws/129AC0000000089/附則/令和四年六月一七日法律第六八号.md",
     "laws/129AC0000000089/編/第1編.md",
     "laws/129AC0000000089/民法_law.md",
